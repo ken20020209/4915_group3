@@ -86,6 +86,12 @@
     <Compile Include="purchase.Designer.cs">
       <DependentUpon>purchase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Purchase\request order\select_BPA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\request order\select_BPA.Designer.cs">
+      <DependentUpon>select_BPA.cs</DependentUpon>
+    </Compile>
     <Compile Include="purch_save1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -291,6 +297,7 @@
     <None Include="Resources\icons8-purchase-order-40 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Purchase\set rules\" />
     <Folder Include="Resources\NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
