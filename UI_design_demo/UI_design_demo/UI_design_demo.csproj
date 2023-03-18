@@ -61,6 +61,144 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accounting\check_PO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\check_PO.Designer.cs">
+      <DependentUpon>check_PO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\compare_note.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\compare_note.Designer.cs">
+      <DependentUpon>compare_note.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\payment.Designer.cs">
+      <DependentUpon>payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\update_PO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\update_PO.Designer.cs">
+      <DependentUpon>update_PO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\brand\search\check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\brand\search\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\brand\search\delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\brand\search\delete.Designer.cs">
+      <DependentUpon>delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\brand\search\edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\brand\search\edit.Designer.cs">
+      <DependentUpon>edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\category\select\check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\category\select\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\category\select\delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\category\select\delete.Designer.cs">
+      <DependentUpon>delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\category\select\edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\category\select\edit.Designer.cs">
+      <DependentUpon>edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\produce\search\check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\produce\search\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\produce\search\delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\produce\search\delete.Designer.cs">
+      <DependentUpon>delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\produce\search\edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\produce\search\edit.Designer.cs">
+      <DependentUpon>edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\return_reson\select\check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\return_reson\select\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\return_reson\select\delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\return_reson\select\delete.Designer.cs">
+      <DependentUpon>delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\return_reson\select\edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\return_reson\select\edit.Designer.cs">
+      <DependentUpon>edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\supplier\search\check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\supplier\search\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\supplier\search\delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\supplier\search\delete.Designer.cs">
+      <DependentUpon>delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\supplier\search\edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\supplier\search\edit.Designer.cs">
+      <DependentUpon>edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delivery\search_schedule\check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delivery\search_schedule\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delivery\search_schedule\delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delivery\search_schedule\delete.Designer.cs">
+      <DependentUpon>delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delivery\search_schedule\edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delivery\search_schedule\edit.Designer.cs">
+      <DependentUpon>edit.cs</DependentUpon>
+    </Compile>
     <Compile Include="General\login\Forget.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,10 +218,28 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="purchase.cs">
+    <Compile Include="Purchase\PO\search\check.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="purchase.Designer.cs">
+    <Compile Include="Purchase\PO\search\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PO\search\delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PO\search\delete.Designer.cs">
+      <DependentUpon>delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PO\search\update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PO\search\update.Designer.cs">
+      <DependentUpon>update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\purchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\purchase.Designer.cs">
       <DependentUpon>purchase.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\request order\select_BPA.cs">
@@ -91,12 +247,6 @@
     </Compile>
     <Compile Include="Purchase\request order\select_BPA.Designer.cs">
       <DependentUpon>select_BPA.cs</DependentUpon>
-    </Compile>
-    <Compile Include="purch_save1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="purch_save1.Designer.cs">
-      <DependentUpon>purch_save1.cs</DependentUpon>
     </Compile>
     <Compile Include="Restaurant\delivery note\check.cs">
       <SubType>Form</SubType>
@@ -164,6 +314,42 @@
     <Compile Include="Restaurant\stock\update.Designer.cs">
       <DependentUpon>update.cs</DependentUpon>
     </Compile>
+    <Compile Include="warehouse\check_despatch\create.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="warehouse\check_despatch\create.Designer.cs">
+      <DependentUpon>create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\check_despatch\update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="warehouse\check_despatch\update.Designer.cs">
+      <DependentUpon>update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\delivery_note\sign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="warehouse\delivery_note\sign.Designer.cs">
+      <DependentUpon>sign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\delivery_note\update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="warehouse\delivery_note\update.Designer.cs">
+      <DependentUpon>update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\search_stock\check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="warehouse\search_stock\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\search_stock\update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="warehouse\search_stock\update.Designer.cs">
+      <DependentUpon>update.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="General\login\Forget.resx">
       <DependentUpon>Forget.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,11 +361,14 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="purchase.resx">
+    <EmbeddedResource Include="Purchase\PO\search\check.resx">
+      <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\purchase.resx">
       <DependentUpon>purchase.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="purch_save1.resx">
-      <DependentUpon>purch_save1.cs</DependentUpon>
+    <EmbeddedResource Include="Purchase\request order\select_BPA.resx">
+      <DependentUpon>select_BPA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\delivery note\check.resx">
       <DependentUpon>check.cs</DependentUpon>
@@ -297,8 +486,16 @@
     <None Include="Resources\icons8-purchase-order-40 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="category\brand\create\" />
+    <Folder Include="category\category\create\" />
+    <Folder Include="category\produce\create\" />
+    <Folder Include="category\return_reson\create\" />
+    <Folder Include="category\supplier\create\" />
+    <Folder Include="delivery\create_schedule\" />
+    <Folder Include="Purchase\PO\create\" />
     <Folder Include="Purchase\set rules\" />
     <Folder Include="Resources\NewFolder1\" />
+    <Folder Include="warehouse\check_PPO\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
