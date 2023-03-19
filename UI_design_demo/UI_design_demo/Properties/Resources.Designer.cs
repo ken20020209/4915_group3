@@ -83,6 +83,16 @@ namespace UI_design_demo.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_circular_arrow_pointing_to_left_40__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-circular-arrow-pointing-to-left-40 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_delivery_40 {
             get {
                 object obj = ResourceManager.GetObject("icons8-delivery-40", resourceCulture);
@@ -96,6 +106,16 @@ namespace UI_design_demo.Properties {
         internal static System.Drawing.Bitmap icons8_delivery_40__2_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-delivery-40 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_diversity_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-diversity-40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -286,6 +306,26 @@ namespace UI_design_demo.Properties {
         internal static System.Drawing.Bitmap icons8_sign_document_40 {
             get {
                 object obj = ResourceManager.GetObject("icons8-sign-document-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_supplier_40__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-supplier-40 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_tag_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-tag-40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

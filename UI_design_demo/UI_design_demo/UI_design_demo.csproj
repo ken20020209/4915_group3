@@ -109,6 +109,12 @@
     <Compile Include="category\brand\search\edit.Designer.cs">
       <DependentUpon>edit.cs</DependentUpon>
     </Compile>
+    <Compile Include="category\Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\Category.Designer.cs">
+      <DependentUpon>Category.cs</DependentUpon>
+    </Compile>
     <Compile Include="category\category\select\check.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -356,6 +362,15 @@
     <Compile Include="warehouse\search_stock\update.Designer.cs">
       <DependentUpon>update.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="category\Category.resx">
+      <DependentUpon>Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\category\select\check.resx">
+      <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\category\select\edit.resx">
+      <DependentUpon>edit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="General\login\Forget.resx">
       <DependentUpon>Forget.cs</DependentUpon>
     </EmbeddedResource>
@@ -505,6 +520,18 @@
     <Folder Include="Purchase\set rules\" />
     <Folder Include="Resources\NewFolder1\" />
     <Folder Include="warehouse\check_PPO\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-diversity-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tag-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-supplier-40 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-circular-arrow-pointing-to-left-40 %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
