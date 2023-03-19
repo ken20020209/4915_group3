@@ -1,7 +1,7 @@
 ﻿
 namespace UI_design_demo.Accounting
 {
-    partial class search
+    partial class check_PO
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,17 @@ namespace UI_design_demo.Accounting
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // check_PO
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "search";
+            this.ClientSize = new System.Drawing.Size(1118, 635);
+            this.Name = "check_PO";
+            this.Text = "check_PO";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

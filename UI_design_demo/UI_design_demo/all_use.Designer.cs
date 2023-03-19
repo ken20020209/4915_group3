@@ -41,6 +41,7 @@ namespace UI_design_demo
             this.kryptonRichTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.kryptonGroupBox1 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
+            this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).BeginInit();
             this.kryptonGroupBox1.SuspendLayout();
@@ -239,11 +240,21 @@ namespace UI_design_demo
             this.kryptonGroupBox1.TabIndex = 205;
             this.kryptonGroupBox1.Values.Heading = "SHIP TO";
             // 
+            // kryptonLabel1
+            // 
+            this.kryptonLabel1.Location = new System.Drawing.Point(542, 511);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Size = new System.Drawing.Size(72, 23);
+            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("新細明體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.kryptonLabel1.TabIndex = 206;
+            this.kryptonLabel1.Values.Text = "← Back";
+            // 
             // all_use
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(945, 735);
+            this.ClientSize = new System.Drawing.Size(723, 726);
+            this.Controls.Add(this.kryptonLabel1);
             this.Controls.Add(this.kryptonGroupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.kryptonRichTextBox1);
@@ -281,5 +292,6 @@ namespace UI_design_demo
         private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox kryptonRichTextBox1;
         private System.Windows.Forms.Label label1;
         private ComponentFactory.Krypton.Toolkit.KryptonGroupBox kryptonGroupBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
     }
 }

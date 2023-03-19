@@ -61,34 +61,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Accounting\check_PO.cs">
+    <Compile Include="Accounting\accounting.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Accounting\check_PO.Designer.cs">
+    <Compile Include="Accounting\accounting.Designer.cs">
+      <DependentUpon>accounting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\process\check_PO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\process\check_PO.Designer.cs">
       <DependentUpon>check_PO.cs</DependentUpon>
     </Compile>
-    <Compile Include="Accounting\compare_note.cs">
+    <Compile Include="Accounting\process\compare_note.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Accounting\compare_note.Designer.cs">
+    <Compile Include="Accounting\process\compare_note.Designer.cs">
       <DependentUpon>compare_note.cs</DependentUpon>
     </Compile>
-    <Compile Include="Accounting\payment.cs">
+    <Compile Include="Accounting\process\payment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Accounting\payment.Designer.cs">
+    <Compile Include="Accounting\process\payment.Designer.cs">
       <DependentUpon>payment.cs</DependentUpon>
     </Compile>
-    <Compile Include="Accounting\search.cs">
+    <Compile Include="Accounting\process\search.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Accounting\search.Designer.cs">
+    <Compile Include="Accounting\process\search.Designer.cs">
       <DependentUpon>search.cs</DependentUpon>
     </Compile>
-    <Compile Include="Accounting\update_PO.cs">
+    <Compile Include="Accounting\process\update_PO.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Accounting\update_PO.Designer.cs">
+    <Compile Include="Accounting\process\update_PO.Designer.cs">
       <DependentUpon>update_PO.cs</DependentUpon>
     </Compile>
     <Compile Include="all_use.cs">
@@ -398,6 +404,18 @@
     <Compile Include="warehouse\search_stock\update.Designer.cs">
       <DependentUpon>update.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Accounting\accounting.resx">
+      <DependentUpon>accounting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\process\check_PO.resx">
+      <DependentUpon>check_PO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\process\compare_note.resx">
+      <DependentUpon>compare_note.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\process\search.resx">
+      <DependentUpon>search.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="all_use.resx">
       <DependentUpon>all_use.cs</DependentUpon>
     </EmbeddedResource>
@@ -602,6 +620,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-circular-arrow-pointing-to-left-40 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-payment-check-40 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-graph-report-40 %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

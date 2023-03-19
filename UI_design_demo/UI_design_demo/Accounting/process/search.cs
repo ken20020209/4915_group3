@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.Accounting
+namespace UI_design_demo.Accounting.process
 {
     public partial class search : Form
     {
