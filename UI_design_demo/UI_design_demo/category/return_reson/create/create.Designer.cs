@@ -1,7 +1,7 @@
 ﻿
-namespace UI_design_demo.category.return_reson.select
+namespace UI_design_demo.category.return_reson.create
 {
-    partial class edit
+    partial class create
     {
         /// <summary>
         /// Required designer variable.
@@ -43,7 +43,7 @@ namespace UI_design_demo.category.return_reson.select
             // 
             // kryptonButton10
             // 
-            this.kryptonButton10.Location = new System.Drawing.Point(832, 151);
+            this.kryptonButton10.Location = new System.Drawing.Point(870, 188);
             this.kryptonButton10.Name = "kryptonButton10";
             this.kryptonButton10.Size = new System.Drawing.Size(145, 45);
             this.kryptonButton10.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
@@ -62,7 +62,7 @@ namespace UI_design_demo.category.return_reson.select
             // 
             // kryptonRichTextBox1
             // 
-            this.kryptonRichTextBox1.Location = new System.Drawing.Point(150, 335);
+            this.kryptonRichTextBox1.Location = new System.Drawing.Point(188, 372);
             this.kryptonRichTextBox1.Name = "kryptonRichTextBox1";
             this.kryptonRichTextBox1.Size = new System.Drawing.Size(518, 114);
             this.kryptonRichTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -74,7 +74,7 @@ namespace UI_design_demo.category.return_reson.select
             // 
             // kryptonLabel7
             // 
-            this.kryptonLabel7.Location = new System.Drawing.Point(61, 335);
+            this.kryptonLabel7.Location = new System.Drawing.Point(99, 372);
             this.kryptonLabel7.Name = "kryptonLabel7";
             this.kryptonLabel7.Size = new System.Drawing.Size(83, 27);
             this.kryptonLabel7.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
@@ -84,7 +84,7 @@ namespace UI_design_demo.category.return_reson.select
             // 
             // kryptonTextBox1
             // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(150, 274);
+            this.kryptonTextBox1.Location = new System.Drawing.Point(188, 311);
             this.kryptonTextBox1.Name = "kryptonTextBox1";
             this.kryptonTextBox1.ReadOnly = true;
             this.kryptonTextBox1.Size = new System.Drawing.Size(150, 28);
@@ -101,7 +101,7 @@ namespace UI_design_demo.category.return_reson.select
             // 
             // kryptonLabel5
             // 
-            this.kryptonLabel5.Location = new System.Drawing.Point(76, 274);
+            this.kryptonLabel5.Location = new System.Drawing.Point(114, 311);
             this.kryptonLabel5.Name = "kryptonLabel5";
             this.kryptonLabel5.Size = new System.Drawing.Size(68, 27);
             this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
@@ -111,7 +111,7 @@ namespace UI_design_demo.category.return_reson.select
             // 
             // kryptonTextBox3
             // 
-            this.kryptonTextBox3.Location = new System.Drawing.Point(487, 218);
+            this.kryptonTextBox3.Location = new System.Drawing.Point(525, 255);
             this.kryptonTextBox3.Name = "kryptonTextBox3";
             this.kryptonTextBox3.ReadOnly = true;
             this.kryptonTextBox3.Size = new System.Drawing.Size(150, 28);
@@ -129,7 +129,7 @@ namespace UI_design_demo.category.return_reson.select
             // 
             // kryptonLabel4
             // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(364, 219);
+            this.kryptonLabel4.Location = new System.Drawing.Point(402, 256);
             this.kryptonLabel4.Name = "kryptonLabel4";
             this.kryptonLabel4.Size = new System.Drawing.Size(117, 27);
             this.kryptonLabel4.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
@@ -139,7 +139,7 @@ namespace UI_design_demo.category.return_reson.select
             // 
             // kryptonTextBox2
             // 
-            this.kryptonTextBox2.Location = new System.Drawing.Point(150, 219);
+            this.kryptonTextBox2.Location = new System.Drawing.Point(188, 256);
             this.kryptonTextBox2.Name = "kryptonTextBox2";
             this.kryptonTextBox2.ReadOnly = true;
             this.kryptonTextBox2.Size = new System.Drawing.Size(150, 28);
@@ -156,7 +156,7 @@ namespace UI_design_demo.category.return_reson.select
             // 
             // kryptonLabel6
             // 
-            this.kryptonLabel6.Location = new System.Drawing.Point(103, 219);
+            this.kryptonLabel6.Location = new System.Drawing.Point(141, 256);
             this.kryptonLabel6.Name = "kryptonLabel6";
             this.kryptonLabel6.Size = new System.Drawing.Size(41, 27);
             this.kryptonLabel6.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
@@ -169,17 +169,17 @@ namespace UI_design_demo.category.return_reson.select
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(75, 151);
+            this.label1.Location = new System.Drawing.Point(113, 188);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 34);
+            this.label1.Size = new System.Drawing.Size(71, 34);
             this.label1.TabIndex = 147;
-            this.label1.Text = "Edit";
+            this.label1.Text = "New";
             // 
-            // edit
+            // create
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1039, 600);
+            this.ClientSize = new System.Drawing.Size(1115, 675);
             this.Controls.Add(this.kryptonButton10);
             this.Controls.Add(this.kryptonRichTextBox1);
             this.Controls.Add(this.kryptonLabel7);
@@ -190,8 +190,8 @@ namespace UI_design_demo.category.return_reson.select
             this.Controls.Add(this.kryptonTextBox2);
             this.Controls.Add(this.kryptonLabel6);
             this.Controls.Add(this.label1);
-            this.Name = "edit";
-            this.Text = "edit";
+            this.Name = "create";
+            this.Text = "create";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo
+namespace UI_design_demo.category.return_reson.create
 {
-    public partial class all_use : Form
+    public partial class create : Form
     {
-        public all_use()
+        public create()
         {
             InitializeComponent();
-        }
-
-        private void all_use_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

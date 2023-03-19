@@ -48,7 +48,7 @@ namespace UI_design_demo
             // 
             // kryptonButton9
             // 
-            this.kryptonButton9.Location = new System.Drawing.Point(284, 34);
+            this.kryptonButton9.Location = new System.Drawing.Point(269, 34);
             this.kryptonButton9.Name = "kryptonButton9";
             this.kryptonButton9.Size = new System.Drawing.Size(117, 50);
             this.kryptonButton9.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
@@ -99,7 +99,7 @@ namespace UI_design_demo
             // 
             // kryptonButton3
             // 
-            this.kryptonButton3.Location = new System.Drawing.Point(284, 101);
+            this.kryptonButton3.Location = new System.Drawing.Point(269, 101);
             this.kryptonButton3.Name = "kryptonButton3";
             this.kryptonButton3.Size = new System.Drawing.Size(117, 50);
             this.kryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
@@ -258,6 +258,7 @@ namespace UI_design_demo
             this.Controls.Add(this.kryptonButton9);
             this.Name = "all_use";
             this.Text = "all_use";
+            this.Load += new System.EventHandler(this.all_use_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).EndInit();
             this.kryptonGroupBox1.ResumeLayout(false);

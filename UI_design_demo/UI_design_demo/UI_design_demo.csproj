@@ -175,6 +175,12 @@
     <Compile Include="category\produce\search\edit.Designer.cs">
       <DependentUpon>edit.cs</DependentUpon>
     </Compile>
+    <Compile Include="category\return_reson\create\create.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\return_reson\create\create.Designer.cs">
+      <DependentUpon>create.cs</DependentUpon>
+    </Compile>
     <Compile Include="category\return_reson\select\check.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -422,6 +428,15 @@
     <EmbeddedResource Include="category\produce\search\edit.resx">
       <DependentUpon>edit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="category\return_reson\create\create.resx">
+      <DependentUpon>create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\return_reson\select\check.resx">
+      <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\return_reson\select\edit.resx">
+      <DependentUpon>edit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="category\supplier\create\create.resx">
       <DependentUpon>create.cs</DependentUpon>
     </EmbeddedResource>
@@ -570,7 +585,6 @@
     <None Include="Resources\icons8-purchase-order-40 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="category\return_reson\create\" />
     <Folder Include="delivery\create_schedule\" />
     <Folder Include="Purchase\PO\create\" />
     <Folder Include="Purchase\set rules\" />
