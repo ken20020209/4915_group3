@@ -91,6 +91,12 @@
     <Compile Include="Accounting\update_PO.Designer.cs">
       <DependentUpon>update_PO.cs</DependentUpon>
     </Compile>
+    <Compile Include="all_use.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="all_use.Designer.cs">
+      <DependentUpon>all_use.cs</DependentUpon>
+    </Compile>
     <Compile Include="category\brand\search\check.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,12 @@
     </Compile>
     <Compile Include="category\Category.Designer.cs">
       <DependentUpon>Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\category\create\create.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\category\create\create.Designer.cs">
+      <DependentUpon>create.cs</DependentUpon>
     </Compile>
     <Compile Include="category\category\select\check.cs">
       <SubType>Form</SubType>
@@ -362,14 +374,23 @@
     <Compile Include="warehouse\search_stock\update.Designer.cs">
       <DependentUpon>update.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="all_use.resx">
+      <DependentUpon>all_use.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="category\Category.resx">
       <DependentUpon>Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\category\create\create.resx">
+      <DependentUpon>create.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\category\select\check.resx">
       <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\category\select\edit.resx">
       <DependentUpon>edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\produce\search\check.resx">
+      <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="General\login\Forget.resx">
       <DependentUpon>Forget.cs</DependentUpon>
@@ -511,7 +532,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="category\brand\create\" />
-    <Folder Include="category\category\create\" />
     <Folder Include="category\produce\create\" />
     <Folder Include="category\return_reson\create\" />
     <Folder Include="category\supplier\create\" />
