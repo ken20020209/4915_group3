@@ -1,7 +1,7 @@
 ﻿
-namespace UI_design_demo.category.produce.search
+namespace UI_design_demo.category.produce.create
 {
-    partial class edit
+    partial class create
     {
         /// <summary>
         /// Required designer variable.
@@ -68,7 +68,7 @@ namespace UI_design_demo.category.produce.search
             // 
             // kryptonGroupBox3
             // 
-            this.kryptonGroupBox3.Location = new System.Drawing.Point(530, 113);
+            this.kryptonGroupBox3.Location = new System.Drawing.Point(517, 129);
             this.kryptonGroupBox3.Name = "kryptonGroupBox3";
             // 
             // kryptonGroupBox3.Panel
@@ -147,7 +147,7 @@ namespace UI_design_demo.category.produce.search
             // 
             // kryptonGroupBox2
             // 
-            this.kryptonGroupBox2.Location = new System.Drawing.Point(163, 310);
+            this.kryptonGroupBox2.Location = new System.Drawing.Point(150, 326);
             this.kryptonGroupBox2.Name = "kryptonGroupBox2";
             // 
             // kryptonGroupBox2.Panel
@@ -308,7 +308,7 @@ namespace UI_design_demo.category.produce.search
             // 
             // kryptonButton10
             // 
-            this.kryptonButton10.Location = new System.Drawing.Point(871, 48);
+            this.kryptonButton10.Location = new System.Drawing.Point(858, 64);
             this.kryptonButton10.Name = "kryptonButton10";
             this.kryptonButton10.Size = new System.Drawing.Size(145, 45);
             this.kryptonButton10.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
@@ -327,7 +327,7 @@ namespace UI_design_demo.category.produce.search
             // 
             // kryptonGroupBox1
             // 
-            this.kryptonGroupBox1.Location = new System.Drawing.Point(163, 113);
+            this.kryptonGroupBox1.Location = new System.Drawing.Point(150, 129);
             this.kryptonGroupBox1.Name = "kryptonGroupBox1";
             // 
             // kryptonGroupBox1.Panel
@@ -411,24 +411,24 @@ namespace UI_design_demo.category.produce.search
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(130, 48);
+            this.label1.Location = new System.Drawing.Point(117, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 34);
+            this.label1.Size = new System.Drawing.Size(71, 34);
             this.label1.TabIndex = 209;
-            this.label1.Text = "Edit";
+            this.label1.Text = "New";
             // 
-            // edit
+            // create
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1146, 617);
+            this.ClientSize = new System.Drawing.Size(1121, 648);
             this.Controls.Add(this.kryptonGroupBox3);
             this.Controls.Add(this.kryptonGroupBox2);
             this.Controls.Add(this.kryptonButton10);
             this.Controls.Add(this.kryptonGroupBox1);
             this.Controls.Add(this.label1);
-            this.Name = "edit";
-            this.Text = "edit";
+            this.Name = "create";
+            this.Text = "create";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox3.Panel)).EndInit();
             this.kryptonGroupBox3.Panel.ResumeLayout(false);
             this.kryptonGroupBox3.Panel.PerformLayout();

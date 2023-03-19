@@ -1,7 +1,7 @@
 ﻿
-namespace UI_design_demo.category.supplier.search
+namespace UI_design_demo.category.supplier.create
 {
-    partial class edit
+    partial class create
     {
         /// <summary>
         /// Required designer variable.
@@ -66,7 +66,7 @@ namespace UI_design_demo.category.supplier.search
             this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel6 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox4.Panel)).BeginInit();
             this.kryptonGroupBox4.Panel.SuspendLayout();
@@ -87,7 +87,7 @@ namespace UI_design_demo.category.supplier.search
             // 
             // kryptonButton10
             // 
-            this.kryptonButton10.Location = new System.Drawing.Point(859, 59);
+            this.kryptonButton10.Location = new System.Drawing.Point(891, 57);
             this.kryptonButton10.Name = "kryptonButton10";
             this.kryptonButton10.Size = new System.Drawing.Size(145, 45);
             this.kryptonButton10.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
@@ -106,7 +106,7 @@ namespace UI_design_demo.category.supplier.search
             // 
             // kryptonGroupBox4
             // 
-            this.kryptonGroupBox4.Location = new System.Drawing.Point(652, 349);
+            this.kryptonGroupBox4.Location = new System.Drawing.Point(684, 347);
             this.kryptonGroupBox4.Name = "kryptonGroupBox4";
             // 
             // kryptonGroupBox4.Panel
@@ -243,7 +243,7 @@ namespace UI_design_demo.category.supplier.search
             // 
             // kryptonGroupBox3
             // 
-            this.kryptonGroupBox3.Location = new System.Drawing.Point(119, 398);
+            this.kryptonGroupBox3.Location = new System.Drawing.Point(151, 396);
             this.kryptonGroupBox3.Name = "kryptonGroupBox3";
             // 
             // kryptonGroupBox3.Panel
@@ -406,7 +406,7 @@ namespace UI_design_demo.category.supplier.search
             // 
             // kryptonGroupBox2
             // 
-            this.kryptonGroupBox2.Location = new System.Drawing.Point(119, 118);
+            this.kryptonGroupBox2.Location = new System.Drawing.Point(151, 116);
             this.kryptonGroupBox2.Name = "kryptonGroupBox2";
             // 
             // kryptonGroupBox2.Panel
@@ -567,7 +567,7 @@ namespace UI_design_demo.category.supplier.search
             // 
             // kryptonGroupBox1
             // 
-            this.kryptonGroupBox1.Location = new System.Drawing.Point(652, 118);
+            this.kryptonGroupBox1.Location = new System.Drawing.Point(684, 116);
             this.kryptonGroupBox1.Name = "kryptonGroupBox1";
             // 
             // kryptonGroupBox1.Panel
@@ -646,30 +646,30 @@ namespace UI_design_demo.category.supplier.search
             this.kryptonLabel6.TabIndex = 128;
             this.kryptonLabel6.Values.Text = "Create Date:";
             // 
-            // label1
+            // label2
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(89, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 34);
-            this.label1.TabIndex = 211;
-            this.label1.Text = "Edit";
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(145, 68);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(71, 34);
+            this.label2.TabIndex = 217;
+            this.label2.Text = "New";
             // 
-            // edit
+            // create
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1093, 658);
+            this.ClientSize = new System.Drawing.Size(1157, 654);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.kryptonButton10);
             this.Controls.Add(this.kryptonGroupBox4);
             this.Controls.Add(this.kryptonGroupBox3);
             this.Controls.Add(this.kryptonGroupBox2);
             this.Controls.Add(this.kryptonGroupBox1);
-            this.Controls.Add(this.label1);
-            this.Name = "edit";
-            this.Text = "edit";
+            this.Name = "create";
+            this.Text = "create";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox4.Panel)).EndInit();
             this.kryptonGroupBox4.Panel.ResumeLayout(false);
             this.kryptonGroupBox4.Panel.PerformLayout();
@@ -734,6 +734,6 @@ namespace UI_design_demo.category.supplier.search
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel4;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel6;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
