@@ -97,6 +97,12 @@
     <Compile Include="Accounting\process\update_PO.Designer.cs">
       <DependentUpon>update_PO.cs</DependentUpon>
     </Compile>
+    <Compile Include="Accounting\report\review.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\report\review.Designer.cs">
+      <DependentUpon>review.cs</DependentUpon>
+    </Compile>
     <Compile Include="all_use.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -413,8 +419,14 @@
     <EmbeddedResource Include="Accounting\process\compare_note.resx">
       <DependentUpon>compare_note.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\process\payment.resx">
+      <DependentUpon>payment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Accounting\process\search.resx">
       <DependentUpon>search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\report\review.resx">
+      <DependentUpon>review.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="all_use.resx">
       <DependentUpon>all_use.cs</DependentUpon>
@@ -626,6 +638,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-graph-report-40 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mastercard-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-visa-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-american-express-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paypal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-90--50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-90--50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-10--50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\螢幕擷取畫面 2023-03-20 192547.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-medal-first-place-40.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -83,6 +83,46 @@ namespace UI_design_demo.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_10__50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-10--50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_90__50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-90--50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_90__50__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-90--50 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_american_express_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-american-express-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_circular_arrow_pointing_to_left_40__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-circular-arrow-pointing-to-left-40 (1)", resourceCulture);
@@ -156,6 +196,26 @@ namespace UI_design_demo.Properties {
         internal static System.Drawing.Bitmap icons8_logout_40__2_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-logout-40 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_mastercard_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-mastercard-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_medal_first_place_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-medal-first-place-40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -353,6 +413,26 @@ namespace UI_design_demo.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_visa_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-visa-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap paypal {
+            get {
+                object obj = ResourceManager.GetObject("paypal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap 螢幕擷取畫面_2023_03_15_235638 {
             get {
                 object obj = ResourceManager.GetObject("螢幕擷取畫面 2023-03-15 235638", resourceCulture);
@@ -366,6 +446,16 @@ namespace UI_design_demo.Properties {
         internal static System.Drawing.Bitmap 螢幕擷取畫面_2023_03_15_235818 {
             get {
                 object obj = ResourceManager.GetObject("螢幕擷取畫面 2023-03-15 235818", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 螢幕擷取畫面_2023_03_20_192547 {
+            get {
+                object obj = ResourceManager.GetObject("螢幕擷取畫面 2023-03-20 192547", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
