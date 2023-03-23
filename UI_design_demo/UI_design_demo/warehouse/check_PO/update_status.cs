@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.warehouse.check_despatch
+namespace UI_design_demo.warehouse.check_PO
 {
-    public partial class create : Form
+    public partial class update_status : Form
     {
-        public create()
+        public update_status()
         {
             InitializeComponent();
         }

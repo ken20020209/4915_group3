@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ComponentFactory.Krypton.Toolkit;
 
-namespace UI_design_demo.warehouse.check_despatch
+namespace UI_design_demo.warehouse
 {
-    public partial class update : Form
+    public partial class warehouse : KryptonForm
     {
-        public update()
+        public warehouse()
         {
             InitializeComponent();
+        }
+
+        private void warehouse_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

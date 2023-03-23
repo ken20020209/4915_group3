@@ -374,17 +374,17 @@
     <Compile Include="Restaurant\stock\update.Designer.cs">
       <DependentUpon>update.cs</DependentUpon>
     </Compile>
-    <Compile Include="warehouse\check_despatch\create.cs">
+    <Compile Include="warehouse\check_PO\review.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="warehouse\check_despatch\create.Designer.cs">
-      <DependentUpon>create.cs</DependentUpon>
+    <Compile Include="warehouse\check_PO\review.Designer.cs">
+      <DependentUpon>review.cs</DependentUpon>
     </Compile>
-    <Compile Include="warehouse\check_despatch\update.cs">
+    <Compile Include="warehouse\check_PO\update_status.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="warehouse\check_despatch\update.Designer.cs">
-      <DependentUpon>update.cs</DependentUpon>
+    <Compile Include="warehouse\check_PO\update_status.Designer.cs">
+      <DependentUpon>update_status.cs</DependentUpon>
     </Compile>
     <Compile Include="warehouse\delivery_note\sign.cs">
       <SubType>Form</SubType>
@@ -398,17 +398,35 @@
     <Compile Include="warehouse\delivery_note\update.Designer.cs">
       <DependentUpon>update.cs</DependentUpon>
     </Compile>
+    <Compile Include="warehouse\picking_list\check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="warehouse\picking_list\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\picking_list\detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="warehouse\picking_list\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
+    </Compile>
     <Compile Include="warehouse\search_stock\check.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="warehouse\search_stock\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>
     </Compile>
-    <Compile Include="warehouse\search_stock\update.cs">
+    <Compile Include="warehouse\search_stock\item_info.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="warehouse\search_stock\update.Designer.cs">
-      <DependentUpon>update.cs</DependentUpon>
+    <Compile Include="warehouse\search_stock\item_info.Designer.cs">
+      <DependentUpon>item_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\warehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="warehouse\warehouse.Designer.cs">
+      <DependentUpon>warehouse.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Accounting\accounting.resx">
       <DependentUpon>accounting.cs</DependentUpon>
@@ -502,6 +520,9 @@
     <EmbeddedResource Include="Restaurant\delivery note\check.resx">
       <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\delivery note\sign.resx">
+      <DependentUpon>sign.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\request order\create\check_order.resx">
       <DependentUpon>check_order.cs</DependentUpon>
     </EmbeddedResource>
@@ -522,6 +543,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\stock\check.resx">
       <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\check_PO\review.resx">
+      <DependentUpon>review.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\picking_list\check.resx">
+      <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\picking_list\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\search_stock\check.resx">
+      <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\search_stock\item_info.resx">
+      <DependentUpon>item_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\warehouse.resx">
+      <DependentUpon>warehouse.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -619,7 +658,6 @@
     <Folder Include="Purchase\PO\create\" />
     <Folder Include="Purchase\set rules\" />
     <Folder Include="Resources\NewFolder1\" />
-    <Folder Include="warehouse\check_PPO\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-diversity-40.png" />
@@ -665,6 +703,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-medal-first-place-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bulleted-list-40.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

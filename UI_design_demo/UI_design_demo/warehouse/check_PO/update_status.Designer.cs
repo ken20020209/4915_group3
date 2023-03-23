@@ -1,7 +1,7 @@
 ﻿
-namespace UI_design_demo.warehouse.check_despatch
+namespace UI_design_demo.warehouse.check_PO
 {
-    partial class update
+    partial class update_status
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@ namespace UI_design_demo.warehouse.check_despatch
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "update";
+            this.Text = "update_status";
         }
 
         #endregion
