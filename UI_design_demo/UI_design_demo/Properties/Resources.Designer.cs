@@ -343,6 +343,16 @@ namespace UI_design_demo.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_request_service_40__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-request-service-40 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_sell_40 {
             get {
                 object obj = ResourceManager.GetObject("icons8-sell-40", resourceCulture);

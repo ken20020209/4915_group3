@@ -722,5 +722,8 @@
   <ItemGroup>
     <None Include="Resources\icons8-bulleted-list-40.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-request-service-40 %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
