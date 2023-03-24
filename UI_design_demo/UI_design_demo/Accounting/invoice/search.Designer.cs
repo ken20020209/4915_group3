@@ -29,6 +29,7 @@ namespace UI_design_demo.Accounting.process
         /// </summary>
         private void InitializeComponent()
         {
+            this.kryptonPanel4 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonGroup1 = new ComponentFactory.Krypton.Toolkit.KryptonGroup();
             this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel5 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -42,6 +43,8 @@ namespace UI_design_demo.Accounting.process
             this.kryptonLabel27 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
+            this.kryptonPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).BeginInit();
             this.kryptonGroup1.Panel.SuspendLayout();
@@ -57,9 +60,25 @@ namespace UI_design_demo.Accounting.process
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
+            // kryptonPanel4
+            // 
+            this.kryptonPanel4.Controls.Add(this.kryptonGroup1);
+            this.kryptonPanel4.Controls.Add(this.pictureBox7);
+            this.kryptonPanel4.Controls.Add(this.label3);
+            this.kryptonPanel4.Controls.Add(this.kryptonComboBox2);
+            this.kryptonPanel4.Controls.Add(this.kryptonTextBox16);
+            this.kryptonPanel4.Controls.Add(this.kryptonGroup4);
+            this.kryptonPanel4.Controls.Add(this.pictureBox5);
+            this.kryptonPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel4.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel4.Name = "kryptonPanel4";
+            this.kryptonPanel4.Size = new System.Drawing.Size(1147, 625);
+            this.kryptonPanel4.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.kryptonPanel4.TabIndex = 54;
+            // 
             // kryptonGroup1
             // 
-            this.kryptonGroup1.Location = new System.Drawing.Point(442, 58);
+            this.kryptonGroup1.Location = new System.Drawing.Point(335, 31);
             this.kryptonGroup1.Name = "kryptonGroup1";
             // 
             // kryptonGroup1.Panel
@@ -74,7 +93,7 @@ namespace UI_design_demo.Accounting.process
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonGroup1.StateCommon.Border.Rounding = 25;
-            this.kryptonGroup1.TabIndex = 166;
+            this.kryptonGroup1.TabIndex = 173;
             // 
             // kryptonLabel4
             // 
@@ -110,11 +129,11 @@ namespace UI_design_demo.Accounting.process
             // pictureBox7
             // 
             this.pictureBox7.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
-            this.pictureBox7.Location = new System.Drawing.Point(644, 516);
+            this.pictureBox7.Location = new System.Drawing.Point(537, 489);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(368, 50);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 165;
+            this.pictureBox7.TabIndex = 172;
             this.pictureBox7.TabStop = false;
             // 
             // label3
@@ -122,16 +141,16 @@ namespace UI_design_demo.Accounting.process
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.label3.Location = new System.Drawing.Point(752, 247);
+            this.label3.Location = new System.Drawing.Point(645, 220);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 22);
-            this.label3.TabIndex = 164;
+            this.label3.TabIndex = 171;
             this.label3.Text = "Filter:";
             // 
             // kryptonComboBox2
             // 
             this.kryptonComboBox2.DropDownWidth = 153;
-            this.kryptonComboBox2.Location = new System.Drawing.Point(823, 234);
+            this.kryptonComboBox2.Location = new System.Drawing.Point(716, 207);
             this.kryptonComboBox2.Name = "kryptonComboBox2";
             this.kryptonComboBox2.Size = new System.Drawing.Size(169, 44);
             this.kryptonComboBox2.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
@@ -145,12 +164,12 @@ namespace UI_design_demo.Accounting.process
             this.kryptonComboBox2.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonComboBox2.StateCommon.DropBack.Color1 = System.Drawing.Color.White;
             this.kryptonComboBox2.StateCommon.DropBack.Color2 = System.Drawing.Color.White;
-            this.kryptonComboBox2.TabIndex = 163;
+            this.kryptonComboBox2.TabIndex = 170;
             this.kryptonComboBox2.Text = "status";
             // 
             // kryptonTextBox16
             // 
-            this.kryptonTextBox16.Location = new System.Drawing.Point(135, 237);
+            this.kryptonTextBox16.Location = new System.Drawing.Point(28, 210);
             this.kryptonTextBox16.Name = "kryptonTextBox16";
             this.kryptonTextBox16.Size = new System.Drawing.Size(324, 41);
             this.kryptonTextBox16.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
@@ -165,12 +184,12 @@ namespace UI_design_demo.Accounting.process
             this.kryptonTextBox16.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
             this.kryptonTextBox16.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox16.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.kryptonTextBox16.TabIndex = 162;
+            this.kryptonTextBox16.TabIndex = 169;
             this.kryptonTextBox16.Text = "ID                                                 🔍 ";
             // 
             // kryptonGroup4
             // 
-            this.kryptonGroup4.Location = new System.Drawing.Point(140, 58);
+            this.kryptonGroup4.Location = new System.Drawing.Point(33, 31);
             this.kryptonGroup4.Name = "kryptonGroup4";
             // 
             // kryptonGroup4.Panel
@@ -185,7 +204,7 @@ namespace UI_design_demo.Accounting.process
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonGroup4.StateCommon.Border.Rounding = 25;
-            this.kryptonGroup4.TabIndex = 161;
+            this.kryptonGroup4.TabIndex = 168;
             // 
             // kryptonLabel26
             // 
@@ -221,10 +240,10 @@ namespace UI_design_demo.Accounting.process
             // pictureBox5
             // 
             this.pictureBox5.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
-            this.pictureBox5.Location = new System.Drawing.Point(152, 316);
+            this.pictureBox5.Location = new System.Drawing.Point(45, 289);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(828, 170);
-            this.pictureBox5.TabIndex = 160;
+            this.pictureBox5.TabIndex = 167;
             this.pictureBox5.TabStop = false;
             // 
             // search
@@ -232,15 +251,12 @@ namespace UI_design_demo.Accounting.process
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1147, 625);
-            this.Controls.Add(this.kryptonGroup1);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.kryptonComboBox2);
-            this.Controls.Add(this.kryptonTextBox16);
-            this.Controls.Add(this.kryptonGroup4);
-            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.kryptonPanel4);
             this.Name = "search";
             this.Text = "search";
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
+            this.kryptonPanel4.ResumeLayout(false);
+            this.kryptonPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).EndInit();
             this.kryptonGroup1.Panel.ResumeLayout(false);
             this.kryptonGroup1.Panel.PerformLayout();
@@ -257,12 +273,12 @@ namespace UI_design_demo.Accounting.process
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel4;
         private ComponentFactory.Krypton.Toolkit.KryptonGroup kryptonGroup1;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel4;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel5;

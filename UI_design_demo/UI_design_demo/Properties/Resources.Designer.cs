@@ -383,9 +383,29 @@ namespace UI_design_demo.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_process_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-process-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_process_40 {
             get {
                 object obj = ResourceManager.GetObject("icons8-process-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_process_40__2_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-process-40 (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

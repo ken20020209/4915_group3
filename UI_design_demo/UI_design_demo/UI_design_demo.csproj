@@ -67,35 +67,59 @@
     <Compile Include="Accounting\accounting.Designer.cs">
       <DependentUpon>accounting.cs</DependentUpon>
     </Compile>
-    <Compile Include="Accounting\process\check_PO.cs">
+    <Compile Include="Accounting\invoice\detail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Accounting\process\check_PO.Designer.cs">
+    <Compile Include="Accounting\invoice\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\invoice\pay\check_PO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\invoice\pay\check_PO.Designer.cs">
       <DependentUpon>check_PO.cs</DependentUpon>
     </Compile>
-    <Compile Include="Accounting\process\compare_note.cs">
+    <Compile Include="Accounting\invoice\pay\detail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Accounting\process\compare_note.Designer.cs">
+    <Compile Include="Accounting\invoice\pay\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\invoice\process\compare_note.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\invoice\process\compare_note.Designer.cs">
       <DependentUpon>compare_note.cs</DependentUpon>
     </Compile>
-    <Compile Include="Accounting\process\payment.cs">
+    <Compile Include="Accounting\invoice\pay\payment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Accounting\process\payment.Designer.cs">
+    <Compile Include="Accounting\invoice\pay\payment.Designer.cs">
       <DependentUpon>payment.cs</DependentUpon>
     </Compile>
-    <Compile Include="Accounting\process\search.cs">
+    <Compile Include="Accounting\invoice\process\confrim.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Accounting\process\search.Designer.cs">
+    <Compile Include="Accounting\invoice\process\confrim.Designer.cs">
+      <DependentUpon>confrim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\invoice\process\success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\invoice\process\success.Designer.cs">
+      <DependentUpon>success.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\invoice\search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\invoice\search.Designer.cs">
       <DependentUpon>search.cs</DependentUpon>
     </Compile>
-    <Compile Include="Accounting\process\update_PO.cs">
+    <Compile Include="Accounting\invoice\pay\playment_success.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Accounting\process\update_PO.Designer.cs">
-      <DependentUpon>update_PO.cs</DependentUpon>
+    <Compile Include="Accounting\invoice\pay\playment_success.Designer.cs">
+      <DependentUpon>playment_success.cs</DependentUpon>
     </Compile>
     <Compile Include="Accounting\report\review.cs">
       <SubType>Form</SubType>
@@ -479,17 +503,32 @@
     <EmbeddedResource Include="Accounting\accounting.resx">
       <DependentUpon>accounting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Accounting\process\check_PO.resx">
+    <EmbeddedResource Include="Accounting\invoice\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\invoice\pay\check_PO.resx">
       <DependentUpon>check_PO.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Accounting\process\compare_note.resx">
+    <EmbeddedResource Include="Accounting\invoice\pay\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\invoice\process\compare_note.resx">
       <DependentUpon>compare_note.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Accounting\process\payment.resx">
+    <EmbeddedResource Include="Accounting\invoice\pay\payment.resx">
       <DependentUpon>payment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Accounting\process\search.resx">
+    <EmbeddedResource Include="Accounting\invoice\process\confrim.resx">
+      <DependentUpon>confrim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\invoice\process\success.resx">
+      <DependentUpon>success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\invoice\search.resx">
       <DependentUpon>search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\invoice\pay\playment_success.resx">
+      <DependentUpon>playment_success.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Accounting\report\review.resx">
       <DependentUpon>review.cs</DependentUpon>
@@ -826,6 +865,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-process-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-process-40 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-process-100.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

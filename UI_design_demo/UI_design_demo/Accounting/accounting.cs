@@ -47,5 +47,15 @@ namespace UI_design_demo.Accounting
         {
 
         }
+
+        private void kryptonBorderEdge6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void kryptonPanel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
