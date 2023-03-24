@@ -821,5 +821,11 @@
   <ItemGroup>
     <None Include="Resources\icons8-sign-up-100.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-get-cash-40 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-process-40.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

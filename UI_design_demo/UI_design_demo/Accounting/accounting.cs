@@ -42,5 +42,10 @@ namespace UI_design_demo.Accounting
         {
 
         }
+
+        private void kryptonLabel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

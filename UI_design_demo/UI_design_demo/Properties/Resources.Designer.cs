@@ -183,6 +183,16 @@ namespace UI_design_demo.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_get_cash_40__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-get-cash-40 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_graph_report_40__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-graph-report-40 (1)", resourceCulture);
@@ -366,6 +376,16 @@ namespace UI_design_demo.Properties {
         internal static System.Drawing.Bitmap icons8_place_marker_40__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-place-marker-40 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_process_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-process-40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
