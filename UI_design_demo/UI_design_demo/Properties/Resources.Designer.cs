@@ -173,6 +173,16 @@ namespace UI_design_demo.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_done_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-done-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_graph_report_40__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-graph-report-40 (1)", resourceCulture);
@@ -193,6 +203,16 @@ namespace UI_design_demo.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_hut_40__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-hut-40 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_logout_40 {
             get {
                 object obj = ResourceManager.GetObject("icons8-logout-40", resourceCulture);
@@ -206,6 +226,16 @@ namespace UI_design_demo.Properties {
         internal static System.Drawing.Bitmap icons8_logout_40__2_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-logout-40 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_map_pinpoint_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-map-pinpoint-40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -333,6 +363,16 @@ namespace UI_design_demo.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_place_marker_40__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-place-marker-40 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_pull_request_40__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-pull-request-40 (1)", resourceCulture);
@@ -436,6 +476,26 @@ namespace UI_design_demo.Properties {
         internal static System.Drawing.Bitmap icons8_sign_document_40 {
             get {
                 object obj = ResourceManager.GetObject("icons8-sign-document-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_sign_up_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-sign-up-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_sign_up_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-sign-up-40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

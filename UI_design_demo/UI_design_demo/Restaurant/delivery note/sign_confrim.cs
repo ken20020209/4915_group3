@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace UI_design_demo.Restaurant.delivery_note
 {
-    public partial class check : Form
+    public partial class sign_confrim : Form
     {
-        public check()
+        public sign_confrim()
         {
             InitializeComponent();
-        }
-
-        private void kryptonGroupBox5_Panel_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

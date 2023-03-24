@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UI_design_demo.Restaurant.delivery_note
 {
-    public partial class sign : Form
+    public partial class search : Form
     {
-        public sign()
+        public search()
         {
             InitializeComponent();
         }

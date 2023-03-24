@@ -314,17 +314,29 @@
     <Compile Include="Purchase\request order\select_BPA.Designer.cs">
       <DependentUpon>select_BPA.cs</DependentUpon>
     </Compile>
+    <Compile Include="Restaurant\delivery note\search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\delivery note\search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
+    </Compile>
     <Compile Include="Restaurant\delivery note\check.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Restaurant\delivery note\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>
     </Compile>
-    <Compile Include="Restaurant\delivery note\sign.cs">
+    <Compile Include="Restaurant\delivery note\sign_confrim.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Restaurant\delivery note\sign.Designer.cs">
-      <DependentUpon>sign.cs</DependentUpon>
+    <Compile Include="Restaurant\delivery note\sign_confrim.Designer.cs">
+      <DependentUpon>sign_confrim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\delivery note\sign_success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\delivery note\sign_success.Designer.cs">
+      <DependentUpon>sign_success.cs</DependentUpon>
     </Compile>
     <Compile Include="Restaurant\request order\create\check_order.cs">
       <SubType>Form</SubType>
@@ -556,11 +568,17 @@
     <EmbeddedResource Include="Purchase\request order\select_BPA.resx">
       <DependentUpon>select_BPA.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\delivery note\search.resx">
+      <DependentUpon>search.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\delivery note\check.resx">
       <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Restaurant\delivery note\sign.resx">
-      <DependentUpon>sign.cs</DependentUpon>
+    <EmbeddedResource Include="Restaurant\delivery note\sign_confrim.resx">
+      <DependentUpon>sign_confrim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\delivery note\sign_success.resx">
+      <DependentUpon>sign_success.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\request order\create\check_order.resx">
       <DependentUpon>check_order.cs</DependentUpon>
@@ -772,6 +790,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-remove-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-map-pinpoint-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-done-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hut-40 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-place-marker-40 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sign-up-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sign-up-100.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
