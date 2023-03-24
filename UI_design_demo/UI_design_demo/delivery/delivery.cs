@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ComponentFactory.Krypton.Toolkit;
 
-namespace UI_design_demo.delivery.search_schedule
+namespace UI_design_demo.delivery
 {
-    public partial class check : Form
+    public partial class delivery : KryptonForm
     {
-        public check()
+        public delivery()
         {
             InitializeComponent();
+        }
+
+        private void delivery_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
