@@ -9,16 +9,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
 
-namespace UI_design_demo.Restaurant.request_order
+namespace UI_design_demo.Restaurant.request_order.create
 {
-    public partial class delete : KryptonForm
+    public partial class create_success : KryptonForm
     {
-        public delete()
+        public create_success()
         {
             InitializeComponent();
         }
 
-        private void delete_Load(object sender, EventArgs e)
+        private void create_success_Load(object sender, EventArgs e)
         {
 
         }

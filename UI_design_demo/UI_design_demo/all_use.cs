@@ -21,5 +21,10 @@ namespace UI_design_demo
         {
 
         }
+
+        private void kryptonLabel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

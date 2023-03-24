@@ -48,5 +48,15 @@ namespace UI_design_demo
         {
 
         }
+
+        private void kryptonTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonTextBox13_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

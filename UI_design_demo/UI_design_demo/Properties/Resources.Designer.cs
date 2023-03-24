@@ -293,6 +293,26 @@ namespace UI_design_demo.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_ok {
+            get {
+                object obj = ResourceManager.GetObject("icons8-ok", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_ok_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-ok-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_order_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-order-64", resourceCulture);
@@ -336,6 +356,16 @@ namespace UI_design_demo.Properties {
         internal static System.Drawing.Bitmap icons8_purchase_order_40__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-purchase-order-40 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_remove_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-remove-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

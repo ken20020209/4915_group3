@@ -7,20 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ComponentFactory.Krypton.Toolkit;
 
-namespace UI_design_demo.Restaurant.request_order
+namespace UI_design_demo.Restaurant.request_order.search
 {
-    public partial class delete : KryptonForm
+    public partial class sumit_success : Form
     {
-        public delete()
+        public sumit_success()
         {
             InitializeComponent();
-        }
-
-        private void delete_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -338,6 +338,12 @@
     <Compile Include="Restaurant\request order\create\complete_detail.Designer.cs">
       <DependentUpon>complete_detail.cs</DependentUpon>
     </Compile>
+    <Compile Include="Restaurant\request order\create\create_success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\request order\create\create_success.Designer.cs">
+      <DependentUpon>create_success.cs</DependentUpon>
+    </Compile>
     <Compile Include="Restaurant\request order\create\select_item.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -356,11 +362,29 @@
     <Compile Include="Restaurant\request order\search\delete.Designer.cs">
       <DependentUpon>delete.cs</DependentUpon>
     </Compile>
+    <Compile Include="Restaurant\request order\search\delete_sucess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\request order\search\delete_sucess.Designer.cs">
+      <DependentUpon>delete_sucess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\request order\search\detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\request order\search\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Restaurant\request order\search\edit.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Restaurant\request order\search\edit.Designer.cs">
       <DependentUpon>edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\request order\search\sumit_success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\request order\search\sumit_success.Designer.cs">
+      <DependentUpon>sumit_success.cs</DependentUpon>
     </Compile>
     <Compile Include="Restaurant\restaurant.cs">
       <SubType>Form</SubType>
@@ -544,14 +568,29 @@
     <EmbeddedResource Include="Restaurant\request order\create\complete_detail.resx">
       <DependentUpon>complete_detail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\request order\create\create_success.resx">
+      <DependentUpon>create_success.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\request order\create\select_item.resx">
       <DependentUpon>select_item.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\request order\search\check.resx">
       <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\request order\search\delete.resx">
+      <DependentUpon>delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\request order\search\delete_sucess.resx">
+      <DependentUpon>delete_sucess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\request order\search\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\request order\search\edit.resx">
       <DependentUpon>edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\request order\search\sumit_success.resx">
+      <DependentUpon>sumit_success.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\restaurant.resx">
       <DependentUpon>restaurant.cs</DependentUpon>
@@ -724,6 +763,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-request-service-40 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ok.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ok-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-remove-100.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
