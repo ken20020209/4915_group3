@@ -186,7 +186,7 @@ namespace UI_design_demo
             this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
             this.kryptonTextBox1.TabIndex = 10;
-            this.kryptonTextBox1.Text = "user name / email";
+            this.kryptonTextBox1.Text = "user ID";
             // 
             // kryptonBorderEdge1
             // 
@@ -213,11 +213,11 @@ namespace UI_design_demo
             // 
             this.kryptonLabel4.Location = new System.Drawing.Point(603, 158);
             this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(103, 27);
+            this.kryptonLabel4.Size = new System.Drawing.Size(80, 27);
             this.kryptonLabel4.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel4.TabIndex = 16;
-            this.kryptonLabel4.Values.Text = "user name:";
+            this.kryptonLabel4.Values.Text = "user ID:";
             // 
             // kryptonLabel5
             // 
