@@ -1,7 +1,7 @@
 ﻿
 namespace UI_design_demo.Restaurant.stock
 {
-    partial class update
+    partial class detail
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace UI_design_demo.Restaurant.stock
         private void InitializeComponent()
         {
             this.kryptonPanel5 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonButton8 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonTextBox5 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel11 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonRichTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
@@ -53,7 +53,7 @@ namespace UI_design_demo.Restaurant.stock
             // 
             // kryptonPanel5
             // 
-            this.kryptonPanel5.Controls.Add(this.kryptonButton8);
+            this.kryptonPanel5.Controls.Add(this.kryptonButton1);
             this.kryptonPanel5.Controls.Add(this.kryptonTextBox5);
             this.kryptonPanel5.Controls.Add(this.kryptonLabel11);
             this.kryptonPanel5.Controls.Add(this.kryptonRichTextBox1);
@@ -73,28 +73,28 @@ namespace UI_design_demo.Restaurant.stock
             this.kryptonPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel5.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel5.Name = "kryptonPanel5";
-            this.kryptonPanel5.Size = new System.Drawing.Size(1171, 684);
+            this.kryptonPanel5.Size = new System.Drawing.Size(1085, 649);
             this.kryptonPanel5.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonPanel5.TabIndex = 3;
+            this.kryptonPanel5.TabIndex = 1;
             // 
-            // kryptonButton8
+            // kryptonButton1
             // 
-            this.kryptonButton8.Location = new System.Drawing.Point(771, 19);
-            this.kryptonButton8.Name = "kryptonButton8";
-            this.kryptonButton8.Size = new System.Drawing.Size(145, 45);
-            this.kryptonButton8.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
-            this.kryptonButton8.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
-            this.kryptonButton8.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
-            this.kryptonButton8.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
-            this.kryptonButton8.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonButton1.Location = new System.Drawing.Point(769, 19);
+            this.kryptonButton1.Name = "kryptonButton1";
+            this.kryptonButton1.Size = new System.Drawing.Size(145, 45);
+            this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButton1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButton1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton8.StateCommon.Border.Rounding = 25;
-            this.kryptonButton8.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton8.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton8.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.kryptonButton8.TabIndex = 222;
-            this.kryptonButton8.Values.Text = "Save";
+            this.kryptonButton1.StateCommon.Border.Rounding = 25;
+            this.kryptonButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton1.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.kryptonButton1.TabIndex = 222;
+            this.kryptonButton1.Values.Text = "Edit";
             // 
             // kryptonTextBox5
             // 
@@ -129,7 +129,7 @@ namespace UI_design_demo.Restaurant.stock
             this.kryptonRichTextBox1.Location = new System.Drawing.Point(212, 304);
             this.kryptonRichTextBox1.Name = "kryptonRichTextBox1";
             this.kryptonRichTextBox1.Size = new System.Drawing.Size(456, 137);
-            this.kryptonRichTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.kryptonRichTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
             this.kryptonRichTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonRichTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -180,7 +180,7 @@ namespace UI_design_demo.Restaurant.stock
             this.kryptonDomainUpDown1.Location = new System.Drawing.Point(518, 233);
             this.kryptonDomainUpDown1.Name = "kryptonDomainUpDown1";
             this.kryptonDomainUpDown1.Size = new System.Drawing.Size(149, 30);
-            this.kryptonDomainUpDown1.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.kryptonDomainUpDown1.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
             this.kryptonDomainUpDown1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonDomainUpDown1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -299,18 +299,18 @@ namespace UI_design_demo.Restaurant.stock
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(32, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 34);
+            this.label1.Size = new System.Drawing.Size(85, 34);
             this.label1.TabIndex = 136;
-            this.label1.Text = "Edit";
+            this.label1.Text = "Detail";
             // 
-            // update
+            // detail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1171, 684);
+            this.ClientSize = new System.Drawing.Size(1085, 649);
             this.Controls.Add(this.kryptonPanel5);
-            this.Name = "update";
-            this.Text = "update";
+            this.Name = "detail";
+            this.Text = "detail";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).EndInit();
             this.kryptonPanel5.ResumeLayout(false);
             this.kryptonPanel5.PerformLayout();
@@ -321,7 +321,7 @@ namespace UI_design_demo.Restaurant.stock
         #endregion
 
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel5;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton8;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox5;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel11;
         private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox kryptonRichTextBox1;

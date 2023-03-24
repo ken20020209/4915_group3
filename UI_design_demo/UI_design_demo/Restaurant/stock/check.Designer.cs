@@ -32,13 +32,12 @@ namespace UI_design_demo.Restaurant.stock
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.kryptonComboBox1 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.kryptonTextBox15 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonGroup3 = new ComponentFactory.Krypton.Toolkit.KryptonGroup();
-            this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.kryptonLabel5 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.kryptonLabel6 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.kryptonGroup2 = new ComponentFactory.Krypton.Toolkit.KryptonGroup();
             this.kryptonLabel22 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -73,22 +72,22 @@ namespace UI_design_demo.Restaurant.stock
             // 
             this.panel2.Controls.Add(this.pictureBox9);
             this.panel2.Controls.Add(this.pictureBox8);
-            this.panel2.Controls.Add(this.kryptonLabel1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.kryptonComboBox1);
             this.panel2.Controls.Add(this.kryptonTextBox15);
             this.panel2.Controls.Add(this.kryptonGroup3);
             this.panel2.Controls.Add(this.kryptonGroup2);
             this.panel2.Controls.Add(this.kryptonGroup1);
-            this.panel2.Location = new System.Drawing.Point(92, 93);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(943, 611);
-            this.panel2.TabIndex = 2;
+            this.panel2.Size = new System.Drawing.Size(960, 597);
+            this.panel2.TabIndex = 4;
             // 
             // pictureBox9
             // 
             this.pictureBox9.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
-            this.pictureBox9.Location = new System.Drawing.Point(583, 537);
+            this.pictureBox9.Location = new System.Drawing.Point(620, 524);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(286, 38);
             this.pictureBox9.TabIndex = 42;
@@ -97,28 +96,18 @@ namespace UI_design_demo.Restaurant.stock
             // pictureBox8
             // 
             this.pictureBox8.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
-            this.pictureBox8.Location = new System.Drawing.Point(12, 310);
+            this.pictureBox8.Location = new System.Drawing.Point(49, 297);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(831, 202);
             this.pictureBox8.TabIndex = 41;
             this.pictureBox8.TabStop = false;
-            // 
-            // kryptonLabel1
-            // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(-19, 186);
-            this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(73, 39);
-            this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel1.TabIndex = 40;
-            this.kryptonLabel1.Values.Text = "Item";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.label2.Location = new System.Drawing.Point(629, 246);
+            this.label2.Location = new System.Drawing.Point(666, 233);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 22);
             this.label2.TabIndex = 39;
@@ -127,7 +116,7 @@ namespace UI_design_demo.Restaurant.stock
             // kryptonComboBox1
             // 
             this.kryptonComboBox1.DropDownWidth = 153;
-            this.kryptonComboBox1.Location = new System.Drawing.Point(700, 233);
+            this.kryptonComboBox1.Location = new System.Drawing.Point(737, 220);
             this.kryptonComboBox1.Name = "kryptonComboBox1";
             this.kryptonComboBox1.Size = new System.Drawing.Size(169, 44);
             this.kryptonComboBox1.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
@@ -146,7 +135,7 @@ namespace UI_design_demo.Restaurant.stock
             // 
             // kryptonTextBox15
             // 
-            this.kryptonTextBox15.Location = new System.Drawing.Point(12, 236);
+            this.kryptonTextBox15.Location = new System.Drawing.Point(49, 223);
             this.kryptonTextBox15.Name = "kryptonTextBox15";
             this.kryptonTextBox15.Size = new System.Drawing.Size(366, 41);
             this.kryptonTextBox15.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
@@ -166,13 +155,13 @@ namespace UI_design_demo.Restaurant.stock
             // 
             // kryptonGroup3
             // 
-            this.kryptonGroup3.Location = new System.Drawing.Point(649, 33);
+            this.kryptonGroup3.Location = new System.Drawing.Point(686, 40);
             this.kryptonGroup3.Name = "kryptonGroup3";
             // 
             // kryptonGroup3.Panel
             // 
-            this.kryptonGroup3.Panel.Controls.Add(this.kryptonLabel2);
-            this.kryptonGroup3.Panel.Controls.Add(this.kryptonLabel3);
+            this.kryptonGroup3.Panel.Controls.Add(this.kryptonLabel5);
+            this.kryptonGroup3.Panel.Controls.Add(this.kryptonLabel6);
             this.kryptonGroup3.Panel.Controls.Add(this.pictureBox7);
             this.kryptonGroup3.Size = new System.Drawing.Size(220, 125);
             this.kryptonGroup3.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(189)))), ((int)(((byte)(26)))));
@@ -183,25 +172,25 @@ namespace UI_design_demo.Restaurant.stock
             this.kryptonGroup3.StateCommon.Border.Rounding = 25;
             this.kryptonGroup3.TabIndex = 36;
             // 
-            // kryptonLabel2
+            // kryptonLabel5
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(96, 58);
-            this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(75, 32);
-            this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel2.TabIndex = 2;
-            this.kryptonLabel2.Values.Text = "Brand";
+            this.kryptonLabel5.Location = new System.Drawing.Point(96, 58);
+            this.kryptonLabel5.Name = "kryptonLabel5";
+            this.kryptonLabel5.Size = new System.Drawing.Size(75, 32);
+            this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel5.TabIndex = 2;
+            this.kryptonLabel5.Values.Text = "Brand";
             // 
-            // kryptonLabel3
+            // kryptonLabel6
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(121, 20);
-            this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(30, 37);
-            this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonLabel3.StateNormal.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel3.TabIndex = 1;
-            this.kryptonLabel3.Values.Text = "3";
+            this.kryptonLabel6.Location = new System.Drawing.Point(121, 20);
+            this.kryptonLabel6.Name = "kryptonLabel6";
+            this.kryptonLabel6.Size = new System.Drawing.Size(30, 37);
+            this.kryptonLabel6.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonLabel6.StateNormal.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel6.TabIndex = 1;
+            this.kryptonLabel6.Values.Text = "3";
             // 
             // pictureBox7
             // 
@@ -216,7 +205,7 @@ namespace UI_design_demo.Restaurant.stock
             // 
             // kryptonGroup2
             // 
-            this.kryptonGroup2.Location = new System.Drawing.Point(324, 33);
+            this.kryptonGroup2.Location = new System.Drawing.Point(361, 40);
             this.kryptonGroup2.Name = "kryptonGroup2";
             // 
             // kryptonGroup2.Panel
@@ -266,7 +255,7 @@ namespace UI_design_demo.Restaurant.stock
             // 
             // kryptonGroup1
             // 
-            this.kryptonGroup1.Location = new System.Drawing.Point(12, 33);
+            this.kryptonGroup1.Location = new System.Drawing.Point(49, 40);
             this.kryptonGroup1.Name = "kryptonGroup1";
             // 
             // kryptonGroup1.Panel
@@ -318,7 +307,7 @@ namespace UI_design_demo.Restaurant.stock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1127, 796);
+            this.ClientSize = new System.Drawing.Size(960, 597);
             this.Controls.Add(this.panel2);
             this.Name = "check";
             this.Text = "check";
@@ -354,13 +343,12 @@ namespace UI_design_demo.Restaurant.stock
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private System.Windows.Forms.Label label2;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox1;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox15;
         private ComponentFactory.Krypton.Toolkit.KryptonGroup kryptonGroup3;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel2;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel3;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel5;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private ComponentFactory.Krypton.Toolkit.KryptonGroup kryptonGroup2;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel22;
