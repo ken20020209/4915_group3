@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UI_design_demo.warehouse.delivery_note
 {
-    public partial class update : Form
+    public partial class sign_success : Form
     {
-        public update()
+        public sign_success()
         {
             InitializeComponent();
         }

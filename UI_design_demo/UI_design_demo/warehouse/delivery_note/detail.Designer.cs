@@ -1,7 +1,7 @@
 ﻿
 namespace UI_design_demo.warehouse.delivery_note
 {
-    partial class sign
+    partial class detail
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,6 @@ namespace UI_design_demo.warehouse.delivery_note
         private void InitializeComponent()
         {
             this.c = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonButton8 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonGroupBox2 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.kryptonGroupBox4 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
@@ -131,7 +130,6 @@ namespace UI_design_demo.warehouse.delivery_note
             // c
             // 
             this.c.AutoScroll = true;
-            this.c.Controls.Add(this.kryptonButton8);
             this.c.Controls.Add(this.kryptonGroupBox2);
             this.c.Controls.Add(this.kryptonGroupBox4);
             this.c.Controls.Add(this.kryptonGroupBox5);
@@ -142,28 +140,9 @@ namespace UI_design_demo.warehouse.delivery_note
             this.c.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c.Location = new System.Drawing.Point(0, 0);
             this.c.Name = "c";
-            this.c.Size = new System.Drawing.Size(1132, 673);
+            this.c.Size = new System.Drawing.Size(1126, 644);
             this.c.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.c.TabIndex = 213;
-            // 
-            // kryptonButton8
-            // 
-            this.kryptonButton8.Location = new System.Drawing.Point(763, 19);
-            this.kryptonButton8.Name = "kryptonButton8";
-            this.kryptonButton8.Size = new System.Drawing.Size(145, 45);
-            this.kryptonButton8.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
-            this.kryptonButton8.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
-            this.kryptonButton8.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
-            this.kryptonButton8.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
-            this.kryptonButton8.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton8.StateCommon.Border.Rounding = 25;
-            this.kryptonButton8.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton8.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton8.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.kryptonButton8.TabIndex = 217;
-            this.kryptonButton8.Values.Text = "Sign";
+            this.c.TabIndex = 215;
             // 
             // kryptonGroupBox2
             // 
@@ -708,9 +687,9 @@ namespace UI_design_demo.warehouse.delivery_note
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(30, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 34);
+            this.label1.Size = new System.Drawing.Size(85, 34);
             this.label1.TabIndex = 208;
-            this.label1.Text = "Sign";
+            this.label1.Text = "Detail";
             // 
             // kryptonGroupBox1
             // 
@@ -943,14 +922,14 @@ namespace UI_design_demo.warehouse.delivery_note
             this.kryptonLabel27.TabIndex = 146;
             this.kryptonLabel27.Values.Text = "ID:";
             // 
-            // sign
+            // detail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1132, 673);
+            this.ClientSize = new System.Drawing.Size(1126, 644);
             this.Controls.Add(this.c);
-            this.Name = "sign";
-            this.Text = "sign";
+            this.Name = "detail";
+            this.Text = "detail";
             ((System.ComponentModel.ISupportInitialize)(this.c)).EndInit();
             this.c.ResumeLayout(false);
             this.c.PerformLayout();
@@ -1001,7 +980,6 @@ namespace UI_design_demo.warehouse.delivery_note
         #endregion
 
         private ComponentFactory.Krypton.Toolkit.KryptonPanel c;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton8;
         private ComponentFactory.Krypton.Toolkit.KryptonGroupBox kryptonGroupBox2;
         private System.Windows.Forms.PictureBox pictureBox6;
         private ComponentFactory.Krypton.Toolkit.KryptonGroupBox kryptonGroupBox4;

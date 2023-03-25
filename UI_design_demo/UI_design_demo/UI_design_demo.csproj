@@ -458,6 +458,30 @@
     <Compile Include="warehouse\check_PO\review.Designer.cs">
       <DependentUpon>review.cs</DependentUpon>
     </Compile>
+    <Compile Include="warehouse\delivery_note\detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="warehouse\delivery_note\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\delivery_note\process.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="warehouse\delivery_note\process.Designer.cs">
+      <DependentUpon>process.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\delivery_note\process_confirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="warehouse\delivery_note\process_confirm.Designer.cs">
+      <DependentUpon>process_confirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\delivery_note\process_success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="warehouse\delivery_note\process_success.Designer.cs">
+      <DependentUpon>process_success.cs</DependentUpon>
+    </Compile>
     <Compile Include="warehouse\delivery_note\search.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -470,11 +494,17 @@
     <Compile Include="warehouse\delivery_note\sign.Designer.cs">
       <DependentUpon>sign.cs</DependentUpon>
     </Compile>
-    <Compile Include="warehouse\delivery_note\update.cs">
+    <Compile Include="warehouse\delivery_note\sign_confirm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="warehouse\delivery_note\update.Designer.cs">
-      <DependentUpon>update.cs</DependentUpon>
+    <Compile Include="warehouse\delivery_note\sign_confirm.Designer.cs">
+      <DependentUpon>sign_confirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\delivery_note\sign_success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="warehouse\delivery_note\sign_success.Designer.cs">
+      <DependentUpon>sign_success.cs</DependentUpon>
     </Compile>
     <Compile Include="warehouse\picking_list\check.cs">
       <SubType>Form</SubType>
@@ -703,8 +733,29 @@
     <EmbeddedResource Include="warehouse\check_PO\review.resx">
       <DependentUpon>review.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\delivery_note\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\delivery_note\process.resx">
+      <DependentUpon>process.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\delivery_note\process_confirm.resx">
+      <DependentUpon>process_confirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\delivery_note\process_success.resx">
+      <DependentUpon>process_success.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="warehouse\delivery_note\search.resx">
       <DependentUpon>search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\delivery_note\sign.resx">
+      <DependentUpon>sign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\delivery_note\sign_confirm.resx">
+      <DependentUpon>sign_confirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\delivery_note\sign_success.resx">
+      <DependentUpon>sign_success.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\picking_list\check.resx">
       <DependentUpon>check.cs</DependentUpon>
