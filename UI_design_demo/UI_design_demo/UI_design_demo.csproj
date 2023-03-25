@@ -265,11 +265,11 @@
     <Compile Include="delivery\delivery.Designer.cs">
       <DependentUpon>delivery.cs</DependentUpon>
     </Compile>
-    <Compile Include="delivery\search_schedule\delete.cs">
+    <Compile Include="delivery\search_schedule\detail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="delivery\search_schedule\delete.Designer.cs">
-      <DependentUpon>delete.cs</DependentUpon>
+    <Compile Include="delivery\search_schedule\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
     </Compile>
     <Compile Include="delivery\search_schedule\edit.cs">
       <SubType>Form</SubType>
@@ -643,6 +643,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="delivery\delivery.resx">
       <DependentUpon>delivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delivery\search_schedule\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="delivery\search_schedule\edit.resx">
       <DependentUpon>edit.cs</DependentUpon>

@@ -22,5 +22,10 @@ namespace UI_design_demo.delivery
         {
 
         }
+
+        private void kryptonPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

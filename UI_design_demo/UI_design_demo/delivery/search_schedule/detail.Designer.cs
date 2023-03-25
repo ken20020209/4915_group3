@@ -1,7 +1,7 @@
 ﻿
-namespace UI_design_demo.delivery.search
+namespace UI_design_demo.delivery.search_schedule
 {
-    partial class edit
+    partial class detail
     {
         /// <summary>
         /// Required designer variable.
@@ -96,9 +96,9 @@ namespace UI_design_demo.delivery.search
             this.kryptonPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel4.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel4.Name = "kryptonPanel4";
-            this.kryptonPanel4.Size = new System.Drawing.Size(1011, 652);
+            this.kryptonPanel4.Size = new System.Drawing.Size(1008, 612);
             this.kryptonPanel4.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonPanel4.TabIndex = 213;
+            this.kryptonPanel4.TabIndex = 214;
             // 
             // kryptonLabel9
             // 
@@ -126,7 +126,7 @@ namespace UI_design_demo.delivery.search
             this.kryptonButton1.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.kryptonButton1.TabIndex = 212;
-            this.kryptonButton1.Values.Text = "Save";
+            this.kryptonButton1.Values.Text = "Edit";
             // 
             // kryptonGroupBox4
             // 
@@ -379,9 +379,9 @@ namespace UI_design_demo.delivery.search
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(26, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 34);
+            this.label1.Size = new System.Drawing.Size(85, 34);
             this.label1.TabIndex = 208;
-            this.label1.Text = "Edit";
+            this.label1.Text = "Detail";
             // 
             // kryptonGroupBox1
             // 
@@ -445,6 +445,7 @@ namespace UI_design_demo.delivery.search
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.White;
             this.dateTimePicker1.Location = new System.Drawing.Point(444, 127);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(174, 29);
@@ -456,7 +457,7 @@ namespace UI_design_demo.delivery.search
             this.kryptonTextBox14.Name = "kryptonTextBox14";
             this.kryptonTextBox14.ReadOnly = true;
             this.kryptonTextBox14.Size = new System.Drawing.Size(174, 28);
-            this.kryptonTextBox14.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.kryptonTextBox14.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
             this.kryptonTextBox14.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox14.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox14.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -562,14 +563,14 @@ namespace UI_design_demo.delivery.search
             this.kryptonLabel12.TabIndex = 146;
             this.kryptonLabel12.Values.Text = "ID:";
             // 
-            // edit
+            // detail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1011, 652);
+            this.ClientSize = new System.Drawing.Size(1008, 612);
             this.Controls.Add(this.kryptonPanel4);
-            this.Name = "edit";
-            this.Text = "edit";
+            this.Name = "detail";
+            this.Text = "detail";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
             this.kryptonPanel4.ResumeLayout(false);
             this.kryptonPanel4.PerformLayout();

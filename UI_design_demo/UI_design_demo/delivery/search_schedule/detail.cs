@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.delivery.search
+namespace UI_design_demo.delivery.search_schedule
 {
-    public partial class delete : Form
+    public partial class detail : Form
     {
-        public delete()
+        public detail()
         {
             InitializeComponent();
         }
