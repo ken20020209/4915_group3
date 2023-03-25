@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UI_design_demo.warehouse.picking_list
 {
-    public partial class detail : Form
+    public partial class confrim : Form
     {
-        public detail()
+        public confrim()
         {
             InitializeComponent();
         }

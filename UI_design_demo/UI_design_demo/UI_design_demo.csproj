@@ -446,17 +446,23 @@
     <Compile Include="Restaurant\stock\update.Designer.cs">
       <DependentUpon>update.cs</DependentUpon>
     </Compile>
+    <Compile Include="warehouse\check_PO\detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="warehouse\check_PO\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
+    </Compile>
     <Compile Include="warehouse\check_PO\review.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="warehouse\check_PO\review.Designer.cs">
       <DependentUpon>review.cs</DependentUpon>
     </Compile>
-    <Compile Include="warehouse\check_PO\update_status.cs">
+    <Compile Include="warehouse\delivery_note\search.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="warehouse\check_PO\update_status.Designer.cs">
-      <DependentUpon>update_status.cs</DependentUpon>
+    <Compile Include="warehouse\delivery_note\search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
     </Compile>
     <Compile Include="warehouse\delivery_note\sign.cs">
       <SubType>Form</SubType>
@@ -476,11 +482,29 @@
     <Compile Include="warehouse\picking_list\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>
     </Compile>
-    <Compile Include="warehouse\picking_list\detail.cs">
+    <Compile Include="warehouse\picking_list\confrim.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="warehouse\picking_list\detail.Designer.cs">
-      <DependentUpon>detail.cs</DependentUpon>
+    <Compile Include="warehouse\picking_list\confrim.Designer.cs">
+      <DependentUpon>confrim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\picking_list\detail,_finished.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="warehouse\picking_list\detail,_finished.Designer.cs">
+      <DependentUpon>detail,_finished.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\picking_list\detail_notfinish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="warehouse\picking_list\detail_notfinish.Designer.cs">
+      <DependentUpon>detail_notfinish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\picking_list\success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="warehouse\picking_list\success.Designer.cs">
+      <DependentUpon>success.cs</DependentUpon>
     </Compile>
     <Compile Include="warehouse\search_stock\check.cs">
       <SubType>Form</SubType>
@@ -673,14 +697,29 @@
     <EmbeddedResource Include="Restaurant\stock\update.resx">
       <DependentUpon>update.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\check_PO\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="warehouse\check_PO\review.resx">
       <DependentUpon>review.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\delivery_note\search.resx">
+      <DependentUpon>search.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\picking_list\check.resx">
       <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="warehouse\picking_list\detail.resx">
-      <DependentUpon>detail.cs</DependentUpon>
+    <EmbeddedResource Include="warehouse\picking_list\confrim.resx">
+      <DependentUpon>confrim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\picking_list\detail,_finished.resx">
+      <DependentUpon>detail,_finished.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\picking_list\detail_notfinish.resx">
+      <DependentUpon>detail_notfinish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\picking_list\success.resx">
+      <DependentUpon>success.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\search_stock\check.resx">
       <DependentUpon>check.cs</DependentUpon>
@@ -880,6 +919,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-process-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-production-in-progress-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-deliver-food-100.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

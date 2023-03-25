@@ -39,7 +39,7 @@ namespace UI_design_demo.Restaurant.request_order.search
             // pictureBox1
             // 
             this.pictureBox1.Image = global::UI_design_demo.Properties.Resources.icons8_ok_100;
-            this.pictureBox1.Location = new System.Drawing.Point(168, 91);
+            this.pictureBox1.Location = new System.Drawing.Point(151, 85);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(120, 120);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -48,7 +48,7 @@ namespace UI_design_demo.Restaurant.request_order.search
             // 
             // kryptonLabel4
             // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(165, 38);
+            this.kryptonLabel4.Location = new System.Drawing.Point(148, 32);
             this.kryptonLabel4.Name = "kryptonLabel4";
             this.kryptonLabel4.Size = new System.Drawing.Size(136, 47);
             this.kryptonLabel4.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(121)))), ((int)(((byte)(96)))));
@@ -58,7 +58,7 @@ namespace UI_design_demo.Restaurant.request_order.search
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(59, 281);
+            this.kryptonLabel2.Location = new System.Drawing.Point(42, 275);
             this.kryptonLabel2.Name = "kryptonLabel2";
             this.kryptonLabel2.Size = new System.Drawing.Size(372, 33);
             this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
@@ -68,7 +68,7 @@ namespace UI_design_demo.Restaurant.request_order.search
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(89, 373);
+            this.kryptonLabel3.Location = new System.Drawing.Point(72, 367);
             this.kryptonLabel3.Name = "kryptonLabel3";
             this.kryptonLabel3.Size = new System.Drawing.Size(292, 27);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
@@ -81,7 +81,7 @@ namespace UI_design_demo.Restaurant.request_order.search
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(477, 526);
+            this.ClientSize = new System.Drawing.Size(455, 470);
             this.Controls.Add(this.kryptonLabel3);
             this.Controls.Add(this.kryptonLabel2);
             this.Controls.Add(this.kryptonLabel4);

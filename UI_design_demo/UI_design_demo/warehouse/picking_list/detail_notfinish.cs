@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.warehouse.check_PO
+namespace UI_design_demo.warehouse.picking_list
 {
-    public partial class update_status : Form
+    public partial class detail_notfinish : Form
     {
-        public update_status()
+        public detail_notfinish()
         {
             InitializeComponent();
         }
