@@ -1,7 +1,7 @@
 ﻿
-namespace UI_design_demo.delivery.search_schedule
+namespace UI_design_demo.delivery.create_schedule
 {
-    partial class detail
+    partial class create
     {
         /// <summary>
         /// Required designer variable.
@@ -30,8 +30,8 @@ namespace UI_design_demo.delivery.search_schedule
         private void InitializeComponent()
         {
             this.kryptonPanel4 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonLabel9 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonGroupBox4 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
             this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -50,6 +50,8 @@ namespace UI_design_demo.delivery.search_schedule
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.kryptonGroupBox1 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
+            this.kryptonRichTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
+            this.kryptonLabel10 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.kryptonLabel8 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel7 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -86,8 +88,8 @@ namespace UI_design_demo.delivery.search_schedule
             // kryptonPanel4
             // 
             this.kryptonPanel4.AutoScroll = true;
+            this.kryptonPanel4.Controls.Add(this.kryptonButton2);
             this.kryptonPanel4.Controls.Add(this.kryptonLabel9);
-            this.kryptonPanel4.Controls.Add(this.kryptonButton1);
             this.kryptonPanel4.Controls.Add(this.kryptonGroupBox4);
             this.kryptonPanel4.Controls.Add(this.kryptonGroupBox3);
             this.kryptonPanel4.Controls.Add(this.kryptonGroupBox2);
@@ -96,41 +98,41 @@ namespace UI_design_demo.delivery.search_schedule
             this.kryptonPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel4.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel4.Name = "kryptonPanel4";
-            this.kryptonPanel4.Size = new System.Drawing.Size(1008, 612);
+            this.kryptonPanel4.Size = new System.Drawing.Size(1178, 686);
             this.kryptonPanel4.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonPanel4.TabIndex = 214;
+            this.kryptonPanel4.TabIndex = 216;
+            // 
+            // kryptonButton2
+            // 
+            this.kryptonButton2.Location = new System.Drawing.Point(762, 28);
+            this.kryptonButton2.Name = "kryptonButton2";
+            this.kryptonButton2.Size = new System.Drawing.Size(145, 45);
+            this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
+            this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
+            this.kryptonButton2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
+            this.kryptonButton2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
+            this.kryptonButton2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton2.StateCommon.Border.Rounding = 25;
+            this.kryptonButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton2.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.kryptonButton2.TabIndex = 214;
+            this.kryptonButton2.Values.Text = "Complete";
             // 
             // kryptonLabel9
             // 
-            this.kryptonLabel9.Location = new System.Drawing.Point(32, 65);
+            this.kryptonLabel9.Location = new System.Drawing.Point(32, 61);
             this.kryptonLabel9.Name = "kryptonLabel9";
             this.kryptonLabel9.Size = new System.Drawing.Size(72, 23);
             this.kryptonLabel9.StateCommon.ShortText.Font = new System.Drawing.Font("新細明體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.kryptonLabel9.TabIndex = 213;
             this.kryptonLabel9.Values.Text = "← Back";
             // 
-            // kryptonButton1
-            // 
-            this.kryptonButton1.Location = new System.Drawing.Point(765, 24);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(145, 45);
-            this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonButton1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonButton1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateCommon.Border.Rounding = 25;
-            this.kryptonButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.kryptonButton1.TabIndex = 212;
-            this.kryptonButton1.Values.Text = "Edit";
-            // 
             // kryptonGroupBox4
             // 
-            this.kryptonGroupBox4.Location = new System.Drawing.Point(480, 354);
+            this.kryptonGroupBox4.Location = new System.Drawing.Point(478, 459);
             this.kryptonGroupBox4.Name = "kryptonGroupBox4";
             // 
             // kryptonGroupBox4.Panel
@@ -236,7 +238,7 @@ namespace UI_design_demo.delivery.search_schedule
             // 
             // kryptonGroupBox3
             // 
-            this.kryptonGroupBox3.Location = new System.Drawing.Point(61, 354);
+            this.kryptonGroupBox3.Location = new System.Drawing.Point(59, 459);
             this.kryptonGroupBox3.Name = "kryptonGroupBox3";
             // 
             // kryptonGroupBox3.Panel
@@ -342,7 +344,7 @@ namespace UI_design_demo.delivery.search_schedule
             // 
             // kryptonGroupBox2
             // 
-            this.kryptonGroupBox2.Location = new System.Drawing.Point(61, 629);
+            this.kryptonGroupBox2.Location = new System.Drawing.Point(61, 717);
             this.kryptonGroupBox2.Name = "kryptonGroupBox2";
             // 
             // kryptonGroupBox2.Panel
@@ -379,9 +381,9 @@ namespace UI_design_demo.delivery.search_schedule
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(26, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 34);
+            this.label1.Size = new System.Drawing.Size(207, 34);
             this.label1.TabIndex = 208;
-            this.label1.Text = "Detail";
+            this.label1.Text = "Complete Detail";
             // 
             // kryptonGroupBox1
             // 
@@ -390,6 +392,8 @@ namespace UI_design_demo.delivery.search_schedule
             // 
             // kryptonGroupBox1.Panel
             // 
+            this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonRichTextBox3);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonLabel10);
             this.kryptonGroupBox1.Panel.Controls.Add(this.dateTimePicker2);
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonLabel8);
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonLabel7);
@@ -402,7 +406,7 @@ namespace UI_design_demo.delivery.search_schedule
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonLabel13);
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonTextBox9);
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonLabel12);
-            this.kryptonGroupBox1.Size = new System.Drawing.Size(674, 223);
+            this.kryptonGroupBox1.Size = new System.Drawing.Size(674, 323);
             this.kryptonGroupBox1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonGroupBox1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonGroupBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -415,6 +419,28 @@ namespace UI_design_demo.delivery.search_schedule
             this.kryptonGroupBox1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonGroupBox1.TabIndex = 207;
             this.kryptonGroupBox1.Values.Heading = "GENERAL";
+            // 
+            // kryptonRichTextBox3
+            // 
+            this.kryptonRichTextBox3.Location = new System.Drawing.Point(134, 180);
+            this.kryptonRichTextBox3.Name = "kryptonRichTextBox3";
+            this.kryptonRichTextBox3.Size = new System.Drawing.Size(484, 82);
+            this.kryptonRichTextBox3.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonRichTextBox3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonRichTextBox3.TabIndex = 163;
+            this.kryptonRichTextBox3.Text = "remarks";
+            // 
+            // kryptonLabel10
+            // 
+            this.kryptonLabel10.Location = new System.Drawing.Point(36, 180);
+            this.kryptonLabel10.Name = "kryptonLabel10";
+            this.kryptonLabel10.Size = new System.Drawing.Size(92, 27);
+            this.kryptonLabel10.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonLabel10.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel10.TabIndex = 162;
+            this.kryptonLabel10.Values.Text = "Remarks:";
             // 
             // dateTimePicker2
             // 
@@ -457,7 +483,7 @@ namespace UI_design_demo.delivery.search_schedule
             this.kryptonTextBox14.Name = "kryptonTextBox14";
             this.kryptonTextBox14.ReadOnly = true;
             this.kryptonTextBox14.Size = new System.Drawing.Size(174, 28);
-            this.kryptonTextBox14.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
+            this.kryptonTextBox14.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBox14.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox14.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox14.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -471,7 +497,7 @@ namespace UI_design_demo.delivery.search_schedule
             // 
             // kryptonLabel17
             // 
-            this.kryptonLabel17.Location = new System.Drawing.Point(49, 81);
+            this.kryptonLabel17.Location = new System.Drawing.Point(49, 78);
             this.kryptonLabel17.Name = "kryptonLabel17";
             this.kryptonLabel17.Size = new System.Drawing.Size(79, 27);
             this.kryptonLabel17.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
@@ -563,14 +589,14 @@ namespace UI_design_demo.delivery.search_schedule
             this.kryptonLabel12.TabIndex = 146;
             this.kryptonLabel12.Values.Text = "ID:";
             // 
-            // detail
+            // create
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 612);
+            this.ClientSize = new System.Drawing.Size(1178, 686);
             this.Controls.Add(this.kryptonPanel4);
-            this.Name = "detail";
-            this.Text = "detail";
+            this.Name = "create";
+            this.Text = "create";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
             this.kryptonPanel4.ResumeLayout(false);
             this.kryptonPanel4.PerformLayout();
@@ -601,8 +627,8 @@ namespace UI_design_demo.delivery.search_schedule
         #endregion
 
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel4;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel9;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonGroupBox kryptonGroupBox4;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel4;
@@ -621,6 +647,8 @@ namespace UI_design_demo.delivery.search_schedule
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label1;
         private ComponentFactory.Krypton.Toolkit.KryptonGroupBox kryptonGroupBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox kryptonRichTextBox3;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel10;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel8;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel7;

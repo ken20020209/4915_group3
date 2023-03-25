@@ -259,6 +259,30 @@
     <Compile Include="category\supplier\search\edit.Designer.cs">
       <DependentUpon>edit.cs</DependentUpon>
     </Compile>
+    <Compile Include="delivery\create_schedule\check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delivery\create_schedule\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delivery\create_schedule\create.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delivery\create_schedule\create.Designer.cs">
+      <DependentUpon>create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delivery\create_schedule\create_confirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delivery\create_schedule\create_confirm.Designer.cs">
+      <DependentUpon>create_confirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delivery\create_schedule\create_success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delivery\create_schedule\create_success.Designer.cs">
+      <DependentUpon>create_success.cs</DependentUpon>
+    </Compile>
     <Compile Include="delivery\delivery.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -641,6 +665,18 @@
     <EmbeddedResource Include="category\supplier\search\edit.resx">
       <DependentUpon>edit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="delivery\create_schedule\check.resx">
+      <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delivery\create_schedule\create.resx">
+      <DependentUpon>create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delivery\create_schedule\create_confirm.resx">
+      <DependentUpon>create_confirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delivery\create_schedule\create_success.resx">
+      <DependentUpon>create_success.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="delivery\delivery.resx">
       <DependentUpon>delivery.cs</DependentUpon>
     </EmbeddedResource>
@@ -879,7 +915,6 @@
     <None Include="Resources\icons8-purchase-order-40 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="delivery\create_schedule\" />
     <Folder Include="Purchase\PO\create\" />
     <Folder Include="Purchase\set rules\" />
     <Folder Include="Resources\NewFolder1\" />
@@ -979,6 +1014,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-deliver-food-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-view-schedule-100.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

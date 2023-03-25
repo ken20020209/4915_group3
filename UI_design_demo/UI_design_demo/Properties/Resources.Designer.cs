@@ -583,6 +583,16 @@ namespace UI_design_demo.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_view_schedule_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-view-schedule-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_visa_40 {
             get {
                 object obj = ResourceManager.GetObject("icons8-visa-40", resourceCulture);
