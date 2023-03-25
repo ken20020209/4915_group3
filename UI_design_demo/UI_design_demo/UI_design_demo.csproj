@@ -139,17 +139,35 @@
     <Compile Include="category\brand\create\create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
     </Compile>
+    <Compile Include="category\brand\create\create_success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\brand\create\create_success.Designer.cs">
+      <DependentUpon>create_success.cs</DependentUpon>
+    </Compile>
     <Compile Include="category\brand\search\check.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="category\brand\search\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>
     </Compile>
-    <Compile Include="category\brand\search\delete.cs">
+    <Compile Include="category\brand\search\delete_confirm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="category\brand\search\delete.Designer.cs">
-      <DependentUpon>delete.cs</DependentUpon>
+    <Compile Include="category\brand\search\delete_confirm.Designer.cs">
+      <DependentUpon>delete_confirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\brand\search\delete_success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\brand\search\delete_success.Designer.cs">
+      <DependentUpon>delete_success.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\brand\search\detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\brand\search\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
     </Compile>
     <Compile Include="category\brand\search\edit.cs">
       <SubType>Form</SubType>
@@ -169,6 +187,12 @@
     <Compile Include="category\category\create\create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
     </Compile>
+    <Compile Include="category\category\create\create_success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\category\create\create_success.Designer.cs">
+      <DependentUpon>create_success.cs</DependentUpon>
+    </Compile>
     <Compile Include="category\category\select\check.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +204,24 @@
     </Compile>
     <Compile Include="category\category\select\delete.Designer.cs">
       <DependentUpon>delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\category\select\delete_confirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\category\select\delete_confirm.Designer.cs">
+      <DependentUpon>delete_confirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\category\select\delete_success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\category\select\delete_success.Designer.cs">
+      <DependentUpon>delete_success.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\category\select\detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\category\select\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
     </Compile>
     <Compile Include="category\category\select\edit.cs">
       <SubType>Form</SubType>
@@ -193,17 +235,35 @@
     <Compile Include="category\produce\create\create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
     </Compile>
+    <Compile Include="category\produce\create\create_success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\produce\create\create_success.Designer.cs">
+      <DependentUpon>create_success.cs</DependentUpon>
+    </Compile>
     <Compile Include="category\produce\search\check.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="category\produce\search\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>
     </Compile>
-    <Compile Include="category\produce\search\delete.cs">
+    <Compile Include="category\produce\search\delete_confrim.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="category\produce\search\delete.Designer.cs">
-      <DependentUpon>delete.cs</DependentUpon>
+    <Compile Include="category\produce\search\delete_confrim.Designer.cs">
+      <DependentUpon>delete_confrim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\produce\search\delete_success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\produce\search\delete_success.Designer.cs">
+      <DependentUpon>delete_success.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\produce\search\detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\produce\search\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
     </Compile>
     <Compile Include="category\produce\search\edit.cs">
       <SubType>Form</SubType>
@@ -217,17 +277,35 @@
     <Compile Include="category\return_reson\create\create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
     </Compile>
+    <Compile Include="category\return_reson\create\create_success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\return_reson\create\create_success.Designer.cs">
+      <DependentUpon>create_success.cs</DependentUpon>
+    </Compile>
     <Compile Include="category\return_reson\select\check.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="category\return_reson\select\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>
     </Compile>
-    <Compile Include="category\return_reson\select\delete.cs">
+    <Compile Include="category\return_reson\select\delete_success.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="category\return_reson\select\delete.Designer.cs">
-      <DependentUpon>delete.cs</DependentUpon>
+    <Compile Include="category\return_reson\select\delete_success.Designer.cs">
+      <DependentUpon>delete_success.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\return_reson\select\delete_confirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\return_reson\select\delete_confirm.Designer.cs">
+      <DependentUpon>delete_confirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\return_reson\select\detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\return_reson\select\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
     </Compile>
     <Compile Include="category\return_reson\select\edit.cs">
       <SubType>Form</SubType>
@@ -241,17 +319,35 @@
     <Compile Include="category\supplier\create\create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
     </Compile>
+    <Compile Include="category\supplier\create\create_success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\supplier\create\create_success.Designer.cs">
+      <DependentUpon>create_success.cs</DependentUpon>
+    </Compile>
     <Compile Include="category\supplier\search\check.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="category\supplier\search\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>
     </Compile>
-    <Compile Include="category\supplier\search\delete.cs">
+    <Compile Include="category\supplier\search\delete_confirm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="category\supplier\search\delete.Designer.cs">
-      <DependentUpon>delete.cs</DependentUpon>
+    <Compile Include="category\supplier\search\delete_confirm.Designer.cs">
+      <DependentUpon>delete_confirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\supplier\search\delete_success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\supplier\search\delete_success.Designer.cs">
+      <DependentUpon>delete_success.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\supplier\search\detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\supplier\search\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
     </Compile>
     <Compile Include="category\supplier\search\edit.cs">
       <SubType>Form</SubType>
@@ -635,6 +731,21 @@
     <EmbeddedResource Include="category\brand\create\create.resx">
       <DependentUpon>create.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="category\brand\create\create_success.resx">
+      <DependentUpon>create_success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\brand\search\check.resx">
+      <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\brand\search\delete_confirm.resx">
+      <DependentUpon>delete_confirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\brand\search\delete_success.resx">
+      <DependentUpon>delete_success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\brand\search\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="category\brand\search\edit.resx">
       <DependentUpon>edit.cs</DependentUpon>
     </EmbeddedResource>
@@ -644,8 +755,20 @@
     <EmbeddedResource Include="category\category\create\create.resx">
       <DependentUpon>create.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="category\category\create\create_success.resx">
+      <DependentUpon>create_success.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="category\category\select\check.resx">
       <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\category\select\delete_confirm.resx">
+      <DependentUpon>delete_confirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\category\select\delete_success.resx">
+      <DependentUpon>delete_success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\category\select\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\category\select\edit.resx">
       <DependentUpon>edit.cs</DependentUpon>
@@ -653,8 +776,20 @@
     <EmbeddedResource Include="category\produce\create\create.resx">
       <DependentUpon>create.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="category\produce\create\create_success.resx">
+      <DependentUpon>create_success.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="category\produce\search\check.resx">
       <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\produce\search\delete_confrim.resx">
+      <DependentUpon>delete_confrim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\produce\search\delete_success.resx">
+      <DependentUpon>delete_success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\produce\search\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\produce\search\edit.resx">
       <DependentUpon>edit.cs</DependentUpon>
@@ -662,8 +797,20 @@
     <EmbeddedResource Include="category\return_reson\create\create.resx">
       <DependentUpon>create.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="category\return_reson\create\create_success.resx">
+      <DependentUpon>create_success.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="category\return_reson\select\check.resx">
       <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\return_reson\select\delete_confirm.resx">
+      <DependentUpon>delete_confirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\return_reson\select\delete_success.resx">
+      <DependentUpon>delete_success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\return_reson\select\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\return_reson\select\edit.resx">
       <DependentUpon>edit.cs</DependentUpon>
@@ -671,8 +818,20 @@
     <EmbeddedResource Include="category\supplier\create\create.resx">
       <DependentUpon>create.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="category\supplier\create\create_success.resx">
+      <DependentUpon>create_success.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="category\supplier\search\check.resx">
       <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\supplier\search\delete_confirm.resx">
+      <DependentUpon>delete_confirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\supplier\search\delete_success.resx">
+      <DependentUpon>delete_success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\supplier\search\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\supplier\search\edit.resx">
       <DependentUpon>edit.cs</DependentUpon>

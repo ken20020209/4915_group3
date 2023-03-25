@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.category.produce.search
+namespace UI_design_demo.category.return_reson.create
 {
-    public partial class delete : Form
+    public partial class create_success : Form
     {
-        public delete()
+        public create_success()
         {
             InitializeComponent();
         }

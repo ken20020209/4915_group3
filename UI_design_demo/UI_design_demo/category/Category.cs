@@ -27,5 +27,14 @@ namespace UI_design_demo.category
         {
 
         }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+                    }
+
+        private void kryptonButton9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

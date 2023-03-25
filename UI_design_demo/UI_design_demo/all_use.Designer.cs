@@ -289,6 +289,7 @@ namespace UI_design_demo
             this.kryptonButton5.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.kryptonButton5.TabIndex = 208;
             this.kryptonButton5.Values.Text = "OK";
+            this.kryptonButton5.Click += new System.EventHandler(this.kryptonButton5_Click);
             // 
             // all_use
             // 
