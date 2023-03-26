@@ -512,6 +512,18 @@
     <Compile Include="Purchase\request order\error process\select_treatment.Designer.cs">
       <DependentUpon>select_treatment.cs</DependentUpon>
     </Compile>
+    <Compile Include="Purchase\request order\error process\urgent\create_BR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\request order\error process\urgent\create_BR.Designer.cs">
+      <DependentUpon>create_BR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\request order\error process\urgent\create_success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\request order\error process\urgent\create_success.Designer.cs">
+      <DependentUpon>create_success.cs</DependentUpon>
+    </Compile>
     <Compile Include="Purchase\request order\process\process_fail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -553,6 +565,24 @@
     </Compile>
     <Compile Include="Purchase\request order\process\warehouse_list_notmatch.Designer.cs">
       <DependentUpon>warehouse_list_notmatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\set rule\main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\set rule\main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\set rule\match.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\set rule\match.Designer.cs">
+      <DependentUpon>match.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\set rule\time.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\set rule\time.Designer.cs">
+      <DependentUpon>time.cs</DependentUpon>
     </Compile>
     <Compile Include="Restaurant\delivery note\search.cs">
       <SubType>Form</SubType>
@@ -985,6 +1015,12 @@
     <EmbeddedResource Include="Purchase\request order\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\request order\error process\create_SPO\create_SPO.resx">
+      <DependentUpon>create_SPO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\request order\error process\create_SPO\create_success.resx">
+      <DependentUpon>create_success.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Purchase\request order\error process\match_PPO\match_success.resx">
       <DependentUpon>match_success.cs</DependentUpon>
     </EmbeddedResource>
@@ -993,6 +1029,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\request order\error process\select_treatment.resx">
       <DependentUpon>select_treatment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\request order\error process\urgent\create_BR.resx">
+      <DependentUpon>create_BR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\request order\error process\urgent\create_success.resx">
+      <DependentUpon>create_success.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\request order\process\process_fail.resx">
       <DependentUpon>process_fail.cs</DependentUpon>
@@ -1014,6 +1056,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\request order\process\warehouse_list_notmatch.resx">
       <DependentUpon>warehouse_list_notmatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\set rule\main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\set rule\match.resx">
+      <DependentUpon>match.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\set rule\time.resx">
+      <DependentUpon>time.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\delivery note\search.resx">
       <DependentUpon>search.cs</DependentUpon>
@@ -1217,12 +1268,7 @@
   <ItemGroup>
     <None Include="Resources\icons8-purchase-order-40 %281%29.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Purchase\PO\create\" />
-    <Folder Include="Purchase\request order\error process\urgent\" />
-    <Folder Include="Purchase\set rules\" />
-    <Folder Include="Resources\NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\icons8-diversity-40.png" />
   </ItemGroup>
@@ -1336,6 +1382,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-procurement-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delivery-time-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

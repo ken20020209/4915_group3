@@ -1,7 +1,7 @@
 ﻿
-namespace UI_design_demo.Purchase.request_order.error_process.create_SPO
+namespace UI_design_demo.Purchase.request_order.error_process.urgent
 {
-    partial class create_SPO
+    partial class create_BR
     {
         /// <summary>
         /// Required designer variable.
@@ -136,9 +136,9 @@ namespace UI_design_demo.Purchase.request_order.error_process.create_SPO
             this.kryptonPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel5.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel5.Name = "kryptonPanel5";
-            this.kryptonPanel5.Size = new System.Drawing.Size(974, 590);
+            this.kryptonPanel5.Size = new System.Drawing.Size(1115, 662);
             this.kryptonPanel5.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonPanel5.TabIndex = 213;
+            this.kryptonPanel5.TabIndex = 215;
             // 
             // kryptonButton8
             // 
@@ -190,13 +190,13 @@ namespace UI_design_demo.Purchase.request_order.error_process.create_SPO
             // 
             // kryptonLabel26
             // 
-            this.kryptonLabel26.Location = new System.Drawing.Point(35, 61);
+            this.kryptonLabel26.Location = new System.Drawing.Point(45, 61);
             this.kryptonLabel26.Name = "kryptonLabel26";
-            this.kryptonLabel26.Size = new System.Drawing.Size(120, 27);
+            this.kryptonLabel26.Size = new System.Drawing.Size(110, 27);
             this.kryptonLabel26.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonLabel26.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel26.TabIndex = 222;
-            this.kryptonLabel26.Values.Text = "Contract No:";
+            this.kryptonLabel26.Values.Text = "Release ID:";
             // 
             // kryptonTextBox20
             // 
@@ -325,9 +325,9 @@ namespace UI_design_demo.Purchase.request_order.error_process.create_SPO
             this.label3.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(30, 22);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(156, 34);
+            this.label3.Size = new System.Drawing.Size(288, 34);
             this.label3.TabIndex = 207;
-            this.label3.Text = "Create SPO";
+            this.label3.Text = "Create Blanket Release";
             // 
             // kryptonTextBox24
             // 
@@ -941,14 +941,14 @@ namespace UI_design_demo.Purchase.request_order.error_process.create_SPO
             this.kryptonLabel7.TabIndex = 179;
             this.kryptonLabel7.Values.Text = "ID:";
             // 
-            // create_SPO
+            // create_BR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(974, 590);
+            this.ClientSize = new System.Drawing.Size(1115, 662);
             this.Controls.Add(this.kryptonPanel5);
-            this.Name = "create_SPO";
-            this.Text = "select_SPO";
+            this.Name = "create_BR";
+            this.Text = "create_BR";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).EndInit();
             this.kryptonPanel5.ResumeLayout(false);
             this.kryptonPanel5.PerformLayout();
