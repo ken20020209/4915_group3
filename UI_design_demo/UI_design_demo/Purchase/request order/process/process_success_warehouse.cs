@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.Purchase.PO
+namespace UI_design_demo.Purchase.request_order.process
 {
-    public partial class update : Form
+    public partial class process_success_warehouse : Form
     {
-        public update()
+        public process_success_warehouse()
         {
             InitializeComponent();
         }

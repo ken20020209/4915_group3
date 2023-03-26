@@ -440,11 +440,17 @@
     <Compile Include="Purchase\PO\search\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>
     </Compile>
-    <Compile Include="Purchase\PO\search\delete.cs">
+    <Compile Include="Purchase\PO\search\delete_confirm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Purchase\PO\search\delete.Designer.cs">
-      <DependentUpon>delete.cs</DependentUpon>
+    <Compile Include="Purchase\PO\search\delete_confirm.Designer.cs">
+      <DependentUpon>delete_confirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PO\search\delete_success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PO\search\delete_success.Designer.cs">
+      <DependentUpon>delete_success.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\PO\search\detail.cs">
       <SubType>Form</SubType>
@@ -452,11 +458,11 @@
     <Compile Include="Purchase\PO\search\detail.Designer.cs">
       <DependentUpon>detail.cs</DependentUpon>
     </Compile>
-    <Compile Include="Purchase\PO\search\update.cs">
+    <Compile Include="Purchase\PO\search\edit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Purchase\PO\search\update.Designer.cs">
-      <DependentUpon>update.cs</DependentUpon>
+    <Compile Include="Purchase\PO\search\edit.Designer.cs">
+      <DependentUpon>edit.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\purchase.cs">
       <SubType>Form</SubType>
@@ -464,11 +470,89 @@
     <Compile Include="Purchase\purchase.Designer.cs">
       <DependentUpon>purchase.cs</DependentUpon>
     </Compile>
-    <Compile Include="Purchase\request order\select_BPA.cs">
+    <Compile Include="Purchase\request order\check.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Purchase\request order\select_BPA.Designer.cs">
-      <DependentUpon>select_BPA.cs</DependentUpon>
+    <Compile Include="Purchase\request order\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\request order\detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\request order\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\request order\error process\create_SPO\create_SPO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\request order\error process\create_SPO\create_SPO.Designer.cs">
+      <DependentUpon>create_SPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\request order\error process\create_SPO\create_success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\request order\error process\create_SPO\create_success.Designer.cs">
+      <DependentUpon>create_success.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\request order\error process\match_PPO\match_success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\request order\error process\match_PPO\match_success.Designer.cs">
+      <DependentUpon>match_success.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\request order\error process\match_PPO\PPO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\request order\error process\match_PPO\PPO.Designer.cs">
+      <DependentUpon>PPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\request order\error process\select_treatment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\request order\error process\select_treatment.Designer.cs">
+      <DependentUpon>select_treatment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\request order\process\process_fail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\request order\process\process_fail.Designer.cs">
+      <DependentUpon>process_fail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\request order\process\process_success_bpa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\request order\process\process_success_bpa.Designer.cs">
+      <DependentUpon>process_success_bpa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\request order\process\process_success_warehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\request order\process\process_success_warehouse.Designer.cs">
+      <DependentUpon>process_success_warehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\request order\process\select_BPA_match.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\request order\process\select_BPA_match.Designer.cs">
+      <DependentUpon>select_BPA_match.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\request order\process\select_BPA_nomatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\request order\process\select_BPA_nomatch.Designer.cs">
+      <DependentUpon>select_BPA_nomatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\request order\process\warehouse_list_match.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\request order\process\warehouse_list_match.Designer.cs">
+      <DependentUpon>warehouse_list_match.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\request order\process\warehouse_list_notmatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\request order\process\warehouse_list_notmatch.Designer.cs">
+      <DependentUpon>warehouse_list_notmatch.cs</DependentUpon>
     </Compile>
     <Compile Include="Restaurant\delivery note\search.cs">
       <SubType>Form</SubType>
@@ -880,14 +964,56 @@
     <EmbeddedResource Include="Purchase\PO\search\check.resx">
       <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PO\search\delete_confirm.resx">
+      <DependentUpon>delete_confirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PO\search\delete_success.resx">
+      <DependentUpon>delete_success.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PO\search\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PO\search\edit.resx">
+      <DependentUpon>edit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\purchase.resx">
       <DependentUpon>purchase.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Purchase\request order\select_BPA.resx">
-      <DependentUpon>select_BPA.cs</DependentUpon>
+    <EmbeddedResource Include="Purchase\request order\check.resx">
+      <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\request order\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\request order\error process\match_PPO\match_success.resx">
+      <DependentUpon>match_success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\request order\error process\match_PPO\PPO.resx">
+      <DependentUpon>PPO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\request order\error process\select_treatment.resx">
+      <DependentUpon>select_treatment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\request order\process\process_fail.resx">
+      <DependentUpon>process_fail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\request order\process\process_success_bpa.resx">
+      <DependentUpon>process_success_bpa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\request order\process\process_success_warehouse.resx">
+      <DependentUpon>process_success_warehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\request order\process\select_BPA_match.resx">
+      <DependentUpon>select_BPA_match.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\request order\process\select_BPA_nomatch.resx">
+      <DependentUpon>select_BPA_nomatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\request order\process\warehouse_list_match.resx">
+      <DependentUpon>warehouse_list_match.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\request order\process\warehouse_list_notmatch.resx">
+      <DependentUpon>warehouse_list_notmatch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\delivery note\search.resx">
       <DependentUpon>search.cs</DependentUpon>
@@ -1093,6 +1219,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Purchase\PO\create\" />
+    <Folder Include="Purchase\request order\error process\urgent\" />
     <Folder Include="Purchase\set rules\" />
     <Folder Include="Resources\NewFolder1\" />
   </ItemGroup>
@@ -1194,6 +1321,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-view-schedule-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-siren-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-coin-error-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-coin-error-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-purchase-order-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-procurement-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

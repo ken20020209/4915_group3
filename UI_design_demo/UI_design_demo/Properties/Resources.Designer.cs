@@ -143,6 +143,26 @@ namespace UI_design_demo.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_coin_error_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-coin-error-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_coin_error_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-coin-error-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_deliver_food_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-deliver-food-100", resourceCulture);
@@ -423,6 +443,16 @@ namespace UI_design_demo.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_procurement_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-procurement-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_production_in_progress_40 {
             get {
                 object obj = ResourceManager.GetObject("icons8-production-in-progress-40", resourceCulture);
@@ -456,6 +486,16 @@ namespace UI_design_demo.Properties {
         internal static System.Drawing.Bitmap icons8_purchase_order_40__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-purchase-order-40 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_purchase_order_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-purchase-order-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -556,6 +596,16 @@ namespace UI_design_demo.Properties {
         internal static System.Drawing.Bitmap icons8_sign_up_40 {
             get {
                 object obj = ResourceManager.GetObject("icons8-sign-up-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_siren_50__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-siren-50 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

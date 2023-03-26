@@ -42,5 +42,15 @@ namespace UI_design_demo
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonPanel4_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

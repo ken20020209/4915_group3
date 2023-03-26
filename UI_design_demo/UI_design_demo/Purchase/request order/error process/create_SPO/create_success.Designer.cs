@@ -1,7 +1,7 @@
 ﻿
-namespace UI_design_demo.Purchase.PO
+namespace UI_design_demo.Purchase.request_order.error_process.create_SPO
 {
-    partial class delete
+    partial class create_success
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@ namespace UI_design_demo.Purchase.PO
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "delete";
+            this.Text = "create_success";
         }
 
         #endregion
