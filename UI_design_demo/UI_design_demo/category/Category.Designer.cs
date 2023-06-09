@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.category
+namespace ITP4915_group3_project.category
 {
     partial class Category
     {
@@ -124,7 +124,7 @@ namespace UI_design_demo.category
             this.kryptonButton8.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton8.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonButton8.TabIndex = 51;
-            this.kryptonButton8.Values.Image = global::UI_design_demo.Properties.Resources.icons8_circular_arrow_pointing_to_left_40__1_;
+            this.kryptonButton8.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_circular_arrow_pointing_to_left_40__1_;
             this.kryptonButton8.Values.Text = "Return";
             // 
             // kryptonButton7
@@ -145,7 +145,7 @@ namespace UI_design_demo.category
             this.kryptonButton7.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton7.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonButton7.TabIndex = 50;
-            this.kryptonButton7.Values.Image = global::UI_design_demo.Properties.Resources.icons8_supplier_40__1_;
+            this.kryptonButton7.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_supplier_40__1_;
             this.kryptonButton7.Values.Text = "Supplier";
             // 
             // kryptonButton2
@@ -165,7 +165,7 @@ namespace UI_design_demo.category
             this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton2.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonButton2.TabIndex = 5;
-            this.kryptonButton2.Values.Image = global::UI_design_demo.Properties.Resources.icons8_tag_40;
+            this.kryptonButton2.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_tag_40;
             this.kryptonButton2.Values.Text = "Brand";
             // 
             // kryptonButton4
@@ -186,7 +186,7 @@ namespace UI_design_demo.category
             this.kryptonButton4.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton4.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonButton4.TabIndex = 6;
-            this.kryptonButton4.Values.Image = global::UI_design_demo.Properties.Resources.icons8_shipping_product_40__2_;
+            this.kryptonButton4.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_shipping_product_40__2_;
             this.kryptonButton4.Values.Text = "Item";
             // 
             // kryptonButton5
@@ -207,7 +207,7 @@ namespace UI_design_demo.category
             this.kryptonButton5.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton5.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonButton5.TabIndex = 7;
-            this.kryptonButton5.Values.Image = global::UI_design_demo.Properties.Resources.icons8_settings_40__2_;
+            this.kryptonButton5.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_settings_40__2_;
             this.kryptonButton5.Values.Text = "Setting";
             // 
             // kryptonButton6
@@ -227,7 +227,7 @@ namespace UI_design_demo.category
             this.kryptonButton6.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton6.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonButton6.TabIndex = 8;
-            this.kryptonButton6.Values.Image = global::UI_design_demo.Properties.Resources.icons8_logout_40__2_;
+            this.kryptonButton6.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_logout_40__2_;
             this.kryptonButton6.Values.Text = "Logout";
             // 
             // kryptonButton3
@@ -249,7 +249,7 @@ namespace UI_design_demo.category
             this.kryptonButton3.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton3.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.kryptonButton3.TabIndex = 2;
-            this.kryptonButton3.Values.Image = global::UI_design_demo.Properties.Resources.icons8_diversity_40;
+            this.kryptonButton3.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_diversity_40;
             this.kryptonButton3.Values.Text = "Category";
             // 
             // kryptonPanel3
@@ -301,7 +301,7 @@ namespace UI_design_demo.category
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::UI_design_demo.Properties.Resources.Drawing_2_sketchpad;
+            this.pictureBox4.Image = global::ITP4915_group3_project.Properties.Resources.Drawing_2_sketchpad;
             this.pictureBox4.Location = new System.Drawing.Point(471, 58);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(171, 24);
@@ -312,7 +312,7 @@ namespace UI_design_demo.category
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.pictureBox1.Image = global::UI_design_demo.Properties.Resources.icons8_notification_641;
+            this.pictureBox1.Image = global::ITP4915_group3_project.Properties.Resources.icons8_notification_641;
             this.pictureBox1.Location = new System.Drawing.Point(892, 21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(45, 45);
@@ -322,7 +322,7 @@ namespace UI_design_demo.category
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::UI_design_demo.Properties.Resources.Drawing_1_sketchpad;
+            this.pictureBox3.Image = global::ITP4915_group3_project.Properties.Resources.Drawing_1_sketchpad;
             this.pictureBox3.Location = new System.Drawing.Point(184, 414);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(30, 111);
@@ -333,7 +333,7 @@ namespace UI_design_demo.category
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.pictureBox2.Image = global::UI_design_demo.Properties.Resources.icons8_menu_40;
+            this.pictureBox2.Image = global::ITP4915_group3_project.Properties.Resources.icons8_menu_40;
             this.pictureBox2.Location = new System.Drawing.Point(83, 14);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(45, 45);

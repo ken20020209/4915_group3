@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.category.supplier.search
+namespace ITP4915_group3_project.category.supplier.search
 {
     partial class edit
     {

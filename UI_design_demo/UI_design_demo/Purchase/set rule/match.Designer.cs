@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.Purchase.set_rule
+namespace ITP4915_group3_project.Purchase.set_rule
 {
     partial class match
     {

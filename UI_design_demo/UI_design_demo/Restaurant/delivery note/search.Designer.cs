@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.Restaurant.delivery_note
+namespace ITP4915_group3_project.Restaurant.delivery_note
 {
     partial class search
     {
@@ -65,7 +65,7 @@ namespace UI_design_demo.Restaurant.delivery_note
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
+            this.pictureBox1.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
             this.pictureBox1.Location = new System.Drawing.Point(618, 531);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(286, 38);
@@ -74,7 +74,7 @@ namespace UI_design_demo.Restaurant.delivery_note
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
+            this.pictureBox2.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
             this.pictureBox2.Location = new System.Drawing.Point(47, 299);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(857, 177);
@@ -174,7 +174,7 @@ namespace UI_design_demo.Restaurant.delivery_note
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(98)))), ((int)(((byte)(93)))));
-            this.pictureBox3.Image = global::UI_design_demo.Properties.Resources.icons8_sign_document_40;
+            this.pictureBox3.Image = global::ITP4915_group3_project.Properties.Resources.icons8_sign_document_40;
             this.pictureBox3.Location = new System.Drawing.Point(3, 20);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(70, 70);

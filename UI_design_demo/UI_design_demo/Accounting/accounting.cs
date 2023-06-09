@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Krypton.Toolkit;
 
-namespace UI_design_demo.Accounting
+namespace ITP4915_group3_project.Accounting
 {
     public partial class accounting : KryptonForm
     {

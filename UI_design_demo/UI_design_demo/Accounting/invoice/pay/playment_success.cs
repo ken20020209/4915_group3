@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.Accounting
+namespace ITP4915_group3_project.Accounting
 {
     public partial class update_PO : Form
     {

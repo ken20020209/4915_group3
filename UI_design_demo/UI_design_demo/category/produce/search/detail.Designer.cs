@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.category.produce.search
+namespace ITP4915_group3_project.category.produce.search
 {
     partial class detail
     {

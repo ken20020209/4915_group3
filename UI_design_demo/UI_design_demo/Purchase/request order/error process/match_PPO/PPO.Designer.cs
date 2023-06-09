@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.Purchase.request_order.error_process
+namespace ITP4915_group3_project.Purchase.request_order.error_process
 {
     partial class PPO
     {
@@ -98,7 +98,7 @@ namespace UI_design_demo.Purchase.request_order.error_process
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
+            this.pictureBox5.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
             this.pictureBox5.Location = new System.Drawing.Point(590, 477);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(286, 38);
@@ -107,7 +107,7 @@ namespace UI_design_demo.Purchase.request_order.error_process
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
+            this.pictureBox6.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
             this.pictureBox6.Location = new System.Drawing.Point(67, 227);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(787, 179);

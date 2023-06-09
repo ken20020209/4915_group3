@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.warehouse.picking_list
+namespace ITP4915_group3_project.warehouse.picking_list
 {
     public partial class confrim : Form
     {

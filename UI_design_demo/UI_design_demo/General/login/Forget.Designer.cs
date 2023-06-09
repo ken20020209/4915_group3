@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo
+namespace ITP4915_group3_project
 {
     partial class Forget
     {
@@ -193,7 +193,7 @@ namespace UI_design_demo
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.pictureBox1.Image = global::UI_design_demo.Properties.Resources.icons8_order_64;
+            this.pictureBox1.Image = global::ITP4915_group3_project.Properties.Resources.icons8_order_64;
             this.pictureBox1.Location = new System.Drawing.Point(27, 207);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(148, 137);

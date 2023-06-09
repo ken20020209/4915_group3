@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.Purchase.process_request
+namespace ITP4915_group3_project.Purchase.process_request
 {
     public partial class select_BPA : Form
     {

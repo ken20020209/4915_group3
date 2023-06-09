@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.category.select
+namespace ITP4915_group3_project.category.select
 {
     public partial class edit : Form
     {

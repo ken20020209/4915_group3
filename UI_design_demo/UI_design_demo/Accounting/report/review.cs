@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.Accounting.report
+namespace ITP4915_group3_project.Accounting.report
 {
     public partial class review : Form
     {

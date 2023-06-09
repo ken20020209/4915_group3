@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.Purchase.request_order.error_process.match_PPO
+namespace ITP4915_group3_project.Purchase.request_order.error_process.match_PPO
 {
     partial class match_success
     {
@@ -68,7 +68,7 @@ namespace UI_design_demo.Purchase.request_order.error_process.match_PPO
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::UI_design_demo.Properties.Resources.icons8_ok_100;
+            this.pictureBox1.Image = global::ITP4915_group3_project.Properties.Resources.icons8_ok_100;
             this.pictureBox1.Location = new System.Drawing.Point(165, 109);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(120, 120);

@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.Purchase.request_order
+namespace ITP4915_group3_project.Purchase.request_order
 {
     partial class detail
     {
@@ -113,7 +113,7 @@ namespace UI_design_demo.Purchase.request_order
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
+            this.pictureBox5.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
             this.pictureBox5.Location = new System.Drawing.Point(-66, 15);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(1076, 174);

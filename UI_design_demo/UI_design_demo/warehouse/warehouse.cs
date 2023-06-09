@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Krypton.Toolkit;
 
-namespace UI_design_demo.warehouse
+namespace ITP4915_group3_project.warehouse
 {
     public partial class warehouse : KryptonForm
     {

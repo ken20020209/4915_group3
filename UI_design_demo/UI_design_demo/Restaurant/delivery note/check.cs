@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.Restaurant.delivery_note
+namespace ITP4915_group3_project.Restaurant.delivery_note
 {
     public partial class check : Form
     {

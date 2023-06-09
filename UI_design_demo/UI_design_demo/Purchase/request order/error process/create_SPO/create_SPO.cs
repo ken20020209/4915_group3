@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.Purchase.request_order.error_process.create_SPO
+namespace ITP4915_group3_project.Purchase.request_order.error_process.create_SPO
 {
     public partial class create_SPO : Form
     {

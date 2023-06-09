@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.Restaurant.request_order.create
+namespace ITP4915_group3_project.Restaurant.request_order.create
 {
     partial class select_item
     {
@@ -120,7 +120,7 @@ namespace UI_design_demo.Restaurant.request_order.create
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
+            this.pictureBox1.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
             this.pictureBox1.Location = new System.Drawing.Point(582, 493);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(286, 38);
@@ -129,7 +129,7 @@ namespace UI_design_demo.Restaurant.request_order.create
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
+            this.pictureBox2.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
             this.pictureBox2.Location = new System.Drawing.Point(67, 247);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(758, 179);

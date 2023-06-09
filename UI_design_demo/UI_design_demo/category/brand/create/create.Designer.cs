@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.category.brand.create
+namespace ITP4915_group3_project.category.brand.create
 {
     partial class create
     {

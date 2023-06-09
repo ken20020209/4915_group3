@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.category.brand
+namespace ITP4915_group3_project.category.brand
 {
     partial class check
     {
@@ -61,7 +61,7 @@ namespace UI_design_demo.category.brand
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
+            this.pictureBox5.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
             this.pictureBox5.Location = new System.Drawing.Point(608, 477);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(286, 38);
@@ -70,7 +70,7 @@ namespace UI_design_demo.category.brand
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
+            this.pictureBox6.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
             this.pictureBox6.Location = new System.Drawing.Point(37, 123);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(857, 177);
@@ -130,7 +130,7 @@ namespace UI_design_demo.category.brand
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
+            this.pictureBox7.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
             this.pictureBox7.Location = new System.Drawing.Point(37, 260);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(857, 177);

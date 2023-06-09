@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.Restaurant.stock
+namespace ITP4915_group3_project.Restaurant.stock
 {
     partial class update
     {

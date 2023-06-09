@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.Purchase.request_order.error_process
+namespace ITP4915_group3_project.Purchase.request_order.error_process
 {
     partial class select_treatment
     {
@@ -105,7 +105,7 @@ namespace UI_design_demo.Purchase.request_order.error_process
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(121)))), ((int)(((byte)(96)))));
-            this.pictureBox7.Image = global::UI_design_demo.Properties.Resources.icons8_procurement_50;
+            this.pictureBox7.Image = global::ITP4915_group3_project.Properties.Resources.icons8_procurement_50;
             this.pictureBox7.Location = new System.Drawing.Point(57, 34);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(70, 70);
@@ -144,7 +144,7 @@ namespace UI_design_demo.Purchase.request_order.error_process
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(134)))), ((int)(((byte)(166)))));
-            this.pictureBox6.Image = global::UI_design_demo.Properties.Resources.icons8_purchase_order_50;
+            this.pictureBox6.Image = global::ITP4915_group3_project.Properties.Resources.icons8_purchase_order_50;
             this.pictureBox6.Location = new System.Drawing.Point(54, 35);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(70, 70);
@@ -183,7 +183,7 @@ namespace UI_design_demo.Purchase.request_order.error_process
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(98)))), ((int)(((byte)(93)))));
-            this.pictureBox5.Image = global::UI_design_demo.Properties.Resources.icons8_siren_50__1_;
+            this.pictureBox5.Image = global::ITP4915_group3_project.Properties.Resources.icons8_siren_50__1_;
             this.pictureBox5.Location = new System.Drawing.Point(55, 34);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(70, 70);

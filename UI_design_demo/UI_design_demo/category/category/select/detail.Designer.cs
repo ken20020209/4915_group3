@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.category.category.select
+namespace ITP4915_group3_project.category.category.select
 {
     partial class detail
     {

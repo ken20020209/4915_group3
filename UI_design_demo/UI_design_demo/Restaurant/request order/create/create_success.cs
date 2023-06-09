@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Krypton.Toolkit;
 
-namespace UI_design_demo.Restaurant.request_order.create
+namespace ITP4915_group3_project.Restaurant.request_order.create
 {
     public partial class create_success : KryptonForm
     {

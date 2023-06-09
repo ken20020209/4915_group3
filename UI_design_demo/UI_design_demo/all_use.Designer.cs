@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo
+namespace ITP4915_group3_project
 {
     partial class all_use
     {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.Purchase.PO
+namespace ITP4915_group3_project.Purchase.PO
 {
     public partial class check : Form
     {

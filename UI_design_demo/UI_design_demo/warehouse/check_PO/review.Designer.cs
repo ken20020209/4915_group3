@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.warehouse.check_PO
+namespace ITP4915_group3_project.warehouse.check_PO
 {
     partial class review
     {
@@ -284,7 +284,7 @@ namespace UI_design_demo.warehouse.check_PO
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
+            this.pictureBox6.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
             this.pictureBox6.Location = new System.Drawing.Point(617, 516);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(286, 38);
@@ -305,7 +305,7 @@ namespace UI_design_demo.warehouse.check_PO
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
+            this.pictureBox5.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
             this.pictureBox5.Location = new System.Drawing.Point(59, 296);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(831, 179);

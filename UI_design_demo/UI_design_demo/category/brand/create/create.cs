@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.category.brand.create
+namespace ITP4915_group3_project.category.brand.create
 {
     public partial class create : Form
     {

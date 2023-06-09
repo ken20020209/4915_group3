@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.Accounting
+namespace ITP4915_group3_project.Accounting
 {
     partial class compare_note
     {
@@ -161,7 +161,7 @@ namespace UI_design_demo.Accounting
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
+            this.pictureBox6.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
             this.pictureBox6.Location = new System.Drawing.Point(19, 241);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(373, 177);
@@ -522,7 +522,7 @@ namespace UI_design_demo.Accounting
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
+            this.pictureBox5.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
             this.pictureBox5.Location = new System.Drawing.Point(18, 241);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(373, 177);

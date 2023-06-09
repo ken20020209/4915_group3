@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.delivery.search
+namespace ITP4915_group3_project.delivery.search
 {
     public partial class edit : Form
     {

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Krypton.Toolkit;
 
-namespace UI_design_demo
+namespace ITP4915_group3_project
 {
     public partial class Forget : KryptonForm
     {

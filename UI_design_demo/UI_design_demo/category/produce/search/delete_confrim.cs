@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.category.produce.search
+namespace ITP4915_group3_project.category.produce.search
 {
     public partial class delete_confrim : Form
     {

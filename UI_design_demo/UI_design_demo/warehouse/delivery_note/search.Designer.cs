@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.warehouse.delivery_note
+namespace ITP4915_group3_project.warehouse.delivery_note
 {
     partial class search
     {
@@ -117,7 +117,7 @@ namespace UI_design_demo.warehouse.delivery_note
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(134)))), ((int)(((byte)(166)))));
-            this.pictureBox8.Image = global::UI_design_demo.Properties.Resources.icons8_sign_document_40;
+            this.pictureBox8.Image = global::ITP4915_group3_project.Properties.Resources.icons8_sign_document_40;
             this.pictureBox8.Location = new System.Drawing.Point(3, 22);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(70, 70);
@@ -127,7 +127,7 @@ namespace UI_design_demo.warehouse.delivery_note
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
+            this.pictureBox5.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
             this.pictureBox5.Location = new System.Drawing.Point(610, 520);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(286, 38);
@@ -136,7 +136,7 @@ namespace UI_design_demo.warehouse.delivery_note
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
+            this.pictureBox6.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
             this.pictureBox6.Location = new System.Drawing.Point(39, 288);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(857, 177);
@@ -236,7 +236,7 @@ namespace UI_design_demo.warehouse.delivery_note
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(98)))), ((int)(((byte)(93)))));
-            this.pictureBox7.Image = global::UI_design_demo.Properties.Resources.icons8_process_40;
+            this.pictureBox7.Image = global::ITP4915_group3_project.Properties.Resources.icons8_process_40;
             this.pictureBox7.Location = new System.Drawing.Point(3, 22);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(70, 70);

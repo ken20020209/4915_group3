@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.Accounting.invoice
+namespace ITP4915_group3_project.Accounting.invoice
 {
     public partial class detail : Form
     {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.Purchase.PO.search
+namespace ITP4915_group3_project.Purchase.PO.search
 {
     public partial class delete_success : Form
     {

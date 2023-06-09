@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.warehouse.picking_list
+namespace ITP4915_group3_project.warehouse.picking_list
 {
     partial class check
     {
@@ -68,7 +68,7 @@ namespace UI_design_demo.warehouse.picking_list
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
+            this.pictureBox5.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
             this.pictureBox5.Location = new System.Drawing.Point(604, 508);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(286, 38);
@@ -77,7 +77,7 @@ namespace UI_design_demo.warehouse.picking_list
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
+            this.pictureBox6.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
             this.pictureBox6.Location = new System.Drawing.Point(33, 276);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(857, 177);
@@ -177,7 +177,7 @@ namespace UI_design_demo.warehouse.picking_list
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(98)))), ((int)(((byte)(93)))));
-            this.pictureBox7.Image = global::UI_design_demo.Properties.Resources.icons8_production_in_progress_40;
+            this.pictureBox7.Image = global::ITP4915_group3_project.Properties.Resources.icons8_production_in_progress_40;
             this.pictureBox7.Location = new System.Drawing.Point(3, 20);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(70, 70);

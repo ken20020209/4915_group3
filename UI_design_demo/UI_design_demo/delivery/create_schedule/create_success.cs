@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.delivery.create_schedule
+namespace ITP4915_group3_project.delivery.create_schedule
 {
     public partial class create_success : Form
     {

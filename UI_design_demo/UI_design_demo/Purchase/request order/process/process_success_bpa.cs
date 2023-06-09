@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.Purchase.request_order.process
+namespace ITP4915_group3_project.Purchase.request_order.process
 {
     public partial class process_success_bpa : Form
     {

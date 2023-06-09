@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.Purchase.set_rule
+namespace ITP4915_group3_project.Purchase.set_rule
 {
     public partial class main : Form
     {

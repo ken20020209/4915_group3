@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo.warehouse.delivery_note
+namespace ITP4915_group3_project.warehouse.delivery_note
 {
     public partial class process_success : Form
     {

@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.Restaurant.request_order.search
+namespace ITP4915_group3_project.Restaurant.request_order.search
 {
     partial class sumit_success
     {
@@ -91,7 +91,7 @@ namespace UI_design_demo.Restaurant.request_order.search
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::UI_design_demo.Properties.Resources.icons8_ok_100;
+            this.pictureBox1.Image = global::ITP4915_group3_project.Properties.Resources.icons8_ok_100;
             this.pictureBox1.Location = new System.Drawing.Point(153, 75);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(120, 120);

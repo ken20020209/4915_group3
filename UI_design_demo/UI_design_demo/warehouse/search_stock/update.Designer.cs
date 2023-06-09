@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.warehouse.search_stock
+namespace ITP4915_group3_project.warehouse.search_stock
 {
     partial class update
     {

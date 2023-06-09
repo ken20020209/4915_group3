@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.category.supplier.create
+namespace ITP4915_group3_project.category.supplier.create
 {
     partial class create
     {

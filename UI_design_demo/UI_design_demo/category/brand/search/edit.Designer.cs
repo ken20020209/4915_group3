@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.category.brand
+namespace ITP4915_group3_project.category.brand
 {
     partial class edit
     {

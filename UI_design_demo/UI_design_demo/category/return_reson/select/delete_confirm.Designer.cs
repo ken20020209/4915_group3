@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.category.return_reson.select
+namespace ITP4915_group3_project.category.return_reson.select
 {
     partial class delete_confirm
     {
@@ -97,7 +97,7 @@ namespace UI_design_demo.category.return_reson.select
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::UI_design_demo.Properties.Resources.icons8_remove_100;
+            this.pictureBox1.Image = global::ITP4915_group3_project.Properties.Resources.icons8_remove_100;
             this.pictureBox1.Location = new System.Drawing.Point(156, 104);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(120, 120);

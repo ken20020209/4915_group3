@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.warehouse.delivery_note
+namespace ITP4915_group3_project.warehouse.delivery_note
 {
     partial class process
     {
@@ -163,7 +163,7 @@ namespace UI_design_demo.warehouse.delivery_note
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
+            this.pictureBox6.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
             this.pictureBox6.Location = new System.Drawing.Point(88, 27);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(631, 177);
@@ -334,7 +334,7 @@ namespace UI_design_demo.warehouse.delivery_note
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.pictureBox8.Image = global::UI_design_demo.Properties.Resources.icons8_delivery_40;
+            this.pictureBox8.Image = global::ITP4915_group3_project.Properties.Resources.icons8_delivery_40;
             this.pictureBox8.Location = new System.Drawing.Point(122, 70);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(40, 40);
@@ -345,7 +345,7 @@ namespace UI_design_demo.warehouse.delivery_note
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.pictureBox7.Image = global::UI_design_demo.Properties.Resources.icons8_place_marker_40__1_;
+            this.pictureBox7.Image = global::ITP4915_group3_project.Properties.Resources.icons8_place_marker_40__1_;
             this.pictureBox7.Location = new System.Drawing.Point(99, 173);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(40, 40);
@@ -356,7 +356,7 @@ namespace UI_design_demo.warehouse.delivery_note
             // pictureBox10
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.pictureBox10.Image = global::UI_design_demo.Properties.Resources.icons8_hut_40__1_;
+            this.pictureBox10.Image = global::ITP4915_group3_project.Properties.Resources.icons8_hut_40__1_;
             this.pictureBox10.Location = new System.Drawing.Point(80, 41);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(50, 50);
@@ -367,7 +367,7 @@ namespace UI_design_demo.warehouse.delivery_note
             // pictureBox11
             // 
             this.pictureBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.pictureBox11.Image = global::UI_design_demo.Properties.Resources.icons8_place_marker_40__1_;
+            this.pictureBox11.Image = global::ITP4915_group3_project.Properties.Resources.icons8_place_marker_40__1_;
             this.pictureBox11.Location = new System.Drawing.Point(228, 91);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(40, 40);
@@ -378,7 +378,7 @@ namespace UI_design_demo.warehouse.delivery_note
             // pictureBox12
             // 
             this.pictureBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.pictureBox12.Image = global::UI_design_demo.Properties.Resources.icons8_map_pinpoint_40;
+            this.pictureBox12.Image = global::ITP4915_group3_project.Properties.Resources.icons8_map_pinpoint_40;
             this.pictureBox12.Location = new System.Drawing.Point(238, 234);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(50, 50);

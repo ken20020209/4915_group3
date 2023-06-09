@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.Purchase.request_order
+namespace ITP4915_group3_project.Purchase.request_order
 {
     partial class check
     {
@@ -118,7 +118,7 @@ namespace UI_design_demo.Purchase.request_order
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(134)))), ((int)(((byte)(166)))));
-            this.pictureBox6.Image = global::UI_design_demo.Properties.Resources.icons8_coin_error_50;
+            this.pictureBox6.Image = global::ITP4915_group3_project.Properties.Resources.icons8_coin_error_50;
             this.pictureBox6.Location = new System.Drawing.Point(3, 20);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(70, 70);
@@ -168,7 +168,7 @@ namespace UI_design_demo.Purchase.request_order
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(98)))), ((int)(((byte)(93)))));
-            this.pictureBox5.Image = global::UI_design_demo.Properties.Resources.icons8_siren_50__1_;
+            this.pictureBox5.Image = global::ITP4915_group3_project.Properties.Resources.icons8_siren_50__1_;
             this.pictureBox5.Location = new System.Drawing.Point(3, 20);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(70, 70);
@@ -178,7 +178,7 @@ namespace UI_design_demo.Purchase.request_order
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
+            this.pictureBox9.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
             this.pictureBox9.Location = new System.Drawing.Point(638, 514);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(286, 38);
@@ -187,7 +187,7 @@ namespace UI_design_demo.Purchase.request_order
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
+            this.pictureBox8.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
             this.pictureBox8.Location = new System.Drawing.Point(51, 275);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(831, 202);

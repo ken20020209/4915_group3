@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.Accounting.invoice.pay
+namespace ITP4915_group3_project.Accounting.invoice.pay
 {
     partial class detail
     {
@@ -272,7 +272,7 @@ namespace UI_design_demo.Accounting.invoice.pay
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
+            this.pictureBox6.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
             this.pictureBox6.Location = new System.Drawing.Point(97, 25);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(635, 177);

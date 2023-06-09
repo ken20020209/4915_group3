@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_design_demo
+namespace ITP4915_group3_project
 {
     static class Program
     {

@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.Accounting
+namespace ITP4915_group3_project.Accounting
 {
     partial class payment
     {
@@ -222,7 +222,7 @@ namespace UI_design_demo.Accounting
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Image = global::UI_design_demo.Properties.Resources.paypal;
+            this.pictureBox8.Image = global::ITP4915_group3_project.Properties.Resources.paypal;
             this.pictureBox8.Location = new System.Drawing.Point(664, 6);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(75, 51);
@@ -415,7 +415,7 @@ namespace UI_design_demo.Accounting
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = global::UI_design_demo.Properties.Resources.icons8_american_express_40;
+            this.pictureBox7.Image = global::ITP4915_group3_project.Properties.Resources.icons8_american_express_40;
             this.pictureBox7.Location = new System.Drawing.Point(674, 3);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(65, 51);
@@ -425,7 +425,7 @@ namespace UI_design_demo.Accounting
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::UI_design_demo.Properties.Resources.icons8_visa_40;
+            this.pictureBox6.Image = global::ITP4915_group3_project.Properties.Resources.icons8_visa_40;
             this.pictureBox6.Location = new System.Drawing.Point(590, 3);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(65, 51);
@@ -435,7 +435,7 @@ namespace UI_design_demo.Accounting
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::UI_design_demo.Properties.Resources.icons8_mastercard_40;
+            this.pictureBox5.Image = global::ITP4915_group3_project.Properties.Resources.icons8_mastercard_40;
             this.pictureBox5.Location = new System.Drawing.Point(509, 3);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(65, 51);

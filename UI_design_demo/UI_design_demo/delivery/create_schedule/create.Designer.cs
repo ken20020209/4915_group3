@@ -1,5 +1,5 @@
 ﻿
-namespace UI_design_demo.delivery.create_schedule
+namespace ITP4915_group3_project.delivery.create_schedule
 {
     partial class create
     {
@@ -366,7 +366,7 @@ namespace UI_design_demo.delivery.create_schedule
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::UI_design_demo.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
+            this.pictureBox6.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
             this.pictureBox6.Location = new System.Drawing.Point(88, 27);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(631, 177);
