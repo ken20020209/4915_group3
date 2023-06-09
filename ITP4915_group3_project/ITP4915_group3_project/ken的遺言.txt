@@ -1,0 +1,4 @@
+﻿form control 要改名 參考restaurant form
+form 入面d圖 換返做 component
+
+個d form 用黎塞入 form 可以轉做 usercontrol （add new item, select usercontrol not form)

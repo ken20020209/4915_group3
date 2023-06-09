@@ -728,6 +728,12 @@
     <Compile Include="Restaurant\stock\update.Designer.cs">
       <DependentUpon>update.cs</DependentUpon>
     </Compile>
+    <Compile Include="test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
     <Compile Include="warehouse\check_PO\detail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1308,7 +1314,9 @@
   <ItemGroup>
     <None Include="Resources\icons8-purchase-order-40 %281%29.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="ken的遺言.txt" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-diversity-40.png" />
   </ItemGroup>
