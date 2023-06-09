@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.33214.272
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITP4915_group3_project", "UI_design_demo\ITP4915_group3_project.csproj", "{E9CDD707-D1FC-4176-8A87-C3255B8D27B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITP4915_group3_project", "ITP4915_group3_project\ITP4915_group3_project.csproj", "{E9CDD707-D1FC-4176-8A87-C3255B8D27B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
