@@ -55,6 +55,7 @@ namespace ITP4915_group3_project.General.navi
             this.kryptonButtonWarehosue.Size = new System.Drawing.Size(90, 25);
             this.kryptonButtonWarehosue.TabIndex = 1;
             this.kryptonButtonWarehosue.Values.Text = "Warehosue";
+            this.kryptonButtonWarehosue.Click += new System.EventHandler(this.kryptonButtonWarehosue_Click);
             // 
             // kryptonButtonPurchase
             // 
@@ -64,6 +65,7 @@ namespace ITP4915_group3_project.General.navi
             this.kryptonButtonPurchase.Size = new System.Drawing.Size(90, 25);
             this.kryptonButtonPurchase.TabIndex = 2;
             this.kryptonButtonPurchase.Values.Text = "Purchase";
+            this.kryptonButtonPurchase.Click += new System.EventHandler(this.kryptonButtonPurchase_Click);
             // 
             // kryptonButtonDelivery
             // 
@@ -73,6 +75,7 @@ namespace ITP4915_group3_project.General.navi
             this.kryptonButtonDelivery.Size = new System.Drawing.Size(90, 25);
             this.kryptonButtonDelivery.TabIndex = 3;
             this.kryptonButtonDelivery.Values.Text = "Delivery";
+            this.kryptonButtonDelivery.Click += new System.EventHandler(this.kryptonButtonDelivery_Click);
             // 
             // kryptonButtonCategory
             // 
@@ -82,6 +85,7 @@ namespace ITP4915_group3_project.General.navi
             this.kryptonButtonCategory.Size = new System.Drawing.Size(90, 25);
             this.kryptonButtonCategory.TabIndex = 4;
             this.kryptonButtonCategory.Values.Text = "Category";
+            this.kryptonButtonCategory.Click += new System.EventHandler(this.kryptonButtonCategory_Click);
             // 
             // kryptonButtonAccounting
             // 
@@ -91,6 +95,7 @@ namespace ITP4915_group3_project.General.navi
             this.kryptonButtonAccounting.Size = new System.Drawing.Size(90, 25);
             this.kryptonButtonAccounting.TabIndex = 5;
             this.kryptonButtonAccounting.Values.Text = "Accounting";
+            this.kryptonButtonAccounting.Click += new System.EventHandler(this.kryptonButtonAccounting_Click);
             // 
             // navi
             // 

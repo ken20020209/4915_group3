@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using Krypton.Toolkit;
 
 
-namespace ITP4915_group3_project
+namespace ITP4915_group3_project.Restaurant
 {
     public partial class restaurant : KryptonForm
     {
