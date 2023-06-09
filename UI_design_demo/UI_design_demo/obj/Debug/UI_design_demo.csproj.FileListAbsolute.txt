@@ -212,3 +212,4 @@ C:\Users\Ken\Source\Repos\ken20020209\4915_group3\UI_design_demo\UI_design_demo\
 C:\Users\Ken\Source\Repos\ken20020209\4915_group3\UI_design_demo\UI_design_demo\obj\Debug\UI_design_demo.csproj.CopyComplete
 C:\Users\Ken\Source\Repos\ken20020209\4915_group3\UI_design_demo\UI_design_demo\obj\Debug\UI_design_demo.exe
 C:\Users\Ken\Source\Repos\ken20020209\4915_group3\UI_design_demo\UI_design_demo\obj\Debug\UI_design_demo.pdb
+C:\Users\Ken\Source\Repos\ken20020209\4915_group3\UI_design_demo\UI_design_demo\bin\Debug\ComponentFactory.Krypton.Toolkit.dll

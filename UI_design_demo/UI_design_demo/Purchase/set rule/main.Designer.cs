@@ -29,12 +29,12 @@ namespace UI_design_demo.Purchase.set_rule
         /// </summary>
         private void InitializeComponent()
         {
-            this.kryptonPanel4 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonGroup3 = new ComponentFactory.Krypton.Toolkit.KryptonGroup();
-            this.kryptonLabel5 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.kryptonPanel4 = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonGroup3 = new Krypton.Toolkit.KryptonGroup();
+            this.kryptonLabel5 = new Krypton.Toolkit.KryptonLabel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.kryptonGroup2 = new ComponentFactory.Krypton.Toolkit.KryptonGroup();
-            this.kryptonLabel22 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.kryptonGroup2 = new Krypton.Toolkit.KryptonGroup();
+            this.kryptonLabel22 = new Krypton.Toolkit.KryptonLabel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
@@ -73,9 +73,9 @@ namespace UI_design_demo.Purchase.set_rule
             this.kryptonGroup3.Size = new System.Drawing.Size(200, 200);
             this.kryptonGroup3.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(121)))), ((int)(((byte)(96)))));
             this.kryptonGroup3.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(121)))), ((int)(((byte)(96)))));
-            this.kryptonGroup3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonGroup3.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonGroup3.StateCommon.Border.Rounding = 25;
             this.kryptonGroup3.TabIndex = 214;
             // 
@@ -112,9 +112,9 @@ namespace UI_design_demo.Purchase.set_rule
             this.kryptonGroup2.Size = new System.Drawing.Size(200, 200);
             this.kryptonGroup2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(134)))), ((int)(((byte)(166)))));
             this.kryptonGroup2.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(134)))), ((int)(((byte)(166)))));
-            this.kryptonGroup2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonGroup2.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonGroup2.StateCommon.Border.Rounding = 25;
             this.kryptonGroup2.TabIndex = 213;
             // 
@@ -167,12 +167,12 @@ namespace UI_design_demo.Purchase.set_rule
 
         #endregion
 
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel4;
-        private ComponentFactory.Krypton.Toolkit.KryptonGroup kryptonGroup3;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel5;
+        private Krypton.Toolkit.KryptonPanel kryptonPanel4;
+        private Krypton.Toolkit.KryptonGroup kryptonGroup3;
+        private Krypton.Toolkit.KryptonLabel kryptonLabel5;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private ComponentFactory.Krypton.Toolkit.KryptonGroup kryptonGroup2;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel22;
+        private Krypton.Toolkit.KryptonGroup kryptonGroup2;
+        private Krypton.Toolkit.KryptonLabel kryptonLabel22;
         private System.Windows.Forms.PictureBox pictureBox6;
     }
 }
