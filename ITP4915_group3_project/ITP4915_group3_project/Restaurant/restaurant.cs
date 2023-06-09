@@ -21,12 +21,28 @@ namespace ITP4915_group3_project
 
         private void krytonBtnMenuRequestOrder_Click(object sender, EventArgs e)
         {
-            
+            // change content to request oders page
+            // get stock.check form
+            Form check = new Restaurant.request_order.check();
+            //clear all contorls of panel
+            kryptonPanelContent.Controls.Clear();
+            //find control 
+            Control content = check.Controls.Find("kryptonGroupContent", true)[0];
+            //place on content
+            kryptonPanelContent.Controls.Add(content);
         }
 
         private void kryptonButtonMenuDeliveryNote_Click(object sender, EventArgs e)
         {
-
+            // change content to Delivery Note page
+            // get stock.check form
+            Form check = new Restaurant.delivery_note.search();
+            //clear all contorls of panel
+            kryptonPanelContent.Controls.Clear();
+            //find control 
+            Control content = check.Controls.Find("panelContent", true)[0];
+            //place on content
+            kryptonPanelContent.Controls.Add(content);
         }
 
         private void kryptonButtonMenuStock_Click(object sender, EventArgs e)

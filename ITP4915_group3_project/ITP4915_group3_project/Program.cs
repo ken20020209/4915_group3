@@ -16,7 +16,7 @@ namespace ITP4915_group3_project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new restaurant());
+            Application.Run(new Login());
         }
     }
 }

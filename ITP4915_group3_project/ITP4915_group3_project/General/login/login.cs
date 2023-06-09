@@ -11,61 +11,28 @@ using Krypton.Toolkit;
 
 namespace ITP4915_group3_project
 {
-    public partial class Form1 : KryptonForm
+    public partial class Login : KryptonForm
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void kryptonButtonSignIn_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            new General.navi.navi().ShowDialog();
+            this.Show();
+            
+            
 
         }
 
-        private void kryptonPalette1_PalettePaint(object sender, PaletteLayoutEventArgs e)
+        private void kryptonLabelForgotPassword_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void kryptonTextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void kryptonButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void kryptonLabel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void kryptonBorderEdge1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void kryptonPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void kryptonTaskDialog1_PropertyChanged(object sender, PropertyChangedEventArgs e)
-        {
-
+            this.Hide();
+            new Forget().ShowDialog();
+            this.Show();
         }
     }
 }
