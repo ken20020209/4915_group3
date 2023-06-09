@@ -162,6 +162,7 @@
     <Compile Include="all_use.Designer.cs">
       <DependentUpon>all_use.cs</DependentUpon>
     </Compile>
+    <Compile Include="batchProcessing\requestMatch.cs" />
     <Compile Include="category\brand\create\create.cs">
       <SubType>Form</SubType>
     </Compile>
