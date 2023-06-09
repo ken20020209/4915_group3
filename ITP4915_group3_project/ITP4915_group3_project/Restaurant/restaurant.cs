@@ -19,44 +19,29 @@ namespace ITP4915_group3_project
             InitializeComponent();
         }
 
-        private void restaurant_Load(object sender, EventArgs e)
+        private void krytonBtnMenuRequestOrder_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void kryptonButtonMenuDeliveryNote_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void kryptonButtonMenuStock_Click(object sender, EventArgs e)
         {
+            // change content to stock page
+            // get stock.check form
+            Form check = new Restaurant.stock.check();
+            //clear all contorls of panel
+            kryptonPanelContent.Controls.Clear();
+            //find control from stock
+            Control content = check.Controls.Find("panelContent", true)[0];
+            //place on content
+            kryptonPanelContent.Controls.Add(content);
 
-        }
-
-        private void kryptonButton3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void kryptonTextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void kryptonTextBox13_TextChanged(object sender, EventArgs e)
-        {
-
+            
         }
     }
 }
