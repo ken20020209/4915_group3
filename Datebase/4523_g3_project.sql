@@ -40,6 +40,7 @@ CREATE TABLE `address` (
 
 LOCK TABLES `address` WRITE;
 /*!40000 ALTER TABLE `address` DISABLE KEYS */;
+INSERT INTO `address` VALUES ('0','sam home','hk','chai wan ','ive ','5','03');
 /*!40000 ALTER TABLE `address` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -273,7 +274,7 @@ CREATE TABLE `department` (
 
 LOCK TABLES `department` WRITE;
 /*!40000 ALTER TABLE `department` DISABLE KEYS */;
-INSERT INTO `department` VALUES ('1','restaurant',''),('2','warehouse',''),('3','delivery',NULL),('4','purchase',NULL),('5','HR',NULL);
+INSERT INTO `department` VALUES ('0','restaurant',''),('1','warehouse',''),('2','delivery',NULL),('3','purchase',NULL),('4','HR',NULL),('5','category',NULL),('6','accounting',NULL);
 /*!40000 ALTER TABLE `department` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -300,6 +301,7 @@ CREATE TABLE `department_role` (
 
 LOCK TABLES `department_role` WRITE;
 /*!40000 ALTER TABLE `department_role` DISABLE KEYS */;
+INSERT INTO `department_role` VALUES ('6','A0'),('6','A1'),('5','C0'),('2','D0'),('2','D1'),('4','H0'),('3','P0'),('3','P1'),('0','R0'),('0','R1'),('1','W0'),('1','W1');
 /*!40000 ALTER TABLE `department_role` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -366,6 +368,7 @@ DROP TABLE IF EXISTS `item`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `item` (
   `item_ID` char(10) NOT NULL COMMENT 'The quantity to identify each item inside the warehouse\n0000000000-9999999999\n\n',
+  `item_name` varchar(50) NOT NULL,
   `price` decimal(10,2) NOT NULL COMMENT 'The price of each item\n\n\n\n',
   `size` varchar(30) NOT NULL COMMENT 'The size of the product\nS, M, L\n\n',
   `supplier_ID` char(10) NOT NULL COMMENT 'The ID of the supplier\n0000000000-9999999999\n\n',
@@ -387,6 +390,7 @@ CREATE TABLE `item` (
 
 LOCK TABLES `item` WRITE;
 /*!40000 ALTER TABLE `item` DISABLE KEYS */;
+INSERT INTO `item` VALUES ('0','fish ',55.50,'3kg','0','0','0');
 /*!40000 ALTER TABLE `item` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -411,8 +415,24 @@ CREATE TABLE `item_category` (
 
 LOCK TABLES `item_category` WRITE;
 /*!40000 ALTER TABLE `item_category` DISABLE KEYS */;
+INSERT INTO `item_category` VALUES ('0','food',NULL);
 /*!40000 ALTER TABLE `item_category` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Temporary view structure for view `new_view`
+--
+
+DROP TABLE IF EXISTS `new_view`;
+/*!50001 DROP VIEW IF EXISTS `new_view`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `new_view` AS SELECT 
+ 1 AS `role_id`,
+ 1 AS `role_name`,
+ 1 AS `role_description`,
+ 1 AS `department name`*/;
+SET character_set_client = @saved_cs_client;
 
 --
 -- Table structure for table `notify_message`
@@ -491,6 +511,7 @@ CREATE TABLE `partner_brand` (
 
 LOCK TABLES `partner_brand` WRITE;
 /*!40000 ALTER TABLE `partner_brand` DISABLE KEYS */;
+INSERT INTO `partner_brand` VALUES ('0','chinese style','chinese','chinese food');
 /*!40000 ALTER TABLE `partner_brand` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -660,6 +681,7 @@ CREATE TABLE `priority` (
 
 LOCK TABLES `priority` WRITE;
 /*!40000 ALTER TABLE `priority` DISABLE KEYS */;
+INSERT INTO `priority` VALUES ('0','normal',NULL),('1','urgent',NULL);
 /*!40000 ALTER TABLE `priority` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -737,6 +759,7 @@ CREATE TABLE `purchasers_request` (
 
 LOCK TABLES `purchasers_request` WRITE;
 /*!40000 ALTER TABLE `purchasers_request` DISABLE KEYS */;
+INSERT INTO `purchasers_request` VALUES ('0','0','0','0',99,'0','PR0','2020-01-01','2020-01-01',NULL);
 /*!40000 ALTER TABLE `purchasers_request` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -790,6 +813,7 @@ CREATE TABLE `restaurant` (
 
 LOCK TABLES `restaurant` WRITE;
 /*!40000 ALTER TABLE `restaurant` DISABLE KEYS */;
+INSERT INTO `restaurant` VALUES ('0','big food ','0','chinese','13245881');
 /*!40000 ALTER TABLE `restaurant` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -805,7 +829,7 @@ CREATE TABLE `restaurant_stock_item` (
   `item_ID` char(10) NOT NULL COMMENT 'The ID to identify each item\n0000000000-9999999999\n\n',
   `qty` int NOT NULL COMMENT 'The quantity of each item in the stock',
   `remarks` varchar(50) DEFAULT NULL COMMENT 'The remark that they have to add \n\n',
-  `expireDate` varchar(45) NOT NULL COMMENT 'Expiry date of each item\nYYYYMMDD\n\n',
+  `expireDate` date NOT NULL COMMENT 'Expiry date of each item\\nYYYYMMDD\\n\\n',
   PRIMARY KEY (`restaurant_ID`),
   KEY `Restaurant_Stock_Item_item_ID_fk_idx` (`item_ID`),
   CONSTRAINT `Restaurant_Stock_Item_item_ID_fk` FOREIGN KEY (`item_ID`) REFERENCES `item` (`item_ID`),
@@ -819,6 +843,7 @@ CREATE TABLE `restaurant_stock_item` (
 
 LOCK TABLES `restaurant_stock_item` WRITE;
 /*!40000 ALTER TABLE `restaurant_stock_item` DISABLE KEYS */;
+INSERT INTO `restaurant_stock_item` VALUES ('0','0',99,NULL,'2020-01-01');
 /*!40000 ALTER TABLE `restaurant_stock_item` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -843,6 +868,7 @@ CREATE TABLE `role` (
 
 LOCK TABLES `role` WRITE;
 /*!40000 ALTER TABLE `role` DISABLE KEYS */;
+INSERT INTO `role` VALUES ('A0','accounting manger',NULL),('A1','accounting clerk',NULL),('C0','category manger',NULL),('D0','delivery manger',NULL),('D1','delivery staff',NULL),('H0','HR manger',NULL),('P0','purchase manager',NULL),('P1','purchase clerk',NULL),('R0','restaurant manger',NULL),('R1','restaurant staff',NULL),('W0','warehouse manger',NULL),('W1','warehouse clerk',NULL);
 /*!40000 ALTER TABLE `role` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1014,6 +1040,7 @@ CREATE TABLE `status` (
 
 LOCK TABLES `status` WRITE;
 /*!40000 ALTER TABLE `status` DISABLE KEYS */;
+INSERT INTO `status` VALUES ('PR0','wait to process',NULL),('PR1','wait to match',NULL);
 /*!40000 ALTER TABLE `status` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1046,6 +1073,7 @@ CREATE TABLE `supplier` (
 
 LOCK TABLES `supplier` WRITE;
 /*!40000 ALTER TABLE `supplier` DISABLE KEYS */;
+INSERT INTO `supplier` VALUES ('0','sam ','12345678','sam@gmail.com','0','0',NULL);
 /*!40000 ALTER TABLE `supplier` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1072,6 +1100,7 @@ CREATE TABLE `supplier_contact_person` (
 
 LOCK TABLES `supplier_contact_person` WRITE;
 /*!40000 ALTER TABLE `supplier_contact_person` DISABLE KEYS */;
+INSERT INTO `supplier_contact_person` VALUES ('0','sam ','88888888','sam@gmai.com','M');
 /*!40000 ALTER TABLE `supplier_contact_person` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1105,6 +1134,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` VALUES ('0','sam','yau','R0','sam0000','123123','M','12345678','samYau@gmail.com'),('1','sam','yau','R1','sam0001','123123','M','12345678','samYau@gmail.com'),('10','sam','yau','W0','sam0010','123123','M','12345678','samYau@gmail.com'),('11','sam','yau','W1','sam0011','123123','M','12345678','samYau@gmail.com'),('2','sam','yau','A0','sam0002','123123','M','12345678','samYau@gmail.com'),('3','sam','yau','A1','sam0003','123123','M','12345678','samYau@gmail.com'),('4','sam','yau','C0','sam0004','123123','M','12345678','samYau@gmail.com'),('5','sam','yau','D0','sam0005','123123','M','12345678','samYau@gmail.com'),('6','sam','yau','D1','sam0006','123123','M','12345678','samYau@gmail.com'),('7','sam','yau','H0','sam0007','123123','M','12345678','samYau@gmail.com'),('8','sam','yau','P0','sam0008','123123','M','12345678','samYau@gmail.com'),('9','sam','yau','P1','sam0009','123123','M','12345678','samYau@gmail.com');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1222,6 +1252,24 @@ LOCK TABLES `warehousedispatchinstruction` WRITE;
 /*!40000 ALTER TABLE `warehousedispatchinstruction` DISABLE KEYS */;
 /*!40000 ALTER TABLE `warehousedispatchinstruction` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Final view structure for view `new_view`
+--
+
+/*!50001 DROP VIEW IF EXISTS `new_view`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `new_view` AS select `role`.`role_id` AS `role_id`,`role`.`role_name` AS `role_name`,`role`.`role_description` AS `role_description`,`department`.`dept_name` AS `department name` from ((`role` join `department`) join `department_role`) where ((`role`.`role_id` = `department_role`.`role_id`) and (`department`.`dept_id` = `department_role`.`dept_id`)) order by `role`.`role_id` */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -1232,4 +1280,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-06-03 15:35:59
+-- Dump completed on 2023-06-09 23:22:02
