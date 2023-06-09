@@ -16,7 +16,8 @@ namespace ITP4915_group3_project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new General.login.Login());
+            Form login = new General.login.Login();
+            Application.Run(login);
         }
     }
 }

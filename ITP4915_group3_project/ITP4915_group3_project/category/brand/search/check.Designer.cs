@@ -54,26 +54,29 @@ namespace ITP4915_group3_project.category.brand
             this.kryptonPanel4.Controls.Add(this.pictureBox7);
             this.kryptonPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel4.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonPanel4.Name = "kryptonPanel4";
-            this.kryptonPanel4.Size = new System.Drawing.Size(984, 567);
+            this.kryptonPanel4.Size = new System.Drawing.Size(656, 378);
             this.kryptonPanel4.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonPanel4.TabIndex = 53;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
-            this.pictureBox5.Location = new System.Drawing.Point(608, 477);
+            this.pictureBox5.Location = new System.Drawing.Point(405, 318);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(286, 38);
+            this.pictureBox5.Size = new System.Drawing.Size(191, 25);
             this.pictureBox5.TabIndex = 58;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
-            this.pictureBox6.Location = new System.Drawing.Point(37, 123);
+            this.pictureBox6.Location = new System.Drawing.Point(25, 82);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(857, 177);
+            this.pictureBox6.Size = new System.Drawing.Size(571, 118);
             this.pictureBox6.TabIndex = 57;
             this.pictureBox6.TabStop = false;
             // 
@@ -82,25 +85,29 @@ namespace ITP4915_group3_project.category.brand
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.label3.Location = new System.Drawing.Point(654, 51);
+            this.label3.Location = new System.Drawing.Point(436, 34);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 22);
+            this.label3.Size = new System.Drawing.Size(40, 16);
             this.label3.TabIndex = 56;
             this.label3.Text = "Filter:";
             // 
             // kryptonComboBox2
             // 
+            this.kryptonComboBox2.CornerRoundingRadius = 25F;
             this.kryptonComboBox2.DropDownWidth = 153;
-            this.kryptonComboBox2.Location = new System.Drawing.Point(725, 38);
+            this.kryptonComboBox2.IntegralHeight = false;
+            this.kryptonComboBox2.Location = new System.Drawing.Point(483, 25);
+            this.kryptonComboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonComboBox2.Name = "kryptonComboBox2";
-            this.kryptonComboBox2.Size = new System.Drawing.Size(169, 44);
+            this.kryptonComboBox2.Size = new System.Drawing.Size(113, 37);
             this.kryptonComboBox2.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
             this.kryptonComboBox2.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonComboBox2.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonComboBox2.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.Rounding = 25;
+            this.kryptonComboBox2.StateCommon.ComboBox.Border.Rounding = 25F;
             this.kryptonComboBox2.StateCommon.ComboBox.Content.Color1 = System.Drawing.Color.Gray;
             this.kryptonComboBox2.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonComboBox2.StateCommon.DropBack.Color1 = System.Drawing.Color.White;
@@ -110,9 +117,10 @@ namespace ITP4915_group3_project.category.brand
             // 
             // kryptonTextBox16
             // 
-            this.kryptonTextBox16.Location = new System.Drawing.Point(37, 41);
+            this.kryptonTextBox16.Location = new System.Drawing.Point(25, 27);
+            this.kryptonTextBox16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonTextBox16.Name = "kryptonTextBox16";
-            this.kryptonTextBox16.Size = new System.Drawing.Size(366, 41);
+            this.kryptonTextBox16.Size = new System.Drawing.Size(244, 34);
             this.kryptonTextBox16.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
             this.kryptonTextBox16.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox16.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -120,7 +128,7 @@ namespace ITP4915_group3_project.category.brand
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonTextBox16.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox16.StateCommon.Border.Rounding = 25;
+            this.kryptonTextBox16.StateCommon.Border.Rounding = 25F;
             this.kryptonTextBox16.StateCommon.Border.Width = 1;
             this.kryptonTextBox16.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
             this.kryptonTextBox16.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -131,18 +139,20 @@ namespace ITP4915_group3_project.category.brand
             // pictureBox7
             // 
             this.pictureBox7.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
-            this.pictureBox7.Location = new System.Drawing.Point(37, 260);
+            this.pictureBox7.Location = new System.Drawing.Point(25, 173);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(857, 177);
+            this.pictureBox7.Size = new System.Drawing.Size(571, 118);
             this.pictureBox7.TabIndex = 59;
             this.pictureBox7.TabStop = false;
             // 
             // check
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 567);
+            this.ClientSize = new System.Drawing.Size(656, 378);
             this.Controls.Add(this.kryptonPanel4);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "check";
             this.Text = "check";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();

@@ -23,18 +23,6 @@ namespace ITP4915_group3_project.category
 
         }
 
-        private void kryptonLabel15_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
-
-        private void kryptonButton1_Click(object sender, EventArgs e)
-        {
-                    }
-
-        private void kryptonButton9_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
