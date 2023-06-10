@@ -385,7 +385,6 @@
     <Compile Include="category\supplier\search\edit.Designer.cs">
       <DependentUpon>edit.cs</DependentUpon>
     </Compile>
-    <Compile Include="database\dbConnect.cs" />
     <Compile Include="delivery\create_schedule\check.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1170,9 +1169,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\stock\update.resx">
       <DependentUpon>update.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="test.resx">
-      <DependentUpon>test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\check_PO\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>

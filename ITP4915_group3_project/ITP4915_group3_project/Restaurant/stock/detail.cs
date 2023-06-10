@@ -22,7 +22,19 @@ namespace ITP4915_group3_project.Restaurant.stock
         {
             InitializeComponent();
 
-            MySqlConnection conn = new dbConnect().getConn();
+            string connStr = "server = localhost; user = root; database = 4523_g1_project_db; port = 3308; password = 123123";
+            MySqlConnection conn;
+
+            conn = new MySqlConnection(connStr);
+            try
+            {
+                conn.Open();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+            
 
             string sql = "SELECT * FROM 4523_g1_project_db.restaurantstockdetail;";
             MySqlCommand cmd = new MySqlCommand(sql, conn);
