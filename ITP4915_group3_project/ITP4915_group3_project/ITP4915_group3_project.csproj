@@ -385,6 +385,7 @@
     <Compile Include="category\supplier\search\edit.Designer.cs">
       <DependentUpon>edit.cs</DependentUpon>
     </Compile>
+    <Compile Include="database\dbConnect.cs" />
     <Compile Include="delivery\create_schedule\check.cs">
       <SubType>Form</SubType>
     </Compile>

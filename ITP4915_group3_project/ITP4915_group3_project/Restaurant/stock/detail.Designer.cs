@@ -29,314 +29,371 @@ namespace ITP4915_group3_project.Restaurant.stock
         /// </summary>
         private void InitializeComponent()
         {
-            this.kryptonPanel5 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
-            this.kryptonTextBox5 = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonLabel11 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonRichTextBox1 = new Krypton.Toolkit.KryptonRichTextBox();
-            this.kryptonLabel10 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonTextBox4 = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonLabel9 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonDomainUpDown1 = new Krypton.Toolkit.KryptonDomainUpDown();
-            this.kryptonLabel8 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonTextBox2 = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonLabel7 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonLabel5 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonTextBox3 = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonLabel6 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).BeginInit();
-            this.kryptonPanel5.SuspendLayout();
+            this.kryptonPanelContent = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonButtonEdit = new Krypton.Toolkit.KryptonButton();
+            this.kryptonTextBoxBrand = new Krypton.Toolkit.KryptonTextBox();
+            this.kryptonLabelBrand = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonRichTextBoxRemarks = new Krypton.Toolkit.KryptonRichTextBox();
+            this.kryptonLabelRemarks = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonTextBoxExpectedQty = new Krypton.Toolkit.KryptonTextBox();
+            this.kryptonLabelExpectedQty = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonDomainUpDownQty = new Krypton.Toolkit.KryptonDomainUpDown();
+            this.kryptonLabelQty = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonTextBoxCategory = new Krypton.Toolkit.KryptonTextBox();
+            this.kryptonLabelCategory = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonTextBoxName = new Krypton.Toolkit.KryptonTextBox();
+            this.kryptonLabelName = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonTextBoxID = new Krypton.Toolkit.KryptonTextBox();
+            this.kryptonLabelID = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonLabelBack = new Krypton.Toolkit.KryptonLabel();
+            this.labelDetail = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelContent)).BeginInit();
+            this.kryptonPanelContent.SuspendLayout();
             this.SuspendLayout();
             // 
-            // kryptonPanel5
+            // kryptonPanelContent
             // 
-            this.kryptonPanel5.Controls.Add(this.kryptonButton1);
-            this.kryptonPanel5.Controls.Add(this.kryptonTextBox5);
-            this.kryptonPanel5.Controls.Add(this.kryptonLabel11);
-            this.kryptonPanel5.Controls.Add(this.kryptonRichTextBox1);
-            this.kryptonPanel5.Controls.Add(this.kryptonLabel10);
-            this.kryptonPanel5.Controls.Add(this.kryptonTextBox4);
-            this.kryptonPanel5.Controls.Add(this.kryptonLabel9);
-            this.kryptonPanel5.Controls.Add(this.kryptonDomainUpDown1);
-            this.kryptonPanel5.Controls.Add(this.kryptonLabel8);
-            this.kryptonPanel5.Controls.Add(this.kryptonTextBox2);
-            this.kryptonPanel5.Controls.Add(this.kryptonLabel7);
-            this.kryptonPanel5.Controls.Add(this.kryptonTextBox1);
-            this.kryptonPanel5.Controls.Add(this.kryptonLabel5);
-            this.kryptonPanel5.Controls.Add(this.kryptonTextBox3);
-            this.kryptonPanel5.Controls.Add(this.kryptonLabel6);
-            this.kryptonPanel5.Controls.Add(this.kryptonLabel4);
-            this.kryptonPanel5.Controls.Add(this.label1);
-            this.kryptonPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel5.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel5.Name = "kryptonPanel5";
-            this.kryptonPanel5.Size = new System.Drawing.Size(1085, 649);
-            this.kryptonPanel5.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonPanel5.TabIndex = 1;
+            this.kryptonPanelContent.Controls.Add(this.kryptonButtonEdit);
+            this.kryptonPanelContent.Controls.Add(this.kryptonTextBoxBrand);
+            this.kryptonPanelContent.Controls.Add(this.kryptonLabelBrand);
+            this.kryptonPanelContent.Controls.Add(this.kryptonRichTextBoxRemarks);
+            this.kryptonPanelContent.Controls.Add(this.kryptonLabelRemarks);
+            this.kryptonPanelContent.Controls.Add(this.kryptonTextBoxExpectedQty);
+            this.kryptonPanelContent.Controls.Add(this.kryptonLabelExpectedQty);
+            this.kryptonPanelContent.Controls.Add(this.kryptonDomainUpDownQty);
+            this.kryptonPanelContent.Controls.Add(this.kryptonLabelQty);
+            this.kryptonPanelContent.Controls.Add(this.kryptonTextBoxCategory);
+            this.kryptonPanelContent.Controls.Add(this.kryptonLabelCategory);
+            this.kryptonPanelContent.Controls.Add(this.kryptonTextBoxName);
+            this.kryptonPanelContent.Controls.Add(this.kryptonLabelName);
+            this.kryptonPanelContent.Controls.Add(this.kryptonTextBoxID);
+            this.kryptonPanelContent.Controls.Add(this.kryptonLabelID);
+            this.kryptonPanelContent.Controls.Add(this.kryptonLabelBack);
+            this.kryptonPanelContent.Controls.Add(this.labelDetail);
+            this.kryptonPanelContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanelContent.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanelContent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonPanelContent.Name = "kryptonPanelContent";
+            this.kryptonPanelContent.Size = new System.Drawing.Size(723, 433);
+            this.kryptonPanelContent.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.kryptonPanelContent.StateCommon.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonPanelContent.TabIndex = 1;
             // 
-            // kryptonButton1
+            // kryptonButtonEdit
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(769, 19);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(145, 45);
-            this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonButton1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonButton1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonButtonEdit.CornerRoundingRadius = 25F;
+            this.kryptonButtonEdit.Location = new System.Drawing.Point(513, 13);
+            this.kryptonButtonEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonButtonEdit.Name = "kryptonButtonEdit";
+            this.kryptonButtonEdit.Size = new System.Drawing.Size(97, 30);
+            this.kryptonButtonEdit.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButtonEdit.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButtonEdit.StateCommon.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonButtonEdit.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButtonEdit.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButtonEdit.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateCommon.Border.Rounding = 25;
-            this.kryptonButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.kryptonButton1.TabIndex = 222;
-            this.kryptonButton1.Values.Text = "Edit";
+            this.kryptonButtonEdit.StateCommon.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonButtonEdit.StateCommon.Border.Rounding = 25F;
+            this.kryptonButtonEdit.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButtonEdit.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonButtonEdit.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.kryptonButtonEdit.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonButtonEdit.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.kryptonButtonEdit.TabIndex = 222;
+            this.kryptonButtonEdit.Values.Text = "Edit";
             // 
-            // kryptonTextBox5
+            // kryptonTextBoxBrand
             // 
-            this.kryptonTextBox5.Location = new System.Drawing.Point(519, 176);
-            this.kryptonTextBox5.Name = "kryptonTextBox5";
-            this.kryptonTextBox5.ReadOnly = true;
-            this.kryptonTextBox5.Size = new System.Drawing.Size(150, 28);
-            this.kryptonTextBox5.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
-            this.kryptonTextBox5.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonTextBox5.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonTextBox5.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonTextBoxBrand.Location = new System.Drawing.Point(346, 117);
+            this.kryptonTextBoxBrand.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonTextBoxBrand.Name = "kryptonTextBoxBrand";
+            this.kryptonTextBoxBrand.ReadOnly = true;
+            this.kryptonTextBoxBrand.Size = new System.Drawing.Size(100, 22);
+            this.kryptonTextBoxBrand.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
+            this.kryptonTextBoxBrand.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonTextBoxBrand.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonTextBoxBrand.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox5.StateCommon.Content.Color1 = System.Drawing.Color.Black;
-            this.kryptonTextBox5.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox5.TabIndex = 221;
-            this.kryptonTextBox5.Text = "brand_name";
-            this.kryptonTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.kryptonTextBoxBrand.StateCommon.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonTextBoxBrand.StateCommon.Content.Color1 = System.Drawing.Color.Black;
+            this.kryptonTextBoxBrand.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBoxBrand.TabIndex = 221;
+            this.kryptonTextBoxBrand.Text = "brand_name";
+            this.kryptonTextBoxBrand.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // kryptonLabel11
+            // kryptonLabelBrand
             // 
-            this.kryptonLabel11.Location = new System.Drawing.Point(444, 176);
-            this.kryptonLabel11.Name = "kryptonLabel11";
-            this.kryptonLabel11.Size = new System.Drawing.Size(69, 27);
-            this.kryptonLabel11.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonLabel11.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel11.TabIndex = 220;
-            this.kryptonLabel11.Values.Text = "Brand:";
+            this.kryptonLabelBrand.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
+            this.kryptonLabelBrand.Location = new System.Drawing.Point(296, 117);
+            this.kryptonLabelBrand.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonLabelBrand.Name = "kryptonLabelBrand";
+            this.kryptonLabelBrand.Size = new System.Drawing.Size(48, 19);
+            this.kryptonLabelBrand.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonLabelBrand.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabelBrand.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabelBrand.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.kryptonLabelBrand.TabIndex = 220;
+            this.kryptonLabelBrand.Values.Text = "Brand:";
             // 
-            // kryptonRichTextBox1
+            // kryptonRichTextBoxRemarks
             // 
-            this.kryptonRichTextBox1.Location = new System.Drawing.Point(212, 304);
-            this.kryptonRichTextBox1.Name = "kryptonRichTextBox1";
-            this.kryptonRichTextBox1.Size = new System.Drawing.Size(456, 137);
-            this.kryptonRichTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
-            this.kryptonRichTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonRichTextBox1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonRichTextBoxRemarks.Location = new System.Drawing.Point(141, 203);
+            this.kryptonRichTextBoxRemarks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonRichTextBoxRemarks.Name = "kryptonRichTextBoxRemarks";
+            this.kryptonRichTextBoxRemarks.Size = new System.Drawing.Size(304, 91);
+            this.kryptonRichTextBoxRemarks.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
+            this.kryptonRichTextBoxRemarks.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonRichTextBoxRemarks.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonRichTextBox1.TabIndex = 219;
-            this.kryptonRichTextBox1.Text = "Remarks for item";
+            this.kryptonRichTextBoxRemarks.StateCommon.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonRichTextBoxRemarks.TabIndex = 219;
+            this.kryptonRichTextBoxRemarks.Text = "Remarks for item";
             // 
-            // kryptonLabel10
+            // kryptonLabelRemarks
             // 
-            this.kryptonLabel10.Location = new System.Drawing.Point(114, 304);
-            this.kryptonLabel10.Name = "kryptonLabel10";
-            this.kryptonLabel10.Size = new System.Drawing.Size(92, 27);
-            this.kryptonLabel10.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonLabel10.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel10.TabIndex = 218;
-            this.kryptonLabel10.Values.Text = "Remarks:";
+            this.kryptonLabelRemarks.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
+            this.kryptonLabelRemarks.Location = new System.Drawing.Point(76, 203);
+            this.kryptonLabelRemarks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonLabelRemarks.Name = "kryptonLabelRemarks";
+            this.kryptonLabelRemarks.Size = new System.Drawing.Size(64, 19);
+            this.kryptonLabelRemarks.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonLabelRemarks.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabelRemarks.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabelRemarks.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.kryptonLabelRemarks.TabIndex = 218;
+            this.kryptonLabelRemarks.Values.Text = "Remarks:";
             // 
-            // kryptonTextBox4
+            // kryptonTextBoxExpectedQty
             // 
-            this.kryptonTextBox4.Location = new System.Drawing.Point(212, 236);
-            this.kryptonTextBox4.Name = "kryptonTextBox4";
-            this.kryptonTextBox4.ReadOnly = true;
-            this.kryptonTextBox4.Size = new System.Drawing.Size(150, 28);
-            this.kryptonTextBox4.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
-            this.kryptonTextBox4.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonTextBox4.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonTextBox4.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonTextBoxExpectedQty.Location = new System.Drawing.Point(141, 157);
+            this.kryptonTextBoxExpectedQty.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonTextBoxExpectedQty.Name = "kryptonTextBoxExpectedQty";
+            this.kryptonTextBoxExpectedQty.ReadOnly = true;
+            this.kryptonTextBoxExpectedQty.Size = new System.Drawing.Size(100, 22);
+            this.kryptonTextBoxExpectedQty.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
+            this.kryptonTextBoxExpectedQty.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonTextBoxExpectedQty.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonTextBoxExpectedQty.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox4.StateCommon.Content.Color1 = System.Drawing.Color.Black;
-            this.kryptonTextBox4.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox4.TabIndex = 217;
-            this.kryptonTextBox4.Text = "0";
-            this.kryptonTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.kryptonTextBoxExpectedQty.StateCommon.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonTextBoxExpectedQty.StateCommon.Content.Color1 = System.Drawing.Color.Black;
+            this.kryptonTextBoxExpectedQty.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBoxExpectedQty.TabIndex = 217;
+            this.kryptonTextBoxExpectedQty.Text = "0";
+            this.kryptonTextBoxExpectedQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // kryptonLabel9
+            // kryptonLabelExpectedQty
             // 
-            this.kryptonLabel9.Location = new System.Drawing.Point(30, 236);
-            this.kryptonLabel9.Name = "kryptonLabel9";
-            this.kryptonLabel9.Size = new System.Drawing.Size(180, 27);
-            this.kryptonLabel9.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonLabel9.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel9.TabIndex = 216;
-            this.kryptonLabel9.Values.Text = "Expected inventory:";
+            this.kryptonLabelExpectedQty.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
+            this.kryptonLabelExpectedQty.Location = new System.Drawing.Point(20, 157);
+            this.kryptonLabelExpectedQty.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonLabelExpectedQty.Name = "kryptonLabelExpectedQty";
+            this.kryptonLabelExpectedQty.Size = new System.Drawing.Size(122, 19);
+            this.kryptonLabelExpectedQty.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonLabelExpectedQty.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabelExpectedQty.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabelExpectedQty.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.kryptonLabelExpectedQty.TabIndex = 216;
+            this.kryptonLabelExpectedQty.Values.Text = "Expected inventory:";
             // 
-            // kryptonDomainUpDown1
+            // kryptonDomainUpDownQty
             // 
-            this.kryptonDomainUpDown1.Location = new System.Drawing.Point(518, 233);
-            this.kryptonDomainUpDown1.Name = "kryptonDomainUpDown1";
-            this.kryptonDomainUpDown1.Size = new System.Drawing.Size(149, 30);
-            this.kryptonDomainUpDown1.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
-            this.kryptonDomainUpDown1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonDomainUpDown1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonDomainUpDownQty.CornerRoundingRadius = -1F;
+            this.kryptonDomainUpDownQty.Location = new System.Drawing.Point(345, 155);
+            this.kryptonDomainUpDownQty.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonDomainUpDownQty.Name = "kryptonDomainUpDownQty";
+            this.kryptonDomainUpDownQty.Size = new System.Drawing.Size(99, 22);
+            this.kryptonDomainUpDownQty.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
+            this.kryptonDomainUpDownQty.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonDomainUpDownQty.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonDomainUpDown1.TabIndex = 215;
-            this.kryptonDomainUpDown1.Text = "0";
-            this.kryptonDomainUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.kryptonDomainUpDownQty.StateCommon.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonDomainUpDownQty.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.kryptonDomainUpDownQty.TabIndex = 215;
+            this.kryptonDomainUpDownQty.Text = "0";
             // 
-            // kryptonLabel8
+            // kryptonLabelQty
             // 
-            this.kryptonLabel8.Location = new System.Drawing.Point(462, 233);
-            this.kryptonLabel8.Name = "kryptonLabel8";
-            this.kryptonLabel8.Size = new System.Drawing.Size(50, 27);
-            this.kryptonLabel8.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonLabel8.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel8.TabIndex = 214;
-            this.kryptonLabel8.Values.Text = "Qty:";
+            this.kryptonLabelQty.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
+            this.kryptonLabelQty.Location = new System.Drawing.Point(308, 155);
+            this.kryptonLabelQty.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonLabelQty.Name = "kryptonLabelQty";
+            this.kryptonLabelQty.Size = new System.Drawing.Size(35, 19);
+            this.kryptonLabelQty.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonLabelQty.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabelQty.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabelQty.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.kryptonLabelQty.TabIndex = 214;
+            this.kryptonLabelQty.Values.Text = "Qty:";
             // 
-            // kryptonTextBox2
+            // kryptonTextBoxCategory
             // 
-            this.kryptonTextBox2.Location = new System.Drawing.Point(212, 176);
-            this.kryptonTextBox2.Name = "kryptonTextBox2";
-            this.kryptonTextBox2.ReadOnly = true;
-            this.kryptonTextBox2.Size = new System.Drawing.Size(150, 28);
-            this.kryptonTextBox2.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
-            this.kryptonTextBox2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonTextBox2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonTextBox2.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonTextBoxCategory.Location = new System.Drawing.Point(141, 117);
+            this.kryptonTextBoxCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonTextBoxCategory.Name = "kryptonTextBoxCategory";
+            this.kryptonTextBoxCategory.ReadOnly = true;
+            this.kryptonTextBoxCategory.Size = new System.Drawing.Size(100, 22);
+            this.kryptonTextBoxCategory.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
+            this.kryptonTextBoxCategory.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonTextBoxCategory.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonTextBoxCategory.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox2.StateCommon.Content.Color1 = System.Drawing.Color.Black;
-            this.kryptonTextBox2.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox2.TabIndex = 213;
-            this.kryptonTextBox2.Text = "category_name";
-            this.kryptonTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.kryptonTextBoxCategory.StateCommon.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonTextBoxCategory.StateCommon.Content.Color1 = System.Drawing.Color.Black;
+            this.kryptonTextBoxCategory.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBoxCategory.TabIndex = 213;
+            this.kryptonTextBoxCategory.Text = "category_name";
+            this.kryptonTextBoxCategory.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // kryptonLabel7
+            // kryptonLabelCategory
             // 
-            this.kryptonLabel7.Location = new System.Drawing.Point(112, 176);
-            this.kryptonLabel7.Name = "kryptonLabel7";
-            this.kryptonLabel7.Size = new System.Drawing.Size(94, 27);
-            this.kryptonLabel7.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonLabel7.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel7.TabIndex = 212;
-            this.kryptonLabel7.Values.Text = "Category:";
+            this.kryptonLabelCategory.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
+            this.kryptonLabelCategory.Location = new System.Drawing.Point(75, 117);
+            this.kryptonLabelCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonLabelCategory.Name = "kryptonLabelCategory";
+            this.kryptonLabelCategory.Size = new System.Drawing.Size(65, 19);
+            this.kryptonLabelCategory.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonLabelCategory.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabelCategory.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabelCategory.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.kryptonLabelCategory.TabIndex = 212;
+            this.kryptonLabelCategory.Values.Text = "Category:";
             // 
-            // kryptonTextBox1
+            // kryptonTextBoxName
             // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(518, 122);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.ReadOnly = true;
-            this.kryptonTextBox1.Size = new System.Drawing.Size(150, 28);
-            this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
-            this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonTextBoxName.Location = new System.Drawing.Point(345, 81);
+            this.kryptonTextBoxName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonTextBoxName.Name = "kryptonTextBoxName";
+            this.kryptonTextBoxName.ReadOnly = true;
+            this.kryptonTextBoxName.Size = new System.Drawing.Size(100, 22);
+            this.kryptonTextBoxName.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
+            this.kryptonTextBoxName.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonTextBoxName.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonTextBoxName.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox1.StateCommon.Content.Color1 = System.Drawing.Color.Black;
-            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox1.TabIndex = 211;
-            this.kryptonTextBox1.Text = "Item_name";
-            this.kryptonTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.kryptonTextBoxName.StateCommon.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonTextBoxName.StateCommon.Content.Color1 = System.Drawing.Color.Black;
+            this.kryptonTextBoxName.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBoxName.TabIndex = 211;
+            this.kryptonTextBoxName.Text = "Item_name";
+            this.kryptonTextBoxName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // kryptonLabel5
+            // kryptonLabelName
             // 
-            this.kryptonLabel5.Location = new System.Drawing.Point(444, 122);
-            this.kryptonLabel5.Name = "kryptonLabel5";
-            this.kryptonLabel5.Size = new System.Drawing.Size(68, 27);
-            this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel5.TabIndex = 210;
-            this.kryptonLabel5.Values.Text = "Name:";
+            this.kryptonLabelName.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
+            this.kryptonLabelName.Location = new System.Drawing.Point(296, 81);
+            this.kryptonLabelName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonLabelName.Name = "kryptonLabelName";
+            this.kryptonLabelName.Size = new System.Drawing.Size(48, 19);
+            this.kryptonLabelName.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonLabelName.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabelName.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabelName.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.kryptonLabelName.TabIndex = 210;
+            this.kryptonLabelName.Values.Text = "Name:";
             // 
-            // kryptonTextBox3
+            // kryptonTextBoxID
             // 
-            this.kryptonTextBox3.Location = new System.Drawing.Point(212, 122);
-            this.kryptonTextBox3.Name = "kryptonTextBox3";
-            this.kryptonTextBox3.ReadOnly = true;
-            this.kryptonTextBox3.Size = new System.Drawing.Size(150, 28);
-            this.kryptonTextBox3.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
-            this.kryptonTextBox3.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonTextBox3.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonTextBox3.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonTextBoxID.Location = new System.Drawing.Point(141, 81);
+            this.kryptonTextBoxID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonTextBoxID.Name = "kryptonTextBoxID";
+            this.kryptonTextBoxID.ReadOnly = true;
+            this.kryptonTextBoxID.Size = new System.Drawing.Size(100, 22);
+            this.kryptonTextBoxID.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
+            this.kryptonTextBoxID.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonTextBoxID.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonTextBoxID.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox3.StateCommon.Content.Color1 = System.Drawing.Color.Black;
-            this.kryptonTextBox3.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox3.TabIndex = 209;
-            this.kryptonTextBox3.Text = "00000000";
-            this.kryptonTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.kryptonTextBoxID.StateCommon.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonTextBoxID.StateCommon.Content.Color1 = System.Drawing.Color.Black;
+            this.kryptonTextBoxID.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBoxID.TabIndex = 209;
+            this.kryptonTextBoxID.Text = "00000000";
+            this.kryptonTextBoxID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // kryptonLabel6
+            // kryptonLabelID
             // 
-            this.kryptonLabel6.Location = new System.Drawing.Point(165, 122);
-            this.kryptonLabel6.Name = "kryptonLabel6";
-            this.kryptonLabel6.Size = new System.Drawing.Size(41, 27);
-            this.kryptonLabel6.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonLabel6.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel6.TabIndex = 208;
-            this.kryptonLabel6.Values.Text = "ID:";
+            this.kryptonLabelID.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
+            this.kryptonLabelID.Location = new System.Drawing.Point(110, 81);
+            this.kryptonLabelID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonLabelID.Name = "kryptonLabelID";
+            this.kryptonLabelID.Size = new System.Drawing.Size(29, 19);
+            this.kryptonLabelID.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonLabelID.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabelID.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabelID.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.kryptonLabelID.TabIndex = 208;
+            this.kryptonLabelID.Values.Text = "ID:";
             // 
-            // kryptonLabel4
+            // kryptonLabelBack
             // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(38, 67);
-            this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(72, 23);
-            this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("新細明體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.kryptonLabel4.TabIndex = 207;
-            this.kryptonLabel4.Values.Text = "← Back";
+            this.kryptonLabelBack.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
+            this.kryptonLabelBack.Location = new System.Drawing.Point(25, 45);
+            this.kryptonLabelBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonLabelBack.Name = "kryptonLabelBack";
+            this.kryptonLabelBack.Size = new System.Drawing.Size(50, 16);
+            this.kryptonLabelBack.StateCommon.ShortText.Font = new System.Drawing.Font("PMingLiU", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.kryptonLabelBack.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabelBack.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.kryptonLabelBack.TabIndex = 207;
+            this.kryptonLabelBack.Values.Text = "← Back";
             // 
-            // label1
+            // labelDetail
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 34);
-            this.label1.TabIndex = 136;
-            this.label1.Text = "Detail";
+            this.labelDetail.AutoSize = true;
+            this.labelDetail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.labelDetail.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDetail.Location = new System.Drawing.Point(21, 13);
+            this.labelDetail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDetail.Name = "labelDetail";
+            this.labelDetail.Size = new System.Drawing.Size(59, 22);
+            this.labelDetail.TabIndex = 136;
+            this.labelDetail.Text = "Detail";
             // 
             // detail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1085, 649);
-            this.Controls.Add(this.kryptonPanel5);
+            this.ClientSize = new System.Drawing.Size(723, 433);
+            this.Controls.Add(this.kryptonPanelContent);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "detail";
             this.Text = "detail";
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).EndInit();
-            this.kryptonPanel5.ResumeLayout(false);
-            this.kryptonPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelContent)).EndInit();
+            this.kryptonPanelContent.ResumeLayout(false);
+            this.kryptonPanelContent.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Krypton.Toolkit.KryptonPanel kryptonPanel5;
-        private Krypton.Toolkit.KryptonButton kryptonButton1;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox5;
-        private Krypton.Toolkit.KryptonLabel kryptonLabel11;
-        private Krypton.Toolkit.KryptonRichTextBox kryptonRichTextBox1;
-        private Krypton.Toolkit.KryptonLabel kryptonLabel10;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox4;
-        private Krypton.Toolkit.KryptonLabel kryptonLabel9;
-        private Krypton.Toolkit.KryptonDomainUpDown kryptonDomainUpDown1;
-        private Krypton.Toolkit.KryptonLabel kryptonLabel8;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
-        private Krypton.Toolkit.KryptonLabel kryptonLabel7;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
-        private Krypton.Toolkit.KryptonLabel kryptonLabel5;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
-        private Krypton.Toolkit.KryptonLabel kryptonLabel6;
-        private Krypton.Toolkit.KryptonLabel kryptonLabel4;
-        private System.Windows.Forms.Label label1;
+        private Krypton.Toolkit.KryptonPanel kryptonPanelContent;
+        private Krypton.Toolkit.KryptonButton kryptonButtonEdit;
+        private Krypton.Toolkit.KryptonTextBox kryptonTextBoxBrand;
+        private Krypton.Toolkit.KryptonLabel kryptonLabelBrand;
+        private Krypton.Toolkit.KryptonRichTextBox kryptonRichTextBoxRemarks;
+        private Krypton.Toolkit.KryptonLabel kryptonLabelRemarks;
+        private Krypton.Toolkit.KryptonTextBox kryptonTextBoxExpectedQty;
+        private Krypton.Toolkit.KryptonLabel kryptonLabelExpectedQty;
+        private Krypton.Toolkit.KryptonDomainUpDown kryptonDomainUpDownQty;
+        private Krypton.Toolkit.KryptonLabel kryptonLabelQty;
+        private Krypton.Toolkit.KryptonTextBox kryptonTextBoxCategory;
+        private Krypton.Toolkit.KryptonLabel kryptonLabelCategory;
+        private Krypton.Toolkit.KryptonTextBox kryptonTextBoxName;
+        private Krypton.Toolkit.KryptonLabel kryptonLabelName;
+        private Krypton.Toolkit.KryptonTextBox kryptonTextBoxID;
+        private Krypton.Toolkit.KryptonLabel kryptonLabelID;
+        private Krypton.Toolkit.KryptonLabel kryptonLabelBack;
+        private System.Windows.Forms.Label labelDetail;
     }
 }
