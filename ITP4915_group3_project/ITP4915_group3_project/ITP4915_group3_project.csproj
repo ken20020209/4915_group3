@@ -711,7 +711,7 @@
       <DependentUpon>restaurant.cs</DependentUpon>
     </Compile>
     <Compile Include="Restaurant\stock\check.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Restaurant\stock\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>

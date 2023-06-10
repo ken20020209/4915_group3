@@ -47,7 +47,7 @@ namespace ITP4915_group3_project.Restaurant
 
         private void kryptonButtonMenuStock_Click(object sender, EventArgs e)
         {
-            // change content to stock page
+            /*// change content to stock page
             // get stock.check form
             Form check = new Restaurant.stock.check();
             //clear all contorls of panel
@@ -55,8 +55,10 @@ namespace ITP4915_group3_project.Restaurant
             //find control from stock
             Control content = check.Controls.Find("panelContent", true)[0];
             //place on content
-            kryptonPanelContent.Controls.Add(content);
+            kryptonPanelContent.Controls.Add(content);*/
 
+            // use user controls 
+            kryptonPanelContent.Controls.Add(new stock.check());
             
         }
     }
