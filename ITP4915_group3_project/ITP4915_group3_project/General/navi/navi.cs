@@ -20,37 +20,43 @@ namespace ITP4915_group3_project.General.navi
         private void kryptonButtonRestaurant_Click(object sender, EventArgs e)
         {
             // jump to restaurant form
-            new Restaurant.restaurant().Show();
+            this.Hide();
+            new Restaurant.restaurant().ShowDialog();
             this.Close();
         }
 
         private void kryptonButtonWarehosue_Click(object sender, EventArgs e)
         {
-            new warehouse.warehouse().Show();
+            this.Hide();
+            new warehouse.warehouse().ShowDialog();
             this.Close();
         }
 
         private void kryptonButtonPurchase_Click(object sender, EventArgs e)
         {
-            new purchase().Show();
+            this.Hide();
+            new purchase().ShowDialog();
             this.Close();
         }
 
         private void kryptonButtonDelivery_Click(object sender, EventArgs e)
         {
-            new delivery.delivery().Show();
+            this.Hide();
+            new delivery.delivery().ShowDialog();
             this.Close();
         }
 
         private void kryptonButtonCategory_Click(object sender, EventArgs e)
         {
-            new category.Category().Show();
+            this.Hide();
+            new category.Category().ShowDialog();
             this.Close();
         }
 
         private void kryptonButtonAccounting_Click(object sender, EventArgs e)
         {
-            new Accounting.accounting().Show();
+            this.Hide();
+            new Accounting.accounting().ShowDialog();
             this.Close();
         }
     }
