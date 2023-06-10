@@ -16,5 +16,10 @@ namespace ITP4915_group3_project.Restaurant.stock
         {
             InitializeComponent();
         }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            new detail("0", "0").Show();
+        }
     }
 }

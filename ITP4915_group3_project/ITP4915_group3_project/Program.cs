@@ -16,10 +16,10 @@ namespace ITP4915_group3_project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            /*Form login = new General.login.Login();
-            Application.Run(login);*/
+            Form login = new General.login.Login();
+            Application.Run(login);
 
-            Application.Run(new Restaurant.stock.detail("0","0"));
+            /*Application.Run(new Restaurant.stock.detail("0","0"));*/
         }
     }
 }
