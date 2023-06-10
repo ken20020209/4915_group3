@@ -849,6 +849,11 @@
     <Compile Include="warehouse\warehouse.Designer.cs">
       <DependentUpon>warehouse.cs</DependentUpon>
     </Compile>
+    <Compile Include="_4523_g1_project_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_4523_g1_project_dbDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Accounting\accounting.resx">
       <DependentUpon>accounting.cs</DependentUpon>
     </EmbeddedResource>
@@ -1166,6 +1171,9 @@
     <EmbeddedResource Include="Restaurant\stock\update.resx">
       <DependentUpon>update.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="warehouse\check_PO\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>
@@ -1233,6 +1241,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="_4523_g1_project_dbDataSet.xsc">
+      <DependentUpon>_4523_g1_project_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_4523_g1_project_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_4523_g1_project_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_4523_g1_project_dbDataSet.xss">
+      <DependentUpon>_4523_g1_project_dbDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

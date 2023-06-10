@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `4523_g1_project_db` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `4523_g1_project_db`;
 -- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: 4523_g1_project_db
@@ -390,7 +392,7 @@ CREATE TABLE `item` (
 
 LOCK TABLES `item` WRITE;
 /*!40000 ALTER TABLE `item` DISABLE KEYS */;
-INSERT INTO `item` VALUES ('0','fish ',55.50,'3kg','0','0','0');
+INSERT INTO `item` VALUES ('0','fish ',55.50,'3kg','0','0','0'),('1','cat',51.00,'4kg','0','0','0');
 /*!40000 ALTER TABLE `item` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -848,6 +850,23 @@ INSERT INTO `restaurant_stock_item` VALUES ('0','0',99,NULL,'2020-01-01');
 UNLOCK TABLES;
 
 --
+-- Temporary view structure for view `restaurantstockdetail`
+--
+
+DROP TABLE IF EXISTS `restaurantstockdetail`;
+/*!50001 DROP VIEW IF EXISTS `restaurantstockdetail`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `restaurantstockdetail` AS SELECT 
+ 1 AS `item_ID`,
+ 1 AS `item_name`,
+ 1 AS `category_name`,
+ 1 AS `name`,
+ 1 AS `qty`,
+ 1 AS `remarks`*/;
+SET character_set_client = @saved_cs_client;
+
+--
 -- Table structure for table `role`
 --
 
@@ -1270,6 +1289,24 @@ UNLOCK TABLES;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
 /*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `restaurantstockdetail`
+--
+
+/*!50001 DROP VIEW IF EXISTS `restaurantstockdetail`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `restaurantstockdetail` AS select `item`.`item_ID` AS `item_ID`,`item`.`item_name` AS `item_name`,`item_category`.`category_name` AS `category_name`,`partner_brand`.`name` AS `name`,`restaurant_stock_item`.`qty` AS `qty`,`restaurant_stock_item`.`remarks` AS `remarks` from (((`restaurant_stock_item` join `item`) join `item_category`) join `partner_brand`) where ((`restaurant_stock_item`.`item_ID` = `item`.`item_ID`) and (`item`.`category_ID` = `item_category`.`category_ID`) and (`item`.`partner_brand_ID` = `partner_brand`.`partner_brand_ID`)) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -1280,4 +1317,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-06-09 23:22:02
+-- Dump completed on 2023-06-10 22:29:59
