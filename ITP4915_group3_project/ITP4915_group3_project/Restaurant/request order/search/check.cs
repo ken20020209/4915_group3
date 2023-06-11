@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ITP4915_group3_project.Restaurant.request_order
+namespace ITP4915_group3_project.Restaurant.request_order.search
 {
     public partial class check : UserControl
     {

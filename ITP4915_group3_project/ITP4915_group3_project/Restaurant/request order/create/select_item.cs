@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ITP4915_group3_project.Restaurant.request_order.create
 {
-    public partial class select_item : Form
+    public partial class select_item : UserControl
     {
         public select_item()
         {
             InitializeComponent();
+        }
+
+        private void kryptonButtonCountinue_Click(object sender, EventArgs e)
+        {
+            new complete_detail(kryptonPanelContent);
         }
     }
 }

@@ -10,11 +10,24 @@ using System.Windows.Forms;
 
 namespace ITP4915_group3_project.Restaurant.request_order.create
 {
-    public partial class check_order : Form
+    public partial class check_order : UserControl
     {
-        public check_order()
+        Control panelContent;
+        public check_order(Control panel)
         {
             InitializeComponent();
+            panelContent = panel;
+            panelContent.Controls.Add(this);
+        }
+
+        private void kryptonButtonConfirm_Click(object sender, EventArgs e)
+        {
+            new create_success().ShowDialog();
+        }
+
+        private void kryptonLabelback_Click(object sender, EventArgs e)
+        {
+            panelContent.Controls.Remove(this);
         }
     }
 }

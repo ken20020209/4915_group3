@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ITP4915_group3_project.Restaurant.request_order
 {
-    public partial class edit : Form
+    public partial class edit : UserControl
     {
         public edit()
         {

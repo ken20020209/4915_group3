@@ -17,6 +17,7 @@ namespace ITP4915_group3_project.Restaurant
         public restaurant()
         {
             InitializeComponent();
+            
         }
 
         private void krytonBtnMenuRequestOrder_Click(object sender, EventArgs e)
@@ -31,8 +32,11 @@ namespace ITP4915_group3_project.Restaurant
             //place on content
             kryptonPanelContent.Controls.Add(content);*/
 
-            kryptonPanelContent.Controls.Clear();
-            kryptonPanelContent.Controls.Add(new request_order.check());
+           /* kryptonPanelContent.Controls.Clear();*/
+            kryptonPanelContent.Controls.Add(new request_order.search.check());
+            kryptonPanelHeader.Controls.Clear();
+            kryptonPanelHeader.Controls.Add(new request_order.header(kryptonPanelContent));
+            
         }
 
         private void kryptonButtonMenuDeliveryNote_Click(object sender, EventArgs e)

@@ -22,5 +22,10 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
         {
 
         }
+
+        private void kryptonButtonOk_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

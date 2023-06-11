@@ -1,5 +1,5 @@
 ﻿
-namespace ITP4915_group3_project.Restaurant.request_order
+namespace ITP4915_group3_project.Restaurant.request_order.search
 {
     partial class check
     {

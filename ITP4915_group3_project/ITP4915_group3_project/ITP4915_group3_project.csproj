@@ -645,13 +645,13 @@
       <DependentUpon>sign_success.cs</DependentUpon>
     </Compile>
     <Compile Include="Restaurant\request order\create\check_order.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Restaurant\request order\create\check_order.Designer.cs">
       <DependentUpon>check_order.cs</DependentUpon>
     </Compile>
     <Compile Include="Restaurant\request order\create\complete_detail.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Restaurant\request order\create\complete_detail.Designer.cs">
       <DependentUpon>complete_detail.cs</DependentUpon>
@@ -663,10 +663,16 @@
       <DependentUpon>create_success.cs</DependentUpon>
     </Compile>
     <Compile Include="Restaurant\request order\create\select_item.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Restaurant\request order\create\select_item.Designer.cs">
       <DependentUpon>select_item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\request order\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Restaurant\request order\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
     </Compile>
     <Compile Include="Restaurant\request order\search\check.cs">
       <SubType>UserControl</SubType>
@@ -687,13 +693,13 @@
       <DependentUpon>delete_sucess.cs</DependentUpon>
     </Compile>
     <Compile Include="Restaurant\request order\search\detail.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Restaurant\request order\search\detail.Designer.cs">
       <DependentUpon>detail.cs</DependentUpon>
     </Compile>
     <Compile Include="Restaurant\request order\search\edit.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Restaurant\request order\search\edit.Designer.cs">
       <DependentUpon>edit.cs</DependentUpon>
@@ -1139,6 +1145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\request order\create\select_item.resx">
       <DependentUpon>select_item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\request order\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\request order\search\check.resx">
       <DependentUpon>check.cs</DependentUpon>
