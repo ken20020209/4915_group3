@@ -29,12 +29,12 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.kryptonPanelContent = new Krypton.Toolkit.KryptonPanel();
             this.kryptonButtonCountinue = new Krypton.Toolkit.KryptonButton();
             this.label2 = new System.Windows.Forms.Label();
             this.kryptonComboBox1 = new Krypton.Toolkit.KryptonComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.kryptonTextBox2 = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonBorderEdge2 = new Krypton.Toolkit.KryptonBorderEdge();
             this.kryptonBorderEdge1 = new Krypton.Toolkit.KryptonBorderEdge();
@@ -42,20 +42,32 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.kryptonButton9 = new Krypton.Toolkit.KryptonButton();
             this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
             this.label1 = new System.Windows.Forms.Label();
+            this._4523_g1_project_dbDataSet = new ITP4915_group3_project._4523_g1_project_dbDataSet();
+            this.restaurant_stock_itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.restaurant_stock_itemTableAdapter = new ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.restaurant_stock_itemTableAdapter();
+            this.tableAdapterManager = new ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.TableAdapterManager();
+            this.restaurant_stock_itemDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelContent)).BeginInit();
             this.kryptonPanelContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._4523_g1_project_dbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restaurant_stock_itemBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restaurant_stock_itemDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanelContent
             // 
+            this.kryptonPanelContent.Controls.Add(this.restaurant_stock_itemDataGridView);
             this.kryptonPanelContent.Controls.Add(this.kryptonButtonCountinue);
             this.kryptonPanelContent.Controls.Add(this.label2);
             this.kryptonPanelContent.Controls.Add(this.kryptonComboBox1);
             this.kryptonPanelContent.Controls.Add(this.pictureBox1);
-            this.kryptonPanelContent.Controls.Add(this.pictureBox2);
             this.kryptonPanelContent.Controls.Add(this.kryptonTextBox2);
             this.kryptonPanelContent.Controls.Add(this.kryptonBorderEdge2);
             this.kryptonPanelContent.Controls.Add(this.kryptonBorderEdge1);
@@ -136,16 +148,6 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.pictureBox1.Size = new System.Drawing.Size(193, 36);
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
-            this.pictureBox2.Location = new System.Drawing.Point(45, 165);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(505, 119);
-            this.pictureBox2.TabIndex = 25;
-            this.pictureBox2.TabStop = false;
             // 
             // kryptonTextBox2
             // 
@@ -274,6 +276,113 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.label1.TabIndex = 20;
             this.label1.Text = "Select Item";
             // 
+            // _4523_g1_project_dbDataSet
+            // 
+            this._4523_g1_project_dbDataSet.DataSetName = "_4523_g1_project_dbDataSet";
+            this._4523_g1_project_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // restaurant_stock_itemBindingSource
+            // 
+            this.restaurant_stock_itemBindingSource.DataMember = "restaurant_stock_item";
+            this.restaurant_stock_itemBindingSource.DataSource = this._4523_g1_project_dbDataSet;
+            // 
+            // restaurant_stock_itemTableAdapter
+            // 
+            this.restaurant_stock_itemTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.addressTableAdapter = null;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.blanket_releaseTableAdapter = null;
+            this.tableAdapterManager.bpa_headerTableAdapter = null;
+            this.tableAdapterManager.bpa_linesTableAdapter = null;
+            this.tableAdapterManager.cpaTableAdapter = null;
+            this.tableAdapterManager.delivery_request_handlerTableAdapter = null;
+            this.tableAdapterManager.delivery_requestTableAdapter = null;
+            this.tableAdapterManager.department_roleTableAdapter = null;
+            this.tableAdapterManager.departmentTableAdapter = null;
+            this.tableAdapterManager.food_beverageTableAdapter = null;
+            this.tableAdapterManager.invoiceTableAdapter = null;
+            this.tableAdapterManager.item_categoryTableAdapter = null;
+            this.tableAdapterManager.itemTableAdapter = null;
+            this.tableAdapterManager.notify_messageTableAdapter = null;
+            this.tableAdapterManager.notify_ruleTableAdapter = null;
+            this.tableAdapterManager.partner_brand_restaurantTableAdapter = null;
+            this.tableAdapterManager.partner_brandTableAdapter = null;
+            this.tableAdapterManager.permissionTableAdapter = null;
+            this.tableAdapterManager.ppo_headerTableAdapter = null;
+            this.tableAdapterManager.ppo_linesTableAdapter = null;
+            this.tableAdapterManager.price_breaksTableAdapter = null;
+            this.tableAdapterManager.priorityTableAdapter = null;
+            this.tableAdapterManager.purchase_order_allTableAdapter = null;
+            this.tableAdapterManager.purchasers_requestTableAdapter = null;
+            this.tableAdapterManager.request_lineTableAdapter = null;
+            this.tableAdapterManager.restaurant_stock_itemTableAdapter = this.restaurant_stock_itemTableAdapter;
+            this.tableAdapterManager.restaurantTableAdapter = null;
+            this.tableAdapterManager.role_permissionTableAdapter = null;
+            this.tableAdapterManager.roleTableAdapter = null;
+            this.tableAdapterManager.schedule_releaseTableAdapter = null;
+            this.tableAdapterManager.spo_headerTableAdapter = null;
+            this.tableAdapterManager.spo_linesTableAdapter = null;
+            this.tableAdapterManager.spo_releaseTableAdapter = null;
+            this.tableAdapterManager.statusTableAdapter = null;
+            this.tableAdapterManager.supplier_contact_personTableAdapter = null;
+            this.tableAdapterManager.supplierTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.userTableAdapter = null;
+            this.tableAdapterManager.vehicleTableAdapter = null;
+            this.tableAdapterManager.warehouse_itemTableAdapter = null;
+            this.tableAdapterManager.warehousedispatchinstructionTableAdapter = null;
+            this.tableAdapterManager.warehouseTableAdapter = null;
+            // 
+            // restaurant_stock_itemDataGridView
+            // 
+            this.restaurant_stock_itemDataGridView.AutoGenerateColumns = false;
+            this.restaurant_stock_itemDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.restaurant_stock_itemDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5});
+            this.restaurant_stock_itemDataGridView.DataSource = this.restaurant_stock_itemBindingSource;
+            this.restaurant_stock_itemDataGridView.Location = new System.Drawing.Point(36, 151);
+            this.restaurant_stock_itemDataGridView.Name = "restaurant_stock_itemDataGridView";
+            this.restaurant_stock_itemDataGridView.RowTemplate.Height = 24;
+            this.restaurant_stock_itemDataGridView.Size = new System.Drawing.Size(561, 162);
+            this.restaurant_stock_itemDataGridView.TabIndex = 31;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "restaurant_ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "restaurant_ID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "item_ID";
+            this.dataGridViewTextBoxColumn2.HeaderText = "item_ID";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "qty";
+            this.dataGridViewTextBoxColumn3.HeaderText = "qty";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "remarks";
+            this.dataGridViewTextBoxColumn4.HeaderText = "remarks";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "expireDate";
+            this.dataGridViewTextBoxColumn5.HeaderText = "expireDate";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
             // select_item
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -287,7 +396,9 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.kryptonPanelContent.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._4523_g1_project_dbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restaurant_stock_itemBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restaurant_stock_itemDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -299,7 +410,6 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
         private System.Windows.Forms.Label label2;
         private Krypton.Toolkit.KryptonComboBox kryptonComboBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
         private Krypton.Toolkit.KryptonBorderEdge kryptonBorderEdge2;
         private Krypton.Toolkit.KryptonBorderEdge kryptonBorderEdge1;
@@ -307,5 +417,15 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
         private Krypton.Toolkit.KryptonButton kryptonButton9;
         private Krypton.Toolkit.KryptonButton kryptonButton1;
         private System.Windows.Forms.Label label1;
+        private _4523_g1_project_dbDataSet _4523_g1_project_dbDataSet;
+        private System.Windows.Forms.BindingSource restaurant_stock_itemBindingSource;
+        private _4523_g1_project_dbDataSetTableAdapters.restaurant_stock_itemTableAdapter restaurant_stock_itemTableAdapter;
+        private _4523_g1_project_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.DataGridView restaurant_stock_itemDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
     }
 }

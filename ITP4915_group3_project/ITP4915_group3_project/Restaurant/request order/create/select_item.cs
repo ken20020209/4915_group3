@@ -15,12 +15,13 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
         public select_item()
         {
             InitializeComponent();
+            this.restaurant_stock_itemTableAdapter.Fill(this._4523_g1_project_dbDataSet.restaurant_stock_item);
         }
 
         private void kryptonButtonCountinue_Click(object sender, EventArgs e)
         {
             new complete_detail(this);
-
+            
         }
     }
 }
