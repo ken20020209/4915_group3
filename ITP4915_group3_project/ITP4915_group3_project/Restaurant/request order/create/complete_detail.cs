@@ -18,6 +18,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             InitializeComponent();
             this.panelContent = panel;
             panel.Controls.Add(this);
+            this.BringToFront();
         }
 
         private void kryptonButtonCountinue_Click(object sender, EventArgs e)

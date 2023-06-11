@@ -18,6 +18,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             InitializeComponent();
             panelContent = panel;
             panelContent.Controls.Add(this);
+            this.BringToFront();
         }
 
         private void kryptonButtonConfirm_Click(object sender, EventArgs e)

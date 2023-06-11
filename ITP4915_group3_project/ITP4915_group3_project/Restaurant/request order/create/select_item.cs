@@ -19,7 +19,8 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
 
         private void kryptonButtonCountinue_Click(object sender, EventArgs e)
         {
-            new complete_detail(kryptonPanelContent);
+            new complete_detail(this);
+
         }
     }
 }
