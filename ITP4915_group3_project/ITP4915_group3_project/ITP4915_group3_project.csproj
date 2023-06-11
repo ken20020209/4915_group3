@@ -627,7 +627,7 @@
       <DependentUpon>search.cs</DependentUpon>
     </Compile>
     <Compile Include="Restaurant\delivery note\check.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Restaurant\delivery note\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>
@@ -669,7 +669,7 @@
       <DependentUpon>select_item.cs</DependentUpon>
     </Compile>
     <Compile Include="Restaurant\request order\search\check.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Restaurant\request order\search\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>
@@ -1169,6 +1169,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\stock\update.resx">
       <DependentUpon>update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\check_PO\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>
