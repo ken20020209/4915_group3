@@ -32,10 +32,8 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.panel1 = new System.Windows.Forms.Panel();
             this.kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
             this.dataGridViewDetail = new System.Windows.Forms.DataGridView();
-            this.item_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.item_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
+            this.comboBoxPriority = new System.Windows.Forms.ComboBox();
             this.kryptonDropButtonPriority = new Krypton.Toolkit.KryptonDropButton();
             this.kryptonLabel5 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonRichTextBox1 = new Krypton.Toolkit.KryptonRichTextBox();
@@ -60,7 +58,9 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.kryptonButton10 = new Krypton.Toolkit.KryptonButton();
             this.kryptonButton8 = new Krypton.Toolkit.KryptonButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBoxPriority = new System.Windows.Forms.ComboBox();
+            this.item_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.item_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).BeginInit();
@@ -139,23 +139,6 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.dataGridViewDetail.Size = new System.Drawing.Size(382, 150);
             this.dataGridViewDetail.TabIndex = 230;
             // 
-            // item_ID
-            // 
-            this.item_ID.HeaderText = "item_ID";
-            this.item_ID.Name = "item_ID";
-            this.item_ID.ReadOnly = true;
-            // 
-            // qty
-            // 
-            this.qty.HeaderText = "qty";
-            this.qty.Name = "qty";
-            // 
-            // item_Name
-            // 
-            this.item_Name.HeaderText = "item_Name";
-            this.item_Name.Name = "item_Name";
-            this.item_Name.ReadOnly = true;
-            // 
             // kryptonGroupBox1
             // 
             this.kryptonGroupBox1.CaptionStyle = Krypton.Toolkit.LabelStyle.GroupBoxCaption;
@@ -201,6 +184,17 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.kryptonGroupBox1.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonGroupBox1.TabIndex = 215;
             this.kryptonGroupBox1.Values.Heading = "GENERAL";
+            // 
+            // comboBoxPriority
+            // 
+            this.comboBoxPriority.FormattingEnabled = true;
+            this.comboBoxPriority.Items.AddRange(new object[] {
+            "urgent",
+            "normal"});
+            this.comboBoxPriority.Location = new System.Drawing.Point(498, 6);
+            this.comboBoxPriority.Name = "comboBoxPriority";
+            this.comboBoxPriority.Size = new System.Drawing.Size(70, 20);
+            this.comboBoxPriority.TabIndex = 221;
             // 
             // kryptonDropButtonPriority
             // 
@@ -628,16 +622,23 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.label1.TabIndex = 209;
             this.label1.Text = "Check Order";
             // 
-            // comboBoxPriority
+            // item_ID
             // 
-            this.comboBoxPriority.FormattingEnabled = true;
-            this.comboBoxPriority.Items.AddRange(new object[] {
-            "urgent",
-            "normal"});
-            this.comboBoxPriority.Location = new System.Drawing.Point(498, 6);
-            this.comboBoxPriority.Name = "comboBoxPriority";
-            this.comboBoxPriority.Size = new System.Drawing.Size(70, 20);
-            this.comboBoxPriority.TabIndex = 221;
+            this.item_ID.HeaderText = "item_ID";
+            this.item_ID.Name = "item_ID";
+            this.item_ID.ReadOnly = true;
+            // 
+            // qty
+            // 
+            this.qty.HeaderText = "qty";
+            this.qty.Name = "qty";
+            this.qty.ReadOnly = true;
+            // 
+            // item_Name
+            // 
+            this.item_Name.HeaderText = "item_Name";
+            this.item_Name.Name = "item_Name";
+            this.item_Name.ReadOnly = true;
             // 
             // check_order
             // 
@@ -693,9 +694,9 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
         private Krypton.Toolkit.KryptonButton kryptonButton8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridViewDetail;
+        private System.Windows.Forms.ComboBox comboBoxPriority;
         private System.Windows.Forms.DataGridViewTextBoxColumn item_ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn qty;
         private System.Windows.Forms.DataGridViewTextBoxColumn item_Name;
-        private System.Windows.Forms.ComboBox comboBoxPriority;
     }
 }

@@ -28,6 +28,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             {
                 dataGridViewDetail.Rows.Insert(0, newOrder.item_ID[i], null, newOrder.item_name[i]);
             }
+            kryptonTextBoxQtyOfItems.Text = newOrder.item_ID.Count().ToString();
         }
 
         private void kryptonButtonCountinue_Click(object sender, EventArgs e)

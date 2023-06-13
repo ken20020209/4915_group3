@@ -31,7 +31,10 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
         {
             this.kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
             this.dataGridViewDetail = new System.Windows.Forms.DataGridView();
-            this.kryptonTextBox11 = new Krypton.Toolkit.KryptonTextBox();
+            this.item_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.item_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kryptonTextBoxQtyOfItems = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabelback = new Krypton.Toolkit.KryptonLabel();
             this.kryptonButton7 = new Krypton.Toolkit.KryptonButton();
@@ -42,9 +45,6 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.kryptonButton11 = new Krypton.Toolkit.KryptonButton();
             this.label3 = new System.Windows.Forms.Label();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
-            this.item_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.item_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).BeginInit();
             this.kryptonGroupBox1.Panel.SuspendLayout();
@@ -94,35 +94,52 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.item_ID,
             this.qty,
             this.item_Name});
-            this.dataGridViewDetail.Location = new System.Drawing.Point(74, -4);
+            this.dataGridViewDetail.Location = new System.Drawing.Point(121, -4);
             this.dataGridViewDetail.Name = "dataGridViewDetail";
             this.dataGridViewDetail.RowTemplate.Height = 24;
-            this.dataGridViewDetail.Size = new System.Drawing.Size(382, 150);
+            this.dataGridViewDetail.Size = new System.Drawing.Size(382, 141);
             this.dataGridViewDetail.TabIndex = 230;
             // 
-            // kryptonTextBox11
+            // item_ID
             // 
-            this.kryptonTextBox11.Location = new System.Drawing.Point(278, 346);
-            this.kryptonTextBox11.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonTextBox11.Name = "kryptonTextBox11";
-            this.kryptonTextBox11.ReadOnly = true;
-            this.kryptonTextBox11.Size = new System.Drawing.Size(100, 22);
-            this.kryptonTextBox11.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonTextBox11.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonTextBox11.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.item_ID.HeaderText = "item_ID";
+            this.item_ID.Name = "item_ID";
+            this.item_ID.ReadOnly = true;
+            // 
+            // qty
+            // 
+            this.qty.HeaderText = "qty";
+            this.qty.Name = "qty";
+            // 
+            // item_Name
+            // 
+            this.item_Name.HeaderText = "item_Name";
+            this.item_Name.Name = "item_Name";
+            this.item_Name.ReadOnly = true;
+            // 
+            // kryptonTextBoxQtyOfItems
+            // 
+            this.kryptonTextBoxQtyOfItems.Location = new System.Drawing.Point(500, 326);
+            this.kryptonTextBoxQtyOfItems.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonTextBoxQtyOfItems.Name = "kryptonTextBoxQtyOfItems";
+            this.kryptonTextBoxQtyOfItems.ReadOnly = true;
+            this.kryptonTextBoxQtyOfItems.Size = new System.Drawing.Size(100, 22);
+            this.kryptonTextBoxQtyOfItems.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonTextBoxQtyOfItems.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonTextBoxQtyOfItems.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox11.StateCommon.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonTextBox11.StateCommon.Content.Color1 = System.Drawing.Color.Black;
-            this.kryptonTextBox11.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox11.TabIndex = 226;
-            this.kryptonTextBox11.Text = "0";
-            this.kryptonTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.kryptonTextBoxQtyOfItems.StateCommon.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonTextBoxQtyOfItems.StateCommon.Content.Color1 = System.Drawing.Color.Black;
+            this.kryptonTextBoxQtyOfItems.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBoxQtyOfItems.TabIndex = 226;
+            this.kryptonTextBoxQtyOfItems.Text = "0";
+            this.kryptonTextBoxQtyOfItems.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // kryptonLabel4
             // 
             this.kryptonLabel4.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
-            this.kryptonLabel4.Location = new System.Drawing.Point(233, 346);
+            this.kryptonLabel4.Location = new System.Drawing.Point(455, 326);
             this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel4.Name = "kryptonLabel4";
             this.kryptonLabel4.Size = new System.Drawing.Size(35, 19);
@@ -301,7 +318,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.kryptonPanel1.Controls.Add(this.kryptonButtonCountinue);
             this.kryptonPanel1.Controls.Add(this.kryptonGroupBox1);
             this.kryptonPanel1.Controls.Add(this.label3);
-            this.kryptonPanel1.Controls.Add(this.kryptonTextBox11);
+            this.kryptonPanel1.Controls.Add(this.kryptonTextBoxQtyOfItems);
             this.kryptonPanel1.Controls.Add(this.kryptonButton11);
             this.kryptonPanel1.Controls.Add(this.kryptonLabel4);
             this.kryptonPanel1.Controls.Add(this.kryptonButton10);
@@ -314,23 +331,6 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Size = new System.Drawing.Size(800, 500);
             this.kryptonPanel1.TabIndex = 230;
-            // 
-            // item_ID
-            // 
-            this.item_ID.HeaderText = "item_ID";
-            this.item_ID.Name = "item_ID";
-            this.item_ID.ReadOnly = true;
-            // 
-            // qty
-            // 
-            this.qty.HeaderText = "qty";
-            this.qty.Name = "qty";
-            // 
-            // item_Name
-            // 
-            this.item_Name.HeaderText = "item_Name";
-            this.item_Name.Name = "item_Name";
-            this.item_Name.ReadOnly = true;
             // 
             // complete_detail
             // 
@@ -355,7 +355,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
         #endregion
 
         private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox1;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox11;
+        private Krypton.Toolkit.KryptonTextBox kryptonTextBoxQtyOfItems;
         private Krypton.Toolkit.KryptonLabel kryptonLabel4;
         private Krypton.Toolkit.KryptonLabel kryptonLabelback;
         private Krypton.Toolkit.KryptonButton kryptonButton7;
