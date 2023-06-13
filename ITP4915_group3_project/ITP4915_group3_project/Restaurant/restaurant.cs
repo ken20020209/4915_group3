@@ -14,7 +14,7 @@ namespace ITP4915_group3_project.Restaurant
 {
     public partial class restaurant : KryptonForm
     {
-        public static string restaurant_ID;
+        public static int restaurant_ID;
         public static string restaurant_Name;
 
         public restaurant()
@@ -22,7 +22,7 @@ namespace ITP4915_group3_project.Restaurant
             InitializeComponent();
 
             //fake data
-            restaurant_ID = "0";
+            restaurant_ID = 1;
             restaurant_Name = "yammay restaurant";
             
             

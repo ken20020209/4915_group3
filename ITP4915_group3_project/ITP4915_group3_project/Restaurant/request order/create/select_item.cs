@@ -16,7 +16,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             foreach (DataGridViewRow row in requestOrder_restaurant_stockDataGridView.Rows)
             {
                 // Replace the condition inside the if statement with your own logic for determining which rows to remove
-                if (row.Cells["restaurant_ID"].Value.ToString() != newOrder.request_ID)
+                if (int.Parse(row.Cells["restaurant_ID"].Value.ToString() )!= newOrder.restaurant_ID)
                 {
                     requestOrder_restaurant_stockDataGridView.Rows.Remove(row);
                 }
@@ -38,7 +38,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
                     }*/
                     /*                  Console.WriteLine("test");*/
                     //cells[2] is id;
-                    newOrder.item_ID.Add(row.Cells[2].Value.ToString());
+                    newOrder.item_ID.Add(int.Parse(row.Cells[2].Value.ToString()));
                     newOrder.item_name.Add(row.Cells[3].Value.ToString());
                     //clls[
                 }

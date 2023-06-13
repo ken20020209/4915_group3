@@ -9,29 +9,28 @@ namespace ITP4915_group3_project.Restaurant.request_order
 {
     public class requestOrder
     {
-        public string request_ID;
-        public List<string> item_ID;
+        public int request_ID;
+        public List<int> item_ID;
         public List<int> item_qty;
         public List<string> item_name;
-        public string restaurant_ID;
+        public int restaurant_ID;
         public string restaurant_Name;
-        public string creator_ID;
+        public int creator_ID;
         public string creator_Name;
         public DateTime mysqlDate;
-        public string priority;
-        public requestOrder(string restaurant_ID,string restaurant_Name,string creator_ID, string creator_Name)
+        public int priority;
+        public requestOrder(int restaurant_ID,string restaurant_Name, int creator_ID, string creator_Name)
         {
             this.restaurant_Name = restaurant_Name;
             this.restaurant_ID = restaurant_ID;
             this.creator_ID = creator_ID;
             this.creator_Name = creator_Name;
             //need to assgin one id;
-            this.request_ID = "1";
 
             DateTime date = DateTime.Now; // or any other date you want to create
             this.mysqlDate = date;
 
-            item_ID = new List<string>();
+            item_ID = new List<int>();
             item_qty = new List<int>();
             item_name = new List<string>();
         }
@@ -43,7 +42,7 @@ namespace ITP4915_group3_project.Restaurant.request_order
             adapterRequest.Fill(datasetRequest);
             for(int i=0;i<item_qty.Count();i++)
             {
-                adapterRequest.Insert(creator_ID, restaurant_ID, item_ID[i], item_qty[i], priority, "0", mysqlDate, mysqlDate, "");
+                adapterRequest.Insert(creator_ID, restaurant_ID, item_ID[i], item_qty[i], priority, 1, mysqlDate, mysqlDate, "");
             }
         }
             
