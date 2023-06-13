@@ -32,6 +32,8 @@ namespace ITP4915_group3_project {
         
         private requestOrder_restaurant_stockDataTable tablerequestOrder_restaurant_stock;
         
+        private requestDetail_purhcases_requestDataTable tablerequestDetail_purhcases_request;
+        
         private global::System.Data.DataRelation relationPurchasers_Request_item_ID_fk;
         
         private global::System.Data.DataRelation relationRestaurant_Stock_Item_item_ID_fk;
@@ -75,6 +77,9 @@ namespace ITP4915_group3_project {
                 }
                 if ((ds.Tables["requestOrder_restaurant_stock"] != null)) {
                     base.Tables.Add(new requestOrder_restaurant_stockDataTable(ds.Tables["requestOrder_restaurant_stock"]));
+                }
+                if ((ds.Tables["requestDetail_purhcases_request"] != null)) {
+                    base.Tables.Add(new requestDetail_purhcases_requestDataTable(ds.Tables["requestDetail_purhcases_request"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -131,6 +136,16 @@ namespace ITP4915_group3_project {
         public requestOrder_restaurant_stockDataTable requestOrder_restaurant_stock {
             get {
                 return this.tablerequestOrder_restaurant_stock;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public requestDetail_purhcases_requestDataTable requestDetail_purhcases_request {
+            get {
+                return this.tablerequestDetail_purhcases_request;
             }
         }
         
@@ -213,6 +228,9 @@ namespace ITP4915_group3_project {
                 if ((ds.Tables["requestOrder_restaurant_stock"] != null)) {
                     base.Tables.Add(new requestOrder_restaurant_stockDataTable(ds.Tables["requestOrder_restaurant_stock"]));
                 }
+                if ((ds.Tables["requestDetail_purhcases_request"] != null)) {
+                    base.Tables.Add(new requestDetail_purhcases_requestDataTable(ds.Tables["requestDetail_purhcases_request"]));
+                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -270,6 +288,12 @@ namespace ITP4915_group3_project {
                     this.tablerequestOrder_restaurant_stock.InitVars();
                 }
             }
+            this.tablerequestDetail_purhcases_request = ((requestDetail_purhcases_requestDataTable)(base.Tables["requestDetail_purhcases_request"]));
+            if ((initTable == true)) {
+                if ((this.tablerequestDetail_purhcases_request != null)) {
+                    this.tablerequestDetail_purhcases_request.InitVars();
+                }
+            }
             this.relationPurchasers_Request_item_ID_fk = this.Relations["Purchasers_Request_item_ID_fk"];
             this.relationRestaurant_Stock_Item_item_ID_fk = this.Relations["Restaurant_Stock_Item_item_ID_fk"];
         }
@@ -290,6 +314,8 @@ namespace ITP4915_group3_project {
             base.Tables.Add(this.tablerestaurant_stock_item);
             this.tablerequestOrder_restaurant_stock = new requestOrder_restaurant_stockDataTable();
             base.Tables.Add(this.tablerequestOrder_restaurant_stock);
+            this.tablerequestDetail_purhcases_request = new requestDetail_purhcases_requestDataTable();
+            base.Tables.Add(this.tablerequestDetail_purhcases_request);
             this.relationPurchasers_Request_item_ID_fk = new global::System.Data.DataRelation("Purchasers_Request_item_ID_fk", new global::System.Data.DataColumn[] {
                         this.tablerequestOrder_restaurant_stock.item_IDColumn}, new global::System.Data.DataColumn[] {
                         this.tablepurchasers_request.item_IDColumn}, false);
@@ -321,6 +347,12 @@ namespace ITP4915_group3_project {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private bool ShouldSerializerequestOrder_restaurant_stock() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private bool ShouldSerializerequestDetail_purhcases_request() {
             return false;
         }
         
@@ -390,6 +422,9 @@ namespace ITP4915_group3_project {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public delegate void requestOrder_restaurant_stockRowChangeEventHandler(object sender, requestOrder_restaurant_stockRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public delegate void requestDetail_purhcases_requestRowChangeEventHandler(object sender, requestDetail_purhcases_requestRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -1769,6 +1804,449 @@ namespace ITP4915_group3_project {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class requestDetail_purhcases_requestDataTable : global::System.Data.TypedTableBase<requestDetail_purhcases_requestRow> {
+            
+            private global::System.Data.DataColumn columnpurchasers_request_id;
+            
+            private global::System.Data.DataColumn columnrequestor_ID;
+            
+            private global::System.Data.DataColumn columnrestaurant_ID;
+            
+            private global::System.Data.DataColumn columnitem_ID;
+            
+            private global::System.Data.DataColumn columnqty;
+            
+            private global::System.Data.DataColumn columnpriority_id;
+            
+            private global::System.Data.DataColumn columnstatus_ID;
+            
+            private global::System.Data.DataColumn columncreate_date;
+            
+            private global::System.Data.DataColumn columnexpected_delivery_date;
+            
+            private global::System.Data.DataColumn columnremarks;
+            
+            private global::System.Data.DataColumn columnname;
+            
+            private global::System.Data.DataColumn columnitem_name;
+            
+            private global::System.Data.DataColumn columnfirst_name;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public requestDetail_purhcases_requestDataTable() {
+                this.TableName = "requestDetail_purhcases_request";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal requestDetail_purhcases_requestDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected requestDetail_purhcases_requestDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn purchasers_request_idColumn {
+                get {
+                    return this.columnpurchasers_request_id;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn requestor_IDColumn {
+                get {
+                    return this.columnrequestor_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn restaurant_IDColumn {
+                get {
+                    return this.columnrestaurant_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn item_IDColumn {
+                get {
+                    return this.columnitem_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn qtyColumn {
+                get {
+                    return this.columnqty;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn priority_idColumn {
+                get {
+                    return this.columnpriority_id;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn status_IDColumn {
+                get {
+                    return this.columnstatus_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn create_dateColumn {
+                get {
+                    return this.columncreate_date;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn expected_delivery_dateColumn {
+                get {
+                    return this.columnexpected_delivery_date;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn remarksColumn {
+                get {
+                    return this.columnremarks;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn nameColumn {
+                get {
+                    return this.columnname;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn item_nameColumn {
+                get {
+                    return this.columnitem_name;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn first_nameColumn {
+                get {
+                    return this.columnfirst_name;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public requestDetail_purhcases_requestRow this[int index] {
+                get {
+                    return ((requestDetail_purhcases_requestRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event requestDetail_purhcases_requestRowChangeEventHandler requestDetail_purhcases_requestRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event requestDetail_purhcases_requestRowChangeEventHandler requestDetail_purhcases_requestRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event requestDetail_purhcases_requestRowChangeEventHandler requestDetail_purhcases_requestRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event requestDetail_purhcases_requestRowChangeEventHandler requestDetail_purhcases_requestRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void AddrequestDetail_purhcases_requestRow(requestDetail_purhcases_requestRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public requestDetail_purhcases_requestRow AddrequestDetail_purhcases_requestRow(int requestor_ID, int restaurant_ID, int item_ID, int qty, int priority_id, int status_ID, System.DateTime create_date, System.DateTime expected_delivery_date, string remarks, string name, string item_name, string first_name) {
+                requestDetail_purhcases_requestRow rowrequestDetail_purhcases_requestRow = ((requestDetail_purhcases_requestRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        requestor_ID,
+                        restaurant_ID,
+                        item_ID,
+                        qty,
+                        priority_id,
+                        status_ID,
+                        create_date,
+                        expected_delivery_date,
+                        remarks,
+                        name,
+                        item_name,
+                        first_name};
+                rowrequestDetail_purhcases_requestRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowrequestDetail_purhcases_requestRow);
+                return rowrequestDetail_purhcases_requestRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public requestDetail_purhcases_requestRow FindBypurchasers_request_id(int purchasers_request_id) {
+                return ((requestDetail_purhcases_requestRow)(this.Rows.Find(new object[] {
+                            purchasers_request_id})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                requestDetail_purhcases_requestDataTable cln = ((requestDetail_purhcases_requestDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new requestDetail_purhcases_requestDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal void InitVars() {
+                this.columnpurchasers_request_id = base.Columns["purchasers_request_id"];
+                this.columnrequestor_ID = base.Columns["requestor_ID"];
+                this.columnrestaurant_ID = base.Columns["restaurant_ID"];
+                this.columnitem_ID = base.Columns["item_ID"];
+                this.columnqty = base.Columns["qty"];
+                this.columnpriority_id = base.Columns["priority_id"];
+                this.columnstatus_ID = base.Columns["status_ID"];
+                this.columncreate_date = base.Columns["create_date"];
+                this.columnexpected_delivery_date = base.Columns["expected_delivery_date"];
+                this.columnremarks = base.Columns["remarks"];
+                this.columnname = base.Columns["name"];
+                this.columnitem_name = base.Columns["item_name"];
+                this.columnfirst_name = base.Columns["first_name"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            private void InitClass() {
+                this.columnpurchasers_request_id = new global::System.Data.DataColumn("purchasers_request_id", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpurchasers_request_id);
+                this.columnrequestor_ID = new global::System.Data.DataColumn("requestor_ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnrequestor_ID);
+                this.columnrestaurant_ID = new global::System.Data.DataColumn("restaurant_ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnrestaurant_ID);
+                this.columnitem_ID = new global::System.Data.DataColumn("item_ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnitem_ID);
+                this.columnqty = new global::System.Data.DataColumn("qty", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnqty);
+                this.columnpriority_id = new global::System.Data.DataColumn("priority_id", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpriority_id);
+                this.columnstatus_ID = new global::System.Data.DataColumn("status_ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnstatus_ID);
+                this.columncreate_date = new global::System.Data.DataColumn("create_date", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncreate_date);
+                this.columnexpected_delivery_date = new global::System.Data.DataColumn("expected_delivery_date", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnexpected_delivery_date);
+                this.columnremarks = new global::System.Data.DataColumn("remarks", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnremarks);
+                this.columnname = new global::System.Data.DataColumn("name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnname);
+                this.columnitem_name = new global::System.Data.DataColumn("item_name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnitem_name);
+                this.columnfirst_name = new global::System.Data.DataColumn("first_name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnfirst_name);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnpurchasers_request_id}, true));
+                this.columnpurchasers_request_id.AutoIncrement = true;
+                this.columnpurchasers_request_id.AutoIncrementSeed = -1;
+                this.columnpurchasers_request_id.AutoIncrementStep = -1;
+                this.columnpurchasers_request_id.AllowDBNull = false;
+                this.columnpurchasers_request_id.Unique = true;
+                this.columnrequestor_ID.AllowDBNull = false;
+                this.columnrestaurant_ID.AllowDBNull = false;
+                this.columnitem_ID.AllowDBNull = false;
+                this.columnqty.AllowDBNull = false;
+                this.columnpriority_id.AllowDBNull = false;
+                this.columnstatus_ID.AllowDBNull = false;
+                this.columncreate_date.AllowDBNull = false;
+                this.columnexpected_delivery_date.AllowDBNull = false;
+                this.columnremarks.MaxLength = 50;
+                this.columnname.AllowDBNull = false;
+                this.columnname.MaxLength = 30;
+                this.columnitem_name.AllowDBNull = false;
+                this.columnitem_name.MaxLength = 50;
+                this.columnfirst_name.MaxLength = 30;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public requestDetail_purhcases_requestRow NewrequestDetail_purhcases_requestRow() {
+                return ((requestDetail_purhcases_requestRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new requestDetail_purhcases_requestRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(requestDetail_purhcases_requestRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.requestDetail_purhcases_requestRowChanged != null)) {
+                    this.requestDetail_purhcases_requestRowChanged(this, new requestDetail_purhcases_requestRowChangeEvent(((requestDetail_purhcases_requestRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.requestDetail_purhcases_requestRowChanging != null)) {
+                    this.requestDetail_purhcases_requestRowChanging(this, new requestDetail_purhcases_requestRowChangeEvent(((requestDetail_purhcases_requestRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.requestDetail_purhcases_requestRowDeleted != null)) {
+                    this.requestDetail_purhcases_requestRowDeleted(this, new requestDetail_purhcases_requestRowChangeEvent(((requestDetail_purhcases_requestRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.requestDetail_purhcases_requestRowDeleting != null)) {
+                    this.requestDetail_purhcases_requestRowDeleting(this, new requestDetail_purhcases_requestRowChangeEvent(((requestDetail_purhcases_requestRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void RemoverequestDetail_purhcases_requestRow(requestDetail_purhcases_requestRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                _4523_g1_project_dbDataSet ds = new _4523_g1_project_dbDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "requestDetail_purhcases_requestDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class restaurantstockdetailRow : global::System.Data.DataRow {
@@ -2245,6 +2723,200 @@ namespace ITP4915_group3_project {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class requestDetail_purhcases_requestRow : global::System.Data.DataRow {
+            
+            private requestDetail_purhcases_requestDataTable tablerequestDetail_purhcases_request;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal requestDetail_purhcases_requestRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tablerequestDetail_purhcases_request = ((requestDetail_purhcases_requestDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int purchasers_request_id {
+                get {
+                    return ((int)(this[this.tablerequestDetail_purhcases_request.purchasers_request_idColumn]));
+                }
+                set {
+                    this[this.tablerequestDetail_purhcases_request.purchasers_request_idColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int requestor_ID {
+                get {
+                    return ((int)(this[this.tablerequestDetail_purhcases_request.requestor_IDColumn]));
+                }
+                set {
+                    this[this.tablerequestDetail_purhcases_request.requestor_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int restaurant_ID {
+                get {
+                    return ((int)(this[this.tablerequestDetail_purhcases_request.restaurant_IDColumn]));
+                }
+                set {
+                    this[this.tablerequestDetail_purhcases_request.restaurant_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int item_ID {
+                get {
+                    return ((int)(this[this.tablerequestDetail_purhcases_request.item_IDColumn]));
+                }
+                set {
+                    this[this.tablerequestDetail_purhcases_request.item_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int qty {
+                get {
+                    return ((int)(this[this.tablerequestDetail_purhcases_request.qtyColumn]));
+                }
+                set {
+                    this[this.tablerequestDetail_purhcases_request.qtyColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int priority_id {
+                get {
+                    return ((int)(this[this.tablerequestDetail_purhcases_request.priority_idColumn]));
+                }
+                set {
+                    this[this.tablerequestDetail_purhcases_request.priority_idColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int status_ID {
+                get {
+                    return ((int)(this[this.tablerequestDetail_purhcases_request.status_IDColumn]));
+                }
+                set {
+                    this[this.tablerequestDetail_purhcases_request.status_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public System.DateTime create_date {
+                get {
+                    return ((global::System.DateTime)(this[this.tablerequestDetail_purhcases_request.create_dateColumn]));
+                }
+                set {
+                    this[this.tablerequestDetail_purhcases_request.create_dateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public System.DateTime expected_delivery_date {
+                get {
+                    return ((global::System.DateTime)(this[this.tablerequestDetail_purhcases_request.expected_delivery_dateColumn]));
+                }
+                set {
+                    this[this.tablerequestDetail_purhcases_request.expected_delivery_dateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string remarks {
+                get {
+                    try {
+                        return ((string)(this[this.tablerequestDetail_purhcases_request.remarksColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'remarks\' in table \'requestDetail_purhcases_request\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tablerequestDetail_purhcases_request.remarksColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string name {
+                get {
+                    return ((string)(this[this.tablerequestDetail_purhcases_request.nameColumn]));
+                }
+                set {
+                    this[this.tablerequestDetail_purhcases_request.nameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string item_name {
+                get {
+                    return ((string)(this[this.tablerequestDetail_purhcases_request.item_nameColumn]));
+                }
+                set {
+                    this[this.tablerequestDetail_purhcases_request.item_nameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string first_name {
+                get {
+                    try {
+                        return ((string)(this[this.tablerequestDetail_purhcases_request.first_nameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'first_name\' in table \'requestDetail_purhcases_request\' is D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablerequestDetail_purhcases_request.first_nameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsremarksNull() {
+                return this.IsNull(this.tablerequestDetail_purhcases_request.remarksColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetremarksNull() {
+                this[this.tablerequestDetail_purhcases_request.remarksColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isfirst_nameNull() {
+                return this.IsNull(this.tablerequestDetail_purhcases_request.first_nameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setfirst_nameNull() {
+                this[this.tablerequestDetail_purhcases_request.first_nameColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -2366,6 +3038,40 @@ namespace ITP4915_group3_project {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public requestOrder_restaurant_stockRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public class requestDetail_purhcases_requestRowChangeEvent : global::System.EventArgs {
+            
+            private requestDetail_purhcases_requestRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public requestDetail_purhcases_requestRowChangeEvent(requestDetail_purhcases_requestRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public requestDetail_purhcases_requestRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -3033,21 +3739,54 @@ namespace ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[1];
+            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[2];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT `purchasers_request_id`, `requestor_ID`, `restaurant_ID`, `item_ID`, `qty`" +
-                ", `priority_id`, `status_ID`, `create_date`, `expected_delivery_date`, `remarks`" +
-                " FROM `purchasers_request`";
+            this._commandCollection[0].CommandText = @"SELECT          purchasers_request_id, requestor_ID, restaurant_ID, item_ID, qty, priority_id, status_ID, create_date, 
+                            expected_delivery_date, remarks
+FROM               purchasers_request
+WHERE           (restaurant_ID = @restID)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            global::MySql.Data.MySqlClient.MySqlParameter param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@restID";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "restaurant_ID";
+            param.SourceVersion = global::System.Data.DataRowVersion.Current;
+            this._commandCollection[0].Parameters.Add(param);
+            this._commandCollection[1] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = @"SELECT          purchasers_request_id, requestor_ID, restaurant_ID, item_ID, qty, priority_id, status_ID, create_date, 
+                            expected_delivery_date, remarks
+FROM               purchasers_request
+WHERE           (restaurant_ID = @restID) AND (purchasers_request_id=@requestID)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@restID";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "restaurant_ID";
+            param.SourceVersion = global::System.Data.DataRowVersion.Current;
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@requestID";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "purchasers_request_id";
+            param.SourceVersion = global::System.Data.DataRowVersion.Current;
+            this._commandCollection[1].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(_4523_g1_project_dbDataSet.purchasers_requestDataTable dataTable) {
+        public virtual int Fill(_4523_g1_project_dbDataSet.purchasers_requestDataTable dataTable, int restID) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(restID));
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -3059,8 +3798,37 @@ namespace ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual _4523_g1_project_dbDataSet.purchasers_requestDataTable GetData() {
+        public virtual _4523_g1_project_dbDataSet.purchasers_requestDataTable GetData(int restID) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(restID));
+            _4523_g1_project_dbDataSet.purchasers_requestDataTable dataTable = new _4523_g1_project_dbDataSet.purchasers_requestDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy_RestID_RequestID(_4523_g1_project_dbDataSet.purchasers_requestDataTable dataTable, int restID, int requestID) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(restID));
+            this.Adapter.SelectCommand.Parameters[1].Value = ((int)(requestID));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual _4523_g1_project_dbDataSet.purchasers_requestDataTable GetDataBy_RestID_RequestID(int restID, int requestID) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(restID));
+            this.Adapter.SelectCommand.Parameters[1].Value = ((int)(requestID));
             _4523_g1_project_dbDataSet.purchasers_requestDataTable dataTable = new _4523_g1_project_dbDataSet.purchasers_requestDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -3967,6 +4735,210 @@ WHERE           (restaurant_stock_item.restaurant_ID = @restID)";
             this.Adapter.SelectCommand = this.CommandCollection[0];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(restID));
             _4523_g1_project_dbDataSet.requestOrder_restaurant_stockDataTable dataTable = new _4523_g1_project_dbDataSet.requestOrder_restaurant_stockDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class requestDetail_purhcases_requestTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::MySql.Data.MySqlClient.MySqlDataAdapter _adapter;
+        
+        private global::MySql.Data.MySqlClient.MySqlConnection _connection;
+        
+        private global::MySql.Data.MySqlClient.MySqlTransaction _transaction;
+        
+        private global::MySql.Data.MySqlClient.MySqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public requestDetail_purhcases_requestTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected internal global::MySql.Data.MySqlClient.MySqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::MySql.Data.MySqlClient.MySqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::MySql.Data.MySqlClient.MySqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::MySql.Data.MySqlClient.MySqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected global::MySql.Data.MySqlClient.MySqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::MySql.Data.MySqlClient.MySqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "requestDetail_purhcases_request";
+            tableMapping.ColumnMappings.Add("purchasers_request_id", "purchasers_request_id");
+            tableMapping.ColumnMappings.Add("requestor_ID", "requestor_ID");
+            tableMapping.ColumnMappings.Add("restaurant_ID", "restaurant_ID");
+            tableMapping.ColumnMappings.Add("item_ID", "item_ID");
+            tableMapping.ColumnMappings.Add("qty", "qty");
+            tableMapping.ColumnMappings.Add("priority_id", "priority_id");
+            tableMapping.ColumnMappings.Add("status_ID", "status_ID");
+            tableMapping.ColumnMappings.Add("create_date", "create_date");
+            tableMapping.ColumnMappings.Add("expected_delivery_date", "expected_delivery_date");
+            tableMapping.ColumnMappings.Add("remarks", "remarks");
+            tableMapping.ColumnMappings.Add("name", "name");
+            tableMapping.ColumnMappings.Add("item_name", "item_name");
+            tableMapping.ColumnMappings.Add("first_name", "first_name");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
+            this._connection.ConnectionString = global::ITP4915_group3_project.Properties.Settings.Default._4523_g1_project_dbConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[1];
+            this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = @"SELECT          purchasers_request.*, restaurant.name, item.item_name, `user`.first_name
+FROM               purchasers_request INNER JOIN
+                            item ON purchasers_request.item_ID = item.item_ID INNER JOIN
+                            restaurant ON purchasers_request.restaurant_ID = restaurant.restaurant_ID INNER JOIN
+                            `user` ON purchasers_request.requestor_ID = `user`.user_id
+WHERE           (purchasers_request.restaurant_ID = @restID) AND (purchasers_request.purchasers_request_id = @requestID)";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            global::MySql.Data.MySqlClient.MySqlParameter param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@restID";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "restaurant_ID";
+            param.SourceVersion = global::System.Data.DataRowVersion.Current;
+            this._commandCollection[0].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@requestID";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "purchasers_request_id";
+            param.SourceVersion = global::System.Data.DataRowVersion.Current;
+            this._commandCollection[0].Parameters.Add(param);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int FillBy_RestID_RequestID(_4523_g1_project_dbDataSet.requestDetail_purhcases_requestDataTable dataTable, int restID, int requestID) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(restID));
+            this.Adapter.SelectCommand.Parameters[1].Value = ((int)(requestID));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual _4523_g1_project_dbDataSet.requestDetail_purhcases_requestDataTable GetDataBy_RestID_RequestID(int restID, int requestID) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(restID));
+            this.Adapter.SelectCommand.Parameters[1].Value = ((int)(requestID));
+            _4523_g1_project_dbDataSet.requestDetail_purhcases_requestDataTable dataTable = new _4523_g1_project_dbDataSet.requestDetail_purhcases_requestDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }

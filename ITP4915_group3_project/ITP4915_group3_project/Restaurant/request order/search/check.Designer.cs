@@ -29,6 +29,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.kryptonGroupContent = new Krypton.Toolkit.KryptonGroup();
             this.kryptonGroup1 = new Krypton.Toolkit.KryptonGroup();
             this.kryptonPanel6 = new Krypton.Toolkit.KryptonPanel();
@@ -44,7 +45,16 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             this.kryptonCheckButton4 = new Krypton.Toolkit.KryptonCheckButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.kryptonLabel6 = new Krypton.Toolkit.KryptonLabel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this._4523_g1_project_dbDataSet = new ITP4915_group3_project._4523_g1_project_dbDataSet();
+            this.purchasers_requestBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.purchasers_requestTableAdapter = new ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.purchasers_requestTableAdapter();
+            this.tableAdapterManager = new ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.TableAdapterManager();
+            this.purchasers_requestDataGridView = new System.Windows.Forms.DataGridView();
+            this.purchasers_request_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.detail = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupContent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupContent.Panel)).BeginInit();
             this.kryptonGroupContent.Panel.SuspendLayout();
@@ -58,28 +68,32 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._4523_g1_project_dbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchasers_requestBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchasers_requestDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonGroupContent
             // 
-            this.kryptonGroupContent.Location = new System.Drawing.Point(23, 60);
-            this.kryptonGroupContent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonGroupContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonGroupContent.Location = new System.Drawing.Point(0, 0);
+            this.kryptonGroupContent.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroupContent.Name = "kryptonGroupContent";
             // 
             // kryptonGroupContent.Panel
             // 
+            this.kryptonGroupContent.Panel.AutoScroll = true;
+            this.kryptonGroupContent.Panel.Controls.Add(this.purchasers_requestDataGridView);
             this.kryptonGroupContent.Panel.Controls.Add(this.kryptonGroup1);
             this.kryptonGroupContent.Panel.Controls.Add(this.pictureBox6);
             this.kryptonGroupContent.Panel.Controls.Add(this.kryptonLabel6);
-            this.kryptonGroupContent.Panel.Controls.Add(this.pictureBox5);
-            this.kryptonGroupContent.Size = new System.Drawing.Size(610, 373);
+            this.kryptonGroupContent.Size = new System.Drawing.Size(800, 500);
             this.kryptonGroupContent.TabIndex = 10;
             // 
             // kryptonGroup1
             // 
-            this.kryptonGroup1.Location = new System.Drawing.Point(21, 15);
-            this.kryptonGroup1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonGroup1.Location = new System.Drawing.Point(122, 38);
+            this.kryptonGroup1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroup1.Name = "kryptonGroup1";
             // 
             // kryptonGroup1.Panel
@@ -105,7 +119,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             this.kryptonPanel6.Controls.Add(this.kryptonCheckButton5);
             this.kryptonPanel6.Controls.Add(this.kryptonCheckButton6);
             this.kryptonPanel6.Location = new System.Drawing.Point(290, 8);
-            this.kryptonPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonPanel6.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonPanel6.Name = "kryptonPanel6";
             this.kryptonPanel6.Size = new System.Drawing.Size(153, 30);
             this.kryptonPanel6.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
@@ -116,7 +130,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             // 
             this.kryptonCheckButton5.CornerRoundingRadius = 25F;
             this.kryptonCheckButton5.Location = new System.Drawing.Point(0, 0);
-            this.kryptonCheckButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonCheckButton5.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonCheckButton5.Name = "kryptonCheckButton5";
             this.kryptonCheckButton5.Size = new System.Drawing.Size(83, 30);
             this.kryptonCheckButton5.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
@@ -136,7 +150,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             // 
             this.kryptonCheckButton6.CornerRoundingRadius = -1F;
             this.kryptonCheckButton6.Location = new System.Drawing.Point(69, 0);
-            this.kryptonCheckButton6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonCheckButton6.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonCheckButton6.Name = "kryptonCheckButton6";
             this.kryptonCheckButton6.Size = new System.Drawing.Size(83, 30);
             this.kryptonCheckButton6.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
@@ -156,7 +170,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             // 
             this.kryptonButton8.CornerRoundingRadius = 25F;
             this.kryptonButton8.Location = new System.Drawing.Point(411, 52);
-            this.kryptonButton8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonButton8.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButton8.Name = "kryptonButton8";
             this.kryptonButton8.Size = new System.Drawing.Size(97, 30);
             this.kryptonButton8.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
@@ -176,7 +190,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             // kryptonTextBox1
             // 
             this.kryptonTextBox1.Location = new System.Drawing.Point(8, 8);
-            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox1.Name = "kryptonTextBox1";
             this.kryptonTextBox1.Size = new System.Drawing.Size(244, 34);
             this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
@@ -200,7 +214,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             this.kryptonPanel4.Controls.Add(this.kryptonCheckButton2);
             this.kryptonPanel4.Controls.Add(this.kryptonCheckButton3);
             this.kryptonPanel4.Location = new System.Drawing.Point(8, 52);
-            this.kryptonPanel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonPanel4.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonPanel4.Name = "kryptonPanel4";
             this.kryptonPanel4.Size = new System.Drawing.Size(261, 30);
             this.kryptonPanel4.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
@@ -211,7 +225,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             // 
             this.kryptonCheckButton1.CornerRoundingRadius = 25F;
             this.kryptonCheckButton1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonCheckButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonCheckButton1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonCheckButton1.Name = "kryptonCheckButton1";
             this.kryptonCheckButton1.Size = new System.Drawing.Size(100, 30);
             this.kryptonCheckButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
@@ -230,7 +244,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             // 
             this.kryptonCheckButton2.CornerRoundingRadius = -1F;
             this.kryptonCheckButton2.Location = new System.Drawing.Point(86, 0);
-            this.kryptonCheckButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonCheckButton2.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonCheckButton2.Name = "kryptonCheckButton2";
             this.kryptonCheckButton2.Size = new System.Drawing.Size(100, 30);
             this.kryptonCheckButton2.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
@@ -250,7 +264,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             // 
             this.kryptonCheckButton3.CornerRoundingRadius = -1F;
             this.kryptonCheckButton3.Location = new System.Drawing.Point(165, 0);
-            this.kryptonCheckButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonCheckButton3.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonCheckButton3.Name = "kryptonCheckButton3";
             this.kryptonCheckButton3.Size = new System.Drawing.Size(100, 30);
             this.kryptonCheckButton3.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
@@ -270,7 +284,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             // 
             this.kryptonCheckButton7.CornerRoundingRadius = -1F;
             this.kryptonCheckButton7.Location = new System.Drawing.Point(425, 8);
-            this.kryptonCheckButton7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonCheckButton7.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonCheckButton7.Name = "kryptonCheckButton7";
             this.kryptonCheckButton7.Size = new System.Drawing.Size(83, 30);
             this.kryptonCheckButton7.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
@@ -290,7 +304,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             // 
             this.kryptonCheckButton4.CornerRoundingRadius = -1F;
             this.kryptonCheckButton4.Location = new System.Drawing.Point(255, 52);
-            this.kryptonCheckButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonCheckButton4.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonCheckButton4.Name = "kryptonCheckButton4";
             this.kryptonCheckButton4.Size = new System.Drawing.Size(100, 30);
             this.kryptonCheckButton4.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
@@ -309,17 +323,17 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             // pictureBox6
             // 
             this.pictureBox6.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
-            this.pictureBox6.Location = new System.Drawing.Point(397, 335);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Location = new System.Drawing.Point(491, 413);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(191, 25);
+            this.pictureBox6.Size = new System.Drawing.Size(290, 40);
             this.pictureBox6.TabIndex = 7;
             this.pictureBox6.TabStop = false;
             // 
             // kryptonLabel6
             // 
-            this.kryptonLabel6.Location = new System.Drawing.Point(5, 143);
-            this.kryptonLabel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonLabel6.Location = new System.Drawing.Point(53, 199);
+            this.kryptonLabel6.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel6.Name = "kryptonLabel6";
             this.kryptonLabel6.Size = new System.Drawing.Size(113, 26);
             this.kryptonLabel6.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
@@ -329,25 +343,84 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             this.kryptonLabel6.TabIndex = 2;
             this.kryptonLabel6.Values.Text = "RESULT (0)";
             // 
-            // pictureBox5
+            // _4523_g1_project_dbDataSet
             // 
-            this.pictureBox5.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
-            this.pictureBox5.Location = new System.Drawing.Point(25, 189);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(554, 119);
-            this.pictureBox5.TabIndex = 6;
-            this.pictureBox5.TabStop = false;
+            this._4523_g1_project_dbDataSet.DataSetName = "_4523_g1_project_dbDataSet";
+            this._4523_g1_project_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // purchasers_requestBindingSource
+            // 
+            this.purchasers_requestBindingSource.DataMember = "purchasers_request";
+            this.purchasers_requestBindingSource.DataSource = this._4523_g1_project_dbDataSet;
+            // 
+            // purchasers_requestTableAdapter
+            // 
+            this.purchasers_requestTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.purchasers_requestTableAdapter = this.purchasers_requestTableAdapter;
+            this.tableAdapterManager.restaurant_stock_itemTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // purchasers_requestDataGridView
+            // 
+            this.purchasers_requestDataGridView.AutoGenerateColumns = false;
+            this.purchasers_requestDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.purchasers_requestDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.purchasers_request_id,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn8,
+            this.detail});
+            this.purchasers_requestDataGridView.DataSource = this.purchasers_requestBindingSource;
+            this.purchasers_requestDataGridView.Location = new System.Drawing.Point(122, 246);
+            this.purchasers_requestDataGridView.Name = "purchasers_requestDataGridView";
+            this.purchasers_requestDataGridView.RowTemplate.Height = 24;
+            this.purchasers_requestDataGridView.Size = new System.Drawing.Size(568, 117);
+            this.purchasers_requestDataGridView.TabIndex = 7;
+            this.purchasers_requestDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.purchasers_requestDataGridView_CellContentClick);
+            // 
+            // purchasers_request_id
+            // 
+            this.purchasers_request_id.DataPropertyName = "purchasers_request_id";
+            this.purchasers_request_id.HeaderText = "purchasers_request_id";
+            this.purchasers_request_id.Name = "purchasers_request_id";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "item_ID";
+            this.dataGridViewTextBoxColumn4.HeaderText = "item_ID";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "qty";
+            this.dataGridViewTextBoxColumn5.HeaderText = "qty";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "create_date";
+            this.dataGridViewTextBoxColumn8.HeaderText = "create_date";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // detail
+            // 
+            this.detail.HeaderText = "detail";
+            this.detail.Name = "detail";
+            this.detail.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.detail.Text = "detail";
             // 
             // check
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(651, 481);
             this.Controls.Add(this.kryptonGroupContent);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "check";
-            this.Text = "check_request";
+            this.Size = new System.Drawing.Size(800, 500);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupContent.Panel)).EndInit();
             this.kryptonGroupContent.Panel.ResumeLayout(false);
             this.kryptonGroupContent.Panel.PerformLayout();
@@ -363,7 +436,9 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
             this.kryptonPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._4523_g1_project_dbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchasers_requestBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchasers_requestDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -385,6 +460,15 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
         private Krypton.Toolkit.KryptonCheckButton kryptonCheckButton4;
         private System.Windows.Forms.PictureBox pictureBox6;
         private Krypton.Toolkit.KryptonLabel kryptonLabel6;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private _4523_g1_project_dbDataSet _4523_g1_project_dbDataSet;
+        private System.Windows.Forms.BindingSource purchasers_requestBindingSource;
+        private _4523_g1_project_dbDataSetTableAdapters.purchasers_requestTableAdapter purchasers_requestTableAdapter;
+        private _4523_g1_project_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.DataGridView purchasers_requestDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn purchasers_request_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewButtonColumn detail;
     }
 }
