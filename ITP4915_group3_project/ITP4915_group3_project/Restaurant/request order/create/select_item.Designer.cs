@@ -308,12 +308,16 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             // 
             // restaurant_stock_itemTableAdapter
             // 
+
             this.restaurant_stock_itemTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
 
+            this.tableAdapterManager.restaurant_stock_itemTableAdapter = this.restaurant_stock_itemTableAdapter;
+
             this.tableAdapterManager.UpdateOrder = ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+
 
             // 
             // selected
