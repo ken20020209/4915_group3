@@ -24,7 +24,7 @@ namespace ITP4915_group3_project.General.login
             //fake data need to fetch from database
             userName = "sam123";
             password = "132123";
-            user_ID = "00";
+            user_ID = "0";
             realName = "sam yau";
         }
 

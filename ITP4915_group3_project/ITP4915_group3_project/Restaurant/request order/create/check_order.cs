@@ -32,7 +32,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             kryptonTextBoxCreatorID.Text = newOrder.creator_ID;
             kryptonTextBoxCreatorName.Text = newOrder.creator_Name;
             kryptonTextBoxRequestID.Text = newOrder.request_ID;
-            kryptonTextBoxCreateDate.Text = newOrder.mysqlDate;
+            kryptonTextBoxCreateDate.Text = newOrder.mysqlDate.ToString();
 
 
         }
@@ -40,6 +40,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
         private void kryptonButtonConfirm_Click(object sender, EventArgs e)
         {
             newOrder.priority = comboBoxPriority.Text;
+            newOrder.insertDB();
             new create_success().ShowDialog();
         }
 

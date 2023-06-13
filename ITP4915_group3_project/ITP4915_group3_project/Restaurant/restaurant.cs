@@ -22,7 +22,7 @@ namespace ITP4915_group3_project.Restaurant
             InitializeComponent();
 
             //fake data
-            restaurant_ID = "123";
+            restaurant_ID = "0";
             restaurant_Name = "yammay restaurant";
             
             
