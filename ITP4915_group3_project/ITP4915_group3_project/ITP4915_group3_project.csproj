@@ -620,8 +620,14 @@
     <Compile Include="Purchase\set rule\time.Designer.cs">
       <DependentUpon>time.cs</DependentUpon>
     </Compile>
+    <Compile Include="Restaurant\delivery note\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Restaurant\delivery note\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
     <Compile Include="Restaurant\delivery note\search.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Restaurant\delivery note\search.Designer.cs">
       <DependentUpon>search.cs</DependentUpon>
@@ -728,6 +734,12 @@
     </Compile>
     <Compile Include="Restaurant\stock\detail.Designer.cs">
       <DependentUpon>detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant\stock\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Restaurant\stock\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
     </Compile>
     <Compile Include="Restaurant\stock\update.cs">
       <SubType>UserControl</SubType>
@@ -1126,6 +1138,9 @@
     <EmbeddedResource Include="Purchase\set rule\time.resx">
       <DependentUpon>time.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\delivery note\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\delivery note\search.resx">
       <DependentUpon>search.cs</DependentUpon>
     </EmbeddedResource>
@@ -1179,6 +1194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\stock\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\stock\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\stock\update.resx">
       <DependentUpon>update.cs</DependentUpon>

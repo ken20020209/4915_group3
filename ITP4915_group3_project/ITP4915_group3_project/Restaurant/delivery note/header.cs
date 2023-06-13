@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace ITP4915_group3_project.Restaurant.delivery_note
 {
-    public partial class search : UserControl
+    public partial class header : UserControl
     {
-        public search()
+        Control panelContent;
+        public header(Control panel)
         {
             InitializeComponent();
+            this.panelContent = panel;
+        }
+        private void kryptonButtonReview_Click(object sender, EventArgs e)
+        {
+            panelContent.Controls.Clear();
+            panelContent.Controls.Add(new search());
         }
     }
 }

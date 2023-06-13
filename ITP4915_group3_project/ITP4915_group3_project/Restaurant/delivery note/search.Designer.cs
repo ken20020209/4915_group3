@@ -58,17 +58,18 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
             this.panelContent.Controls.Add(this.kryptonComboBox2);
             this.panelContent.Controls.Add(this.kryptonTextBox16);
             this.panelContent.Controls.Add(this.kryptonGroup4);
-            this.panelContent.Location = new System.Drawing.Point(83, 54);
-            this.panelContent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContent.Location = new System.Drawing.Point(0, 0);
+            this.panelContent.Margin = new System.Windows.Forms.Padding(2);
             this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(633, 413);
+            this.panelContent.Size = new System.Drawing.Size(800, 500);
             this.panelContent.TabIndex = 3;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
-            this.pictureBox1.Location = new System.Drawing.Point(412, 354);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(464, 369);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(191, 25);
             this.pictureBox1.TabIndex = 53;
@@ -77,8 +78,8 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
             // pictureBox2
             // 
             this.pictureBox2.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
-            this.pictureBox2.Location = new System.Drawing.Point(31, 199);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(83, 214);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(571, 118);
             this.pictureBox2.TabIndex = 52;
@@ -89,7 +90,7 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.label3.Location = new System.Drawing.Point(443, 151);
+            this.label3.Location = new System.Drawing.Point(495, 166);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 16);
@@ -101,8 +102,8 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
             this.kryptonComboBox2.CornerRoundingRadius = 25F;
             this.kryptonComboBox2.DropDownWidth = 153;
             this.kryptonComboBox2.IntegralHeight = false;
-            this.kryptonComboBox2.Location = new System.Drawing.Point(490, 143);
-            this.kryptonComboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonComboBox2.Location = new System.Drawing.Point(542, 158);
+            this.kryptonComboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonComboBox2.Name = "kryptonComboBox2";
             this.kryptonComboBox2.Size = new System.Drawing.Size(113, 37);
             this.kryptonComboBox2.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
@@ -121,8 +122,8 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
             // 
             // kryptonTextBox16
             // 
-            this.kryptonTextBox16.Location = new System.Drawing.Point(31, 145);
-            this.kryptonTextBox16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonTextBox16.Location = new System.Drawing.Point(83, 160);
+            this.kryptonTextBox16.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox16.Name = "kryptonTextBox16";
             this.kryptonTextBox16.Size = new System.Drawing.Size(244, 34);
             this.kryptonTextBox16.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
@@ -142,8 +143,8 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
             // 
             // kryptonGroup4
             // 
-            this.kryptonGroup4.Location = new System.Drawing.Point(31, 34);
-            this.kryptonGroup4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonGroup4.Location = new System.Drawing.Point(83, 49);
+            this.kryptonGroup4.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroup4.Name = "kryptonGroup4";
             // 
             // kryptonGroup4.Panel
@@ -163,7 +164,7 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
             // kryptonLabel26
             // 
             this.kryptonLabel26.Location = new System.Drawing.Point(52, 42);
-            this.kryptonLabel26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonLabel26.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel26.Name = "kryptonLabel26";
             this.kryptonLabel26.Size = new System.Drawing.Size(95, 22);
             this.kryptonLabel26.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
@@ -174,7 +175,7 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
             // kryptonLabel27
             // 
             this.kryptonLabel27.Location = new System.Drawing.Point(87, 13);
-            this.kryptonLabel27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonLabel27.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel27.Name = "kryptonLabel27";
             this.kryptonLabel27.Size = new System.Drawing.Size(22, 26);
             this.kryptonLabel27.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
@@ -187,7 +188,7 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(98)))), ((int)(((byte)(93)))));
             this.pictureBox3.Image = global::ITP4915_group3_project.Properties.Resources.icons8_sign_document_40;
             this.pictureBox3.Location = new System.Drawing.Point(2, 13);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(47, 47);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -198,11 +199,10 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 521);
             this.Controls.Add(this.panelContent);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "search";
-            this.Text = "check";
+            this.Size = new System.Drawing.Size(800, 500);
             this.panelContent.ResumeLayout(false);
             this.panelContent.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

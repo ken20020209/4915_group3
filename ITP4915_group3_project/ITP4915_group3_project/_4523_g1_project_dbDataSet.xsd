@@ -550,7 +550,6 @@ WHERE           (restaurant_stock_item.restaurant_ID = @restID) AND (restaurant_
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="Purchasers_Request_item_ID_fk" msdata:parent="requestOrder_restaurant_stock" msdata:child="purchasers_request" msdata:parentkey="item_ID" msdata:childkey="item_ID" msprop:Generator_UserChildTable="purchasers_request" msprop:Generator_ChildPropName="Getpurchasers_requestRows" msprop:Generator_UserRelationName="Purchasers_Request_item_ID_fk" msprop:Generator_ParentPropName="requestOrder_restaurant_stockRow" msprop:Generator_RelationVarName="relationPurchasers_Request_item_ID_fk" msprop:Generator_UserParentTable="requestOrder_restaurant_stock" />
       <msdata:Relationship name="Restaurant_Stock_Item_item_ID_fk" msdata:parent="requestOrder_restaurant_stock" msdata:child="restaurant_stock_item" msdata:parentkey="item_ID" msdata:childkey="item_ID" msprop:Generator_UserChildTable="restaurant_stock_item" msprop:Generator_ChildPropName="Getrestaurant_stock_itemRows" msprop:Generator_UserRelationName="Restaurant_Stock_Item_item_ID_fk" msprop:Generator_ParentPropName="requestOrder_restaurant_stockRow" msprop:Generator_RelationVarName="relationRestaurant_Stock_Item_item_ID_fk" msprop:Generator_UserParentTable="requestOrder_restaurant_stock" />
     </xs:appinfo>
   </xs:annotation>

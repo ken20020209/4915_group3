@@ -24,7 +24,8 @@ namespace ITP4915_group3_project.Restaurant
             //fake data
             restaurant_ID = 1;
             restaurant_Name = "yammay restaurant";
-            
+
+            krytonBtnMenuRequestOrder_Click(null, null);
             
         }
 
@@ -42,15 +43,22 @@ namespace ITP4915_group3_project.Restaurant
         {
 
             kryptonPanelContent.Controls.Clear();
-            kryptonPanelContent.Controls.Add(new delivery_note.check());
+            kryptonPanelContent.Controls.Add(new delivery_note.search());
+
+            kryptonPanelHeader.Controls.Clear();
+            kryptonPanelHeader.Controls.Add(new delivery_note.header(kryptonPanelContent));
         }
 
         private void kryptonButtonMenuStock_Click(object sender, EventArgs e)
         {
             // use user controls 
+
             kryptonPanelContent.Controls.Clear();
             kryptonPanelContent.Controls.Add(new stock.check());
-            
+
+            kryptonPanelHeader.Controls.Clear();
+            kryptonPanelHeader.Controls.Add(new stock.header(kryptonPanelContent));
+
         }
     }
 }

@@ -16,6 +16,7 @@ namespace ITP4915_group3_project.Restaurant.stock
         {
             InitializeComponent();
             this.requestOrder_restaurant_stockTableAdapter.Fill(this._4523_g1_project_dbDataSet.requestOrder_restaurant_stock,restaurant.restaurant_ID);
+            kryptonLabelTotalItem.Text = this._4523_g1_project_dbDataSet.requestOrder_restaurant_stock.Count.ToString();
 
         }
 

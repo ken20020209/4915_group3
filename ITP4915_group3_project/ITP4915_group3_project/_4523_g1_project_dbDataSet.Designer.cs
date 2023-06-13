@@ -36,8 +36,6 @@ namespace ITP4915_group3_project {
         
         private restaurant_stock_detailDataTable tablerestaurant_stock_detail;
         
-        private global::System.Data.DataRelation relationPurchasers_Request_item_ID_fk;
-        
         private global::System.Data.DataRelation relationRestaurant_Stock_Item_item_ID_fk;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
@@ -318,7 +316,6 @@ namespace ITP4915_group3_project {
                     this.tablerestaurant_stock_detail.InitVars();
                 }
             }
-            this.relationPurchasers_Request_item_ID_fk = this.Relations["Purchasers_Request_item_ID_fk"];
             this.relationRestaurant_Stock_Item_item_ID_fk = this.Relations["Restaurant_Stock_Item_item_ID_fk"];
         }
         
@@ -342,10 +339,6 @@ namespace ITP4915_group3_project {
             base.Tables.Add(this.tablerequestDetail_purhcases_request);
             this.tablerestaurant_stock_detail = new restaurant_stock_detailDataTable();
             base.Tables.Add(this.tablerestaurant_stock_detail);
-            this.relationPurchasers_Request_item_ID_fk = new global::System.Data.DataRelation("Purchasers_Request_item_ID_fk", new global::System.Data.DataColumn[] {
-                        this.tablerequestOrder_restaurant_stock.item_IDColumn}, new global::System.Data.DataColumn[] {
-                        this.tablepurchasers_request.item_IDColumn}, false);
-            this.Relations.Add(this.relationPurchasers_Request_item_ID_fk);
             this.relationRestaurant_Stock_Item_item_ID_fk = new global::System.Data.DataRelation("Restaurant_Stock_Item_item_ID_fk", new global::System.Data.DataColumn[] {
                         this.tablerequestOrder_restaurant_stock.item_IDColumn}, new global::System.Data.DataColumn[] {
                         this.tablerestaurant_stock_item.item_IDColumn}, false);
@@ -975,22 +968,19 @@ namespace ITP4915_group3_project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public purchasers_requestRow Addpurchasers_requestRow(int requestor_ID, int restaurant_ID, requestOrder_restaurant_stockRow parentrequestOrder_restaurant_stockRowByPurchasers_Request_item_ID_fk, int qty, int priority_id, int status_ID, System.DateTime create_date, System.DateTime expected_delivery_date, string remarks) {
+            public purchasers_requestRow Addpurchasers_requestRow(int requestor_ID, int restaurant_ID, int item_ID, int qty, int priority_id, int status_ID, System.DateTime create_date, System.DateTime expected_delivery_date, string remarks) {
                 purchasers_requestRow rowpurchasers_requestRow = ((purchasers_requestRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         requestor_ID,
                         restaurant_ID,
-                        null,
+                        item_ID,
                         qty,
                         priority_id,
                         status_ID,
                         create_date,
                         expected_delivery_date,
                         remarks};
-                if ((parentrequestOrder_restaurant_stockRowByPurchasers_Request_item_ID_fk != null)) {
-                    columnValuesArray[3] = parentrequestOrder_restaurant_stockRowByPurchasers_Request_item_ID_fk[1];
-                }
                 rowpurchasers_requestRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowpurchasers_requestRow);
                 return rowpurchasers_requestRow;
@@ -2876,17 +2866,6 @@ namespace ITP4915_group3_project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public requestOrder_restaurant_stockRow requestOrder_restaurant_stockRow {
-                get {
-                    return ((requestOrder_restaurant_stockRow)(this.GetParentRow(this.Table.ParentRelations["Purchasers_Request_item_ID_fk"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["Purchasers_Request_item_ID_fk"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsremarksNull() {
                 return this.IsNull(this.tablepurchasers_request.remarksColumn);
             }
@@ -3098,17 +3077,6 @@ namespace ITP4915_group3_project {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetremarksNull() {
                 this[this.tablerequestOrder_restaurant_stock.remarksColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public purchasers_requestRow[] Getpurchasers_requestRows() {
-                if ((this.Table.ChildRelations["Purchasers_Request_item_ID_fk"] == null)) {
-                    return new purchasers_requestRow[0];
-                }
-                else {
-                    return ((purchasers_requestRow[])(base.GetChildRows(this.Table.ChildRelations["Purchasers_Request_item_ID_fk"])));
-                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
