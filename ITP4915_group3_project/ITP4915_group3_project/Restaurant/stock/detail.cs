@@ -11,50 +11,30 @@ using System.Windows.Forms;
 
 namespace ITP4915_group3_project.Restaurant.stock
 {
-    public partial class detail : Form
+    public partial class detail : UserControl
     {
-        public detail()
+        public Control check;
+        public int itemID;
+        public detail(Control panel,int itemID)
         {
             InitializeComponent();
+            check = panel;
+            check.Controls.Add(this);
+            this.itemID = itemID;
+            this.BringToFront();
+            this.restaurant_stock_detailTableAdapter.Fill(this._4523_g1_project_dbDataSet.restaurant_stock_detail, restaurant.restaurant_ID, itemID);
+
         }
-        public detail(string restID,string itemID)
+
+        private void kryptonLabelBack_Click(object sender, EventArgs e)
         {
-            InitializeComponent();
-/*
-            string connStr = "server = localhost; user = root; database = 4523_g1_project_db; port = 3308; password = 123123";
-            MySqlConnection conn;
-
-            conn = new MySqlConnection(connStr);
-            try
-            {
-                conn.Open();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.ToString());
-            }
-            
-
-            string sql = "SELECT * FROM 4523_g1_project_db.restaurantstockdetail;";
-            MySqlCommand cmd = new MySqlCommand(sql, conn);
-
-            MySqlDataReader rdr = cmd.ExecuteReader();*/
-
-   /*         rdr.Read();*/
-            //use data set to read database
-            restaurantstockdetailTableAdapter.Fill(this._4523_g1_project_dbDataSet.restaurantstockdetail);
-            _4523_g1_project_dbDataSet.restaurantstockdetailRow data = this._4523_g1_project_dbDataSet.restaurantstockdetail.FindByitem_ID("0");
-            
-            kryptonTextBoxID.Text = data.item_ID;
-            kryptonTextBoxName.Text = data.item_name;
-            kryptonTextBoxCategory.Text = data.category_name;
-            kryptonTextBoxBrand.Text = data.name;
-            kryptonDomainUpDownQty.Text = data.qty.ToString();
-            kryptonRichTextBoxRemarks.Text = data.remarks;
-
- /*           rdr.Close();*/
+            check.Controls.Remove(this);
         }
 
+        private void kryptonButtonEdit_Click(object sender, EventArgs e)
+        {
+            update updatePanel = new update(this, itemID);
 
+        }
     }
 }

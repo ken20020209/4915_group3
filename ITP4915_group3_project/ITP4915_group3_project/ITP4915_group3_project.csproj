@@ -730,7 +730,7 @@
       <DependentUpon>detail.cs</DependentUpon>
     </Compile>
     <Compile Include="Restaurant\stock\update.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Restaurant\stock\update.Designer.cs">
       <DependentUpon>update.cs</DependentUpon>

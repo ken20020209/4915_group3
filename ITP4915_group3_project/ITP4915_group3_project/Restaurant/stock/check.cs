@@ -15,11 +15,13 @@ namespace ITP4915_group3_project.Restaurant.stock
         public check()
         {
             InitializeComponent();
+            this.requestOrder_restaurant_stockTableAdapter.Fill(this._4523_g1_project_dbDataSet.requestOrder_restaurant_stock,restaurant.restaurant_ID);
+
         }
 
-        private void pictureBox8_Click(object sender, EventArgs e)
+        private void requestOrder_restaurant_stockDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            new detail("0", "0").Show();
+            detail stockDetail = new detail(this, int.Parse(requestOrder_restaurant_stockDataGridView.Rows[e.RowIndex].Cells["item_ID"].Value.ToString()));
         }
     }
 }
