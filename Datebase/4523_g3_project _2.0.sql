@@ -25,7 +25,7 @@ DROP TABLE IF EXISTS `address`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `address` (
-  `address_id` int NOT NULL COMMENT 'The ID to identify the address\nXX000000000000000000-XX999999999999999999\nXX =\n‘KW’ for Kowloon\n‘NT’ for New Territories\n‘HK’ for Hong Kong Island\n\n',
+  `address_id` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify the address\nXX000000000000000000-XX999999999999999999\nXX =\n‘KW’ for Kowloon\n‘NT’ for New Territories\n‘HK’ for Hong Kong Island\n\n',
   `name` varchar(30) DEFAULT NULL COMMENT 'The name\n\n',
   `district` varchar(30) DEFAULT NULL COMMENT 'The district of the address\n‘KW’ for Kowloon\n‘NT’ for New Territories\n‘HK’ for Hong Kong Island\n\n',
   `street` varchar(30) DEFAULT NULL COMMENT 'The street of the address\n\n',
@@ -53,7 +53,7 @@ DROP TABLE IF EXISTS `blanket_release`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `blanket_release` (
-  `release_ID` int NOT NULL COMMENT 'The ID to identify the Blanket release\n0000000000-9999999999\n\n',
+  `release_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify the Blanket release\n0000000000-9999999999\n\n',
   `header_ID` int NOT NULL COMMENT 'The ID to identify the header\n0000000000-9999999999\n\n',
   `create_date` date NOT NULL COMMENT 'The date where the Blanket release is created\nDDMMYYYY\n\n',
   `expected_delivery_date` date NOT NULL COMMENT 'The expected delivery date of the Blanket release\nDDMMYYYY\n\n',
@@ -88,7 +88,7 @@ DROP TABLE IF EXISTS `bpa_header`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `bpa_header` (
-  `header_ID` int NOT NULL COMMENT 'The ID to identify the header of BPA\n0000000000-9999999999\n\n',
+  `header_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify the header of BPA\n0000000000-9999999999\n\n',
   `purchase_order_revision` tinyint NOT NULL COMMENT 'The purchase order whether need a revision\nYes\nNo\n\n',
   `create_date` date NOT NULL COMMENT 'The date which the BPA is created\nDDMMYYYY\n\n',
   `effective_dates` date NOT NULL COMMENT 'The effective date of BPA\nDDMMYYYY\n\n',
@@ -123,7 +123,7 @@ DROP TABLE IF EXISTS `bpa_lines`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `bpa_lines` (
-  `lines_ID` int NOT NULL COMMENT 'The ID to identify the BPA line \n0000000000-9999999999\n\n',
+  `lines_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify the BPA line \n0000000000-9999999999\n\n',
   `header_ID` int NOT NULL COMMENT 'The ID to identify the header\n0000000000-9999999999\n\n',
   `item_ID` int NOT NULL COMMENT 'The ID to identify the BPA item\n0000000000-9999999999\n\n',
   `promised_qty` int NOT NULL COMMENT 'The promised quantity of item\n\n\n\n',
@@ -157,7 +157,7 @@ DROP TABLE IF EXISTS `cpa`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `cpa` (
-  `CPA_ID` int NOT NULL COMMENT 'The ID of CPA\n0000000000-9999999999\n\n',
+  `CPA_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID of CPA\n0000000000-9999999999\n\n',
   `create_date` date NOT NULL COMMENT 'the create date of CPA\nDD/MM/YYYY\n\n',
   `effective_date` date NOT NULL COMMENT 'The effective date of CPA\nDD/MM/YYYY\n\n',
   `supplier_ID` int NOT NULL COMMENT 'The ID of the supplier to identify different suppliers\n0000000000-9999999999\n\n',
@@ -192,7 +192,7 @@ DROP TABLE IF EXISTS `delivery_request`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `delivery_request` (
-  `delivery_request_ID` int NOT NULL COMMENT 'The ID to identify each delivery request\n0000000000-9999999999\n\n',
+  `delivery_request_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify each delivery request\n0000000000-9999999999\n\n',
   `delivery_address_ID` int NOT NULL COMMENT 'The ID to identify each delivery address\n0000000000-9999999999\n\n',
   `receive_address_ID` int NOT NULL COMMENT 'The ID to identify each receive address\n0000000000-9999999999\n\n',
   `item_ID` int NOT NULL COMMENT 'The ID to identify each \n0000000000-9999999999\n\n',
@@ -234,7 +234,7 @@ DROP TABLE IF EXISTS `delivery_request_handler`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `delivery_request_handler` (
-  `ID` int NOT NULL COMMENT '0000000000-9999999999',
+  `ID` int NOT NULL  AUTO_INCREMENT COMMENT '0000000000-9999999999',
   `delivery_request_ID` int NOT NULL COMMENT 'The ID to identify each delivery request\n0000000000-9999999999\n\n',
   `delivery_staff_ID` int NOT NULL COMMENT 'The ID to identify each Delivery staff\n0000000000-9999999999\n\n',
   PRIMARY KEY (`ID`),
@@ -262,7 +262,7 @@ DROP TABLE IF EXISTS `department`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `department` (
-  `dept_id` int NOT NULL COMMENT 'The ID to identify each department\n0000000000-9999999999\n\n',
+  `dept_id` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify each department\n0000000000-9999999999\n\n',
   `dept_name` varchar(30) NOT NULL COMMENT 'The name of each department\n\n',
   `description` varchar(50) DEFAULT NULL COMMENT 'What kind of service provide the department\n\n',
   PRIMARY KEY (`dept_id`)
@@ -313,7 +313,7 @@ DROP TABLE IF EXISTS `food_beverage`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `food_beverage` (
-  `Food_Beverage_ID` int NOT NULL COMMENT 'The ID of the\nfood and beverage \n0000000000-9999999999\n\n',
+  `Food_Beverage_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID of the\nfood and beverage \n0000000000-9999999999\n\n',
   `category_ID` int NOT NULL COMMENT 'The ID of the category\n0000000000-9999999999\n\n',
   `name` varchar(30) NOT NULL COMMENT 'The name of the food and beverage\n\n\n\n',
   `description` varchar(30) DEFAULT NULL COMMENT 'The description of the food and beverage\n\n\n\n',
@@ -340,7 +340,7 @@ DROP TABLE IF EXISTS `invoice`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `invoice` (
-  `Invoice_ID` int NOT NULL COMMENT 'The ID to identify different invoice\n0000000000-9999999999\n\n',
+  `Invoice_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify different invoice\n0000000000-9999999999\n\n',
   `purchase_order_ID` int NOT NULL COMMENT 'The ID to identify the purchase order\nCCCCBBYYYYMMDDSSSS\n\nCCCC - Company Code\nBB - Branch\nYYYY - Year\nMM - Month\nDD - Day\nSSSS - Sequence number per day\n\n',
   `arrival_date` date NOT NULL COMMENT 'The date of arrival \nDDMMYYYY\n\n',
   `shipping_date` date NOT NULL COMMENT 'The date of shipping\nDDMMYYYY\n\n',
@@ -367,7 +367,7 @@ DROP TABLE IF EXISTS `item`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `item` (
-  `item_ID` int NOT NULL COMMENT 'The quantity to identify each item inside the warehouse\n0000000000-9999999999\n\n',
+  `item_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The quantity to identify each item inside the warehouse\n0000000000-9999999999\n\n',
   `item_name` varchar(50) NOT NULL,
   `price` decimal(10,2) NOT NULL COMMENT 'The price of each item\n\n\n\n',
   `size` varchar(30) NOT NULL COMMENT 'The size of the product\nS, M, L\n\n',
@@ -401,7 +401,7 @@ DROP TABLE IF EXISTS `item_category`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `item_category` (
-  `category_ID` int NOT NULL COMMENT 'The ID of the category\n0000000000-9999999999\n\n',
+  `category_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID of the category\n0000000000-9999999999\n\n',
   `category_name` varchar(30) NOT NULL COMMENT 'The name of the category\n\n\n\n',
   `description` varchar(30) DEFAULT NULL COMMENT 'The description of the item\n\n\n\n',
   PRIMARY KEY (`category_ID`)
@@ -441,7 +441,7 @@ DROP TABLE IF EXISTS `notify_message`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `notify_message` (
-  `notify_message_id` int NOT NULL COMMENT 'The ID to identify different notify_message\n0000000000-9999999999\n\n',
+  `notify_message_id` int NOT NULL AUTO_INCREMENT  COMMENT 'The ID to identify different notify_message\n0000000000-9999999999\n\n',
   `notify_rule_id` int NOT NULL COMMENT 'The ID to identify the purchase order\n0000000000-9999999999\n\n',
   `message` varchar(255) NOT NULL COMMENT 'The message to notify user\n\n\n\n',
   PRIMARY KEY (`notify_message_id`),
@@ -467,7 +467,7 @@ DROP TABLE IF EXISTS `notify_rule`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `notify_rule` (
-  `notify_rule_id` int NOT NULL COMMENT 'The ID to identify different rule\n0000000000-9999999999\n\n',
+  `notify_rule_id` int NOT NULL  AUTO_INCREMENT  COMMENT 'The ID to identify different rule\n0000000000-9999999999\n\n',
   `user_id` int NOT NULL COMMENT 'The ID to identify the purchase order\n0000000000-9999999999\n\n\n',
   `tablename` varchar(30) NOT NULL COMMENT 'The date of table name\n\n\n\n\n',
   `colum` varchar(30) NOT NULL COMMENT 'The date of colum name\n\n\n\n',
@@ -496,7 +496,7 @@ DROP TABLE IF EXISTS `partner_brand`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `partner_brand` (
-  `partner_brand_ID` int NOT NULL COMMENT 'The ID to identify  the partner brand\n0000000000-9999999999\n\n',
+  `partner_brand_ID` int NOT NULL AUTO_INCREMENT  COMMENT 'The ID to identify  the partner brand\n0000000000-9999999999\n\n',
   `name` varchar(30) NOT NULL COMMENT 'The name of the partner brand\n\n\n\n',
   `type` varchar(30) NOT NULL COMMENT 'Which occupational category is?\n\n\n\n',
   `remarks` varchar(30) DEFAULT NULL COMMENT 'The remark that they have to add \n\n\n\n',
@@ -547,7 +547,7 @@ DROP TABLE IF EXISTS `permission`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `permission` (
-  `permission_id` int NOT NULL COMMENT 'The ID to identify the permission\n0000000000-9999999999\n\n',
+  `permission_id` int NOT NULL AUTO_INCREMENT  COMMENT 'The ID to identify the permission\n0000000000-9999999999\n\n',
   `permission_name` varchar(30) NOT NULL COMMENT 'The name of type permission\nall use case name\n\n',
   `permission_description` varchar(50) DEFAULT NULL COMMENT 'What kind of permission is',
   PRIMARY KEY (`permission_id`)
@@ -571,7 +571,7 @@ DROP TABLE IF EXISTS `ppo_header`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ppo_header` (
-  `header_ID` int NOT NULL COMMENT 'The ID of PPO header to identify different PPO Header\n0000000000-9999999999\n\n',
+  `header_ID` int NOT NULL AUTO_INCREMENT  COMMENT 'The ID of PPO header to identify different PPO Header\n0000000000-9999999999\n\n',
   `purchase_order_revision_ID` char(2) NOT NULL COMMENT 'The ID of purchase order to identify different purchase order revision times\n00-99\n\n',
   `create_date` date NOT NULL COMMENT 'the date that create the purchase order\nDDMMYYYY\n\n',
   `effective_date` date NOT NULL COMMENT 'the date that the purchase order happens\nDDMMYYYY\n\n',
@@ -607,7 +607,7 @@ DROP TABLE IF EXISTS `ppo_lines`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ppo_lines` (
-  `lines_ID` int NOT NULL COMMENT 'The ID to identify the PPO lines\n0000000000-9999999999\n\n',
+  `lines_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID to identify the PPO lines\n0000000000-9999999999\n\n',
   `header_ID` int NOT NULL COMMENT 'The ID to identify the PPO lines header\n0000000000-9999999999\n\n',
   `item_ID` int NOT NULL COMMENT 'The ID to identify the PPO lines item\n0000000000-9999999999\n\n',
   `qty` int NOT NULL COMMENT 'The quantity of PPO lines\n\n\n\n',
@@ -640,7 +640,7 @@ DROP TABLE IF EXISTS `price_breaks`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `price_breaks` (
-  `price_break_ID` int NOT NULL COMMENT 'The ID to identify each price breaks\n0000000000-9999999999\n\n',
+  `price_break_ID` int NOT NULL AUTO_INCREMENT  COMMENT 'The ID to identify each price breaks\n0000000000-9999999999\n\n',
   `qty` int NOT NULL COMMENT 'The quantity item of prices breaks\n\n\n\n',
   `price_break` decimal(10,2) NOT NULL COMMENT 'The price reduced\n\n\n\n',
   `discount` decimal(10,2) NOT NULL COMMENT 'What is the discount of that price breaks\n\n\n\n',
@@ -690,7 +690,7 @@ DROP TABLE IF EXISTS `purchase_order_all`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `purchase_order_all` (
-  `Purchase_order_ID` int NOT NULL COMMENT 'The ID to identify the purchase order all \nCCCCBBYYYYMMDDSSSS\n\nCCCC - Company Code\nBB - Branch\nYYYY - Year\nMM - Month\nDD - Day\nSSSS - Sequence number per day\n\n',
+  `Purchase_order_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID to identify the purchase order all \nCCCCBBYYYYMMDDSSSS\n\nCCCC - Company Code\nBB - Branch\nYYYY - Year\nMM - Month\nDD - Day\nSSSS - Sequence number per day\n\n',
   `BR_relase_ID` int DEFAULT NULL COMMENT 'The ID to identify the release of purchase order all\n0000000000-9999999999\n\n',
   `SR_relase_ID` int DEFAULT NULL COMMENT 'The ID to identify the release of purchase order all\n0000000000-9999999999\n\n',
   `SPO_relase_ID` int DEFAULT NULL COMMENT 'The ID to identify the release of purchase order all\n0000000000-9999999999\n\n',
@@ -728,7 +728,7 @@ DROP TABLE IF EXISTS `purchasers_request`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `purchasers_request` (
-  `purchasers_request_id` int NOT NULL COMMENT 'The ID to identify the purchaser''s request\n0000000000-9999999999\n\n\n',
+  `purchasers_request_id` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID to identify the purchaser''s request\n0000000000-9999999999\n\n\n',
   `requestor_ID` int NOT NULL COMMENT 'The ID to identify the requestor\n0000000000-9999999999\n\n',
   `restaurant_ID` int NOT NULL COMMENT 'To represent different restaurants.\nXX00000000-XX99999999\n\nXX:\n‘JP’ for Japan\n‘CH’ for Chinese\n‘TW’ for Taiwan\n‘IN’ for India\n‘VT’ for Vietnam\n\n',
   `item_ID` int NOT NULL COMMENT 'The ID to identify the item\n0000000000-9999999999\n\n',
@@ -792,7 +792,7 @@ DROP TABLE IF EXISTS `restaurant`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `restaurant` (
-  `restaurant_ID` int NOT NULL COMMENT 'The ID to identify each restaurant\nXX00000000-XX99999999\n\nXX:\n‘JP’ for Japan\n‘CH’ for Chinese\n‘TW’ for Taiwan\n‘IN’ for India\n‘VT’ for Vietnam\n‘FR’ for French\n\n',
+  `restaurant_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID to identify each restaurant\nXX00000000-XX99999999\n\nXX:\n‘JP’ for Japan\n‘CH’ for Chinese\n‘TW’ for Taiwan\n‘IN’ for India\n‘VT’ for Vietnam\n‘FR’ for French\n\n',
   `name` varchar(30) NOT NULL COMMENT 'The name of each restaurant\n\n',
   `address_ID` int NOT NULL COMMENT 'The ID to identify each address\nXX000000000000000000-XX999999999999999999\n\nXX:\n‘JP’ for Japan\n‘CH’ for Chinese\n‘TW’ for Taiwan\n‘IN’ for India\n‘VT’ for Vietnam\n‘FR’ for French\n\n',
   `type` varchar(20) NOT NULL COMMENT 'Type of the the restaurant\n‘JP’ for Japan\n‘CH’ for Chinese\n‘TW’ for Taiwan\n‘IN’ for India\n‘VT’ for Vietnam\n‘FR’ for French\n\n',
@@ -868,7 +868,7 @@ DROP TABLE IF EXISTS `role`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `role` (
-  `role_id` int NOT NULL COMMENT 'The ID to identify the role\n0000000000-9999999999\n\n',
+  `role_id` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID to identify the role\n0000000000-9999999999\n\n',
   `role_name` varchar(30) NOT NULL COMMENT 'The name of role',
   `role_description` varchar(50) DEFAULT NULL COMMENT 'The title of the role',
   PRIMARY KEY (`role_id`)
@@ -918,7 +918,7 @@ DROP TABLE IF EXISTS `schedule_release`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `schedule_release` (
-  `release_ID` int NOT NULL COMMENT 'The ID to identify the schedule release\n0000000000-9999999999\n\n',
+  `release_ID` int NOT NULL AUTO_INCREMENT  COMMENT 'The ID to identify the schedule release\n0000000000-9999999999\n\n',
   `header_ID` int NOT NULL COMMENT 'The ID to identify the header of schedule release\n0000000000-9999999999\n\n',
   `create_date` date NOT NULL COMMENT 'The date that is created this schedule release\nDDMMYYYY\n\n',
   `expected_delivery_date` date NOT NULL COMMENT 'The expected delivery date of this schedule release\nDDMMYYYY\n\n',
@@ -945,7 +945,7 @@ DROP TABLE IF EXISTS `spo_header`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `spo_header` (
-  `header_ID` int NOT NULL COMMENT 'The ID to identify the SPO header\n0000000000-9999999999\n\n',
+  `header_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID to identify the SPO header\n0000000000-9999999999\n\n',
   `create_date` date NOT NULL COMMENT 'The date when the SPO header created\nDDMsMYYYY\n\n',
   `effective_date` date NOT NULL COMMENT 'the effective date of the SPO header\nDDMMYYYY\n\n',
   `supplier_ID` int NOT NULL COMMENT 'The ID to identify the supplier of the SPO header\n0000000000-9999999999\n\n',
@@ -978,7 +978,7 @@ DROP TABLE IF EXISTS `spo_lines`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `spo_lines` (
-  `lines_ID` int NOT NULL COMMENT 'The ID of the SPO Lines that identify different SPO Lines\n0000000000-9999999999\n\n',
+  `lines_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID of the SPO Lines that identify different SPO Lines\n0000000000-9999999999\n\n',
   `header_ID` int NOT NULL COMMENT 'The ID of headers that identify different headers\n0000000000-9999999999\n\n',
   `item_ID` int NOT NULL COMMENT 'The ID of the item\n0000000000-9999999999\n\n',
   `qty` int NOT NULL COMMENT 'The quantity of the item',
@@ -1014,7 +1014,7 @@ DROP TABLE IF EXISTS `spo_release`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `spo_release` (
-  `release_ID` int NOT NULL COMMENT 'The ID to identify the SPO release\n0000000000-9999999999\n\n',
+  `release_ID` int NOT NULL AUTO_INCREMENT  COMMENT 'The ID to identify the SPO release\n0000000000-9999999999\n\n',
   `header_ID` int NOT NULL COMMENT 'The ID to identify header of SPO release\n0000000000-9999999999\n\n',
   PRIMARY KEY (`release_ID`),
   KEY `SPO_Release_header_ID_fk_idx` (`header_ID`),
@@ -1064,7 +1064,7 @@ DROP TABLE IF EXISTS `supplier`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `supplier` (
-  `supplier_ID` int NOT NULL COMMENT 'The ID to identify each supplier\n0000000000-9999999999\n\n',
+  `supplier_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID to identify each supplier\n0000000000-9999999999\n\n',
   `name` varchar(30) NOT NULL COMMENT 'The name of each supplier\n\n',
   `phone` char(8) NOT NULL COMMENT 'The phone number of the user. (Hong Kong number)\n00000000-99999999\n\n',
   `e-mail` varchar(50) NOT NULL COMMENT 'The email of the customer\nValidate email\n\n',
@@ -1096,7 +1096,7 @@ DROP TABLE IF EXISTS `supplier_contact_person`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `supplier_contact_person` (
-  `contact_person_ID` int NOT NULL COMMENT 'The ID of the contact person\n0000000000-9999999999\n\n',
+  `contact_person_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID of the contact person\n0000000000-9999999999\n\n',
   `name` varchar(30) NOT NULL COMMENT 'The name of the contact person\n\n\n\n',
   `phone` char(8) NOT NULL COMMENT 'The phone number of the user. (Hong Kong number)\n00000000-99999999\n\n',
   `e-mail` varchar(50) NOT NULL COMMENT 'The e-mail of user\nValidate email\n\n',
@@ -1122,7 +1122,7 @@ DROP TABLE IF EXISTS `user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `user` (
-  `user_id` int NOT NULL COMMENT 'The ID to identify each user.',
+  `user_id` int NOT NULL AUTO_INCREMENT  COMMENT 'The ID to identify each user.',
   `first_name` varchar(30) DEFAULT NULL COMMENT 'The name of the user\n\n',
   `last_name` varchar(30) DEFAULT NULL COMMENT 'The last name of the user',
   `role_id` int DEFAULT NULL COMMENT 'The ID to identify role',
@@ -1155,7 +1155,7 @@ DROP TABLE IF EXISTS `vehicle`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `vehicle` (
-  `vehicle_ID` int NOT NULL COMMENT 'The ID to identify each vehicle \n0000000000-9999999999\n\n',
+  `vehicle_ID` int NOT NULL AUTO_INCREMENT  COMMENT 'The ID to identify each vehicle \n0000000000-9999999999\n\n',
   `position` varchar(30) DEFAULT NULL COMMENT 'The position of the vehicle during the delivery\n\n',
   `type` varchar(30) NOT NULL COMMENT 'The type of vehicle\nMotorcycle, car, truck\n\n',
   `capacity` int NOT NULL COMMENT 'The area of the vehicle which can  deliver the item\n\n',
@@ -1180,7 +1180,7 @@ DROP TABLE IF EXISTS `warehouse`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `warehouse` (
-  `warehouse_ID` int NOT NULL COMMENT 'The ID to identify the warehouse\n0000000000-9999999999\n\n',
+  `warehouse_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID to identify the warehouse\n0000000000-9999999999\n\n',
   `name` varchar(30) NOT NULL COMMENT 'The name of warehouse',
   `address_id` int NOT NULL COMMENT 'The ID to identify the address of warehouse\nXX000000000000000000-XX999999999999999999\nXX =\n‘KW’ for Kowloon\n‘NT’ for New Territories\n‘HK’ for Hong Kong Island\n\n',
   PRIMARY KEY (`warehouse_ID`),
@@ -1234,7 +1234,7 @@ DROP TABLE IF EXISTS `warehousedispatchinstruction`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `warehousedispatchinstruction` (
-  `Instruction_ID` int NOT NULL COMMENT 'The ID to identify different DispatchInstruction\n0000000000-9999999999\n\n',
+  `Instruction_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID to identify different DispatchInstruction\n0000000000-9999999999\n\n',
   `warehouse_ID` int NOT NULL COMMENT 'The ID to identify the purchase order\n0000000000-9999999999\n\n',
   `handler` int NOT NULL COMMENT 'The ID to identify the handler\n0000000000-9999999999\n\n',
   `remark` varchar(30) DEFAULT NULL COMMENT 'The remark that they have to add \n\n\n\n',
