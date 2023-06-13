@@ -855,6 +855,9 @@
     <Compile Include="warehouse\warehouse.Designer.cs">
       <DependentUpon>warehouse.cs</DependentUpon>
     </Compile>
+    <Compile Include="_4523_g1_project_dbDataSet.cs">
+      <DependentUpon>_4523_g1_project_dbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="_4523_g1_project_dbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

@@ -24,14 +24,19 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             
             this.newOrder = newOrder;
             //get id form selected control
-            foreach(string id in newOrder.item_ID)
+            for(int i=0;i<newOrder.item_ID.Count();i++)
             {
-                dataGridViewDetail.Rows.Insert(0, id);
+                dataGridViewDetail.Rows.Insert(0, newOrder.item_ID[i], null, newOrder.item_name[i]);
             }
         }
 
         private void kryptonButtonCountinue_Click(object sender, EventArgs e)
         {
+            foreach(DataGridViewRow qty in dataGridViewDetail.Rows)
+            {
+                //miss validation
+                newOrder.item_qty.Add(int.Parse(qty.Cells[1].Value.ToString()));
+            }
             new check_order(this,newOrder);
         }
 

@@ -20,6 +20,12 @@ namespace ITP4915_group3_project.General.login
         public Login()
         {
             InitializeComponent();
+
+            //fake data need to fetch from database
+            userName = "sam123";
+            password = "132123";
+            user_ID = "00";
+            realName = "sam yau";
         }
 
         private void kryptonButtonSignIn_Click(object sender, EventArgs e)

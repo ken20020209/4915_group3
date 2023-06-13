@@ -16,15 +16,14 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
         public select_item()
         {
             InitializeComponent();
-            this.restaurant_stock_itemTableAdapter.Fill(this._4523_g1_project_dbDataSet.restaurant_stock_item);
-
+            this.requestOrder_restaurant_stockTableAdapter.Fill(this._4523_g1_project_dbDataSet.requestOrder_restaurant_stock);
             this.newOrder = new requestOrder(restaurant.restaurant_ID, restaurant.restaurant_Name, General.login.Login.user_ID, General.login.Login.realName);
 
         }
 
         private void kryptonButtonCountinue_Click(object sender, EventArgs e)
         {
-            foreach (DataGridViewRow row in restaurant_stock_itemDataGridView.Rows)
+            foreach (DataGridViewRow row in requestOrder_restaurant_stockDataGridView.Rows)
             {
                 if(row.Cells[0].Value.ToString()=="true")
                 {
@@ -37,7 +36,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
                     /*                  Console.WriteLine("test");*/
                     //cells[2] is id;
                     newOrder.item_ID.Add(row.Cells[2].Value.ToString());
-
+                    newOrder.item_name.Add(row.Cells[3].Value.ToString());
                     //clls[
                 }
                 

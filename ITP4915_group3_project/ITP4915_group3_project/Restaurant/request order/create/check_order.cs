@@ -22,10 +22,24 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.BringToFront();
 
             this.newOrder = newOrder;
+            //load data to form
+            for (int i = 0; i < newOrder.item_ID.Count(); i++)
+            {
+                dataGridViewDetail.Rows.Insert(0, newOrder.item_ID[i], newOrder.item_qty[i], newOrder.item_name[i]);
+            }
+            kryptonTextBox1RestaurantName.Text = newOrder.restaurant_Name;
+            kryptonTextBoxRestaurantID.Text = newOrder.restaurant_ID;
+            kryptonTextBoxCreatorID.Text = newOrder.creator_ID;
+            kryptonTextBoxCreatorName.Text = newOrder.creator_Name;
+            kryptonTextBoxRequestID.Text = newOrder.request_ID;
+            kryptonTextBoxCreateDate.Text = newOrder.mysqlDate;
+
+
         }
 
         private void kryptonButtonConfirm_Click(object sender, EventArgs e)
         {
+            newOrder.priority = comboBoxPriority.Text;
             new create_success().ShowDialog();
         }
 
