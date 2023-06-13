@@ -1,10 +1,8 @@
-CREATE DATABASE  IF NOT EXISTS `4523_g1_project_db` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `4523_g1_project_db`;
 -- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: 4523_g1_project_db
 -- ------------------------------------------------------
--- Server version	8.0.30
+-- Server version	8.0.28
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -33,7 +31,7 @@ CREATE TABLE `address` (
   `floor` varchar(5) DEFAULT NULL COMMENT 'the floor of the address\n\n',
   `unit` varchar(5) DEFAULT NULL COMMENT 'The unit of the address\n\n',
   PRIMARY KEY (`address_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,6 +40,7 @@ CREATE TABLE `address` (
 
 LOCK TABLES `address` WRITE;
 /*!40000 ALTER TABLE `address` DISABLE KEYS */;
+INSERT INTO `address` VALUES (1,'hk','ive','ive','ive','5','4');
 /*!40000 ALTER TABLE `address` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -157,7 +156,7 @@ DROP TABLE IF EXISTS `cpa`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `cpa` (
-  `CPA_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID of CPA\n0000000000-9999999999\n\n',
+  `CPA_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID of CPA\n0000000000-9999999999\n\n',
   `create_date` date NOT NULL COMMENT 'the create date of CPA\nDD/MM/YYYY\n\n',
   `effective_date` date NOT NULL COMMENT 'The effective date of CPA\nDD/MM/YYYY\n\n',
   `supplier_ID` int NOT NULL COMMENT 'The ID of the supplier to identify different suppliers\n0000000000-9999999999\n\n',
@@ -234,7 +233,7 @@ DROP TABLE IF EXISTS `delivery_request_handler`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `delivery_request_handler` (
-  `ID` int NOT NULL  AUTO_INCREMENT COMMENT '0000000000-9999999999',
+  `ID` int NOT NULL AUTO_INCREMENT COMMENT '0000000000-9999999999',
   `delivery_request_ID` int NOT NULL COMMENT 'The ID to identify each delivery request\n0000000000-9999999999\n\n',
   `delivery_staff_ID` int NOT NULL COMMENT 'The ID to identify each Delivery staff\n0000000000-9999999999\n\n',
   PRIMARY KEY (`ID`),
@@ -301,7 +300,6 @@ CREATE TABLE `department_role` (
 
 LOCK TABLES `department_role` WRITE;
 /*!40000 ALTER TABLE `department_role` DISABLE KEYS */;
-
 /*!40000 ALTER TABLE `department_role` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -313,7 +311,7 @@ DROP TABLE IF EXISTS `food_beverage`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `food_beverage` (
-  `Food_Beverage_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID of the\nfood and beverage \n0000000000-9999999999\n\n',
+  `Food_Beverage_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID of the\nfood and beverage \n0000000000-9999999999\n\n',
   `category_ID` int NOT NULL COMMENT 'The ID of the category\n0000000000-9999999999\n\n',
   `name` varchar(30) NOT NULL COMMENT 'The name of the food and beverage\n\n\n\n',
   `description` varchar(30) DEFAULT NULL COMMENT 'The description of the food and beverage\n\n\n\n',
@@ -367,7 +365,7 @@ DROP TABLE IF EXISTS `item`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `item` (
-  `item_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The quantity to identify each item inside the warehouse\n0000000000-9999999999\n\n',
+  `item_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The quantity to identify each item inside the warehouse\n0000000000-9999999999\n\n',
   `item_name` varchar(50) NOT NULL,
   `price` decimal(10,2) NOT NULL COMMENT 'The price of each item\n\n\n\n',
   `size` varchar(30) NOT NULL COMMENT 'The size of the product\nS, M, L\n\n',
@@ -381,7 +379,7 @@ CREATE TABLE `item` (
   CONSTRAINT `item_category_ID_fk` FOREIGN KEY (`category_ID`) REFERENCES `item_category` (`category_ID`),
   CONSTRAINT `item_partner_brand_ID_fk` FOREIGN KEY (`partner_brand_ID`) REFERENCES `partner_brand` (`partner_brand_ID`),
   CONSTRAINT `item_supplier_ID_fk` FOREIGN KEY (`supplier_ID`) REFERENCES `supplier` (`supplier_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -390,6 +388,7 @@ CREATE TABLE `item` (
 
 LOCK TABLES `item` WRITE;
 /*!40000 ALTER TABLE `item` DISABLE KEYS */;
+INSERT INTO `item` VALUES (1,'fish',100.00,'l',1,1,1),(2,'cat',255.00,'m',1,1,1);
 /*!40000 ALTER TABLE `item` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -405,7 +404,7 @@ CREATE TABLE `item_category` (
   `category_name` varchar(30) NOT NULL COMMENT 'The name of the category\n\n\n\n',
   `description` varchar(30) DEFAULT NULL COMMENT 'The description of the item\n\n\n\n',
   PRIMARY KEY (`category_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -414,7 +413,7 @@ CREATE TABLE `item_category` (
 
 LOCK TABLES `item_category` WRITE;
 /*!40000 ALTER TABLE `item_category` DISABLE KEYS */;
-
+INSERT INTO `item_category` VALUES (1,'food',NULL);
 /*!40000 ALTER TABLE `item_category` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -441,7 +440,7 @@ DROP TABLE IF EXISTS `notify_message`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `notify_message` (
-  `notify_message_id` int NOT NULL AUTO_INCREMENT  COMMENT 'The ID to identify different notify_message\n0000000000-9999999999\n\n',
+  `notify_message_id` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify different notify_message\n0000000000-9999999999\n\n',
   `notify_rule_id` int NOT NULL COMMENT 'The ID to identify the purchase order\n0000000000-9999999999\n\n',
   `message` varchar(255) NOT NULL COMMENT 'The message to notify user\n\n\n\n',
   PRIMARY KEY (`notify_message_id`),
@@ -467,7 +466,7 @@ DROP TABLE IF EXISTS `notify_rule`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `notify_rule` (
-  `notify_rule_id` int NOT NULL  AUTO_INCREMENT  COMMENT 'The ID to identify different rule\n0000000000-9999999999\n\n',
+  `notify_rule_id` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify different rule\n0000000000-9999999999\n\n',
   `user_id` int NOT NULL COMMENT 'The ID to identify the purchase order\n0000000000-9999999999\n\n\n',
   `tablename` varchar(30) NOT NULL COMMENT 'The date of table name\n\n\n\n\n',
   `colum` varchar(30) NOT NULL COMMENT 'The date of colum name\n\n\n\n',
@@ -496,12 +495,12 @@ DROP TABLE IF EXISTS `partner_brand`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `partner_brand` (
-  `partner_brand_ID` int NOT NULL AUTO_INCREMENT  COMMENT 'The ID to identify  the partner brand\n0000000000-9999999999\n\n',
+  `partner_brand_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify  the partner brand\n0000000000-9999999999\n\n',
   `name` varchar(30) NOT NULL COMMENT 'The name of the partner brand\n\n\n\n',
   `type` varchar(30) NOT NULL COMMENT 'Which occupational category is?\n\n\n\n',
   `remarks` varchar(30) DEFAULT NULL COMMENT 'The remark that they have to add \n\n\n\n',
   PRIMARY KEY (`partner_brand_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -510,6 +509,7 @@ CREATE TABLE `partner_brand` (
 
 LOCK TABLES `partner_brand` WRITE;
 /*!40000 ALTER TABLE `partner_brand` DISABLE KEYS */;
+INSERT INTO `partner_brand` VALUES (1,'chinese ','hcinseese',NULL);
 /*!40000 ALTER TABLE `partner_brand` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -547,7 +547,7 @@ DROP TABLE IF EXISTS `permission`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `permission` (
-  `permission_id` int NOT NULL AUTO_INCREMENT  COMMENT 'The ID to identify the permission\n0000000000-9999999999\n\n',
+  `permission_id` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify the permission\n0000000000-9999999999\n\n',
   `permission_name` varchar(30) NOT NULL COMMENT 'The name of type permission\nall use case name\n\n',
   `permission_description` varchar(50) DEFAULT NULL COMMENT 'What kind of permission is',
   PRIMARY KEY (`permission_id`)
@@ -571,7 +571,7 @@ DROP TABLE IF EXISTS `ppo_header`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ppo_header` (
-  `header_ID` int NOT NULL AUTO_INCREMENT  COMMENT 'The ID of PPO header to identify different PPO Header\n0000000000-9999999999\n\n',
+  `header_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID of PPO header to identify different PPO Header\n0000000000-9999999999\n\n',
   `purchase_order_revision_ID` char(2) NOT NULL COMMENT 'The ID of purchase order to identify different purchase order revision times\n00-99\n\n',
   `create_date` date NOT NULL COMMENT 'the date that create the purchase order\nDDMMYYYY\n\n',
   `effective_date` date NOT NULL COMMENT 'the date that the purchase order happens\nDDMMYYYY\n\n',
@@ -607,7 +607,7 @@ DROP TABLE IF EXISTS `ppo_lines`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ppo_lines` (
-  `lines_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID to identify the PPO lines\n0000000000-9999999999\n\n',
+  `lines_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify the PPO lines\n0000000000-9999999999\n\n',
   `header_ID` int NOT NULL COMMENT 'The ID to identify the PPO lines header\n0000000000-9999999999\n\n',
   `item_ID` int NOT NULL COMMENT 'The ID to identify the PPO lines item\n0000000000-9999999999\n\n',
   `qty` int NOT NULL COMMENT 'The quantity of PPO lines\n\n\n\n',
@@ -640,7 +640,7 @@ DROP TABLE IF EXISTS `price_breaks`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `price_breaks` (
-  `price_break_ID` int NOT NULL AUTO_INCREMENT  COMMENT 'The ID to identify each price breaks\n0000000000-9999999999\n\n',
+  `price_break_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify each price breaks\n0000000000-9999999999\n\n',
   `qty` int NOT NULL COMMENT 'The quantity item of prices breaks\n\n\n\n',
   `price_break` decimal(10,2) NOT NULL COMMENT 'The price reduced\n\n\n\n',
   `discount` decimal(10,2) NOT NULL COMMENT 'What is the discount of that price breaks\n\n\n\n',
@@ -659,30 +659,6 @@ LOCK TABLES `price_breaks` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `priority`
---
-
-DROP TABLE IF EXISTS `priority`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `priority` (
-  `priority_ID` char(1) NOT NULL COMMENT 'To represent who go first one\n1\n2\n\n',
-  `priority_name` varchar(15) NOT NULL COMMENT 'Which order name should go first\n\n\n\n',
-  `description` varchar(50) DEFAULT NULL COMMENT 'Explain why select it as priority\n\n\n\n',
-  PRIMARY KEY (`priority_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `priority`
---
-
-LOCK TABLES `priority` WRITE;
-/*!40000 ALTER TABLE `priority` DISABLE KEYS */;
-/*!40000 ALTER TABLE `priority` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `purchase_order_all`
 --
 
@@ -690,7 +666,7 @@ DROP TABLE IF EXISTS `purchase_order_all`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `purchase_order_all` (
-  `Purchase_order_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID to identify the purchase order all \nCCCCBBYYYYMMDDSSSS\n\nCCCC - Company Code\nBB - Branch\nYYYY - Year\nMM - Month\nDD - Day\nSSSS - Sequence number per day\n\n',
+  `Purchase_order_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify the purchase order all \nCCCCBBYYYYMMDDSSSS\n\nCCCC - Company Code\nBB - Branch\nYYYY - Year\nMM - Month\nDD - Day\nSSSS - Sequence number per day\n\n',
   `BR_relase_ID` int DEFAULT NULL COMMENT 'The ID to identify the release of purchase order all\n0000000000-9999999999\n\n',
   `SR_relase_ID` int DEFAULT NULL COMMENT 'The ID to identify the release of purchase order all\n0000000000-9999999999\n\n',
   `SPO_relase_ID` int DEFAULT NULL COMMENT 'The ID to identify the release of purchase order all\n0000000000-9999999999\n\n',
@@ -728,7 +704,7 @@ DROP TABLE IF EXISTS `purchasers_request`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `purchasers_request` (
-  `purchasers_request_id` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID to identify the purchaser''s request\n0000000000-9999999999\n\n\n',
+  `purchasers_request_id` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify the purchaser''s request\n0000000000-9999999999\n\n\n',
   `requestor_ID` int NOT NULL COMMENT 'The ID to identify the requestor\n0000000000-9999999999\n\n',
   `restaurant_ID` int NOT NULL COMMENT 'To represent different restaurants.\nXX00000000-XX99999999\n\nXX:\n‘JP’ for Japan\n‘CH’ for Chinese\n‘TW’ for Taiwan\n‘IN’ for India\n‘VT’ for Vietnam\n\n',
   `item_ID` int NOT NULL COMMENT 'The ID to identify the item\n0000000000-9999999999\n\n',
@@ -747,7 +723,7 @@ CREATE TABLE `purchasers_request` (
   CONSTRAINT `Purchasers_Request_requestor_ID_fk` FOREIGN KEY (`requestor_ID`) REFERENCES `user` (`user_id`),
   CONSTRAINT `Purchasers_Request_restaurant_ID_fk` FOREIGN KEY (`restaurant_ID`) REFERENCES `restaurant` (`restaurant_ID`),
   CONSTRAINT `Purchasers_Request_status_ID_fk` FOREIGN KEY (`status_ID`) REFERENCES `status` (`status_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -756,32 +732,8 @@ CREATE TABLE `purchasers_request` (
 
 LOCK TABLES `purchasers_request` WRITE;
 /*!40000 ALTER TABLE `purchasers_request` DISABLE KEYS */;
+INSERT INTO `purchasers_request` VALUES (3,1,1,1,99,1,1,'2023-06-13','2023-06-13',''),(4,1,1,2,99,1,1,'2023-06-13','2023-06-13',''),(5,1,1,1,9999,0,1,'2023-06-13','2023-06-13',''),(6,1,1,2,88,0,1,'2023-06-13','2023-06-13',''),(7,1,1,1,123,0,1,'2023-06-13','2023-06-13',''),(8,1,1,2,98,0,1,'2023-06-13','2023-06-13','');
 /*!40000 ALTER TABLE `purchasers_request` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `request_line`
---
-
-DROP TABLE IF EXISTS `request_line`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `request_line` (
-  `line_ID` int NOT NULL COMMENT 'The ID to identify the request line\n0000000000-9999999999\n\n',
-  `purchaser_request_ID` int NOT NULL COMMENT 'The ID to identify the purchaser request\n0000000000-9999999999\n\n',
-  PRIMARY KEY (`line_ID`),
-  KEY `request_line_purchaser_request_ID_fk_idx` (`purchaser_request_ID`),
-  CONSTRAINT `request_line_purchaser_request_ID_fk` FOREIGN KEY (`purchaser_request_ID`) REFERENCES `purchasers_request` (`purchasers_request_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `request_line`
---
-
-LOCK TABLES `request_line` WRITE;
-/*!40000 ALTER TABLE `request_line` DISABLE KEYS */;
-/*!40000 ALTER TABLE `request_line` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -792,7 +744,7 @@ DROP TABLE IF EXISTS `restaurant`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `restaurant` (
-  `restaurant_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID to identify each restaurant\nXX00000000-XX99999999\n\nXX:\n‘JP’ for Japan\n‘CH’ for Chinese\n‘TW’ for Taiwan\n‘IN’ for India\n‘VT’ for Vietnam\n‘FR’ for French\n\n',
+  `restaurant_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify each restaurant\nXX00000000-XX99999999\n\nXX:\n‘JP’ for Japan\n‘CH’ for Chinese\n‘TW’ for Taiwan\n‘IN’ for India\n‘VT’ for Vietnam\n‘FR’ for French\n\n',
   `name` varchar(30) NOT NULL COMMENT 'The name of each restaurant\n\n',
   `address_ID` int NOT NULL COMMENT 'The ID to identify each address\nXX000000000000000000-XX999999999999999999\n\nXX:\n‘JP’ for Japan\n‘CH’ for Chinese\n‘TW’ for Taiwan\n‘IN’ for India\n‘VT’ for Vietnam\n‘FR’ for French\n\n',
   `type` varchar(20) NOT NULL COMMENT 'Type of the the restaurant\n‘JP’ for Japan\n‘CH’ for Chinese\n‘TW’ for Taiwan\n‘IN’ for India\n‘VT’ for Vietnam\n‘FR’ for French\n\n',
@@ -800,7 +752,7 @@ CREATE TABLE `restaurant` (
   PRIMARY KEY (`restaurant_ID`),
   KEY `Restaurant_address_ID_fk_idx` (`address_ID`),
   CONSTRAINT `Restaurant_address_ID_fk` FOREIGN KEY (`address_ID`) REFERENCES `address` (`address_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -809,7 +761,7 @@ CREATE TABLE `restaurant` (
 
 LOCK TABLES `restaurant` WRITE;
 /*!40000 ALTER TABLE `restaurant` DISABLE KEYS */;
-
+INSERT INTO `restaurant` VALUES (1,'good',1,'1','12345678');
 /*!40000 ALTER TABLE `restaurant` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -825,8 +777,8 @@ CREATE TABLE `restaurant_stock_item` (
   `item_ID` int NOT NULL COMMENT 'The ID to identify each item\n0000000000-9999999999\n\n',
   `qty` int NOT NULL COMMENT 'The quantity of each item in the stock',
   `remarks` varchar(50) DEFAULT NULL COMMENT 'The remark that they have to add \n\n',
-  `expireDate` date NOT NULL COMMENT 'Expiry date of each item\\nYYYYMMDD\\n\\n',
-  PRIMARY KEY (`restaurant_ID`),
+  `expireDate` date DEFAULT NULL COMMENT 'Expiry date of each item\\\\nYYYYMMDD\\\\n\\\\n',
+  PRIMARY KEY (`restaurant_ID`,`item_ID`),
   KEY `Restaurant_Stock_Item_item_ID_fk_idx` (`item_ID`),
   CONSTRAINT `Restaurant_Stock_Item_item_ID_fk` FOREIGN KEY (`item_ID`) REFERENCES `item` (`item_ID`),
   CONSTRAINT `Restaurant_Stock_Item_restaurant_ID_fk` FOREIGN KEY (`restaurant_ID`) REFERENCES `restaurant` (`restaurant_ID`)
@@ -839,7 +791,7 @@ CREATE TABLE `restaurant_stock_item` (
 
 LOCK TABLES `restaurant_stock_item` WRITE;
 /*!40000 ALTER TABLE `restaurant_stock_item` DISABLE KEYS */;
-
+INSERT INTO `restaurant_stock_item` VALUES (1,1,150,NULL,NULL),(1,2,150,NULL,NULL);
 /*!40000 ALTER TABLE `restaurant_stock_item` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -868,11 +820,11 @@ DROP TABLE IF EXISTS `role`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `role` (
-  `role_id` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID to identify the role\n0000000000-9999999999\n\n',
+  `role_id` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify the role\n0000000000-9999999999\n\n',
   `role_name` varchar(30) NOT NULL COMMENT 'The name of role',
   `role_description` varchar(50) DEFAULT NULL COMMENT 'The title of the role',
   PRIMARY KEY (`role_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -881,6 +833,7 @@ CREATE TABLE `role` (
 
 LOCK TABLES `role` WRITE;
 /*!40000 ALTER TABLE `role` DISABLE KEYS */;
+INSERT INTO `role` VALUES (1,'restaurant manger',NULL);
 /*!40000 ALTER TABLE `role` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -918,7 +871,7 @@ DROP TABLE IF EXISTS `schedule_release`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `schedule_release` (
-  `release_ID` int NOT NULL AUTO_INCREMENT  COMMENT 'The ID to identify the schedule release\n0000000000-9999999999\n\n',
+  `release_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify the schedule release\n0000000000-9999999999\n\n',
   `header_ID` int NOT NULL COMMENT 'The ID to identify the header of schedule release\n0000000000-9999999999\n\n',
   `create_date` date NOT NULL COMMENT 'The date that is created this schedule release\nDDMMYYYY\n\n',
   `expected_delivery_date` date NOT NULL COMMENT 'The expected delivery date of this schedule release\nDDMMYYYY\n\n',
@@ -945,7 +898,7 @@ DROP TABLE IF EXISTS `spo_header`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `spo_header` (
-  `header_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID to identify the SPO header\n0000000000-9999999999\n\n',
+  `header_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify the SPO header\n0000000000-9999999999\n\n',
   `create_date` date NOT NULL COMMENT 'The date when the SPO header created\nDDMsMYYYY\n\n',
   `effective_date` date NOT NULL COMMENT 'the effective date of the SPO header\nDDMMYYYY\n\n',
   `supplier_ID` int NOT NULL COMMENT 'The ID to identify the supplier of the SPO header\n0000000000-9999999999\n\n',
@@ -978,7 +931,7 @@ DROP TABLE IF EXISTS `spo_lines`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `spo_lines` (
-  `lines_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID of the SPO Lines that identify different SPO Lines\n0000000000-9999999999\n\n',
+  `lines_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID of the SPO Lines that identify different SPO Lines\n0000000000-9999999999\n\n',
   `header_ID` int NOT NULL COMMENT 'The ID of headers that identify different headers\n0000000000-9999999999\n\n',
   `item_ID` int NOT NULL COMMENT 'The ID of the item\n0000000000-9999999999\n\n',
   `qty` int NOT NULL COMMENT 'The quantity of the item',
@@ -1014,7 +967,7 @@ DROP TABLE IF EXISTS `spo_release`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `spo_release` (
-  `release_ID` int NOT NULL AUTO_INCREMENT  COMMENT 'The ID to identify the SPO release\n0000000000-9999999999\n\n',
+  `release_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify the SPO release\n0000000000-9999999999\n\n',
   `header_ID` int NOT NULL COMMENT 'The ID to identify header of SPO release\n0000000000-9999999999\n\n',
   PRIMARY KEY (`release_ID`),
   KEY `SPO_Release_header_ID_fk_idx` (`header_ID`),
@@ -1052,7 +1005,7 @@ CREATE TABLE `status` (
 
 LOCK TABLES `status` WRITE;
 /*!40000 ALTER TABLE `status` DISABLE KEYS */;
-
+INSERT INTO `status` VALUES (1,'wait to process',NULL);
 /*!40000 ALTER TABLE `status` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1064,7 +1017,7 @@ DROP TABLE IF EXISTS `supplier`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `supplier` (
-  `supplier_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID to identify each supplier\n0000000000-9999999999\n\n',
+  `supplier_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify each supplier\n0000000000-9999999999\n\n',
   `name` varchar(30) NOT NULL COMMENT 'The name of each supplier\n\n',
   `phone` char(8) NOT NULL COMMENT 'The phone number of the user. (Hong Kong number)\n00000000-99999999\n\n',
   `e-mail` varchar(50) NOT NULL COMMENT 'The email of the customer\nValidate email\n\n',
@@ -1076,7 +1029,7 @@ CREATE TABLE `supplier` (
   KEY `supplier_contact_person_ID_fk_idx` (`contact_person_ID`),
   CONSTRAINT `supplier_address_ID_fk` FOREIGN KEY (`address_ID`) REFERENCES `address` (`address_id`),
   CONSTRAINT `supplier_contact_person_ID_fk` FOREIGN KEY (`contact_person_ID`) REFERENCES `supplier_contact_person` (`contact_person_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1085,6 +1038,7 @@ CREATE TABLE `supplier` (
 
 LOCK TABLES `supplier` WRITE;
 /*!40000 ALTER TABLE `supplier` DISABLE KEYS */;
+INSERT INTO `supplier` VALUES (1,'sea com','12345678','adf@gamil.com',1,1,''),(2,'asdf','asdf','asdf',1,1,NULL);
 /*!40000 ALTER TABLE `supplier` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1096,13 +1050,13 @@ DROP TABLE IF EXISTS `supplier_contact_person`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `supplier_contact_person` (
-  `contact_person_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID of the contact person\n0000000000-9999999999\n\n',
+  `contact_person_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID of the contact person\n0000000000-9999999999\n\n',
   `name` varchar(30) NOT NULL COMMENT 'The name of the contact person\n\n\n\n',
   `phone` char(8) NOT NULL COMMENT 'The phone number of the user. (Hong Kong number)\n00000000-99999999\n\n',
   `e-mail` varchar(50) NOT NULL COMMENT 'The e-mail of user\nValidate email\n\n',
   `gender` char(1) NOT NULL COMMENT 'The gender of the contact person\n‘F’ for female\n‘M’ for Male\n\n',
   PRIMARY KEY (`contact_person_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1111,6 +1065,7 @@ CREATE TABLE `supplier_contact_person` (
 
 LOCK TABLES `supplier_contact_person` WRITE;
 /*!40000 ALTER TABLE `supplier_contact_person` DISABLE KEYS */;
+INSERT INTO `supplier_contact_person` VALUES (1,'sam','12345786','sam@gmail.com','m');
 /*!40000 ALTER TABLE `supplier_contact_person` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1122,7 +1077,7 @@ DROP TABLE IF EXISTS `user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `user` (
-  `user_id` int NOT NULL AUTO_INCREMENT  COMMENT 'The ID to identify each user.',
+  `user_id` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify each user.',
   `first_name` varchar(30) DEFAULT NULL COMMENT 'The name of the user\n\n',
   `last_name` varchar(30) DEFAULT NULL COMMENT 'The last name of the user',
   `role_id` int DEFAULT NULL COMMENT 'The ID to identify role',
@@ -1135,7 +1090,7 @@ CREATE TABLE `user` (
   UNIQUE KEY `user_name_UNIQUE` (`user_name`),
   KEY `User_role_id_fk_idx` (`role_id`),
   CONSTRAINT `User_role_id_fk` FOREIGN KEY (`role_id`) REFERENCES `role` (`role_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1144,6 +1099,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` VALUES (1,'sam','yau',1,'sam123','123123','m','12345678','sam@gmail.com');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1155,7 +1111,7 @@ DROP TABLE IF EXISTS `vehicle`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `vehicle` (
-  `vehicle_ID` int NOT NULL AUTO_INCREMENT  COMMENT 'The ID to identify each vehicle \n0000000000-9999999999\n\n',
+  `vehicle_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify each vehicle \n0000000000-9999999999\n\n',
   `position` varchar(30) DEFAULT NULL COMMENT 'The position of the vehicle during the delivery\n\n',
   `type` varchar(30) NOT NULL COMMENT 'The type of vehicle\nMotorcycle, car, truck\n\n',
   `capacity` int NOT NULL COMMENT 'The area of the vehicle which can  deliver the item\n\n',
@@ -1180,7 +1136,7 @@ DROP TABLE IF EXISTS `warehouse`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `warehouse` (
-  `warehouse_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID to identify the warehouse\n0000000000-9999999999\n\n',
+  `warehouse_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify the warehouse\n0000000000-9999999999\n\n',
   `name` varchar(30) NOT NULL COMMENT 'The name of warehouse',
   `address_id` int NOT NULL COMMENT 'The ID to identify the address of warehouse\nXX000000000000000000-XX999999999999999999\nXX =\n‘KW’ for Kowloon\n‘NT’ for New Territories\n‘HK’ for Hong Kong Island\n\n',
   PRIMARY KEY (`warehouse_ID`),
@@ -1234,7 +1190,7 @@ DROP TABLE IF EXISTS `warehousedispatchinstruction`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `warehousedispatchinstruction` (
-  `Instruction_ID` int NOT NULL  AUTO_INCREMENT COMMENT 'The ID to identify different DispatchInstruction\n0000000000-9999999999\n\n',
+  `Instruction_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify different DispatchInstruction\n0000000000-9999999999\n\n',
   `warehouse_ID` int NOT NULL COMMENT 'The ID to identify the purchase order\n0000000000-9999999999\n\n',
   `handler` int NOT NULL COMMENT 'The ID to identify the handler\n0000000000-9999999999\n\n',
   `remark` varchar(30) DEFAULT NULL COMMENT 'The remark that they have to add \n\n\n\n',
@@ -1307,4 +1263,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-06-10 22:29:59
+-- Dump completed on 2023-06-13 21:38:49
