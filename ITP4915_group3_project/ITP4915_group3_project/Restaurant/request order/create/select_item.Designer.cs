@@ -312,49 +312,9 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             // 
             // tableAdapterManager
             // 
-            this.tableAdapterManager.addressTableAdapter = null;
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.blanket_releaseTableAdapter = null;
-            this.tableAdapterManager.bpa_headerTableAdapter = null;
-            this.tableAdapterManager.bpa_linesTableAdapter = null;
-            this.tableAdapterManager.cpaTableAdapter = null;
-            this.tableAdapterManager.delivery_request_handlerTableAdapter = null;
-            this.tableAdapterManager.delivery_requestTableAdapter = null;
-            this.tableAdapterManager.department_roleTableAdapter = null;
-            this.tableAdapterManager.departmentTableAdapter = null;
-            this.tableAdapterManager.food_beverageTableAdapter = null;
-            this.tableAdapterManager.invoiceTableAdapter = null;
-            this.tableAdapterManager.item_categoryTableAdapter = null;
-            this.tableAdapterManager.itemTableAdapter = null;
-            this.tableAdapterManager.notify_messageTableAdapter = null;
-            this.tableAdapterManager.notify_ruleTableAdapter = null;
-            this.tableAdapterManager.partner_brand_restaurantTableAdapter = null;
-            this.tableAdapterManager.partner_brandTableAdapter = null;
-            this.tableAdapterManager.permissionTableAdapter = null;
-            this.tableAdapterManager.ppo_headerTableAdapter = null;
-            this.tableAdapterManager.ppo_linesTableAdapter = null;
-            this.tableAdapterManager.price_breaksTableAdapter = null;
-            this.tableAdapterManager.priorityTableAdapter = null;
-            this.tableAdapterManager.purchase_order_allTableAdapter = null;
-            this.tableAdapterManager.purchasers_requestTableAdapter = null;
-            this.tableAdapterManager.request_lineTableAdapter = null;
-            this.tableAdapterManager.restaurant_stock_itemTableAdapter = this.restaurant_stock_itemTableAdapter;
-            this.tableAdapterManager.restaurantTableAdapter = null;
-            this.tableAdapterManager.role_permissionTableAdapter = null;
-            this.tableAdapterManager.roleTableAdapter = null;
-            this.tableAdapterManager.schedule_releaseTableAdapter = null;
-            this.tableAdapterManager.spo_headerTableAdapter = null;
-            this.tableAdapterManager.spo_linesTableAdapter = null;
-            this.tableAdapterManager.spo_releaseTableAdapter = null;
-            this.tableAdapterManager.statusTableAdapter = null;
-            this.tableAdapterManager.supplier_contact_personTableAdapter = null;
-            this.tableAdapterManager.supplierTableAdapter = null;
+
             this.tableAdapterManager.UpdateOrder = ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.userTableAdapter = null;
-            this.tableAdapterManager.vehicleTableAdapter = null;
-            this.tableAdapterManager.warehouse_itemTableAdapter = null;
-            this.tableAdapterManager.warehousedispatchinstructionTableAdapter = null;
-            this.tableAdapterManager.warehouseTableAdapter = null;
+
             // 
             // selected
             // 
