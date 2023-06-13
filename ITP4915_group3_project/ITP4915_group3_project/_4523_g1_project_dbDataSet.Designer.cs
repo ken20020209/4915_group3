@@ -3216,16 +3216,31 @@ namespace ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters {
             this._commandCollection[0].CommandText = @"SELECT          restaurant_stock_item.restaurant_ID, restaurant_stock_item.item_ID, restaurant_stock_item.qty, item.item_name, 
                             restaurant_stock_item.remarks
 FROM               item INNER JOIN
-                            restaurant_stock_item ON item.item_ID = restaurant_stock_item.item_ID";
+                            restaurant_stock_item ON item.item_ID = restaurant_stock_item.item_ID
+WHERE           (restaurant_stock_item.restaurant_ID = @restID)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            global::MySql.Data.MySqlClient.MySqlParameter param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@restID";
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.String;
+            param.Size = 10;
+            param.IsNullable = true;
+            param.SourceColumn = "restaurant_ID";
+            param.SourceVersion = global::System.Data.DataRowVersion.Current;
+            this._commandCollection[0].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(_4523_g1_project_dbDataSet.requestOrder_restaurant_stockDataTable dataTable) {
+        public virtual int Fill(_4523_g1_project_dbDataSet.requestOrder_restaurant_stockDataTable dataTable, string restID) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((restID == null)) {
+                throw new global::System.ArgumentNullException("restID");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(restID));
+            }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -3237,8 +3252,14 @@ FROM               item INNER JOIN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual _4523_g1_project_dbDataSet.requestOrder_restaurant_stockDataTable GetData() {
+        public virtual _4523_g1_project_dbDataSet.requestOrder_restaurant_stockDataTable GetData(string restID) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((restID == null)) {
+                throw new global::System.ArgumentNullException("restID");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(restID));
+            }
             _4523_g1_project_dbDataSet.requestOrder_restaurant_stockDataTable dataTable = new _4523_g1_project_dbDataSet.requestOrder_restaurant_stockDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
