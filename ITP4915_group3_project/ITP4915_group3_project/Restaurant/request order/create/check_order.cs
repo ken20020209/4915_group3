@@ -13,12 +13,15 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
     public partial class check_order : UserControl
     {
         Control panelContent;
-        public check_order(Control panel)
+        requestOrder newOrder;
+        public check_order(Control panel,requestOrder newOrder)
         {
             InitializeComponent();
             panelContent = panel;
             panelContent.Controls.Add(this);
             this.BringToFront();
+
+            this.newOrder = newOrder;
         }
 
         private void kryptonButtonConfirm_Click(object sender, EventArgs e)

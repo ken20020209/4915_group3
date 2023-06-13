@@ -30,7 +30,6 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
         private void InitializeComponent()
         {
             this.kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.kryptonTextBox11 = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabelback = new Krypton.Toolkit.KryptonLabel();
@@ -42,13 +41,16 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.kryptonButton11 = new Krypton.Toolkit.KryptonButton();
             this.label3 = new System.Windows.Forms.Label();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
+            this.dataGridViewDetail = new System.Windows.Forms.DataGridView();
+            this.Column_item_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).BeginInit();
             this.kryptonGroupBox1.Panel.SuspendLayout();
             this.kryptonGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetail)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonGroupBox1
@@ -59,7 +61,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             // 
             // kryptonGroupBox1.Panel
             // 
-            this.kryptonGroupBox1.Panel.Controls.Add(this.pictureBox5);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.dataGridViewDetail);
             this.kryptonGroupBox1.Size = new System.Drawing.Size(658, 170);
             this.kryptonGroupBox1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonGroupBox1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
@@ -74,20 +76,9 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.kryptonGroupBox1.TabIndex = 227;
             this.kryptonGroupBox1.Values.Heading = "ITEM";
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
-            this.pictureBox5.Location = new System.Drawing.Point(-22, 12);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(668, 116);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 190;
-            this.pictureBox5.TabStop = false;
-            // 
             // kryptonTextBox11
             // 
-            this.kryptonTextBox11.Location = new System.Drawing.Point(96, 291);
+            this.kryptonTextBox11.Location = new System.Drawing.Point(278, 346);
             this.kryptonTextBox11.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox11.Name = "kryptonTextBox11";
             this.kryptonTextBox11.ReadOnly = true;
@@ -105,7 +96,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             // 
             // kryptonLabel4
             // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(51, 291);
+            this.kryptonLabel4.Location = new System.Drawing.Point(233, 346);
             this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel4.Name = "kryptonLabel4";
             this.kryptonLabel4.Size = new System.Drawing.Size(35, 19);
@@ -272,6 +263,32 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.kryptonPanel1.Size = new System.Drawing.Size(800, 500);
             this.kryptonPanel1.TabIndex = 230;
             // 
+            // dataGridViewDetail
+            // 
+            this.dataGridViewDetail.AllowUserToAddRows = false;
+            this.dataGridViewDetail.AllowUserToDeleteRows = false;
+            this.dataGridViewDetail.AllowUserToOrderColumns = true;
+            this.dataGridViewDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDetail.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column_item_ID,
+            this.Column_qty});
+            this.dataGridViewDetail.Location = new System.Drawing.Point(74, -4);
+            this.dataGridViewDetail.Name = "dataGridViewDetail";
+            this.dataGridViewDetail.RowTemplate.Height = 24;
+            this.dataGridViewDetail.Size = new System.Drawing.Size(382, 150);
+            this.dataGridViewDetail.TabIndex = 230;
+            // 
+            // item_ID
+            // 
+            this.Column_item_ID.HeaderText = "item_ID";
+            this.Column_item_ID.Name = "item_ID";
+            this.Column_item_ID.ReadOnly = true;
+            // 
+            // qty
+            // 
+            this.Column_qty.HeaderText = "qty";
+            this.Column_qty.Name = "qty";
+            // 
             // complete_detail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -284,10 +301,10 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.kryptonGroupBox1.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).EndInit();
             this.kryptonGroupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetail)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -295,7 +312,6 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
         #endregion
 
         private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox1;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private Krypton.Toolkit.KryptonTextBox kryptonTextBox11;
         private Krypton.Toolkit.KryptonLabel kryptonLabel4;
         private Krypton.Toolkit.KryptonLabel kryptonLabelback;
@@ -307,5 +323,8 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
         private Krypton.Toolkit.KryptonButton kryptonButton11;
         private System.Windows.Forms.Label label3;
         private Krypton.Toolkit.KryptonPanel kryptonPanel1;
+        private System.Windows.Forms.DataGridView dataGridViewDetail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_item_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_qty;
     }
 }

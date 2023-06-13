@@ -13,6 +13,10 @@ namespace ITP4915_group3_project.General.login
 {
     public partial class Login : KryptonForm
     {
+        public static string userName;
+        public static string password;
+        public static string user_ID;
+        public static string realName;
         public Login()
         {
             InitializeComponent();

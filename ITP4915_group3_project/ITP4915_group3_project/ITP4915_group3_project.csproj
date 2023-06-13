@@ -674,6 +674,7 @@
     <Compile Include="Restaurant\request order\header.Designer.cs">
       <DependentUpon>header.cs</DependentUpon>
     </Compile>
+    <Compile Include="Restaurant\request order\requestOrder.cs" />
     <Compile Include="Restaurant\request order\search\check.cs">
       <SubType>UserControl</SubType>
     </Compile>

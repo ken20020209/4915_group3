@@ -14,9 +14,17 @@ namespace ITP4915_group3_project.Restaurant
 {
     public partial class restaurant : KryptonForm
     {
+        public static string restaurant_ID;
+        public static string restaurant_Name;
+
         public restaurant()
         {
             InitializeComponent();
+
+            //fake data
+            restaurant_ID = "123";
+            restaurant_Name = "yammay restaurant";
+            
             
         }
 
