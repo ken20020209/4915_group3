@@ -16,6 +16,7 @@ namespace ITP4915_group3_project.category.category.create
         {
             InitializeComponent();
             panelContent.Controls.Add(this);
+            this.BringToFront();
         }
     }
 }
