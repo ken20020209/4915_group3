@@ -656,6 +656,11 @@
     <Compile Include="Purchase\set rule\time.Designer.cs">
       <DependentUpon>time.cs</DependentUpon>
     </Compile>
+    <Compile Include="purchase_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>purchase_dbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Restaurant\delivery note\header.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1325,6 +1330,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="purchase_dbDataSet.xsc">
+      <DependentUpon>purchase_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="purchase_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>purchase_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="purchase_dbDataSet.xss">
+      <DependentUpon>purchase_dbDataSet.xsd</DependentUpon>
+    </None>
     <None Include="_4523_g1_project_dbDataSet.xsc">
       <DependentUpon>_4523_g1_project_dbDataSet.xsd</DependentUpon>
     </None>

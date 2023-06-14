@@ -19,6 +19,7 @@ namespace ITP4915_group3_project.Purchase.PO.create.CPA
             this.panelContent = panelContent;
 
             panelContent.Controls.Add(this);
+            this.BringToFront();
         }
     }
 }
