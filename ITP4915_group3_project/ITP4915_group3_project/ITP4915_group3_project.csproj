@@ -212,7 +212,7 @@
       <DependentUpon>Category.cs</DependentUpon>
     </Compile>
     <Compile Include="category\category\create\create.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="category\category\create\create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
@@ -222,6 +222,12 @@
     </Compile>
     <Compile Include="category\category\create\create_success.Designer.cs">
       <DependentUpon>create_success.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\category\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\category\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
     </Compile>
     <Compile Include="category\category\select\check.cs">
       <SubType>Form</SubType>
@@ -507,7 +513,7 @@
       <DependentUpon>header.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\PO\search\check.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Purchase\PO\search\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>
@@ -766,7 +772,7 @@
       <DependentUpon>check.cs</DependentUpon>
     </Compile>
     <Compile Include="Restaurant\stock\detail.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Restaurant\stock\detail.Designer.cs">
       <DependentUpon>detail.cs</DependentUpon>
@@ -782,12 +788,6 @@
     </Compile>
     <Compile Include="Restaurant\stock\update.Designer.cs">
       <DependentUpon>update.cs</DependentUpon>
-    </Compile>
-    <Compile Include="test.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="test.Designer.cs">
-      <DependentUpon>test.cs</DependentUpon>
     </Compile>
     <Compile Include="warehouse\check_PO\detail.cs">
       <SubType>Form</SubType>
@@ -976,6 +976,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="category\category\create\create_success.resx">
       <DependentUpon>create_success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\category\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\category\select\check.resx">
       <DependentUpon>check.cs</DependentUpon>
@@ -1254,9 +1257,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\stock\update.resx">
       <DependentUpon>update.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="test.resx">
-      <DependentUpon>test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\check_PO\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>

@@ -23,6 +23,9 @@ namespace ITP4915_group3_project.category
 
         }
 
-
+        private void kryptonButtonCategory_Click(object sender, EventArgs e)
+        {
+            new category.header(kryptonPanelHeader, panelCategoryContent);
+        }
     }
 }
