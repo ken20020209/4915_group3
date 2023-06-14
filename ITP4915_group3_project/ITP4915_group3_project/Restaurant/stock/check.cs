@@ -12,9 +12,15 @@ namespace ITP4915_group3_project.Restaurant.stock
 {
     public partial class check : UserControl
     {
-        public check()
+        public Control panel;
+        public check(Control panel)
         {
             InitializeComponent();
+
+            this.panel = panel;
+            this.panel.Controls.Clear();
+            this.panel.Controls.Add(this);
+
             this.requestOrder_restaurant_stockTableAdapter.Fill(this._4523_g1_project_dbDataSet.requestOrder_restaurant_stock,restaurant.restaurant_ID);
             kryptonLabelTotalItem.Text = this._4523_g1_project_dbDataSet.requestOrder_restaurant_stock.Count.ToString();
 

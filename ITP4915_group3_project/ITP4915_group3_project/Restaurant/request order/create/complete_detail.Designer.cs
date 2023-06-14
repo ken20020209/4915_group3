@@ -367,8 +367,6 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
         private System.Windows.Forms.Label label3;
         private Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private System.Windows.Forms.DataGridView dataGridViewDetail;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_item_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_qty;
         private System.Windows.Forms.DataGridViewTextBoxColumn item_ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn qty;
         private System.Windows.Forms.DataGridViewTextBoxColumn item_Name;

@@ -31,33 +31,27 @@ namespace ITP4915_group3_project.Restaurant
 
         private void krytonBtnMenuRequestOrder_Click(object sender, EventArgs e)
         {
-
-            kryptonPanelContent.Controls.Clear();
-            kryptonPanelContent.Controls.Add(new request_order.search.check());
-            kryptonPanelHeader.Controls.Clear();
-            kryptonPanelHeader.Controls.Add(new request_order.header(kryptonPanelContent));
+            // add content and header change page
+            new request_order.search.check(kryptonPanelContent);
+            new request_order.header(kryptonPanelHeader,kryptonPanelContent);
             
         }
 
         private void kryptonButtonMenuDeliveryNote_Click(object sender, EventArgs e)
         {
+            // add content and header change page
 
-            kryptonPanelContent.Controls.Clear();
-            kryptonPanelContent.Controls.Add(new delivery_note.search());
+            new delivery_note.search(kryptonPanelContent);
+            new delivery_note.header(kryptonPanelHeader,kryptonPanelContent);
 
-            kryptonPanelHeader.Controls.Clear();
-            kryptonPanelHeader.Controls.Add(new delivery_note.header(kryptonPanelContent));
+
         }
 
         private void kryptonButtonMenuStock_Click(object sender, EventArgs e)
         {
-            // use user controls 
-
-            kryptonPanelContent.Controls.Clear();
-            kryptonPanelContent.Controls.Add(new stock.check());
-
-            kryptonPanelHeader.Controls.Clear();
-            kryptonPanelHeader.Controls.Add(new stock.header(kryptonPanelContent));
+            // add content and header change page
+            new stock.check(kryptonPanelContent);
+            new stock.header(kryptonPanelHeader, kryptonPanelContent);
 
         }
     }

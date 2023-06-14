@@ -12,9 +12,14 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
 {
     public partial class search : UserControl
     {
-        public search()
+        public Control panelContent1;
+        public search(Control panelContent)
         {
             InitializeComponent();
+
+            this.panelContent1 = panelContent;
+            panelContent.Controls.Clear();
+            panelContent.Controls.Add(this);
         }
     }
 }

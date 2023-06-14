@@ -13,24 +13,27 @@ namespace ITP4915_group3_project.Restaurant.request_order
     public partial class header : UserControl
     {
         Control panelContent;
-        public header(Control panel)
+        public header(Control header,Control panelContent)
         {
             InitializeComponent();
-            this.panelContent = panel;
+            this.panelContent = panelContent;
+            header.Controls.Clear();
+            header.Controls.Add(this);
         }
 
         private void kryptonButtonCreate_Click(object sender, EventArgs e)
         {
             panelContent.Controls.Clear();
-            Control select_item = new request_order.create.select_item();
-            panelContent.Controls.Add(select_item);
-            select_item.BringToFront();
+            new request_order.create.select_item(panelContent);
+
         }
 
         private void kryptonButtonReview_Click(object sender, EventArgs e)
         {
             panelContent.Controls.Clear();
-            panelContent.Controls.Add(new request_order.search.check());
+            new request_order.search.check(panelContent);
         }
+
+
     }
 }

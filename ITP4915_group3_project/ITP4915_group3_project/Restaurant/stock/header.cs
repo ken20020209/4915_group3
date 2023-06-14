@@ -13,15 +13,19 @@ namespace ITP4915_group3_project.Restaurant.stock
     public partial class header : UserControl
     {
         Control panelContent;
-        public header(Control panel)
+        public header(Control header,Control panel)
         {
             InitializeComponent();
+
+            header.Controls.Clear();
+            header.Controls.Add(this);
+
             this.panelContent = panel;
         }
         private void kryptonButtonReview_Click(object sender, EventArgs e)
         {
             panelContent.Controls.Clear();
-            panelContent.Controls.Add(new check());
+            panelContent.Controls.Add(new check(panelContent));
         }
     }
 }

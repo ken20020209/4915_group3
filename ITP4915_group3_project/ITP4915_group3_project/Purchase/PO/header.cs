@@ -8,25 +8,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ITP4915_group3_project.Restaurant.delivery_note
+namespace ITP4915_group3_project.Purchase.PO
 {
     public partial class header : UserControl
     {
         Control panelContent;
-        public header(Control header,Control panelContent)
+        public header(Control panel)
         {
             InitializeComponent();
-            this.panelContent = panelContent;
-
-            header.Controls.Clear();
-            header.Controls.Add(this);
-
-            
+            this.panelContent = panel;
         }
+
+        private void kryptonButtonCreate_Click(object sender, EventArgs e)
+        {
+            panelContent.Controls.Clear();
+            new create.select(panelContent);
+        }
+
         private void kryptonButtonReview_Click(object sender, EventArgs e)
         {
             panelContent.Controls.Clear();
-            new search(panelContent);
+            new search.check(panelContent);
         }
     }
 }

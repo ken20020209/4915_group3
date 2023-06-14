@@ -8,12 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ITP4915_group3_project.Purchase.PO.search
+namespace ITP4915_group3_project.Purchase.PO.create
 {
-    public partial class check : UserControl
+    public partial class select : UserControl
     {
         public Control panel;
-        public check(Control panel)
+        public select(Control panel)
         {
             InitializeComponent();
             this.panel = panel;
