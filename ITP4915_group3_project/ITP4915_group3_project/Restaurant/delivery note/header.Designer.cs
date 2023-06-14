@@ -45,7 +45,7 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
             this.kryptonLabelTitle.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonLabelTitle.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabelTitle.TabIndex = 0;
-            this.kryptonLabelTitle.Values.Text = "Dellivery note";
+            this.kryptonLabelTitle.Values.Text = "Delivery note";
             // 
             // kryptonPanelHeader
             // 
