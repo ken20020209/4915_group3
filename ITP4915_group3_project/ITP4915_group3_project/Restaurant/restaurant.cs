@@ -32,7 +32,6 @@ namespace ITP4915_group3_project.Restaurant
         private void krytonBtnMenuRequestOrder_Click(object sender, EventArgs e)
         {
             // add content and header change page
-            new request_order.search.check(kryptonPanelContent);
             new request_order.header(kryptonPanelHeader,kryptonPanelContent);
             
         }
@@ -40,8 +39,6 @@ namespace ITP4915_group3_project.Restaurant
         private void kryptonButtonMenuDeliveryNote_Click(object sender, EventArgs e)
         {
             // add content and header change page
-
-            new delivery_note.search(kryptonPanelContent);
             new delivery_note.header(kryptonPanelHeader,kryptonPanelContent);
 
 
@@ -50,7 +47,6 @@ namespace ITP4915_group3_project.Restaurant
         private void kryptonButtonMenuStock_Click(object sender, EventArgs e)
         {
             // add content and header change page
-            new stock.check(kryptonPanelContent);
             new stock.header(kryptonPanelHeader, kryptonPanelContent);
 
         }

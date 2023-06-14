@@ -1,5 +1,5 @@
 ﻿
-namespace ITP4915_group3_project
+namespace ITP4915_group3_project.Purchase
 {
     partial class purchase
     {

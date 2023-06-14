@@ -21,6 +21,7 @@ namespace ITP4915_group3_project.Restaurant.stock
             header.Controls.Add(this);
 
             this.panelContent = panel;
+            kryptonButtonReview_Click(null, null);
         }
         private void kryptonButtonReview_Click(object sender, EventArgs e)
         {

@@ -35,7 +35,7 @@ namespace ITP4915_group3_project.General.navi
         private void kryptonButtonPurchase_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new purchase().ShowDialog();
+            new Purchase.purchase().ShowDialog();
             this.Close();
         }
 

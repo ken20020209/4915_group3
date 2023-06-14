@@ -21,6 +21,8 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
             header.Controls.Clear();
             header.Controls.Add(this);
 
+            kryptonButtonReview_Click(null, null);
+
             
         }
         private void kryptonButtonReview_Click(object sender, EventArgs e)

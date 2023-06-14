@@ -13,10 +13,15 @@ namespace ITP4915_group3_project.Purchase.PO
     public partial class header : UserControl
     {
         Control panelContent;
-        public header(Control panel)
+        public header(Control header,Control panelContent)
         {
             InitializeComponent();
-            this.panelContent = panel;
+            this.panelContent = panelContent;
+
+            header.Controls.Clear();
+            header.Controls.Add(this);
+
+            kryptonButtonReview_Click(null, null);
         }
 
         private void kryptonButtonCreate_Click(object sender, EventArgs e)

@@ -19,6 +19,7 @@ namespace ITP4915_group3_project.Restaurant.request_order
             this.panelContent = panelContent;
             header.Controls.Clear();
             header.Controls.Add(this);
+            kryptonButtonReview_Click(null, null);
         }
 
         private void kryptonButtonCreate_Click(object sender, EventArgs e)

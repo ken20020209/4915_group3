@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Krypton.Toolkit;
 
-namespace ITP4915_group3_project
+namespace ITP4915_group3_project.Purchase
 {
     public partial class purchase : KryptonForm
     {
@@ -20,6 +20,7 @@ namespace ITP4915_group3_project
 
         private void kryptonButtonPurchaseOrder_Click(object sender, EventArgs e)
         {
+            new PO.header(kryptonPanelHeader, kryptonPanelContent);
 
         }
 
