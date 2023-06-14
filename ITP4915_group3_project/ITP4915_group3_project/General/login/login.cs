@@ -72,6 +72,7 @@ namespace ITP4915_group3_project.General.login
             this.Show();
         }
 
+        //only input number text box
         private void kryptonTextBoxUserID_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
