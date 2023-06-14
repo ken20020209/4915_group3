@@ -30,9 +30,29 @@ namespace ITP4915_group3_project.General.login
 
         private void kryptonButtonSignIn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new General.navi.navi().ShowDialog();
-            this.Show();
+
+            // where id =id password = password
+            _4523_g1_project_dbDataSet.userDataTable user = userTableAdapter.GetDataBy_UserName_Password(kryptonTextBoxPassword.Text, int.Parse(kryptonTextBoxUserID.Text));
+            if(user.Rows.Count==1)
+            {
+                //save data
+                userName = user.Rows[0]["user_name"].ToString();
+                user_ID = int.Parse(user.Rows[0]["user_id"].ToString());
+                password = user.Rows[0]["password"].ToString();
+                realName = user.Rows[0]["last_name"].ToString() + user.Rows[0]["first_name"].ToString();
+
+                /*Console.WriteLine(userName + " " + password + " " + user_ID +" "+ realName);*/
+
+                this.Hide();
+                new General.navi.navi().ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("wrong user id and name");
+            }
+
+            
             
             
 
@@ -43,6 +63,21 @@ namespace ITP4915_group3_project.General.login
             this.Hide();
             new Forget().ShowDialog();
             this.Show();
+        }
+
+        private void kryptonButtonWhitOutPassword_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new General.navi.navi().ShowDialog();
+            this.Show();
+        }
+
+        private void kryptonTextBoxUserID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

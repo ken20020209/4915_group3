@@ -43,6 +43,8 @@ namespace ITP4915_group3_project.General.login
             this.kryptonLabelLogin = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabelUserID = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabelPassword = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonButtonWhitOutPassword = new Krypton.Toolkit.KryptonButton();
+            this.userTableAdapter = new ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.userTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelIcon)).BeginInit();
             this.kryptonPanelIcon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
@@ -52,8 +54,8 @@ namespace ITP4915_group3_project.General.login
             // 
             this.kryptonPalette1.FormStyles.FormMain.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonPalette1.FormStyles.FormMain.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-            | Krypton.Toolkit.PaletteDrawBorders.Left)
+            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonPalette1.FormStyles.FormMain.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.None;
             this.kryptonPalette1.FormStyles.FormMain.StateCommon.Border.Rounding = 12F;
@@ -113,8 +115,8 @@ namespace ITP4915_group3_project.General.login
             this.kryptonButtonSignIn.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonButtonSignIn.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonButtonSignIn.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonButtonSignIn.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-            | Krypton.Toolkit.PaletteDrawBorders.Left)
+            this.kryptonButtonSignIn.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonButtonSignIn.StateCommon.Border.Rounding = 20F;
             this.kryptonButtonSignIn.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
@@ -122,15 +124,15 @@ namespace ITP4915_group3_project.General.login
             this.kryptonButtonSignIn.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButtonSignIn.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonButtonSignIn.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonButtonSignIn.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-            | Krypton.Toolkit.PaletteDrawBorders.Left)
+            this.kryptonButtonSignIn.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonButtonSignIn.StateTracking.Back.Color1 = System.Drawing.Color.White;
             this.kryptonButtonSignIn.StateTracking.Back.Color2 = System.Drawing.Color.White;
             this.kryptonButtonSignIn.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonButtonSignIn.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonButtonSignIn.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-            | Krypton.Toolkit.PaletteDrawBorders.Left)
+            this.kryptonButtonSignIn.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonButtonSignIn.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonButtonSignIn.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -159,8 +161,8 @@ namespace ITP4915_group3_project.General.login
             this.kryptonTextBoxPassword.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBoxPassword.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBoxPassword.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBoxPassword.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-            | Krypton.Toolkit.PaletteDrawBorders.Left)
+            this.kryptonTextBoxPassword.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonTextBoxPassword.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.kryptonTextBoxPassword.StateCommon.Border.Rounding = 25F;
@@ -182,8 +184,8 @@ namespace ITP4915_group3_project.General.login
             this.kryptonTextBoxUserID.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBoxUserID.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBoxUserID.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBoxUserID.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
-            | Krypton.Toolkit.PaletteDrawBorders.Left)
+            this.kryptonTextBoxUserID.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonTextBoxUserID.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.kryptonTextBoxUserID.StateCommon.Border.Rounding = 25F;
@@ -192,7 +194,7 @@ namespace ITP4915_group3_project.General.login
             this.kryptonTextBoxUserID.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBoxUserID.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
             this.kryptonTextBoxUserID.TabIndex = 10;
-            this.kryptonTextBoxUserID.Text = "user ID";
+            this.kryptonTextBoxUserID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.kryptonTextBoxUserID_KeyPress);
             // 
             // kryptonBorderEdgeLogin
             // 
@@ -237,12 +239,54 @@ namespace ITP4915_group3_project.General.login
             this.kryptonLabelPassword.TabIndex = 17;
             this.kryptonLabelPassword.Values.Text = "password:";
             // 
+            // kryptonButtonWhitOutPassword
+            // 
+            this.kryptonButtonWhitOutPassword.AutoSize = true;
+            this.kryptonButtonWhitOutPassword.CornerRoundingRadius = 20F;
+            this.kryptonButtonWhitOutPassword.Location = new System.Drawing.Point(501, 319);
+            this.kryptonButtonWhitOutPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonButtonWhitOutPassword.Name = "kryptonButtonWhitOutPassword";
+            this.kryptonButtonWhitOutPassword.Size = new System.Drawing.Size(177, 35);
+            this.kryptonButtonWhitOutPassword.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButtonWhitOutPassword.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButtonWhitOutPassword.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButtonWhitOutPassword.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButtonWhitOutPassword.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButtonWhitOutPassword.StateCommon.Border.Rounding = 20F;
+            this.kryptonButtonWhitOutPassword.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButtonWhitOutPassword.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonButtonWhitOutPassword.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButtonWhitOutPassword.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButtonWhitOutPassword.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButtonWhitOutPassword.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButtonWhitOutPassword.StateTracking.Back.Color1 = System.Drawing.Color.White;
+            this.kryptonButtonWhitOutPassword.StateTracking.Back.Color2 = System.Drawing.Color.White;
+            this.kryptonButtonWhitOutPassword.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButtonWhitOutPassword.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButtonWhitOutPassword.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButtonWhitOutPassword.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButtonWhitOutPassword.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButtonWhitOutPassword.TabIndex = 19;
+            this.kryptonButtonWhitOutPassword.Values.Text = "sign in WhitOutPassword";
+            this.kryptonButtonWhitOutPassword.Click += new System.EventHandler(this.kryptonButtonWhitOutPassword_Click);
+            // 
+            // userTableAdapter
+            // 
+            this.userTableAdapter.ClearBeforeFill = true;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(697, 365);
+            this.Controls.Add(this.kryptonButtonWhitOutPassword);
             this.Controls.Add(this.kryptonLabelPassword);
             this.Controls.Add(this.kryptonLabelUserID);
             this.Controls.Add(this.kryptonBorderEdgeLogin);
@@ -283,6 +327,8 @@ namespace ITP4915_group3_project.General.login
         private Krypton.Toolkit.KryptonLabel kryptonLabelLogin;
         private Krypton.Toolkit.KryptonLabel kryptonLabelUserID;
         private Krypton.Toolkit.KryptonLabel kryptonLabelPassword;
+        private _4523_g1_project_dbDataSetTableAdapters.userTableAdapter userTableAdapter;
+        private Krypton.Toolkit.KryptonButton kryptonButtonWhitOutPassword;
     }
 }
 
