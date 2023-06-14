@@ -170,6 +170,7 @@ namespace ITP4915_group3_project.category
             this.kryptonButtonItem.TabIndex = 6;
             this.kryptonButtonItem.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_shipping_product_40__2_;
             this.kryptonButtonItem.Values.Text = "Item";
+            this.kryptonButtonItem.Click += new System.EventHandler(this.kryptonButtonItem_Click);
             // 
             // kryptonButtonSetting
             // 
@@ -337,7 +338,7 @@ namespace ITP4915_group3_project.category
             this.kryptonButton1.Location = new System.Drawing.Point(264, 14);
             this.kryptonButton1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(75, 33);
+            this.kryptonButton1.Size = new System.Drawing.Size(98, 33);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));

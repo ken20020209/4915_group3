@@ -1538,6 +1538,8 @@
   <ItemGroup>
     <None Include="Resources\icons8-delivery-time-50.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="category\NewFolder1\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
