@@ -470,10 +470,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Purchase\PO\create\BBA\create.cs">
+    <Compile Include="Purchase\PO\create\BPA\create.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Purchase\PO\create\BBA\create.Designer.cs">
+    <Compile Include="Purchase\PO\create\BPA\create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\PO\create\CPA\create.cs">
@@ -1099,7 +1099,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Purchase\PO\create\BBA\create.resx">
+    <EmbeddedResource Include="Purchase\PO\create\BPA\create.resx">
       <DependentUpon>create.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PO\create\CPA\create.resx">

@@ -73,7 +73,7 @@ namespace ITP4915_group3_project.Purchase.PO.create
             // 
             this.kryptonGroup2.Panel.Controls.Add(this.kryptonLabel22);
             this.kryptonGroup2.Panel.Controls.Add(this.pictureBox6);
-            this.kryptonGroup2.Panel.Click += new System.EventHandler(this.createBBA);
+            this.kryptonGroup2.Panel.Click += new System.EventHandler(this.createBPA);
             this.kryptonGroup2.Size = new System.Drawing.Size(133, 133);
             this.kryptonGroup2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(134)))), ((int)(((byte)(166)))));
             this.kryptonGroup2.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(134)))), ((int)(((byte)(166)))));
@@ -88,12 +88,12 @@ namespace ITP4915_group3_project.Purchase.PO.create
             this.kryptonLabel22.Location = new System.Drawing.Point(23, 82);
             this.kryptonLabel22.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel22.Name = "kryptonLabel22";
-            this.kryptonLabel22.Size = new System.Drawing.Size(93, 22);
+            this.kryptonLabel22.Size = new System.Drawing.Size(91, 22);
             this.kryptonLabel22.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonLabel22.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel22.TabIndex = 2;
-            this.kryptonLabel22.Values.Text = "Create BBA";
-            this.kryptonLabel22.Click += new System.EventHandler(this.createBBA);
+            this.kryptonLabel22.Values.Text = "Create BPA";
+            this.kryptonLabel22.Click += new System.EventHandler(this.createBPA);
             // 
             // pictureBox6
             // 
@@ -106,7 +106,7 @@ namespace ITP4915_group3_project.Purchase.PO.create
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.createBBA);
+            this.pictureBox6.Click += new System.EventHandler(this.createBPA);
             // 
             // kryptonGroup1
             // 

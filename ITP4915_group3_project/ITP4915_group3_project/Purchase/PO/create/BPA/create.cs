@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ITP4915_group3_project.Purchase.PO.create.BBA
+namespace ITP4915_group3_project.Purchase.PO.create.BPA
 {
     public partial class create : UserControl
     {

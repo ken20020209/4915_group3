@@ -1,5 +1,5 @@
 ﻿
-namespace ITP4915_group3_project.Purchase.PO.create.BBA
+namespace ITP4915_group3_project.Purchase.PO.create.BPA
 {
     partial class create
     {
