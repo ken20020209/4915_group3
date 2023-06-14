@@ -35,7 +35,7 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.kryptonButtonEdit = new Krypton.Toolkit.KryptonButton();
             this.kryptonTextBoxBrand = new Krypton.Toolkit.KryptonTextBox();
             this.restaurant_stock_detailBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this._4523_g1_project_dbDataSet = new ITP4915_group3_project._4523_g1_project_dbDataSet();
+            this.restaurant_dbDataSet = new ITP4915_group3_project.restaurant_dbDataSet();
             this.kryptonLabelBrand = new Krypton.Toolkit.KryptonLabel();
             this.kryptonRichTextBoxRemarks = new Krypton.Toolkit.KryptonRichTextBox();
             this.kryptonLabelRemarks = new Krypton.Toolkit.KryptonLabel();
@@ -47,14 +47,14 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.kryptonLabelID = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabelBack = new Krypton.Toolkit.KryptonLabel();
             this.labelDetail = new System.Windows.Forms.Label();
-            this.restaurant_stock_detailTableAdapter = new ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.restaurant_stock_detailTableAdapter();
-            this.tableAdapterManager = new ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.TableAdapterManager();
+            this.restaurant_stock_detailTableAdapter = new ITP4915_group3_project.restaurant_dbDataSetTableAdapters.restaurant_stock_detailTableAdapter();
+            this.tableAdapterManager = new ITP4915_group3_project.restaurant_dbDataSetTableAdapters.TableAdapterManager();
             this.qtyTextBox = new System.Windows.Forms.TextBox();
             qtyLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelContent)).BeginInit();
             this.kryptonPanelContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.restaurant_stock_detailBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._4523_g1_project_dbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restaurant_dbDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanelContent
@@ -127,12 +127,12 @@ namespace ITP4915_group3_project.Restaurant.stock
             // restaurant_stock_detailBindingSource
             // 
             this.restaurant_stock_detailBindingSource.DataMember = "restaurant_stock_detail";
-            this.restaurant_stock_detailBindingSource.DataSource = this._4523_g1_project_dbDataSet;
+            this.restaurant_stock_detailBindingSource.DataSource = this.restaurant_dbDataSet;
             // 
-            // _4523_g1_project_dbDataSet
+            // restaurant_dbDataSet
             // 
-            this._4523_g1_project_dbDataSet.DataSetName = "_4523_g1_project_dbDataSet";
-            this._4523_g1_project_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.restaurant_dbDataSet.DataSetName = "restaurant_dbDataSet";
+            this.restaurant_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // kryptonLabelBrand
             // 
@@ -297,7 +297,7 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.tableAdapterManager.Connection = null;
             this.tableAdapterManager.purchasers_requestTableAdapter = null;
             this.tableAdapterManager.restaurant_stock_itemTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.restaurant_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // qtyLabel
             // 
@@ -329,7 +329,7 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.kryptonPanelContent.ResumeLayout(false);
             this.kryptonPanelContent.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.restaurant_stock_detailBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._4523_g1_project_dbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restaurant_dbDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -350,10 +350,10 @@ namespace ITP4915_group3_project.Restaurant.stock
         private Krypton.Toolkit.KryptonLabel kryptonLabelID;
         private Krypton.Toolkit.KryptonLabel kryptonLabelBack;
         private System.Windows.Forms.Label labelDetail;
-        private _4523_g1_project_dbDataSet _4523_g1_project_dbDataSet;
+        private restaurant_dbDataSet restaurant_dbDataSet;
         private System.Windows.Forms.BindingSource restaurant_stock_detailBindingSource;
-        private _4523_g1_project_dbDataSetTableAdapters.restaurant_stock_detailTableAdapter restaurant_stock_detailTableAdapter;
-        private _4523_g1_project_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private restaurant_dbDataSetTableAdapters.restaurant_stock_detailTableAdapter restaurant_stock_detailTableAdapter;
+        private restaurant_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.TextBox qtyTextBox;
     }
 }

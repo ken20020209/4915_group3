@@ -42,12 +42,12 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.kryptonButton9 = new Krypton.Toolkit.KryptonButton();
             this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.tableAdapterManager = new ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.TableAdapterManager();
-            this._4523_g1_project_dbDataSet = new ITP4915_group3_project._4523_g1_project_dbDataSet();
-            this.restaurant_stock_itemTableAdapter = new ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.restaurant_stock_itemTableAdapter();
+            this.tableAdapterManager = new ITP4915_group3_project.restaurant_dbDataSetTableAdapters.TableAdapterManager();
+            this.restaurant_dbDataSet = new ITP4915_group3_project.restaurant_dbDataSet();
+            this.restaurant_stock_itemTableAdapter = new ITP4915_group3_project.restaurant_dbDataSetTableAdapters.restaurant_stock_itemTableAdapter();
             this.restaurant_stock_itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.requestOrder_restaurant_stockBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.requestOrder_restaurant_stockTableAdapter = new ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.requestOrder_restaurant_stockTableAdapter();
+            this.requestOrder_restaurant_stockTableAdapter = new ITP4915_group3_project.restaurant_dbDataSetTableAdapters.requestOrder_restaurant_stockTableAdapter();
             this.requestOrder_restaurant_stockDataGridView = new System.Windows.Forms.DataGridView();
             this.selected = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,7 +59,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.kryptonPanelContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._4523_g1_project_dbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restaurant_dbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.restaurant_stock_itemBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestOrder_restaurant_stockBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestOrder_restaurant_stockDataGridView)).BeginInit();
@@ -308,12 +308,12 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.restaurant_stock_itemTableAdapter = this.restaurant_stock_itemTableAdapter;
-            this.tableAdapterManager.UpdateOrder = ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.restaurant_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // _4523_g1_project_dbDataSet
+            // restaurant_dbDataSet
             // 
-            this._4523_g1_project_dbDataSet.DataSetName = "_4523_g1_project_dbDataSet";
-            this._4523_g1_project_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.restaurant_dbDataSet.DataSetName = "restaurant_dbDataSet";
+            this.restaurant_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // restaurant_stock_itemTableAdapter
             // 
@@ -322,12 +322,12 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             // restaurant_stock_itemBindingSource
             // 
             this.restaurant_stock_itemBindingSource.DataMember = "restaurant_stock_item";
-            this.restaurant_stock_itemBindingSource.DataSource = this._4523_g1_project_dbDataSet;
+            this.restaurant_stock_itemBindingSource.DataSource = this.restaurant_dbDataSet;
             // 
             // requestOrder_restaurant_stockBindingSource
             // 
             this.requestOrder_restaurant_stockBindingSource.DataMember = "requestOrder_restaurant_stock";
-            this.requestOrder_restaurant_stockBindingSource.DataSource = this._4523_g1_project_dbDataSet;
+            this.requestOrder_restaurant_stockBindingSource.DataSource = this.restaurant_dbDataSet;
             // 
             // requestOrder_restaurant_stockTableAdapter
             // 
@@ -403,7 +403,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.kryptonPanelContent.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._4523_g1_project_dbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restaurant_dbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.restaurant_stock_itemBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestOrder_restaurant_stockBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestOrder_restaurant_stockDataGridView)).EndInit();
@@ -425,13 +425,13 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
         private Krypton.Toolkit.KryptonButton kryptonButton9;
         private Krypton.Toolkit.KryptonButton kryptonButton1;
         private System.Windows.Forms.Label label1;
-        private _4523_g1_project_dbDataSet _4523_g1_project_dbDataSet;
-        private _4523_g1_project_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private restaurant_dbDataSet restaurant_dbDataSet;
+        private restaurant_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.DataGridView requestOrder_restaurant_stockDataGridView;
         private System.Windows.Forms.BindingSource requestOrder_restaurant_stockBindingSource;
-        private _4523_g1_project_dbDataSetTableAdapters.restaurant_stock_itemTableAdapter restaurant_stock_itemTableAdapter;
+        private restaurant_dbDataSetTableAdapters.restaurant_stock_itemTableAdapter restaurant_stock_itemTableAdapter;
         private System.Windows.Forms.BindingSource restaurant_stock_itemBindingSource;
-        private _4523_g1_project_dbDataSetTableAdapters.requestOrder_restaurant_stockTableAdapter requestOrder_restaurant_stockTableAdapter;
+        private restaurant_dbDataSetTableAdapters.requestOrder_restaurant_stockTableAdapter requestOrder_restaurant_stockTableAdapter;
         private System.Windows.Forms.DataGridViewCheckBoxColumn selected;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;

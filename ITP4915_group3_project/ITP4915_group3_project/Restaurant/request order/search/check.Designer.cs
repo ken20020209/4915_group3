@@ -45,10 +45,10 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             this.kryptonCheckButton4 = new Krypton.Toolkit.KryptonCheckButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.kryptonLabel6 = new Krypton.Toolkit.KryptonLabel();
-            this._4523_g1_project_dbDataSet = new ITP4915_group3_project._4523_g1_project_dbDataSet();
+            this.restaurant_dbDataSet = new ITP4915_group3_project.restaurant_dbDataSet();
             this.purchasers_requestBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.purchasers_requestTableAdapter = new ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.purchasers_requestTableAdapter();
-            this.tableAdapterManager = new ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.TableAdapterManager();
+            this.purchasers_requestTableAdapter = new ITP4915_group3_project.restaurant_dbDataSetTableAdapters.purchasers_requestTableAdapter();
+            this.tableAdapterManager = new ITP4915_group3_project.restaurant_dbDataSetTableAdapters.TableAdapterManager();
             this.purchasers_requestDataGridView = new System.Windows.Forms.DataGridView();
             this.purchasers_request_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,7 +68,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._4523_g1_project_dbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restaurant_dbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchasers_requestBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchasers_requestDataGridView)).BeginInit();
             this.SuspendLayout();
@@ -343,15 +343,15 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             this.kryptonLabel6.TabIndex = 2;
             this.kryptonLabel6.Values.Text = "RESULT (0)";
             // 
-            // _4523_g1_project_dbDataSet
+            // restaurant_dbDataSet
             // 
-            this._4523_g1_project_dbDataSet.DataSetName = "_4523_g1_project_dbDataSet";
-            this._4523_g1_project_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.restaurant_dbDataSet.DataSetName = "restaurant_dbDataSet";
+            this.restaurant_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // purchasers_requestBindingSource
             // 
             this.purchasers_requestBindingSource.DataMember = "purchasers_request";
-            this.purchasers_requestBindingSource.DataSource = this._4523_g1_project_dbDataSet;
+            this.purchasers_requestBindingSource.DataSource = this.restaurant_dbDataSet;
             // 
             // purchasers_requestTableAdapter
             // 
@@ -362,7 +362,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.purchasers_requestTableAdapter = this.purchasers_requestTableAdapter;
             this.tableAdapterManager.restaurant_stock_itemTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.restaurant_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // purchasers_requestDataGridView
             // 
@@ -436,7 +436,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
             this.kryptonPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._4523_g1_project_dbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restaurant_dbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchasers_requestBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchasers_requestDataGridView)).EndInit();
             this.ResumeLayout(false);
@@ -460,10 +460,10 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
         private Krypton.Toolkit.KryptonCheckButton kryptonCheckButton4;
         private System.Windows.Forms.PictureBox pictureBox6;
         private Krypton.Toolkit.KryptonLabel kryptonLabel6;
-        private _4523_g1_project_dbDataSet _4523_g1_project_dbDataSet;
+        private restaurant_dbDataSet restaurant_dbDataSet;
         private System.Windows.Forms.BindingSource purchasers_requestBindingSource;
-        private _4523_g1_project_dbDataSetTableAdapters.purchasers_requestTableAdapter purchasers_requestTableAdapter;
-        private _4523_g1_project_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private restaurant_dbDataSetTableAdapters.purchasers_requestTableAdapter purchasers_requestTableAdapter;
+        private restaurant_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.DataGridView purchasers_requestDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn purchasers_request_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;

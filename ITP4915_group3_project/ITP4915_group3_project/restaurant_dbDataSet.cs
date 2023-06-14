@@ -2,7 +2,7 @@
 {
 
 
-    partial class _4523_g1_project_dbDataSet
+    partial class restaurant_dbDataSet
     {
         partial class requestOrder_restaurant_stockDataTable
         {

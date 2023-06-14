@@ -908,13 +908,13 @@
     <Compile Include="warehouse\warehouse.Designer.cs">
       <DependentUpon>warehouse.cs</DependentUpon>
     </Compile>
-    <Compile Include="_4523_g1_project_dbDataSet.cs">
-      <DependentUpon>_4523_g1_project_dbDataSet.xsd</DependentUpon>
+    <Compile Include="restaurant_dbDataSet.cs">
+      <DependentUpon>restaurant_dbDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="_4523_g1_project_dbDataSet.Designer.cs">
+    <Compile Include="restaurant_dbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>_4523_g1_project_dbDataSet.xsd</DependentUpon>
+      <DependentUpon>restaurant_dbDataSet.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Accounting\accounting.resx">
       <DependentUpon>accounting.cs</DependentUpon>
@@ -1341,16 +1341,16 @@
     <None Include="purchase_dbDataSet.xss">
       <DependentUpon>purchase_dbDataSet.xsd</DependentUpon>
     </None>
-    <None Include="_4523_g1_project_dbDataSet.xsc">
-      <DependentUpon>_4523_g1_project_dbDataSet.xsd</DependentUpon>
+    <None Include="restaurant_dbDataSet.xsc">
+      <DependentUpon>restaurant_dbDataSet.xsd</DependentUpon>
     </None>
-    <None Include="_4523_g1_project_dbDataSet.xsd">
+    <None Include="restaurant_dbDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_4523_g1_project_dbDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>restaurant_dbDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="_4523_g1_project_dbDataSet.xss">
-      <DependentUpon>_4523_g1_project_dbDataSet.xsd</DependentUpon>
+    <None Include="restaurant_dbDataSet.xss">
+      <DependentUpon>restaurant_dbDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

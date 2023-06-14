@@ -51,9 +51,9 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.requestOrder_restaurant_stockBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this._4523_g1_project_dbDataSet = new ITP4915_group3_project._4523_g1_project_dbDataSet();
-            this.requestOrder_restaurant_stockTableAdapter = new ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.requestOrder_restaurant_stockTableAdapter();
-            this.tableAdapterManager = new ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.TableAdapterManager();
+            this.restaurant_dbDataSet = new ITP4915_group3_project.restaurant_dbDataSet();
+            this.requestOrder_restaurant_stockTableAdapter = new ITP4915_group3_project.restaurant_dbDataSetTableAdapters.requestOrder_restaurant_stockTableAdapter();
+            this.tableAdapterManager = new ITP4915_group3_project.restaurant_dbDataSetTableAdapters.TableAdapterManager();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -73,7 +73,7 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.panelContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.requestOrder_restaurant_stockDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestOrder_restaurant_stockBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._4523_g1_project_dbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restaurant_dbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -334,12 +334,12 @@ namespace ITP4915_group3_project.Restaurant.stock
             // requestOrder_restaurant_stockBindingSource
             // 
             this.requestOrder_restaurant_stockBindingSource.DataMember = "requestOrder_restaurant_stock";
-            this.requestOrder_restaurant_stockBindingSource.DataSource = this._4523_g1_project_dbDataSet;
+            this.requestOrder_restaurant_stockBindingSource.DataSource = this.restaurant_dbDataSet;
             // 
-            // _4523_g1_project_dbDataSet
+            // restaurant_dbDataSet
             // 
-            this._4523_g1_project_dbDataSet.DataSetName = "_4523_g1_project_dbDataSet";
-            this._4523_g1_project_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.restaurant_dbDataSet.DataSetName = "restaurant_dbDataSet";
+            this.restaurant_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // requestOrder_restaurant_stockTableAdapter
             // 
@@ -351,7 +351,7 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.tableAdapterManager.Connection = null;
             this.tableAdapterManager.purchasers_requestTableAdapter = null;
             this.tableAdapterManager.restaurant_stock_itemTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.restaurant_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // pictureBox7
             // 
@@ -416,7 +416,7 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.panelContent.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.requestOrder_restaurant_stockDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestOrder_restaurant_stockBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._4523_g1_project_dbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restaurant_dbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -442,10 +442,10 @@ namespace ITP4915_group3_project.Restaurant.stock
         private Krypton.Toolkit.KryptonTextBox kryptonTextBox15;
         private Krypton.Toolkit.KryptonGroup kryptonGroup3;
         private System.Windows.Forms.Panel panelContent;
-        private _4523_g1_project_dbDataSet _4523_g1_project_dbDataSet;
+        private restaurant_dbDataSet restaurant_dbDataSet;
         private System.Windows.Forms.BindingSource requestOrder_restaurant_stockBindingSource;
-        private _4523_g1_project_dbDataSetTableAdapters.requestOrder_restaurant_stockTableAdapter requestOrder_restaurant_stockTableAdapter;
-        private _4523_g1_project_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private restaurant_dbDataSetTableAdapters.requestOrder_restaurant_stockTableAdapter requestOrder_restaurant_stockTableAdapter;
+        private restaurant_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.DataGridView requestOrder_restaurant_stockDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn item_ID;

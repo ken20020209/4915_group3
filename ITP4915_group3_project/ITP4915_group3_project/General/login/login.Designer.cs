@@ -44,7 +44,7 @@ namespace ITP4915_group3_project.General.login
             this.kryptonLabelUserID = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabelPassword = new Krypton.Toolkit.KryptonLabel();
             this.kryptonButtonWhitOutPassword = new Krypton.Toolkit.KryptonButton();
-            this.userTableAdapter = new ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters.userTableAdapter();
+            this.userTableAdapter = new ITP4915_group3_project.restaurant_dbDataSetTableAdapters.userTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelIcon)).BeginInit();
             this.kryptonPanelIcon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
@@ -327,7 +327,7 @@ namespace ITP4915_group3_project.General.login
         private Krypton.Toolkit.KryptonLabel kryptonLabelLogin;
         private Krypton.Toolkit.KryptonLabel kryptonLabelUserID;
         private Krypton.Toolkit.KryptonLabel kryptonLabelPassword;
-        private _4523_g1_project_dbDataSetTableAdapters.userTableAdapter userTableAdapter;
+        private restaurant_dbDataSetTableAdapters.userTableAdapter userTableAdapter;
         private Krypton.Toolkit.KryptonButton kryptonButtonWhitOutPassword;
     }
 }

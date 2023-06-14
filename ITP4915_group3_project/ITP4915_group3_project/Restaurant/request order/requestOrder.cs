@@ -37,8 +37,8 @@ namespace ITP4915_group3_project.Restaurant.request_order
         //laod data to db;
         public void insertDB()
         {
-            _4523_g1_project_dbDataSet.purchasers_requestDataTable datasetRequest = new _4523_g1_project_dbDataSet.purchasers_requestDataTable();
-            _4523_g1_project_dbDataSetTableAdapters.purchasers_requestTableAdapter adapterRequest = new _4523_g1_project_dbDataSetTableAdapters.purchasers_requestTableAdapter();
+            restaurant_dbDataSet.purchasers_requestDataTable datasetRequest = new restaurant_dbDataSet.purchasers_requestDataTable();
+            restaurant_dbDataSetTableAdapters.purchasers_requestTableAdapter adapterRequest = new restaurant_dbDataSetTableAdapters.purchasers_requestTableAdapter();
             adapterRequest.Fill(datasetRequest,restaurant_ID);
             for(int i=0;i<item_qty.Count();i++)
             {
