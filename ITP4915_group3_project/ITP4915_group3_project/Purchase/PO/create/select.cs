@@ -19,5 +19,22 @@ namespace ITP4915_group3_project.Purchase.PO.create
             this.panel = panel;
             this.panel.Controls.Add(this);
         }
+        public void createBBA(object sender, EventArgs e)
+        {
+            
+        }
+        public void createPPO(object sender, EventArgs e)
+        {
+            
+        }
+        public void createSPO(object sender, EventArgs e)
+        {
+            
+        }
+        public void createCPA(object sender, EventArgs e)
+        {
+            
+        }
+
     }
 }

@@ -470,11 +470,35 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Purchase\PO\create\BBA\create.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\PO\create\BBA\create.Designer.cs">
+      <DependentUpon>create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PO\create\CPA\create.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\PO\create\CPA\create.Designer.cs">
+      <DependentUpon>create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PO\create\PPO\create.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\PO\create\PPO\create.Designer.cs">
+      <DependentUpon>create.cs</DependentUpon>
+    </Compile>
     <Compile Include="Purchase\PO\create\select.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Purchase\PO\create\select.Designer.cs">
       <DependentUpon>select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PO\create\SPO\create.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\PO\create\SPO\create.Designer.cs">
+      <DependentUpon>create.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\PO\header.cs">
       <SubType>UserControl</SubType>
@@ -1075,8 +1099,20 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PO\create\BBA\create.resx">
+      <DependentUpon>create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PO\create\CPA\create.resx">
+      <DependentUpon>create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PO\create\PPO\create.resx">
+      <DependentUpon>create.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PO\create\select.resx">
       <DependentUpon>select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PO\create\SPO\create.resx">
+      <DependentUpon>create.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PO\header.resx">
       <DependentUpon>header.cs</DependentUpon>
