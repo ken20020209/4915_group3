@@ -16,7 +16,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             panelContent.Controls.Add(this);
 
             this.newOrder = new requestOrder(restaurant.restaurant_ID, restaurant.restaurant_Name, General.login.Login.user_ID, General.login.Login.realName);
-            this.requestOrder_restaurant_stockTableAdapter.Fill(this._4523_g1_project_dbDataSet.requestOrder_restaurant_stock,newOrder.restaurant_ID);
+            this.requestOrder_restaurant_stockTableAdapter.Fill(this.restaurant_dbDataSet.requestOrder_restaurant_stock,newOrder.restaurant_ID);
             
             /*foreach (DataGridViewRow row in requestOrder_restaurant_stockDataGridView.Rows)
             {

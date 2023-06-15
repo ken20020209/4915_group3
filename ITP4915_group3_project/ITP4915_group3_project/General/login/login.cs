@@ -32,7 +32,12 @@ namespace ITP4915_group3_project.General.login
         {
 
             // where id =id password = password
-            _4523_g1_project_dbDataSet.userDataTable user = userTableAdapter.GetDataBy_UserName_Password(kryptonTextBoxPassword.Text, int.Parse(kryptonTextBoxUserID.Text));
+            if(kryptonTextBoxPassword.Text==null)
+            {
+                MessageBox.Show("wrong user id and name");
+                return;
+            }
+            restaurant_dbDataSet.userDataTable user = userTableAdapter.GetDataBy_UserName_Password(kryptonTextBoxPassword.Text, int.Parse(kryptonTextBoxUserID.Text));
             if(user.Rows.Count==1)
             {
                 //save data

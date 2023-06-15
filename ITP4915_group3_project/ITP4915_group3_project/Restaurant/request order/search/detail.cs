@@ -21,7 +21,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             panel.Controls.Add(this);
             checkUserControl = panel;
             this.BringToFront();
-            this.requestDetail_purhcases_requestTableAdapter.FillBy_RestID_RequestID(this._4523_g1_project_dbDataSet.requestDetail_purhcases_request, restaurant.restaurant_ID, requestOrder_ID);
+            this.requestDetail_purhcases_requestTableAdapter.FillBy_RestID_RequestID(this.restaurant_dbDataSet.requestDetail_purhcases_request, restaurant.restaurant_ID, requestOrder_ID);
         }
 
         private void kryptonLabelBack_Click(object sender, EventArgs e)

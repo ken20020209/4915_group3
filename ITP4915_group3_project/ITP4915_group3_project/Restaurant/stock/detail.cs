@@ -22,7 +22,7 @@ namespace ITP4915_group3_project.Restaurant.stock
             check.Controls.Add(this);
             this.itemID = itemID;
             this.BringToFront();
-            this.restaurant_stock_detailTableAdapter.Fill(this._4523_g1_project_dbDataSet.restaurant_stock_detail, restaurant.restaurant_ID, itemID);
+            this.restaurant_stock_detailTableAdapter.Fill(this.restaurant_dbDataSet.restaurant_stock_detail, restaurant.restaurant_ID, itemID);
 
         }
 

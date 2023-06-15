@@ -34,7 +34,7 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonPalette1 = new Krypton.Toolkit.KryptonPalette(this.components);
             this.kryptonButtonRequestOrder = new Krypton.Toolkit.KryptonButton();
             this.kryptonButton5 = new Krypton.Toolkit.KryptonButton();
-            this.kryptonButton6 = new Krypton.Toolkit.KryptonButton();
+            this.kryptonButtonLogout = new Krypton.Toolkit.KryptonButton();
             this.kryptonButtonPurchaseOrder = new Krypton.Toolkit.KryptonButton();
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonPanel3 = new Krypton.Toolkit.KryptonPanel();
@@ -66,7 +66,6 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonTextBox19 = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonPanelHeaderbase = new Krypton.Toolkit.KryptonPanel();
             this.kryptonPanelHeader = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonButton2 = new Krypton.Toolkit.KryptonButton();
             this.kryptonLabel3 = new Krypton.Toolkit.KryptonLabel();
             this.pictureBoxNotice = new System.Windows.Forms.PictureBox();
             this.kryptonPanelContent = new Krypton.Toolkit.KryptonPanel();
@@ -144,27 +143,28 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonButton5.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_settings_40__2_;
             this.kryptonButton5.Values.Text = "Setting";
             // 
-            // kryptonButton6
+            // kryptonButtonLogout
             // 
-            this.kryptonButton6.CornerRoundingRadius = 12F;
-            this.kryptonButton6.Location = new System.Drawing.Point(16, 475);
-            this.kryptonButton6.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonButton6.Name = "kryptonButton6";
-            this.kryptonButton6.Size = new System.Drawing.Size(151, 53);
-            this.kryptonButton6.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonButton6.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonButton6.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonButton6.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonButtonLogout.CornerRoundingRadius = 12F;
+            this.kryptonButtonLogout.Location = new System.Drawing.Point(16, 475);
+            this.kryptonButtonLogout.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonButtonLogout.Name = "kryptonButtonLogout";
+            this.kryptonButtonLogout.Size = new System.Drawing.Size(151, 53);
+            this.kryptonButtonLogout.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonButtonLogout.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonButtonLogout.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonButtonLogout.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton6.StateCommon.Border.Rounding = 12F;
-            this.kryptonButton6.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.kryptonButton6.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton6.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton6.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.kryptonButton6.TabIndex = 8;
-            this.kryptonButton6.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_logout_40__2_;
-            this.kryptonButton6.Values.Text = "Logout";
+            this.kryptonButtonLogout.StateCommon.Border.Rounding = 12F;
+            this.kryptonButtonLogout.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonButtonLogout.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButtonLogout.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButtonLogout.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonButtonLogout.TabIndex = 8;
+            this.kryptonButtonLogout.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_logout_40__2_;
+            this.kryptonButtonLogout.Values.Text = "Logout";
+            this.kryptonButtonLogout.Click += new System.EventHandler(this.kryptonButtonLogout_Click);
             // 
             // kryptonButtonPurchaseOrder
             // 
@@ -244,7 +244,7 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonPanel1.Controls.Add(this.kryptonButtonRuleSetting);
             this.kryptonPanel1.Controls.Add(this.kryptonButtonRequestOrder);
             this.kryptonPanel1.Controls.Add(this.kryptonButton5);
-            this.kryptonPanel1.Controls.Add(this.kryptonButton6);
+            this.kryptonPanel1.Controls.Add(this.kryptonButtonLogout);
             this.kryptonPanel1.Controls.Add(this.kryptonPanel3);
             this.kryptonPanel1.Controls.Add(this.kryptonButtonPurchaseOrder);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -683,7 +683,6 @@ namespace ITP4915_group3_project.Purchase
             // 
             // kryptonPanelHeader
             // 
-            this.kryptonPanelHeader.Controls.Add(this.kryptonButton2);
             this.kryptonPanelHeader.Controls.Add(this.kryptonLabel3);
             this.kryptonPanelHeader.Dock = System.Windows.Forms.DockStyle.Left;
             this.kryptonPanelHeader.Location = new System.Drawing.Point(0, 0);
@@ -695,35 +694,16 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonPanelHeader.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonPanelHeader.TabIndex = 56;
             // 
-            // kryptonButton2
-            // 
-            this.kryptonButton2.CornerRoundingRadius = 12F;
-            this.kryptonButton2.Location = new System.Drawing.Point(253, 13);
-            this.kryptonButton2.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Size = new System.Drawing.Size(97, 35);
-            this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonButton2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonButton2.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton2.StateCommon.Border.Rounding = 12F;
-            this.kryptonButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton2.TabIndex = 55;
-            this.kryptonButton2.Values.Text = "Review";
-            // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(4, 13);
+            this.kryptonLabel3.Location = new System.Drawing.Point(249, 11);
             this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(185, 35);
+            this.kryptonLabel3.Size = new System.Drawing.Size(166, 35);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel3.TabIndex = 0;
-            this.kryptonLabel3.Values.Text = "Purchase Order";
+            this.kryptonLabel3.Values.Text = "use to replace";
             // 
             // pictureBoxNotice
             // 
@@ -785,7 +765,7 @@ namespace ITP4915_group3_project.Purchase
         private Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private Krypton.Toolkit.KryptonButton kryptonButtonRequestOrder;
         private Krypton.Toolkit.KryptonButton kryptonButton5;
-        private Krypton.Toolkit.KryptonButton kryptonButton6;
+        private Krypton.Toolkit.KryptonButton kryptonButtonLogout;
         private Krypton.Toolkit.KryptonButton kryptonButtonPurchaseOrder;
         private Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private Krypton.Toolkit.KryptonPanel kryptonPanel3;
@@ -817,7 +797,6 @@ namespace ITP4915_group3_project.Purchase
         private Krypton.Toolkit.KryptonTextBox kryptonTextBox19;
         private Krypton.Toolkit.KryptonPanel kryptonPanelHeaderbase;
         private Krypton.Toolkit.KryptonPanel kryptonPanelHeader;
-        private Krypton.Toolkit.KryptonButton kryptonButton2;
         private Krypton.Toolkit.KryptonLabel kryptonLabel3;
         private System.Windows.Forms.PictureBox pictureBoxNotice;
         private Krypton.Toolkit.KryptonPanel kryptonPanelContent;

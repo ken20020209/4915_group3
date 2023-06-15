@@ -21,19 +21,19 @@ namespace ITP4915_group3_project.Purchase.PO.create
         }
         public void createBPA(object sender, EventArgs e)
         {
-            
+            new BPA.create(this);
         }
         public void createPPO(object sender, EventArgs e)
         {
-            
+            new CPA.create(this);
         }
         public void createSPO(object sender, EventArgs e)
         {
-            
+            new PPO.create(this);
         }
         public void createCPA(object sender, EventArgs e)
         {
-            
+            new SPO.create(this);
         }
 
     }

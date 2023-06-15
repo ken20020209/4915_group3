@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace ITP4915_group3_project.warehouse.check_PO
 {
-    public partial class review : Form
+    public partial class review : UserControl
     {
-        public review()
+        public Control panelContent;
+        public review(Control panelContent)
         {
             InitializeComponent();
+            this.panelContent = panelContent;
+            panelContent.Controls.Clear();
+            panelContent.Controls.Add(this);
         }
     }
 }

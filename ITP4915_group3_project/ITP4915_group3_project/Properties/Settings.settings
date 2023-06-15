@@ -10,5 +10,17 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">server=localhost;user id=root;password=123123;persistsecurityinfo=True;database=4523_g1_project_db;port=3308;allowuservariables=True</Value>
     </Setting>
+    <Setting Name="autoMatch" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Yes</Value>
+    </Setting>
+    <Setting Name="autoBPA" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Yes</Value>
+    </Setting>
+    <Setting Name="autoBR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Yes</Value>
+    </Setting>
+    <Setting Name="autoWarehouse" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Yes</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

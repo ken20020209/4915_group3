@@ -21,12 +21,20 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             panelContent.Controls.Clear();
             panelContent.Controls.Add(this);
 
-            purchasers_requestTableAdapter.Fill(this._4523_g1_project_dbDataSet.purchasers_request, restaurant.restaurant_ID);
+            purchasers_requestTableAdapter.Fill(this.restaurant_dbDataSet.purchasers_request, restaurant.restaurant_ID);
         }
 
         private void purchasers_requestDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             detail requestDetail = new detail(this,int.Parse(purchasers_requestDataGridView.Rows[e.RowIndex].Cells["purchasers_request_id"].Value.ToString()));
         }
+
+        private void kryptonButtonSearch_Click(object sender, EventArgs e)
+        {
+            string keyword = "%" + kryptonTextBoxSearchKeyWord.Text + "%";
+
+            purchasers_requestTableAdapter.FillBySearch(this.restaurant_dbDataSet.purchasers_request, restaurant.restaurant_ID, keyword);
+        }
+
     }
 }

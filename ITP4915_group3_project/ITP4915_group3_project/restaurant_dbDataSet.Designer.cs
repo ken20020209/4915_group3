@@ -20,9 +20,9 @@ namespace ITP4915_group3_project {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("_4523_g1_project_dbDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("restaurant_dbDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class _4523_g1_project_dbDataSet : global::System.Data.DataSet {
+    public partial class restaurant_dbDataSet : global::System.Data.DataSet {
         
         private restaurantstockdetailDataTable tablerestaurantstockdetail;
         
@@ -46,7 +46,7 @@ namespace ITP4915_group3_project {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public _4523_g1_project_dbDataSet() {
+        public restaurant_dbDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -57,7 +57,7 @@ namespace ITP4915_group3_project {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected _4523_g1_project_dbDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected restaurant_dbDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -221,7 +221,7 @@ namespace ITP4915_group3_project {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            _4523_g1_project_dbDataSet cln = ((_4523_g1_project_dbDataSet)(base.Clone()));
+            restaurant_dbDataSet cln = ((restaurant_dbDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -349,9 +349,9 @@ namespace ITP4915_group3_project {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "_4523_g1_project_dbDataSet";
+            this.DataSetName = "restaurant_dbDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/_4523_g1_project_dbDataSet.xsd";
+            this.Namespace = "http://tempuri.org/restaurant_dbDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tablerestaurantstockdetail = new restaurantstockdetailDataTable();
@@ -431,7 +431,7 @@ namespace ITP4915_group3_project {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            _4523_g1_project_dbDataSet ds = new _4523_g1_project_dbDataSet();
+            restaurant_dbDataSet ds = new restaurant_dbDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -774,7 +774,7 @@ namespace ITP4915_group3_project {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                _4523_g1_project_dbDataSet ds = new _4523_g1_project_dbDataSet();
+                restaurant_dbDataSet ds = new restaurant_dbDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1173,7 +1173,7 @@ namespace ITP4915_group3_project {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                _4523_g1_project_dbDataSet ds = new _4523_g1_project_dbDataSet();
+                restaurant_dbDataSet ds = new restaurant_dbDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1494,7 +1494,7 @@ namespace ITP4915_group3_project {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                _4523_g1_project_dbDataSet ds = new _4523_g1_project_dbDataSet();
+                restaurant_dbDataSet ds = new restaurant_dbDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1814,7 +1814,7 @@ namespace ITP4915_group3_project {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                _4523_g1_project_dbDataSet ds = new _4523_g1_project_dbDataSet();
+                restaurant_dbDataSet ds = new restaurant_dbDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2257,7 +2257,7 @@ namespace ITP4915_group3_project {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                _4523_g1_project_dbDataSet ds = new _4523_g1_project_dbDataSet();
+                restaurant_dbDataSet ds = new restaurant_dbDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2623,7 +2623,7 @@ namespace ITP4915_group3_project {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                _4523_g1_project_dbDataSet ds = new _4523_g1_project_dbDataSet();
+                restaurant_dbDataSet ds = new restaurant_dbDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3005,7 +3005,7 @@ namespace ITP4915_group3_project {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                _4523_g1_project_dbDataSet ds = new _4523_g1_project_dbDataSet();
+                restaurant_dbDataSet ds = new restaurant_dbDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4360,7 +4360,7 @@ namespace ITP4915_group3_project {
         }
     }
 }
-namespace ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters {
+namespace ITP4915_group3_project.restaurant_dbDataSetTableAdapters {
     
     
     /// <summary>
@@ -4515,7 +4515,7 @@ namespace ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(_4523_g1_project_dbDataSet.restaurantstockdetailDataTable dataTable) {
+        public virtual int Fill(restaurant_dbDataSet.restaurantstockdetailDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4528,9 +4528,9 @@ namespace ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual _4523_g1_project_dbDataSet.restaurantstockdetailDataTable GetData() {
+        public virtual restaurant_dbDataSet.restaurantstockdetailDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            _4523_g1_project_dbDataSet.restaurantstockdetailDataTable dataTable = new _4523_g1_project_dbDataSet.restaurantstockdetailDataTable();
+            restaurant_dbDataSet.restaurantstockdetailDataTable dataTable = new restaurant_dbDataSet.restaurantstockdetailDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5012,7 +5012,7 @@ namespace ITP4915_group3_project._4523_g1_project_dbDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[2];
+            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[3];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT          purchasers_request_id, requestor_ID, restaurant_ID, item_ID, qty, priority_id, status_ID, create_date, 
@@ -5051,13 +5051,36 @@ WHERE           (restaurant_ID = @restID) AND (purchasers_request_id=@requestID)
             param.SourceColumn = "purchasers_request_id";
             param.SourceVersion = global::System.Data.DataRowVersion.Current;
             this._commandCollection[1].Parameters.Add(param);
+            this._commandCollection[2] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = @"SELECT          purchasers_request_id, requestor_ID, restaurant_ID, item_ID, qty, priority_id, status_ID, create_date, 
+                            expected_delivery_date, remarks
+FROM               purchasers_request
+WHERE           (restaurant_ID = @restID) AND (item_ID LIKE @keyword) OR
+                            (restaurant_ID = @restID) AND (purchasers_request_id LIKE @keyword) ";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@restID";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "restaurant_ID";
+            param.SourceVersion = global::System.Data.DataRowVersion.Current;
+            this._commandCollection[2].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@keyword";
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.IsNullable = true;
+            param.SourceColumn = "item_ID";
+            param.SourceVersion = global::System.Data.DataRowVersion.Current;
+            this._commandCollection[2].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(_4523_g1_project_dbDataSet.purchasers_requestDataTable dataTable, int restID) {
+        public virtual int Fill(restaurant_dbDataSet.purchasers_requestDataTable dataTable, int restID) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(restID));
             if ((this.ClearBeforeFill == true)) {
@@ -5071,10 +5094,10 @@ WHERE           (restaurant_ID = @restID) AND (purchasers_request_id=@requestID)
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual _4523_g1_project_dbDataSet.purchasers_requestDataTable GetData(int restID) {
+        public virtual restaurant_dbDataSet.purchasers_requestDataTable GetData(int restID) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(restID));
-            _4523_g1_project_dbDataSet.purchasers_requestDataTable dataTable = new _4523_g1_project_dbDataSet.purchasers_requestDataTable();
+            restaurant_dbDataSet.purchasers_requestDataTable dataTable = new restaurant_dbDataSet.purchasers_requestDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5083,7 +5106,7 @@ WHERE           (restaurant_ID = @restID) AND (purchasers_request_id=@requestID)
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillBy_RestID_RequestID(_4523_g1_project_dbDataSet.purchasers_requestDataTable dataTable, int restID, int requestID) {
+        public virtual int FillBy_RestID_RequestID(restaurant_dbDataSet.purchasers_requestDataTable dataTable, int restID, int requestID) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(restID));
             this.Adapter.SelectCommand.Parameters[1].Value = ((int)(requestID));
@@ -5098,11 +5121,11 @@ WHERE           (restaurant_ID = @restID) AND (purchasers_request_id=@requestID)
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual _4523_g1_project_dbDataSet.purchasers_requestDataTable GetDataBy_RestID_RequestID(int restID, int requestID) {
+        public virtual restaurant_dbDataSet.purchasers_requestDataTable GetDataBy_RestID_RequestID(int restID, int requestID) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(restID));
             this.Adapter.SelectCommand.Parameters[1].Value = ((int)(requestID));
-            _4523_g1_project_dbDataSet.purchasers_requestDataTable dataTable = new _4523_g1_project_dbDataSet.purchasers_requestDataTable();
+            restaurant_dbDataSet.purchasers_requestDataTable dataTable = new restaurant_dbDataSet.purchasers_requestDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5110,14 +5133,34 @@ WHERE           (restaurant_ID = @restID) AND (purchasers_request_id=@requestID)
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(_4523_g1_project_dbDataSet.purchasers_requestDataTable dataTable) {
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBySearch(restaurant_dbDataSet.purchasers_requestDataTable dataTable, int restID, string keyword) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(restID));
+            if ((keyword == null)) {
+                throw new global::System.ArgumentNullException("keyword");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(keyword));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(restaurant_dbDataSet.purchasers_requestDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(_4523_g1_project_dbDataSet dataSet) {
+        public virtual int Update(restaurant_dbDataSet dataSet) {
             return this.Adapter.Update(dataSet, "purchasers_request");
         }
         
@@ -5676,7 +5719,7 @@ WHERE           (restaurant_ID = @restID) AND (purchasers_request_id=@requestID)
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(_4523_g1_project_dbDataSet.restaurant_stock_itemDataTable dataTable) {
+        public virtual int Fill(restaurant_dbDataSet.restaurant_stock_itemDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5689,9 +5732,9 @@ WHERE           (restaurant_ID = @restID) AND (purchasers_request_id=@requestID)
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual _4523_g1_project_dbDataSet.restaurant_stock_itemDataTable GetData() {
+        public virtual restaurant_dbDataSet.restaurant_stock_itemDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            _4523_g1_project_dbDataSet.restaurant_stock_itemDataTable dataTable = new _4523_g1_project_dbDataSet.restaurant_stock_itemDataTable();
+            restaurant_dbDataSet.restaurant_stock_itemDataTable dataTable = new restaurant_dbDataSet.restaurant_stock_itemDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5699,14 +5742,14 @@ WHERE           (restaurant_ID = @restID) AND (purchasers_request_id=@requestID)
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(_4523_g1_project_dbDataSet.restaurant_stock_itemDataTable dataTable) {
+        public virtual int Update(restaurant_dbDataSet.restaurant_stock_itemDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(_4523_g1_project_dbDataSet dataSet) {
+        public virtual int Update(restaurant_dbDataSet dataSet) {
             return this.Adapter.Update(dataSet, "restaurant_stock_item");
         }
         
@@ -6058,7 +6101,7 @@ WHERE           (restaurant_stock_item.restaurant_ID = @restID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(_4523_g1_project_dbDataSet.requestOrder_restaurant_stockDataTable dataTable, int restID) {
+        public virtual int Fill(restaurant_dbDataSet.requestOrder_restaurant_stockDataTable dataTable, int restID) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(restID));
             if ((this.ClearBeforeFill == true)) {
@@ -6072,10 +6115,10 @@ WHERE           (restaurant_stock_item.restaurant_ID = @restID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual _4523_g1_project_dbDataSet.requestOrder_restaurant_stockDataTable GetData(int restID) {
+        public virtual restaurant_dbDataSet.requestOrder_restaurant_stockDataTable GetData(int restID) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(restID));
-            _4523_g1_project_dbDataSet.requestOrder_restaurant_stockDataTable dataTable = new _4523_g1_project_dbDataSet.requestOrder_restaurant_stockDataTable();
+            restaurant_dbDataSet.requestOrder_restaurant_stockDataTable dataTable = new restaurant_dbDataSet.requestOrder_restaurant_stockDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -6260,7 +6303,7 @@ WHERE           (purchasers_request.restaurant_ID = @restID) AND (purchasers_req
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int FillBy_RestID_RequestID(_4523_g1_project_dbDataSet.requestDetail_purhcases_requestDataTable dataTable, int restID, int requestID) {
+        public virtual int FillBy_RestID_RequestID(restaurant_dbDataSet.requestDetail_purhcases_requestDataTable dataTable, int restID, int requestID) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(restID));
             this.Adapter.SelectCommand.Parameters[1].Value = ((int)(requestID));
@@ -6275,11 +6318,11 @@ WHERE           (purchasers_request.restaurant_ID = @restID) AND (purchasers_req
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual _4523_g1_project_dbDataSet.requestDetail_purhcases_requestDataTable GetDataBy_RestID_RequestID(int restID, int requestID) {
+        public virtual restaurant_dbDataSet.requestDetail_purhcases_requestDataTable GetDataBy_RestID_RequestID(int restID, int requestID) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(restID));
             this.Adapter.SelectCommand.Parameters[1].Value = ((int)(requestID));
-            _4523_g1_project_dbDataSet.requestDetail_purhcases_requestDataTable dataTable = new _4523_g1_project_dbDataSet.requestDetail_purhcases_requestDataTable();
+            restaurant_dbDataSet.requestDetail_purhcases_requestDataTable dataTable = new restaurant_dbDataSet.requestDetail_purhcases_requestDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -6459,7 +6502,7 @@ WHERE           (restaurant_stock_item.restaurant_ID = @restID) AND (restaurant_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(_4523_g1_project_dbDataSet.restaurant_stock_detailDataTable dataTable, int restID, int itemID) {
+        public virtual int Fill(restaurant_dbDataSet.restaurant_stock_detailDataTable dataTable, int restID, int itemID) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(restID));
             this.Adapter.SelectCommand.Parameters[1].Value = ((int)(itemID));
@@ -6474,11 +6517,11 @@ WHERE           (restaurant_stock_item.restaurant_ID = @restID) AND (restaurant_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual _4523_g1_project_dbDataSet.restaurant_stock_detailDataTable GetData(int restID, int itemID) {
+        public virtual restaurant_dbDataSet.restaurant_stock_detailDataTable GetData(int restID, int itemID) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(restID));
             this.Adapter.SelectCommand.Parameters[1].Value = ((int)(itemID));
-            _4523_g1_project_dbDataSet.restaurant_stock_detailDataTable dataTable = new _4523_g1_project_dbDataSet.restaurant_stock_detailDataTable();
+            restaurant_dbDataSet.restaurant_stock_detailDataTable dataTable = new restaurant_dbDataSet.restaurant_stock_detailDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -7070,7 +7113,7 @@ WHERE           (restaurant_stock_item.restaurant_ID = @restID) AND (restaurant_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(_4523_g1_project_dbDataSet.userDataTable dataTable) {
+        public virtual int Fill(restaurant_dbDataSet.userDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -7083,9 +7126,9 @@ WHERE           (restaurant_stock_item.restaurant_ID = @restID) AND (restaurant_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual _4523_g1_project_dbDataSet.userDataTable GetData() {
+        public virtual restaurant_dbDataSet.userDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            _4523_g1_project_dbDataSet.userDataTable dataTable = new _4523_g1_project_dbDataSet.userDataTable();
+            restaurant_dbDataSet.userDataTable dataTable = new restaurant_dbDataSet.userDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -7094,7 +7137,7 @@ WHERE           (restaurant_stock_item.restaurant_ID = @restID) AND (restaurant_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillBy_UserName_Password(_4523_g1_project_dbDataSet.userDataTable dataTable, string password, int user_id) {
+        public virtual int FillBy_UserName_Password(restaurant_dbDataSet.userDataTable dataTable, string password, int user_id) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
             if ((password == null)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
@@ -7114,7 +7157,7 @@ WHERE           (restaurant_stock_item.restaurant_ID = @restID) AND (restaurant_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual _4523_g1_project_dbDataSet.userDataTable GetDataBy_UserName_Password(string password, int user_id) {
+        public virtual restaurant_dbDataSet.userDataTable GetDataBy_UserName_Password(string password, int user_id) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
             if ((password == null)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
@@ -7123,7 +7166,7 @@ WHERE           (restaurant_stock_item.restaurant_ID = @restID) AND (restaurant_
                 this.Adapter.SelectCommand.Parameters[0].Value = ((string)(password));
             }
             this.Adapter.SelectCommand.Parameters[1].Value = ((int)(user_id));
-            _4523_g1_project_dbDataSet.userDataTable dataTable = new _4523_g1_project_dbDataSet.userDataTable();
+            restaurant_dbDataSet.userDataTable dataTable = new restaurant_dbDataSet.userDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -7131,14 +7174,14 @@ WHERE           (restaurant_stock_item.restaurant_ID = @restID) AND (restaurant_
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(_4523_g1_project_dbDataSet.userDataTable dataTable) {
+        public virtual int Update(restaurant_dbDataSet.userDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(_4523_g1_project_dbDataSet dataSet) {
+        public virtual int Update(restaurant_dbDataSet dataSet) {
             return this.Adapter.Update(dataSet, "user");
         }
         
@@ -7601,7 +7644,7 @@ WHERE           (restaurant_stock_item.restaurant_ID = @restID) AND (restaurant_
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(_4523_g1_project_dbDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(restaurant_dbDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._userTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.user.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -7638,7 +7681,7 @@ WHERE           (restaurant_stock_item.restaurant_ID = @restID) AND (restaurant_
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(_4523_g1_project_dbDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(restaurant_dbDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._userTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.user.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -7672,7 +7715,7 @@ WHERE           (restaurant_stock_item.restaurant_ID = @restID) AND (restaurant_
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(_4523_g1_project_dbDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(restaurant_dbDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._restaurant_stock_itemTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.restaurant_stock_item.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -7730,7 +7773,7 @@ WHERE           (restaurant_stock_item.restaurant_ID = @restID) AND (restaurant_
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(_4523_g1_project_dbDataSet dataSet) {
+        public virtual int UpdateAll(restaurant_dbDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

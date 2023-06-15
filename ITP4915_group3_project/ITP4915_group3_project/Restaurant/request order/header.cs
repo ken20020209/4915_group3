@@ -35,6 +35,9 @@ namespace ITP4915_group3_project.Restaurant.request_order
             new request_order.search.check(panelContent);
         }
 
+        private void kryptonPanelHeader_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
     }
 }

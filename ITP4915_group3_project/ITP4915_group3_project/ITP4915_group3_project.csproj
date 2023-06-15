@@ -518,6 +518,12 @@
     <Compile Include="Purchase\PO\header.Designer.cs">
       <DependentUpon>header.cs</DependentUpon>
     </Compile>
+    <Compile Include="Purchase\PO\search\BPA\search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\PO\search\BPA\search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
+    </Compile>
     <Compile Include="Purchase\PO\search\check.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -608,6 +614,12 @@
     <Compile Include="Purchase\request order\error process\urgent\create_success.Designer.cs">
       <DependentUpon>create_success.cs</DependentUpon>
     </Compile>
+    <Compile Include="Purchase\request order\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\request order\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
     <Compile Include="Purchase\request order\process\process_fail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -650,23 +662,37 @@
     <Compile Include="Purchase\request order\process\warehouse_list_notmatch.Designer.cs">
       <DependentUpon>warehouse_list_notmatch.cs</DependentUpon>
     </Compile>
+    <Compile Include="Purchase\set rule\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\set rule\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
     <Compile Include="Purchase\set rule\main.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Purchase\set rule\main.Designer.cs">
       <DependentUpon>main.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\set rule\match.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Purchase\set rule\match.Designer.cs">
       <DependentUpon>match.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\set rule\time.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Purchase\set rule\time.Designer.cs">
       <DependentUpon>time.cs</DependentUpon>
+    </Compile>
+    <Compile Include="purchase_dbDataSet.cs">
+      <DependentUpon>purchase_dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="purchase_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>purchase_dbDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Restaurant\delivery note\header.cs">
       <SubType>UserControl</SubType>
@@ -801,11 +827,23 @@
     <Compile Include="warehouse\check_PO\detail.Designer.cs">
       <DependentUpon>detail.cs</DependentUpon>
     </Compile>
-    <Compile Include="warehouse\check_PO\review.cs">
-      <SubType>Form</SubType>
+    <Compile Include="warehouse\check_PO\header.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="warehouse\check_PO\review.Designer.cs">
-      <DependentUpon>review.cs</DependentUpon>
+    <Compile Include="warehouse\check_PO\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\check_PO\review1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="warehouse\check_PO\review1.Designer.cs">
+      <DependentUpon>review1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\check_PO\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="warehouse\check_PO\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
     <Compile Include="warehouse\delivery_note\detail.cs">
       <SubType>Form</SubType>
@@ -909,13 +947,13 @@
     <Compile Include="warehouse\warehouse.Designer.cs">
       <DependentUpon>warehouse.cs</DependentUpon>
     </Compile>
-    <Compile Include="_4523_g1_project_dbDataSet.cs">
-      <DependentUpon>_4523_g1_project_dbDataSet.xsd</DependentUpon>
+    <Compile Include="restaurant_dbDataSet.cs">
+      <DependentUpon>restaurant_dbDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="_4523_g1_project_dbDataSet.Designer.cs">
+    <Compile Include="restaurant_dbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>_4523_g1_project_dbDataSet.xsd</DependentUpon>
+      <DependentUpon>restaurant_dbDataSet.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Accounting\accounting.resx">
       <DependentUpon>accounting.cs</DependentUpon>
@@ -1129,6 +1167,9 @@
     <EmbeddedResource Include="Purchase\PO\header.resx">
       <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PO\search\BPA\search.resx">
+      <DependentUpon>search.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PO\search\check.resx">
       <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
@@ -1174,6 +1215,9 @@
     <EmbeddedResource Include="Purchase\request order\error process\urgent\create_success.resx">
       <DependentUpon>create_success.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\request order\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Purchase\request order\process\process_fail.resx">
       <DependentUpon>process_fail.cs</DependentUpon>
     </EmbeddedResource>
@@ -1194,6 +1238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\request order\process\warehouse_list_notmatch.resx">
       <DependentUpon>warehouse_list_notmatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\set rule\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\set rule\main.resx">
       <DependentUpon>main.cs</DependentUpon>
@@ -1270,8 +1317,11 @@
     <EmbeddedResource Include="warehouse\check_PO\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="warehouse\check_PO\review.resx">
-      <DependentUpon>review.cs</DependentUpon>
+    <EmbeddedResource Include="warehouse\check_PO\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\check_PO\review1.resx">
+      <DependentUpon>review1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\delivery_note\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>
@@ -1334,16 +1384,27 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="_4523_g1_project_dbDataSet.xsc">
-      <DependentUpon>_4523_g1_project_dbDataSet.xsd</DependentUpon>
+    <None Include="purchase_dbDataSet.xsc">
+      <DependentUpon>purchase_dbDataSet.xsd</DependentUpon>
     </None>
-    <None Include="_4523_g1_project_dbDataSet.xsd">
+    <None Include="purchase_dbDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_4523_g1_project_dbDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>purchase_dbDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="_4523_g1_project_dbDataSet.xss">
-      <DependentUpon>_4523_g1_project_dbDataSet.xsd</DependentUpon>
+    <None Include="purchase_dbDataSet.xss">
+      <DependentUpon>purchase_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="restaurant_dbDataSet.xsc">
+      <DependentUpon>restaurant_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="restaurant_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restaurant_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restaurant_dbDataSet.xss">
+      <DependentUpon>restaurant_dbDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -1548,7 +1609,9 @@
     <None Include="Resources\icons8-delivery-time-50.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="category\NewFolder1\" />
+    <Folder Include="Purchase\PO\search\CPA\" />
+    <Folder Include="Purchase\PO\search\PPO\" />
+    <Folder Include="Purchase\PO\search\SPO\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
