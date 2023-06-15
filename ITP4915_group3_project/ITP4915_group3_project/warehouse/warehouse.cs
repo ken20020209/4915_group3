@@ -20,10 +20,6 @@ namespace ITP4915_group3_project.warehouse
             kryptonBtnCheckPO_Click(null, null);
         }
 
-        private void warehouse_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void kryptonPanel4_Paint(object sender, PaintEventArgs e)
         {
