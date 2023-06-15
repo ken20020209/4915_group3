@@ -532,6 +532,12 @@
     <Compile Include="Purchase\PO\search\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>
     </Compile>
+    <Compile Include="Purchase\PO\search\CPA\search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\PO\search\CPA\search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
+    </Compile>
     <Compile Include="Purchase\PO\search\delete_confirm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -555,6 +561,18 @@
     </Compile>
     <Compile Include="Purchase\PO\search\edit.Designer.cs">
       <DependentUpon>edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PO\search\PPO\search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\PO\search\PPO\search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PO\search\SPO\search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\PO\search\SPO\search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\purchase.cs">
       <SubType>Form</SubType>
@@ -1175,6 +1193,9 @@
     <EmbeddedResource Include="Purchase\PO\search\check.resx">
       <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PO\search\CPA\search.resx">
+      <DependentUpon>search.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PO\search\delete_confirm.resx">
       <DependentUpon>delete_confirm.cs</DependentUpon>
     </EmbeddedResource>
@@ -1186,6 +1207,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PO\search\edit.resx">
       <DependentUpon>edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PO\search\PPO\search.resx">
+      <DependentUpon>search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PO\search\SPO\search.resx">
+      <DependentUpon>search.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\purchase.resx">
       <DependentUpon>purchase.cs</DependentUpon>
@@ -1610,10 +1637,6 @@
   <ItemGroup>
     <None Include="Resources\icons8-delivery-time-50.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Purchase\PO\search\CPA\" />
-    <Folder Include="Purchase\PO\search\PPO\" />
-    <Folder Include="Purchase\PO\search\SPO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
