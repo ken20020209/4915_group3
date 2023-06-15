@@ -46,6 +46,8 @@ namespace ITP4915_group3_project {
         
         private cpa_itemDataTable tablecpa_item;
         
+        private bpa_search_resultDataTable tablebpa_search_result;
+        
         private global::System.Data.DataRelation relationBPA_header_buyer_ID_fk;
         
         private global::System.Data.DataRelation relationBPA_header_supplier_ID_fk;
@@ -87,6 +89,8 @@ namespace ITP4915_group3_project {
         private global::System.Data.DataRelation relationCPA_item_ID_fk1;
         
         private global::System.Data.DataRelation relationCPA_supplier_ID_fk1;
+        
+        private global::System.Data.DataRelation relationBPA_lines_header_ID_fk1;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -148,6 +152,9 @@ namespace ITP4915_group3_project {
                 }
                 if ((ds.Tables["cpa_item"] != null)) {
                     base.Tables.Add(new cpa_itemDataTable(ds.Tables["cpa_item"]));
+                }
+                if ((ds.Tables["bpa_search_result"] != null)) {
+                    base.Tables.Add(new bpa_search_resultDataTable(ds.Tables["bpa_search_result"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -279,6 +286,16 @@ namespace ITP4915_group3_project {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public bpa_search_resultDataTable bpa_search_result {
+            get {
+                return this.tablebpa_search_result;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -376,6 +393,9 @@ namespace ITP4915_group3_project {
                 }
                 if ((ds.Tables["cpa_item"] != null)) {
                     base.Tables.Add(new cpa_itemDataTable(ds.Tables["cpa_item"]));
+                }
+                if ((ds.Tables["bpa_search_result"] != null)) {
+                    base.Tables.Add(new bpa_search_resultDataTable(ds.Tables["bpa_search_result"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -476,6 +496,12 @@ namespace ITP4915_group3_project {
                     this.tablecpa_item.InitVars();
                 }
             }
+            this.tablebpa_search_result = ((bpa_search_resultDataTable)(base.Tables["bpa_search_result"]));
+            if ((initTable == true)) {
+                if ((this.tablebpa_search_result != null)) {
+                    this.tablebpa_search_result.InitVars();
+                }
+            }
             this.relationBPA_header_buyer_ID_fk = this.Relations["BPA_header_buyer_ID_fk"];
             this.relationBPA_header_supplier_ID_fk = this.Relations["BPA_header_supplier_ID_fk"];
             this.relationBPA_lines_header_ID_fk = this.Relations["BPA_lines_header_ID_fk"];
@@ -497,6 +523,7 @@ namespace ITP4915_group3_project {
             this.relationCPA_buyer_ID_fk1 = this.Relations["CPA_buyer_ID_fk1"];
             this.relationCPA_item_ID_fk1 = this.Relations["CPA_item_ID_fk1"];
             this.relationCPA_supplier_ID_fk1 = this.Relations["CPA_supplier_ID_fk1"];
+            this.relationBPA_lines_header_ID_fk1 = this.Relations["BPA_lines_header_ID_fk1"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -529,6 +556,8 @@ namespace ITP4915_group3_project {
             base.Tables.Add(this.tablespo_lines);
             this.tablecpa_item = new cpa_itemDataTable();
             base.Tables.Add(this.tablecpa_item);
+            this.tablebpa_search_result = new bpa_search_resultDataTable();
+            base.Tables.Add(this.tablebpa_search_result);
             this.relationBPA_header_buyer_ID_fk = new global::System.Data.DataRelation("BPA_header_buyer_ID_fk", new global::System.Data.DataColumn[] {
                         this.tableuser.user_idColumn}, new global::System.Data.DataColumn[] {
                         this.tablebpa_header.buyer_IDColumn}, false);
@@ -613,6 +642,10 @@ namespace ITP4915_group3_project {
                         this.tablesupplier.supplier_IDColumn}, new global::System.Data.DataColumn[] {
                         this.tablecpa_item.supplier_IDColumn}, false);
             this.Relations.Add(this.relationCPA_supplier_ID_fk1);
+            this.relationBPA_lines_header_ID_fk1 = new global::System.Data.DataRelation("BPA_lines_header_ID_fk1", new global::System.Data.DataColumn[] {
+                        this.tablebpa_search_result.header_IDColumn}, new global::System.Data.DataColumn[] {
+                        this.tablebpa_lines.header_IDColumn}, false);
+            this.Relations.Add(this.relationBPA_lines_header_ID_fk1);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -678,6 +711,12 @@ namespace ITP4915_group3_project {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private bool ShouldSerializecpa_item() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private bool ShouldSerializebpa_search_result() {
             return false;
         }
         
@@ -768,6 +807,9 @@ namespace ITP4915_group3_project {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public delegate void cpa_itemRowChangeEventHandler(object sender, cpa_itemRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public delegate void bpa_search_resultRowChangeEventHandler(object sender, bpa_search_resultRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -4993,6 +5035,298 @@ namespace ITP4915_group3_project {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class bpa_search_resultDataTable : global::System.Data.TypedTableBase<bpa_search_resultRow> {
+            
+            private global::System.Data.DataColumn columnheader_ID;
+            
+            private global::System.Data.DataColumn columncreate_date;
+            
+            private global::System.Data.DataColumn columnsuplier_name;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bpa_search_resultDataTable() {
+                this.TableName = "bpa_search_result";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal bpa_search_resultDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected bpa_search_resultDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn header_IDColumn {
+                get {
+                    return this.columnheader_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn create_dateColumn {
+                get {
+                    return this.columncreate_date;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn suplier_nameColumn {
+                get {
+                    return this.columnsuplier_name;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bpa_search_resultRow this[int index] {
+                get {
+                    return ((bpa_search_resultRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event bpa_search_resultRowChangeEventHandler bpa_search_resultRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event bpa_search_resultRowChangeEventHandler bpa_search_resultRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event bpa_search_resultRowChangeEventHandler bpa_search_resultRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event bpa_search_resultRowChangeEventHandler bpa_search_resultRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Addbpa_search_resultRow(bpa_search_resultRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bpa_search_resultRow Addbpa_search_resultRow(System.DateTime create_date, string suplier_name) {
+                bpa_search_resultRow rowbpa_search_resultRow = ((bpa_search_resultRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        create_date,
+                        suplier_name};
+                rowbpa_search_resultRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowbpa_search_resultRow);
+                return rowbpa_search_resultRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bpa_search_resultRow FindByheader_ID(int header_ID) {
+                return ((bpa_search_resultRow)(this.Rows.Find(new object[] {
+                            header_ID})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                bpa_search_resultDataTable cln = ((bpa_search_resultDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new bpa_search_resultDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal void InitVars() {
+                this.columnheader_ID = base.Columns["header_ID"];
+                this.columncreate_date = base.Columns["create_date"];
+                this.columnsuplier_name = base.Columns["suplier name"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            private void InitClass() {
+                this.columnheader_ID = new global::System.Data.DataColumn("header_ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnheader_ID);
+                this.columncreate_date = new global::System.Data.DataColumn("create_date", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncreate_date);
+                this.columnsuplier_name = new global::System.Data.DataColumn("suplier name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnsuplier_name);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnheader_ID}, true));
+                this.columnheader_ID.AutoIncrement = true;
+                this.columnheader_ID.AutoIncrementSeed = -1;
+                this.columnheader_ID.AutoIncrementStep = -1;
+                this.columnheader_ID.AllowDBNull = false;
+                this.columnheader_ID.Unique = true;
+                this.columncreate_date.AllowDBNull = false;
+                this.columnsuplier_name.AllowDBNull = false;
+                this.columnsuplier_name.MaxLength = 30;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bpa_search_resultRow Newbpa_search_resultRow() {
+                return ((bpa_search_resultRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new bpa_search_resultRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(bpa_search_resultRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.bpa_search_resultRowChanged != null)) {
+                    this.bpa_search_resultRowChanged(this, new bpa_search_resultRowChangeEvent(((bpa_search_resultRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.bpa_search_resultRowChanging != null)) {
+                    this.bpa_search_resultRowChanging(this, new bpa_search_resultRowChangeEvent(((bpa_search_resultRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.bpa_search_resultRowDeleted != null)) {
+                    this.bpa_search_resultRowDeleted(this, new bpa_search_resultRowChangeEvent(((bpa_search_resultRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.bpa_search_resultRowDeleting != null)) {
+                    this.bpa_search_resultRowDeleting(this, new bpa_search_resultRowChangeEvent(((bpa_search_resultRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Removebpa_search_resultRow(bpa_search_resultRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                purchase_dbDataSet ds = new purchase_dbDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "bpa_search_resultDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class bpa_headerRow : global::System.Data.DataRow {
@@ -5331,6 +5665,17 @@ namespace ITP4915_group3_project {
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["BPA_lines_item_ID_fk"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bpa_search_resultRow bpa_search_resultRow {
+                get {
+                    return ((bpa_search_resultRow)(this.GetParentRow(this.Table.ParentRelations["BPA_lines_header_ID_fk1"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["BPA_lines_header_ID_fk1"]);
                 }
             }
             
@@ -6965,6 +7310,65 @@ namespace ITP4915_group3_project {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class bpa_search_resultRow : global::System.Data.DataRow {
+            
+            private bpa_search_resultDataTable tablebpa_search_result;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal bpa_search_resultRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tablebpa_search_result = ((bpa_search_resultDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int header_ID {
+                get {
+                    return ((int)(this[this.tablebpa_search_result.header_IDColumn]));
+                }
+                set {
+                    this[this.tablebpa_search_result.header_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public System.DateTime create_date {
+                get {
+                    return ((global::System.DateTime)(this[this.tablebpa_search_result.create_dateColumn]));
+                }
+                set {
+                    this[this.tablebpa_search_result.create_dateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string suplier_name {
+                get {
+                    return ((string)(this[this.tablebpa_search_result.suplier_nameColumn]));
+                }
+                set {
+                    this[this.tablebpa_search_result.suplier_nameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bpa_linesRow[] Getbpa_linesRows() {
+                if ((this.Table.ChildRelations["BPA_lines_header_ID_fk1"] == null)) {
+                    return new bpa_linesRow[0];
+                }
+                else {
+                    return ((bpa_linesRow[])(base.GetChildRows(this.Table.ChildRelations["BPA_lines_header_ID_fk1"])));
+                }
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -7324,6 +7728,40 @@ namespace ITP4915_group3_project {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public cpa_itemRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public class bpa_search_resultRowChangeEvent : global::System.EventArgs {
+            
+            private bpa_search_resultRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bpa_search_resultRowChangeEvent(bpa_search_resultRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bpa_search_resultRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -14265,6 +14703,199 @@ FROM               cpa INNER JOIN
         public virtual purchase_dbDataSet.cpa_itemDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             purchase_dbDataSet.cpa_itemDataTable dataTable = new purchase_dbDataSet.cpa_itemDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class bpa_search_resultTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::MySql.Data.MySqlClient.MySqlDataAdapter _adapter;
+        
+        private global::MySql.Data.MySqlClient.MySqlConnection _connection;
+        
+        private global::MySql.Data.MySqlClient.MySqlTransaction _transaction;
+        
+        private global::MySql.Data.MySqlClient.MySqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public bpa_search_resultTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected internal global::MySql.Data.MySqlClient.MySqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::MySql.Data.MySqlClient.MySqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::MySql.Data.MySqlClient.MySqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::MySql.Data.MySqlClient.MySqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected global::MySql.Data.MySqlClient.MySqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::MySql.Data.MySqlClient.MySqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "bpa_search_result";
+            tableMapping.ColumnMappings.Add("header_ID", "header_ID");
+            tableMapping.ColumnMappings.Add("create_date", "create_date");
+            tableMapping.ColumnMappings.Add("suplier name", "suplier name");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
+            this._connection.ConnectionString = global::ITP4915_group3_project.Properties.Settings.Default._4523_g1_project_dbConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[1];
+            this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = @"SELECT          bpa_header.header_ID, bpa_header.create_date, supplier.name AS `suplier name`
+FROM               bpa_header INNER JOIN
+                            supplier ON bpa_header.supplier_ID = supplier.supplier_ID
+WHERE           (supplier.name LIKE @keyword) OR
+                            (bpa_header.header_ID LIKE @keyword)";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            global::MySql.Data.MySqlClient.MySqlParameter param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@keyword";
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 30;
+            param.IsNullable = true;
+            param.SourceColumn = "suplier name";
+            param.SourceVersion = global::System.Data.DataRowVersion.Current;
+            this._commandCollection[0].Parameters.Add(param);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(purchase_dbDataSet.bpa_search_resultDataTable dataTable, string keyword) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((keyword == null)) {
+                throw new global::System.ArgumentNullException("keyword");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(keyword));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual purchase_dbDataSet.bpa_search_resultDataTable GetData(string keyword) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((keyword == null)) {
+                throw new global::System.ArgumentNullException("keyword");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(keyword));
+            }
+            purchase_dbDataSet.bpa_search_resultDataTable dataTable = new purchase_dbDataSet.bpa_search_resultDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }

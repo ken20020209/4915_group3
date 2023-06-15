@@ -512,6 +512,12 @@
     <Compile Include="Purchase\PO\header.Designer.cs">
       <DependentUpon>header.cs</DependentUpon>
     </Compile>
+    <Compile Include="Purchase\PO\search\BPA\search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\PO\search\BPA\search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
+    </Compile>
     <Compile Include="Purchase\PO\search\check.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1152,6 +1158,9 @@
     <EmbeddedResource Include="Purchase\PO\header.resx">
       <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PO\search\BPA\search.resx">
+      <DependentUpon>search.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PO\search\check.resx">
       <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
@@ -1590,6 +1599,10 @@
   <ItemGroup>
     <None Include="Resources\icons8-delivery-time-50.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Purchase\PO\search\CPA\" />
+    <Folder Include="Purchase\PO\search\PPO\" />
+    <Folder Include="Purchase\PO\search\SPO\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
