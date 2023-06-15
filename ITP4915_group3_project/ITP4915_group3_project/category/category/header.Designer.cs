@@ -74,6 +74,7 @@ namespace ITP4915_group3_project.category.category
             this.kryptonButtonCreate.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButtonCreate.TabIndex = 209;
             this.kryptonButtonCreate.Values.Text = "Create";
+            this.kryptonButtonCreate.Click += new System.EventHandler(this.kryptonButtonCreate_Click);
             // 
             // kryptonLabelTitle
             // 
