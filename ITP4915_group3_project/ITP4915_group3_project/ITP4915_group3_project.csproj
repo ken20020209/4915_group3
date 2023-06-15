@@ -1548,6 +1548,7 @@
     <None Include="Resources\icons8-purchase-order-40 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Helen的懺悔.txt" />
     <Content Include="ken的遺言.txt" />
   </ItemGroup>
   <ItemGroup>
