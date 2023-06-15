@@ -225,6 +225,12 @@
     <Compile Include="category\category\create\create_success.Designer.cs">
       <DependentUpon>create_success.cs</DependentUpon>
     </Compile>
+    <Compile Include="category\category\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\category\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
     <Compile Include="category\category\select\check.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -262,7 +268,7 @@
       <DependentUpon>edit.cs</DependentUpon>
     </Compile>
     <Compile Include="category\produce\create\create.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="category\produce\create\create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
@@ -275,6 +281,12 @@
     </Compile>
     <Compile Include="category\produce\create\create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\produce\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\produce\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
     </Compile>
     <Compile Include="category\produce\search\check.cs">
       <SubType>UserControl</SubType>
@@ -1008,6 +1020,9 @@
     <EmbeddedResource Include="category\category\create\create_success.resx">
       <DependentUpon>create_success.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="category\category\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="category\category\select\check.resx">
       <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
@@ -1025,6 +1040,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="category\produce\create\create_success.resx">
       <DependentUpon>create_success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\produce\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\produce\search\check.resx">
       <DependentUpon>check.cs</DependentUpon>
