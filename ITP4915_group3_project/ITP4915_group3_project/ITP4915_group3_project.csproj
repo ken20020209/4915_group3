@@ -662,6 +662,9 @@
     <Compile Include="Purchase\set rule\time.Designer.cs">
       <DependentUpon>time.cs</DependentUpon>
     </Compile>
+    <Compile Include="purchase_dbDataSet.cs">
+      <DependentUpon>purchase_dbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="purchase_dbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -807,7 +810,7 @@
       <DependentUpon>header.cs</DependentUpon>
     </Compile>
     <Compile Include="warehouse\check_PO\review1.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="warehouse\check_PO\review1.Designer.cs">
       <DependentUpon>review1.cs</DependentUpon>
