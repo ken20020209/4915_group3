@@ -163,23 +163,17 @@
       <DependentUpon>all_use.cs</DependentUpon>
     </Compile>
     <Compile Include="batchProcessing\requestMatch.cs" />
-    <Compile Include="category\brand\create\create.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="category\brand\create\create.Designer.cs">
-      <DependentUpon>create.cs</DependentUpon>
-    </Compile>
     <Compile Include="category\brand\create\create_success.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="category\brand\create\create_success.Designer.cs">
       <DependentUpon>create_success.cs</DependentUpon>
     </Compile>
-    <Compile Include="category\brand\search\check.cs">
-      <SubType>Form</SubType>
+    <Compile Include="category\brand\create\create.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="category\brand\search\check.Designer.cs">
-      <DependentUpon>check.cs</DependentUpon>
+    <Compile Include="category\brand\create\create.Designer.cs">
+      <DependentUpon>create.cs</DependentUpon>
     </Compile>
     <Compile Include="category\brand\search\delete_confirm.cs">
       <SubType>Form</SubType>
@@ -193,14 +187,20 @@
     <Compile Include="category\brand\search\delete_success.Designer.cs">
       <DependentUpon>delete_success.cs</DependentUpon>
     </Compile>
+    <Compile Include="category\brand\search\check.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\brand\search\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
     <Compile Include="category\brand\search\detail.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="category\brand\search\detail.Designer.cs">
       <DependentUpon>detail.cs</DependentUpon>
     </Compile>
     <Compile Include="category\brand\search\edit.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="category\brand\search\edit.Designer.cs">
       <DependentUpon>edit.cs</DependentUpon>
@@ -223,17 +223,17 @@
     <Compile Include="category\category\create\create_success.Designer.cs">
       <DependentUpon>create_success.cs</DependentUpon>
     </Compile>
+    <Compile Include="category\category\select\check.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\category\select\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
     <Compile Include="category\category\header.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="category\category\header.Designer.cs">
       <DependentUpon>header.cs</DependentUpon>
-    </Compile>
-    <Compile Include="category\category\select\check.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="category\category\select\check.Designer.cs">
-      <DependentUpon>check.cs</DependentUpon>
     </Compile>
     <Compile Include="category\category\select\delete.cs">
       <SubType>Form</SubType>
@@ -254,22 +254,16 @@
       <DependentUpon>delete_success.cs</DependentUpon>
     </Compile>
     <Compile Include="category\category\select\detail.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="category\category\select\detail.Designer.cs">
       <DependentUpon>detail.cs</DependentUpon>
     </Compile>
     <Compile Include="category\category\select\edit.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="category\category\select\edit.Designer.cs">
       <DependentUpon>edit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="category\produce\create\create.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="category\produce\create\create.Designer.cs">
-      <DependentUpon>create.cs</DependentUpon>
     </Compile>
     <Compile Include="category\produce\create\create_success.cs">
       <SubType>Form</SubType>
@@ -277,11 +271,11 @@
     <Compile Include="category\produce\create\create_success.Designer.cs">
       <DependentUpon>create_success.cs</DependentUpon>
     </Compile>
-    <Compile Include="category\produce\search\check.cs">
-      <SubType>Form</SubType>
+    <Compile Include="category\produce\create\create.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="category\produce\search\check.Designer.cs">
-      <DependentUpon>check.cs</DependentUpon>
+    <Compile Include="category\produce\create\create.Designer.cs">
+      <DependentUpon>create.cs</DependentUpon>
     </Compile>
     <Compile Include="category\produce\search\delete_confrim.cs">
       <SubType>Form</SubType>
@@ -295,29 +289,35 @@
     <Compile Include="category\produce\search\delete_success.Designer.cs">
       <DependentUpon>delete_success.cs</DependentUpon>
     </Compile>
+    <Compile Include="category\produce\search\check.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\produce\search\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
     <Compile Include="category\produce\search\detail.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="category\produce\search\detail.Designer.cs">
       <DependentUpon>detail.cs</DependentUpon>
     </Compile>
     <Compile Include="category\produce\search\edit.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="category\produce\search\edit.Designer.cs">
       <DependentUpon>edit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="category\return_reson\create\create.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="category\return_reson\create\create.Designer.cs">
-      <DependentUpon>create.cs</DependentUpon>
     </Compile>
     <Compile Include="category\return_reson\create\create_success.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="category\return_reson\create\create_success.Designer.cs">
       <DependentUpon>create_success.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\return_reson\create\create.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\return_reson\create\create.Designer.cs">
+      <DependentUpon>create.cs</DependentUpon>
     </Compile>
     <Compile Include="category\return_reson\select\check.cs">
       <SubType>Form</SubType>
@@ -349,23 +349,17 @@
     <Compile Include="category\return_reson\select\edit.Designer.cs">
       <DependentUpon>edit.cs</DependentUpon>
     </Compile>
-    <Compile Include="category\supplier\create\create.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="category\supplier\create\create.Designer.cs">
-      <DependentUpon>create.cs</DependentUpon>
-    </Compile>
     <Compile Include="category\supplier\create\create_success.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="category\supplier\create\create_success.Designer.cs">
       <DependentUpon>create_success.cs</DependentUpon>
     </Compile>
-    <Compile Include="category\supplier\search\check.cs">
-      <SubType>Form</SubType>
+    <Compile Include="category\supplier\create\create.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="category\supplier\search\check.Designer.cs">
-      <DependentUpon>check.cs</DependentUpon>
+    <Compile Include="category\supplier\create\create.Designer.cs">
+      <DependentUpon>create.cs</DependentUpon>
     </Compile>
     <Compile Include="category\supplier\search\delete_confirm.cs">
       <SubType>Form</SubType>
@@ -379,14 +373,20 @@
     <Compile Include="category\supplier\search\delete_success.Designer.cs">
       <DependentUpon>delete_success.cs</DependentUpon>
     </Compile>
+    <Compile Include="category\supplier\search\check.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\supplier\search\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
     <Compile Include="category\supplier\search\detail.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="category\supplier\search\detail.Designer.cs">
       <DependentUpon>detail.cs</DependentUpon>
     </Compile>
     <Compile Include="category\supplier\search\edit.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="category\supplier\search\edit.Designer.cs">
       <DependentUpon>edit.cs</DependentUpon>
@@ -810,7 +810,7 @@
       <DependentUpon>update.cs</DependentUpon>
     </Compile>
     <Compile Include="warehouse\check_PO\detail.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="warehouse\check_PO\detail.Designer.cs">
       <DependentUpon>detail.cs</DependentUpon>
@@ -821,29 +821,11 @@
     <Compile Include="warehouse\check_PO\header.Designer.cs">
       <DependentUpon>header.cs</DependentUpon>
     </Compile>
-    <Compile Include="warehouse\check_PO\review1.cs">
+    <Compile Include="warehouse\check_PO\review.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="warehouse\check_PO\review1.Designer.cs">
-      <DependentUpon>review1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="warehouse\check_PO\UserControl1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="warehouse\check_PO\UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="warehouse\delivery_note\detail.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="warehouse\delivery_note\detail.Designer.cs">
-      <DependentUpon>detail.cs</DependentUpon>
-    </Compile>
-    <Compile Include="warehouse\delivery_note\process.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="warehouse\delivery_note\process.Designer.cs">
-      <DependentUpon>process.cs</DependentUpon>
+    <Compile Include="warehouse\check_PO\review.Designer.cs">
+      <DependentUpon>review.cs</DependentUpon>
     </Compile>
     <Compile Include="warehouse\delivery_note\process_confirm.cs">
       <SubType>Form</SubType>
@@ -857,18 +839,6 @@
     <Compile Include="warehouse\delivery_note\process_success.Designer.cs">
       <DependentUpon>process_success.cs</DependentUpon>
     </Compile>
-    <Compile Include="warehouse\delivery_note\search.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="warehouse\delivery_note\search.Designer.cs">
-      <DependentUpon>search.cs</DependentUpon>
-    </Compile>
-    <Compile Include="warehouse\delivery_note\sign.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="warehouse\delivery_note\sign.Designer.cs">
-      <DependentUpon>sign.cs</DependentUpon>
-    </Compile>
     <Compile Include="warehouse\delivery_note\sign_confirm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -881,11 +851,29 @@
     <Compile Include="warehouse\delivery_note\sign_success.Designer.cs">
       <DependentUpon>sign_success.cs</DependentUpon>
     </Compile>
-    <Compile Include="warehouse\picking_list\check.cs">
-      <SubType>Form</SubType>
+    <Compile Include="warehouse\delivery_note\detail.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="warehouse\picking_list\check.Designer.cs">
-      <DependentUpon>check.cs</DependentUpon>
+    <Compile Include="warehouse\delivery_note\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\delivery_note\process.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="warehouse\delivery_note\process.Designer.cs">
+      <DependentUpon>process.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\delivery_note\search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="warehouse\delivery_note\search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\delivery_note\sign.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="warehouse\delivery_note\sign.Designer.cs">
+      <DependentUpon>sign.cs</DependentUpon>
     </Compile>
     <Compile Include="warehouse\picking_list\confrim.cs">
       <SubType>Form</SubType>
@@ -911,20 +899,26 @@
     <Compile Include="warehouse\picking_list\success.Designer.cs">
       <DependentUpon>success.cs</DependentUpon>
     </Compile>
+    <Compile Include="warehouse\picking_list\check.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="warehouse\picking_list\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
     <Compile Include="warehouse\search_stock\check.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="warehouse\search_stock\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>
     </Compile>
     <Compile Include="warehouse\search_stock\item_info.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="warehouse\search_stock\item_info.Designer.cs">
       <DependentUpon>item_info.cs</DependentUpon>
     </Compile>
     <Compile Include="warehouse\search_stock\update.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="warehouse\search_stock\update.Designer.cs">
       <DependentUpon>update.cs</DependentUpon>
@@ -979,20 +973,20 @@
     <EmbeddedResource Include="all_use.resx">
       <DependentUpon>all_use.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="category\brand\create\create.resx">
-      <DependentUpon>create.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="category\brand\create\create_success.resx">
       <DependentUpon>create_success.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="category\brand\search\check.resx">
-      <DependentUpon>check.cs</DependentUpon>
+    <EmbeddedResource Include="category\brand\create\create.resx">
+      <DependentUpon>create.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\brand\search\delete_confirm.resx">
       <DependentUpon>delete_confirm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\brand\search\delete_success.resx">
       <DependentUpon>delete_success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\brand\search\check.resx">
+      <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\brand\search\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>
@@ -1009,11 +1003,11 @@
     <EmbeddedResource Include="category\category\create\create_success.resx">
       <DependentUpon>create_success.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="category\category\header.resx">
-      <DependentUpon>header.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="category\category\select\check.resx">
       <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\category\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\category\select\delete_confirm.resx">
       <DependentUpon>delete_confirm.cs</DependentUpon>
@@ -1027,14 +1021,11 @@
     <EmbeddedResource Include="category\category\select\edit.resx">
       <DependentUpon>edit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="category\produce\create\create.resx">
-      <DependentUpon>create.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="category\produce\create\create_success.resx">
       <DependentUpon>create_success.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="category\produce\search\check.resx">
-      <DependentUpon>check.cs</DependentUpon>
+    <EmbeddedResource Include="category\produce\create\create.resx">
+      <DependentUpon>create.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\produce\search\delete_confrim.resx">
       <DependentUpon>delete_confrim.cs</DependentUpon>
@@ -1042,17 +1033,20 @@
     <EmbeddedResource Include="category\produce\search\delete_success.resx">
       <DependentUpon>delete_success.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="category\produce\search\check.resx">
+      <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="category\produce\search\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\produce\search\edit.resx">
       <DependentUpon>edit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="category\return_reson\create\create.resx">
-      <DependentUpon>create.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="category\return_reson\create\create_success.resx">
       <DependentUpon>create_success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\return_reson\create\create.resx">
+      <DependentUpon>create.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\return_reson\select\check.resx">
       <DependentUpon>check.cs</DependentUpon>
@@ -1069,20 +1063,20 @@
     <EmbeddedResource Include="category\return_reson\select\edit.resx">
       <DependentUpon>edit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="category\supplier\create\create.resx">
-      <DependentUpon>create.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="category\supplier\create\create_success.resx">
       <DependentUpon>create_success.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="category\supplier\search\check.resx">
-      <DependentUpon>check.cs</DependentUpon>
+    <EmbeddedResource Include="category\supplier\create\create.resx">
+      <DependentUpon>create.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\supplier\search\delete_confirm.resx">
       <DependentUpon>delete_confirm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\supplier\search\delete_success.resx">
       <DependentUpon>delete_success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\supplier\search\check.resx">
+      <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\supplier\search\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>
@@ -1302,17 +1296,8 @@
     <EmbeddedResource Include="warehouse\check_PO\header.resx">
       <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="warehouse\check_PO\review1.resx">
-      <DependentUpon>review1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="warehouse\check_PO\UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="warehouse\delivery_note\detail.resx">
-      <DependentUpon>detail.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="warehouse\delivery_note\process.resx">
-      <DependentUpon>process.cs</DependentUpon>
+    <EmbeddedResource Include="warehouse\check_PO\review.resx">
+      <DependentUpon>review.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\delivery_note\process_confirm.resx">
       <DependentUpon>process_confirm.cs</DependentUpon>
@@ -1320,20 +1305,23 @@
     <EmbeddedResource Include="warehouse\delivery_note\process_success.resx">
       <DependentUpon>process_success.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="warehouse\delivery_note\search.resx">
-      <DependentUpon>search.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="warehouse\delivery_note\sign.resx">
-      <DependentUpon>sign.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="warehouse\delivery_note\sign_confirm.resx">
       <DependentUpon>sign_confirm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\delivery_note\sign_success.resx">
       <DependentUpon>sign_success.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="warehouse\picking_list\check.resx">
-      <DependentUpon>check.cs</DependentUpon>
+    <EmbeddedResource Include="warehouse\delivery_note\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\delivery_note\process.resx">
+      <DependentUpon>process.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\delivery_note\search.resx">
+      <DependentUpon>search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\delivery_note\sign.resx">
+      <DependentUpon>sign.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\picking_list\confrim.resx">
       <DependentUpon>confrim.cs</DependentUpon>
@@ -1346,6 +1334,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\picking_list\success.resx">
       <DependentUpon>success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\picking_list\check.resx">
+      <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\search_stock\check.resx">
       <DependentUpon>check.cs</DependentUpon>

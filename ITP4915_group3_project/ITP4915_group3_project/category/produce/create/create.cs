@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ITP4915_group3_project.category.produce.create
 {
-    public partial class create : Form
+    public partial class create : UserControl
     {
         public create()
         {

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ITP4915_group3_project.warehouse.delivery_note
 {
-    public partial class sign : Form
+    public partial class sign : UserControl
     {
         public sign()
         {

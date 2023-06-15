@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ITP4915_group3_project.warehouse.delivery_note
 {
-    public partial class process : Form
+    public partial class process : UserControl
     {
         public process()
         {

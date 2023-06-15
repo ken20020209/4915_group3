@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ITP4915_group3_project.warehouse.search_stock
 {
-    public partial class item_info : Form
+    public partial class item_info : UserControl
     {
         public item_info()
         {

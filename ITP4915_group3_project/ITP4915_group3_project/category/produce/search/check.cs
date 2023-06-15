@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ITP4915_group3_project.category.produce.search
 {
-    public partial class check : Form
+    public partial class check : UserControl
     {
         public check()
         {
