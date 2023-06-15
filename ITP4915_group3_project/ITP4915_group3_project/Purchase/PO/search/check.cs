@@ -22,7 +22,7 @@ namespace ITP4915_group3_project.Purchase.PO.search
 
         private void kryptonCheckButtonBPA_Click(object sender, EventArgs e)
         {
-
+            new BPA.search(kryptonPanelSearchResult, kryptonTextBoxSearchBar.Text);
         }
     }
 }

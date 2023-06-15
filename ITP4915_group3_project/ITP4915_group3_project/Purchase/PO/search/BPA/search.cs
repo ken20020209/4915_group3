@@ -17,7 +17,7 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             InitializeComponent();
             keyword = "%" + keyword + "%";
             panel.Controls.Clear();
-            panel.Controls.Add(panel);
+            panel.Controls.Add(this);
 
             this.bpa_search_resultTableAdapter.Fill(this.purchase_dbDataSet.bpa_search_result, keyword);
 
