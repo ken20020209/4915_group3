@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ITP4915_group3_project.warehouse.search_stock
 {
-    public partial class update : Form
+    public partial class update : UserControl
     {
         public update()
         {

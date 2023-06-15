@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ITP4915_group3_project.category.supplier.search
 {
-    public partial class detail : Form
+    public partial class detail : UserControl
     {
         public detail()
         {

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ITP4915_group3_project.category.select
+namespace ITP4915_group3_project.category.category.create
 {
-    public partial class check : Form
+    public partial class UserControl1 : UserControl
     {
-        public check()
+        public UserControl1()
         {
             InitializeComponent();
         }
