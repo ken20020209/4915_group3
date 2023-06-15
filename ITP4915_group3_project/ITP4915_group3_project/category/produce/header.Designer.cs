@@ -74,6 +74,7 @@ namespace ITP4915_group3_project.category.produce
             this.kryptonButtonReview.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonButtonReview.TabIndex = 210;
             this.kryptonButtonReview.Values.Text = "Review";
+            this.kryptonButtonReview.Click += new System.EventHandler(this.kryptonButtonReview_Click);
             // 
             // kryptonButtonCreate
             // 
@@ -97,6 +98,7 @@ namespace ITP4915_group3_project.category.produce
             this.kryptonButtonCreate.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonButtonCreate.TabIndex = 209;
             this.kryptonButtonCreate.Values.Text = "Create";
+            this.kryptonButtonCreate.Click += new System.EventHandler(this.kryptonButtonCreate_Click);
             // 
             // kryptonLabelTitle
             // 
