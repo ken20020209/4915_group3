@@ -1284,6 +1284,9 @@
     <EmbeddedResource Include="warehouse\check_PO\review1.resx">
       <DependentUpon>review1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\check_PO\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="warehouse\delivery_note\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>

@@ -16,5 +16,10 @@ namespace ITP4915_group3_project.warehouse.check_PO
         {
             InitializeComponent();
         }
+
+        private void UserControl1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

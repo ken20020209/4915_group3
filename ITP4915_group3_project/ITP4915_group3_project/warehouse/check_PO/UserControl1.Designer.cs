@@ -29,8 +29,16 @@ namespace ITP4915_group3_project.warehouse.check_PO
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // UserControl1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Name = "UserControl1";
+            this.Load += new System.EventHandler(this.UserControl1_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
