@@ -8,30 +8,29 @@
   <TableUISettings>
     <TableUISetting Name="bpa_header">
       <ColumnUISettings>
+        <ColumnUISetting Name="header_ID">
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+              <BindableControlInfo Name="NumericUpDown" Type="System.Windows.Forms.NumericUpDown" AssemblyName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+            </ControlSetting></ControlSettings>
+        </ColumnUISetting>
         <ColumnUISetting Name="purchase_order_revision">
-          <ControlSettings>
-            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
               <BindableControlInfo Name="ComboBox" Type="System.Windows.Forms.ComboBox" AssemblyName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-            </ControlSetting>
-          </ControlSettings>
+            </ControlSetting></ControlSettings>
         </ColumnUISetting>
       </ColumnUISettings>
     </TableUISetting>
     <TableUISetting Name="bpa_lines">
       <ColumnUISettings>
         <ColumnUISetting Name="lines_ID">
-          <ControlSettings>
-            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="[None]" Type="Microsoft.VSDesigner.Data.BindManager.NoneControlPlaceHolder" />
-            </ControlSetting>
-          </ControlSettings>
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+              <BindableControlInfo Name="TextBox" Type="System.Windows.Forms.TextBox" AssemblyName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+            </ControlSetting></ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="header_ID">
-          <ControlSettings>
-            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="[None]" Type="Microsoft.VSDesigner.Data.BindManager.NoneControlPlaceHolder" />
-            </ControlSetting>
-          </ControlSettings>
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+              <BindableControlInfo Name="TextBox" Type="System.Windows.Forms.TextBox" AssemblyName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+            </ControlSetting></ControlSettings>
         </ColumnUISetting>
       </ColumnUISettings>
     </TableUISetting>
@@ -47,21 +46,21 @@
         <ColumnUISetting Name="supplier_ID">
           <ControlSettings>
             <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="[None]" Type="Microsoft.VSDesigner.Data.BindManager.NoneControlPlaceHolder" />
+              <BindableControlInfo Name="TextBox" Type="System.Windows.Forms.TextBox" AssemblyName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
             </ControlSetting>
           </ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="category_ID">
           <ControlSettings>
             <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="[None]" Type="Microsoft.VSDesigner.Data.BindManager.NoneControlPlaceHolder" />
+              <BindableControlInfo Name="TextBox" Type="System.Windows.Forms.TextBox" AssemblyName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
             </ControlSetting>
           </ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="partner_brand_ID">
           <ControlSettings>
             <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="[None]" Type="Microsoft.VSDesigner.Data.BindManager.NoneControlPlaceHolder" />
+              <BindableControlInfo Name="TextBox" Type="System.Windows.Forms.TextBox" AssemblyName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
             </ControlSetting>
           </ControlSettings>
         </ColumnUISetting>
@@ -79,9 +78,77 @@
         <ColumnUISetting Name="name">
           <ControlSettings>
             <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
+              <BindableControlInfo Name="KryptonComboBox" Type="Krypton.Toolkit.KryptonComboBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting>
+          </ControlSettings>
+        </ColumnUISetting>
+      </ColumnUISettings>
+    </TableUISetting>
+    <TableUISetting Name="cpa">
+      <ColumnUISettings>
+        <ColumnUISetting Name="supplier_ID">
+          <ControlSettings>
+            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
               <BindableControlInfo Name="ComboBox" Type="System.Windows.Forms.ComboBox" AssemblyName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
             </ControlSetting>
           </ControlSettings>
+        </ColumnUISetting>
+        <ColumnUISetting Name="buyer_ID">
+          <ControlSettings>
+            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
+              <BindableControlInfo Name="KryptonNumericUpDown" Type="Krypton.Toolkit.KryptonNumericUpDown" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting>
+          </ControlSettings>
+        </ColumnUISetting>
+        <ColumnUISetting Name="item_ID">
+          <ControlSettings>
+            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
+              <BindableControlInfo Name="ComboBox" Type="System.Windows.Forms.ComboBox" AssemblyName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+            </ControlSetting>
+          </ControlSettings>
+        </ColumnUISetting>
+      </ColumnUISettings>
+    </TableUISetting>
+    <TableUISetting Name="ppo_header">
+      <ColumnUISettings>
+        <ColumnUISetting Name="currency">
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+              <BindableControlInfo Name="KryptonNumericUpDown" Type="Krypton.Toolkit.KryptonNumericUpDown" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting></ControlSettings>
+        </ColumnUISetting>
+      </ColumnUISettings>
+    </TableUISetting>
+    <TableUISetting Name="spo_header">
+      <ColumnUISettings>
+        <ColumnUISetting Name="header_ID">
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+              <BindableControlInfo Name="KryptonNumericUpDown" Type="Krypton.Toolkit.KryptonNumericUpDown" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting></ControlSettings>
+        </ColumnUISetting>
+        <ColumnUISetting Name="create_date">
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+              <BindableControlInfo Name="KryptonDateTimePicker" Type="Krypton.Toolkit.KryptonDateTimePicker" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting></ControlSettings>
+        </ColumnUISetting>
+        <ColumnUISetting Name="effective_date">
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+              <BindableControlInfo Name="KryptonDateTimePicker" Type="Krypton.Toolkit.KryptonDateTimePicker" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting></ControlSettings>
+        </ColumnUISetting>
+        <ColumnUISetting Name="expected_delivery_date">
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+              <BindableControlInfo Name="KryptonDateTimePicker" Type="Krypton.Toolkit.KryptonDateTimePicker" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting></ControlSettings>
+        </ColumnUISetting>
+        <ColumnUISetting Name="terms">
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting></ControlSettings>
+        </ColumnUISetting>
+        <ColumnUISetting Name="condition">
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting></ControlSettings>
         </ColumnUISetting>
       </ColumnUISettings>
     </TableUISetting>

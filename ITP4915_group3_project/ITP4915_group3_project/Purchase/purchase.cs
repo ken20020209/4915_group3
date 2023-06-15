@@ -16,6 +16,9 @@ namespace ITP4915_group3_project.Purchase
         public purchase()
         {
             InitializeComponent();
+
+            //load first page
+            kryptonButtonPurchaseOrder_Click(null, null);
         }
 
         private void kryptonButtonPurchaseOrder_Click(object sender, EventArgs e)
@@ -26,12 +29,17 @@ namespace ITP4915_group3_project.Purchase
 
         private void kryptonButtonRequestOrder_Click(object sender, EventArgs e)
         {
-
+            new request_order.header(kryptonPanelHeader, kryptonPanelContent);
         }
 
         private void kryptonButtonRuleSetting_Click(object sender, EventArgs e)
         {
+            new set_rule.header(kryptonPanelHeader, kryptonPanelContent);
+        }
 
+        private void kryptonButtonLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

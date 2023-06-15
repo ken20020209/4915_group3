@@ -602,6 +602,12 @@
     <Compile Include="Purchase\request order\error process\urgent\create_success.Designer.cs">
       <DependentUpon>create_success.cs</DependentUpon>
     </Compile>
+    <Compile Include="Purchase\request order\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\request order\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
     <Compile Include="Purchase\request order\process\process_fail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -644,23 +650,32 @@
     <Compile Include="Purchase\request order\process\warehouse_list_notmatch.Designer.cs">
       <DependentUpon>warehouse_list_notmatch.cs</DependentUpon>
     </Compile>
+    <Compile Include="Purchase\set rule\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\set rule\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
     <Compile Include="Purchase\set rule\main.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Purchase\set rule\main.Designer.cs">
       <DependentUpon>main.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\set rule\match.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Purchase\set rule\match.Designer.cs">
       <DependentUpon>match.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\set rule\time.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Purchase\set rule\time.Designer.cs">
       <DependentUpon>time.cs</DependentUpon>
+    </Compile>
+    <Compile Include="purchase_dbDataSet.cs">
+      <DependentUpon>purchase_dbDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="purchase_dbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -807,7 +822,7 @@
       <DependentUpon>header.cs</DependentUpon>
     </Compile>
     <Compile Include="warehouse\check_PO\review1.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="warehouse\check_PO\review1.Designer.cs">
       <DependentUpon>review1.cs</DependentUpon>
@@ -1182,6 +1197,9 @@
     <EmbeddedResource Include="Purchase\request order\error process\urgent\create_success.resx">
       <DependentUpon>create_success.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\request order\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Purchase\request order\process\process_fail.resx">
       <DependentUpon>process_fail.cs</DependentUpon>
     </EmbeddedResource>
@@ -1202,6 +1220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\request order\process\warehouse_list_notmatch.resx">
       <DependentUpon>warehouse_list_notmatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\set rule\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\set rule\main.resx">
       <DependentUpon>main.cs</DependentUpon>
