@@ -231,12 +231,6 @@
     <Compile Include="category\category\select\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>
     </Compile>
-    <Compile Include="category\category\header.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="category\category\header.Designer.cs">
-      <DependentUpon>header.cs</DependentUpon>
-    </Compile>
     <Compile Include="category\category\select\delete.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -279,11 +273,14 @@
     <Compile Include="category\produce\create\create_success.Designer.cs">
       <DependentUpon>create_success.cs</DependentUpon>
     </Compile>
-    <Compile Include="category\produce\search\check.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="category\produce\create\create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\produce\search\check.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\produce\search\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
     </Compile>
     <Compile Include="category\produce\search\delete_confrim.cs">
       <SubType>Form</SubType>
@@ -296,12 +293,6 @@
     </Compile>
     <Compile Include="category\produce\search\delete_success.Designer.cs">
       <DependentUpon>delete_success.cs</DependentUpon>
-    </Compile>
-    <Compile Include="category\produce\search\check.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="category\produce\search\check.Designer.cs">
-      <DependentUpon>check.cs</DependentUpon>
     </Compile>
     <Compile Include="category\produce\search\detail.cs">
       <SubType>UserControl</SubType>
@@ -1020,9 +1011,6 @@
     <EmbeddedResource Include="category\category\select\check.resx">
       <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="category\category\header.resx">
-      <DependentUpon>header.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="category\category\select\delete_confirm.resx">
       <DependentUpon>delete_confirm.cs</DependentUpon>
     </EmbeddedResource>
@@ -1046,9 +1034,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="category\produce\search\delete_success.resx">
       <DependentUpon>delete_success.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="category\produce\search\check.resx">
-      <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\produce\search\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>

@@ -117,9 +117,9 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             this.kryptonPanelContent.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanelContent.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonPanelContent.Name = "kryptonPanelContent";
-            this.kryptonPanelContent.Size = new System.Drawing.Size(755, 451);
+            this.kryptonPanelContent.Size = new System.Drawing.Size(800, 500);
             this.kryptonPanelContent.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonPanelContent.TabIndex = 215;
+            this.kryptonPanelContent.TabIndex = 216;
             // 
             // kryptonButton8
             // 
@@ -729,7 +729,7 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.kryptonPanelContent);
             this.Name = "process";
-            this.Size = new System.Drawing.Size(755, 451);
+            this.Size = new System.Drawing.Size(800, 500);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelContent)).EndInit();
             this.kryptonPanelContent.ResumeLayout(false);
             this.kryptonPanelContent.PerformLayout();

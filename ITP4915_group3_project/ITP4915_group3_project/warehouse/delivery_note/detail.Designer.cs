@@ -29,7 +29,7 @@ namespace ITP4915_group3_project.warehouse.delivery_note
         /// </summary>
         private void InitializeComponent()
         {
-            this.c = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonPanelContent = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.kryptonGroupBox4 = new Krypton.Toolkit.KryptonGroupBox();
@@ -87,8 +87,8 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             this.kryptonLabel26 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonTextBox9 = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel27 = new Krypton.Toolkit.KryptonLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.c)).BeginInit();
-            this.c.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelContent)).BeginInit();
+            this.kryptonPanelContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).BeginInit();
             this.kryptonGroupBox2.Panel.SuspendLayout();
@@ -127,23 +127,23 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             this.kryptonGroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // c
+            // kryptonPanelContent
             // 
-            this.c.AutoScroll = true;
-            this.c.Controls.Add(this.kryptonGroupBox2);
-            this.c.Controls.Add(this.kryptonGroupBox4);
-            this.c.Controls.Add(this.kryptonGroupBox5);
-            this.c.Controls.Add(this.kryptonGroupBox3);
-            this.c.Controls.Add(this.kryptonLabel8);
-            this.c.Controls.Add(this.label1);
-            this.c.Controls.Add(this.kryptonGroupBox1);
-            this.c.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c.Location = new System.Drawing.Point(0, 0);
-            this.c.Margin = new System.Windows.Forms.Padding(2);
-            this.c.Name = "c";
-            this.c.Size = new System.Drawing.Size(821, 460);
-            this.c.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.c.TabIndex = 217;
+            this.kryptonPanelContent.AutoScroll = true;
+            this.kryptonPanelContent.Controls.Add(this.kryptonGroupBox2);
+            this.kryptonPanelContent.Controls.Add(this.kryptonGroupBox4);
+            this.kryptonPanelContent.Controls.Add(this.kryptonGroupBox5);
+            this.kryptonPanelContent.Controls.Add(this.kryptonGroupBox3);
+            this.kryptonPanelContent.Controls.Add(this.kryptonLabel8);
+            this.kryptonPanelContent.Controls.Add(this.label1);
+            this.kryptonPanelContent.Controls.Add(this.kryptonGroupBox1);
+            this.kryptonPanelContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanelContent.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanelContent.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonPanelContent.Name = "kryptonPanelContent";
+            this.kryptonPanelContent.Size = new System.Drawing.Size(800, 500);
+            this.kryptonPanelContent.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.kryptonPanelContent.TabIndex = 218;
             // 
             // kryptonGroupBox2
             // 
@@ -984,12 +984,12 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.c);
+            this.Controls.Add(this.kryptonPanelContent);
             this.Name = "detail";
-            this.Size = new System.Drawing.Size(821, 460);
-            ((System.ComponentModel.ISupportInitialize)(this.c)).EndInit();
-            this.c.ResumeLayout(false);
-            this.c.PerformLayout();
+            this.Size = new System.Drawing.Size(800, 500);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelContent)).EndInit();
+            this.kryptonPanelContent.ResumeLayout(false);
+            this.kryptonPanelContent.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).EndInit();
             this.kryptonGroupBox2.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).EndInit();
@@ -1036,7 +1036,7 @@ namespace ITP4915_group3_project.warehouse.delivery_note
 
         #endregion
 
-        private Krypton.Toolkit.KryptonPanel c;
+        private Krypton.Toolkit.KryptonPanel kryptonPanelContent;
         private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox2;
         private System.Windows.Forms.PictureBox pictureBox6;
         private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox4;
