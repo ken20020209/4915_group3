@@ -529,6 +529,12 @@
     <Compile Include="Purchase\PO\header.Designer.cs">
       <DependentUpon>header.cs</DependentUpon>
     </Compile>
+    <Compile Include="Purchase\PO\search\BPA\deatil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\PO\search\BPA\deatil.Designer.cs">
+      <DependentUpon>deatil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Purchase\PO\search\BPA\search.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1189,6 +1195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PO\header.resx">
       <DependentUpon>header.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PO\search\BPA\deatil.resx">
+      <DependentUpon>deatil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PO\search\BPA\search.resx">
       <DependentUpon>search.cs</DependentUpon>
