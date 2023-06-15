@@ -10,11 +10,34 @@ using System.Windows.Forms;
 
 namespace ITP4915_group3_project.Purchase.set_rule
 {
-    public partial class match : Form
+    public partial class match : UserControl
     {
-        public match()
+        Control panelContent;
+        public match(Control panelContent)
         {
             InitializeComponent();
+            this.panelContent = panelContent;
+            panelContent.Controls.Add(this);
+            this.BringToFront();
+
+            kryptonComboBoxMatchBPA.Text= Properties.Settings.Default.autoBPA;
+            kryptonComboBoxAutoMatch.Text = Properties.Settings.Default.autoMatch;
+            kryptonComboBoxMatchBR.Text = Properties.Settings.Default.autoBR;
+            kryptonComboBoxMatchWarehouse.Text = Properties.Settings.Default.autoWarehouse;
+        }
+
+        private void kryptonLabelBack_Click(object sender, EventArgs e)
+        {
+            panelContent.Controls.Remove(this);
+        }
+
+        private void kryptonButtonSave_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.autoBPA = kryptonComboBoxMatchBPA.Text;
+            Properties.Settings.Default.autoMatch = kryptonComboBoxAutoMatch.Text;
+            Properties.Settings.Default.autoBR= kryptonComboBoxMatchBR.Text;
+            Properties.Settings.Default.autoWarehouse = kryptonComboBoxMatchWarehouse.Text;
+            Properties.Settings.Default.Save();
         }
     }
 }
