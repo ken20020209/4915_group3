@@ -54,7 +54,9 @@
     <Reference Include="MySql.Data, Version=8.0.33.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.33\lib\net462\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
@@ -265,14 +267,20 @@
     <Compile Include="category\category\select\edit.Designer.cs">
       <DependentUpon>edit.cs</DependentUpon>
     </Compile>
+    <Compile Include="category\produce\create\create.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category\produce\create\create.Designer.cs">
+      <DependentUpon>create.cs</DependentUpon>
+    </Compile>
     <Compile Include="category\produce\create\create_success.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="category\produce\create\create_success.Designer.cs">
       <DependentUpon>create_success.cs</DependentUpon>
     </Compile>
-    <Compile Include="category\produce\create\create.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="category\produce\search\check.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="category\produce\create\create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
@@ -511,6 +519,12 @@
     </Compile>
     <Compile Include="Purchase\PO\header.Designer.cs">
       <DependentUpon>header.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PO\search\BPA\search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\PO\search\BPA\search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\PO\search\check.cs">
       <SubType>UserControl</SubType>
@@ -1024,8 +1038,8 @@
     <EmbeddedResource Include="category\produce\create\create_success.resx">
       <DependentUpon>create_success.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="category\produce\create\create.resx">
-      <DependentUpon>create.cs</DependentUpon>
+    <EmbeddedResource Include="category\produce\search\check.resx">
+      <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\produce\search\delete_confrim.resx">
       <DependentUpon>delete_confrim.cs</DependentUpon>
@@ -1145,6 +1159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PO\header.resx">
       <DependentUpon>header.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PO\search\BPA\search.resx">
+      <DependentUpon>search.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PO\search\check.resx">
       <DependentUpon>check.cs</DependentUpon>
@@ -1584,6 +1601,10 @@
   <ItemGroup>
     <None Include="Resources\icons8-delivery-time-50.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Purchase\PO\search\CPA\" />
+    <Folder Include="Purchase\PO\search\PPO\" />
+    <Folder Include="Purchase\PO\search\SPO\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

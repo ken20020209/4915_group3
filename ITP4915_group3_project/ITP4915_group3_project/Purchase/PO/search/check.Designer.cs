@@ -30,23 +30,24 @@ namespace ITP4915_group3_project.Purchase.PO.search
         private void InitializeComponent()
         {
             this.kryptonPanel4 = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonPanelSearchResult = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroup1 = new Krypton.Toolkit.KryptonGroup();
             this.kryptonPanel6 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonCheckButton5 = new Krypton.Toolkit.KryptonCheckButton();
             this.kryptonCheckButton6 = new Krypton.Toolkit.KryptonCheckButton();
             this.kryptonButton8 = new Krypton.Toolkit.KryptonButton();
-            this.kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBoxSearchBar = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonPanel5 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonCheckButton1 = new Krypton.Toolkit.KryptonCheckButton();
+            this.kryptonCheckButtonBPA = new Krypton.Toolkit.KryptonCheckButton();
             this.kryptonCheckButton2 = new Krypton.Toolkit.KryptonCheckButton();
             this.kryptonCheckButton3 = new Krypton.Toolkit.KryptonCheckButton();
             this.kryptonCheckButton7 = new Krypton.Toolkit.KryptonCheckButton();
             this.kryptonCheckButton4 = new Krypton.Toolkit.KryptonCheckButton();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.kryptonLabel6 = new Krypton.Toolkit.KryptonLabel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelSearchResult)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).BeginInit();
             this.kryptonGroup1.Panel.SuspendLayout();
@@ -55,16 +56,13 @@ namespace ITP4915_group3_project.Purchase.PO.search
             this.kryptonPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).BeginInit();
             this.kryptonPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanel4
             // 
+            this.kryptonPanel4.Controls.Add(this.kryptonPanelSearchResult);
             this.kryptonPanel4.Controls.Add(this.kryptonGroup1);
-            this.kryptonPanel4.Controls.Add(this.pictureBox6);
             this.kryptonPanel4.Controls.Add(this.kryptonLabel6);
-            this.kryptonPanel4.Controls.Add(this.pictureBox5);
             this.kryptonPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel4.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel4.Margin = new System.Windows.Forms.Padding(2);
@@ -73,17 +71,25 @@ namespace ITP4915_group3_project.Purchase.PO.search
             this.kryptonPanel4.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonPanel4.TabIndex = 9;
             // 
+            // kryptonPanelSearchResult
+            // 
+            this.kryptonPanelSearchResult.Location = new System.Drawing.Point(95, 183);
+            this.kryptonPanelSearchResult.Name = "kryptonPanelSearchResult";
+            this.kryptonPanelSearchResult.Size = new System.Drawing.Size(600, 300);
+            this.kryptonPanelSearchResult.TabIndex = 11;
+            // 
             // kryptonGroup1
             // 
-            this.kryptonGroup1.Location = new System.Drawing.Point(35, 23);
+            this.kryptonGroup1.Location = new System.Drawing.Point(115, 27);
             this.kryptonGroup1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroup1.Name = "kryptonGroup1";
             // 
             // kryptonGroup1.Panel
             // 
+            this.kryptonGroup1.Panel.Controls.Add(this.kryptonTextBox1);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonPanel6);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonButton8);
-            this.kryptonGroup1.Panel.Controls.Add(this.kryptonTextBox1);
+            this.kryptonGroup1.Panel.Controls.Add(this.kryptonTextBoxSearchBar);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonPanel5);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonCheckButton7);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonCheckButton4);
@@ -170,30 +176,31 @@ namespace ITP4915_group3_project.Purchase.PO.search
             this.kryptonButton8.TabIndex = 12;
             this.kryptonButton8.Values.Text = "Search";
             // 
-            // kryptonTextBox1
+            // kryptonTextBoxSearchBar
             // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(8, 8);
-            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(210, 34);
-            this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
-            this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonTextBoxSearchBar.CueHint.CueHintText = "ID or supplier name";
+            this.kryptonTextBoxSearchBar.CueHint.Padding = new System.Windows.Forms.Padding(0);
+            this.kryptonTextBoxSearchBar.Location = new System.Drawing.Point(8, 8);
+            this.kryptonTextBoxSearchBar.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonTextBoxSearchBar.Name = "kryptonTextBoxSearchBar";
+            this.kryptonTextBoxSearchBar.Size = new System.Drawing.Size(210, 34);
+            this.kryptonTextBoxSearchBar.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.kryptonTextBoxSearchBar.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.kryptonTextBoxSearchBar.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.kryptonTextBoxSearchBar.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox1.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox1.StateCommon.Border.Rounding = 25F;
-            this.kryptonTextBox1.StateCommon.Border.Width = 1;
-            this.kryptonTextBox1.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.kryptonTextBox1.TabIndex = 11;
-            this.kryptonTextBox1.Text = "ID                                                🔍 ";
+            this.kryptonTextBoxSearchBar.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.kryptonTextBoxSearchBar.StateCommon.Border.Rounding = 25F;
+            this.kryptonTextBoxSearchBar.StateCommon.Border.Width = 1;
+            this.kryptonTextBoxSearchBar.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.kryptonTextBoxSearchBar.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBoxSearchBar.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.kryptonTextBoxSearchBar.TabIndex = 11;
             // 
             // kryptonPanel5
             // 
-            this.kryptonPanel5.Controls.Add(this.kryptonCheckButton1);
+            this.kryptonPanel5.Controls.Add(this.kryptonCheckButtonBPA);
             this.kryptonPanel5.Controls.Add(this.kryptonCheckButton2);
             this.kryptonPanel5.Controls.Add(this.kryptonCheckButton3);
             this.kryptonPanel5.Location = new System.Drawing.Point(8, 52);
@@ -204,24 +211,25 @@ namespace ITP4915_group3_project.Purchase.PO.search
             this.kryptonPanel5.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
             this.kryptonPanel5.TabIndex = 6;
             // 
-            // kryptonCheckButton1
+            // kryptonCheckButtonBPA
             // 
-            this.kryptonCheckButton1.CornerRoundingRadius = 25F;
-            this.kryptonCheckButton1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonCheckButton1.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonCheckButton1.Name = "kryptonCheckButton1";
-            this.kryptonCheckButton1.Size = new System.Drawing.Size(100, 30);
-            this.kryptonCheckButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonCheckButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonCheckButton1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonCheckButton1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonCheckButtonBPA.CornerRoundingRadius = 25F;
+            this.kryptonCheckButtonBPA.Location = new System.Drawing.Point(0, 0);
+            this.kryptonCheckButtonBPA.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonCheckButtonBPA.Name = "kryptonCheckButtonBPA";
+            this.kryptonCheckButtonBPA.Size = new System.Drawing.Size(100, 30);
+            this.kryptonCheckButtonBPA.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonCheckButtonBPA.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonCheckButtonBPA.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonCheckButtonBPA.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonCheckButton1.StateCommon.Border.Rounding = 25F;
-            this.kryptonCheckButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonCheckButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonCheckButton1.TabIndex = 6;
-            this.kryptonCheckButton1.Values.Text = "BPA";
+            this.kryptonCheckButtonBPA.StateCommon.Border.Rounding = 25F;
+            this.kryptonCheckButtonBPA.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonCheckButtonBPA.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonCheckButtonBPA.TabIndex = 6;
+            this.kryptonCheckButtonBPA.Values.Text = "BPA";
+            this.kryptonCheckButtonBPA.Click += new System.EventHandler(this.kryptonCheckButtonBPA_Click);
             // 
             // kryptonCheckButton2
             // 
@@ -303,19 +311,9 @@ namespace ITP4915_group3_project.Purchase.PO.search
             this.kryptonCheckButton4.TabIndex = 7;
             this.kryptonCheckButton4.Values.Text = "CPA";
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
-            this.pictureBox6.Location = new System.Drawing.Point(411, 344);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(191, 25);
-            this.pictureBox6.TabIndex = 11;
-            this.pictureBox6.TabStop = false;
-            // 
             // kryptonLabel6
             // 
-            this.kryptonLabel6.Location = new System.Drawing.Point(19, 152);
+            this.kryptonLabel6.Location = new System.Drawing.Point(78, 152);
             this.kryptonLabel6.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel6.Name = "kryptonLabel6";
             this.kryptonLabel6.Size = new System.Drawing.Size(113, 26);
@@ -326,15 +324,13 @@ namespace ITP4915_group3_project.Purchase.PO.search
             this.kryptonLabel6.TabIndex = 8;
             this.kryptonLabel6.Values.Text = "RESULT (0)";
             // 
-            // pictureBox5
+            // kryptonTextBox1
             // 
-            this.pictureBox5.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
-            this.pictureBox5.Location = new System.Drawing.Point(39, 197);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(554, 119);
-            this.pictureBox5.TabIndex = 10;
-            this.pictureBox5.TabStop = false;
+            this.kryptonTextBox1.Location = new System.Drawing.Point(187, 15);
+            this.kryptonTextBox1.Name = "kryptonTextBox1";
+            this.kryptonTextBox1.Size = new System.Drawing.Size(22, 23);
+            this.kryptonTextBox1.TabIndex = 13;
+            this.kryptonTextBox1.Text = "🔍";
             // 
             // check
             // 
@@ -347,6 +343,7 @@ namespace ITP4915_group3_project.Purchase.PO.search
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
             this.kryptonPanel4.ResumeLayout(false);
             this.kryptonPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelSearchResult)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).EndInit();
             this.kryptonGroup1.Panel.ResumeLayout(false);
             this.kryptonGroup1.Panel.PerformLayout();
@@ -356,8 +353,6 @@ namespace ITP4915_group3_project.Purchase.PO.search
             this.kryptonPanel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).EndInit();
             this.kryptonPanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -370,15 +365,15 @@ namespace ITP4915_group3_project.Purchase.PO.search
         private Krypton.Toolkit.KryptonCheckButton kryptonCheckButton5;
         private Krypton.Toolkit.KryptonCheckButton kryptonCheckButton6;
         private Krypton.Toolkit.KryptonButton kryptonButton8;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
+        private Krypton.Toolkit.KryptonTextBox kryptonTextBoxSearchBar;
         private Krypton.Toolkit.KryptonPanel kryptonPanel5;
-        private Krypton.Toolkit.KryptonCheckButton kryptonCheckButton1;
+        private Krypton.Toolkit.KryptonCheckButton kryptonCheckButtonBPA;
         private Krypton.Toolkit.KryptonCheckButton kryptonCheckButton2;
         private Krypton.Toolkit.KryptonCheckButton kryptonCheckButton3;
         private Krypton.Toolkit.KryptonCheckButton kryptonCheckButton7;
         private Krypton.Toolkit.KryptonCheckButton kryptonCheckButton4;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private Krypton.Toolkit.KryptonLabel kryptonLabel6;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private Krypton.Toolkit.KryptonPanel kryptonPanelSearchResult;
+        private Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
     }
 }

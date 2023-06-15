@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ITP4915_group3_project.category.category
+namespace ITP4915_group3_project.category.produce
 {
     public partial class header : UserControl
     {
@@ -31,7 +31,7 @@ namespace ITP4915_group3_project.category.category
         private void kryptonButtonReview_Click(object sender, EventArgs e)
         {
             panelContent.Controls.Clear();
-            
+
         }
 
 

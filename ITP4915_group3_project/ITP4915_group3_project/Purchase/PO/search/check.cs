@@ -19,5 +19,10 @@ namespace ITP4915_group3_project.Purchase.PO.search
             this.panel = panel;
             this.panel.Controls.Add(this);
         }
+
+        private void kryptonCheckButtonBPA_Click(object sender, EventArgs e)
+        {
+            new BPA.search(kryptonPanelSearchResult, kryptonTextBoxSearchBar.Text);
+        }
     }
 }
