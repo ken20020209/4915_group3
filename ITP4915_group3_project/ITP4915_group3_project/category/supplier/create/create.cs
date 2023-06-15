@@ -12,9 +12,11 @@ namespace ITP4915_group3_project.category.supplier.create
 {
     public partial class create : UserControl
     {
-        public create()
+        public create(Control panelContent)
         {
             InitializeComponent();
+            panelContent.Controls.Add(this);
+            this.BringToFront();
         }
     }
 }

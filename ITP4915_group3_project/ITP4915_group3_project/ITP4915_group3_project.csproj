@@ -177,6 +177,12 @@
     <Compile Include="category\brand\create\create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
     </Compile>
+    <Compile Include="category\brand\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\brand\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
     <Compile Include="category\brand\search\delete_confirm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +231,12 @@
     <Compile Include="category\category\create\create_success.Designer.cs">
       <DependentUpon>create_success.cs</DependentUpon>
     </Compile>
+    <Compile Include="category\category\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\category\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
     <Compile Include="category\category\select\check.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -262,7 +274,7 @@
       <DependentUpon>edit.cs</DependentUpon>
     </Compile>
     <Compile Include="category\produce\create\create.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="category\produce\create\create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
@@ -275,6 +287,12 @@
     </Compile>
     <Compile Include="category\produce\create\create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\produce\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\produce\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
     </Compile>
     <Compile Include="category\produce\search\check.cs">
       <SubType>UserControl</SubType>
@@ -318,6 +336,12 @@
     <Compile Include="category\return_reson\create\create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
     </Compile>
+    <Compile Include="category\return_reson\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\return_reson\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
     <Compile Include="category\return_reson\select\check.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -359,6 +383,12 @@
     </Compile>
     <Compile Include="category\supplier\create\create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\supplier\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\supplier\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
     </Compile>
     <Compile Include="category\supplier\search\delete_confirm.cs">
       <SubType>Form</SubType>
@@ -511,6 +541,12 @@
     <Compile Include="Purchase\PO\header.Designer.cs">
       <DependentUpon>header.cs</DependentUpon>
     </Compile>
+    <Compile Include="Purchase\PO\search\BPA\deatil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\PO\search\BPA\deatil.Designer.cs">
+      <DependentUpon>deatil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Purchase\PO\search\BPA\search.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -522,6 +558,12 @@
     </Compile>
     <Compile Include="Purchase\PO\search\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PO\search\CPA\search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\PO\search\CPA\search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\PO\search\delete_confirm.cs">
       <SubType>Form</SubType>
@@ -546,6 +588,18 @@
     </Compile>
     <Compile Include="Purchase\PO\search\edit.Designer.cs">
       <DependentUpon>edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PO\search\PPO\search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\PO\search\PPO\search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PO\search\SPO\search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\PO\search\SPO\search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\purchase.cs">
       <SubType>Form</SubType>
@@ -984,6 +1038,9 @@
     <EmbeddedResource Include="category\brand\create\create.resx">
       <DependentUpon>create.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="category\brand\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="category\brand\search\delete_confirm.resx">
       <DependentUpon>delete_confirm.cs</DependentUpon>
     </EmbeddedResource>
@@ -1008,6 +1065,9 @@
     <EmbeddedResource Include="category\category\create\create_success.resx">
       <DependentUpon>create_success.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="category\category\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="category\category\select\check.resx">
       <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
@@ -1025,6 +1085,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="category\produce\create\create_success.resx">
       <DependentUpon>create_success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\produce\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\produce\search\check.resx">
       <DependentUpon>check.cs</DependentUpon>
@@ -1047,6 +1110,9 @@
     <EmbeddedResource Include="category\return_reson\create\create.resx">
       <DependentUpon>create.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="category\return_reson\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="category\return_reson\select\check.resx">
       <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
@@ -1067,6 +1133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="category\supplier\create\create.resx">
       <DependentUpon>create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\supplier\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\supplier\search\delete_confirm.resx">
       <DependentUpon>delete_confirm.cs</DependentUpon>
@@ -1145,11 +1214,17 @@
     <EmbeddedResource Include="Purchase\PO\header.resx">
       <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PO\search\BPA\deatil.resx">
+      <DependentUpon>deatil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PO\search\BPA\search.resx">
       <DependentUpon>search.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PO\search\check.resx">
       <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PO\search\CPA\search.resx">
+      <DependentUpon>search.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PO\search\delete_confirm.resx">
       <DependentUpon>delete_confirm.cs</DependentUpon>
@@ -1162,6 +1237,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PO\search\edit.resx">
       <DependentUpon>edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PO\search\PPO\search.resx">
+      <DependentUpon>search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PO\search\SPO\search.resx">
+      <DependentUpon>search.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\purchase.resx">
       <DependentUpon>purchase.cs</DependentUpon>
@@ -1586,10 +1667,6 @@
   <ItemGroup>
     <None Include="Resources\icons8-delivery-time-50.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Purchase\PO\search\CPA\" />
-    <Folder Include="Purchase\PO\search\PPO\" />
-    <Folder Include="Purchase\PO\search\SPO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

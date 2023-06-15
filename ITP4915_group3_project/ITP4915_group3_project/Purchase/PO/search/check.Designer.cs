@@ -32,19 +32,19 @@ namespace ITP4915_group3_project.Purchase.PO.search
             this.kryptonPanel4 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonPanelSearchResult = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroup1 = new Krypton.Toolkit.KryptonGroup();
+            this.kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonPanel6 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonCheckButton5 = new Krypton.Toolkit.KryptonCheckButton();
             this.kryptonCheckButton6 = new Krypton.Toolkit.KryptonCheckButton();
-            this.kryptonButton8 = new Krypton.Toolkit.KryptonButton();
+            this.kryptonButtonSearch = new Krypton.Toolkit.KryptonButton();
             this.kryptonTextBoxSearchBar = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonPanel5 = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonPanelPOList = new Krypton.Toolkit.KryptonPanel();
             this.kryptonCheckButtonBPA = new Krypton.Toolkit.KryptonCheckButton();
-            this.kryptonCheckButton2 = new Krypton.Toolkit.KryptonCheckButton();
-            this.kryptonCheckButton3 = new Krypton.Toolkit.KryptonCheckButton();
+            this.kryptonCheckButtonPPO = new Krypton.Toolkit.KryptonCheckButton();
+            this.kryptonCheckButtonSPO = new Krypton.Toolkit.KryptonCheckButton();
+            this.kryptonCheckButtonCPA = new Krypton.Toolkit.KryptonCheckButton();
             this.kryptonCheckButton7 = new Krypton.Toolkit.KryptonCheckButton();
-            this.kryptonCheckButton4 = new Krypton.Toolkit.KryptonCheckButton();
             this.kryptonLabel6 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelSearchResult)).BeginInit();
@@ -54,8 +54,8 @@ namespace ITP4915_group3_project.Purchase.PO.search
             this.kryptonGroup1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel6)).BeginInit();
             this.kryptonPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).BeginInit();
-            this.kryptonPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelPOList)).BeginInit();
+            this.kryptonPanelPOList.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonPanel4
@@ -88,11 +88,10 @@ namespace ITP4915_group3_project.Purchase.PO.search
             // 
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonTextBox1);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonPanel6);
-            this.kryptonGroup1.Panel.Controls.Add(this.kryptonButton8);
+            this.kryptonGroup1.Panel.Controls.Add(this.kryptonButtonSearch);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonTextBoxSearchBar);
-            this.kryptonGroup1.Panel.Controls.Add(this.kryptonPanel5);
+            this.kryptonGroup1.Panel.Controls.Add(this.kryptonPanelPOList);
             this.kryptonGroup1.Panel.Controls.Add(this.kryptonCheckButton7);
-            this.kryptonGroup1.Panel.Controls.Add(this.kryptonCheckButton4);
             this.kryptonGroup1.Size = new System.Drawing.Size(554, 107);
             this.kryptonGroup1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonGroup1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
@@ -102,6 +101,14 @@ namespace ITP4915_group3_project.Purchase.PO.search
             this.kryptonGroup1.StateCommon.Border.Rounding = 30F;
             this.kryptonGroup1.StateCommon.Border.Width = 2;
             this.kryptonGroup1.TabIndex = 9;
+            // 
+            // kryptonTextBox1
+            // 
+            this.kryptonTextBox1.Location = new System.Drawing.Point(187, 15);
+            this.kryptonTextBox1.Name = "kryptonTextBox1";
+            this.kryptonTextBox1.Size = new System.Drawing.Size(22, 23);
+            this.kryptonTextBox1.TabIndex = 13;
+            this.kryptonTextBox1.Text = "🔍";
             // 
             // kryptonPanel6
             // 
@@ -155,26 +162,27 @@ namespace ITP4915_group3_project.Purchase.PO.search
             this.kryptonCheckButton6.TabIndex = 7;
             this.kryptonCheckButton6.Values.Text = "Status2";
             // 
-            // kryptonButton8
+            // kryptonButtonSearch
             // 
-            this.kryptonButton8.CornerRoundingRadius = 25F;
-            this.kryptonButton8.Location = new System.Drawing.Point(411, 52);
-            this.kryptonButton8.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonButton8.Name = "kryptonButton8";
-            this.kryptonButton8.Size = new System.Drawing.Size(97, 30);
-            this.kryptonButton8.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
-            this.kryptonButton8.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
-            this.kryptonButton8.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
-            this.kryptonButton8.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
-            this.kryptonButton8.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonButtonSearch.CornerRoundingRadius = 25F;
+            this.kryptonButtonSearch.Location = new System.Drawing.Point(411, 52);
+            this.kryptonButtonSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonButtonSearch.Name = "kryptonButtonSearch";
+            this.kryptonButtonSearch.Size = new System.Drawing.Size(97, 30);
+            this.kryptonButtonSearch.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
+            this.kryptonButtonSearch.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
+            this.kryptonButtonSearch.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
+            this.kryptonButtonSearch.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
+            this.kryptonButtonSearch.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton8.StateCommon.Border.Rounding = 25F;
-            this.kryptonButton8.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton8.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton8.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.kryptonButton8.TabIndex = 12;
-            this.kryptonButton8.Values.Text = "Search";
+            this.kryptonButtonSearch.StateCommon.Border.Rounding = 25F;
+            this.kryptonButtonSearch.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButtonSearch.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonButtonSearch.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.kryptonButtonSearch.TabIndex = 12;
+            this.kryptonButtonSearch.Values.Text = "Search";
+            this.kryptonButtonSearch.Click += new System.EventHandler(this.kryptonButtonSearch_Click);
             // 
             // kryptonTextBoxSearchBar
             // 
@@ -198,23 +206,24 @@ namespace ITP4915_group3_project.Purchase.PO.search
             this.kryptonTextBoxSearchBar.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBoxSearchBar.TabIndex = 11;
             // 
-            // kryptonPanel5
+            // kryptonPanelPOList
             // 
-            this.kryptonPanel5.Controls.Add(this.kryptonCheckButtonBPA);
-            this.kryptonPanel5.Controls.Add(this.kryptonCheckButton2);
-            this.kryptonPanel5.Controls.Add(this.kryptonCheckButton3);
-            this.kryptonPanel5.Location = new System.Drawing.Point(8, 52);
-            this.kryptonPanel5.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonPanel5.Name = "kryptonPanel5";
-            this.kryptonPanel5.Size = new System.Drawing.Size(261, 30);
-            this.kryptonPanel5.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
-            this.kryptonPanel5.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
-            this.kryptonPanel5.TabIndex = 6;
+            this.kryptonPanelPOList.Controls.Add(this.kryptonCheckButtonBPA);
+            this.kryptonPanelPOList.Controls.Add(this.kryptonCheckButtonPPO);
+            this.kryptonPanelPOList.Controls.Add(this.kryptonCheckButtonSPO);
+            this.kryptonPanelPOList.Controls.Add(this.kryptonCheckButtonCPA);
+            this.kryptonPanelPOList.Location = new System.Drawing.Point(8, 52);
+            this.kryptonPanelPOList.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonPanelPOList.Name = "kryptonPanelPOList";
+            this.kryptonPanelPOList.Size = new System.Drawing.Size(333, 30);
+            this.kryptonPanelPOList.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.kryptonPanelPOList.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.kryptonPanelPOList.TabIndex = 6;
             // 
             // kryptonCheckButtonBPA
             // 
             this.kryptonCheckButtonBPA.CornerRoundingRadius = 25F;
-            this.kryptonCheckButtonBPA.Location = new System.Drawing.Point(0, 0);
+            this.kryptonCheckButtonBPA.Location = new System.Drawing.Point(-6, 0);
             this.kryptonCheckButtonBPA.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonCheckButtonBPA.Name = "kryptonCheckButtonBPA";
             this.kryptonCheckButtonBPA.Size = new System.Drawing.Size(100, 30);
@@ -231,45 +240,68 @@ namespace ITP4915_group3_project.Purchase.PO.search
             this.kryptonCheckButtonBPA.Values.Text = "BPA";
             this.kryptonCheckButtonBPA.Click += new System.EventHandler(this.kryptonCheckButtonBPA_Click);
             // 
-            // kryptonCheckButton2
+            // kryptonCheckButtonPPO
             // 
-            this.kryptonCheckButton2.CornerRoundingRadius = -1F;
-            this.kryptonCheckButton2.Location = new System.Drawing.Point(86, 0);
-            this.kryptonCheckButton2.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonCheckButton2.Name = "kryptonCheckButton2";
-            this.kryptonCheckButton2.Size = new System.Drawing.Size(100, 30);
-            this.kryptonCheckButton2.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
-            this.kryptonCheckButton2.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
-            this.kryptonCheckButton2.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
-            this.kryptonCheckButton2.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
-            this.kryptonCheckButton2.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonCheckButtonPPO.CornerRoundingRadius = -1F;
+            this.kryptonCheckButtonPPO.Location = new System.Drawing.Point(152, 0);
+            this.kryptonCheckButtonPPO.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonCheckButtonPPO.Name = "kryptonCheckButtonPPO";
+            this.kryptonCheckButtonPPO.Size = new System.Drawing.Size(100, 30);
+            this.kryptonCheckButtonPPO.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.kryptonCheckButtonPPO.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.kryptonCheckButtonPPO.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.kryptonCheckButtonPPO.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.kryptonCheckButtonPPO.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonCheckButton2.StateNormal.Border.Rounding = 25F;
-            this.kryptonCheckButton2.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonCheckButton2.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonCheckButton2.TabIndex = 6;
-            this.kryptonCheckButton2.Values.Text = "PPO";
+            this.kryptonCheckButtonPPO.StateNormal.Border.Rounding = 25F;
+            this.kryptonCheckButtonPPO.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonCheckButtonPPO.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonCheckButtonPPO.TabIndex = 6;
+            this.kryptonCheckButtonPPO.Values.Text = "PPO";
+            this.kryptonCheckButtonPPO.Click += new System.EventHandler(this.kryptonCheckButtonPPO_Click);
             // 
-            // kryptonCheckButton3
+            // kryptonCheckButtonSPO
             // 
-            this.kryptonCheckButton3.CornerRoundingRadius = -1F;
-            this.kryptonCheckButton3.Location = new System.Drawing.Point(165, 0);
-            this.kryptonCheckButton3.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonCheckButton3.Name = "kryptonCheckButton3";
-            this.kryptonCheckButton3.Size = new System.Drawing.Size(100, 30);
-            this.kryptonCheckButton3.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
-            this.kryptonCheckButton3.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
-            this.kryptonCheckButton3.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
-            this.kryptonCheckButton3.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
-            this.kryptonCheckButton3.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonCheckButtonSPO.CornerRoundingRadius = -1F;
+            this.kryptonCheckButtonSPO.Location = new System.Drawing.Point(243, 0);
+            this.kryptonCheckButtonSPO.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonCheckButtonSPO.Name = "kryptonCheckButtonSPO";
+            this.kryptonCheckButtonSPO.Size = new System.Drawing.Size(100, 30);
+            this.kryptonCheckButtonSPO.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.kryptonCheckButtonSPO.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.kryptonCheckButtonSPO.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.kryptonCheckButtonSPO.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.kryptonCheckButtonSPO.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonCheckButton3.StateNormal.Border.Rounding = 25F;
-            this.kryptonCheckButton3.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonCheckButton3.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.kryptonCheckButton3.TabIndex = 13;
-            this.kryptonCheckButton3.Values.Text = "SPO";
+            this.kryptonCheckButtonSPO.StateNormal.Border.Rounding = 25F;
+            this.kryptonCheckButtonSPO.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonCheckButtonSPO.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.kryptonCheckButtonSPO.TabIndex = 13;
+            this.kryptonCheckButtonSPO.Values.Text = "SPO";
+            this.kryptonCheckButtonSPO.Click += new System.EventHandler(this.kryptonCheckButtonSPO_Click);
+            // 
+            // kryptonCheckButtonCPA
+            // 
+            this.kryptonCheckButtonCPA.CornerRoundingRadius = -1F;
+            this.kryptonCheckButtonCPA.Location = new System.Drawing.Point(74, 0);
+            this.kryptonCheckButtonCPA.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonCheckButtonCPA.Name = "kryptonCheckButtonCPA";
+            this.kryptonCheckButtonCPA.Size = new System.Drawing.Size(100, 30);
+            this.kryptonCheckButtonCPA.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.kryptonCheckButtonCPA.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.kryptonCheckButtonCPA.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.kryptonCheckButtonCPA.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.kryptonCheckButtonCPA.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonCheckButtonCPA.StateNormal.Border.Rounding = 25F;
+            this.kryptonCheckButtonCPA.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonCheckButtonCPA.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.kryptonCheckButtonCPA.TabIndex = 7;
+            this.kryptonCheckButtonCPA.Values.Text = "CPA";
+            this.kryptonCheckButtonCPA.Click += new System.EventHandler(this.kryptonCheckButtonCPA_Click);
             // 
             // kryptonCheckButton7
             // 
@@ -291,26 +323,6 @@ namespace ITP4915_group3_project.Purchase.PO.search
             this.kryptonCheckButton7.TabIndex = 7;
             this.kryptonCheckButton7.Values.Text = "Status3";
             // 
-            // kryptonCheckButton4
-            // 
-            this.kryptonCheckButton4.CornerRoundingRadius = -1F;
-            this.kryptonCheckButton4.Location = new System.Drawing.Point(255, 52);
-            this.kryptonCheckButton4.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonCheckButton4.Name = "kryptonCheckButton4";
-            this.kryptonCheckButton4.Size = new System.Drawing.Size(100, 30);
-            this.kryptonCheckButton4.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
-            this.kryptonCheckButton4.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
-            this.kryptonCheckButton4.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
-            this.kryptonCheckButton4.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
-            this.kryptonCheckButton4.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonCheckButton4.StateNormal.Border.Rounding = 25F;
-            this.kryptonCheckButton4.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonCheckButton4.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.kryptonCheckButton4.TabIndex = 7;
-            this.kryptonCheckButton4.Values.Text = "CPA";
-            // 
             // kryptonLabel6
             // 
             this.kryptonLabel6.Location = new System.Drawing.Point(78, 152);
@@ -323,14 +335,6 @@ namespace ITP4915_group3_project.Purchase.PO.search
             this.kryptonLabel6.StateNormal.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel6.TabIndex = 8;
             this.kryptonLabel6.Values.Text = "RESULT (0)";
-            // 
-            // kryptonTextBox1
-            // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(187, 15);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(22, 23);
-            this.kryptonTextBox1.TabIndex = 13;
-            this.kryptonTextBox1.Text = "🔍";
             // 
             // check
             // 
@@ -351,8 +355,8 @@ namespace ITP4915_group3_project.Purchase.PO.search
             this.kryptonGroup1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel6)).EndInit();
             this.kryptonPanel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).EndInit();
-            this.kryptonPanel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelPOList)).EndInit();
+            this.kryptonPanelPOList.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -364,14 +368,14 @@ namespace ITP4915_group3_project.Purchase.PO.search
         private Krypton.Toolkit.KryptonPanel kryptonPanel6;
         private Krypton.Toolkit.KryptonCheckButton kryptonCheckButton5;
         private Krypton.Toolkit.KryptonCheckButton kryptonCheckButton6;
-        private Krypton.Toolkit.KryptonButton kryptonButton8;
+        private Krypton.Toolkit.KryptonButton kryptonButtonSearch;
         private Krypton.Toolkit.KryptonTextBox kryptonTextBoxSearchBar;
-        private Krypton.Toolkit.KryptonPanel kryptonPanel5;
+        private Krypton.Toolkit.KryptonPanel kryptonPanelPOList;
         private Krypton.Toolkit.KryptonCheckButton kryptonCheckButtonBPA;
-        private Krypton.Toolkit.KryptonCheckButton kryptonCheckButton2;
-        private Krypton.Toolkit.KryptonCheckButton kryptonCheckButton3;
+        private Krypton.Toolkit.KryptonCheckButton kryptonCheckButtonPPO;
+        private Krypton.Toolkit.KryptonCheckButton kryptonCheckButtonSPO;
         private Krypton.Toolkit.KryptonCheckButton kryptonCheckButton7;
-        private Krypton.Toolkit.KryptonCheckButton kryptonCheckButton4;
+        private Krypton.Toolkit.KryptonCheckButton kryptonCheckButtonCPA;
         private Krypton.Toolkit.KryptonLabel kryptonLabel6;
         private Krypton.Toolkit.KryptonPanel kryptonPanelSearchResult;
         private Krypton.Toolkit.KryptonTextBox kryptonTextBox1;

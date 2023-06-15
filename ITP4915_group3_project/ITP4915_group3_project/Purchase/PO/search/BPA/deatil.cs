@@ -8,15 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ITP4915_group3_project.category.return_reson.create
+namespace ITP4915_group3_project.Purchase.PO.search.BPA
 {
-    public partial class create : UserControl
+    public partial class deatil : UserControl
     {
-        public create(Control panelContent)
+        public deatil()
         {
             InitializeComponent();
-            panelContent.Controls.Add(this);
-            this.BringToFront();
+        }
+
+        private void bpa_headerBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
         }
     }
 }

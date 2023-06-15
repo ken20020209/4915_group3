@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ITP4915_group3_project.Purchase.PO.search.BPA
+namespace ITP4915_group3_project.Purchase.PO.search.PPO
 {
     public partial class search : UserControl
     {
@@ -19,7 +19,7 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             panel.Controls.Clear();
             panel.Controls.Add(this);
 
-            this.bpa_search_resultTableAdapter.Fill(this.purchase_dbDataSet.bpa_search_result, keyword);
+            this.ppo_search_resultTableAdapter.Fill(this.purchase_dbDataSet.ppo_search_result, keyword);
 
         }
 
@@ -34,5 +34,7 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
 
             }
         }
+
+        
     }
 }
