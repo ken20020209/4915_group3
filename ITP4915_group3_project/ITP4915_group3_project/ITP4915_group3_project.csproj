@@ -800,6 +800,12 @@
     <Compile Include="warehouse\check_PO\detail.Designer.cs">
       <DependentUpon>detail.cs</DependentUpon>
     </Compile>
+    <Compile Include="warehouse\check_PO\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="warehouse\check_PO\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
     <Compile Include="warehouse\check_PO\review.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1265,6 +1271,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\check_PO\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\check_PO\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\check_PO\review.resx">
       <DependentUpon>review.cs</DependentUpon>

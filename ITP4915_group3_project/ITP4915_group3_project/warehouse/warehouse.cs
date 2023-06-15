@@ -16,6 +16,8 @@ namespace ITP4915_group3_project.warehouse
         public warehouse()
         {
             InitializeComponent();
+
+            kryptonBtnCheckPO_Click(null, null);
         }
 
         private void warehouse_Load(object sender, EventArgs e)
@@ -26,6 +28,11 @@ namespace ITP4915_group3_project.warehouse
         private void kryptonPanel4_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void kryptonBtnCheckPO_Click(object sender, EventArgs e)
+        {
+            new check_PO.header(kryptonPanelHeader, kryptonPanelContent);
         }
     }
 }
