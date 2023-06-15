@@ -16,6 +16,9 @@ namespace ITP4915_group3_project.Purchase
         public purchase()
         {
             InitializeComponent();
+
+            //load first page
+            kryptonButtonPurchaseOrder_Click(null, null);
         }
 
         private void kryptonButtonPurchaseOrder_Click(object sender, EventArgs e)

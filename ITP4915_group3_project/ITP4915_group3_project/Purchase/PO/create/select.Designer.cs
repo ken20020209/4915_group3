@@ -247,6 +247,7 @@ namespace ITP4915_group3_project.Purchase.PO.create
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.Controls.Add(this.kryptonGroup4);
             this.Controls.Add(this.kryptonGroup3);
             this.Controls.Add(this.kryptonGroup1);
