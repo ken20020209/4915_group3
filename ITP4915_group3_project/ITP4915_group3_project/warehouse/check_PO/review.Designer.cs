@@ -44,7 +44,6 @@ namespace ITP4915_group3_project.warehouse.check_PO
             this.kryptonCheckButton4 = new Krypton.Toolkit.KryptonCheckButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.kryptonLabel6 = new Krypton.Toolkit.KryptonLabel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelContent)).BeginInit();
             this.kryptonPanelContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).BeginInit();
@@ -56,7 +55,6 @@ namespace ITP4915_group3_project.warehouse.check_PO
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).BeginInit();
             this.kryptonPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanelContent
@@ -64,7 +62,6 @@ namespace ITP4915_group3_project.warehouse.check_PO
             this.kryptonPanelContent.Controls.Add(this.kryptonGroup1);
             this.kryptonPanelContent.Controls.Add(this.pictureBox6);
             this.kryptonPanelContent.Controls.Add(this.kryptonLabel6);
-            this.kryptonPanelContent.Controls.Add(this.pictureBox5);
             this.kryptonPanelContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanelContent.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanelContent.Margin = new System.Windows.Forms.Padding(2);
@@ -306,10 +303,10 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // pictureBox6
             // 
             this.pictureBox6.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235818;
-            this.pictureBox6.Location = new System.Drawing.Point(411, 344);
+            this.pictureBox6.Location = new System.Drawing.Point(416, 383);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(191, 25);
+            this.pictureBox6.Size = new System.Drawing.Size(223, 41);
             this.pictureBox6.TabIndex = 11;
             this.pictureBox6.TabStop = false;
             // 
@@ -325,16 +322,6 @@ namespace ITP4915_group3_project.warehouse.check_PO
             this.kryptonLabel6.StateNormal.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel6.TabIndex = 8;
             this.kryptonLabel6.Values.Text = "RESULT (0)";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
-            this.pictureBox5.Location = new System.Drawing.Point(39, 197);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(554, 119);
-            this.pictureBox5.TabIndex = 10;
-            this.pictureBox5.TabStop = false;
             // 
             // review
             // 
@@ -357,7 +344,6 @@ namespace ITP4915_group3_project.warehouse.check_PO
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).EndInit();
             this.kryptonPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -379,6 +365,5 @@ namespace ITP4915_group3_project.warehouse.check_PO
         private Krypton.Toolkit.KryptonCheckButton kryptonCheckButton4;
         private System.Windows.Forms.PictureBox pictureBox6;
         private Krypton.Toolkit.KryptonLabel kryptonLabel6;
-        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }

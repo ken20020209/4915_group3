@@ -12,13 +12,13 @@ namespace ITP4915_group3_project.warehouse.check_PO
 {
     public partial class review : UserControl
     {
-        public Control panelContent;
-        public review(Control panelContent)
+        public Control panel;
+        public review(Control panel)
         {
             InitializeComponent();
-            this.panelContent = panelContent;
-            panelContent.Controls.Clear();
-            panelContent.Controls.Add(this);
+            this.panel = panel;
+            panel.Controls.Clear();
+            panel.Controls.Add(this);
         }
     }
 }
