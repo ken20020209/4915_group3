@@ -266,7 +266,7 @@
       <DependentUpon>edit.cs</DependentUpon>
     </Compile>
     <Compile Include="category\produce\create\create.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="category\produce\create\create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
@@ -276,6 +276,12 @@
     </Compile>
     <Compile Include="category\produce\create\create_success.Designer.cs">
       <DependentUpon>create_success.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\produce\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\produce\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
     </Compile>
     <Compile Include="category\produce\search\check.cs">
       <SubType>Form</SubType>
@@ -1000,6 +1006,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="category\produce\create\create_success.resx">
       <DependentUpon>create_success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\produce\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\produce\search\check.resx">
       <DependentUpon>check.cs</DependentUpon>
