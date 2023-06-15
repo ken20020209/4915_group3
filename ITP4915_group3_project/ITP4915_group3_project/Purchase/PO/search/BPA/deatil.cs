@@ -20,9 +20,6 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
         private void bpa_headerBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
-            this.bpa_headerBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.purchase_dbDataSet);
-
         }
     }
 }
