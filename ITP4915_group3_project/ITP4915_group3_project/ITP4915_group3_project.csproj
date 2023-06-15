@@ -336,6 +336,12 @@
     <Compile Include="category\return_reson\create\create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
     </Compile>
+    <Compile Include="category\return_reson\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\return_reson\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
     <Compile Include="category\return_reson\select\check.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -377,6 +383,12 @@
     </Compile>
     <Compile Include="category\supplier\create\create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\supplier\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\supplier\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
     </Compile>
     <Compile Include="category\supplier\search\delete_confirm.cs">
       <SubType>Form</SubType>
@@ -1098,6 +1110,9 @@
     <EmbeddedResource Include="category\return_reson\create\create.resx">
       <DependentUpon>create.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="category\return_reson\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="category\return_reson\select\check.resx">
       <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
@@ -1118,6 +1133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="category\supplier\create\create.resx">
       <DependentUpon>create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\supplier\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\supplier\search\delete_confirm.resx">
       <DependentUpon>delete_confirm.cs</DependentUpon>

@@ -102,6 +102,7 @@ namespace ITP4915_group3_project.category
             this.kryptonButtonReturn.TabIndex = 51;
             this.kryptonButtonReturn.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_circular_arrow_pointing_to_left_40__1_;
             this.kryptonButtonReturn.Values.Text = "Return";
+            this.kryptonButtonReturn.Click += new System.EventHandler(this.kryptonButtonReturn_Click);
             // 
             // kryptonButtonSupplier
             // 
@@ -125,6 +126,7 @@ namespace ITP4915_group3_project.category
             this.kryptonButtonSupplier.TabIndex = 50;
             this.kryptonButtonSupplier.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_supplier_40__1_;
             this.kryptonButtonSupplier.Values.Text = "Supplier";
+            this.kryptonButtonSupplier.Click += new System.EventHandler(this.kryptonButtonSupplier_Click);
             // 
             // kryptonButtonBrand
             // 
