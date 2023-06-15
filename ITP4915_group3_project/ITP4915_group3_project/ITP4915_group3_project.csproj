@@ -177,6 +177,12 @@
     <Compile Include="category\brand\create\create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
     </Compile>
+    <Compile Include="category\brand\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\brand\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
     <Compile Include="category\brand\search\delete_confirm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -995,6 +1001,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="category\brand\create\create.resx">
       <DependentUpon>create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\brand\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\brand\search\delete_confirm.resx">
       <DependentUpon>delete_confirm.cs</DependentUpon>

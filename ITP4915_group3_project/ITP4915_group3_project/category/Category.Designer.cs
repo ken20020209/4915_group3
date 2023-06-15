@@ -39,10 +39,10 @@ namespace ITP4915_group3_project.category
             this.kryptonButtonLogout = new Krypton.Toolkit.KryptonButton();
             this.kryptonButtonCategory = new Krypton.Toolkit.KryptonButton();
             this.kryptonPanelInfo = new Krypton.Toolkit.KryptonPanel();
+            this.pictureBoxMenu = new System.Windows.Forms.PictureBox();
             this.kryptonLabelName = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabeJob = new Krypton.Toolkit.KryptonLabel();
             this.kryptonPalette1 = new Krypton.Toolkit.KryptonPalette(this.components);
-            this.pictureBoxMenu = new System.Windows.Forms.PictureBox();
             this.kryptonPanelHeaderbase = new Krypton.Toolkit.KryptonPanel();
             this.kryptonPanelHeader = new Krypton.Toolkit.KryptonPanel();
             this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
@@ -147,6 +147,7 @@ namespace ITP4915_group3_project.category
             this.kryptonButtonBrand.TabIndex = 5;
             this.kryptonButtonBrand.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_tag_40;
             this.kryptonButtonBrand.Values.Text = "Brand";
+            this.kryptonButtonBrand.Click += new System.EventHandler(this.kryptonButtonBrand_Click);
             // 
             // kryptonButtonItem
             // 
@@ -256,6 +257,18 @@ namespace ITP4915_group3_project.category
             this.kryptonPanelInfo.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonPanelInfo.TabIndex = 0;
             // 
+            // pictureBoxMenu
+            // 
+            this.pictureBoxMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.pictureBoxMenu.Image = global::ITP4915_group3_project.Properties.Resources.icons8_menu_40;
+            this.pictureBoxMenu.Location = new System.Drawing.Point(55, 9);
+            this.pictureBoxMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxMenu.Name = "pictureBoxMenu";
+            this.pictureBoxMenu.Size = new System.Drawing.Size(30, 30);
+            this.pictureBoxMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxMenu.TabIndex = 2;
+            this.pictureBoxMenu.TabStop = false;
+            // 
             // kryptonLabelName
             // 
             this.kryptonLabelName.Location = new System.Drawing.Point(39, 73);
@@ -291,18 +304,6 @@ namespace ITP4915_group3_project.category
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.ButtonEdgeInset = 10;
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
-            // 
-            // pictureBoxMenu
-            // 
-            this.pictureBoxMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.pictureBoxMenu.Image = global::ITP4915_group3_project.Properties.Resources.icons8_menu_40;
-            this.pictureBoxMenu.Location = new System.Drawing.Point(55, 9);
-            this.pictureBoxMenu.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBoxMenu.Name = "pictureBoxMenu";
-            this.pictureBoxMenu.Size = new System.Drawing.Size(30, 30);
-            this.pictureBoxMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxMenu.TabIndex = 2;
-            this.pictureBoxMenu.TabStop = false;
             // 
             // kryptonPanelHeaderbase
             // 
