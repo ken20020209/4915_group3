@@ -559,6 +559,12 @@
     <Compile Include="Purchase\PO\search\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>
     </Compile>
+    <Compile Include="Purchase\PO\search\CPA\detail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\PO\search\CPA\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Purchase\PO\search\CPA\search.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -600,6 +606,12 @@
     </Compile>
     <Compile Include="Purchase\PO\search\PPO\search.Designer.cs">
       <DependentUpon>search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PO\search\SPO\detail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\PO\search\SPO\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\PO\search\SPO\search.cs">
       <SubType>UserControl</SubType>
@@ -1229,6 +1241,9 @@
     <EmbeddedResource Include="Purchase\PO\search\check.resx">
       <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PO\search\CPA\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PO\search\CPA\search.resx">
       <DependentUpon>search.cs</DependentUpon>
     </EmbeddedResource>
@@ -1249,6 +1264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PO\search\PPO\search.resx">
       <DependentUpon>search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PO\search\SPO\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PO\search\SPO\search.resx">
       <DependentUpon>search.cs</DependentUpon>
