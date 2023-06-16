@@ -1,7 +1,7 @@
 ﻿
 namespace ITP4915_group3_project.Purchase.PO.search.BPA
 {
-    partial class deatil
+    partial class detail
     {
         /// <summary> 
         /// Required designer variable.

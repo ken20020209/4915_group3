@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ITP4915_group3_project.Purchase.PO.search.BPA
 {
-    public partial class deatil : UserControl
+    public partial class detail : UserControl
     {
-        public deatil(Control panelContent,int header_ID)
+        public detail(Control panelContent,int header_ID)
         {
             InitializeComponent();
             panelContent.Controls.Add(this);

@@ -541,11 +541,11 @@
     <Compile Include="Purchase\PO\header.Designer.cs">
       <DependentUpon>header.cs</DependentUpon>
     </Compile>
-    <Compile Include="Purchase\PO\search\BPA\deatil.cs">
+    <Compile Include="Purchase\PO\search\BPA\detail.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Purchase\PO\search\BPA\deatil.Designer.cs">
-      <DependentUpon>deatil.cs</DependentUpon>
+    <Compile Include="Purchase\PO\search\BPA\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\PO\search\BPA\search.cs">
       <SubType>UserControl</SubType>
@@ -588,6 +588,12 @@
     </Compile>
     <Compile Include="Purchase\PO\search\edit.Designer.cs">
       <DependentUpon>edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PO\search\PPO\detail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\PO\search\PPO\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\PO\search\PPO\search.cs">
       <SubType>UserControl</SubType>
@@ -1214,8 +1220,8 @@
     <EmbeddedResource Include="Purchase\PO\header.resx">
       <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Purchase\PO\search\BPA\deatil.resx">
-      <DependentUpon>deatil.cs</DependentUpon>
+    <EmbeddedResource Include="Purchase\PO\search\BPA\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PO\search\BPA\search.resx">
       <DependentUpon>search.cs</DependentUpon>
@@ -1237,6 +1243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PO\search\edit.resx">
       <DependentUpon>edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PO\search\PPO\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PO\search\PPO\search.resx">
       <DependentUpon>search.cs</DependentUpon>

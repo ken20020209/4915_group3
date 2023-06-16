@@ -34,7 +34,7 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             else
             {
                 int header_ID = (int)kryptonDataGridViewSearchResult.Rows[e.RowIndex].Cells[1].Value;
-                new deatil(panelContent,header_ID);
+                new detail(panelContent,header_ID);
             }
         }
     }
