@@ -312,7 +312,6 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.panelContent.Name = "panelContent";
             this.panelContent.Size = new System.Drawing.Size(800, 513);
             this.panelContent.TabIndex = 5;
-            this.panelContent.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContent_Paint);
             // 
             // requestOrder_restaurant_stockDataGridView
             // 
