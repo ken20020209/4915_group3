@@ -720,6 +720,7 @@ namespace ITP4915_group3_project.Purchase
             // kryptonPanelContent
             // 
             this.kryptonPanelContent.AutoScroll = true;
+            this.kryptonPanelContent.AutoSize = true;
             this.kryptonPanelContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanelContent.Location = new System.Drawing.Point(184, 61);
             this.kryptonPanelContent.Margin = new System.Windows.Forms.Padding(2);
@@ -732,6 +733,7 @@ namespace ITP4915_group3_project.Purchase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.kryptonPanelContent);
@@ -757,6 +759,7 @@ namespace ITP4915_group3_project.Purchase
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNotice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelContent)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

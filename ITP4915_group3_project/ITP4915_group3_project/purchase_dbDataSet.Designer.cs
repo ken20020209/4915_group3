@@ -104,6 +104,8 @@ namespace ITP4915_group3_project {
         
         private global::System.Data.DataRelation relationSPO_lines_header_ID_fk1;
         
+        private global::System.Data.DataRelation relationbpa_lines_item;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -605,6 +607,7 @@ namespace ITP4915_group3_project {
             this.relationSPO_lines_CPA_ID_fk2 = this.Relations["SPO_lines_CPA_ID_fk2"];
             this.relationPPO_lines_header_ID_fk1 = this.Relations["PPO_lines_header_ID_fk1"];
             this.relationSPO_lines_header_ID_fk1 = this.Relations["SPO_lines_header_ID_fk1"];
+            this.relationbpa_lines_item = this.Relations["bpa_lines_item"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -745,6 +748,10 @@ namespace ITP4915_group3_project {
                         this.tablespo_search_result.header_IDColumn}, new global::System.Data.DataColumn[] {
                         this.tablespo_lines.header_IDColumn}, false);
             this.Relations.Add(this.relationSPO_lines_header_ID_fk1);
+            this.relationbpa_lines_item = new global::System.Data.DataRelation("bpa_lines_item", new global::System.Data.DataColumn[] {
+                        this.tablebpa_lines.item_IDColumn}, new global::System.Data.DataColumn[] {
+                        this.tableitem.item_IDColumn}, false);
+            this.Relations.Add(this.relationbpa_lines_item);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6732,6 +6739,17 @@ namespace ITP4915_group3_project {
             public void SetreferenceNull() {
                 this[this.tablebpa_lines.referenceColumn] = global::System.Convert.DBNull;
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public itemRow[] GetitemRows() {
+                if ((this.Table.ChildRelations["bpa_lines_item"] == null)) {
+                    return new itemRow[0];
+                }
+                else {
+                    return ((itemRow[])(base.GetChildRows(this.Table.ChildRelations["bpa_lines_item"])));
+                }
+            }
         }
         
         /// <summary>
@@ -6833,6 +6851,17 @@ namespace ITP4915_group3_project {
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["item_supplier_ID_fk"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bpa_linesRow bpa_linesRow {
+                get {
+                    return ((bpa_linesRow)(this.GetParentRow(this.Table.ParentRelations["bpa_lines_item"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["bpa_lines_item"]);
                 }
             }
             
@@ -9611,13 +9640,27 @@ namespace ITP4915_group3_project.purchase_dbDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[1];
+            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[2];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT `header_ID`, `purchase_order_revision`, `create_date`, `effective_dates`, " +
                 "`supplier_ID`, `buyer_ID`, `agreed_amount`, `currency`, `terms`, `condition` FRO" +
                 "M `bpa_header`";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT `header_ID`, `purchase_order_revision`, `create_date`, `effective_dates`, " +
+                "`supplier_ID`, `buyer_ID`, `agreed_amount`, `currency`, `terms`, `condition` FRO" +
+                "M `bpa_header`\r\nwhere header_id= @header_ID";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            global::MySql.Data.MySqlClient.MySqlParameter param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@header_ID";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "header_ID";
+            param.SourceVersion = global::System.Data.DataRowVersion.Current;
+            this._commandCollection[1].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9639,6 +9682,32 @@ namespace ITP4915_group3_project.purchase_dbDataSetTableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual purchase_dbDataSet.bpa_headerDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            purchase_dbDataSet.bpa_headerDataTable dataTable = new purchase_dbDataSet.bpa_headerDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy_header_ID(purchase_dbDataSet.bpa_headerDataTable dataTable, int header_ID) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(header_ID));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual purchase_dbDataSet.bpa_headerDataTable GetDataBy__header_ID(int header_ID) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(header_ID));
             purchase_dbDataSet.bpa_headerDataTable dataTable = new purchase_dbDataSet.bpa_headerDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -17132,15 +17201,6 @@ WHERE           (supplier.name LIKE @keyword) OR
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._itemTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.item.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._itemTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             if ((this._userTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.user.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
@@ -17156,6 +17216,24 @@ WHERE           (supplier.name LIKE @keyword) OR
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._bpa_headerTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._bpa_linesTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.bpa_lines.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._bpa_linesTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._itemTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.item.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._itemTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -17183,15 +17261,6 @@ WHERE           (supplier.name LIKE @keyword) OR
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._spo_headerTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._bpa_linesTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.bpa_lines.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._bpa_linesTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -17231,14 +17300,6 @@ WHERE           (supplier.name LIKE @keyword) OR
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._itemTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.item.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._itemTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             if ((this._userTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.user.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
@@ -17252,6 +17313,22 @@ WHERE           (supplier.name LIKE @keyword) OR
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._bpa_headerTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._bpa_linesTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.bpa_lines.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._bpa_linesTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._itemTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.item.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._itemTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -17276,14 +17353,6 @@ WHERE           (supplier.name LIKE @keyword) OR
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._spo_headerTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._bpa_linesTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.bpa_lines.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._bpa_linesTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -17329,14 +17398,6 @@ WHERE           (supplier.name LIKE @keyword) OR
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._bpa_linesTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.bpa_lines.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._bpa_linesTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._spo_headerTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.spo_header.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -17361,6 +17422,22 @@ WHERE           (supplier.name LIKE @keyword) OR
                     allChangedRows.AddRange(deletedRows);
                 }
             }
+            if ((this._itemTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.item.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._itemTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._bpa_linesTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.bpa_lines.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._bpa_linesTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             if ((this._bpa_headerTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.bpa_header.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -17374,14 +17451,6 @@ WHERE           (supplier.name LIKE @keyword) OR
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._userTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._itemTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.item.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._itemTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }

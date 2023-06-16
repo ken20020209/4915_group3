@@ -4,5 +4,8 @@
 
     partial class purchase_dbDataSet
     {
+        partial class bpa_linesDataTable
+        {
+        }
     }
 }

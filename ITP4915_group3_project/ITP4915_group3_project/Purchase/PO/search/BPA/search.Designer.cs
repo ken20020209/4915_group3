@@ -32,11 +32,11 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             this.components = new System.ComponentModel.Container();
             this.kryptonDataGridViewSearchResult = new Krypton.Toolkit.KryptonDataGridView();
             this.detail = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
+            this.bpa_search_resultBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.purchase_dbDataSet = new ITP4915_group3_project.purchase_dbDataSet();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bpa_search_resultBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.purchase_dbDataSet = new ITP4915_group3_project.purchase_dbDataSet();
             this.bpa_search_resultTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.bpa_search_resultTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridViewSearchResult)).BeginInit();
@@ -64,6 +64,17 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             this.detail.Text = "detail";
             this.detail.UseColumnTextForButtonValue = true;
             // 
+            // bpa_search_resultBindingSource
+            // 
+            this.bpa_search_resultBindingSource.AllowNew = false;
+            this.bpa_search_resultBindingSource.DataMember = "bpa_search_result";
+            this.bpa_search_resultBindingSource.DataSource = this.purchase_dbDataSet;
+            // 
+            // purchase_dbDataSet
+            // 
+            this.purchase_dbDataSet.DataSetName = "purchase_dbDataSet";
+            this.purchase_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "header_ID";
@@ -84,17 +95,6 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             this.dataGridViewTextBoxColumn3.HeaderText = "suplier name";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // bpa_search_resultBindingSource
-            // 
-            this.bpa_search_resultBindingSource.AllowNew = false;
-            this.bpa_search_resultBindingSource.DataMember = "bpa_search_result";
-            this.bpa_search_resultBindingSource.DataSource = this.purchase_dbDataSet;
-            // 
-            // purchase_dbDataSet
-            // 
-            this.purchase_dbDataSet.DataSetName = "purchase_dbDataSet";
-            this.purchase_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bpa_search_resultTableAdapter
             // 
@@ -120,6 +120,7 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.Controls.Add(this.kryptonDataGridViewSearchResult);
             this.Name = "search";
             this.Size = new System.Drawing.Size(600, 300);

@@ -23,25 +23,25 @@ namespace ITP4915_group3_project.Purchase.PO.search
 
         private void kryptonCheckButtonBPA_Click(object sender, EventArgs e)
         {
-            new BPA.search(kryptonPanelSearchResult, kryptonTextBoxSearchBar.Text);
+            new BPA.search(this, kryptonTextBoxSearchBar.Text);
             curPO = 0;
         }
 
         private void kryptonCheckButtonCPA_Click(object sender, EventArgs e)
         {
 
-            new CPA.search(kryptonPanelSearchResult, kryptonTextBoxSearchBar.Text);
+            new CPA.search(this, kryptonTextBoxSearchBar.Text);
             curPO = 1;
         }
 
         private void kryptonCheckButtonPPO_Click(object sender, EventArgs e)
         {
-            new PPO.search(kryptonPanelSearchResult, kryptonTextBoxSearchBar.Text);
+            new PPO.search(this, kryptonTextBoxSearchBar.Text);
             curPO = 2;
         }
         private void kryptonCheckButtonSPO_Click(object sender, EventArgs e)
         {
-            new SPO.search(kryptonPanelSearchResult, kryptonTextBoxSearchBar.Text);
+            new SPO.search(this, kryptonTextBoxSearchBar.Text);
             curPO = 3;
 
         }
@@ -49,10 +49,10 @@ namespace ITP4915_group3_project.Purchase.PO.search
         {
             switch (curPO)
             {
-                case 0: new BPA.search(kryptonPanelSearchResult, kryptonTextBoxSearchBar.Text); break;
-                case 1: new CPA.search(kryptonPanelSearchResult, kryptonTextBoxSearchBar.Text); break;
-                case 2: new PPO.search(kryptonPanelSearchResult, kryptonTextBoxSearchBar.Text); break;
-                case 3: new SPO.search(kryptonPanelSearchResult, kryptonTextBoxSearchBar.Text); break;
+                case 0: new BPA.search(this, kryptonTextBoxSearchBar.Text); break;
+                case 1: new CPA.search(this, kryptonTextBoxSearchBar.Text); break;
+                case 2: new PPO.search(this, kryptonTextBoxSearchBar.Text); break;
+                case 3: new SPO.search(this, kryptonTextBoxSearchBar.Text); break;
             }
         }
     }
