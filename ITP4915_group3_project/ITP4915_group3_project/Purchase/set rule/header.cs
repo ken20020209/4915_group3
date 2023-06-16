@@ -8,17 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ITP4915_group3_project.warehouse.check_PO
+namespace ITP4915_group3_project.Purchase.set_rule
 {
-    public partial class review : UserControl
+    public partial class header : UserControl
     {
-        public Control panelContent;
-        public review(Control panelContent)
+        Control panelContent;
+        public header(Control header,Control panelContent)
         {
             InitializeComponent();
             this.panelContent = panelContent;
+
+            header.Controls.Clear();
+            header.Controls.Add(this);
+
             panelContent.Controls.Clear();
-            panelContent.Controls.Add(this);
+            new main(panelContent);
+
+            
         }
+
     }
 }

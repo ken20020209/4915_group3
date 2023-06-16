@@ -27,5 +27,25 @@ namespace ITP4915_group3_project.category
         {
             new category.header(kryptonPanelHeader, panelCategoryContent);
         }
+
+        private void kryptonButtonItem_Click(object sender, EventArgs e)
+        {
+            new produce.header(kryptonPanelHeader, panelCategoryContent);
+        }
+
+        private void kryptonButtonBrand_Click(object sender, EventArgs e)
+        {
+            new brand.header(kryptonPanelHeader, panelCategoryContent);
+        }
+
+        private void kryptonButtonReturn_Click(object sender, EventArgs e)
+        {
+            new return_reson.header(kryptonPanelHeader, panelCategoryContent);
+        }
+
+        private void kryptonButtonSupplier_Click(object sender, EventArgs e)
+        {
+            new supplier.header(kryptonPanelHeader, panelCategoryContent);
+        }
     }
 }

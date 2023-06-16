@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace ITP4915_group3_project.Purchase.set_rule
 {
-    public partial class time : Form
+    public partial class time : UserControl
     {
-        public time()
+        Control panelContent;
+        public time(Control panelContent)
         {
             InitializeComponent();
+            this.panelContent = panelContent;
+            panelContent.Controls.Add(this);
+            this.BringToFront();
+        }
+
+        private void kryptonLabelBack_Click(object sender, EventArgs e)
+        {
+            panelContent.Controls.Remove(this);
         }
     }
 }

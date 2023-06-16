@@ -33,5 +33,53 @@ namespace ITP4915_group3_project.Properties {
                 return ((string)(this["_4523_g1_project_dbConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Yes")]
+        public string autoMatch {
+            get {
+                return ((string)(this["autoMatch"]));
+            }
+            set {
+                this["autoMatch"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Yes")]
+        public string autoBPA {
+            get {
+                return ((string)(this["autoBPA"]));
+            }
+            set {
+                this["autoBPA"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Yes")]
+        public string autoBR {
+            get {
+                return ((string)(this["autoBR"]));
+            }
+            set {
+                this["autoBR"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Yes")]
+        public string autoWarehouse {
+            get {
+                return ((string)(this["autoWarehouse"]));
+            }
+            set {
+                this["autoWarehouse"] = value;
+            }
+        }
     }
 }

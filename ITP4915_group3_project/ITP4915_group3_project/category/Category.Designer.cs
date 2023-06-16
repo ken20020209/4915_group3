@@ -39,10 +39,10 @@ namespace ITP4915_group3_project.category
             this.kryptonButtonLogout = new Krypton.Toolkit.KryptonButton();
             this.kryptonButtonCategory = new Krypton.Toolkit.KryptonButton();
             this.kryptonPanelInfo = new Krypton.Toolkit.KryptonPanel();
+            this.pictureBoxMenu = new System.Windows.Forms.PictureBox();
             this.kryptonLabelName = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabeJob = new Krypton.Toolkit.KryptonLabel();
             this.kryptonPalette1 = new Krypton.Toolkit.KryptonPalette(this.components);
-            this.pictureBoxMenu = new System.Windows.Forms.PictureBox();
             this.kryptonPanelHeaderbase = new Krypton.Toolkit.KryptonPanel();
             this.kryptonPanelHeader = new Krypton.Toolkit.KryptonPanel();
             this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
@@ -83,10 +83,10 @@ namespace ITP4915_group3_project.category
             // kryptonButtonReturn
             // 
             this.kryptonButtonReturn.CornerRoundingRadius = 12F;
-            this.kryptonButtonReturn.Location = new System.Drawing.Point(7, 324);
+            this.kryptonButtonReturn.Location = new System.Drawing.Point(2, 331);
             this.kryptonButtonReturn.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButtonReturn.Name = "kryptonButtonReturn";
-            this.kryptonButtonReturn.Size = new System.Drawing.Size(163, 88);
+            this.kryptonButtonReturn.Size = new System.Drawing.Size(183, 56);
             this.kryptonButtonReturn.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonButtonReturn.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonButtonReturn.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
@@ -102,14 +102,15 @@ namespace ITP4915_group3_project.category
             this.kryptonButtonReturn.TabIndex = 51;
             this.kryptonButtonReturn.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_circular_arrow_pointing_to_left_40__1_;
             this.kryptonButtonReturn.Values.Text = "Return";
+            this.kryptonButtonReturn.Click += new System.EventHandler(this.kryptonButtonReturn_Click);
             // 
             // kryptonButtonSupplier
             // 
             this.kryptonButtonSupplier.CornerRoundingRadius = 12F;
-            this.kryptonButtonSupplier.Location = new System.Drawing.Point(0, 260);
+            this.kryptonButtonSupplier.Location = new System.Drawing.Point(0, 271);
             this.kryptonButtonSupplier.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButtonSupplier.Name = "kryptonButtonSupplier";
-            this.kryptonButtonSupplier.Size = new System.Drawing.Size(179, 76);
+            this.kryptonButtonSupplier.Size = new System.Drawing.Size(183, 56);
             this.kryptonButtonSupplier.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonButtonSupplier.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonButtonSupplier.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
@@ -125,14 +126,15 @@ namespace ITP4915_group3_project.category
             this.kryptonButtonSupplier.TabIndex = 50;
             this.kryptonButtonSupplier.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_supplier_40__1_;
             this.kryptonButtonSupplier.Values.Text = "Supplier";
+            this.kryptonButtonSupplier.Click += new System.EventHandler(this.kryptonButtonSupplier_Click);
             // 
             // kryptonButtonBrand
             // 
             this.kryptonButtonBrand.CornerRoundingRadius = 12F;
-            this.kryptonButtonBrand.Location = new System.Drawing.Point(16, 212);
+            this.kryptonButtonBrand.Location = new System.Drawing.Point(2, 222);
             this.kryptonButtonBrand.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButtonBrand.Name = "kryptonButtonBrand";
-            this.kryptonButtonBrand.Size = new System.Drawing.Size(163, 60);
+            this.kryptonButtonBrand.Size = new System.Drawing.Size(183, 56);
             this.kryptonButtonBrand.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonButtonBrand.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonButtonBrand.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
@@ -147,14 +149,15 @@ namespace ITP4915_group3_project.category
             this.kryptonButtonBrand.TabIndex = 5;
             this.kryptonButtonBrand.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_tag_40;
             this.kryptonButtonBrand.Values.Text = "Brand";
+            this.kryptonButtonBrand.Click += new System.EventHandler(this.kryptonButtonBrand_Click);
             // 
             // kryptonButtonItem
             // 
             this.kryptonButtonItem.CornerRoundingRadius = 12F;
-            this.kryptonButtonItem.Location = new System.Drawing.Point(16, 171);
+            this.kryptonButtonItem.Location = new System.Drawing.Point(2, 170);
             this.kryptonButtonItem.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButtonItem.Name = "kryptonButtonItem";
-            this.kryptonButtonItem.Size = new System.Drawing.Size(141, 63);
+            this.kryptonButtonItem.Size = new System.Drawing.Size(183, 56);
             this.kryptonButtonItem.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonButtonItem.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonButtonItem.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
@@ -170,14 +173,15 @@ namespace ITP4915_group3_project.category
             this.kryptonButtonItem.TabIndex = 6;
             this.kryptonButtonItem.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_shipping_product_40__2_;
             this.kryptonButtonItem.Values.Text = "Item";
+            this.kryptonButtonItem.Click += new System.EventHandler(this.kryptonButtonItem_Click);
             // 
             // kryptonButtonSetting
             // 
             this.kryptonButtonSetting.CornerRoundingRadius = 12F;
-            this.kryptonButtonSetting.Location = new System.Drawing.Point(16, 425);
+            this.kryptonButtonSetting.Location = new System.Drawing.Point(2, 442);
             this.kryptonButtonSetting.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButtonSetting.Name = "kryptonButtonSetting";
-            this.kryptonButtonSetting.Size = new System.Drawing.Size(154, 70);
+            this.kryptonButtonSetting.Size = new System.Drawing.Size(183, 56);
             this.kryptonButtonSetting.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonButtonSetting.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonButtonSetting.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
@@ -197,10 +201,10 @@ namespace ITP4915_group3_project.category
             // kryptonButtonLogout
             // 
             this.kryptonButtonLogout.CornerRoundingRadius = 12F;
-            this.kryptonButtonLogout.Location = new System.Drawing.Point(16, 499);
+            this.kryptonButtonLogout.Location = new System.Drawing.Point(1, 502);
             this.kryptonButtonLogout.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButtonLogout.Name = "kryptonButtonLogout";
-            this.kryptonButtonLogout.Size = new System.Drawing.Size(163, 62);
+            this.kryptonButtonLogout.Size = new System.Drawing.Size(183, 57);
             this.kryptonButtonLogout.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonButtonLogout.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonButtonLogout.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
@@ -220,10 +224,10 @@ namespace ITP4915_group3_project.category
             // 
             this.kryptonButtonCategory.CornerRoundingRadius = 12F;
             this.kryptonButtonCategory.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.kryptonButtonCategory.Location = new System.Drawing.Point(11, 107);
+            this.kryptonButtonCategory.Location = new System.Drawing.Point(0, 107);
             this.kryptonButtonCategory.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButtonCategory.Name = "kryptonButtonCategory";
-            this.kryptonButtonCategory.Size = new System.Drawing.Size(127, 77);
+            this.kryptonButtonCategory.Size = new System.Drawing.Size(183, 56);
             this.kryptonButtonCategory.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonButtonCategory.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonButtonCategory.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
@@ -254,6 +258,18 @@ namespace ITP4915_group3_project.category
             this.kryptonPanelInfo.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonPanelInfo.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonPanelInfo.TabIndex = 0;
+            // 
+            // pictureBoxMenu
+            // 
+            this.pictureBoxMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.pictureBoxMenu.Image = global::ITP4915_group3_project.Properties.Resources.icons8_menu_40;
+            this.pictureBoxMenu.Location = new System.Drawing.Point(55, 9);
+            this.pictureBoxMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxMenu.Name = "pictureBoxMenu";
+            this.pictureBoxMenu.Size = new System.Drawing.Size(30, 30);
+            this.pictureBoxMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxMenu.TabIndex = 2;
+            this.pictureBoxMenu.TabStop = false;
             // 
             // kryptonLabelName
             // 
@@ -291,18 +307,6 @@ namespace ITP4915_group3_project.category
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.ButtonEdgeInset = 10;
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
             // 
-            // pictureBoxMenu
-            // 
-            this.pictureBoxMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.pictureBoxMenu.Image = global::ITP4915_group3_project.Properties.Resources.icons8_menu_40;
-            this.pictureBoxMenu.Location = new System.Drawing.Point(55, 9);
-            this.pictureBoxMenu.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBoxMenu.Name = "pictureBoxMenu";
-            this.pictureBoxMenu.Size = new System.Drawing.Size(30, 30);
-            this.pictureBoxMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxMenu.TabIndex = 2;
-            this.pictureBoxMenu.TabStop = false;
-            // 
             // kryptonPanelHeaderbase
             // 
             this.kryptonPanelHeaderbase.Controls.Add(this.kryptonPanelHeader);
@@ -337,7 +341,7 @@ namespace ITP4915_group3_project.category
             this.kryptonButton1.Location = new System.Drawing.Point(264, 14);
             this.kryptonButton1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(75, 33);
+            this.kryptonButton1.Size = new System.Drawing.Size(98, 33);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));

@@ -33,50 +33,50 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.kryptonLabel24 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonGroup1 = new Krypton.Toolkit.KryptonGroup();
             this.kryptonLabel25 = new Krypton.Toolkit.KryptonLabel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.kryptonLabel22 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabelTotalItem = new Krypton.Toolkit.KryptonLabel();
             this.kryptonGroup2 = new Krypton.Toolkit.KryptonGroup();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.kryptonLabel5 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel6 = new Krypton.Toolkit.KryptonLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.kryptonComboBox1 = new Krypton.Toolkit.KryptonComboBox();
             this.kryptonTextBox15 = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonGroup3 = new Krypton.Toolkit.KryptonGroup();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panelContent = new System.Windows.Forms.Panel();
             this.requestOrder_restaurant_stockDataGridView = new System.Windows.Forms.DataGridView();
-            this.detail = new System.Windows.Forms.DataGridViewButtonColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.item_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.detail = new System.Windows.Forms.DataGridViewButtonColumn();
             this.requestOrder_restaurant_stockBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.restaurant_dbDataSet = new ITP4915_group3_project.restaurant_dbDataSet();
             this.requestOrder_restaurant_stockTableAdapter = new ITP4915_group3_project.restaurant_dbDataSetTableAdapters.requestOrder_restaurant_stockTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.restaurant_dbDataSetTableAdapters.TableAdapterManager();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).BeginInit();
             this.kryptonGroup1.Panel.SuspendLayout();
             this.kryptonGroup1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup2.Panel)).BeginInit();
             this.kryptonGroup2.Panel.SuspendLayout();
             this.kryptonGroup2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup3.Panel)).BeginInit();
             this.kryptonGroup3.Panel.SuspendLayout();
             this.kryptonGroup3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panelContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.requestOrder_restaurant_stockDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestOrder_restaurant_stockBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.restaurant_dbDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonLabel24
@@ -121,6 +121,18 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.kryptonLabel25.TabIndex = 1;
             this.kryptonLabel25.Values.Text = "2";
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(98)))), ((int)(((byte)(93)))));
+            this.pictureBox5.Image = global::ITP4915_group3_project.Properties.Resources.icons8_obsolete_stock_40;
+            this.pictureBox5.Location = new System.Drawing.Point(2, 13);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(47, 47);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
+            // 
             // kryptonLabel22
             // 
             this.kryptonLabel22.Location = new System.Drawing.Point(53, 42);
@@ -162,6 +174,18 @@ namespace ITP4915_group3_project.Restaurant.stock
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonGroup2.StateCommon.Border.Rounding = 25F;
             this.kryptonGroup2.TabIndex = 35;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(134)))), ((int)(((byte)(166)))));
+            this.pictureBox6.Image = global::ITP4915_group3_project.Properties.Resources.icons8_sell_40;
+            this.pictureBox6.Location = new System.Drawing.Point(2, 13);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(47, 47);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
             // 
             // kryptonLabel5
             // 
@@ -261,6 +285,18 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.kryptonGroup3.StateCommon.Border.Rounding = 25F;
             this.kryptonGroup3.TabIndex = 36;
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(189)))), ((int)(((byte)(26)))));
+            this.pictureBox7.Image = global::ITP4915_group3_project.Properties.Resources.icons8_handshake_40;
+            this.pictureBox7.Location = new System.Drawing.Point(2, 13);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(47, 47);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 0;
+            this.pictureBox7.TabStop = false;
+            // 
             // panelContent
             // 
             this.panelContent.Controls.Add(this.requestOrder_restaurant_stockDataGridView);
@@ -276,6 +312,7 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.panelContent.Name = "panelContent";
             this.panelContent.Size = new System.Drawing.Size(800, 513);
             this.panelContent.TabIndex = 5;
+            this.panelContent.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContent_Paint);
             // 
             // requestOrder_restaurant_stockDataGridView
             // 
@@ -295,11 +332,6 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.requestOrder_restaurant_stockDataGridView.Size = new System.Drawing.Size(663, 220);
             this.requestOrder_restaurant_stockDataGridView.TabIndex = 39;
             this.requestOrder_restaurant_stockDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.requestOrder_restaurant_stockDataGridView_CellContentClick);
-            // 
-            // detail
-            // 
-            this.detail.HeaderText = "detail";
-            this.detail.Name = "detail";
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -331,6 +363,11 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.dataGridViewTextBoxColumn5.HeaderText = "remarks";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
+            // detail
+            // 
+            this.detail.HeaderText = "detail";
+            this.detail.Name = "detail";
+            // 
             // requestOrder_restaurant_stockBindingSource
             // 
             this.requestOrder_restaurant_stockBindingSource.DataMember = "requestOrder_restaurant_stock";
@@ -352,42 +389,7 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.tableAdapterManager.purchasers_requestTableAdapter = null;
             this.tableAdapterManager.restaurant_stock_itemTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.restaurant_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(189)))), ((int)(((byte)(26)))));
-            this.pictureBox7.Image = global::ITP4915_group3_project.Properties.Resources.icons8_handshake_40;
-            this.pictureBox7.Location = new System.Drawing.Point(2, 13);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(47, 47);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 0;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(134)))), ((int)(((byte)(166)))));
-            this.pictureBox6.Image = global::ITP4915_group3_project.Properties.Resources.icons8_sell_40;
-            this.pictureBox6.Location = new System.Drawing.Point(2, 13);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(47, 47);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(98)))), ((int)(((byte)(93)))));
-            this.pictureBox5.Image = global::ITP4915_group3_project.Properties.Resources.icons8_obsolete_stock_40;
-            this.pictureBox5.Location = new System.Drawing.Point(2, 13);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(47, 47);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
+            this.tableAdapterManager.userTableAdapter = null;
             // 
             // check
             // 
@@ -401,25 +403,25 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.kryptonGroup1.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).EndInit();
             this.kryptonGroup1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup2.Panel)).EndInit();
             this.kryptonGroup2.Panel.ResumeLayout(false);
             this.kryptonGroup2.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup2)).EndInit();
             this.kryptonGroup2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup3.Panel)).EndInit();
             this.kryptonGroup3.Panel.ResumeLayout(false);
             this.kryptonGroup3.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup3)).EndInit();
             this.kryptonGroup3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panelContent.ResumeLayout(false);
             this.panelContent.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.requestOrder_restaurant_stockDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestOrder_restaurant_stockBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.restaurant_dbDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }

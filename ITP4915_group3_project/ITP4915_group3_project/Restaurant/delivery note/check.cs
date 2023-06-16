@@ -12,9 +12,14 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
 {
     public partial class check : UserControl
     {
-        public check()
+        public Control panel;
+        public check(Control panel)
         {
             InitializeComponent();
+
+            this.panel = panel;
+            this.panel.Controls.Clear();
+            this.panel.Controls.Add(this);
         }
 
         private void kryptonGroupBox5_Panel_Paint(object sender, PaintEventArgs e)

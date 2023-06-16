@@ -28,5 +28,13 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
         {
             detail requestDetail = new detail(this,int.Parse(purchasers_requestDataGridView.Rows[e.RowIndex].Cells["purchasers_request_id"].Value.ToString()));
         }
+
+        private void kryptonButtonSearch_Click(object sender, EventArgs e)
+        {
+            string keyword = "%" + kryptonTextBoxSearchKeyWord.Text + "%";
+
+            purchasers_requestTableAdapter.FillBySearch(this.restaurant_dbDataSet.purchasers_request, restaurant.restaurant_ID, keyword);
+        }
+
     }
 }

@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ITP4915_group3_project.category.select
+namespace ITP4915_group3_project.category.category.select
 {
-    public partial class edit : Form
+    public partial class edit : UserControl
     {
         public edit()
         {

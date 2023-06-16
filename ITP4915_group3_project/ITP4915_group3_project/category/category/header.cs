@@ -33,5 +33,7 @@ namespace ITP4915_group3_project.category.category
             panelContent.Controls.Clear();
             
         }
+
+
     }
 }

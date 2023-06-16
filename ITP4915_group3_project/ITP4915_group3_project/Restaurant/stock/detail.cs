@@ -36,5 +36,10 @@ namespace ITP4915_group3_project.Restaurant.stock
             update updatePanel = new update(this, itemID);
 
         }
+
+        private void kryptonPanelContent_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

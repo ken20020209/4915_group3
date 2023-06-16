@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ITP4915_group3_project.warehouse.check_PO
+namespace ITP4915_group3_project.Purchase.PO.search.BPA
 {
-    public partial class UserControl1 : UserControl
+    public partial class deatil : UserControl
     {
-        public UserControl1()
+        public deatil()
         {
             InitializeComponent();
+        }
+
+        private void bpa_headerBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
         }
     }
 }
