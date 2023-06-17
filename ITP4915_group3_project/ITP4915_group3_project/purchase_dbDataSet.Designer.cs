@@ -23715,11 +23715,27 @@ WHERE           (purchasers_request_id = @id)";
             this._commandCollection[1].Parameters.Add(param);
             this._commandCollection[2] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT          purchasers_request_id, requestor_ID, restaurant_ID, item_ID, qty," +
-                " priority_id, status_ID, create_date, \r\n                            expected_del" +
-                "ivery_date, remarks\r\nFROM               purchasers_request\r\nWHERE           (sta" +
-                "tus_ID = 1000)";
+            this._commandCollection[2].CommandText = @"SELECT          purchasers_request_id, requestor_ID, restaurant_ID, item_ID, qty, priority_id, status_ID, create_date, 
+                            expected_delivery_date, remarks
+FROM               purchasers_request
+WHERE           (status_ID = @status_ID OR
+                            @status_ID = 0) AND (purchasers_request_id LIKE @keyword)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@status_ID";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "status_ID";
+            param.SourceVersion = global::System.Data.DataRowVersion.Current;
+            this._commandCollection[2].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@keyword";
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.IsNullable = true;
+            param.SourceColumn = "purchasers_request_id";
+            param.SourceVersion = global::System.Data.DataRowVersion.Current;
+            this._commandCollection[2].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -23764,8 +23780,20 @@ WHERE           (purchasers_request_id = @id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillByWaitProcess(purchase_dbDataSet.purchasers_requestDataTable dataTable) {
+        public virtual int FillBy_Status(purchase_dbDataSet.purchasers_requestDataTable dataTable, global::System.Nullable<int> status_ID, string keyword) {
             this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((status_ID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(status_ID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((keyword == null)) {
+                throw new global::System.ArgumentNullException("keyword");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(keyword));
+            }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }

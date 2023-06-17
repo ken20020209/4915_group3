@@ -12,13 +12,15 @@ namespace ITP4915_group3_project.Purchase.request_order
 {
     public partial class check : UserControl
     {
+        public int status_ID = 1000;
+        string keyWord = "";
         public check(Control panelContent)
         {
             InitializeComponent();
             panelContent.Controls.Add(this);
 
             //load request
-            this.purchasers_requestTableAdapter.FillByWaitProcess(this.purchase_dbDataSet.purchasers_request);
+            search();
             
 
             
@@ -36,7 +38,27 @@ namespace ITP4915_group3_project.Purchase.request_order
                 new detail(this, header_ID);
             }
         }
+        private void searchButton(object sender,EventArgs e)
+        {
+            
+            status_ID = int.Parse(((Krypton.Toolkit.KryptonCheckButton)sender).Tag.ToString());
+            keyWord = kryptonTextBoxSearchKeyWord.Text;
+            search();
 
 
+            
+        }
+        private void search()
+        {
+            keyWord = "%" + keyWord + "%";
+            this.purchasers_requestTableAdapter.FillBy_Status(this.purchase_dbDataSet.purchasers_request,status_ID,keyWord);
+
+        }
+
+        private void kryptonButtonSearch_Click(object sender, EventArgs e)
+        {
+            keyWord= kryptonTextBoxSearchKeyWord.Text;
+            search();
+        }
     }
 }
