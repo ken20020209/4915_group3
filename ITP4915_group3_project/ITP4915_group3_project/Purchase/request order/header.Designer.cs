@@ -30,7 +30,6 @@ namespace ITP4915_group3_project.Purchase.request_order
         private void InitializeComponent()
         {
             this.kryptonLabelTitle = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonButtonCreate = new Krypton.Toolkit.KryptonButton();
             this.kryptonButtonReview = new Krypton.Toolkit.KryptonButton();
             this.kryptonPanelHeader = new Krypton.Toolkit.KryptonPanel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelHeader)).BeginInit();
@@ -47,26 +46,6 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.kryptonLabelTitle.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabelTitle.TabIndex = 0;
             this.kryptonLabelTitle.Values.Text = "Request Order";
-            // 
-            // kryptonButtonCreate
-            // 
-            this.kryptonButtonCreate.CornerRoundingRadius = 12F;
-            this.kryptonButtonCreate.Location = new System.Drawing.Point(331, 14);
-            this.kryptonButtonCreate.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonButtonCreate.Name = "kryptonButtonCreate";
-            this.kryptonButtonCreate.Size = new System.Drawing.Size(97, 33);
-            this.kryptonButtonCreate.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonButtonCreate.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonButtonCreate.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonButtonCreate.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButtonCreate.StateCommon.Border.Rounding = 12F;
-            this.kryptonButtonCreate.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonButtonCreate.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButtonCreate.TabIndex = 209;
-            this.kryptonButtonCreate.Values.Text = "Create";
-            this.kryptonButtonCreate.Click += new System.EventHandler(this.kryptonButtonCreate_Click);
             // 
             // kryptonButtonReview
             // 
@@ -91,7 +70,6 @@ namespace ITP4915_group3_project.Purchase.request_order
             // kryptonPanelHeader
             // 
             this.kryptonPanelHeader.Controls.Add(this.kryptonButtonReview);
-            this.kryptonPanelHeader.Controls.Add(this.kryptonButtonCreate);
             this.kryptonPanelHeader.Controls.Add(this.kryptonLabelTitle);
             this.kryptonPanelHeader.Dock = System.Windows.Forms.DockStyle.Left;
             this.kryptonPanelHeader.Location = new System.Drawing.Point(0, 0);
@@ -119,7 +97,6 @@ namespace ITP4915_group3_project.Purchase.request_order
         #endregion
 
         private Krypton.Toolkit.KryptonLabel kryptonLabelTitle;
-        private Krypton.Toolkit.KryptonButton kryptonButtonCreate;
         private Krypton.Toolkit.KryptonButton kryptonButtonReview;
         private Krypton.Toolkit.KryptonPanel kryptonPanelHeader;
     }

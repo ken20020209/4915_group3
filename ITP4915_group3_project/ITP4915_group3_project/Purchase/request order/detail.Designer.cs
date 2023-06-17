@@ -36,13 +36,19 @@ namespace ITP4915_group3_project.Purchase.request_order
             System.Windows.Forms.Label item_nameLabel;
             System.Windows.Forms.Label sizeLabel;
             this.kryptonPanel4 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonLabelBack = new Krypton.Toolkit.KryptonLabel();
             this.kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
+            this.sizeTextBox = new System.Windows.Forms.TextBox();
+            this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.purchasers_requestBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.purchase_dbDataSet = new ITP4915_group3_project.purchase_dbDataSet();
+            this.item_nameTextBox = new System.Windows.Forms.TextBox();
             this.status_IDKryptonTextBox = new Krypton.Toolkit.KryptonTextBox();
             this.qtyKryptonTextBox = new Krypton.Toolkit.KryptonTextBox();
             this.item_IDKryptonTextBox = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
             this.last_nameKryptonTextBox = new Krypton.Toolkit.KryptonTextBox();
+            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kryptonDropButton1 = new Krypton.Toolkit.KryptonDropButton();
             this.kryptonLabel5 = new Krypton.Toolkit.KryptonLabel();
             this.first_nameKryptonTextBox = new Krypton.Toolkit.KryptonTextBox();
@@ -50,6 +56,7 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.kryptonLabel12 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonTextBox20 = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonTextBox21 = new Krypton.Toolkit.KryptonTextBox();
+            this.restaurantBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kryptonLabel21 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel6 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonTextBox22 = new Krypton.Toolkit.KryptonTextBox();
@@ -61,18 +68,11 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.kryptonLabel7 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonButtonProcess = new Krypton.Toolkit.KryptonButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.purchase_dbDataSet = new ITP4915_group3_project.purchase_dbDataSet();
-            this.purchasers_requestBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.purchasers_requestTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.purchasers_requestTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.TableAdapterManager();
-            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.userTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.userTableAdapter();
-            this.restaurantBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.restaurantTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.restaurantTableAdapter();
-            this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.itemTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.itemTableAdapter();
-            this.item_nameTextBox = new System.Windows.Forms.TextBox();
-            this.sizeTextBox = new System.Windows.Forms.TextBox();
+            this.restaurantTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.restaurantTableAdapter();
+            this.userTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.userTableAdapter();
             item_IDLabel = new System.Windows.Forms.Label();
             qtyLabel = new System.Windows.Forms.Label();
             status_IDLabel = new System.Windows.Forms.Label();
@@ -84,15 +84,15 @@ namespace ITP4915_group3_project.Purchase.request_order
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).BeginInit();
             this.kryptonGroupBox2.Panel.SuspendLayout();
             this.kryptonGroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchasers_requestBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).BeginInit();
             this.kryptonGroupBox1.Panel.SuspendLayout();
             this.kryptonGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.purchasers_requestBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.restaurantBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // item_IDLabel
@@ -122,10 +122,28 @@ namespace ITP4915_group3_project.Purchase.request_order
             status_IDLabel.TabIndex = 4;
             status_IDLabel.Text = "status ID:";
             // 
+            // item_nameLabel
+            // 
+            item_nameLabel.AutoSize = true;
+            item_nameLabel.Location = new System.Drawing.Point(15, 60);
+            item_nameLabel.Name = "item_nameLabel";
+            item_nameLabel.Size = new System.Drawing.Size(56, 12);
+            item_nameLabel.TabIndex = 6;
+            item_nameLabel.Text = "item name:";
+            // 
+            // sizeLabel
+            // 
+            sizeLabel.AutoSize = true;
+            sizeLabel.Location = new System.Drawing.Point(46, 97);
+            sizeLabel.Name = "sizeLabel";
+            sizeLabel.Size = new System.Drawing.Size(25, 12);
+            sizeLabel.TabIndex = 8;
+            sizeLabel.Text = "size:";
+            // 
             // kryptonPanel4
             // 
             this.kryptonPanel4.AutoScroll = true;
-            this.kryptonPanel4.Controls.Add(this.kryptonLabel4);
+            this.kryptonPanel4.Controls.Add(this.kryptonLabelBack);
             this.kryptonPanel4.Controls.Add(this.kryptonGroupBox2);
             this.kryptonPanel4.Controls.Add(this.kryptonGroupBox1);
             this.kryptonPanel4.Controls.Add(this.kryptonButtonProcess);
@@ -138,15 +156,16 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.kryptonPanel4.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonPanel4.TabIndex = 5;
             // 
-            // kryptonLabel4
+            // kryptonLabelBack
             // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(15, 33);
-            this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(50, 16);
-            this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("PMingLiU", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.kryptonLabel4.TabIndex = 237;
-            this.kryptonLabel4.Values.Text = "← Back";
+            this.kryptonLabelBack.Location = new System.Drawing.Point(15, 33);
+            this.kryptonLabelBack.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonLabelBack.Name = "kryptonLabelBack";
+            this.kryptonLabelBack.Size = new System.Drawing.Size(50, 16);
+            this.kryptonLabelBack.StateCommon.ShortText.Font = new System.Drawing.Font("PMingLiU", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.kryptonLabelBack.TabIndex = 237;
+            this.kryptonLabelBack.Values.Text = "← Back";
+            this.kryptonLabelBack.Click += new System.EventHandler(this.kryptonLabelBack_Click);
             // 
             // kryptonGroupBox2
             // 
@@ -180,6 +199,39 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.kryptonGroupBox2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonGroupBox2.TabIndex = 234;
             this.kryptonGroupBox2.Values.Heading = "ITEM";
+            // 
+            // sizeTextBox
+            // 
+            this.sizeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.itemBindingSource, "size", true));
+            this.sizeTextBox.Location = new System.Drawing.Point(77, 94);
+            this.sizeTextBox.Name = "sizeTextBox";
+            this.sizeTextBox.ReadOnly = true;
+            this.sizeTextBox.Size = new System.Drawing.Size(100, 22);
+            this.sizeTextBox.TabIndex = 9;
+            // 
+            // itemBindingSource
+            // 
+            this.itemBindingSource.DataMember = "purchasers_request_item";
+            this.itemBindingSource.DataSource = this.purchasers_requestBindingSource;
+            // 
+            // purchasers_requestBindingSource
+            // 
+            this.purchasers_requestBindingSource.DataMember = "purchasers_request";
+            this.purchasers_requestBindingSource.DataSource = this.purchase_dbDataSet;
+            // 
+            // purchase_dbDataSet
+            // 
+            this.purchase_dbDataSet.DataSetName = "purchase_dbDataSet";
+            this.purchase_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // item_nameTextBox
+            // 
+            this.item_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.itemBindingSource, "item_name", true));
+            this.item_nameTextBox.Location = new System.Drawing.Point(77, 57);
+            this.item_nameTextBox.Name = "item_nameTextBox";
+            this.item_nameTextBox.ReadOnly = true;
+            this.item_nameTextBox.Size = new System.Drawing.Size(100, 22);
+            this.item_nameTextBox.TabIndex = 7;
             // 
             // status_IDKryptonTextBox
             // 
@@ -260,6 +312,11 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.last_nameKryptonTextBox.Size = new System.Drawing.Size(66, 23);
             this.last_nameKryptonTextBox.TabIndex = 238;
             this.last_nameKryptonTextBox.Text = "kryptonTextBox1";
+            // 
+            // userBindingSource
+            // 
+            this.userBindingSource.DataMember = "purchasers_request_user";
+            this.userBindingSource.DataSource = this.purchasers_requestBindingSource;
             // 
             // kryptonDropButton1
             // 
@@ -362,6 +419,11 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.kryptonTextBox21.TabIndex = 183;
             this.kryptonTextBox21.Text = "ABB Restaurant";
             this.kryptonTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // restaurantBindingSource
+            // 
+            this.restaurantBindingSource.DataMember = "purchasers_request_restaurant";
+            this.restaurantBindingSource.DataSource = this.purchasers_requestBindingSource;
             // 
             // kryptonLabel21
             // 
@@ -523,16 +585,6 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.label1.TabIndex = 231;
             this.label1.Text = "Detail";
             // 
-            // purchase_dbDataSet
-            // 
-            this.purchase_dbDataSet.DataSetName = "purchase_dbDataSet";
-            this.purchase_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // purchasers_requestBindingSource
-            // 
-            this.purchasers_requestBindingSource.DataMember = "purchasers_request";
-            this.purchasers_requestBindingSource.DataSource = this.purchase_dbDataSet;
-            // 
             // purchasers_requestTableAdapter
             // 
             this.purchasers_requestTableAdapter.ClearBeforeFill = true;
@@ -553,69 +605,21 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.tableAdapterManager.supplierTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.purchase_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.userTableAdapter = this.userTableAdapter;
-            // 
-            // userBindingSource
-            // 
-            this.userBindingSource.DataMember = "purchasers_request_user";
-            this.userBindingSource.DataSource = this.purchasers_requestBindingSource;
-            // 
-            // userTableAdapter
-            // 
-            this.userTableAdapter.ClearBeforeFill = true;
-            // 
-            // restaurantBindingSource
-            // 
-            this.restaurantBindingSource.DataMember = "purchasers_request_restaurant";
-            this.restaurantBindingSource.DataSource = this.purchasers_requestBindingSource;
-            // 
-            // restaurantTableAdapter
-            // 
-            this.restaurantTableAdapter.ClearBeforeFill = true;
-            // 
-            // itemBindingSource
-            // 
-            this.itemBindingSource.DataMember = "purchasers_request_item";
-            this.itemBindingSource.DataSource = this.purchasers_requestBindingSource;
+            this.tableAdapterManager.warehouse_itemTableAdapter = null;
+            this.tableAdapterManager.warehousedispatchinstructionTableAdapter = null;
+            this.tableAdapterManager.warehouseTableAdapter = null;
             // 
             // itemTableAdapter
             // 
             this.itemTableAdapter.ClearBeforeFill = true;
             // 
-            // item_nameLabel
+            // restaurantTableAdapter
             // 
-            item_nameLabel.AutoSize = true;
-            item_nameLabel.Location = new System.Drawing.Point(15, 60);
-            item_nameLabel.Name = "item_nameLabel";
-            item_nameLabel.Size = new System.Drawing.Size(56, 12);
-            item_nameLabel.TabIndex = 6;
-            item_nameLabel.Text = "item name:";
+            this.restaurantTableAdapter.ClearBeforeFill = true;
             // 
-            // item_nameTextBox
+            // userTableAdapter
             // 
-            this.item_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.itemBindingSource, "item_name", true));
-            this.item_nameTextBox.Location = new System.Drawing.Point(77, 57);
-            this.item_nameTextBox.Name = "item_nameTextBox";
-            this.item_nameTextBox.ReadOnly = true;
-            this.item_nameTextBox.Size = new System.Drawing.Size(100, 22);
-            this.item_nameTextBox.TabIndex = 7;
-            // 
-            // sizeLabel
-            // 
-            sizeLabel.AutoSize = true;
-            sizeLabel.Location = new System.Drawing.Point(46, 97);
-            sizeLabel.Name = "sizeLabel";
-            sizeLabel.Size = new System.Drawing.Size(25, 12);
-            sizeLabel.TabIndex = 8;
-            sizeLabel.Text = "size:";
-            // 
-            // sizeTextBox
-            // 
-            this.sizeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.itemBindingSource, "size", true));
-            this.sizeTextBox.Location = new System.Drawing.Point(77, 94);
-            this.sizeTextBox.Name = "sizeTextBox";
-            this.sizeTextBox.ReadOnly = true;
-            this.sizeTextBox.Size = new System.Drawing.Size(100, 22);
-            this.sizeTextBox.TabIndex = 9;
+            this.userTableAdapter.ClearBeforeFill = true;
             // 
             // detail
             // 
@@ -633,16 +637,16 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.kryptonGroupBox2.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).EndInit();
             this.kryptonGroupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchasers_requestBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).EndInit();
             this.kryptonGroupBox1.Panel.ResumeLayout(false);
             this.kryptonGroupBox1.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).EndInit();
             this.kryptonGroupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.purchasers_requestBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.restaurantBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -650,7 +654,7 @@ namespace ITP4915_group3_project.Purchase.request_order
         #endregion
 
         private Krypton.Toolkit.KryptonPanel kryptonPanel4;
-        private Krypton.Toolkit.KryptonLabel kryptonLabel4;
+        private Krypton.Toolkit.KryptonLabel kryptonLabelBack;
         private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox2;
         private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox1;
         private Krypton.Toolkit.KryptonDropButton kryptonDropButton1;
