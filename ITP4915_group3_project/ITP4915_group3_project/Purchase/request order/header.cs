@@ -32,8 +32,8 @@ namespace ITP4915_group3_project.Purchase.request_order
 
         private void kryptonButtonReview_Click(object sender, EventArgs e)
         {
-            /*panelContent.Controls.Clear();
-            new search.check(panelContent);*/
+            panelContent.Controls.Clear();
+            new check(panelContent);
         }
     }
 }

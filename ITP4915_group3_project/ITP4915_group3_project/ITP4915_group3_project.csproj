@@ -626,13 +626,13 @@
       <DependentUpon>purchase.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\request order\check.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Purchase\request order\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\request order\detail.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Purchase\request order\detail.Designer.cs">
       <DependentUpon>detail.cs</DependentUpon>
