@@ -61,18 +61,6 @@ namespace ITP4915_group3_project.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Yes")]
-        public string autoBR {
-            get {
-                return ((string)(this["autoBR"]));
-            }
-            set {
-                this["autoBR"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Yes")]
         public string autoWarehouse {
             get {
                 return ((string)(this["autoWarehouse"]));

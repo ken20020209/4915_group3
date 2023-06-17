@@ -22,7 +22,6 @@ namespace ITP4915_group3_project.Purchase.set_rule
 
             kryptonComboBoxMatchBPA.Text= Properties.Settings.Default.autoBPA;
             kryptonComboBoxAutoMatch.Text = Properties.Settings.Default.autoMatch;
-            kryptonComboBoxMatchBR.Text = Properties.Settings.Default.autoBR;
             kryptonComboBoxMatchWarehouse.Text = Properties.Settings.Default.autoWarehouse;
         }
 
@@ -35,7 +34,6 @@ namespace ITP4915_group3_project.Purchase.set_rule
         {
             Properties.Settings.Default.autoBPA = kryptonComboBoxMatchBPA.Text;
             Properties.Settings.Default.autoMatch = kryptonComboBoxAutoMatch.Text;
-            Properties.Settings.Default.autoBR= kryptonComboBoxMatchBR.Text;
             Properties.Settings.Default.autoWarehouse = kryptonComboBoxMatchWarehouse.Text;
             Properties.Settings.Default.Save();
         }

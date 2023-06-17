@@ -65,6 +65,7 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.purchasers_requestTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.purchasers_requestTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.TableAdapterManager();
+            this.kryptonButtonAutoProcess = new Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup3)).BeginInit();
@@ -91,6 +92,7 @@ namespace ITP4915_group3_project.Purchase.request_order
             // 
             // kryptonPanel4
             // 
+            this.kryptonPanel4.Controls.Add(this.kryptonButtonAutoProcess);
             this.kryptonPanel4.Controls.Add(this.kryptonGroup3);
             this.kryptonPanel4.Controls.Add(this.kryptonLabel6);
             this.kryptonPanel4.Controls.Add(this.purchasers_requestKryptonDataGridView);
@@ -332,7 +334,7 @@ namespace ITP4915_group3_project.Purchase.request_order
             // 
             // kryptonGroup2
             // 
-            this.kryptonGroup2.Location = new System.Drawing.Point(544, 33);
+            this.kryptonGroup2.Location = new System.Drawing.Point(583, 23);
             this.kryptonGroup2.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroup2.Name = "kryptonGroup2";
             // 
@@ -386,7 +388,7 @@ namespace ITP4915_group3_project.Purchase.request_order
             // 
             // kryptonGroup1
             // 
-            this.kryptonGroup1.Location = new System.Drawing.Point(194, 33);
+            this.kryptonGroup1.Location = new System.Drawing.Point(215, 23);
             this.kryptonGroup1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroup1.Name = "kryptonGroup1";
             // 
@@ -526,6 +528,28 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.tableAdapterManager.warehousedispatchinstructionTableAdapter = null;
             this.tableAdapterManager.warehouseTableAdapter = null;
             // 
+            // kryptonButtonAutoProcess
+            // 
+            this.kryptonButtonAutoProcess.CornerRoundingRadius = 25F;
+            this.kryptonButtonAutoProcess.Location = new System.Drawing.Point(971, 62);
+            this.kryptonButtonAutoProcess.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonButtonAutoProcess.Name = "kryptonButtonAutoProcess";
+            this.kryptonButtonAutoProcess.Size = new System.Drawing.Size(154, 44);
+            this.kryptonButtonAutoProcess.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButtonAutoProcess.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButtonAutoProcess.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButtonAutoProcess.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButtonAutoProcess.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButtonAutoProcess.StateCommon.Border.Rounding = 25F;
+            this.kryptonButtonAutoProcess.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButtonAutoProcess.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonButtonAutoProcess.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.kryptonButtonAutoProcess.TabIndex = 233;
+            this.kryptonButtonAutoProcess.Values.Text = "Auto Process";
+            this.kryptonButtonAutoProcess.Click += new System.EventHandler(this.kryptonButtonAutoProcess_Click);
+            // 
             // check
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -601,5 +625,6 @@ namespace ITP4915_group3_project.Purchase.request_order
         private Krypton.Toolkit.KryptonCheckButton kryptonCheckButton7;
         private Krypton.Toolkit.KryptonTextBox kryptonTextBoxSearchKeyWord;
         private Krypton.Toolkit.KryptonLabel kryptonLabel6;
+        private Krypton.Toolkit.KryptonButton kryptonButtonAutoProcess;
     }
 }

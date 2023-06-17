@@ -285,9 +285,6 @@
     <Compile Include="category\produce\create\create_success.Designer.cs">
       <DependentUpon>create_success.cs</DependentUpon>
     </Compile>
-    <Compile Include="category\produce\create\create.Designer.cs">
-      <DependentUpon>create.cs</DependentUpon>
-    </Compile>
     <Compile Include="category\produce\header.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -704,7 +701,7 @@
       <DependentUpon>process_success_warehouse.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\request order\process\select_BPA_match.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Purchase\request order\process\select_BPA_match.Designer.cs">
       <DependentUpon>select_BPA_match.cs</DependentUpon>

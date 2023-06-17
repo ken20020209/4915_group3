@@ -71,5 +71,13 @@ namespace ITP4915_group3_project.Purchase.request_order
             keyWord= kryptonTextBoxSearchKeyWord.Text;
             search();
         }
+
+        private void kryptonButtonAutoProcess_Click(object sender, EventArgs e)
+        {
+            batchProcessing.requestMatch requestMatch= new batchProcessing.requestMatch();
+            requestMatch.process();
+            MessageBox.Show("success process : " + requestMatch.processedNum + "\nerror process : " + requestMatch.errorProcess + "\ntotal process : " + requestMatch.totalRequest);
+            
+        }
     }
 }

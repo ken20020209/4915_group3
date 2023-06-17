@@ -16,9 +16,6 @@
     <Setting Name="autoBPA" Type="System.String" Scope="User">
       <Value Profile="(Default)">Yes</Value>
     </Setting>
-    <Setting Name="autoBR" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Yes</Value>
-    </Setting>
     <Setting Name="autoWarehouse" Type="System.String" Scope="User">
       <Value Profile="(Default)">Yes</Value>
     </Setting>
