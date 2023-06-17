@@ -55,19 +55,16 @@ DROP TABLE IF EXISTS `blanket_release`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `blanket_release` (
   `release_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify the Blanket release\n0000000000-9999999999\n\n',
-  `header_ID` int NOT NULL COMMENT 'The ID to identify the header\n0000000000-9999999999\n\n',
+  `line_ID` int NOT NULL COMMENT 'The ID to identify the header\\n0000000000-9999999999\\n\\n',
   `create_date` date NOT NULL COMMENT 'The date where the Blanket release is created\nDDMMYYYY\n\n',
   `expected_delivery_date` date NOT NULL COMMENT 'The expected delivery date of the Blanket release\nDDMMYYYY\n\n',
   `item_qty` int NOT NULL COMMENT 'The quantity of each item\n\n\n\n',
-  `price_break_ID` int NOT NULL COMMENT 'The ID to identify the price break\n0000000000-9999999999\n\n',
   `amount` int NOT NULL COMMENT 'The amount of Blanket release\n\n\n\n',
   `shipment_ID` int NOT NULL COMMENT 'The ID to identify the shipment\n0000000000-9999999999\n\n',
   PRIMARY KEY (`release_ID`),
-  KEY `Blanket_Release_header_ID_fk_idx` (`header_ID`),
-  KEY `Blanket_Release_price_break_ID_fk_idx` (`price_break_ID`),
   KEY `Blanket_Release_shipment_ID_fk_idx` (`shipment_ID`),
-  CONSTRAINT `Blanket_Release_header_ID_fk` FOREIGN KEY (`header_ID`) REFERENCES `bpa_header` (`header_ID`),
-  CONSTRAINT `Blanket_Release_price_break_ID_fk` FOREIGN KEY (`price_break_ID`) REFERENCES `price_breaks` (`price_break_ID`),
+  KEY `Blanket_Release_line_ID_fk_idx` (`line_ID`),
+  CONSTRAINT `Blanket_Release_line_ID_fk` FOREIGN KEY (`line_ID`) REFERENCES `bpa_lines` (`lines_ID`),
   CONSTRAINT `Blanket_Release_shipment_ID_fk` FOREIGN KEY (`shipment_ID`) REFERENCES `delivery_request` (`delivery_request_ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -78,7 +75,7 @@ CREATE TABLE `blanket_release` (
 
 LOCK TABLES `blanket_release` WRITE;
 /*!40000 ALTER TABLE `blanket_release` DISABLE KEYS */;
-INSERT INTO `blanket_release` VALUES (1,1,'2023-09-17','2023-09-22',150,1,14850,1),(2,2,'2023-05-29','2023-06-03',120,3,17610,2),(3,3,'2023-03-22','2023-04-01',140,2,22300,3),(4,4,'2023-04-16','2023-04-29',130,4,27250,4);
+INSERT INTO `blanket_release` VALUES (1,1,'2023-09-17','2023-09-22',150,14850,1),(2,2,'2023-05-29','2023-06-03',120,17610,2),(3,3,'2023-03-22','2023-04-01',140,22300,3),(4,4,'2023-04-16','2023-04-29',130,27250,4);
 /*!40000 ALTER TABLE `blanket_release` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -750,7 +747,7 @@ CREATE TABLE `purchasers_request` (
 
 LOCK TABLES `purchasers_request` WRITE;
 /*!40000 ALTER TABLE `purchasers_request` DISABLE KEYS */;
-INSERT INTO `purchasers_request` VALUES (3,1,1,1,99,1,1000,'2023-06-13','2023-06-13',''),(4,1,1,2,99,2,1000,'2023-06-13','2023-06-13',''),(5,1,1,1,9999,2,1000,'2023-06-13','2023-06-13',''),(6,1,1,2,88,3,1000,'2023-06-13','2023-06-13',''),(7,1,1,1,123,4,1000,'2023-06-13','2023-06-13','');
+INSERT INTO `purchasers_request` VALUES (3,1,1,1,99,1,1200,'2023-06-13','2023-06-13',''),(4,1,1,2,99,2,1000,'2023-06-13','2023-06-13',''),(5,1,1,1,9999,2,1000,'2023-06-13','2023-06-13',''),(6,1,1,2,88,3,1000,'2023-06-13','2023-06-13',''),(7,1,1,1,123,4,1000,'2023-06-13','2023-06-13','');
 /*!40000 ALTER TABLE `purchasers_request` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -891,7 +888,7 @@ DROP TABLE IF EXISTS `schedule_release`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `schedule_release` (
   `release_ID` int NOT NULL AUTO_INCREMENT COMMENT 'The ID to identify the schedule release\n0000000000-9999999999\n\n',
-  `header_ID` int NOT NULL COMMENT 'The ID to identify the header of schedule release\n0000000000-9999999999\n\n',
+  `header_ID` int NOT NULL COMMENT 'The ID to identify the header of schedule release\\\\n0000000000-9999999999\\\\n\\\\n',
   `create_date` date NOT NULL COMMENT 'The date that is created this schedule release\nDDMMYYYY\n\n',
   `expected_delivery_date` date NOT NULL COMMENT 'The expected delivery date of this schedule release\nDDMMYYYY\n\n',
   PRIMARY KEY (`release_ID`),
@@ -1204,7 +1201,7 @@ CREATE TABLE `warehouse_item` (
 
 LOCK TABLES `warehouse_item` WRITE;
 /*!40000 ALTER TABLE `warehouse_item` DISABLE KEYS */;
-INSERT INTO `warehouse_item` VALUES (1,1,7000,'2023-08-15'),(1,2,6,'2023-08-15'),(1,3,6,'2023-08-15'),(2,4,2,'2023-08-12'),(2,5,2,'2023-08-12'),(3,6,4,'2023-08-20'),(4,7,1,'2023-10-30');
+INSERT INTO `warehouse_item` VALUES (1,1,6604,'2023-08-15'),(1,2,6,'2023-08-15'),(1,3,6,'2023-08-15'),(2,4,2,'2023-08-12'),(2,5,2,'2023-08-12'),(3,6,4,'2023-08-20'),(4,7,1,'2023-10-30');
 /*!40000 ALTER TABLE `warehouse_item` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1232,7 +1229,7 @@ CREATE TABLE `warehousedispatchinstruction` (
   CONSTRAINT `WarehouseDispatchInstruction_Purchasers_Request_id_fk` FOREIGN KEY (`Purchasers_Request_id`) REFERENCES `purchasers_request` (`purchasers_request_id`),
   CONSTRAINT `WarehouseDispatchInstruction_status_id_fk` FOREIGN KEY (`status_id`) REFERENCES `status` (`status_ID`),
   CONSTRAINT `WarehouseDispatchInstruction_warehouse_ID_itemID_fk` FOREIGN KEY (`warehouse_ID`, `itemID`) REFERENCES `warehouse_item` (`warehouse_ID`, `item_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1241,7 +1238,7 @@ CREATE TABLE `warehousedispatchinstruction` (
 
 LOCK TABLES `warehousedispatchinstruction` WRITE;
 /*!40000 ALTER TABLE `warehousedispatchinstruction` DISABLE KEYS */;
-INSERT INTO `warehousedispatchinstruction` VALUES (1,1,1,'',1,3000,3),(2,2,2,NULL,4,3000,4),(3,3,3,NULL,6,3000,5),(4,4,4,NULL,7,3000,6);
+INSERT INTO `warehousedispatchinstruction` VALUES (1,1,1,'',1,3000,3),(2,2,2,NULL,4,3000,4),(3,3,3,NULL,6,3000,5),(4,4,4,NULL,7,3000,6),(5,1,NULL,'kryptonTextBoxRemark',1,3000,3),(6,1,NULL,'kryptonTextBoxRemark',1,3000,3),(7,1,NULL,'kryptonTextBoxRemark',1,3000,3),(8,1,NULL,'kryptonTextBoxRemark',1,3000,3);
 /*!40000 ALTER TABLE `warehousedispatchinstruction` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1290,4 +1287,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-06-17 15:37:12
+-- Dump completed on 2023-06-17 16:38:19
