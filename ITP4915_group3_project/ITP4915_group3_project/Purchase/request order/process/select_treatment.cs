@@ -28,7 +28,7 @@ namespace ITP4915_group3_project.Purchase.request_order.process
         }
         private void match_spo(object sender, EventArgs e)
         {
-
+            new select_spo_match(this, requestID);
         }
         private void match_bpa(object sender, EventArgs e)
         {
@@ -39,10 +39,17 @@ namespace ITP4915_group3_project.Purchase.request_order.process
             new warehouse_list_match(this, requestID);
             
         }
+        private void error_process(object sender, EventArgs e)
+        {
+            new process_fail(this,requestID).ShowDialog();
+            
+        }
 
         private void kryptonLabelBack_Click(object sender, EventArgs e)
         {
             Parent.Controls.Remove(this);
         }
+        
+        
     }
 }

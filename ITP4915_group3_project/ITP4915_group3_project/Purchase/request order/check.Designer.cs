@@ -43,6 +43,8 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.kryptonLabel6 = new Krypton.Toolkit.KryptonLabel();
             this.purchasers_requestKryptonDataGridView = new Krypton.Toolkit.KryptonDataGridView();
             this.match = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
+            this.purchasers_requestBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.purchase_dbDataSet = new ITP4915_group3_project.purchase_dbDataSet();
             this.kryptonGroup2 = new Krypton.Toolkit.KryptonGroup();
             this.kryptonLabel22 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel23 = new Krypton.Toolkit.KryptonLabel();
@@ -61,8 +63,6 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.purchasers_requestBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.purchase_dbDataSet = new ITP4915_group3_project.purchase_dbDataSet();
             this.purchasers_requestTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.purchasers_requestTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
@@ -75,6 +75,8 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.kryptonPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchasers_requestKryptonDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchasers_requestBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup2.Panel)).BeginInit();
             this.kryptonGroup2.Panel.SuspendLayout();
@@ -85,8 +87,6 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.kryptonGroup1.Panel.SuspendLayout();
             this.kryptonGroup1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.purchasers_requestBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanel4
@@ -319,6 +319,17 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.match.Text = "match";
             this.match.UseColumnTextForButtonValue = true;
             // 
+            // purchasers_requestBindingSource
+            // 
+            this.purchasers_requestBindingSource.AllowNew = false;
+            this.purchasers_requestBindingSource.DataMember = "purchasers_request";
+            this.purchasers_requestBindingSource.DataSource = this.purchase_dbDataSet;
+            // 
+            // purchase_dbDataSet
+            // 
+            this.purchase_dbDataSet.DataSetName = "purchase_dbDataSet";
+            this.purchase_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // kryptonGroup2
             // 
             this.kryptonGroup2.Location = new System.Drawing.Point(544, 33);
@@ -487,16 +498,6 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.dataGridViewTextBoxColumn10.HeaderText = "remarks";
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             // 
-            // purchasers_requestBindingSource
-            // 
-            this.purchasers_requestBindingSource.DataMember = "purchasers_request";
-            this.purchasers_requestBindingSource.DataSource = this.purchase_dbDataSet;
-            // 
-            // purchase_dbDataSet
-            // 
-            this.purchase_dbDataSet.DataSetName = "purchase_dbDataSet";
-            this.purchase_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // purchasers_requestTableAdapter
             // 
             this.purchasers_requestTableAdapter.ClearBeforeFill = true;
@@ -545,6 +546,8 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.kryptonPanel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchasers_requestKryptonDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchasers_requestBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup2.Panel)).EndInit();
             this.kryptonGroup2.Panel.ResumeLayout(false);
             this.kryptonGroup2.Panel.PerformLayout();
@@ -557,8 +560,6 @@ namespace ITP4915_group3_project.Purchase.request_order
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).EndInit();
             this.kryptonGroup1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.purchasers_requestBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -715,6 +715,12 @@
     <Compile Include="Purchase\request order\process\select_ppo_match.Designer.cs">
       <DependentUpon>select_ppo_match.cs</DependentUpon>
     </Compile>
+    <Compile Include="Purchase\request order\process\select_spo_match.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\request order\process\select_spo_match.Designer.cs">
+      <DependentUpon>select_spo_match.cs</DependentUpon>
+    </Compile>
     <Compile Include="Purchase\request order\process\select_treatment.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1318,6 +1324,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\request order\process\select_ppo_match.resx">
       <DependentUpon>select_ppo_match.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\request order\process\select_spo_match.resx">
+      <DependentUpon>select_spo_match.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\request order\process\select_treatment.resx">
       <DependentUpon>select_treatment.cs</DependentUpon>

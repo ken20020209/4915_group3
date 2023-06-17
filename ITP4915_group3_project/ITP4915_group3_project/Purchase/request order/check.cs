@@ -14,18 +14,21 @@ namespace ITP4915_group3_project.Purchase.request_order
     {
         public int status_ID = 1000;
         string keyWord = "";
+        public static Control panelContent;
         public check(Control panelContent)
         {
             InitializeComponent();
+            panelContent.Controls.Clear();
             panelContent.Controls.Add(this);
 
+            check.panelContent = panelContent;
             //load request
             search();
             
 
             
         }
-
+        
         private void purchasers_requestKryptonDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex != 0 || e.RowIndex == -1)
@@ -42,6 +45,14 @@ namespace ITP4915_group3_project.Purchase.request_order
         {
             
             status_ID = int.Parse(((Krypton.Toolkit.KryptonCheckButton)sender).Tag.ToString());
+            if(status_ID==1200)
+            {
+                match.Visible = false;   
+            }
+            else
+            {
+                match.Visible = true;
+            }
             keyWord = kryptonTextBoxSearchKeyWord.Text;
             search();
 

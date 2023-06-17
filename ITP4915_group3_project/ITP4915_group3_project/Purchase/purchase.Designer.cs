@@ -802,6 +802,6 @@ namespace ITP4915_group3_project.Purchase
         private Krypton.Toolkit.KryptonPanel kryptonPanelHeader;
         private Krypton.Toolkit.KryptonLabel kryptonLabel3;
         private System.Windows.Forms.PictureBox pictureBoxNotice;
-        private Krypton.Toolkit.KryptonPanel kryptonPanelContent;
+        public  Krypton.Toolkit.KryptonPanel kryptonPanelContent;
     }
 }

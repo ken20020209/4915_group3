@@ -51,7 +51,6 @@ namespace ITP4915_group3_project.Purchase.request_order.process
             string remark = kryptonTextBoxRemark.Text;
 
 
-            MessageBox.Show("Success");
 
             // update warehouse qty
 
@@ -71,7 +70,7 @@ namespace ITP4915_group3_project.Purchase.request_order.process
 
 
             //back to seach page
-            Parent.Parent.Parent.Parent.Controls.Clear();
+            new process_success_warehouse().ShowDialog();
             
 
         }

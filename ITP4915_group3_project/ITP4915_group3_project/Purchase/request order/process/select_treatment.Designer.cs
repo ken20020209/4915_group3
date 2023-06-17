@@ -44,6 +44,8 @@ namespace ITP4915_group3_project.Purchase.request_order.process
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.kryptonLabelBack = new Krypton.Toolkit.KryptonLabel();
             this.label1 = new System.Windows.Forms.Label();
+            this.kryptonGroup5 = new Krypton.Toolkit.KryptonGroup();
+            this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup4)).BeginInit();
@@ -66,10 +68,15 @@ namespace ITP4915_group3_project.Purchase.request_order.process
             this.kryptonGroup1.Panel.SuspendLayout();
             this.kryptonGroup1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup5.Panel)).BeginInit();
+            this.kryptonGroup5.Panel.SuspendLayout();
+            this.kryptonGroup5.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonPanel4
             // 
+            this.kryptonPanel4.Controls.Add(this.kryptonGroup5);
             this.kryptonPanel4.Controls.Add(this.kryptonGroup4);
             this.kryptonPanel4.Controls.Add(this.kryptonGroup3);
             this.kryptonPanel4.Controls.Add(this.kryptonGroup2);
@@ -290,6 +297,38 @@ namespace ITP4915_group3_project.Purchase.request_order.process
             this.label1.TabIndex = 136;
             this.label1.Text = "Select Treatment";
             // 
+            // kryptonGroup5
+            // 
+            this.kryptonGroup5.Location = new System.Drawing.Point(981, 51);
+            this.kryptonGroup5.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonGroup5.Name = "kryptonGroup5";
+            // 
+            // kryptonGroup5.Panel
+            // 
+            this.kryptonGroup5.Panel.Controls.Add(this.kryptonLabel2);
+            this.kryptonGroup5.Panel.Click += new System.EventHandler(this.error_process);
+            this.kryptonGroup5.Size = new System.Drawing.Size(146, 62);
+            this.kryptonGroup5.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(98)))), ((int)(((byte)(93)))));
+            this.kryptonGroup5.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(98)))), ((int)(((byte)(93)))));
+            this.kryptonGroup5.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonGroup5.StateCommon.Border.Rounding = 25F;
+            this.kryptonGroup5.TabIndex = 212;
+            this.kryptonGroup5.Click += new System.EventHandler(this.error_process);
+            // 
+            // kryptonLabel2
+            // 
+            this.kryptonLabel2.Location = new System.Drawing.Point(16, 11);
+            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonLabel2.Name = "kryptonLabel2";
+            this.kryptonLabel2.Size = new System.Drawing.Size(97, 22);
+            this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel2.TabIndex = 2;
+            this.kryptonLabel2.Values.Text = "error process";
+            this.kryptonLabel2.Click += new System.EventHandler(this.error_process);
+            // 
             // select_treatment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -325,6 +364,11 @@ namespace ITP4915_group3_project.Purchase.request_order.process
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).EndInit();
             this.kryptonGroup1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup5.Panel)).EndInit();
+            this.kryptonGroup5.Panel.ResumeLayout(false);
+            this.kryptonGroup5.Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup5)).EndInit();
+            this.kryptonGroup5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -346,5 +390,7 @@ namespace ITP4915_group3_project.Purchase.request_order.process
         private Krypton.Toolkit.KryptonGroup kryptonGroup4;
         private Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Krypton.Toolkit.KryptonGroup kryptonGroup5;
+        private Krypton.Toolkit.KryptonLabel kryptonLabel2;
     }
 }

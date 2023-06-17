@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace ITP4915_group3_project.Purchase.request_order.process
 {
-    public partial class select_BPA_match : UserControl
+    public partial class select_spo_match : UserControl
     {
         public int requestID;
-        public select_BPA_match(Control panelContent, int requestID)
+        public select_spo_match(Control panelContent, int requestID)
         {
 
             InitializeComponent();
@@ -23,7 +23,8 @@ namespace ITP4915_group3_project.Purchase.request_order.process
 
             this.purchasers_requestTableAdapter.FillBy_ID(this.purchase_dbDataSet.purchasers_request, requestID);
             this.itemTableAdapter.Fill(this.purchase_dbDataSet.item);
-            this.bpa_remain_qtyTableAdapter.FillBy_lessEqual_qty(this.purchase_dbDataSet.bpa_remain_qty, int.Parse(qtyKryptonTextBox.Text));
+            this.spo_linesTableAdapter.Fill(this.purchase_dbDataSet.spo_lines);
+
 
         }
 
@@ -34,37 +35,33 @@ namespace ITP4915_group3_project.Purchase.request_order.process
 
         private void kryptonButtonConfirm_Click(object sender, EventArgs e)
         {
-            DataRowView dataRowView = (DataRowView)bpa_remain_qtyBindingSource.Current;
+            DataRowView dataRowView = (DataRowView)spo_linesBindingSource.Current;
             //check remain qty
             if (dataRowView == null)
             {
-                MessageBox.Show("BPA haven't enougth qty ");
+                MessageBox.Show("SPO haven't enougth qty ");
                 return;
             }
-            //craete blankey release
+            //craete spo release
             DataRow row = dataRowView.Row;
-            int line_id = row.Field<int>("lines_ID");
-            DateTime curdate = DateTime.Now;
-            DateTime expected = kryptonDateTimePickerExpected.Value;
-            int item_qty =int.Parse( qtyKryptonTextBox.Text);
 
-            blanket_releaseTableAdapter.Insert(line_id, curdate, expected, item_qty);
+            int header_ID = row.Field<int>("header_ID");
+            spo_releaseTableAdapter.Insert(header_ID);
 
             //insert purchase order all
-            int br_id = blanket_releaseTableAdapter.GetData().Last().release_ID;
+            int relase_ID = spo_releaseTableAdapter.GetData().Last().release_ID;
             string remark = kryptonTextBoxRemark.Text;
-            purchase_order_allTableAdapter.Insert(br_id, null, null, requestID, null, remark);
 
-            //update request stauts
+            purchase_order_allTableAdapter.Insert(null, null, relase_ID, requestID, null, remark);
+
+            //update request status
             this.purchase_dbDataSet.purchasers_request.Rows[0].SetField<int>("status_ID", 1200);
             this.purchasers_requestTableAdapter.Update(this.purchase_dbDataSet.purchasers_request.Rows[0]);
 
-            //show success form
-            int po_id = this.purchase_order_allTableAdapter.GetData().Last().Purchase_order_ID;
-            new process_success_bpa(po_id).ShowDialog();
+            //show success
+            MessageBox.Show("process success");
+            new check(check.panelContent);
 
         }
-
-
     }
 }
