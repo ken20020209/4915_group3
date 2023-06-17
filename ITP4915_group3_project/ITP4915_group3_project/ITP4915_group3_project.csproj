@@ -709,12 +709,6 @@
     <Compile Include="Purchase\request order\process\select_BPA_match.Designer.cs">
       <DependentUpon>select_BPA_match.cs</DependentUpon>
     </Compile>
-    <Compile Include="Purchase\request order\process\select_BPA_nomatch.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Purchase\request order\process\select_BPA_nomatch.Designer.cs">
-      <DependentUpon>select_BPA_nomatch.cs</DependentUpon>
-    </Compile>
     <Compile Include="Purchase\request order\process\select_treatment.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -726,12 +720,6 @@
     </Compile>
     <Compile Include="Purchase\request order\process\warehouse_list_match.Designer.cs">
       <DependentUpon>warehouse_list_match.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Purchase\request order\process\warehouse_list_notmatch.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Purchase\request order\process\warehouse_list_notmatch.Designer.cs">
-      <DependentUpon>warehouse_list_notmatch.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\set rule\header.cs">
       <SubType>UserControl</SubType>
@@ -1322,17 +1310,11 @@
     <EmbeddedResource Include="Purchase\request order\process\select_BPA_match.resx">
       <DependentUpon>select_BPA_match.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Purchase\request order\process\select_BPA_nomatch.resx">
-      <DependentUpon>select_BPA_nomatch.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Purchase\request order\process\select_treatment.resx">
       <DependentUpon>select_treatment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\request order\process\warehouse_list_match.resx">
       <DependentUpon>warehouse_list_match.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Purchase\request order\process\warehouse_list_notmatch.resx">
-      <DependentUpon>warehouse_list_notmatch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\set rule\header.resx">
       <DependentUpon>header.cs</DependentUpon>

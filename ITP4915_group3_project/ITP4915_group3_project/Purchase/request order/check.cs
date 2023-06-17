@@ -18,7 +18,8 @@ namespace ITP4915_group3_project.Purchase.request_order
             panelContent.Controls.Add(this);
 
             //load request
-            this.purchasers_requestTableAdapter.Fill(this.purchase_dbDataSet.purchasers_request);
+            this.purchasers_requestTableAdapter.FillByWaitProcess(this.purchase_dbDataSet.purchasers_request);
+            
 
             
         }
@@ -35,5 +36,7 @@ namespace ITP4915_group3_project.Purchase.request_order
                 new detail(this, header_ID);
             }
         }
+
+
     }
 }

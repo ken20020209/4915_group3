@@ -65,13 +65,13 @@ namespace ITP4915_group3_project.Purchase.request_order.process
             this.warehousedispatchinstructionTableAdapter.Insert(warehouseID, null, remark, itemID, 3000, requestID);
 
             //update request stauts
-            this.purchase_dbDataSet.purchasers_request.Rows[0].SetField<int>("status", 1200);
+            this.purchase_dbDataSet.purchasers_request.Rows[0].SetField<int>("status_ID", 1200);
             this.purchasers_requestTableAdapter.Update(this.purchase_dbDataSet.purchasers_request.Rows[0]);
-            
+
 
 
             //back to seach page
-            Parent.Parent.Controls.Clear();
+            Parent.Parent.Parent.Parent.Controls.Clear();
             
 
         }

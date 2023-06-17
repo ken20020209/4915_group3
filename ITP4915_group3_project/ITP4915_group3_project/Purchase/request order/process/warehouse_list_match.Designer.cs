@@ -159,6 +159,7 @@ namespace ITP4915_group3_project.Purchase.request_order.process
             // 
             // purchasers_requestBindingSource
             // 
+            this.purchasers_requestBindingSource.AllowNew = false;
             this.purchasers_requestBindingSource.DataMember = "purchasers_request";
             this.purchasers_requestBindingSource.DataSource = this.purchase_dbDataSet;
             // 
@@ -169,6 +170,7 @@ namespace ITP4915_group3_project.Purchase.request_order.process
             // 
             // warehouse_itemKryptonDataGridView
             // 
+            this.warehouse_itemKryptonDataGridView.AllowUserToAddRows = false;
             this.warehouse_itemKryptonDataGridView.DataSource = this.warehouse_itemBindingSource;
             this.warehouse_itemKryptonDataGridView.Location = new System.Drawing.Point(76, 262);
             this.warehouse_itemKryptonDataGridView.Name = "warehouse_itemKryptonDataGridView";
