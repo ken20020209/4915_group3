@@ -599,7 +599,7 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.tableAdapterManager.itemTableAdapter = this.itemTableAdapter;
             this.tableAdapterManager.ppo_headerTableAdapter = null;
             this.tableAdapterManager.ppo_linesTableAdapter = null;
-            this.tableAdapterManager.price_breaksTableAdapter = null;
+
             this.tableAdapterManager.purchase_order_allTableAdapter = null;
             this.tableAdapterManager.purchasers_requestTableAdapter = this.purchasers_requestTableAdapter;
             this.tableAdapterManager.restaurantTableAdapter = this.restaurantTableAdapter;

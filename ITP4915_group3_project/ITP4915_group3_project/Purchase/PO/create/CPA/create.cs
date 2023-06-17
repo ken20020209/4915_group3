@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ITP4915_group3_project.Purchase.PO.create.CPA
@@ -28,7 +21,7 @@ namespace ITP4915_group3_project.Purchase.PO.create.CPA
 
         private void kryptonButtonSubmit_Click(object sender, EventArgs e)
         {
-            cpaTableAdapter.Insert(create_dateDateTimePicker.Value, effective_dateDateTimePicker.Value,int.Parse( supplier_IDComboBox.SelectedValue.ToString()),int.Parse( buyer_IDNumericUpDown.Value.ToString()), termsTextBox.Text, conditionTextBox.Text,int.Parse(item_IDComboBox.SelectedValue.ToString()));
+            cpaTableAdapter.Insert(create_dateDateTimePicker.Value, effective_dateDateTimePicker.Value, int.Parse(supplier_IDComboBox.SelectedValue.ToString()), int.Parse(buyer_IDNumericUpDown.Value.ToString()), termsTextBox.Text, conditionTextBox.Text, int.Parse(item_IDComboBox.SelectedValue.ToString()));
             MessageBox.Show("create success");
         }
     }

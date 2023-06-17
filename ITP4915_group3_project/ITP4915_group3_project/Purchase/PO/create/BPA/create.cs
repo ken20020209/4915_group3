@@ -25,20 +25,23 @@ namespace ITP4915_group3_project.Purchase.PO.create.BPA
 
             //set buyer id
             buyer_IDTextBox.Text = General.login.Login.user_ID.ToString();
+
+            this.itemTableAdapter.Fill(this.purchase_dbDataSet.item);
         }
 
 
         private void supplierComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-/*            Console.WriteLine(supplierComboBox.SelectedValue.ToString());*/
-            this.itemTableAdapter.FillBy_supplierID(this.purchase_dbDataSet.item, int.Parse(supplierComboBox.SelectedValue.ToString()));
             supplier_IDTextBox.Text = int.Parse(supplierComboBox.SelectedValue.ToString()).ToString();
         }
 
         private void itemKryptonDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
-            Console.WriteLine(itemKryptonDataGridView.Rows[e.RowIndex].Cells[0]);
+            if(e.RowIndex==-1||e.ColumnIndex!=0)
+            {
+                return;
+            }
             dataGridViewSelected.Rows.Insert(0,"" ,itemKryptonDataGridView.Rows[e.RowIndex].Cells[2].Value.ToString());
             dataGridViewSelected.Rows[0].Cells[1].Tag = itemKryptonDataGridView.Rows[e.RowIndex].Cells[1].Value;
 
@@ -46,6 +49,10 @@ namespace ITP4915_group3_project.Purchase.PO.create.BPA
 
         private void dataGridViewSelected_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex == -1 || e.ColumnIndex != 0)
+            {
+                return;
+            }
             dataGridViewSelected.Rows.RemoveAt(e.RowIndex);
         }
 

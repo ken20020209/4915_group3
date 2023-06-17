@@ -38,10 +38,10 @@ namespace ITP4915_group3_project.Purchase.PO.create.CPA
             System.Windows.Forms.Label conditionLabel;
             System.Windows.Forms.Label item_IDLabel;
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonButtonSubmit = new Krypton.Toolkit.KryptonButton();
             this.item_IDComboBox = new System.Windows.Forms.ComboBox();
             this.cpaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.purchase_dbDataSet = new ITP4915_group3_project.purchase_dbDataSet();
-            this.itemsupplierIDfkBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.supplierBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.conditionTextBox = new System.Windows.Forms.TextBox();
             this.termsTextBox = new System.Windows.Forms.TextBox();
@@ -53,7 +53,7 @@ namespace ITP4915_group3_project.Purchase.PO.create.CPA
             this.tableAdapterManager = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.TableAdapterManager();
             this.itemTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.itemTableAdapter();
             this.supplierTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.supplierTableAdapter();
-            this.kryptonButtonSubmit = new Krypton.Toolkit.KryptonButton();
+            this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             create_dateLabel = new System.Windows.Forms.Label();
             effective_dateLabel = new System.Windows.Forms.Label();
             supplier_IDLabel = new System.Windows.Forms.Label();
@@ -65,9 +65,9 @@ namespace ITP4915_group3_project.Purchase.PO.create.CPA
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cpaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itemsupplierIDfkBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buyer_IDNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // create_dateLabel
@@ -156,10 +156,20 @@ namespace ITP4915_group3_project.Purchase.PO.create.CPA
             this.kryptonPanel1.Size = new System.Drawing.Size(800, 500);
             this.kryptonPanel1.TabIndex = 0;
             // 
+            // kryptonButtonSubmit
+            // 
+            this.kryptonButtonSubmit.CornerRoundingRadius = -1F;
+            this.kryptonButtonSubmit.Location = new System.Drawing.Point(625, 412);
+            this.kryptonButtonSubmit.Name = "kryptonButtonSubmit";
+            this.kryptonButtonSubmit.Size = new System.Drawing.Size(90, 25);
+            this.kryptonButtonSubmit.TabIndex = 14;
+            this.kryptonButtonSubmit.Values.Text = "Submit";
+            this.kryptonButtonSubmit.Click += new System.EventHandler(this.kryptonButtonSubmit_Click);
+            // 
             // item_IDComboBox
             // 
             this.item_IDComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cpaBindingSource, "item_ID", true));
-            this.item_IDComboBox.DataSource = this.itemsupplierIDfkBindingSource;
+            this.item_IDComboBox.DataSource = this.itemBindingSource;
             this.item_IDComboBox.DisplayMember = "item_name";
             this.item_IDComboBox.FormattingEnabled = true;
             this.item_IDComboBox.Location = new System.Drawing.Point(453, 153);
@@ -177,11 +187,6 @@ namespace ITP4915_group3_project.Purchase.PO.create.CPA
             // 
             this.purchase_dbDataSet.DataSetName = "purchase_dbDataSet";
             this.purchase_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // itemsupplierIDfkBindingSource
-            // 
-            this.itemsupplierIDfkBindingSource.DataMember = "item_supplier_ID_fk";
-            this.itemsupplierIDfkBindingSource.DataSource = this.supplierBindingSource;
             // 
             // supplierBindingSource
             // 
@@ -249,13 +254,26 @@ namespace ITP4915_group3_project.Purchase.PO.create.CPA
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.blanket_releaseTableAdapter = null;
             this.tableAdapterManager.bpa_headerTableAdapter = null;
             this.tableAdapterManager.bpa_linesTableAdapter = null;
             this.tableAdapterManager.cpaTableAdapter = this.cpaTableAdapter;
             this.tableAdapterManager.itemTableAdapter = this.itemTableAdapter;
+            this.tableAdapterManager.ppo_headerTableAdapter = null;
+            this.tableAdapterManager.ppo_linesTableAdapter = null;
+            this.tableAdapterManager.purchase_order_allTableAdapter = null;
+            this.tableAdapterManager.purchasers_requestTableAdapter = null;
+            this.tableAdapterManager.restaurantTableAdapter = null;
+            this.tableAdapterManager.schedule_releaseTableAdapter = null;
+            this.tableAdapterManager.spo_headerTableAdapter = null;
+            this.tableAdapterManager.spo_linesTableAdapter = null;
+            this.tableAdapterManager.spo_releaseTableAdapter = null;
             this.tableAdapterManager.supplierTableAdapter = this.supplierTableAdapter;
             this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.purchase_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.userTableAdapter = null;
+            this.tableAdapterManager.warehouse_itemTableAdapter = null;
+            this.tableAdapterManager.warehousedispatchinstructionTableAdapter = null;
+            this.tableAdapterManager.warehouseTableAdapter = null;
             // 
             // itemTableAdapter
             // 
@@ -265,15 +283,10 @@ namespace ITP4915_group3_project.Purchase.PO.create.CPA
             // 
             this.supplierTableAdapter.ClearBeforeFill = true;
             // 
-            // kryptonButtonSubmit
+            // itemBindingSource
             // 
-            this.kryptonButtonSubmit.CornerRoundingRadius = -1F;
-            this.kryptonButtonSubmit.Location = new System.Drawing.Point(625, 412);
-            this.kryptonButtonSubmit.Name = "kryptonButtonSubmit";
-            this.kryptonButtonSubmit.Size = new System.Drawing.Size(90, 25);
-            this.kryptonButtonSubmit.TabIndex = 14;
-            this.kryptonButtonSubmit.Values.Text = "Submit";
-            this.kryptonButtonSubmit.Click += new System.EventHandler(this.kryptonButtonSubmit_Click);
+            this.itemBindingSource.DataMember = "item";
+            this.itemBindingSource.DataSource = this.purchase_dbDataSet;
             // 
             // create
             // 
@@ -287,9 +300,9 @@ namespace ITP4915_group3_project.Purchase.PO.create.CPA
             this.kryptonPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cpaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itemsupplierIDfkBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buyer_IDNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -308,10 +321,10 @@ namespace ITP4915_group3_project.Purchase.PO.create.CPA
         private System.Windows.Forms.ComboBox supplier_IDComboBox;
         private System.Windows.Forms.DateTimePicker effective_dateDateTimePicker;
         private System.Windows.Forms.DateTimePicker create_dateDateTimePicker;
-        private System.Windows.Forms.BindingSource itemsupplierIDfkBindingSource;
         private System.Windows.Forms.BindingSource supplierBindingSource;
         private purchase_dbDataSetTableAdapters.itemTableAdapter itemTableAdapter;
         private purchase_dbDataSetTableAdapters.supplierTableAdapter supplierTableAdapter;
         private Krypton.Toolkit.KryptonButton kryptonButtonSubmit;
+        private System.Windows.Forms.BindingSource itemBindingSource;
     }
 }
