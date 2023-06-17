@@ -13133,12 +13133,26 @@ namespace ITP4915_group3_project.purchase_dbDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[1];
+            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[2];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT `CPA_ID`, `create_date`, `effective_date`, `supplier_ID`, `buyer_ID`, `ter" +
                 "ms`, `condition`, `item_ID` FROM `cpa`";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT `CPA_ID`, `create_date`, `effective_date`, `supplier_ID`, `buyer_ID`, `ter" +
+                "ms`, `condition`, `item_ID` FROM `cpa`\r\nwhere cpa_id =@cpa_id";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            global::MySql.Data.MySqlClient.MySqlParameter param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@cpa_id";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.Size = 1024;
+            param.IsNullable = true;
+            param.SourceColumn = "CPA_ID";
+            param.SourceVersion = global::System.Data.DataRowVersion.Current;
+            this._commandCollection[1].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -13160,6 +13174,32 @@ namespace ITP4915_group3_project.purchase_dbDataSetTableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual purchase_dbDataSet.cpaDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            purchase_dbDataSet.cpaDataTable dataTable = new purchase_dbDataSet.cpaDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy_cpa_id(purchase_dbDataSet.cpaDataTable dataTable, int cpa_id) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(cpa_id));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual purchase_dbDataSet.cpaDataTable GetDataBy_cpa_id(int cpa_id) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(cpa_id));
             purchase_dbDataSet.cpaDataTable dataTable = new purchase_dbDataSet.cpaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -15040,12 +15080,26 @@ namespace ITP4915_group3_project.purchase_dbDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[1];
+            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[2];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT `header_ID`, `create_date`, `effective_date`, `supplier_ID`, `buyer_ID`, `" +
                 "expected_delivery_date`, `terms`, `condition` FROM `spo_header`";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT          header_ID, create_date, effective_date, supplier_ID, buyer_ID, ex" +
+                "pected_delivery_date, terms, `condition`\r\nFROM               spo_header\r\nWHERE  " +
+                "         (header_ID = @header_ID)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            global::MySql.Data.MySqlClient.MySqlParameter param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@header_ID";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "header_ID";
+            param.SourceVersion = global::System.Data.DataRowVersion.Current;
+            this._commandCollection[1].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -15070,6 +15124,20 @@ namespace ITP4915_group3_project.purchase_dbDataSetTableAdapters {
             purchase_dbDataSet.spo_headerDataTable dataTable = new purchase_dbDataSet.spo_headerDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy_header_ID(purchase_dbDataSet.spo_headerDataTable dataTable, int header_ID) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(header_ID));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -16455,7 +16523,7 @@ WHERE           (supplier.name LIKE @keyword) OR
             this._commandCollection[0].CommandText = @"SELECT          cpa.CPA_ID, cpa.create_date, item.item_name, supplier.name AS supplier
 FROM               cpa INNER JOIN
                             supplier ON cpa.supplier_ID = supplier.supplier_ID INNER JOIN
-                            item ON cpa.item_ID = item.item_ID AND supplier.supplier_ID = item.supplier_ID
+                            item ON cpa.item_ID = item.item_ID
 WHERE           (cpa.CPA_ID LIKE @keyword) OR
                             (supplier.name LIKE @keyword) OR
                             (item.item_name LIKE @keyword)";
@@ -16463,8 +16531,9 @@ WHERE           (cpa.CPA_ID LIKE @keyword) OR
             global::MySql.Data.MySqlClient.MySqlParameter param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@keyword";
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 1024;
             param.IsNullable = true;
-            param.SourceColumn = "supplier";
+            param.SourceColumn = "CPA_ID";
             param.SourceVersion = global::System.Data.DataRowVersion.Current;
             this._commandCollection[0].Parameters.Add(param);
         }

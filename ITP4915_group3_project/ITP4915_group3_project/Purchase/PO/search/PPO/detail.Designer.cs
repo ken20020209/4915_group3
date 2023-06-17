@@ -50,14 +50,17 @@ namespace ITP4915_group3_project.Purchase.PO.search.PPO
             this.create_dateKryptonDateTimePicker = new Krypton.Toolkit.KryptonDateTimePicker();
             this.purchase_order_revision_IDKryptonCheckBox = new Krypton.Toolkit.KryptonCheckBox();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
-            this.conditionKryptonTextBox = new Krypton.Toolkit.KryptonTextBox();
-            this.termKryptonTextBox = new Krypton.Toolkit.KryptonTextBox();
-            this.currencyKryptonNumericUpDown = new Krypton.Toolkit.KryptonNumericUpDown();
-            this.amountKryptonNumericUpDown = new Krypton.Toolkit.KryptonNumericUpDown();
-            this.buyer_IDKryptonNumericUpDown = new Krypton.Toolkit.KryptonNumericUpDown();
-            this.supplier_IDKryptonNumericUpDown = new Krypton.Toolkit.KryptonNumericUpDown();
-            this.header_IDKryptonNumericUpDown = new Krypton.Toolkit.KryptonNumericUpDown();
             this.kryptonButtonSave = new Krypton.Toolkit.KryptonButton();
+            this.header_IDKryptonNumericUpDown = new Krypton.Toolkit.KryptonNumericUpDown();
+            this.supplier_IDKryptonNumericUpDown = new Krypton.Toolkit.KryptonNumericUpDown();
+            this.buyer_IDKryptonNumericUpDown = new Krypton.Toolkit.KryptonNumericUpDown();
+            this.amountKryptonNumericUpDown = new Krypton.Toolkit.KryptonNumericUpDown();
+            this.currencyKryptonNumericUpDown = new Krypton.Toolkit.KryptonNumericUpDown();
+            this.termKryptonTextBox = new Krypton.Toolkit.KryptonTextBox();
+            this.conditionKryptonTextBox = new Krypton.Toolkit.KryptonTextBox();
+            this.ppo_linesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ppo_linesTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.ppo_linesTableAdapter();
+            this.ppo_linesKryptonDataGridView = new Krypton.Toolkit.KryptonDataGridView();
             conditionLabel = new System.Windows.Forms.Label();
             termLabel = new System.Windows.Forms.Label();
             currencyLabel = new System.Windows.Forms.Label();
@@ -73,36 +76,9 @@ namespace ITP4915_group3_project.Purchase.PO.search.PPO
             ((System.ComponentModel.ISupportInitialize)(this.ppo_headerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ppo_linesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ppo_linesKryptonDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // purchase_dbDataSet
-            // 
-            this.purchase_dbDataSet.DataSetName = "purchase_dbDataSet";
-            this.purchase_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ppo_headerBindingSource
-            // 
-            this.ppo_headerBindingSource.DataMember = "ppo_header";
-            this.ppo_headerBindingSource.DataSource = this.purchase_dbDataSet;
-            // 
-            // ppo_headerTableAdapter
-            // 
-            this.ppo_headerTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.bpa_headerTableAdapter = null;
-            this.tableAdapterManager.bpa_linesTableAdapter = null;
-            this.tableAdapterManager.cpaTableAdapter = null;
-            this.tableAdapterManager.itemTableAdapter = null;
-            this.tableAdapterManager.ppo_headerTableAdapter = this.ppo_headerTableAdapter;
-            this.tableAdapterManager.ppo_linesTableAdapter = null;
-            this.tableAdapterManager.spo_headerTableAdapter = null;
-            this.tableAdapterManager.spo_linesTableAdapter = null;
-            this.tableAdapterManager.supplierTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.purchase_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.userTableAdapter = null;
             // 
             // conditionLabel
             // 
@@ -140,15 +116,6 @@ namespace ITP4915_group3_project.Purchase.PO.search.PPO
             amountLabel.TabIndex = 14;
             amountLabel.Text = "amount:";
             // 
-            // tentative_schedulesKryptonDateTimePicker
-            // 
-            this.tentative_schedulesKryptonDateTimePicker.CornerRoundingRadius = -1F;
-            this.tentative_schedulesKryptonDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ppo_headerBindingSource, "tentative_schedules", true));
-            this.tentative_schedulesKryptonDateTimePicker.Location = new System.Drawing.Point(162, 221);
-            this.tentative_schedulesKryptonDateTimePicker.Name = "tentative_schedulesKryptonDateTimePicker";
-            this.tentative_schedulesKryptonDateTimePicker.Size = new System.Drawing.Size(240, 21);
-            this.tentative_schedulesKryptonDateTimePicker.TabIndex = 13;
-            // 
             // tentative_schedulesLabel
             // 
             tentative_schedulesLabel.AutoSize = true;
@@ -176,15 +143,6 @@ namespace ITP4915_group3_project.Purchase.PO.search.PPO
             supplier_IDLabel.TabIndex = 8;
             supplier_IDLabel.Text = "supplier ID:";
             // 
-            // effective_dateKryptonDateTimePicker
-            // 
-            this.effective_dateKryptonDateTimePicker.CornerRoundingRadius = -1F;
-            this.effective_dateKryptonDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ppo_headerBindingSource, "effective_date", true));
-            this.effective_dateKryptonDateTimePicker.Location = new System.Drawing.Point(162, 140);
-            this.effective_dateKryptonDateTimePicker.Name = "effective_dateKryptonDateTimePicker";
-            this.effective_dateKryptonDateTimePicker.Size = new System.Drawing.Size(240, 21);
-            this.effective_dateKryptonDateTimePicker.TabIndex = 7;
-            // 
             // effective_dateLabel
             // 
             effective_dateLabel.AutoSize = true;
@@ -194,15 +152,6 @@ namespace ITP4915_group3_project.Purchase.PO.search.PPO
             effective_dateLabel.TabIndex = 6;
             effective_dateLabel.Text = "effective date:";
             // 
-            // create_dateKryptonDateTimePicker
-            // 
-            this.create_dateKryptonDateTimePicker.CornerRoundingRadius = -1F;
-            this.create_dateKryptonDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ppo_headerBindingSource, "create_date", true));
-            this.create_dateKryptonDateTimePicker.Location = new System.Drawing.Point(162, 113);
-            this.create_dateKryptonDateTimePicker.Name = "create_dateKryptonDateTimePicker";
-            this.create_dateKryptonDateTimePicker.Size = new System.Drawing.Size(240, 21);
-            this.create_dateKryptonDateTimePicker.TabIndex = 5;
-            // 
             // create_dateLabel
             // 
             create_dateLabel.AutoSize = true;
@@ -211,15 +160,6 @@ namespace ITP4915_group3_project.Purchase.PO.search.PPO
             create_dateLabel.Size = new System.Drawing.Size(57, 12);
             create_dateLabel.TabIndex = 4;
             create_dateLabel.Text = "create date:";
-            // 
-            // purchase_order_revision_IDKryptonCheckBox
-            // 
-            this.purchase_order_revision_IDKryptonCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.ppo_headerBindingSource, "purchase_order_revision_ID", true));
-            this.purchase_order_revision_IDKryptonCheckBox.Location = new System.Drawing.Point(162, 87);
-            this.purchase_order_revision_IDKryptonCheckBox.Name = "purchase_order_revision_IDKryptonCheckBox";
-            this.purchase_order_revision_IDKryptonCheckBox.Size = new System.Drawing.Size(125, 20);
-            this.purchase_order_revision_IDKryptonCheckBox.TabIndex = 3;
-            this.purchase_order_revision_IDKryptonCheckBox.Values.Text = "kryptonCheckBox1";
             // 
             // purchase_order_revision_IDLabel
             // 
@@ -239,10 +179,76 @@ namespace ITP4915_group3_project.Purchase.PO.search.PPO
             header_IDLabel.TabIndex = 0;
             header_IDLabel.Text = "header ID:";
             // 
+            // purchase_dbDataSet
+            // 
+            this.purchase_dbDataSet.DataSetName = "purchase_dbDataSet";
+            this.purchase_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ppo_headerBindingSource
+            // 
+            this.ppo_headerBindingSource.DataMember = "ppo_header";
+            this.ppo_headerBindingSource.DataSource = this.purchase_dbDataSet;
+            // 
+            // ppo_headerTableAdapter
+            // 
+            this.ppo_headerTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.bpa_headerTableAdapter = null;
+            this.tableAdapterManager.bpa_linesTableAdapter = null;
+            this.tableAdapterManager.cpaTableAdapter = null;
+            this.tableAdapterManager.itemTableAdapter = null;
+            this.tableAdapterManager.ppo_headerTableAdapter = this.ppo_headerTableAdapter;
+            this.tableAdapterManager.ppo_linesTableAdapter = null;
+            this.tableAdapterManager.spo_headerTableAdapter = null;
+            this.tableAdapterManager.spo_linesTableAdapter = null;
+            this.tableAdapterManager.supplierTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.purchase_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.userTableAdapter = null;
+            // 
+            // tentative_schedulesKryptonDateTimePicker
+            // 
+            this.tentative_schedulesKryptonDateTimePicker.CornerRoundingRadius = -1F;
+            this.tentative_schedulesKryptonDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ppo_headerBindingSource, "tentative_schedules", true));
+            this.tentative_schedulesKryptonDateTimePicker.Location = new System.Drawing.Point(162, 221);
+            this.tentative_schedulesKryptonDateTimePicker.Name = "tentative_schedulesKryptonDateTimePicker";
+            this.tentative_schedulesKryptonDateTimePicker.Size = new System.Drawing.Size(240, 21);
+            this.tentative_schedulesKryptonDateTimePicker.TabIndex = 13;
+            // 
+            // effective_dateKryptonDateTimePicker
+            // 
+            this.effective_dateKryptonDateTimePicker.CornerRoundingRadius = -1F;
+            this.effective_dateKryptonDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ppo_headerBindingSource, "effective_date", true));
+            this.effective_dateKryptonDateTimePicker.Location = new System.Drawing.Point(162, 140);
+            this.effective_dateKryptonDateTimePicker.Name = "effective_dateKryptonDateTimePicker";
+            this.effective_dateKryptonDateTimePicker.Size = new System.Drawing.Size(240, 21);
+            this.effective_dateKryptonDateTimePicker.TabIndex = 7;
+            // 
+            // create_dateKryptonDateTimePicker
+            // 
+            this.create_dateKryptonDateTimePicker.CornerRoundingRadius = -1F;
+            this.create_dateKryptonDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ppo_headerBindingSource, "create_date", true));
+            this.create_dateKryptonDateTimePicker.Location = new System.Drawing.Point(162, 113);
+            this.create_dateKryptonDateTimePicker.Name = "create_dateKryptonDateTimePicker";
+            this.create_dateKryptonDateTimePicker.Size = new System.Drawing.Size(240, 21);
+            this.create_dateKryptonDateTimePicker.TabIndex = 5;
+            // 
+            // purchase_order_revision_IDKryptonCheckBox
+            // 
+            this.purchase_order_revision_IDKryptonCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.ppo_headerBindingSource, "purchase_order_revision_ID", true));
+            this.purchase_order_revision_IDKryptonCheckBox.Location = new System.Drawing.Point(162, 87);
+            this.purchase_order_revision_IDKryptonCheckBox.Name = "purchase_order_revision_IDKryptonCheckBox";
+            this.purchase_order_revision_IDKryptonCheckBox.Size = new System.Drawing.Size(125, 20);
+            this.purchase_order_revision_IDKryptonCheckBox.TabIndex = 3;
+            this.purchase_order_revision_IDKryptonCheckBox.Values.Text = "kryptonCheckBox1";
+            // 
             // kryptonPanel1
             // 
             this.kryptonPanel1.AutoScroll = true;
             this.kryptonPanel1.AutoSize = true;
+            this.kryptonPanel1.Controls.Add(this.ppo_linesKryptonDataGridView);
             this.kryptonPanel1.Controls.Add(this.kryptonButtonSave);
             this.kryptonPanel1.Controls.Add(header_IDLabel);
             this.kryptonPanel1.Controls.Add(this.header_IDKryptonNumericUpDown);
@@ -269,66 +275,8 @@ namespace ITP4915_group3_project.Purchase.PO.search.PPO
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(800, 839);
+            this.kryptonPanel1.Size = new System.Drawing.Size(875, 888);
             this.kryptonPanel1.TabIndex = 0;
-            // 
-            // conditionKryptonTextBox
-            // 
-            this.conditionKryptonTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ppo_headerBindingSource, "condition", true));
-            this.conditionKryptonTextBox.Location = new System.Drawing.Point(162, 330);
-            this.conditionKryptonTextBox.Name = "conditionKryptonTextBox";
-            this.conditionKryptonTextBox.Size = new System.Drawing.Size(240, 23);
-            this.conditionKryptonTextBox.TabIndex = 21;
-            this.conditionKryptonTextBox.Text = "kryptonTextBox1";
-            // 
-            // termKryptonTextBox
-            // 
-            this.termKryptonTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ppo_headerBindingSource, "term", true));
-            this.termKryptonTextBox.Location = new System.Drawing.Point(162, 302);
-            this.termKryptonTextBox.Name = "termKryptonTextBox";
-            this.termKryptonTextBox.Size = new System.Drawing.Size(240, 23);
-            this.termKryptonTextBox.TabIndex = 19;
-            this.termKryptonTextBox.Text = "kryptonTextBox1";
-            // 
-            // currencyKryptonNumericUpDown
-            // 
-            this.currencyKryptonNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ppo_headerBindingSource, "currency", true));
-            this.currencyKryptonNumericUpDown.Location = new System.Drawing.Point(162, 275);
-            this.currencyKryptonNumericUpDown.Name = "currencyKryptonNumericUpDown";
-            this.currencyKryptonNumericUpDown.Size = new System.Drawing.Size(240, 22);
-            this.currencyKryptonNumericUpDown.TabIndex = 17;
-            // 
-            // amountKryptonNumericUpDown
-            // 
-            this.amountKryptonNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ppo_headerBindingSource, "amount", true));
-            this.amountKryptonNumericUpDown.Location = new System.Drawing.Point(162, 248);
-            this.amountKryptonNumericUpDown.Name = "amountKryptonNumericUpDown";
-            this.amountKryptonNumericUpDown.Size = new System.Drawing.Size(240, 22);
-            this.amountKryptonNumericUpDown.TabIndex = 15;
-            // 
-            // buyer_IDKryptonNumericUpDown
-            // 
-            this.buyer_IDKryptonNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ppo_headerBindingSource, "buyer_ID", true));
-            this.buyer_IDKryptonNumericUpDown.Location = new System.Drawing.Point(162, 194);
-            this.buyer_IDKryptonNumericUpDown.Name = "buyer_IDKryptonNumericUpDown";
-            this.buyer_IDKryptonNumericUpDown.Size = new System.Drawing.Size(240, 22);
-            this.buyer_IDKryptonNumericUpDown.TabIndex = 11;
-            // 
-            // supplier_IDKryptonNumericUpDown
-            // 
-            this.supplier_IDKryptonNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ppo_headerBindingSource, "supplier_ID", true));
-            this.supplier_IDKryptonNumericUpDown.Location = new System.Drawing.Point(162, 167);
-            this.supplier_IDKryptonNumericUpDown.Name = "supplier_IDKryptonNumericUpDown";
-            this.supplier_IDKryptonNumericUpDown.Size = new System.Drawing.Size(240, 22);
-            this.supplier_IDKryptonNumericUpDown.TabIndex = 9;
-            // 
-            // header_IDKryptonNumericUpDown
-            // 
-            this.header_IDKryptonNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ppo_headerBindingSource, "header_ID", true));
-            this.header_IDKryptonNumericUpDown.Location = new System.Drawing.Point(162, 60);
-            this.header_IDKryptonNumericUpDown.Name = "header_IDKryptonNumericUpDown";
-            this.header_IDKryptonNumericUpDown.Size = new System.Drawing.Size(240, 22);
-            this.header_IDKryptonNumericUpDown.TabIndex = 1;
             // 
             // kryptonButtonSave
             // 
@@ -352,6 +300,82 @@ namespace ITP4915_group3_project.Purchase.PO.search.PPO
             this.kryptonButtonSave.Values.Text = "Save";
             this.kryptonButtonSave.Click += new System.EventHandler(this.kryptonButtonSave_Click);
             // 
+            // header_IDKryptonNumericUpDown
+            // 
+            this.header_IDKryptonNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ppo_headerBindingSource, "header_ID", true));
+            this.header_IDKryptonNumericUpDown.Location = new System.Drawing.Point(162, 60);
+            this.header_IDKryptonNumericUpDown.Name = "header_IDKryptonNumericUpDown";
+            this.header_IDKryptonNumericUpDown.Size = new System.Drawing.Size(240, 22);
+            this.header_IDKryptonNumericUpDown.TabIndex = 1;
+            // 
+            // supplier_IDKryptonNumericUpDown
+            // 
+            this.supplier_IDKryptonNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ppo_headerBindingSource, "supplier_ID", true));
+            this.supplier_IDKryptonNumericUpDown.Location = new System.Drawing.Point(162, 167);
+            this.supplier_IDKryptonNumericUpDown.Name = "supplier_IDKryptonNumericUpDown";
+            this.supplier_IDKryptonNumericUpDown.Size = new System.Drawing.Size(240, 22);
+            this.supplier_IDKryptonNumericUpDown.TabIndex = 9;
+            // 
+            // buyer_IDKryptonNumericUpDown
+            // 
+            this.buyer_IDKryptonNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ppo_headerBindingSource, "buyer_ID", true));
+            this.buyer_IDKryptonNumericUpDown.Location = new System.Drawing.Point(162, 194);
+            this.buyer_IDKryptonNumericUpDown.Name = "buyer_IDKryptonNumericUpDown";
+            this.buyer_IDKryptonNumericUpDown.Size = new System.Drawing.Size(240, 22);
+            this.buyer_IDKryptonNumericUpDown.TabIndex = 11;
+            // 
+            // amountKryptonNumericUpDown
+            // 
+            this.amountKryptonNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ppo_headerBindingSource, "amount", true));
+            this.amountKryptonNumericUpDown.Location = new System.Drawing.Point(162, 248);
+            this.amountKryptonNumericUpDown.Name = "amountKryptonNumericUpDown";
+            this.amountKryptonNumericUpDown.Size = new System.Drawing.Size(240, 22);
+            this.amountKryptonNumericUpDown.TabIndex = 15;
+            // 
+            // currencyKryptonNumericUpDown
+            // 
+            this.currencyKryptonNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ppo_headerBindingSource, "currency", true));
+            this.currencyKryptonNumericUpDown.Location = new System.Drawing.Point(162, 275);
+            this.currencyKryptonNumericUpDown.Name = "currencyKryptonNumericUpDown";
+            this.currencyKryptonNumericUpDown.Size = new System.Drawing.Size(240, 22);
+            this.currencyKryptonNumericUpDown.TabIndex = 17;
+            // 
+            // termKryptonTextBox
+            // 
+            this.termKryptonTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ppo_headerBindingSource, "term", true));
+            this.termKryptonTextBox.Location = new System.Drawing.Point(162, 302);
+            this.termKryptonTextBox.Name = "termKryptonTextBox";
+            this.termKryptonTextBox.Size = new System.Drawing.Size(240, 23);
+            this.termKryptonTextBox.TabIndex = 19;
+            this.termKryptonTextBox.Text = "kryptonTextBox1";
+            // 
+            // conditionKryptonTextBox
+            // 
+            this.conditionKryptonTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ppo_headerBindingSource, "condition", true));
+            this.conditionKryptonTextBox.Location = new System.Drawing.Point(162, 330);
+            this.conditionKryptonTextBox.Name = "conditionKryptonTextBox";
+            this.conditionKryptonTextBox.Size = new System.Drawing.Size(240, 23);
+            this.conditionKryptonTextBox.TabIndex = 21;
+            this.conditionKryptonTextBox.Text = "kryptonTextBox1";
+            // 
+            // ppo_linesBindingSource
+            // 
+            this.ppo_linesBindingSource.DataMember = "PPO_lines_header_ID_fk";
+            this.ppo_linesBindingSource.DataSource = this.ppo_headerBindingSource;
+            // 
+            // ppo_linesTableAdapter
+            // 
+            this.ppo_linesTableAdapter.ClearBeforeFill = true;
+            // 
+            // ppo_linesKryptonDataGridView
+            // 
+            this.ppo_linesKryptonDataGridView.DataSource = this.ppo_linesBindingSource;
+            this.ppo_linesKryptonDataGridView.Location = new System.Drawing.Point(3, 495);
+            this.ppo_linesKryptonDataGridView.Name = "ppo_linesKryptonDataGridView";
+            this.ppo_linesKryptonDataGridView.RowTemplate.Height = 24;
+            this.ppo_linesKryptonDataGridView.Size = new System.Drawing.Size(869, 231);
+            this.ppo_linesKryptonDataGridView.TabIndex = 58;
+            // 
             // detail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -359,12 +383,14 @@ namespace ITP4915_group3_project.Purchase.PO.search.PPO
             this.AutoScroll = true;
             this.Controls.Add(this.kryptonPanel1);
             this.Name = "detail";
-            this.Size = new System.Drawing.Size(800, 839);
+            this.Size = new System.Drawing.Size(875, 888);
             ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ppo_headerBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ppo_linesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ppo_linesKryptonDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -388,5 +414,8 @@ namespace ITP4915_group3_project.Purchase.PO.search.PPO
         private Krypton.Toolkit.KryptonTextBox termKryptonTextBox;
         private Krypton.Toolkit.KryptonTextBox conditionKryptonTextBox;
         private Krypton.Toolkit.KryptonButton kryptonButtonSave;
+        private Krypton.Toolkit.KryptonDataGridView ppo_linesKryptonDataGridView;
+        private System.Windows.Forms.BindingSource ppo_linesBindingSource;
+        private purchase_dbDataSetTableAdapters.ppo_linesTableAdapter ppo_linesTableAdapter;
     }
 }

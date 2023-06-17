@@ -12,31 +12,32 @@ namespace ITP4915_group3_project.Purchase.PO.search.CPA
 {
     public partial class search : UserControl
     {
-        public search(Control panel,string keyword)
+        public check panelContent;
+        public search(check panelContent, string keyword)
         {
             InitializeComponent();
-            //wizard search
             keyword = "%" + keyword + "%";
-            panel.Controls.Clear();
-            panel.Controls.Add(this);
+            this.panelContent = panelContent;
+            panelContent.Controls.Find("kryptonPanelSearchResult", true)[0].Controls.Clear();
+            panelContent.Controls.Find("kryptonPanelSearchResult", true)[0].Controls.Add(this);
 
             this.cpa_search_resultTableAdapter.Fill(this.purchase_dbDataSet.cpa_search_result, keyword);
-
 
         }
 
         private void kryptonDataGridViewSearchResult_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.ColumnIndex!=0 || e.RowIndex==-1)
+            if (e.ColumnIndex != 0 || e.RowIndex == -1)
             {
                 return;
             }
             else
             {
-
+                int header_ID = (int)kryptonDataGridViewSearchResult.Rows[e.RowIndex].Cells[1].Value;
+                new detail(panelContent, header_ID);
             }
         }
 
-       
+
     }
 }

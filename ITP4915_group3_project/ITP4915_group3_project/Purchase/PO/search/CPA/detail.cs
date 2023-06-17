@@ -12,22 +12,23 @@ namespace ITP4915_group3_project.Purchase.PO.search.CPA
 {
     public partial class detail : UserControl
     {
-        public detail(Control panelContent, int header_ID)
+        public detail(Control panelContent, int cpa_ID)
         {
             InitializeComponent();
             panelContent.Controls.Add(this);
             this.BringToFront();
-
+            this.cpaTableAdapter.FillBy_cpa_id(this.purchase_dbDataSet.cpa, cpa_ID);
 
 
         }
         private void kryptonButtonSave_Click(object sender, EventArgs e)
         {
-/*            this.Validate();
-            this.bpa_headerBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.purchase_dbDataSet);*/
-
+            this.Validate();
+            this.cpaBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.purchase_dbDataSet);
             MessageBox.Show("edit success");
         }
+
+
     }
 }
