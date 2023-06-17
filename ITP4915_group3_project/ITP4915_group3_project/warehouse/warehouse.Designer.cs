@@ -102,7 +102,7 @@ namespace ITP4915_group3_project.warehouse
             // 
             this.kryptonButton7.CornerRoundingRadius = 12F;
             this.kryptonButton7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.kryptonButton7.Location = new System.Drawing.Point(2, 218);
+            this.kryptonButton7.Location = new System.Drawing.Point(0, 228);
             this.kryptonButton7.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButton7.Name = "kryptonButton7";
             this.kryptonButton7.Size = new System.Drawing.Size(141, 53);
@@ -147,7 +147,7 @@ namespace ITP4915_group3_project.warehouse
             // kryptonButton4
             // 
             this.kryptonButton4.CornerRoundingRadius = 12F;
-            this.kryptonButton4.Location = new System.Drawing.Point(0, 275);
+            this.kryptonButton4.Location = new System.Drawing.Point(4, 285);
             this.kryptonButton4.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButton4.Name = "kryptonButton4";
             this.kryptonButton4.Size = new System.Drawing.Size(143, 53);
