@@ -24,7 +24,7 @@ namespace ITP4915_group3_project.Purchase.request_order.process
 
         private void match_ppo(object sender, EventArgs e)
         {
-
+            new select_ppo_match(this, requestID);
         }
         private void match_spo(object sender, EventArgs e)
         {

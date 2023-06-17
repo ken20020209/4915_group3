@@ -709,6 +709,12 @@
     <Compile Include="Purchase\request order\process\select_BPA_match.Designer.cs">
       <DependentUpon>select_BPA_match.cs</DependentUpon>
     </Compile>
+    <Compile Include="Purchase\request order\process\select_ppo_match.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\request order\process\select_ppo_match.Designer.cs">
+      <DependentUpon>select_ppo_match.cs</DependentUpon>
+    </Compile>
     <Compile Include="Purchase\request order\process\select_treatment.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1309,6 +1315,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\request order\process\select_BPA_match.resx">
       <DependentUpon>select_BPA_match.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\request order\process\select_ppo_match.resx">
+      <DependentUpon>select_ppo_match.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\request order\process\select_treatment.resx">
       <DependentUpon>select_treatment.cs</DependentUpon>
