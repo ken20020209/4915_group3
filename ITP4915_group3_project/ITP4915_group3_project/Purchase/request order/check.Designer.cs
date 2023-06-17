@@ -88,7 +88,7 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.kryptonPanel4.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel4.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonPanel4.Name = "kryptonPanel4";
-            this.kryptonPanel4.Size = new System.Drawing.Size(1209, 812);
+            this.kryptonPanel4.Size = new System.Drawing.Size(1200, 800);
             this.kryptonPanel4.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonPanel4.TabIndex = 7;
             // 
@@ -383,7 +383,7 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.Controls.Add(this.kryptonPanel4);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "check";
-            this.Size = new System.Drawing.Size(1209, 812);
+            this.Size = new System.Drawing.Size(1200, 800);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
             this.kryptonPanel4.ResumeLayout(false);
             this.kryptonPanel4.PerformLayout();

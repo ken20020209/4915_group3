@@ -152,7 +152,7 @@ namespace ITP4915_group3_project.Purchase.request_order
             this.kryptonPanel4.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel4.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonPanel4.Name = "kryptonPanel4";
-            this.kryptonPanel4.Size = new System.Drawing.Size(631, 597);
+            this.kryptonPanel4.Size = new System.Drawing.Size(1200, 800);
             this.kryptonPanel4.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonPanel4.TabIndex = 5;
             // 
@@ -592,16 +592,21 @@ namespace ITP4915_group3_project.Purchase.request_order
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.blanket_releaseTableAdapter = null;
             this.tableAdapterManager.bpa_headerTableAdapter = null;
             this.tableAdapterManager.bpa_linesTableAdapter = null;
             this.tableAdapterManager.cpaTableAdapter = null;
             this.tableAdapterManager.itemTableAdapter = this.itemTableAdapter;
             this.tableAdapterManager.ppo_headerTableAdapter = null;
             this.tableAdapterManager.ppo_linesTableAdapter = null;
+            this.tableAdapterManager.price_breaksTableAdapter = null;
+            this.tableAdapterManager.purchase_order_allTableAdapter = null;
             this.tableAdapterManager.purchasers_requestTableAdapter = this.purchasers_requestTableAdapter;
             this.tableAdapterManager.restaurantTableAdapter = this.restaurantTableAdapter;
+            this.tableAdapterManager.schedule_releaseTableAdapter = null;
             this.tableAdapterManager.spo_headerTableAdapter = null;
             this.tableAdapterManager.spo_linesTableAdapter = null;
+            this.tableAdapterManager.spo_releaseTableAdapter = null;
             this.tableAdapterManager.supplierTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.purchase_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.userTableAdapter = this.userTableAdapter;
@@ -625,10 +630,11 @@ namespace ITP4915_group3_project.Purchase.request_order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.Controls.Add(this.kryptonPanel4);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "detail";
-            this.Size = new System.Drawing.Size(631, 597);
+            this.Size = new System.Drawing.Size(1200, 800);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
             this.kryptonPanel4.ResumeLayout(false);
             this.kryptonPanel4.PerformLayout();

@@ -32,7 +32,7 @@ namespace ITP4915_group3_project.Purchase.request_order.process
         }
         private void match_bpa(object sender, EventArgs e)
         {
-
+            new select_BPA_match(this, requestID);
         }
         private void match_warehouse(object sender, EventArgs e)
         {

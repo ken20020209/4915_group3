@@ -80,13 +80,13 @@ namespace ITP4915_group3_project.Purchase.request_order.process
             this.kryptonPanel4.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel4.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonPanel4.Name = "kryptonPanel4";
-            this.kryptonPanel4.Size = new System.Drawing.Size(857, 503);
+            this.kryptonPanel4.Size = new System.Drawing.Size(1200, 800);
             this.kryptonPanel4.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonPanel4.TabIndex = 5;
             // 
             // kryptonGroup4
             // 
-            this.kryptonGroup4.Location = new System.Drawing.Point(645, 133);
+            this.kryptonGroup4.Location = new System.Drawing.Point(782, 298);
             this.kryptonGroup4.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroup4.Name = "kryptonGroup4";
             // 
@@ -132,7 +132,7 @@ namespace ITP4915_group3_project.Purchase.request_order.process
             // 
             // kryptonGroup3
             // 
-            this.kryptonGroup3.Location = new System.Drawing.Point(51, 133);
+            this.kryptonGroup3.Location = new System.Drawing.Point(188, 298);
             this.kryptonGroup3.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroup3.Name = "kryptonGroup3";
             // 
@@ -178,7 +178,7 @@ namespace ITP4915_group3_project.Purchase.request_order.process
             // 
             // kryptonGroup2
             // 
-            this.kryptonGroup2.Location = new System.Drawing.Point(249, 133);
+            this.kryptonGroup2.Location = new System.Drawing.Point(386, 298);
             this.kryptonGroup2.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroup2.Name = "kryptonGroup2";
             // 
@@ -223,7 +223,7 @@ namespace ITP4915_group3_project.Purchase.request_order.process
             // 
             // kryptonGroup1
             // 
-            this.kryptonGroup1.Location = new System.Drawing.Point(453, 133);
+            this.kryptonGroup1.Location = new System.Drawing.Point(590, 298);
             this.kryptonGroup1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroup1.Name = "kryptonGroup1";
             // 
@@ -297,7 +297,7 @@ namespace ITP4915_group3_project.Purchase.request_order.process
             this.Controls.Add(this.kryptonPanel4);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "select_treatment";
-            this.Size = new System.Drawing.Size(857, 503);
+            this.Size = new System.Drawing.Size(1200, 800);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
             this.kryptonPanel4.ResumeLayout(false);
             this.kryptonPanel4.PerformLayout();

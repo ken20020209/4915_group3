@@ -129,7 +129,7 @@ namespace ITP4915_group3_project.Purchase.request_order.process
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(812, 605);
+            this.panel2.Size = new System.Drawing.Size(1200, 800);
             this.panel2.TabIndex = 7;
             // 
             // kryptonLabelRemark
@@ -369,7 +369,7 @@ namespace ITP4915_group3_project.Purchase.request_order.process
             this.Controls.Add(this.panel2);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "warehouse_list_match";
-            this.Size = new System.Drawing.Size(812, 605);
+            this.Size = new System.Drawing.Size(1200, 800);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.purchasers_requestBindingSource)).EndInit();
