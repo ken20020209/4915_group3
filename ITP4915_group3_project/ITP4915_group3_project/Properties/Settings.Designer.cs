@@ -81,5 +81,41 @@ namespace ITP4915_group3_project.Properties {
                 this["autoWarehouse"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2023-06-17")]
+        public global::System.DateTime matchTime1 {
+            get {
+                return ((global::System.DateTime)(this["matchTime1"]));
+            }
+            set {
+                this["matchTime1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("06/17/2023 08:00:00")]
+        public global::System.DateTime matchTime2 {
+            get {
+                return ((global::System.DateTime)(this["matchTime2"]));
+            }
+            set {
+                this["matchTime2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("06/17/2023 16:00:00")]
+        public global::System.DateTime matchTime3 {
+            get {
+                return ((global::System.DateTime)(this["matchTime3"]));
+            }
+            set {
+                this["matchTime3"] = value;
+            }
+        }
     }
 }

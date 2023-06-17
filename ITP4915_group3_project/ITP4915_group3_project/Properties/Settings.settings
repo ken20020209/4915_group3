@@ -22,5 +22,14 @@
     <Setting Name="autoWarehouse" Type="System.String" Scope="User">
       <Value Profile="(Default)">Yes</Value>
     </Setting>
+    <Setting Name="matchTime1" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2023-06-17</Value>
+    </Setting>
+    <Setting Name="matchTime2" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">06/17/2023 08:00:00</Value>
+    </Setting>
+    <Setting Name="matchTime3" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">06/17/2023 16:00:00</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
