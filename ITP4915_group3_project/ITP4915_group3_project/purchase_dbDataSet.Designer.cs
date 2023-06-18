@@ -9693,7 +9693,7 @@ namespace ITP4915_group3_project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bpa_remain_qtyRow Addbpa_remain_qtyRow(decimal remain_qty, string UOM, int MoQ, decimal price, string supplier_name, itemRow parentitemRowBybpa_remain_qty_item) {
+            public bpa_remain_qtyRow Addbpa_remain_qtyRow(int remain_qty, string UOM, int MoQ, decimal price, string supplier_name, itemRow parentitemRowBybpa_remain_qty_item) {
                 bpa_remain_qtyRow rowbpa_remain_qtyRow = ((bpa_remain_qtyRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         remain_qty,
@@ -9750,7 +9750,7 @@ namespace ITP4915_group3_project {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnremain_qty = new global::System.Data.DataColumn("remain qty", typeof(decimal), null, global::System.Data.MappingType.Element);
+                this.columnremain_qty = new global::System.Data.DataColumn("remain qty", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnremain_qty);
                 this.columnUOM = new global::System.Data.DataColumn("UOM", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnUOM);
@@ -14100,10 +14100,10 @@ namespace ITP4915_group3_project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public decimal remain_qty {
+            public int remain_qty {
                 get {
                     try {
-                        return ((decimal)(this[this.tablebpa_remain_qty.remain_qtyColumn]));
+                        return ((int)(this[this.tablebpa_remain_qty.remain_qtyColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'remain qty\' in table \'bpa_remain_qty\' is DBNull.", e);
@@ -27452,7 +27452,6 @@ WHERE           (status_ID = @status_ID OR
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "bpa_remain_qty";
-            tableMapping.ColumnMappings.Add("remain qty", "remain qty");
             tableMapping.ColumnMappings.Add("UOM", "UOM");
             tableMapping.ColumnMappings.Add("MoQ", "MoQ");
             tableMapping.ColumnMappings.Add("price", "price");
@@ -27460,6 +27459,7 @@ WHERE           (status_ID = @status_ID OR
             tableMapping.ColumnMappings.Add("lines_ID", "lines_ID");
             tableMapping.ColumnMappings.Add("supplier name", "supplier name");
             tableMapping.ColumnMappings.Add("item_ID", "item_ID");
+            tableMapping.ColumnMappings.Add("remain qty", "remain qty");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -27477,17 +27477,15 @@ WHERE           (status_ID = @status_ID OR
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT          bpa_header.header_ID, bpa_lines.lines_ID, supplier.name AS `supplier name`, 
-                            bpa_lines.amount - SUM(blanket_release.item_qty) AS `remain qty`, bpa_lines.UOM, bpa_lines.MoQ, bpa_lines.price, 
-                            bpa_lines.item_ID
+                            bpa_lines.amount - COALESCE(SUM(blanket_release.item_qty), 0) AS `remain qty`, bpa_lines.UOM, bpa_lines.MoQ, 
+                            bpa_lines.price, bpa_lines.item_ID
 FROM               bpa_lines INNER JOIN
-                            bpa_header ON bpa_lines.header_ID = bpa_header.header_ID INNER JOIN
+                            bpa_header ON bpa_lines.header_ID = bpa_header.header_ID LEFT OUTER JOIN
                             blanket_release ON bpa_lines.lines_ID = blanket_release.line_ID INNER JOIN
                             supplier ON bpa_header.supplier_ID = supplier.supplier_ID INNER JOIN
                             item ON bpa_lines.item_ID = item.item_ID
 WHERE           (NOW() BETWEEN bpa_header.create_date AND bpa_header.effective_dates)
-GROUP BY    bpa_lines.amount, bpa_lines.UOM, bpa_lines.MoQ, bpa_lines.price, item.item_name, item.item_ID, 
-                            bpa_header.create_date, bpa_header.effective_dates, supplier.name, bpa_header.header_ID, bpa_lines.lines_ID, 
-                            bpa_lines.item_ID
+GROUP BY    bpa_lines.lines_ID
 HAVING          (`remain qty` >= @qty)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             global::MySql.Data.MySqlClient.MySqlParameter param = new global::MySql.Data.MySqlClient.MySqlParameter();
