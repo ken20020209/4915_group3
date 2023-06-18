@@ -86,7 +86,6 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
             this.Controls.Add(this.kryptonLabel3);
             this.Controls.Add(this.kryptonLabel2);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "sign_success";
             this.Text = "sign_success";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

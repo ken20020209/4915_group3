@@ -16,6 +16,7 @@ namespace ITP4915_group3_project.Restaurant
     {
         public static int restaurant_ID;
         public static string restaurant_Name;
+        public static int address_ID;
 
         public restaurant()
         {
@@ -24,6 +25,7 @@ namespace ITP4915_group3_project.Restaurant
             //fake data
             restaurant_ID = 1;
             restaurant_Name = "yammay restaurant";
+            address_ID = 1;
 
             this.restaurantTableAdapter.Fill(this.restaurant_dbDataSet.restaurant);
 
@@ -33,6 +35,7 @@ namespace ITP4915_group3_project.Restaurant
             {
                 restaurant_Name = rows[0].name;
                 restaurant_ID = rows[0].restaurant_ID;
+                address_ID = rows[0].address_ID;
             }
             else
             {

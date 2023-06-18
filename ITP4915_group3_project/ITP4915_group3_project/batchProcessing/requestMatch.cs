@@ -153,11 +153,11 @@ namespace ITP4915_group3_project.batchProcessing
             //set affected row count
             this.processedNum = this.totalRequest - this.errorProcess;
 
-            
+
             //save 
             /*this.TableAdapterManager.UpdateAll(this.dataSet);*/
 
-            
+
         }
         // use binding source get date 
         // bad method
