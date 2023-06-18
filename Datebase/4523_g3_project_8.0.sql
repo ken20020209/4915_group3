@@ -760,9 +760,12 @@ CREATE TABLE `restaurant` (
   `address_ID` int NOT NULL COMMENT 'The ID to identify each address\nXX000000000000000000-XX999999999999999999\n\nXX:\n‘JP’ for Japan\n‘CH’ for Chinese\n‘TW’ for Taiwan\n‘IN’ for India\n‘VT’ for Vietnam\n‘FR’ for French\n\n',
   `type` varchar(20) NOT NULL COMMENT 'Type of the the restaurant\n‘JP’ for Japan\n‘CH’ for Chinese\n‘TW’ for Taiwan\n‘IN’ for India\n‘VT’ for Vietnam\n‘FR’ for French\n\n',
   `phone` char(8) NOT NULL COMMENT 'The phone number of the restaurant. (Hong Kong number)\n00000000-\n99999999\n\n',
+  `manager_ID` int DEFAULT NULL,
   PRIMARY KEY (`restaurant_ID`),
   KEY `Restaurant_address_ID_fk_idx` (`address_ID`),
-  CONSTRAINT `Restaurant_address_ID_fk` FOREIGN KEY (`address_ID`) REFERENCES `address` (`address_id`)
+  KEY `Restaurant_manager_ID_fk_idx` (`manager_ID`),
+  CONSTRAINT `Restaurant_address_ID_fk` FOREIGN KEY (`address_ID`) REFERENCES `address` (`address_id`),
+  CONSTRAINT `Restaurant_manager_ID_fk` FOREIGN KEY (`manager_ID`) REFERENCES `user` (`user_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -772,7 +775,7 @@ CREATE TABLE `restaurant` (
 
 LOCK TABLES `restaurant` WRITE;
 /*!40000 ALTER TABLE `restaurant` DISABLE KEYS */;
-INSERT INTO `restaurant` VALUES (1,'Good',6,'1','12345678'),(2,'God',7,'2','98765432'),(3,'Asia-Res',8,'2','67439867');
+INSERT INTO `restaurant` VALUES (1,'Good',6,'1','12345678',NULL),(2,'God',7,'2','98765432',NULL),(3,'Asia-Res',8,'2','67439867',NULL);
 /*!40000 ALTER TABLE `restaurant` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -802,7 +805,7 @@ CREATE TABLE `restaurant_stock_item` (
 
 LOCK TABLES `restaurant_stock_item` WRITE;
 /*!40000 ALTER TABLE `restaurant_stock_item` DISABLE KEYS */;
-INSERT INTO `restaurant_stock_item` VALUES (1,1,150,NULL,NULL),(2,2,150,NULL,NULL),(3,3,150,NULL,NULL);
+INSERT INTO `restaurant_stock_item` VALUES (1,1,150,'asd',NULL),(2,2,150,NULL,NULL),(3,3,150,NULL,NULL);
 /*!40000 ALTER TABLE `restaurant_stock_item` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1283,4 +1286,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-06-18 15:43:11
+-- Dump completed on 2023-06-18 16:29:45
