@@ -13,6 +13,7 @@ namespace ITP4915_group3_project.Restaurant.stock
     public partial class check : UserControl
     {
         public Control panel;
+        public string keyword;
         public check(Control panel)
         {
             InitializeComponent();
@@ -21,14 +22,35 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.panel.Controls.Clear();
             this.panel.Controls.Add(this);
 
-            this.requestOrder_restaurant_stockTableAdapter.Fill(this.restaurant_dbDataSet.requestOrder_restaurant_stock,restaurant.restaurant_ID);
-            kryptonLabelTotalItem.Text = this.restaurant_dbDataSet.requestOrder_restaurant_stock.Count.ToString();
+            search();
+
+            dataTable_restaurant_stock_searchBindingSource.Filter = $"restaurant_ID={restaurant.restaurant_ID} and qty<expected_inventory";
+            kryptonLabelLowStock.Text = dataTable_restaurant_stock_searchBindingSource.Count.ToString();
+
+            dataTable_restaurant_stock_searchBindingSource.Filter = $"restaurant_ID={restaurant.restaurant_ID}";
+            kryptonLabelTotalItem.Text = dataTable_restaurant_stock_searchBindingSource.Count.ToString();
+
+            
+
+
+            
 
         }
 
-        private void requestOrder_restaurant_stockDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+        private void search()
         {
-            detail stockDetail = new detail(this, int.Parse(requestOrder_restaurant_stockDataGridView.Rows[e.RowIndex].Cells["item_ID"].Value.ToString()));
+            keyword = "%" + kryptonTextBoxSearch.Text + "%";
+            this.dataTable_restaurant_stock_searchTableAdapter.Fill(this.restaurant_dbDataSet.DataTable_restaurant_stock_search,keyword);
+        }
+
+        private void dataTable_restaurant_stock_searchKryptonDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex==-1||e.ColumnIndex!=0)
+            {
+                return;
+            }
+            detail stockDetail = new detail(this,int.Parse(dataTable_restaurant_stock_searchKryptonDataGridView.Rows[e.RowIndex].Cells["item_ID"].Value.ToString()),restaurant.restaurant_ID);
         }
     }
 }
