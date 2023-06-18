@@ -7936,7 +7936,7 @@ namespace ITP4915_group3_project {
             
             private global::System.Data.DataColumn columnqty;
             
-            private global::System.Data.DataColumn columnexpireDate;
+            private global::System.Data.DataColumn columnexpected_inventory;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -7997,9 +7997,9 @@ namespace ITP4915_group3_project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn expireDateColumn {
+            public global::System.Data.DataColumn expected_inventoryColumn {
                 get {
-                    return this.columnexpireDate;
+                    return this.columnexpected_inventory;
                 }
             }
             
@@ -8040,13 +8040,13 @@ namespace ITP4915_group3_project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public warehouse_itemRow Addwarehouse_itemRow(warehouseRow parentwarehouseRowByWarehouse_item_warehouse_ID_fk, itemRow parentitemRowByWarehouse_item_item_ID_fk, int qty, System.DateTime expireDate) {
+            public warehouse_itemRow Addwarehouse_itemRow(warehouseRow parentwarehouseRowByWarehouse_item_warehouse_ID_fk, itemRow parentitemRowByWarehouse_item_item_ID_fk, int qty, int expected_inventory) {
                 warehouse_itemRow rowwarehouse_itemRow = ((warehouse_itemRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
                         qty,
-                        expireDate};
+                        expected_inventory};
                 if ((parentwarehouseRowByWarehouse_item_warehouse_ID_fk != null)) {
                     columnValuesArray[0] = parentwarehouseRowByWarehouse_item_warehouse_ID_fk[0];
                 }
@@ -8086,7 +8086,7 @@ namespace ITP4915_group3_project {
                 this.columnwarehouse_ID = base.Columns["warehouse_ID"];
                 this.columnitem_ID = base.Columns["item_ID"];
                 this.columnqty = base.Columns["qty"];
-                this.columnexpireDate = base.Columns["expireDate"];
+                this.columnexpected_inventory = base.Columns["expected_inventory"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8098,15 +8098,14 @@ namespace ITP4915_group3_project {
                 base.Columns.Add(this.columnitem_ID);
                 this.columnqty = new global::System.Data.DataColumn("qty", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnqty);
-                this.columnexpireDate = new global::System.Data.DataColumn("expireDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnexpireDate);
+                this.columnexpected_inventory = new global::System.Data.DataColumn("expected_inventory", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnexpected_inventory);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnwarehouse_ID,
                                 this.columnitem_ID}, true));
                 this.columnwarehouse_ID.AllowDBNull = false;
                 this.columnitem_ID.AllowDBNull = false;
                 this.columnqty.AllowDBNull = false;
-                this.columnexpireDate.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -13508,12 +13507,17 @@ namespace ITP4915_group3_project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public System.DateTime expireDate {
+            public int expected_inventory {
                 get {
-                    return ((global::System.DateTime)(this[this.tablewarehouse_item.expireDateColumn]));
+                    try {
+                        return ((int)(this[this.tablewarehouse_item.expected_inventoryColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'expected_inventory\' in table \'warehouse_item\' is DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tablewarehouse_item.expireDateColumn] = value;
+                    this[this.tablewarehouse_item.expected_inventoryColumn] = value;
                 }
             }
             
@@ -13548,6 +13552,18 @@ namespace ITP4915_group3_project {
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["Warehouse_item_item_ID_fk1"]);
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isexpected_inventoryNull() {
+                return this.IsNull(this.tablewarehouse_item.expected_inventoryColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setexpected_inventoryNull() {
+                this[this.tablewarehouse_item.expected_inventoryColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -24990,12 +25006,13 @@ WHERE           (status_ID = @status_ID OR
             tableMapping.ColumnMappings.Add("warehouse_ID", "warehouse_ID");
             tableMapping.ColumnMappings.Add("item_ID", "item_ID");
             tableMapping.ColumnMappings.Add("qty", "qty");
-            tableMapping.ColumnMappings.Add("expireDate", "expireDate");
+            tableMapping.ColumnMappings.Add("expected_inventory", "expected_inventory");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
             this._adapter.DeleteCommand.CommandText = "DELETE FROM `warehouse_item` WHERE ((`warehouse_ID` = @p1) AND (`item_ID` = @p2) " +
-                "AND (`qty` = @p3) AND (`expireDate` = @p4))";
+                "AND (`qty` = @p3) AND ((@p4 = 1 AND `expected_inventory` IS NULL) OR (`expected_" +
+                "inventory` = @p5)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             global::MySql.Data.MySqlClient.MySqlParameter param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p1";
@@ -25023,16 +25040,25 @@ WHERE           (status_ID = @status_ID OR
             this._adapter.DeleteCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p4";
-            param.DbType = global::System.Data.DbType.Date;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Date;
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
-            param.SourceColumn = "expireDate";
+            param.SourceColumn = "expected_inventory";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@p5";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "expected_inventory";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.DeleteCommand.Parameters.Add(param);
             this._adapter.InsertCommand = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `warehouse_item` (`warehouse_ID`, `item_ID`, `qty`, `expireDate`) VAL" +
-                "UES (@p1, @p2, @p3, @p4)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO `warehouse_item` (`warehouse_ID`, `item_ID`, `qty`, `expected_invento" +
+                "ry`) VALUES (@p1, @p2, @p3, @p4)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p1";
@@ -25060,17 +25086,15 @@ WHERE           (status_ID = @status_ID OR
             this._adapter.InsertCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p4";
-            param.DbType = global::System.Data.DbType.Date;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Date;
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
-            param.SourceColumn = "expireDate";
+            param.SourceColumn = "expected_inventory";
             param.SourceVersion = global::System.Data.DataRowVersion.Current;
             this._adapter.InsertCommand.Parameters.Add(param);
             this._adapter.UpdateCommand = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE `warehouse_item` SET `warehouse_ID` = @p1, `item_ID` = @p2, `qty` = @p3, `" +
-                "expireDate` = @p4 WHERE ((`warehouse_ID` = @p5) AND (`item_ID` = @p6) AND (`qty`" +
-                " = @p7) AND (`expireDate` = @p8))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE `warehouse_item` SET `warehouse_ID` = @p1, `item_ID` = @p2, `qty` = @p3, `expected_inventory` = @p4 WHERE ((`warehouse_ID` = @p5) AND (`item_ID` = @p6) AND (`qty` = @p7) AND ((@p8 = 1 AND `expected_inventory` IS NULL) OR (`expected_inventory` = @p9)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p1";
@@ -25098,10 +25122,10 @@ WHERE           (status_ID = @status_ID OR
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p4";
-            param.DbType = global::System.Data.DbType.Date;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Date;
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
-            param.SourceColumn = "expireDate";
+            param.SourceColumn = "expected_inventory";
             param.SourceVersion = global::System.Data.DataRowVersion.Current;
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
@@ -25130,10 +25154,19 @@ WHERE           (status_ID = @status_ID OR
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p8";
-            param.DbType = global::System.Data.DbType.Date;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Date;
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
-            param.SourceColumn = "expireDate";
+            param.SourceColumn = "expected_inventory";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@p9";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "expected_inventory";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
         }
@@ -25151,12 +25184,13 @@ WHERE           (status_ID = @status_ID OR
             this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[2];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT `warehouse_ID`, `item_ID`, `qty`, `expireDate` FROM `warehouse_item`";
+            this._commandCollection[0].CommandText = "SELECT          warehouse_ID, item_ID, qty, expected_inventory\r\nFROM             " +
+                "  warehouse_item";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT          warehouse_ID, item_ID, qty, expireDate\r\nFROM               wareho" +
-                "use_item\r\nWHERE           (qty >= @qty)";
+            this._commandCollection[1].CommandText = "SELECT expected_inventory, item_ID, qty, warehouse_ID FROM warehouse_item WHERE (" +
+                "qty >= @qty)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             global::MySql.Data.MySqlClient.MySqlParameter param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@qty";
@@ -25239,11 +25273,18 @@ WHERE           (status_ID = @status_ID OR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int p1, int p2, int p3, System.DateTime p4) {
+        public virtual int Delete(int p1, int p2, int p3, global::System.Nullable<int> p5) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(p1));
             this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(p2));
             this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(p3));
-            this.Adapter.DeleteCommand.Parameters[3].Value = ((System.DateTime)(p4));
+            if ((p5.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(p5.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -25264,11 +25305,16 @@ WHERE           (status_ID = @status_ID OR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int p1, int p2, int p3, System.DateTime p4) {
+        public virtual int Insert(int p1, int p2, int p3, global::System.Nullable<int> p4) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((int)(p1));
             this.Adapter.InsertCommand.Parameters[1].Value = ((int)(p2));
             this.Adapter.InsertCommand.Parameters[2].Value = ((int)(p3));
-            this.Adapter.InsertCommand.Parameters[3].Value = ((System.DateTime)(p4));
+            if ((p4.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((int)(p4.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -25289,15 +25335,27 @@ WHERE           (status_ID = @status_ID OR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int p1, int p2, int p3, System.DateTime p4, int p5, int p6, int p7, System.DateTime p8) {
+        public virtual int Update(int p1, int p2, int p3, global::System.Nullable<int> p4, int p5, int p6, int p7, global::System.Nullable<int> p9) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(p1));
             this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(p2));
             this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(p3));
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((System.DateTime)(p4));
+            if ((p4.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(p4.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
             this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(p5));
             this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(p6));
             this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(p7));
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((System.DateTime)(p8));
+            if ((p9.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(p9.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -25318,8 +25376,8 @@ WHERE           (status_ID = @status_ID OR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int p3, System.DateTime p4, int p5, int p6, int p7, System.DateTime p8) {
-            return this.Update(p5, p6, p3, p4, p5, p6, p7, p8);
+        public virtual int Update(int p3, global::System.Nullable<int> p4, int p5, int p6, int p7, global::System.Nullable<int> p9) {
+            return this.Update(p5, p6, p3, p4, p5, p6, p7, p9);
         }
     }
     

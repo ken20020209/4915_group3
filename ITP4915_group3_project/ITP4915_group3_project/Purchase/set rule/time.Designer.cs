@@ -30,20 +30,20 @@ namespace ITP4915_group3_project.Purchase.set_rule
         private void InitializeComponent()
         {
             this.kryptonPanel4 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonButton7 = new Krypton.Toolkit.KryptonButton();
+            this.kryptonButtonSave = new Krypton.Toolkit.KryptonButton();
             this.kryptonDateTimePicker3 = new Krypton.Toolkit.KryptonDateTimePicker();
             this.kryptonDateTimePicker2 = new Krypton.Toolkit.KryptonDateTimePicker();
             this.kryptonDateTimePicker1 = new Krypton.Toolkit.KryptonDateTimePicker();
+            this.kryptonLabel5 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabelBack = new Krypton.Toolkit.KryptonLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.kryptonLabel5 = new Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonPanel4
             // 
-            this.kryptonPanel4.Controls.Add(this.kryptonButton7);
+            this.kryptonPanel4.Controls.Add(this.kryptonButtonSave);
             this.kryptonPanel4.Controls.Add(this.kryptonDateTimePicker3);
             this.kryptonPanel4.Controls.Add(this.kryptonDateTimePicker2);
             this.kryptonPanel4.Controls.Add(this.kryptonDateTimePicker1);
@@ -58,26 +58,27 @@ namespace ITP4915_group3_project.Purchase.set_rule
             this.kryptonPanel4.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonPanel4.TabIndex = 217;
             // 
-            // kryptonButton7
+            // kryptonButtonSave
             // 
-            this.kryptonButton7.CornerRoundingRadius = 25F;
-            this.kryptonButton7.Location = new System.Drawing.Point(520, 19);
-            this.kryptonButton7.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonButton7.Name = "kryptonButton7";
-            this.kryptonButton7.Size = new System.Drawing.Size(97, 30);
-            this.kryptonButton7.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonButton7.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonButton7.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonButton7.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonButton7.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonButtonSave.CornerRoundingRadius = 25F;
+            this.kryptonButtonSave.Location = new System.Drawing.Point(520, 19);
+            this.kryptonButtonSave.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonButtonSave.Name = "kryptonButtonSave";
+            this.kryptonButtonSave.Size = new System.Drawing.Size(97, 30);
+            this.kryptonButtonSave.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButtonSave.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButtonSave.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButtonSave.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonButtonSave.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton7.StateCommon.Border.Rounding = 25F;
-            this.kryptonButton7.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton7.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton7.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.kryptonButton7.TabIndex = 224;
-            this.kryptonButton7.Values.Text = "Save";
+            this.kryptonButtonSave.StateCommon.Border.Rounding = 25F;
+            this.kryptonButtonSave.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButtonSave.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonButtonSave.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.kryptonButtonSave.TabIndex = 224;
+            this.kryptonButtonSave.Values.Text = "Save";
+            this.kryptonButtonSave.Click += new System.EventHandler(this.kryptonButtonSave_Click);
             // 
             // kryptonDateTimePicker3
             // 
@@ -113,6 +114,17 @@ namespace ITP4915_group3_project.Purchase.set_rule
             this.kryptonDateTimePicker1.TabIndex = 221;
             this.kryptonDateTimePicker1.ValueNullable = new System.DateTime(2023, 6, 17, 0, 0, 0, 0);
             // 
+            // kryptonLabel5
+            // 
+            this.kryptonLabel5.Location = new System.Drawing.Point(89, 87);
+            this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonLabel5.Name = "kryptonLabel5";
+            this.kryptonLabel5.Size = new System.Drawing.Size(32, 19);
+            this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel5.TabIndex = 220;
+            this.kryptonLabel5.Values.Text = "On:";
+            // 
             // kryptonLabelBack
             // 
             this.kryptonLabelBack.Location = new System.Drawing.Point(24, 37);
@@ -136,17 +148,6 @@ namespace ITP4915_group3_project.Purchase.set_rule
             this.label1.TabIndex = 216;
             this.label1.Text = "Timing";
             // 
-            // kryptonLabel5
-            // 
-            this.kryptonLabel5.Location = new System.Drawing.Point(89, 87);
-            this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonLabel5.Name = "kryptonLabel5";
-            this.kryptonLabel5.Size = new System.Drawing.Size(32, 19);
-            this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel5.TabIndex = 220;
-            this.kryptonLabel5.Values.Text = "On:";
-            // 
             // time
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -165,7 +166,7 @@ namespace ITP4915_group3_project.Purchase.set_rule
         #endregion
 
         private Krypton.Toolkit.KryptonPanel kryptonPanel4;
-        private Krypton.Toolkit.KryptonButton kryptonButton7;
+        private Krypton.Toolkit.KryptonButton kryptonButtonSave;
         private Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker3;
         private Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker2;
         private Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker1;

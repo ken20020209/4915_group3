@@ -61,7 +61,6 @@ namespace ITP4915_group3_project.Purchase.set_rule
             this.kryptonPanel4.Size = new System.Drawing.Size(688, 402);
             this.kryptonPanel4.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonPanel4.TabIndex = 214;
-            this.kryptonPanel4.Click += new System.EventHandler(this.toTime);
             // 
             // kryptonGroup3
             // 
