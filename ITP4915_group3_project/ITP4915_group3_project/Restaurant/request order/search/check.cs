@@ -13,6 +13,8 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
     public partial class check : UserControl
     {
         public Control panelContent;
+        string keyword = "";
+        int status = 1000;
         public check(Control panelContent)
         {
             InitializeComponent();
@@ -20,21 +22,53 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
             this.panelContent = panelContent;
             panelContent.Controls.Clear();
             panelContent.Controls.Add(this);
-
-            purchasers_requestTableAdapter.Fill(this.restaurant_dbDataSet.purchasers_request, restaurant.restaurant_ID);
+            search();
         }
 
-        private void purchasers_requestDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            detail requestDetail = new detail(this,int.Parse(purchasers_requestDataGridView.Rows[e.RowIndex].Cells["purchasers_request_id"].Value.ToString()));
-        }
+
 
         private void kryptonButtonSearch_Click(object sender, EventArgs e)
         {
-            string keyword = "%" + kryptonTextBoxSearchKeyWord.Text + "%";
+            search();
+        }
+        private void search()
+        {
 
-            purchasers_requestTableAdapter.FillBySearch(this.restaurant_dbDataSet.purchasers_request, restaurant.restaurant_ID, keyword);
+            keyword = "%" + kryptonTextBoxSearchKeyWord.Text + "%";
+            purchaseRequestDetailTableAdapter.FillBy_search(this.restaurant_dbDataSet.purchaseRequestDetail, restaurant.restaurant_ID, keyword);
+
+            purchaseRequestDetailBindingSource.Filter = $"status_ID={status}"; 
+
+            int result = purchaseRequestDetailBindingSource.Count;
+            kryptonLabelResult.Text = $"RESULT ({result})";
+            
         }
 
+        private void purchaseRequestDetailKryptonDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex==-1||e.ColumnIndex!=0)
+            {
+                return;
+            }
+            new detail(this, (int)purchaseRequestDetailKryptonDataGridView.Rows[e.RowIndex].Cells[1].Value);
+        }
+
+        private void kryptonCheckButtonWait_Click(object sender, EventArgs e)
+        {
+            status = 1000;
+            search();
+        }
+
+        private void kryptonCheckButtonError_Click(object sender, EventArgs e)
+        {
+            status = 1100;
+            search();
+        }
+
+        private void kryptonCheckButtonComplete_Click(object sender, EventArgs e)
+        {
+            status = 1200;
+            search();
+        }
     }
 }

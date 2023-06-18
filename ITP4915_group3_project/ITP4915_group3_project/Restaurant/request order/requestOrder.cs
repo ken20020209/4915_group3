@@ -42,7 +42,7 @@ namespace ITP4915_group3_project.Restaurant.request_order
             adapterRequest.Fill(datasetRequest,restaurant_ID);
             for(int i=0;i<item_qty.Count();i++)
             {
-                adapterRequest.Insert(creator_ID, restaurant_ID, item_ID[i], item_qty[i], priority, 1, mysqlDate, mysqlDate, "");
+                adapterRequest.Insert(creator_ID, restaurant_ID, item_ID[i], item_qty[i], priority, 1000, mysqlDate, mysqlDate, "");
             }
         }
             

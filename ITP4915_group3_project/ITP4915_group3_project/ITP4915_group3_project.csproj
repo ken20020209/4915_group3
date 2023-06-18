@@ -847,12 +847,6 @@
     <Compile Include="Restaurant\request order\search\detail.Designer.cs">
       <DependentUpon>detail.cs</DependentUpon>
     </Compile>
-    <Compile Include="Restaurant\request order\search\edit.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Restaurant\request order\search\edit.Designer.cs">
-      <DependentUpon>edit.cs</DependentUpon>
-    </Compile>
     <Compile Include="Restaurant\request order\search\sumit_success.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1384,9 +1378,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\request order\search\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Restaurant\request order\search\edit.resx">
-      <DependentUpon>edit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\request order\search\sumit_success.resx">
       <DependentUpon>sumit_success.cs</DependentUpon>

@@ -30,5 +30,19 @@
         </ColumnUISetting>
       </ColumnUISettings>
     </TableUISetting>
+    <TableUISetting Name="purchaseRequestDetail">
+      <ColumnUISettings>
+        <ColumnUISetting Name="priority_id">
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+              <BindableControlInfo Name="KryptonComboBox" Type="Krypton.Toolkit.KryptonComboBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting></ControlSettings>
+        </ColumnUISetting>
+        <ColumnUISetting Name="expected_delivery_date">
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+              <BindableControlInfo Name="KryptonDateTimePicker" Type="Krypton.Toolkit.KryptonDateTimePicker" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting></ControlSettings>
+        </ColumnUISetting>
+      </ColumnUISettings>
+    </TableUISetting>
   </TableUISettings>
 </DataSetUISetting>

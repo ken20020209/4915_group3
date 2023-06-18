@@ -65,7 +65,7 @@ CREATE TABLE `blanket_release` (
   KEY `Blanket_shipment_ID_fk_idx` (`shipment_ID`),
   CONSTRAINT `Blanket_Release_line_ID_fk` FOREIGN KEY (`line_ID`) REFERENCES `bpa_lines` (`lines_ID`),
   CONSTRAINT `Blanket_shipment_ID_fk` FOREIGN KEY (`shipment_ID`) REFERENCES `address` (`address_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -74,7 +74,7 @@ CREATE TABLE `blanket_release` (
 
 LOCK TABLES `blanket_release` WRITE;
 /*!40000 ALTER TABLE `blanket_release` DISABLE KEYS */;
-INSERT INTO `blanket_release` VALUES (1,1,'2023-09-17','2023-08-22',150,NULL),(2,2,'2023-05-29','2023-09-03',120,NULL),(3,3,'2023-03-22','2023-04-01',140,NULL),(4,4,'2023-04-16','2023-04-29',130,NULL),(5,2,'2023-06-17','2023-06-17',99,NULL),(6,2,'2023-06-17','2023-06-17',99,NULL),(7,1,'2023-06-17','2023-06-17',99,NULL),(8,2,'2023-06-17','2023-06-17',99,NULL),(9,2,'2023-06-17','2023-06-17',99,NULL);
+INSERT INTO `blanket_release` VALUES (1,1,'2023-09-17','2023-08-22',150,NULL),(2,2,'2023-05-29','2023-09-03',120,NULL),(3,3,'2023-03-22','2023-04-01',140,NULL),(4,4,'2023-04-16','2023-04-29',130,NULL),(5,2,'2023-06-17','2023-06-17',99,NULL),(6,2,'2023-06-17','2023-06-17',99,NULL),(7,1,'2023-06-17','2023-06-17',99,NULL),(8,2,'2023-06-17','2023-06-17',99,NULL),(9,2,'2023-06-17','2023-06-17',99,NULL),(10,7,'2023-06-18','2023-06-18',9999,NULL);
 /*!40000 ALTER TABLE `blanket_release` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -694,7 +694,7 @@ CREATE TABLE `purchase_order_all` (
   CONSTRAINT `purchase_order_all_purchasers_request_ID_fk` FOREIGN KEY (`purchasers_request_ID`) REFERENCES `purchasers_request` (`purchasers_request_id`),
   CONSTRAINT `purchase_order_all_SPO_relase_ID_fk` FOREIGN KEY (`SPO_relase_ID`) REFERENCES `spo_release` (`release_ID`),
   CONSTRAINT `purchase_order_all_SR_relase_ID_fk` FOREIGN KEY (`SR_relase_ID`) REFERENCES `schedule_release` (`release_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -703,7 +703,7 @@ CREATE TABLE `purchase_order_all` (
 
 LOCK TABLES `purchase_order_all` WRITE;
 /*!40000 ALTER TABLE `purchase_order_all` DISABLE KEYS */;
-INSERT INTO `purchase_order_all` VALUES (1,1,1,1,3,3,NULL),(2,2,2,2,4,2,NULL),(3,3,3,3,7,1,NULL),(4,4,4,4,5,2,NULL),(5,5,NULL,NULL,4,NULL,'kryptonTextBoxRemark'),(6,6,NULL,NULL,4,NULL,'kryptonTextBoxRemark'),(7,7,NULL,NULL,3,NULL,'kryptonTextBoxRemark'),(8,8,NULL,NULL,4,NULL,'kryptonTextBoxRemark'),(9,9,NULL,NULL,4,NULL,'kryptonTextBoxRemark'),(10,NULL,NULL,4,5,NULL,'kryptonTextBoxRemark');
+INSERT INTO `purchase_order_all` VALUES (1,1,1,1,3,3,NULL),(2,2,2,2,4,2,NULL),(3,3,3,3,7,1,NULL),(4,4,4,4,5,2,NULL),(5,5,NULL,NULL,4,NULL,'kryptonTextBoxRemark'),(6,6,NULL,NULL,4,NULL,'kryptonTextBoxRemark'),(7,7,NULL,NULL,3,NULL,'kryptonTextBoxRemark'),(8,8,NULL,NULL,4,NULL,'kryptonTextBoxRemark'),(9,9,NULL,NULL,4,NULL,'kryptonTextBoxRemark'),(10,NULL,NULL,4,5,NULL,'kryptonTextBoxRemark'),(11,10,NULL,NULL,5,NULL,'kryptonTextBoxRemark');
 /*!40000 ALTER TABLE `purchase_order_all` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -743,7 +743,7 @@ CREATE TABLE `purchasers_request` (
 
 LOCK TABLES `purchasers_request` WRITE;
 /*!40000 ALTER TABLE `purchasers_request` DISABLE KEYS */;
-INSERT INTO `purchasers_request` VALUES (3,1,1,1,99,1,1000,'2023-06-13','2023-06-13',''),(4,1,1,2,99,2,1000,'2023-06-13','2023-06-13',''),(5,1,1,1,9999,2,1000,'2023-06-13','2023-06-13',''),(6,1,1,2,88,3,1000,'2023-06-13','2023-06-13',''),(7,1,1,1,123,4,1000,'2023-06-13','2023-06-13','');
+INSERT INTO `purchasers_request` VALUES (3,1,1,1,99,1,1000,'2023-06-13','2023-06-13',''),(4,1,1,2,99,2,1000,'2023-06-13','2023-06-13',''),(5,1,1,1,9999,2,1200,'2023-06-13','2023-06-13',''),(6,1,1,2,88,3,1000,'2023-06-13','2023-06-13',''),(7,1,1,1,123,4,1000,'2023-06-13','2023-06-13','');
 /*!40000 ALTER TABLE `purchasers_request` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -775,7 +775,7 @@ CREATE TABLE `restaurant` (
 
 LOCK TABLES `restaurant` WRITE;
 /*!40000 ALTER TABLE `restaurant` DISABLE KEYS */;
-INSERT INTO `restaurant` VALUES (1,'Good',6,'1','12345678',NULL),(2,'God',7,'2','98765432',NULL),(3,'Asia-Res',8,'2','67439867',NULL);
+INSERT INTO `restaurant` VALUES (1,'Good',6,'1','12345678',1),(2,'God',7,'2','98765432',NULL),(3,'Asia-Res',8,'2','67439867',NULL);
 /*!40000 ALTER TABLE `restaurant` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -792,7 +792,9 @@ CREATE TABLE `restaurant_stock_item` (
   `qty` int NOT NULL COMMENT 'The quantity of each item in the stock',
   `remarks` varchar(50) DEFAULT NULL COMMENT 'The remark that they have to add \n\n',
   `expected_inventory` int DEFAULT NULL COMMENT 'Expiry date of each item\\\\\\\\nYYYYMMDD\\\\\\\\n\\\\\\\\n',
+  `virtual_ID` varchar(50) NOT NULL,
   PRIMARY KEY (`restaurant_ID`,`item_ID`),
+  UNIQUE KEY `virtual_ID_UNIQUE` (`virtual_ID`),
   KEY `Restaurant_Stock_Item_item_ID_fk_idx` (`item_ID`),
   CONSTRAINT `Restaurant_Stock_Item_item_ID_fk` FOREIGN KEY (`item_ID`) REFERENCES `item` (`item_ID`),
   CONSTRAINT `Restaurant_Stock_Item_restaurant_ID_fk` FOREIGN KEY (`restaurant_ID`) REFERENCES `restaurant` (`restaurant_ID`)
@@ -805,7 +807,7 @@ CREATE TABLE `restaurant_stock_item` (
 
 LOCK TABLES `restaurant_stock_item` WRITE;
 /*!40000 ALTER TABLE `restaurant_stock_item` DISABLE KEYS */;
-INSERT INTO `restaurant_stock_item` VALUES (1,1,150,'asd',NULL),(2,2,150,NULL,NULL),(3,3,150,NULL,NULL);
+INSERT INTO `restaurant_stock_item` VALUES (1,1,150,'asd',NULL,'123'),(2,2,150,NULL,NULL,'124'),(3,3,150,NULL,NULL,'125');
 /*!40000 ALTER TABLE `restaurant_stock_item` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1286,4 +1288,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-06-18 16:29:45
+-- Dump completed on 2023-06-18 18:21:09
