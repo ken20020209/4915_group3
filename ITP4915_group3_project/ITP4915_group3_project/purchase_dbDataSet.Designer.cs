@@ -8820,7 +8820,6 @@ namespace ITP4915_group3_project {
                 this.columnPurchase_order_ID.AutoIncrementStep = -1;
                 this.columnPurchase_order_ID.AllowDBNull = false;
                 this.columnPurchase_order_ID.Unique = true;
-                this.columnpurchasers_request_ID.AllowDBNull = false;
                 this.columndescription.MaxLength = 50;
             }
             
@@ -13800,7 +13799,13 @@ namespace ITP4915_group3_project {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public int purchasers_request_ID {
                 get {
-                    return ((int)(this[this.tablepurchase_order_all.purchasers_request_IDColumn]));
+                    try {
+                        return ((int)(this[this.tablepurchase_order_all.purchasers_request_IDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'purchasers_request_ID\' in table \'purchase_order_all\' is DBN" +
+                                "ull.", e);
+                    }
                 }
                 set {
                     this[this.tablepurchase_order_all.purchasers_request_IDColumn] = value;
@@ -13917,6 +13922,18 @@ namespace ITP4915_group3_project {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetSPO_relase_IDNull() {
                 this[this.tablepurchase_order_all.SPO_relase_IDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Ispurchasers_request_IDNull() {
+                return this.IsNull(this.tablepurchase_order_all.purchasers_request_IDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setpurchasers_request_IDNull() {
+                this[this.tablepurchase_order_all.purchasers_request_IDColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -26393,7 +26410,7 @@ WHERE           (status_ID = @status_ID OR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int p1, global::System.Nullable<int> p3, global::System.Nullable<int> p5, global::System.Nullable<int> p7, int p8, global::System.Nullable<int> p10, string p12) {
+        public virtual int Delete(int p1, global::System.Nullable<int> p3, global::System.Nullable<int> p5, global::System.Nullable<int> p7, global::System.Nullable<int> p8, global::System.Nullable<int> p10, string p12) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(p1));
             if ((p3.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
@@ -26419,7 +26436,12 @@ WHERE           (status_ID = @status_ID OR
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
-            this.Adapter.DeleteCommand.Parameters[7].Value = ((int)(p8));
+            if ((p8.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((int)(p8.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
             if ((p10.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[8].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((int)(p10.Value));
@@ -26456,7 +26478,7 @@ WHERE           (status_ID = @status_ID OR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<int> p1, global::System.Nullable<int> p2, global::System.Nullable<int> p3, int p4, global::System.Nullable<int> p5, string p6) {
+        public virtual int Insert(global::System.Nullable<int> p1, global::System.Nullable<int> p2, global::System.Nullable<int> p3, global::System.Nullable<int> p4, global::System.Nullable<int> p5, string p6) {
             if ((p1.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((int)(p1.Value));
             }
@@ -26475,7 +26497,12 @@ WHERE           (status_ID = @status_ID OR
             else {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            this.Adapter.InsertCommand.Parameters[3].Value = ((int)(p4));
+            if ((p4.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((int)(p4.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
             if ((p5.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[4].Value = ((int)(p5.Value));
             }
@@ -26508,7 +26535,7 @@ WHERE           (status_ID = @status_ID OR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<int> p1, global::System.Nullable<int> p2, global::System.Nullable<int> p3, int p4, global::System.Nullable<int> p5, string p6, int p7, global::System.Nullable<int> p9, global::System.Nullable<int> p11, global::System.Nullable<int> p13, int p14, global::System.Nullable<int> p16, string p18) {
+        public virtual int Update(global::System.Nullable<int> p1, global::System.Nullable<int> p2, global::System.Nullable<int> p3, global::System.Nullable<int> p4, global::System.Nullable<int> p5, string p6, int p7, global::System.Nullable<int> p9, global::System.Nullable<int> p11, global::System.Nullable<int> p13, global::System.Nullable<int> p14, global::System.Nullable<int> p16, string p18) {
             if ((p1.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(p1.Value));
             }
@@ -26527,7 +26554,12 @@ WHERE           (status_ID = @status_ID OR
             else {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(p4));
+            if ((p4.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(p4.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
             if ((p5.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(p5.Value));
             }
@@ -26565,7 +26597,12 @@ WHERE           (status_ID = @status_ID OR
                 this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(p14));
+            if ((p14.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(p14.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
             if ((p16.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[15].Value = ((int)(p16.Value));
