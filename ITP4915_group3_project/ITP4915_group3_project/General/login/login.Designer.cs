@@ -38,7 +38,7 @@ namespace ITP4915_group3_project.General.login
             this.kryptonButtonSignIn = new Krypton.Toolkit.KryptonButton();
             this.kryptonLabelForgotPassword = new Krypton.Toolkit.KryptonLabel();
             this.kryptonTextBoxPassword = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBoxUserID = new Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBoxUserName = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonBorderEdgeLogin = new Krypton.Toolkit.KryptonBorderEdge();
             this.kryptonLabelLogin = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabelUserID = new Krypton.Toolkit.KryptonLabel();
@@ -155,6 +155,7 @@ namespace ITP4915_group3_project.General.login
             // 
             this.kryptonTextBoxPassword.Location = new System.Drawing.Point(402, 206);
             this.kryptonTextBoxPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonTextBoxPassword.MaxLength = 30;
             this.kryptonTextBoxPassword.Name = "kryptonTextBoxPassword";
             this.kryptonTextBoxPassword.PasswordChar = '●';
             this.kryptonTextBoxPassword.Size = new System.Drawing.Size(255, 47);
@@ -175,26 +176,28 @@ namespace ITP4915_group3_project.General.login
             this.kryptonTextBoxPassword.Text = "password";
             this.kryptonTextBoxPassword.UseSystemPasswordChar = true;
             // 
-            // kryptonTextBoxUserID
+            // kryptonTextBoxUserName
             // 
-            this.kryptonTextBoxUserID.Location = new System.Drawing.Point(402, 126);
-            this.kryptonTextBoxUserID.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonTextBoxUserID.Name = "kryptonTextBoxUserID";
-            this.kryptonTextBoxUserID.Size = new System.Drawing.Size(255, 47);
-            this.kryptonTextBoxUserID.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBoxUserID.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBoxUserID.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBoxUserID.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonTextBoxUserName.CueHint.CueHintText = "user name";
+            this.kryptonTextBoxUserName.CueHint.Padding = new System.Windows.Forms.Padding(0);
+            this.kryptonTextBoxUserName.Location = new System.Drawing.Point(402, 126);
+            this.kryptonTextBoxUserName.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonTextBoxUserName.MaxLength = 30;
+            this.kryptonTextBoxUserName.Name = "kryptonTextBoxUserName";
+            this.kryptonTextBoxUserName.Size = new System.Drawing.Size(255, 47);
+            this.kryptonTextBoxUserName.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.kryptonTextBoxUserName.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.kryptonTextBoxUserName.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.kryptonTextBoxUserName.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBoxUserID.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBoxUserID.StateCommon.Border.Rounding = 25F;
-            this.kryptonTextBoxUserID.StateCommon.Border.Width = 1;
-            this.kryptonTextBoxUserID.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.kryptonTextBoxUserID.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBoxUserID.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.kryptonTextBoxUserID.TabIndex = 10;
-            this.kryptonTextBoxUserID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.kryptonTextBoxUserID_KeyPress);
+            this.kryptonTextBoxUserName.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.kryptonTextBoxUserName.StateCommon.Border.Rounding = 25F;
+            this.kryptonTextBoxUserName.StateCommon.Border.Width = 1;
+            this.kryptonTextBoxUserName.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.kryptonTextBoxUserName.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBoxUserName.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
+            this.kryptonTextBoxUserName.TabIndex = 10;
             // 
             // kryptonBorderEdgeLogin
             // 
@@ -222,11 +225,11 @@ namespace ITP4915_group3_project.General.login
             this.kryptonLabelUserID.Location = new System.Drawing.Point(402, 105);
             this.kryptonLabelUserID.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabelUserID.Name = "kryptonLabelUserID";
-            this.kryptonLabelUserID.Size = new System.Drawing.Size(56, 19);
+            this.kryptonLabelUserID.Size = new System.Drawing.Size(74, 19);
             this.kryptonLabelUserID.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonLabelUserID.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabelUserID.TabIndex = 16;
-            this.kryptonLabelUserID.Values.Text = "user ID:";
+            this.kryptonLabelUserID.Values.Text = "user Name:";
             // 
             // kryptonLabelPassword
             // 
@@ -294,7 +297,7 @@ namespace ITP4915_group3_project.General.login
             this.Controls.Add(this.kryptonButtonSignIn);
             this.Controls.Add(this.kryptonLabelForgotPassword);
             this.Controls.Add(this.kryptonTextBoxPassword);
-            this.Controls.Add(this.kryptonTextBoxUserID);
+            this.Controls.Add(this.kryptonTextBoxUserName);
             this.Controls.Add(this.kryptonPanelIcon);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -321,7 +324,7 @@ namespace ITP4915_group3_project.General.login
         private Krypton.Toolkit.KryptonButton kryptonButtonSignIn;
         private Krypton.Toolkit.KryptonLabel kryptonLabelForgotPassword;
         private Krypton.Toolkit.KryptonTextBox kryptonTextBoxPassword;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBoxUserID;
+        private Krypton.Toolkit.KryptonTextBox kryptonTextBoxUserName;
         private System.Windows.Forms.PictureBox pictureBoxIcon;
         private Krypton.Toolkit.KryptonBorderEdge kryptonBorderEdgeLogin;
         private Krypton.Toolkit.KryptonLabel kryptonLabelLogin;

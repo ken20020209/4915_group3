@@ -32,13 +32,13 @@ namespace ITP4915_group3_project.General.login
         {
 
             // where id =id password = password
-            if(kryptonTextBoxPassword.Text==null || kryptonTextBoxUserID.Text.Length==0)
+            if(kryptonTextBoxPassword.Text==null || kryptonTextBoxUserName.Text.Length==0)
             {
                 MessageBox.Show("wrong user id and name");
                 return;
             }
             
-            restaurant_dbDataSet.userDataTable user = userTableAdapter.GetDataBy_UserName_Password(kryptonTextBoxPassword.Text, int.Parse(kryptonTextBoxUserID.Text));
+            restaurant_dbDataSet.userDataTable user = userTableAdapter.GetDataBy_UserName_Password(kryptonTextBoxPassword.Text, kryptonTextBoxUserName.Text);
             if(user.Rows.Count==1)
             {
                 //save data
@@ -76,15 +76,6 @@ namespace ITP4915_group3_project.General.login
             this.Hide();
             new General.navi.navi().ShowDialog();
             this.Show();
-        }
-
-        //only input number text box
-        private void kryptonTextBoxUserID_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
         }
     }
 }

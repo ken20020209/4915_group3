@@ -25,6 +25,24 @@ namespace ITP4915_group3_project.Restaurant
             restaurant_ID = 1;
             restaurant_Name = "yammay restaurant";
 
+            this.restaurantTableAdapter.Fill(this.restaurant_dbDataSet.restaurant);
+
+            restaurant_dbDataSet.restaurantRow[] rows= (restaurant_dbDataSet.restaurantRow[])this.restaurant_dbDataSet.restaurant.Select($"manager_ID='{General.login.Login.user_ID}'");
+
+            if(rows.Length==1)
+            {
+                restaurant_Name = rows[0].name;
+                restaurant_ID = rows[0].restaurant_ID;
+            }
+            else
+            {
+                //pick a restaurant code
+                MessageBox.Show("your need choose a restaurant");
+            }
+
+            
+            kryptonLabelUserName.Text = General.login.Login.userName;
+
             krytonBtnMenuRequestOrder_Click(null, null);
             
         }
@@ -49,6 +67,11 @@ namespace ITP4915_group3_project.Restaurant
             // add content and header change page
             new stock.header(kryptonPanelHeader, kryptonPanelContent);
 
+        }
+
+        private void kryptonButtonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
