@@ -12,9 +12,18 @@ namespace ITP4915_group3_project.warehouse.picking_list
 {
     public partial class check : UserControl
     {
-        public check()
+        public Control panel;
+        public check(Control panel)
         {
             InitializeComponent();
+            this.panel = panel;
+            panel.Controls.Clear();
+            panel.Controls.Add(this);
+        }
+
+        private void kryptonPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

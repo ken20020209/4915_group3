@@ -20,5 +20,10 @@ namespace ITP4915_group3_project.warehouse.check_PO
             panel.Controls.Clear();
             panel.Controls.Add(this);
         }
+
+        private void kryptonPanelContent_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -12,9 +12,18 @@ namespace ITP4915_group3_project.warehouse.delivery_note
 {
     public partial class search : UserControl
     {
-        public search()
+        public Control panel;
+        public search(Control panel)
         {
             InitializeComponent();
+            this.panel = panel;
+            panel.Controls.Clear();
+            panel.Controls.Add(this);
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
