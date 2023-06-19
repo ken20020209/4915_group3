@@ -41,7 +41,8 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.kryptonTextBoxSearch = new Krypton.Toolkit.KryptonTextBox();
             this.panelContent = new System.Windows.Forms.Panel();
             this.dataTable_restaurant_stock_searchKryptonDataGridView = new Krypton.Toolkit.KryptonDataGridView();
-            this.detail = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
+            this.dataTable_restaurant_stock_searchBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.restaurant_dbDataSet = new ITP4915_group3_project.restaurant_dbDataSet();
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,8 +51,6 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.dataGridViewTextBoxColumn_item_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataTable_restaurant_stock_searchBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.restaurant_dbDataSet = new ITP4915_group3_project.restaurant_dbDataSet();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,6 +69,15 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableAdapterManager = new ITP4915_group3_project.restaurant_dbDataSetTableAdapters.TableAdapterManager();
             this.dataTable_restaurant_stock_searchTableAdapter = new ITP4915_group3_project.restaurant_dbDataSetTableAdapters.DataTable_restaurant_stock_searchTableAdapter();
+            this.detail = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).BeginInit();
             this.kryptonGroup1.Panel.SuspendLayout();
@@ -233,7 +241,15 @@ namespace ITP4915_group3_project.Restaurant.stock
             // dataTable_restaurant_stock_searchKryptonDataGridView
             // 
             this.dataTable_restaurant_stock_searchKryptonDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.detail});
+            this.detail,
+            this.dataGridViewTextBoxColumn21,
+            this.dataGridViewTextBoxColumn24,
+            this.dataGridViewTextBoxColumn25,
+            this.dataGridViewTextBoxColumn26,
+            this.dataGridViewTextBoxColumn27,
+            this.dataGridViewTextBoxColumn28,
+            this.dataGridViewTextBoxColumn29,
+            this.dataGridViewTextBoxColumn30});
             this.dataTable_restaurant_stock_searchKryptonDataGridView.DataSource = this.dataTable_restaurant_stock_searchBindingSource;
             this.dataTable_restaurant_stock_searchKryptonDataGridView.Location = new System.Drawing.Point(68, 309);
             this.dataTable_restaurant_stock_searchKryptonDataGridView.Name = "dataTable_restaurant_stock_searchKryptonDataGridView";
@@ -242,12 +258,16 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.dataTable_restaurant_stock_searchKryptonDataGridView.TabIndex = 39;
             this.dataTable_restaurant_stock_searchKryptonDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTable_restaurant_stock_searchKryptonDataGridView_CellContentClick);
             // 
-            // detail
+            // dataTable_restaurant_stock_searchBindingSource
             // 
-            this.detail.HeaderText = "detail";
-            this.detail.Name = "detail";
-            this.detail.Text = "detail";
-            this.detail.UseColumnTextForButtonValue = true;
+            this.dataTable_restaurant_stock_searchBindingSource.AllowNew = false;
+            this.dataTable_restaurant_stock_searchBindingSource.DataMember = "DataTable_restaurant_stock_search";
+            this.dataTable_restaurant_stock_searchBindingSource.DataSource = this.restaurant_dbDataSet;
+            // 
+            // restaurant_dbDataSet
+            // 
+            this.restaurant_dbDataSet.DataSetName = "restaurant_dbDataSet";
+            this.restaurant_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dataGridViewTextBoxColumn14
             // 
@@ -300,17 +320,6 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.dataGridViewTextBoxColumn23.HeaderText = "remarks";
             this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
             this.dataGridViewTextBoxColumn23.Visible = false;
-            // 
-            // dataTable_restaurant_stock_searchBindingSource
-            // 
-            this.dataTable_restaurant_stock_searchBindingSource.AllowNew = false;
-            this.dataTable_restaurant_stock_searchBindingSource.DataMember = "DataTable_restaurant_stock_search";
-            this.dataTable_restaurant_stock_searchBindingSource.DataSource = this.restaurant_dbDataSet;
-            // 
-            // restaurant_dbDataSet
-            // 
-            this.restaurant_dbDataSet.DataSetName = "restaurant_dbDataSet";
-            this.restaurant_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dataGridViewTextBoxColumn9
             // 
@@ -437,6 +446,64 @@ namespace ITP4915_group3_project.Restaurant.stock
             // 
             this.dataTable_restaurant_stock_searchTableAdapter.ClearBeforeFill = true;
             // 
+            // detail
+            // 
+            this.detail.HeaderText = "detail";
+            this.detail.Name = "detail";
+            this.detail.Text = "detail";
+            this.detail.UseColumnTextForButtonValue = true;
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.DataPropertyName = "virtual_ID";
+            this.dataGridViewTextBoxColumn21.HeaderText = "virtual_ID";
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "item_name";
+            this.dataGridViewTextBoxColumn24.HeaderText = "item_name";
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.DataPropertyName = "size";
+            this.dataGridViewTextBoxColumn25.HeaderText = "size";
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.DataPropertyName = "qty";
+            this.dataGridViewTextBoxColumn26.HeaderText = "qty";
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.DataPropertyName = "restaurant_ID";
+            this.dataGridViewTextBoxColumn27.HeaderText = "restaurant_ID";
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            this.dataGridViewTextBoxColumn27.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn28
+            // 
+            this.dataGridViewTextBoxColumn28.DataPropertyName = "item_ID";
+            this.dataGridViewTextBoxColumn28.HeaderText = "item_ID";
+            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
+            this.dataGridViewTextBoxColumn28.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn29
+            // 
+            this.dataGridViewTextBoxColumn29.DataPropertyName = "expected_inventory";
+            this.dataGridViewTextBoxColumn29.HeaderText = "expected_inventory";
+            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.DataPropertyName = "remarks";
+            this.dataGridViewTextBoxColumn30.HeaderText = "remarks";
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            this.dataGridViewTextBoxColumn30.Visible = false;
+            // 
             // check
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -498,7 +565,6 @@ namespace ITP4915_group3_project.Restaurant.stock
         private System.Windows.Forms.DataGridViewTextBoxColumn item_ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
-        private Krypton.Toolkit.KryptonDataGridViewButtonColumn detail;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
@@ -507,5 +573,14 @@ namespace ITP4915_group3_project.Restaurant.stock
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn_item_ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
+        private Krypton.Toolkit.KryptonDataGridViewButtonColumn detail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn29;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn30;
     }
 }
