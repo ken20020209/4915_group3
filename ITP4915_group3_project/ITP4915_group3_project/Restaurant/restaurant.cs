@@ -40,7 +40,7 @@ namespace ITP4915_group3_project.Restaurant
             else
             {
                 //pick a restaurant code
-                MessageBox.Show("your need choose a restaurant");
+                new choose().ShowDialog();
             }
 
             

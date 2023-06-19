@@ -762,6 +762,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>purchase_dbDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Restaurant\choose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant\choose.Designer.cs">
+      <DependentUpon>choose.cs</DependentUpon>
+    </Compile>
     <Compile Include="Restaurant\delivery note\header.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1318,6 +1324,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\set rule\time.resx">
       <DependentUpon>time.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant\choose.resx">
+      <DependentUpon>choose.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\delivery note\header.resx">
       <DependentUpon>header.cs</DependentUpon>

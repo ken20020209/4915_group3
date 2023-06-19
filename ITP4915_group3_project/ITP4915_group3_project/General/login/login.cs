@@ -22,9 +22,9 @@ namespace ITP4915_group3_project.General.login
             InitializeComponent();
 
             //fake data need to fetch from database
-            userName = "sam123";
-            password = "132123";
-            user_ID = 1;
+            userName = "test";
+            password = "test";
+            user_ID = 2;
             realName = "sam yau";
         }
 

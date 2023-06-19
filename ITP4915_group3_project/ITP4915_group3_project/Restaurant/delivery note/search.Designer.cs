@@ -31,6 +31,22 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
         {
             this.components = new System.ComponentModel.Container();
             this.panelContent = new System.Windows.Forms.Panel();
+            this.dataTable_deliverynote_searchKryptonDataGridView = new Krypton.Toolkit.KryptonDataGridView();
+            this.sign = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataTable_deliverynote_searchBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.restaurant_dbDataSet = new ITP4915_group3_project.restaurant_dbDataSet();
             this.label3 = new System.Windows.Forms.Label();
             this.kryptonComboBoxFilter = new Krypton.Toolkit.KryptonComboBox();
             this.kryptonTextBox16 = new Krypton.Toolkit.KryptonTextBox();
@@ -38,7 +54,6 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
             this.kryptonLabel26 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabelWaitForSign = new Krypton.Toolkit.KryptonLabel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.dataTable_deliverynote_searchKryptonDataGridView = new Krypton.Toolkit.KryptonDataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,33 +73,18 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
             this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataTable_deliverynote_searchBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.restaurant_dbDataSet = new ITP4915_group3_project.restaurant_dbDataSet();
             this.dataTable_deliverynote_searchTableAdapter = new ITP4915_group3_project.restaurant_dbDataSetTableAdapters.DataTable_deliverynote_searchTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.restaurant_dbDataSetTableAdapters.TableAdapterManager();
-            this.sign = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
-            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelContent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable_deliverynote_searchKryptonDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable_deliverynote_searchBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restaurant_dbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBoxFilter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup4.Panel)).BeginInit();
             this.kryptonGroup4.Panel.SuspendLayout();
             this.kryptonGroup4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable_deliverynote_searchKryptonDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable_deliverynote_searchBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.restaurant_dbDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // panelContent
@@ -101,6 +101,114 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
             this.panelContent.Name = "panelContent";
             this.panelContent.Size = new System.Drawing.Size(800, 516);
             this.panelContent.TabIndex = 3;
+            // 
+            // dataTable_deliverynote_searchKryptonDataGridView
+            // 
+            this.dataTable_deliverynote_searchKryptonDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.sign});
+            this.dataTable_deliverynote_searchKryptonDataGridView.DataSource = this.dataTable_deliverynote_searchBindingSource;
+            this.dataTable_deliverynote_searchKryptonDataGridView.Location = new System.Drawing.Point(22, 254);
+            this.dataTable_deliverynote_searchKryptonDataGridView.Name = "dataTable_deliverynote_searchKryptonDataGridView";
+            this.dataTable_deliverynote_searchKryptonDataGridView.RowTemplate.Height = 24;
+            this.dataTable_deliverynote_searchKryptonDataGridView.Size = new System.Drawing.Size(761, 213);
+            this.dataTable_deliverynote_searchKryptonDataGridView.TabIndex = 51;
+            this.dataTable_deliverynote_searchKryptonDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTable_deliverynote_searchKryptonDataGridView_CellContentClick);
+            // 
+            // sign
+            // 
+            this.sign.HeaderText = "sign";
+            this.sign.Name = "sign";
+            this.sign.Text = "sign";
+            this.sign.UseColumnTextForButtonValue = true;
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.DataPropertyName = "virtual_ID";
+            this.dataGridViewTextBoxColumn20.HeaderText = "virtual_ID";
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.DataPropertyName = "delivery_request_ID";
+            this.dataGridViewTextBoxColumn21.HeaderText = "delivery_request_ID";
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            // 
+            // dataGridViewTextBoxColumn22
+            // 
+            this.dataGridViewTextBoxColumn22.DataPropertyName = "item_name";
+            this.dataGridViewTextBoxColumn22.HeaderText = "item_name";
+            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.DataPropertyName = "size";
+            this.dataGridViewTextBoxColumn23.HeaderText = "size";
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            this.dataGridViewTextBoxColumn23.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "status_ID";
+            this.dataGridViewTextBoxColumn24.HeaderText = "status_ID";
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            this.dataGridViewTextBoxColumn24.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.DataPropertyName = "quantity";
+            this.dataGridViewTextBoxColumn25.HeaderText = "quantity";
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.DataPropertyName = "category_ID";
+            this.dataGridViewTextBoxColumn26.HeaderText = "category_ID";
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            this.dataGridViewTextBoxColumn26.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.DataPropertyName = "partner_brand_ID";
+            this.dataGridViewTextBoxColumn27.HeaderText = "partner_brand_ID";
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            this.dataGridViewTextBoxColumn27.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn28
+            // 
+            this.dataGridViewTextBoxColumn28.DataPropertyName = "receive_address_ID";
+            this.dataGridViewTextBoxColumn28.HeaderText = "receive_address_ID";
+            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
+            this.dataGridViewTextBoxColumn28.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn29
+            // 
+            this.dataGridViewTextBoxColumn29.DataPropertyName = "delivery_address_ID";
+            this.dataGridViewTextBoxColumn29.HeaderText = "delivery_address_ID";
+            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
+            this.dataGridViewTextBoxColumn29.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.DataPropertyName = "delivery_date";
+            this.dataGridViewTextBoxColumn30.HeaderText = "delivery_date";
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            // 
+            // dataGridViewTextBoxColumn31
+            // 
+            this.dataGridViewTextBoxColumn31.DataPropertyName = "delivery_time";
+            this.dataGridViewTextBoxColumn31.HeaderText = "delivery_time";
+            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
+            // 
+            // dataTable_deliverynote_searchBindingSource
+            // 
+            this.dataTable_deliverynote_searchBindingSource.AllowNew = false;
+            this.dataTable_deliverynote_searchBindingSource.DataMember = "DataTable_deliverynote_search";
+            this.dataTable_deliverynote_searchBindingSource.DataSource = this.restaurant_dbDataSet;
+            // 
+            // restaurant_dbDataSet
+            // 
+            this.restaurant_dbDataSet.DataSetName = "restaurant_dbDataSet";
+            this.restaurant_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label3
             // 
@@ -165,7 +273,7 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
             // 
             // kryptonGroup4
             // 
-            this.kryptonGroup4.Location = new System.Drawing.Point(83, 49);
+            this.kryptonGroup4.Location = new System.Drawing.Point(311, 45);
             this.kryptonGroup4.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroup4.Name = "kryptonGroup4";
             // 
@@ -216,30 +324,6 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
-            // 
-            // dataTable_deliverynote_searchKryptonDataGridView
-            // 
-            this.dataTable_deliverynote_searchKryptonDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.sign,
-            this.dataGridViewTextBoxColumn20,
-            this.dataGridViewTextBoxColumn21,
-            this.dataGridViewTextBoxColumn22,
-            this.dataGridViewTextBoxColumn23,
-            this.dataGridViewTextBoxColumn24,
-            this.dataGridViewTextBoxColumn25,
-            this.dataGridViewTextBoxColumn26,
-            this.dataGridViewTextBoxColumn27,
-            this.dataGridViewTextBoxColumn28,
-            this.dataGridViewTextBoxColumn29,
-            this.dataGridViewTextBoxColumn30,
-            this.dataGridViewTextBoxColumn31});
-            this.dataTable_deliverynote_searchKryptonDataGridView.DataSource = this.dataTable_deliverynote_searchBindingSource;
-            this.dataTable_deliverynote_searchKryptonDataGridView.Location = new System.Drawing.Point(22, 254);
-            this.dataTable_deliverynote_searchKryptonDataGridView.Name = "dataTable_deliverynote_searchKryptonDataGridView";
-            this.dataTable_deliverynote_searchKryptonDataGridView.RowTemplate.Height = 24;
-            this.dataTable_deliverynote_searchKryptonDataGridView.Size = new System.Drawing.Size(761, 213);
-            this.dataTable_deliverynote_searchKryptonDataGridView.TabIndex = 51;
-            this.dataTable_deliverynote_searchKryptonDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTable_deliverynote_searchKryptonDataGridView_CellContentClick);
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -363,23 +447,13 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
             this.dataGridViewTextBoxColumn19.HeaderText = "delivery_time";
             this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
             // 
-            // dataTable_deliverynote_searchBindingSource
-            // 
-            this.dataTable_deliverynote_searchBindingSource.AllowNew = false;
-            this.dataTable_deliverynote_searchBindingSource.DataMember = "DataTable_deliverynote_search";
-            this.dataTable_deliverynote_searchBindingSource.DataSource = this.restaurant_dbDataSet;
-            // 
-            // restaurant_dbDataSet
-            // 
-            this.restaurant_dbDataSet.DataSetName = "restaurant_dbDataSet";
-            this.restaurant_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // dataTable_deliverynote_searchTableAdapter
             // 
             this.dataTable_deliverynote_searchTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
+            this.tableAdapterManager.addressTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.Connection = null;
             this.tableAdapterManager.delivery_requestTableAdapter = null;
@@ -394,91 +468,6 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
             this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.restaurant_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.userTableAdapter = null;
             // 
-            // sign
-            // 
-            this.sign.HeaderText = "sign";
-            this.sign.Name = "sign";
-            this.sign.Text = "sign";
-            this.sign.UseColumnTextForButtonValue = true;
-            // 
-            // dataGridViewTextBoxColumn20
-            // 
-            this.dataGridViewTextBoxColumn20.DataPropertyName = "virtual_ID";
-            this.dataGridViewTextBoxColumn20.HeaderText = "virtual_ID";
-            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-            // 
-            // dataGridViewTextBoxColumn21
-            // 
-            this.dataGridViewTextBoxColumn21.DataPropertyName = "delivery_request_ID";
-            this.dataGridViewTextBoxColumn21.HeaderText = "delivery_request_ID";
-            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            // 
-            // dataGridViewTextBoxColumn22
-            // 
-            this.dataGridViewTextBoxColumn22.DataPropertyName = "item_name";
-            this.dataGridViewTextBoxColumn22.HeaderText = "item_name";
-            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            // 
-            // dataGridViewTextBoxColumn23
-            // 
-            this.dataGridViewTextBoxColumn23.DataPropertyName = "size";
-            this.dataGridViewTextBoxColumn23.HeaderText = "size";
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            this.dataGridViewTextBoxColumn23.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.DataPropertyName = "status_ID";
-            this.dataGridViewTextBoxColumn24.HeaderText = "status_ID";
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            this.dataGridViewTextBoxColumn24.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn25
-            // 
-            this.dataGridViewTextBoxColumn25.DataPropertyName = "quantity";
-            this.dataGridViewTextBoxColumn25.HeaderText = "quantity";
-            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.DataPropertyName = "category_ID";
-            this.dataGridViewTextBoxColumn26.HeaderText = "category_ID";
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            this.dataGridViewTextBoxColumn26.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.DataPropertyName = "partner_brand_ID";
-            this.dataGridViewTextBoxColumn27.HeaderText = "partner_brand_ID";
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            this.dataGridViewTextBoxColumn27.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn28
-            // 
-            this.dataGridViewTextBoxColumn28.DataPropertyName = "receive_address_ID";
-            this.dataGridViewTextBoxColumn28.HeaderText = "receive_address_ID";
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            this.dataGridViewTextBoxColumn28.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn29
-            // 
-            this.dataGridViewTextBoxColumn29.DataPropertyName = "delivery_address_ID";
-            this.dataGridViewTextBoxColumn29.HeaderText = "delivery_address_ID";
-            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
-            this.dataGridViewTextBoxColumn29.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn30
-            // 
-            this.dataGridViewTextBoxColumn30.DataPropertyName = "delivery_date";
-            this.dataGridViewTextBoxColumn30.HeaderText = "delivery_date";
-            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
-            // 
-            // dataGridViewTextBoxColumn31
-            // 
-            this.dataGridViewTextBoxColumn31.DataPropertyName = "delivery_time";
-            this.dataGridViewTextBoxColumn31.HeaderText = "delivery_time";
-            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
-            // 
             // search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -490,6 +479,9 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
             this.Size = new System.Drawing.Size(800, 516);
             this.panelContent.ResumeLayout(false);
             this.panelContent.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable_deliverynote_searchKryptonDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable_deliverynote_searchBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restaurant_dbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBoxFilter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup4.Panel)).EndInit();
             this.kryptonGroup4.Panel.ResumeLayout(false);
@@ -497,9 +489,6 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup4)).EndInit();
             this.kryptonGroup4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable_deliverynote_searchKryptonDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable_deliverynote_searchBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.restaurant_dbDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
