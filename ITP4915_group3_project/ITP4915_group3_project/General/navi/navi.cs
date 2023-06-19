@@ -59,5 +59,12 @@ namespace ITP4915_group3_project.General.navi
             new Accounting.accounting().ShowDialog();
             this.Close();
         }
+
+        private void kryptonButtonHR_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new humanResources.humanResources().ShowDialog();
+            this.Close();
+        }
     }
 }
