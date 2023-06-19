@@ -1017,6 +1017,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>restaurant_dbDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="warehouse_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>warehouse_dbDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Accounting\accounting.resx">
       <DependentUpon>accounting.cs</DependentUpon>
     </EmbeddedResource>
@@ -1497,6 +1502,17 @@
     </None>
     <None Include="restaurant_dbDataSet.xss">
       <DependentUpon>restaurant_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="warehouse_dbDataSet.xsc">
+      <DependentUpon>warehouse_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="warehouse_dbDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>warehouse_dbDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="warehouse_dbDataSet.xss">
+      <DependentUpon>warehouse_dbDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
