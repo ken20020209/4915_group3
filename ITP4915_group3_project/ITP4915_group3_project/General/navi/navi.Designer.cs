@@ -35,6 +35,7 @@ namespace ITP4915_group3_project.General.navi
             this.kryptonButtonDelivery = new Krypton.Toolkit.KryptonButton();
             this.kryptonButtonCategory = new Krypton.Toolkit.KryptonButton();
             this.kryptonButtonAccounting = new Krypton.Toolkit.KryptonButton();
+            this.kryptonButtonHR = new Krypton.Toolkit.KryptonButton();
             this.SuspendLayout();
             // 
             // kryptonButtonRestaurant
@@ -97,11 +98,22 @@ namespace ITP4915_group3_project.General.navi
             this.kryptonButtonAccounting.Values.Text = "Accounting";
             this.kryptonButtonAccounting.Click += new System.EventHandler(this.kryptonButtonAccounting_Click);
             // 
+            // kryptonButtonHR
+            // 
+            this.kryptonButtonHR.CornerRoundingRadius = -1F;
+            this.kryptonButtonHR.Location = new System.Drawing.Point(89, 384);
+            this.kryptonButtonHR.Name = "kryptonButtonHR";
+            this.kryptonButtonHR.Size = new System.Drawing.Size(90, 25);
+            this.kryptonButtonHR.TabIndex = 6;
+            this.kryptonButtonHR.Values.Text = "HR";
+            this.kryptonButtonHR.Click += new System.EventHandler(this.kryptonButtonHR_Click);
+            // 
             // navi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.kryptonButtonHR);
             this.Controls.Add(this.kryptonButtonAccounting);
             this.Controls.Add(this.kryptonButtonCategory);
             this.Controls.Add(this.kryptonButtonDelivery);
@@ -122,5 +134,6 @@ namespace ITP4915_group3_project.General.navi
         private Krypton.Toolkit.KryptonButton kryptonButtonDelivery;
         private Krypton.Toolkit.KryptonButton kryptonButtonCategory;
         private Krypton.Toolkit.KryptonButton kryptonButtonAccounting;
+        private Krypton.Toolkit.KryptonButton kryptonButtonHR;
     }
 }

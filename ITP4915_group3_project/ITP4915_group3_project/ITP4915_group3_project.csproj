@@ -495,6 +495,41 @@
     <Compile Include="General\navi\navi.Designer.cs">
       <DependentUpon>navi.cs</DependentUpon>
     </Compile>
+    <Compile Include="humanResources\humanResources.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="humanResources\humanResources.Designer.cs">
+      <DependentUpon>humanResources.cs</DependentUpon>
+    </Compile>
+    <Compile Include="humanResources\user\create\create.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="humanResources\user\create\create.Designer.cs">
+      <DependentUpon>create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="humanResources\user\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="humanResources\user\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
+    <Compile Include="humanResources\user\search\check.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="humanResources\user\search\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="humanResources\user\search\detail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="humanResources\user\search\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="humanResources_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>humanResources_dbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -793,7 +828,7 @@
       <DependentUpon>sign_confrim.cs</DependentUpon>
     </Compile>
     <Compile Include="Restaurant\delivery note\sign_success.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Restaurant\delivery note\sign_success.Designer.cs">
       <DependentUpon>sign_success.cs</DependentUpon>
@@ -1212,6 +1247,21 @@
     <EmbeddedResource Include="General\navi\navi.resx">
       <DependentUpon>navi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="humanResources\humanResources.resx">
+      <DependentUpon>humanResources.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="humanResources\user\create\create.resx">
+      <DependentUpon>create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="humanResources\user\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="humanResources\user\search\check.resx">
+      <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="humanResources\user\search\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -1466,6 +1516,17 @@
     <EmbeddedResource Include="warehouse\warehouse.resx">
       <DependentUpon>warehouse.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="humanResources_dbDataSet.xsc">
+      <DependentUpon>humanResources_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="humanResources_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>humanResources_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="humanResources_dbDataSet.xss">
+      <DependentUpon>humanResources_dbDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

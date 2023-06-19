@@ -199,7 +199,6 @@ namespace ITP4915_group3_project.Purchase.PO.create.SPO
             this.kryptonButtonSubmit.Size = new System.Drawing.Size(90, 25);
             this.kryptonButtonSubmit.TabIndex = 25;
             this.kryptonButtonSubmit.Values.Text = "Submit";
-            this.kryptonButtonSubmit.Click += new System.EventHandler(this.kryptonButtonSubmit_Click);
             // 
             // buyer_IDKryptonNumericUpDown
             // 
@@ -221,7 +220,6 @@ namespace ITP4915_group3_project.Purchase.PO.create.SPO
             this.cpa_itemKryptonDataGridView.RowTemplate.Height = 24;
             this.cpa_itemKryptonDataGridView.Size = new System.Drawing.Size(857, 185);
             this.cpa_itemKryptonDataGridView.TabIndex = 23;
-            this.cpa_itemKryptonDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cpa_itemKryptonDataGridView_CellContentClick);
             // 
             // select
             // 
@@ -259,7 +257,6 @@ namespace ITP4915_group3_project.Purchase.PO.create.SPO
             this.kryptonDataGridViewCart.RowTemplate.Height = 24;
             this.kryptonDataGridViewCart.Size = new System.Drawing.Size(857, 169);
             this.kryptonDataGridViewCart.TabIndex = 23;
-            this.kryptonDataGridViewCart.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.kryptonDataGridViewCart_CellContentClick);
             // 
             // delete
             // 
