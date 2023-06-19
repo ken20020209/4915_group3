@@ -12,7 +12,7 @@ namespace ITP4915_group3_project.category.return_reson.select
 {
     public partial class check : Form
     {
-        public check()
+        public check(Control panel)
         {
             InitializeComponent();
         }

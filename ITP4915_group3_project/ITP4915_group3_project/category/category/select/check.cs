@@ -12,7 +12,7 @@ namespace ITP4915_group3_project.category.category.create
 {
     public partial class UserControl1 : UserControl
     {
-        public UserControl1()
+        public UserControl1(Control panel)
         {
             InitializeComponent();
         }
