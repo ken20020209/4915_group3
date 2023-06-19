@@ -37,23 +37,14 @@ namespace ITP4915_group3_project.Purchase.PO.create.SPO
             System.Windows.Forms.Label conditionLabel;
             System.Windows.Forms.Label supplierNameLabel;
             System.Windows.Forms.Label buyer_IDLabel;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonButtonSubmit = new Krypton.Toolkit.KryptonButton();
             this.buyer_IDKryptonNumericUpDown = new Krypton.Toolkit.KryptonNumericUpDown();
             this.cpa_itemKryptonDataGridView = new Krypton.Toolkit.KryptonDataGridView();
             this.select = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplierBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.purchase_dbDataSet = new ITP4915_group3_project.purchase_dbDataSet();
             this.kryptonDataGridViewCart = new Krypton.Toolkit.KryptonDataGridView();
@@ -71,6 +62,16 @@ namespace ITP4915_group3_project.Purchase.PO.create.SPO
             this.expected_delivery_dateKryptonDateTimePicker = new Krypton.Toolkit.KryptonDateTimePicker();
             this.effective_dateKryptonDateTimePicker = new Krypton.Toolkit.KryptonDateTimePicker();
             this.create_dateKryptonDateTimePicker = new Krypton.Toolkit.KryptonDateTimePicker();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn_CPA_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -84,7 +85,6 @@ namespace ITP4915_group3_project.Purchase.PO.create.SPO
             this.supplierTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.supplierTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.TableAdapterManager();
             this.cpa_itemTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.cpa_itemTableAdapter();
-            this.kryptonButtonSubmit = new Krypton.Toolkit.KryptonButton();
             this.spo_headerTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.spo_headerTableAdapter();
             this.spo_linesTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.spo_linesTableAdapter();
             create_dateLabel = new System.Windows.Forms.Label();
@@ -191,6 +191,16 @@ namespace ITP4915_group3_project.Purchase.PO.create.SPO
             this.kryptonPanel1.Size = new System.Drawing.Size(866, 991);
             this.kryptonPanel1.TabIndex = 0;
             // 
+            // kryptonButtonSubmit
+            // 
+            this.kryptonButtonSubmit.CornerRoundingRadius = -1F;
+            this.kryptonButtonSubmit.Location = new System.Drawing.Point(711, 911);
+            this.kryptonButtonSubmit.Name = "kryptonButtonSubmit";
+            this.kryptonButtonSubmit.Size = new System.Drawing.Size(90, 25);
+            this.kryptonButtonSubmit.TabIndex = 25;
+            this.kryptonButtonSubmit.Values.Text = "Submit";
+            this.kryptonButtonSubmit.Click += new System.EventHandler(this.kryptonButtonSubmit_Click);
+            // 
             // buyer_IDKryptonNumericUpDown
             // 
             this.buyer_IDKryptonNumericUpDown.Location = new System.Drawing.Point(129, 61);
@@ -200,6 +210,8 @@ namespace ITP4915_group3_project.Purchase.PO.create.SPO
             // 
             // cpa_itemKryptonDataGridView
             // 
+            this.cpa_itemKryptonDataGridView.AllowUserToAddRows = false;
+            this.cpa_itemKryptonDataGridView.AllowUserToDeleteRows = false;
             this.cpa_itemKryptonDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.select});
             this.cpa_itemKryptonDataGridView.DataMember = "CPA_supplier_ID_fk1";
@@ -218,6 +230,162 @@ namespace ITP4915_group3_project.Purchase.PO.create.SPO
             this.select.Text = "add";
             this.select.UseColumnTextForButtonValue = true;
             this.select.Width = 50;
+            // 
+            // supplierBindingSource
+            // 
+            this.supplierBindingSource.DataMember = "supplier";
+            this.supplierBindingSource.DataSource = this.purchase_dbDataSet;
+            // 
+            // purchase_dbDataSet
+            // 
+            this.purchase_dbDataSet.DataSetName = "purchase_dbDataSet";
+            this.purchase_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // kryptonDataGridViewCart
+            // 
+            this.kryptonDataGridViewCart.AllowUserToAddRows = false;
+            this.kryptonDataGridViewCart.AllowUserToDeleteRows = false;
+            this.kryptonDataGridViewCart.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.delete,
+            this.CPA_ID,
+            this.item_name,
+            this.qty,
+            this.UOM,
+            this.price,
+            this.amount,
+            this.reference});
+            this.kryptonDataGridViewCart.Location = new System.Drawing.Point(9, 636);
+            this.kryptonDataGridViewCart.Name = "kryptonDataGridViewCart";
+            this.kryptonDataGridViewCart.RowTemplate.Height = 24;
+            this.kryptonDataGridViewCart.Size = new System.Drawing.Size(857, 169);
+            this.kryptonDataGridViewCart.TabIndex = 23;
+            this.kryptonDataGridViewCart.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.kryptonDataGridViewCart_CellContentClick);
+            // 
+            // delete
+            // 
+            this.delete.HeaderText = "delete";
+            this.delete.Name = "delete";
+            this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.delete.Text = "delete";
+            this.delete.UseColumnTextForButtonValue = true;
+            // 
+            // CPA_ID
+            // 
+            this.CPA_ID.AllowDecimals = false;
+            this.CPA_ID.HeaderText = "CPA_ID";
+            this.CPA_ID.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.CPA_ID.Name = "CPA_ID";
+            this.CPA_ID.ReadOnly = true;
+            this.CPA_ID.Width = 100;
+            // 
+            // item_name
+            // 
+            this.item_name.DefaultCellStyle = dataGridViewCellStyle1;
+            this.item_name.HeaderText = "item_name";
+            this.item_name.Name = "item_name";
+            this.item_name.ReadOnly = true;
+            this.item_name.Width = 100;
+            // 
+            // qty
+            // 
+            this.qty.AllowDecimals = false;
+            this.qty.HeaderText = "qty";
+            this.qty.Name = "qty";
+            this.qty.Width = 100;
+            // 
+            // UOM
+            // 
+            this.UOM.DefaultCellStyle = dataGridViewCellStyle2;
+            this.UOM.HeaderText = "UOM";
+            this.UOM.Name = "UOM";
+            this.UOM.Width = 100;
+            // 
+            // price
+            // 
+            this.price.AllowDecimals = false;
+            this.price.DecimalPlaces = 2;
+            this.price.HeaderText = "price";
+            this.price.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.price.Name = "price";
+            this.price.Width = 100;
+            // 
+            // amount
+            // 
+            this.amount.AllowDecimals = false;
+            this.amount.HeaderText = "amount";
+            this.amount.Name = "amount";
+            this.amount.Width = 100;
+            // 
+            // reference
+            // 
+            this.reference.DefaultCellStyle = dataGridViewCellStyle3;
+            this.reference.HeaderText = "reference";
+            this.reference.Name = "reference";
+            this.reference.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.reference.Width = 100;
+            // 
+            // nameKryptonComboBox
+            // 
+            this.nameKryptonComboBox.CornerRoundingRadius = -1F;
+            this.nameKryptonComboBox.DataSource = this.supplierBindingSource;
+            this.nameKryptonComboBox.DisplayMember = "name";
+            this.nameKryptonComboBox.DropDownWidth = 121;
+            this.nameKryptonComboBox.IntegralHeight = false;
+            this.nameKryptonComboBox.Location = new System.Drawing.Point(129, 315);
+            this.nameKryptonComboBox.Name = "nameKryptonComboBox";
+            this.nameKryptonComboBox.Size = new System.Drawing.Size(121, 21);
+            this.nameKryptonComboBox.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.nameKryptonComboBox.TabIndex = 11;
+            this.nameKryptonComboBox.ValueMember = "supplier_ID";
+            // 
+            // conditionKryptonTextBox
+            // 
+            this.conditionKryptonTextBox.Location = new System.Drawing.Point(492, 315);
+            this.conditionKryptonTextBox.Name = "conditionKryptonTextBox";
+            this.conditionKryptonTextBox.Size = new System.Drawing.Size(100, 23);
+            this.conditionKryptonTextBox.TabIndex = 9;
+            this.conditionKryptonTextBox.Text = "kryptonTextBox1";
+            // 
+            // termsKryptonTextBox
+            // 
+            this.termsKryptonTextBox.Location = new System.Drawing.Point(492, 270);
+            this.termsKryptonTextBox.Name = "termsKryptonTextBox";
+            this.termsKryptonTextBox.Size = new System.Drawing.Size(100, 23);
+            this.termsKryptonTextBox.TabIndex = 7;
+            this.termsKryptonTextBox.Text = "kryptonTextBox1";
+            // 
+            // expected_delivery_dateKryptonDateTimePicker
+            // 
+            this.expected_delivery_dateKryptonDateTimePicker.CornerRoundingRadius = -1F;
+            this.expected_delivery_dateKryptonDateTimePicker.Location = new System.Drawing.Point(492, 233);
+            this.expected_delivery_dateKryptonDateTimePicker.Name = "expected_delivery_dateKryptonDateTimePicker";
+            this.expected_delivery_dateKryptonDateTimePicker.Size = new System.Drawing.Size(240, 21);
+            this.expected_delivery_dateKryptonDateTimePicker.TabIndex = 5;
+            // 
+            // effective_dateKryptonDateTimePicker
+            // 
+            this.effective_dateKryptonDateTimePicker.CornerRoundingRadius = -1F;
+            this.effective_dateKryptonDateTimePicker.Location = new System.Drawing.Point(492, 180);
+            this.effective_dateKryptonDateTimePicker.Name = "effective_dateKryptonDateTimePicker";
+            this.effective_dateKryptonDateTimePicker.Size = new System.Drawing.Size(240, 21);
+            this.effective_dateKryptonDateTimePicker.TabIndex = 3;
+            // 
+            // create_dateKryptonDateTimePicker
+            // 
+            this.create_dateKryptonDateTimePicker.CornerRoundingRadius = -1F;
+            this.create_dateKryptonDateTimePicker.Location = new System.Drawing.Point(492, 131);
+            this.create_dateKryptonDateTimePicker.Name = "create_dateKryptonDateTimePicker";
+            this.create_dateKryptonDateTimePicker.Size = new System.Drawing.Size(240, 21);
+            this.create_dateKryptonDateTimePicker.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -281,162 +449,6 @@ namespace ITP4915_group3_project.Purchase.PO.create.SPO
             this.dataGridViewTextBoxColumn17.DataPropertyName = "size";
             this.dataGridViewTextBoxColumn17.HeaderText = "size";
             this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            // 
-            // supplierBindingSource
-            // 
-            this.supplierBindingSource.DataMember = "supplier";
-            this.supplierBindingSource.DataSource = this.purchase_dbDataSet;
-            // 
-            // purchase_dbDataSet
-            // 
-            this.purchase_dbDataSet.DataSetName = "purchase_dbDataSet";
-            this.purchase_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // kryptonDataGridViewCart
-            // 
-            this.kryptonDataGridViewCart.AllowUserToAddRows = false;
-            this.kryptonDataGridViewCart.AllowUserToDeleteRows = false;
-            this.kryptonDataGridViewCart.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.delete,
-            this.CPA_ID,
-            this.item_name,
-            this.qty,
-            this.UOM,
-            this.price,
-            this.amount,
-            this.reference});
-            this.kryptonDataGridViewCart.Location = new System.Drawing.Point(9, 636);
-            this.kryptonDataGridViewCart.Name = "kryptonDataGridViewCart";
-            this.kryptonDataGridViewCart.RowTemplate.Height = 24;
-            this.kryptonDataGridViewCart.Size = new System.Drawing.Size(857, 169);
-            this.kryptonDataGridViewCart.TabIndex = 23;
-            this.kryptonDataGridViewCart.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.kryptonDataGridViewCart_CellContentClick);
-            // 
-            // delete
-            // 
-            this.delete.HeaderText = "delete";
-            this.delete.Name = "delete";
-            this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.delete.Text = "delete";
-            this.delete.UseColumnTextForButtonValue = true;
-            // 
-            // CPA_ID
-            // 
-            this.CPA_ID.AllowDecimals = false;
-            this.CPA_ID.HeaderText = "CPA_ID";
-            this.CPA_ID.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.CPA_ID.Name = "CPA_ID";
-            this.CPA_ID.ReadOnly = true;
-            this.CPA_ID.Width = 100;
-            // 
-            // item_name
-            // 
-            this.item_name.DefaultCellStyle = dataGridViewCellStyle4;
-            this.item_name.HeaderText = "item_name";
-            this.item_name.Name = "item_name";
-            this.item_name.ReadOnly = true;
-            this.item_name.Width = 100;
-            // 
-            // qty
-            // 
-            this.qty.AllowDecimals = false;
-            this.qty.HeaderText = "qty";
-            this.qty.Name = "qty";
-            this.qty.Width = 100;
-            // 
-            // UOM
-            // 
-            this.UOM.DefaultCellStyle = dataGridViewCellStyle5;
-            this.UOM.HeaderText = "UOM";
-            this.UOM.Name = "UOM";
-            this.UOM.Width = 100;
-            // 
-            // price
-            // 
-            this.price.AllowDecimals = false;
-            this.price.DecimalPlaces = 2;
-            this.price.HeaderText = "price";
-            this.price.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.price.Name = "price";
-            this.price.Width = 100;
-            // 
-            // amount
-            // 
-            this.amount.AllowDecimals = false;
-            this.amount.HeaderText = "amount";
-            this.amount.Name = "amount";
-            this.amount.Width = 100;
-            // 
-            // reference
-            // 
-            this.reference.DefaultCellStyle = dataGridViewCellStyle6;
-            this.reference.HeaderText = "reference";
-            this.reference.Name = "reference";
-            this.reference.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.reference.Width = 100;
-            // 
-            // nameKryptonComboBox
-            // 
-            this.nameKryptonComboBox.CornerRoundingRadius = -1F;
-            this.nameKryptonComboBox.DataSource = this.supplierBindingSource;
-            this.nameKryptonComboBox.DisplayMember = "name";
-            this.nameKryptonComboBox.DropDownWidth = 121;
-            this.nameKryptonComboBox.IntegralHeight = false;
-            this.nameKryptonComboBox.Location = new System.Drawing.Point(129, 315);
-            this.nameKryptonComboBox.Name = "nameKryptonComboBox";
-            this.nameKryptonComboBox.Size = new System.Drawing.Size(121, 21);
-            this.nameKryptonComboBox.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.nameKryptonComboBox.TabIndex = 11;
-            this.nameKryptonComboBox.ValueMember = "supplier_ID";
-            // 
-            // conditionKryptonTextBox
-            // 
-            this.conditionKryptonTextBox.Location = new System.Drawing.Point(492, 315);
-            this.conditionKryptonTextBox.Name = "conditionKryptonTextBox";
-            this.conditionKryptonTextBox.Size = new System.Drawing.Size(100, 23);
-            this.conditionKryptonTextBox.TabIndex = 9;
-            this.conditionKryptonTextBox.Text = "kryptonTextBox1";
-            // 
-            // termsKryptonTextBox
-            // 
-            this.termsKryptonTextBox.Location = new System.Drawing.Point(492, 270);
-            this.termsKryptonTextBox.Name = "termsKryptonTextBox";
-            this.termsKryptonTextBox.Size = new System.Drawing.Size(100, 23);
-            this.termsKryptonTextBox.TabIndex = 7;
-            this.termsKryptonTextBox.Text = "kryptonTextBox1";
-            // 
-            // expected_delivery_dateKryptonDateTimePicker
-            // 
-            this.expected_delivery_dateKryptonDateTimePicker.CornerRoundingRadius = -1F;
-            this.expected_delivery_dateKryptonDateTimePicker.Location = new System.Drawing.Point(492, 233);
-            this.expected_delivery_dateKryptonDateTimePicker.Name = "expected_delivery_dateKryptonDateTimePicker";
-            this.expected_delivery_dateKryptonDateTimePicker.Size = new System.Drawing.Size(240, 21);
-            this.expected_delivery_dateKryptonDateTimePicker.TabIndex = 5;
-            // 
-            // effective_dateKryptonDateTimePicker
-            // 
-            this.effective_dateKryptonDateTimePicker.CornerRoundingRadius = -1F;
-            this.effective_dateKryptonDateTimePicker.Location = new System.Drawing.Point(492, 180);
-            this.effective_dateKryptonDateTimePicker.Name = "effective_dateKryptonDateTimePicker";
-            this.effective_dateKryptonDateTimePicker.Size = new System.Drawing.Size(240, 21);
-            this.effective_dateKryptonDateTimePicker.TabIndex = 3;
-            // 
-            // create_dateKryptonDateTimePicker
-            // 
-            this.create_dateKryptonDateTimePicker.CornerRoundingRadius = -1F;
-            this.create_dateKryptonDateTimePicker.Location = new System.Drawing.Point(492, 131);
-            this.create_dateKryptonDateTimePicker.Name = "create_dateKryptonDateTimePicker";
-            this.create_dateKryptonDateTimePicker.Size = new System.Drawing.Size(240, 21);
-            this.create_dateKryptonDateTimePicker.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn_CPA_ID
             // 
@@ -508,6 +520,7 @@ namespace ITP4915_group3_project.Purchase.PO.create.SPO
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.blanket_releaseTableAdapter = null;
             this.tableAdapterManager.bpa_headerTableAdapter = null;
             this.tableAdapterManager.bpa_linesTableAdapter = null;
             this.tableAdapterManager.Connection = null;
@@ -515,25 +528,23 @@ namespace ITP4915_group3_project.Purchase.PO.create.SPO
             this.tableAdapterManager.itemTableAdapter = null;
             this.tableAdapterManager.ppo_headerTableAdapter = null;
             this.tableAdapterManager.ppo_linesTableAdapter = null;
+            this.tableAdapterManager.purchase_order_allTableAdapter = null;
+            this.tableAdapterManager.purchasers_requestTableAdapter = null;
+            this.tableAdapterManager.restaurantTableAdapter = null;
+            this.tableAdapterManager.schedule_releaseTableAdapter = null;
             this.tableAdapterManager.spo_headerTableAdapter = null;
             this.tableAdapterManager.spo_linesTableAdapter = null;
+            this.tableAdapterManager.spo_releaseTableAdapter = null;
             this.tableAdapterManager.supplierTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.purchase_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.userTableAdapter = null;
+            this.tableAdapterManager.warehouse_itemTableAdapter = null;
+            this.tableAdapterManager.warehousedispatchinstructionTableAdapter = null;
+            this.tableAdapterManager.warehouseTableAdapter = null;
             // 
             // cpa_itemTableAdapter
             // 
             this.cpa_itemTableAdapter.ClearBeforeFill = true;
-            // 
-            // kryptonButtonSubmit
-            // 
-            this.kryptonButtonSubmit.CornerRoundingRadius = -1F;
-            this.kryptonButtonSubmit.Location = new System.Drawing.Point(711, 911);
-            this.kryptonButtonSubmit.Name = "kryptonButtonSubmit";
-            this.kryptonButtonSubmit.Size = new System.Drawing.Size(90, 25);
-            this.kryptonButtonSubmit.TabIndex = 25;
-            this.kryptonButtonSubmit.Values.Text = "Submit";
-            this.kryptonButtonSubmit.Click += new System.EventHandler(this.kryptonButtonSubmit_Click);
             // 
             // spo_headerTableAdapter
             // 

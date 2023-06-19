@@ -32,23 +32,25 @@ namespace ITP4915_group3_project.Purchase.PO.search.SPO
             this.components = new System.ComponentModel.Container();
             this.kryptonDataGridViewSearchResult = new Krypton.Toolkit.KryptonDataGridView();
             this.detail = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
+            this.spo_search_resultBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.purchase_dbDataSet = new ITP4915_group3_project.purchase_dbDataSet();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.purchase_dbDataSet = new ITP4915_group3_project.purchase_dbDataSet();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableAdapterManager = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.TableAdapterManager();
-            this.spo_search_resultBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.spo_search_resultTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.spo_search_resultTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridViewSearchResult)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spo_search_resultBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonDataGridViewSearchResult
             // 
+            this.kryptonDataGridViewSearchResult.AllowUserToAddRows = false;
+            this.kryptonDataGridViewSearchResult.AllowUserToDeleteRows = false;
             this.kryptonDataGridViewSearchResult.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.detail});
             this.kryptonDataGridViewSearchResult.DataSource = this.spo_search_resultBindingSource;
@@ -66,6 +68,16 @@ namespace ITP4915_group3_project.Purchase.PO.search.SPO
             this.detail.Name = "detail";
             this.detail.Text = "detail";
             this.detail.UseColumnTextForButtonValue = true;
+            // 
+            // spo_search_resultBindingSource
+            // 
+            this.spo_search_resultBindingSource.DataMember = "spo_search_result";
+            this.spo_search_resultBindingSource.DataSource = this.purchase_dbDataSet;
+            // 
+            // purchase_dbDataSet
+            // 
+            this.purchase_dbDataSet.DataSetName = "purchase_dbDataSet";
+            this.purchase_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -87,11 +99,6 @@ namespace ITP4915_group3_project.Purchase.PO.search.SPO
             this.dataGridViewTextBoxColumn6.HeaderText = "suplier name";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
-            // purchase_dbDataSet
-            // 
-            this.purchase_dbDataSet.DataSetName = "purchase_dbDataSet";
-            this.purchase_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -117,6 +124,7 @@ namespace ITP4915_group3_project.Purchase.PO.search.SPO
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.blanket_releaseTableAdapter = null;
             this.tableAdapterManager.bpa_headerTableAdapter = null;
             this.tableAdapterManager.bpa_linesTableAdapter = null;
             this.tableAdapterManager.Connection = null;
@@ -124,16 +132,19 @@ namespace ITP4915_group3_project.Purchase.PO.search.SPO
             this.tableAdapterManager.itemTableAdapter = null;
             this.tableAdapterManager.ppo_headerTableAdapter = null;
             this.tableAdapterManager.ppo_linesTableAdapter = null;
+            this.tableAdapterManager.purchase_order_allTableAdapter = null;
+            this.tableAdapterManager.purchasers_requestTableAdapter = null;
+            this.tableAdapterManager.restaurantTableAdapter = null;
+            this.tableAdapterManager.schedule_releaseTableAdapter = null;
             this.tableAdapterManager.spo_headerTableAdapter = null;
             this.tableAdapterManager.spo_linesTableAdapter = null;
+            this.tableAdapterManager.spo_releaseTableAdapter = null;
             this.tableAdapterManager.supplierTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.purchase_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.userTableAdapter = null;
-            // 
-            // spo_search_resultBindingSource
-            // 
-            this.spo_search_resultBindingSource.DataMember = "spo_search_result";
-            this.spo_search_resultBindingSource.DataSource = this.purchase_dbDataSet;
+            this.tableAdapterManager.warehouse_itemTableAdapter = null;
+            this.tableAdapterManager.warehousedispatchinstructionTableAdapter = null;
+            this.tableAdapterManager.warehouseTableAdapter = null;
             // 
             // spo_search_resultTableAdapter
             // 
@@ -147,8 +158,8 @@ namespace ITP4915_group3_project.Purchase.PO.search.SPO
             this.Name = "search";
             this.Size = new System.Drawing.Size(600, 300);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridViewSearchResult)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spo_search_resultBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
