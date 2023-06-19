@@ -31,7 +31,7 @@ namespace ITP4915_group3_project.category.supplier
         private void kryptonButtonReview_Click(object sender, EventArgs e)
         {
             panelContent.Controls.Clear();
-
+            new supplier.search.check(panelContent);
         }
 
 

@@ -31,6 +31,7 @@ namespace ITP4915_group3_project.category.produce
         private void kryptonButtonReview_Click(object sender, EventArgs e)
         {
             panelContent.Controls.Clear();
+            new produce.search.check(panelContent);
 
         }
 
