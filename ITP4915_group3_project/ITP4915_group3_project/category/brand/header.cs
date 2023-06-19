@@ -31,7 +31,7 @@ namespace ITP4915_group3_project.category.brand
         private void kryptonButtonReview_Click(object sender, EventArgs e)
         {
             panelContent.Controls.Clear();
-
+            new brand.search.check(panelContent);
         }
 
 
