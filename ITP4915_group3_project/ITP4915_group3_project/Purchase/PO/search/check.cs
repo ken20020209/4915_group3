@@ -19,6 +19,8 @@ namespace ITP4915_group3_project.Purchase.PO.search
             InitializeComponent();
             this.panel = panel;
             this.panel.Controls.Add(this);
+
+            kryptonCheckButtonBPA_Click(null, null);
         }
 
         private void kryptonCheckButtonBPA_Click(object sender, EventArgs e)

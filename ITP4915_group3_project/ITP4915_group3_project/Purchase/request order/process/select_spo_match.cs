@@ -63,5 +63,10 @@ namespace ITP4915_group3_project.Purchase.request_order.process
             new check(check.panelContent);
 
         }
+
+        private void kryptonLabelBack_Click_1(object sender, EventArgs e)
+        {
+            Parent.Controls.Remove(this);
+        }
     }
 }

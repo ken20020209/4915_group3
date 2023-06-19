@@ -1701,6 +1701,9 @@
   <ItemGroup>
     <None Include="Resources\icons8-delivery-time-50.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="category\restaurant\stock\" />
+    <Folder Include="category\warehouse\stock\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
