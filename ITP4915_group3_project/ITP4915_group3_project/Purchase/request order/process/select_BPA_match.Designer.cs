@@ -179,6 +179,8 @@ namespace ITP4915_group3_project.Purchase.request_order.process
             // 
             // bpa_remain_qtyKryptonDataGridView
             // 
+            this.bpa_remain_qtyKryptonDataGridView.AllowUserToAddRows = false;
+            this.bpa_remain_qtyKryptonDataGridView.AllowUserToDeleteRows = false;
             this.bpa_remain_qtyKryptonDataGridView.DataSource = this.bpa_remain_qtyBindingSource;
             this.bpa_remain_qtyKryptonDataGridView.Location = new System.Drawing.Point(56, 346);
             this.bpa_remain_qtyKryptonDataGridView.Name = "bpa_remain_qtyKryptonDataGridView";

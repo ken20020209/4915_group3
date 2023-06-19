@@ -171,6 +171,8 @@ namespace ITP4915_group3_project.Purchase.PO.search.SPO
             // 
             // spo_linesKryptonDataGridView
             // 
+            this.spo_linesKryptonDataGridView.AllowUserToAddRows = false;
+            this.spo_linesKryptonDataGridView.AllowUserToDeleteRows = false;
             this.spo_linesKryptonDataGridView.DataSource = this.spo_linesBindingSource;
             this.spo_linesKryptonDataGridView.Location = new System.Drawing.Point(-5, 482);
             this.spo_linesKryptonDataGridView.Name = "spo_linesKryptonDataGridView";
@@ -290,17 +292,26 @@ namespace ITP4915_group3_project.Purchase.PO.search.SPO
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.blanket_releaseTableAdapter = null;
             this.tableAdapterManager.bpa_headerTableAdapter = null;
             this.tableAdapterManager.bpa_linesTableAdapter = null;
             this.tableAdapterManager.cpaTableAdapter = null;
             this.tableAdapterManager.itemTableAdapter = null;
             this.tableAdapterManager.ppo_headerTableAdapter = null;
             this.tableAdapterManager.ppo_linesTableAdapter = null;
+            this.tableAdapterManager.purchase_order_allTableAdapter = null;
+            this.tableAdapterManager.purchasers_requestTableAdapter = null;
+            this.tableAdapterManager.restaurantTableAdapter = null;
+            this.tableAdapterManager.schedule_releaseTableAdapter = null;
             this.tableAdapterManager.spo_headerTableAdapter = this.spo_headerTableAdapter;
             this.tableAdapterManager.spo_linesTableAdapter = this.spo_linesTableAdapter;
+            this.tableAdapterManager.spo_releaseTableAdapter = null;
             this.tableAdapterManager.supplierTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.purchase_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.userTableAdapter = null;
+            this.tableAdapterManager.warehouse_itemTableAdapter = null;
+            this.tableAdapterManager.warehousedispatchinstructionTableAdapter = null;
+            this.tableAdapterManager.warehouseTableAdapter = null;
             // 
             // spo_linesTableAdapter
             // 
