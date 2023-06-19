@@ -1,7 +1,7 @@
 ﻿
-namespace ITP4915_group3_project.category.category.create
+namespace ITP4915_group3_project.category.category.select
 {
-    partial class UserControl1
+    partial class check
     {
         /// <summary> 
         /// 設計工具所需的變數。

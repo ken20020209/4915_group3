@@ -12,7 +12,7 @@ namespace ITP4915_group3_project.category.brand.search
 {
     public partial class check : UserControl
     {
-        public check()
+        public check(Control panel)
         {
             InitializeComponent();
         }
