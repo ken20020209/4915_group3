@@ -443,7 +443,6 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.kryptonButtonEdit.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.kryptonButtonEdit.TabIndex = 222;
             this.kryptonButtonEdit.Values.Text = "Edit";
-            this.kryptonButtonEdit.Click += new System.EventHandler(this.kryptonButtonEdit_Click);
             // 
             // kryptonTextBoxBrand
             // 

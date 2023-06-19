@@ -74,13 +74,11 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
         {
             purchasers_requestBindingSource.RemoveCurrent();
             this.tableAdapterManager.UpdateAll(this.restaurant_dbDataSet);
-            MessageBox.Show("delete success");
+/*            MessageBox.Show("delete success");*/
+            new delete_sucess().ShowDialog();
         }
 
-        private void kryptonDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
-        }
     }
         
 }

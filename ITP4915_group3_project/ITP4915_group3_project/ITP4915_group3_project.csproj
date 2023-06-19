@@ -798,12 +798,6 @@
     <Compile Include="Restaurant\request order\create\check_order.Designer.cs">
       <DependentUpon>check_order.cs</DependentUpon>
     </Compile>
-    <Compile Include="Restaurant\request order\create\complete_detail.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Restaurant\request order\create\complete_detail.Designer.cs">
-      <DependentUpon>complete_detail.cs</DependentUpon>
-    </Compile>
     <Compile Include="Restaurant\request order\create\create_success.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -847,12 +841,6 @@
     <Compile Include="Restaurant\request order\search\detail.Designer.cs">
       <DependentUpon>detail.cs</DependentUpon>
     </Compile>
-    <Compile Include="Restaurant\request order\search\sumit_success.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Restaurant\request order\search\sumit_success.Designer.cs">
-      <DependentUpon>sumit_success.cs</DependentUpon>
-    </Compile>
     <Compile Include="Restaurant\restaurant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -876,12 +864,6 @@
     </Compile>
     <Compile Include="Restaurant\stock\header.Designer.cs">
       <DependentUpon>header.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Restaurant\stock\update.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Restaurant\stock\update.Designer.cs">
-      <DependentUpon>update.cs</DependentUpon>
     </Compile>
     <Compile Include="warehouse\check_PO\detail.cs">
       <SubType>UserControl</SubType>
@@ -1355,9 +1337,6 @@
     <EmbeddedResource Include="Restaurant\request order\create\check_order.resx">
       <DependentUpon>check_order.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Restaurant\request order\create\complete_detail.resx">
-      <DependentUpon>complete_detail.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\request order\create\create_success.resx">
       <DependentUpon>create_success.cs</DependentUpon>
     </EmbeddedResource>
@@ -1379,9 +1358,6 @@
     <EmbeddedResource Include="Restaurant\request order\search\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Restaurant\request order\search\sumit_success.resx">
-      <DependentUpon>sumit_success.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\restaurant.resx">
       <DependentUpon>restaurant.cs</DependentUpon>
     </EmbeddedResource>
@@ -1393,9 +1369,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Restaurant\stock\header.resx">
       <DependentUpon>header.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Restaurant\stock\update.resx">
-      <DependentUpon>update.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\check_PO\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>

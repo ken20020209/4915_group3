@@ -25,15 +25,14 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             //load data to form
             for (int i = 0; i < newOrder.item_ID.Count(); i++)
             {
-                dataGridViewDetail.Rows.Insert(0, newOrder.item_ID[i], newOrder.item_qty[i], newOrder.item_name[i]);
+                kryptonDataGridViewItem.Rows.Insert(0, newOrder.vID[i],  newOrder.item_name[i], newOrder.size[i],newOrder.item_qty[i]);
             }
             kryptonTextBox1RestaurantName.Text = newOrder.restaurant_Name;
             kryptonTextBoxRestaurantID.Text = newOrder.restaurant_ID.ToString();
             kryptonTextBoxCreatorID.Text = newOrder.creator_ID.ToString();
             kryptonTextBoxCreatorName.Text = newOrder.creator_Name;
-            kryptonTextBoxRequestID.Text = newOrder.request_ID.ToString();
             kryptonTextBoxCreateDate.Text = newOrder.mysqlDate.ToString();
-
+            
 
         }
 
@@ -47,6 +46,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             {
                 newOrder.priority = 0;
             }
+            newOrder.remark = kryptonRichTextBoxRemark.Text;
             newOrder.insertDB();
             new create_success().ShowDialog();
         }

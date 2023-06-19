@@ -144,7 +144,7 @@ namespace ITP4915_group3_project.Restaurant
             // kryptonButtonSetting
             // 
             this.kryptonButtonSetting.CornerRoundingRadius = 12F;
-            this.kryptonButtonSetting.Location = new System.Drawing.Point(-2, 447);
+            this.kryptonButtonSetting.Location = new System.Drawing.Point(0, 447);
             this.kryptonButtonSetting.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButtonSetting.Name = "kryptonButtonSetting";
             this.kryptonButtonSetting.Size = new System.Drawing.Size(183, 54);

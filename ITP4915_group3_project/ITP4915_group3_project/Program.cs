@@ -48,6 +48,10 @@ namespace ITP4915_group3_project
             DateTime now = DateTime.Now;
             foreach (DateTime scheduledTime in scheduledTimes)
             {
+                if(Properties.Settings.Default.autoMatch=="No")
+                {
+                    break;
+                }
                 if (now.Hour >= scheduledTime.Hour && now.Hour <= scheduledTime.Hour && now.Minute >= scheduledTime.Minute && now.Minute <= scheduledTime.AddMinutes(1).Minute)
                 {
 #if DEBUG
@@ -57,7 +61,7 @@ namespace ITP4915_group3_project
                     batchProcessing.requestMatch requestMatch = new batchProcessing.requestMatch();
 
 
-                    /*requestMatch.process();*/
+                    requestMatch.process();
 
                 }
             }

@@ -39,11 +39,7 @@ namespace ITP4915_group3_project.Restaurant.stock
             check.Controls.Remove(this);
         }
 
-        private void kryptonButtonEdit_Click(object sender, EventArgs e)
-        {
-            update updatePanel = new update(this, itemID);
 
-        }
             
         private void kryptonButtonSave_Click(object sender, EventArgs e)
         {

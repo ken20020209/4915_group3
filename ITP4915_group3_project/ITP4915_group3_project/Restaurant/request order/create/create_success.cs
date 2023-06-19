@@ -18,13 +18,9 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             InitializeComponent();
         }
 
-        private void create_success_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void kryptonButtonOk_Click(object sender, EventArgs e)
         {
+            new select_item(select_item.panelContent);
             this.Close();
         }
     }

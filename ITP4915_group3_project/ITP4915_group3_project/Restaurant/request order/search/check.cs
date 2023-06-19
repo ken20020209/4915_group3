@@ -12,14 +12,14 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
 {
     public partial class check : UserControl
     {
-        public Control panelContent;
+        public static Control panelContent;
         string keyword = "";
         int status = 1000;
         public check(Control panelContent)
         {
             InitializeComponent();
 
-            this.panelContent = panelContent;
+            check.panelContent = panelContent;
             panelContent.Controls.Clear();
             panelContent.Controls.Add(this);
             search();
