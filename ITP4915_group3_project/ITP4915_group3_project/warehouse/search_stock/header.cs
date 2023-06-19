@@ -1,5 +1,4 @@
-﻿using Krypton.Toolkit;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ITP4915_group3_project.warehouse.check_PO
+namespace ITP4915_group3_project.warehouse.search_stock
 {
     public partial class header : UserControl
     {
@@ -20,13 +19,13 @@ namespace ITP4915_group3_project.warehouse.check_PO
             this.panelContent = panelContent;
             header.Controls.Clear();
             header.Controls.Add(this);
-            kryptonButtonReview_Click(null, null);
+            kryptonBtnReview_Click(null, null);
         }
 
-        private void kryptonButtonReview_Click(object sender, EventArgs e)
+        private void kryptonBtnReview_Click(object sender, EventArgs e)
         {
             panelContent.Controls.Clear();
-            new check_PO.review(panelContent);
+            new search_stock.check(panelContent);
         }
 
         private void kryptonPanelHeader_Paint(object sender, PaintEventArgs e)

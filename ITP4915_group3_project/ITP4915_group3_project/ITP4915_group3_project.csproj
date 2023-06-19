@@ -889,6 +889,12 @@
     <Compile Include="warehouse\check_PO\review.Designer.cs">
       <DependentUpon>review.cs</DependentUpon>
     </Compile>
+    <Compile Include="warehouse\delivery_note\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="warehouse\delivery_note\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
     <Compile Include="warehouse\delivery_note\process_confirm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -955,6 +961,12 @@
     <Compile Include="warehouse\picking_list\detail_notfinish.Designer.cs">
       <DependentUpon>detail_notfinish.cs</DependentUpon>
     </Compile>
+    <Compile Include="warehouse\picking_list\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="warehouse\picking_list\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
     <Compile Include="warehouse\picking_list\success.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -972,6 +984,12 @@
     </Compile>
     <Compile Include="warehouse\search_stock\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\search_stock\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="warehouse\search_stock\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
     </Compile>
     <Compile Include="warehouse\search_stock\item_info.cs">
       <SubType>UserControl</SubType>
@@ -1388,6 +1406,9 @@
     <EmbeddedResource Include="warehouse\check_PO\review.resx">
       <DependentUpon>review.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\delivery_note\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="warehouse\delivery_note\process_confirm.resx">
       <DependentUpon>process_confirm.cs</DependentUpon>
     </EmbeddedResource>
@@ -1421,6 +1442,9 @@
     <EmbeddedResource Include="warehouse\picking_list\detail_notfinish.resx">
       <DependentUpon>detail_notfinish.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\picking_list\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="warehouse\picking_list\success.resx">
       <DependentUpon>success.cs</DependentUpon>
     </EmbeddedResource>
@@ -1429,6 +1453,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\search_stock\check.resx">
       <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\search_stock\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\search_stock\item_info.resx">
       <DependentUpon>item_info.cs</DependentUpon>
