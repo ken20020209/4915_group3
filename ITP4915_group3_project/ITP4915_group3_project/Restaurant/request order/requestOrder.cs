@@ -20,6 +20,7 @@ namespace ITP4915_group3_project.Restaurant.request_order
         public int creator_ID;
         public string creator_Name;
         public DateTime mysqlDate;
+        public DateTime expectedDate;
         public int priority;
        
         public requestOrder(int restaurant_ID,string restaurant_Name, int creator_ID, string creator_Name)
@@ -45,7 +46,7 @@ namespace ITP4915_group3_project.Restaurant.request_order
             restaurant_dbDataSetTableAdapters.purchasers_requestTableAdapter adapterRequest = new restaurant_dbDataSetTableAdapters.purchasers_requestTableAdapter();
             for(int i=0;i<item_qty.Count();i++)
             {
-                adapterRequest.Insert(creator_ID, restaurant_ID, item_ID[i], item_qty[i], priority, 1000, mysqlDate, mysqlDate, remark);
+                adapterRequest.Insert(creator_ID, restaurant_ID, item_ID[i], item_qty[i], priority, 1000, mysqlDate, expectedDate, remark);
             }
         }
             

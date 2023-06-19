@@ -47,6 +47,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
                 newOrder.priority = 0;
             }
             newOrder.remark = kryptonRichTextBoxRemark.Text;
+            newOrder.expectedDate = kryptonDateTimePickerExpect.Value;
             newOrder.insertDB();
             new create_success().ShowDialog();
         }

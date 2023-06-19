@@ -31,6 +31,11 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
+            this.kryptonDataGridViewItem = new Krypton.Toolkit.KryptonDataGridView();
+            this.itemId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemName1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemsize = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orderQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
             this.comboBoxPriority = new System.Windows.Forms.ComboBox();
             this.kryptonLabel5 = new Krypton.Toolkit.KryptonLabel();
@@ -52,21 +57,18 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.kryptonBorderEdge2 = new Krypton.Toolkit.KryptonBorderEdge();
             this.kryptonButton8 = new Krypton.Toolkit.KryptonButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.kryptonDataGridViewItem = new Krypton.Toolkit.KryptonDataGridView();
-            this.itemId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemName1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemsize = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.orderQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kryptonDateTimePickerExpect = new Krypton.Toolkit.KryptonDateTimePicker();
+            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).BeginInit();
             this.kryptonGroupBox2.Panel.SuspendLayout();
             this.kryptonGroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridViewItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).BeginInit();
             this.kryptonGroupBox1.Panel.SuspendLayout();
             this.kryptonGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridViewItem)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -110,6 +112,46 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.kryptonGroupBox2.TabIndex = 218;
             this.kryptonGroupBox2.Values.Heading = "ITEM";
             // 
+            // kryptonDataGridViewItem
+            // 
+            this.kryptonDataGridViewItem.AllowUserToAddRows = false;
+            this.kryptonDataGridViewItem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.itemId,
+            this.ItemName1,
+            this.itemsize,
+            this.orderQty});
+            this.kryptonDataGridViewItem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonDataGridViewItem.Location = new System.Drawing.Point(0, 0);
+            this.kryptonDataGridViewItem.Name = "kryptonDataGridViewItem";
+            this.kryptonDataGridViewItem.ReadOnly = true;
+            this.kryptonDataGridViewItem.RowTemplate.Height = 24;
+            this.kryptonDataGridViewItem.Size = new System.Drawing.Size(572, 133);
+            this.kryptonDataGridViewItem.TabIndex = 0;
+            // 
+            // itemId
+            // 
+            this.itemId.HeaderText = "item id";
+            this.itemId.Name = "itemId";
+            this.itemId.ReadOnly = true;
+            // 
+            // ItemName1
+            // 
+            this.ItemName1.HeaderText = "Name";
+            this.ItemName1.Name = "ItemName1";
+            this.ItemName1.ReadOnly = true;
+            // 
+            // itemsize
+            // 
+            this.itemsize.HeaderText = "size";
+            this.itemsize.Name = "itemsize";
+            this.itemsize.ReadOnly = true;
+            // 
+            // orderQty
+            // 
+            this.orderQty.HeaderText = "qty";
+            this.orderQty.Name = "orderQty";
+            this.orderQty.ReadOnly = true;
+            // 
             // kryptonGroupBox1
             // 
             this.kryptonGroupBox1.Location = new System.Drawing.Point(20, 99);
@@ -118,6 +160,8 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             // 
             // kryptonGroupBox1.Panel
             // 
+            this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonLabel1);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonDateTimePickerExpect);
             this.kryptonGroupBox1.Panel.Controls.Add(this.comboBoxPriority);
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonLabel5);
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonRichTextBoxRemark);
@@ -448,45 +492,24 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.label1.TabIndex = 209;
             this.label1.Text = "Check Order";
             // 
-            // kryptonDataGridViewItem
+            // kryptonDateTimePickerExpect
             // 
-            this.kryptonDataGridViewItem.AllowUserToAddRows = false;
-            this.kryptonDataGridViewItem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.itemId,
-            this.ItemName1,
-            this.itemsize,
-            this.orderQty});
-            this.kryptonDataGridViewItem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonDataGridViewItem.Location = new System.Drawing.Point(0, 0);
-            this.kryptonDataGridViewItem.Name = "kryptonDataGridViewItem";
-            this.kryptonDataGridViewItem.ReadOnly = true;
-            this.kryptonDataGridViewItem.RowTemplate.Height = 24;
-            this.kryptonDataGridViewItem.Size = new System.Drawing.Size(572, 133);
-            this.kryptonDataGridViewItem.TabIndex = 0;
+            this.kryptonDateTimePickerExpect.CornerRoundingRadius = -1F;
+            this.kryptonDateTimePickerExpect.Location = new System.Drawing.Point(324, 77);
+            this.kryptonDateTimePickerExpect.Name = "kryptonDateTimePickerExpect";
+            this.kryptonDateTimePickerExpect.Size = new System.Drawing.Size(100, 21);
+            this.kryptonDateTimePickerExpect.TabIndex = 222;
             // 
-            // itemId
+            // kryptonLabel1
             // 
-            this.itemId.HeaderText = "item id";
-            this.itemId.Name = "itemId";
-            this.itemId.ReadOnly = true;
-            // 
-            // ItemName1
-            // 
-            this.ItemName1.HeaderText = "Name";
-            this.ItemName1.Name = "ItemName1";
-            this.ItemName1.ReadOnly = true;
-            // 
-            // itemsize
-            // 
-            this.itemsize.HeaderText = "size";
-            this.itemsize.Name = "itemsize";
-            this.itemsize.ReadOnly = true;
-            // 
-            // orderQty
-            // 
-            this.orderQty.HeaderText = "qty";
-            this.orderQty.Name = "orderQty";
-            this.orderQty.ReadOnly = true;
+            this.kryptonLabel1.Location = new System.Drawing.Point(239, 77);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Size = new System.Drawing.Size(82, 19);
+            this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel1.TabIndex = 223;
+            this.kryptonLabel1.Values.Text = "Expect Date:";
             // 
             // check_order
             // 
@@ -502,12 +525,12 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.kryptonGroupBox2.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).EndInit();
             this.kryptonGroupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridViewItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).EndInit();
             this.kryptonGroupBox1.Panel.ResumeLayout(false);
             this.kryptonGroupBox1.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).EndInit();
             this.kryptonGroupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridViewItem)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -542,5 +565,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemName1;
         private System.Windows.Forms.DataGridViewTextBoxColumn itemsize;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderQty;
+        private Krypton.Toolkit.KryptonLabel kryptonLabel1;
+        private Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePickerExpect;
     }
 }
