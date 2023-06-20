@@ -57,7 +57,6 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             }
            
             new check_order(this, newOrder);
-
         }
 
         private void kryptonTextBox2_TextChanged(object sender, EventArgs e)
@@ -84,7 +83,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             int qty = 0;
             string vID = dataTable_restaurant_stock_searchKryptonDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
            
-            int itemID= (int)dataTable_restaurant_stock_searchKryptonDataGridView.Rows[e.RowIndex].Cells["dataGridViewTextBoxColumn22"].Value;
+            int itemID= (int)dataTable_restaurant_stock_searchKryptonDataGridView.Rows[e.RowIndex].Cells[6].Value;
             String itemName = dataTable_restaurant_stock_searchKryptonDataGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
             String size = dataTable_restaurant_stock_searchKryptonDataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
 

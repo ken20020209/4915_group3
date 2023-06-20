@@ -58,6 +58,7 @@ namespace ITP4915_group3_project.Purchase.PO.create.BPA
 
         private void kryptonButtonSubmit_Click(object sender, EventArgs e)
         {
+            this.Validate();
             bpa_headerTableAdapter.Insert(purchase_order_revisionComboBox.Text == "true"?(byte)1:(byte)0, create_dateDateTimePicker.Value, effective_datesDateTimePicker.Value, int.Parse(supplier_IDTextBox.Text), int.Parse(buyer_IDTextBox.Text), int.Parse(agreed_amountTextBox.Text), int.Parse(currencyTextBox.Text), termsTextBox.Text, conditionTextBox.Text);
 
             // get key of header
