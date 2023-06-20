@@ -1,13 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Krypton.Toolkit;
 namespace ITP4915_group3_project.General.navi
 {
     public partial class navi : Krypton.Toolkit.KryptonForm
@@ -16,8 +7,47 @@ namespace ITP4915_group3_project.General.navi
         {
             InitializeComponent();
         }
+        public navi(string role_name)
+        {
+            InitializeComponent();
 
-        private void kryptonButtonRestaurant_Click(object sender, EventArgs e)
+            // different role to different system
+            if (role_name == "role1")
+            {
+                kryptonButtonRestaurant_Click(null, null);
+            }
+            else if (role_name == "role2")
+            {
+                kryptonButtonWarehosue_Click(null, null);
+            }
+            else if (role_name == "role2")
+            {
+                kryptonButtonPurchase_Click(null, null);
+            }
+            else if (role_name == "role2")
+            {
+                kryptonButtonDelivery_Click(null, null);
+            }
+            else if (role_name == "role2")
+            {
+                kryptonButtonCategory_Click(null, null);
+            }
+            else if (role_name == "role2")
+            {
+                kryptonButtonAccounting_Click(null, null);
+            }
+            else if (role_name == "role2")
+            {
+                kryptonButtonHR_Click(null, null);
+            }
+            else if (role_name == "admin")
+            {
+                //do nothing 
+            }
+
+        }
+
+        public void kryptonButtonRestaurant_Click(object sender, EventArgs e)
         {
             // jump to restaurant form
             this.Hide();
@@ -25,42 +55,42 @@ namespace ITP4915_group3_project.General.navi
             this.Close();
         }
 
-        private void kryptonButtonWarehosue_Click(object sender, EventArgs e)
+        public void kryptonButtonWarehosue_Click(object sender, EventArgs e)
         {
             this.Hide();
             new warehouse.warehouse().ShowDialog();
             this.Close();
         }
 
-        private void kryptonButtonPurchase_Click(object sender, EventArgs e)
+        public void kryptonButtonPurchase_Click(object sender, EventArgs e)
         {
             this.Hide();
             new Purchase.purchase().ShowDialog();
             this.Close();
         }
 
-        private void kryptonButtonDelivery_Click(object sender, EventArgs e)
+        public void kryptonButtonDelivery_Click(object sender, EventArgs e)
         {
             this.Hide();
             new delivery.delivery().ShowDialog();
             this.Close();
         }
 
-        private void kryptonButtonCategory_Click(object sender, EventArgs e)
+        public void kryptonButtonCategory_Click(object sender, EventArgs e)
         {
             this.Hide();
             new category.Category().ShowDialog();
             this.Close();
         }
 
-        private void kryptonButtonAccounting_Click(object sender, EventArgs e)
+        public void kryptonButtonAccounting_Click(object sender, EventArgs e)
         {
             this.Hide();
             new Accounting.accounting().ShowDialog();
             this.Close();
         }
 
-        private void kryptonButtonHR_Click(object sender, EventArgs e)
+        public void kryptonButtonHR_Click(object sender, EventArgs e)
         {
             this.Hide();
             new humanResources.humanResources().ShowDialog();
