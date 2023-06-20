@@ -13,32 +13,21 @@ namespace ITP4915_group3_project.warehouse.check_PO
     public partial class review : UserControl
     {
         public Control panel;
-        string ID = "";
+        private int curPO = 0;
         public review(Control panel)
         {
             InitializeComponent();
             this.panel = panel;
             panel.Controls.Clear();
             panel.Controls.Add(this);
-            search();
         }
 
 
         private void kryptonButtonSearch_Click(object sender, EventArgs e)
         {
-            search();
+   
         }
 
-        private void search()
-        {
-
-            ID = "%" + kryptonTextBoxSearchKeyWord.Text + "%";
-            
-
-            int result = purchase_order_allBindingSource.Count;
-            kryptonLabelResult.Text = $"RESULT ({result})";
-
-        }
 
 
     }

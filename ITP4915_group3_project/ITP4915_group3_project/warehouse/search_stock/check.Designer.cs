@@ -95,11 +95,11 @@ namespace ITP4915_group3_project.warehouse.search_stock
             // dataTable_warehouse_stock_searchKryptonDataGridView
             // 
             this.dataTable_warehouse_stock_searchKryptonDataGridView.DataSource = this.dataTable_warehouse_stock_searchBindingSource;
-            this.dataTable_warehouse_stock_searchKryptonDataGridView.Location = new System.Drawing.Point(62, 238);
+            this.dataTable_warehouse_stock_searchKryptonDataGridView.Location = new System.Drawing.Point(65, 239);
             this.dataTable_warehouse_stock_searchKryptonDataGridView.Name = "dataTable_warehouse_stock_searchKryptonDataGridView";
             this.dataTable_warehouse_stock_searchKryptonDataGridView.ReadOnly = true;
             this.dataTable_warehouse_stock_searchKryptonDataGridView.RowTemplate.Height = 24;
-            this.dataTable_warehouse_stock_searchKryptonDataGridView.Size = new System.Drawing.Size(545, 167);
+            this.dataTable_warehouse_stock_searchKryptonDataGridView.Size = new System.Drawing.Size(542, 167);
             this.dataTable_warehouse_stock_searchKryptonDataGridView.TabIndex = 77;
             this.dataTable_warehouse_stock_searchKryptonDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTable_warehouse_stock_searchKryptonDataGridView_CellContentClick);
             // 

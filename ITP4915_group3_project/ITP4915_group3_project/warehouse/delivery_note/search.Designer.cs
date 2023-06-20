@@ -311,7 +311,7 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.warehouse_dbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.warehousedbDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable_deliverynote_searchBindingSource)).EndInit();
+            
             this.ResumeLayout(false);
 
         }
