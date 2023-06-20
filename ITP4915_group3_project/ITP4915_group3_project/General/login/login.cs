@@ -52,6 +52,15 @@ namespace ITP4915_group3_project.General.login
                 this.Hide();
                 new General.navi.navi().ShowDialog();
                 this.Show();
+
+                // follow role to different system
+                humanResources_dbDataSetTableAdapters.roleTableAdapter roleTableAdapter = new humanResources_dbDataSetTableAdapters.roleTableAdapter();
+                int role_id = (int)user.Rows[0]["role_id"];
+                string role_name = roleTableAdapter.GetData().FindByrole_id(role_id).role_name;
+
+                this.Hide();
+                new General.navi.navi(role_name).ShowDialog();
+                this.Show();
             }
             else
             {

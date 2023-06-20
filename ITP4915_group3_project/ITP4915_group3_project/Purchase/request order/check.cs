@@ -62,7 +62,21 @@ namespace ITP4915_group3_project.Purchase.request_order
         private void search()
         {
             keyWord = "%" + keyWord + "%";
-            this.purchasers_requestTableAdapter.FillBy_Status(this.purchase_dbDataSet.purchasers_request,status_ID,keyWord);
+            this.purchasers_requestTableAdapter.FillBy_Status(this.purchase_dbDataSet.purchasers_request, status_ID, keyWord);
+            if (kryptonComboBoxFilter.SelectedItem.ToString() == "ALL")
+            {
+                purchasers_requestBindingSource.Filter = "";
+            }
+            else if (kryptonComboBoxFilter.SelectedItem.ToString() == "0")
+            {
+                purchasers_requestBindingSource.Filter = "priority_id=0";
+            }
+            else if (kryptonComboBoxFilter.SelectedItem.ToString() == "1")
+            {
+                purchasers_requestBindingSource.Filter = "priority_id=1";
+            }
+
+            kryptonLabelResult.Text = $"RESULT ({this.purchasers_requestBindingSource.Count})";
 
         }
 
@@ -78,6 +92,11 @@ namespace ITP4915_group3_project.Purchase.request_order
             requestMatch.process();
             MessageBox.Show("success process : " + requestMatch.processedNum + "\nerror process : " + requestMatch.errorProcess + "\ntotal process : " + requestMatch.totalRequest);
             
+        }
+
+        private void kryptonComboBoxFilter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            search();
         }
     }
 }

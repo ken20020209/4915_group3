@@ -30,5 +30,7 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
 
             MessageBox.Show("edit success");
         }
+
+
     }
 }

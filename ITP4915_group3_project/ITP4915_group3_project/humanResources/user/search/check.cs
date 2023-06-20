@@ -21,7 +21,8 @@ namespace ITP4915_group3_project.humanResources.user.search
             check.panel.Controls.Add(this);
             //load data
             this.userTableAdapter.Fill(this.humanResources_dbDataSet.user);
-            
+            kryptonLabelResult.Text = $"RESULT ({userBindingSource.Count})";
+
 
         }
 

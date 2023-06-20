@@ -40,9 +40,9 @@ namespace ITP4915_group3_project.Purchase.PO.create.PPO
             System.Windows.Forms.Label supplierNameLabel;
             System.Windows.Forms.Label tentative_schedulesLabel;
             System.Windows.Forms.Label currencyLabel1;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.currencyKryptonNumericUpDown = new Krypton.Toolkit.KryptonNumericUpDown();
             this.kryptonButtonSubmit = new Krypton.Toolkit.KryptonButton();
@@ -59,14 +59,17 @@ namespace ITP4915_group3_project.Purchase.PO.create.PPO
             this.supplierBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.purchase_dbDataSet = new ITP4915_group3_project.purchase_dbDataSet();
             this.kryptonDataGridViewChoose = new Krypton.Toolkit.KryptonDataGridView();
-            this.select = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.conditionKryptonTextBox = new Krypton.Toolkit.KryptonTextBox();
             this.termKryptonTextBox = new Krypton.Toolkit.KryptonTextBox();
             this.amountKryptonNumericUpDown = new Krypton.Toolkit.KryptonNumericUpDown();
             this.tentative_schedulesKryptonDateTimePicker = new Krypton.Toolkit.KryptonDateTimePicker();
-            this.buyer_IDKryptonNumericUpDown = new Krypton.Toolkit.KryptonNumericUpDown();
             this.effective_dateKryptonDateTimePicker = new Krypton.Toolkit.KryptonDateTimePicker();
             this.create_dateKryptonDateTimePicker = new Krypton.Toolkit.KryptonDateTimePicker();
             this.purchase_order_revision_IDKryptonCheckBox = new Krypton.Toolkit.KryptonCheckBox();
@@ -95,6 +98,15 @@ namespace ITP4915_group3_project.Purchase.PO.create.PPO
             this.itemTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.itemTableAdapter();
             this.ppo_headerTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.ppo_headerTableAdapter();
             this.ppo_linesTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.ppo_linesTableAdapter();
+            this.select = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kryptonTextBoxBuyerID = new Krypton.Toolkit.KryptonTextBox();
             purchase_order_revision_IDLabel = new System.Windows.Forms.Label();
             create_dateLabel = new System.Windows.Forms.Label();
             effective_dateLabel = new System.Windows.Forms.Label();
@@ -208,6 +220,7 @@ namespace ITP4915_group3_project.Purchase.PO.create.PPO
             // 
             // kryptonPanel1
             // 
+            this.kryptonPanel1.Controls.Add(this.kryptonTextBoxBuyerID);
             this.kryptonPanel1.Controls.Add(currencyLabel1);
             this.kryptonPanel1.Controls.Add(this.currencyKryptonNumericUpDown);
             this.kryptonPanel1.Controls.Add(this.kryptonButtonSubmit);
@@ -225,7 +238,6 @@ namespace ITP4915_group3_project.Purchase.PO.create.PPO
             this.kryptonPanel1.Controls.Add(tentative_schedulesLabel);
             this.kryptonPanel1.Controls.Add(this.tentative_schedulesKryptonDateTimePicker);
             this.kryptonPanel1.Controls.Add(buyer_IDLabel);
-            this.kryptonPanel1.Controls.Add(this.buyer_IDKryptonNumericUpDown);
             this.kryptonPanel1.Controls.Add(effective_dateLabel);
             this.kryptonPanel1.Controls.Add(this.effective_dateKryptonDateTimePicker);
             this.kryptonPanel1.Controls.Add(create_dateLabel);
@@ -279,6 +291,7 @@ namespace ITP4915_group3_project.Purchase.PO.create.PPO
             // 
             // delete
             // 
+            this.delete.ButtonStyle = Krypton.Toolkit.ButtonStyle.Standalone;
             this.delete.HeaderText = "delete";
             this.delete.Name = "delete";
             this.delete.Text = "delete";
@@ -287,7 +300,7 @@ namespace ITP4915_group3_project.Purchase.PO.create.PPO
             // 
             // item_name
             // 
-            this.item_name.DefaultCellStyle = dataGridViewCellStyle1;
+            this.item_name.DefaultCellStyle = dataGridViewCellStyle7;
             this.item_name.HeaderText = "item_name";
             this.item_name.Name = "item_name";
             this.item_name.ReadOnly = true;
@@ -302,7 +315,7 @@ namespace ITP4915_group3_project.Purchase.PO.create.PPO
             // 
             // UOM
             // 
-            this.UOM.DefaultCellStyle = dataGridViewCellStyle2;
+            this.UOM.DefaultCellStyle = dataGridViewCellStyle8;
             this.UOM.HeaderText = "UOM";
             this.UOM.Name = "UOM";
             this.UOM.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -325,7 +338,7 @@ namespace ITP4915_group3_project.Purchase.PO.create.PPO
             // 
             // reference
             // 
-            this.reference.DefaultCellStyle = dataGridViewCellStyle3;
+            this.reference.DefaultCellStyle = dataGridViewCellStyle9;
             this.reference.HeaderText = "reference";
             this.reference.Name = "reference";
             this.reference.Width = 100;
@@ -370,30 +383,58 @@ namespace ITP4915_group3_project.Purchase.PO.create.PPO
             this.kryptonDataGridViewChoose.AllowUserToDeleteRows = false;
             this.kryptonDataGridViewChoose.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.select,
-            this.dataGridViewTextBoxColumn17});
+            this.dataGridViewTextBoxColumn17,
+            this.dataGridViewTextBoxColumn26,
+            this.dataGridViewTextBoxColumn27,
+            this.dataGridViewTextBoxColumn28,
+            this.dataGridViewTextBoxColumn29,
+            this.dataGridViewTextBoxColumn30,
+            this.dataGridViewTextBoxColumn31});
             this.kryptonDataGridViewChoose.DataSource = this.itemBindingSource;
             this.kryptonDataGridViewChoose.Location = new System.Drawing.Point(54, 390);
             this.kryptonDataGridViewChoose.Name = "kryptonDataGridViewChoose";
             this.kryptonDataGridViewChoose.RowTemplate.Height = 24;
-            this.kryptonDataGridViewChoose.Size = new System.Drawing.Size(676, 189);
+            this.kryptonDataGridViewChoose.Size = new System.Drawing.Size(723, 189);
             this.kryptonDataGridViewChoose.TabIndex = 18;
             this.kryptonDataGridViewChoose.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.kryptonDataGridViewChoose_CellContentClick);
             // 
-            // select
+            // dataGridViewTextBoxColumn20
             // 
-            this.select.HeaderText = "select";
-            this.select.Name = "select";
-            this.select.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.select.Text = "add";
-            this.select.UseColumnTextForButtonValue = true;
-            this.select.Width = 50;
+            this.dataGridViewTextBoxColumn20.DataPropertyName = "item_ID";
+            this.dataGridViewTextBoxColumn20.HeaderText = "item_ID";
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
             // 
-            // dataGridViewTextBoxColumn17
+            // dataGridViewTextBoxColumn21
             // 
-            this.dataGridViewTextBoxColumn17.DataPropertyName = "supplier_ID";
-            this.dataGridViewTextBoxColumn17.HeaderText = "supplier_ID";
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            this.dataGridViewTextBoxColumn17.Visible = false;
+            this.dataGridViewTextBoxColumn21.DataPropertyName = "item_name";
+            this.dataGridViewTextBoxColumn21.HeaderText = "item_name";
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            // 
+            // dataGridViewTextBoxColumn22
+            // 
+            this.dataGridViewTextBoxColumn22.DataPropertyName = "price";
+            this.dataGridViewTextBoxColumn22.HeaderText = "price";
+            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.DataPropertyName = "size";
+            this.dataGridViewTextBoxColumn23.HeaderText = "size";
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "category_ID";
+            this.dataGridViewTextBoxColumn24.HeaderText = "category_ID";
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            this.dataGridViewTextBoxColumn24.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.DataPropertyName = "partner_brand_ID";
+            this.dataGridViewTextBoxColumn25.HeaderText = "partner_brand_ID";
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            this.dataGridViewTextBoxColumn25.Visible = false;
             // 
             // itemBindingSource
             // 
@@ -431,32 +472,16 @@ namespace ITP4915_group3_project.Purchase.PO.create.PPO
             this.tentative_schedulesKryptonDateTimePicker.CornerRoundingRadius = -1F;
             this.tentative_schedulesKryptonDateTimePicker.Location = new System.Drawing.Point(430, 198);
             this.tentative_schedulesKryptonDateTimePicker.Name = "tentative_schedulesKryptonDateTimePicker";
+            this.tentative_schedulesKryptonDateTimePicker.PaletteMode = Krypton.Toolkit.PaletteMode.Global;
             this.tentative_schedulesKryptonDateTimePicker.Size = new System.Drawing.Size(240, 21);
             this.tentative_schedulesKryptonDateTimePicker.TabIndex = 9;
-            // 
-            // buyer_IDKryptonNumericUpDown
-            // 
-            this.buyer_IDKryptonNumericUpDown.Increment = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.buyer_IDKryptonNumericUpDown.Location = new System.Drawing.Point(83, 76);
-            this.buyer_IDKryptonNumericUpDown.Maximum = new decimal(new int[] {
-            999999999,
-            0,
-            0,
-            0});
-            this.buyer_IDKryptonNumericUpDown.Name = "buyer_IDKryptonNumericUpDown";
-            this.buyer_IDKryptonNumericUpDown.ReadOnly = true;
-            this.buyer_IDKryptonNumericUpDown.Size = new System.Drawing.Size(120, 22);
-            this.buyer_IDKryptonNumericUpDown.TabIndex = 7;
             // 
             // effective_dateKryptonDateTimePicker
             // 
             this.effective_dateKryptonDateTimePicker.CornerRoundingRadius = -1F;
             this.effective_dateKryptonDateTimePicker.Location = new System.Drawing.Point(430, 145);
             this.effective_dateKryptonDateTimePicker.Name = "effective_dateKryptonDateTimePicker";
+            this.effective_dateKryptonDateTimePicker.PaletteMode = Krypton.Toolkit.PaletteMode.Global;
             this.effective_dateKryptonDateTimePicker.Size = new System.Drawing.Size(240, 21);
             this.effective_dateKryptonDateTimePicker.TabIndex = 5;
             // 
@@ -465,6 +490,7 @@ namespace ITP4915_group3_project.Purchase.PO.create.PPO
             this.create_dateKryptonDateTimePicker.CornerRoundingRadius = -1F;
             this.create_dateKryptonDateTimePicker.Location = new System.Drawing.Point(430, 107);
             this.create_dateKryptonDateTimePicker.Name = "create_dateKryptonDateTimePicker";
+            this.create_dateKryptonDateTimePicker.PaletteMode = Krypton.Toolkit.PaletteMode.Global;
             this.create_dateKryptonDateTimePicker.Size = new System.Drawing.Size(240, 21);
             this.create_dateKryptonDateTimePicker.TabIndex = 3;
             // 
@@ -644,6 +670,76 @@ namespace ITP4915_group3_project.Purchase.PO.create.PPO
             // 
             this.ppo_linesTableAdapter.ClearBeforeFill = true;
             // 
+            // select
+            // 
+            this.select.ButtonStyle = Krypton.Toolkit.ButtonStyle.Standalone;
+            this.select.HeaderText = "select";
+            this.select.Name = "select";
+            this.select.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.select.Text = "add";
+            this.select.UseColumnTextForButtonValue = true;
+            this.select.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "supplier_ID";
+            this.dataGridViewTextBoxColumn17.HeaderText = "supplier_ID";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.DataPropertyName = "item_ID";
+            this.dataGridViewTextBoxColumn26.HeaderText = "item_ID";
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            this.dataGridViewTextBoxColumn26.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.DataPropertyName = "item_name";
+            this.dataGridViewTextBoxColumn27.HeaderText = "item_name";
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            this.dataGridViewTextBoxColumn27.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn28
+            // 
+            this.dataGridViewTextBoxColumn28.DataPropertyName = "price";
+            this.dataGridViewTextBoxColumn28.HeaderText = "price";
+            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
+            this.dataGridViewTextBoxColumn28.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn29
+            // 
+            this.dataGridViewTextBoxColumn29.DataPropertyName = "size";
+            this.dataGridViewTextBoxColumn29.HeaderText = "size";
+            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
+            this.dataGridViewTextBoxColumn29.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.DataPropertyName = "category_ID";
+            this.dataGridViewTextBoxColumn30.HeaderText = "category_ID";
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            this.dataGridViewTextBoxColumn30.ReadOnly = true;
+            this.dataGridViewTextBoxColumn30.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn31
+            // 
+            this.dataGridViewTextBoxColumn31.DataPropertyName = "partner_brand_ID";
+            this.dataGridViewTextBoxColumn31.HeaderText = "partner_brand_ID";
+            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
+            this.dataGridViewTextBoxColumn31.ReadOnly = true;
+            this.dataGridViewTextBoxColumn31.Visible = false;
+            // 
+            // kryptonTextBoxBuyerID
+            // 
+            this.kryptonTextBoxBuyerID.Location = new System.Drawing.Point(83, 76);
+            this.kryptonTextBoxBuyerID.Name = "kryptonTextBoxBuyerID";
+            this.kryptonTextBoxBuyerID.ReadOnly = true;
+            this.kryptonTextBoxBuyerID.Size = new System.Drawing.Size(120, 23);
+            this.kryptonTextBoxBuyerID.TabIndex = 26;
+            this.kryptonTextBoxBuyerID.Text = "kryptonTextBoxBuyerID";
+            // 
             // create
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -675,7 +771,6 @@ namespace ITP4915_group3_project.Purchase.PO.create.PPO
         private Krypton.Toolkit.KryptonTextBox termKryptonTextBox;
         private Krypton.Toolkit.KryptonNumericUpDown amountKryptonNumericUpDown;
         private Krypton.Toolkit.KryptonDateTimePicker tentative_schedulesKryptonDateTimePicker;
-        private Krypton.Toolkit.KryptonNumericUpDown buyer_IDKryptonNumericUpDown;
         private Krypton.Toolkit.KryptonDateTimePicker effective_dateKryptonDateTimePicker;
         private Krypton.Toolkit.KryptonDateTimePicker create_dateKryptonDateTimePicker;
         private Krypton.Toolkit.KryptonComboBox supplierNameKryptonComboBox;
@@ -709,15 +804,28 @@ namespace ITP4915_group3_project.Purchase.PO.create.PPO
         private Krypton.Toolkit.KryptonButton kryptonButtonSubmit;
         private purchase_dbDataSetTableAdapters.ppo_headerTableAdapter ppo_headerTableAdapter;
         private Krypton.Toolkit.KryptonNumericUpDown currencyKryptonNumericUpDown;
-        private Krypton.Toolkit.KryptonDataGridViewButtonColumn select;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
         private purchase_dbDataSetTableAdapters.ppo_linesTableAdapter ppo_linesTableAdapter;
         private System.Windows.Forms.BindingSource itemBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
+        private Krypton.Toolkit.KryptonDataGridViewButtonColumn select;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn29;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn30;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn31;
+        private Krypton.Toolkit.KryptonTextBox kryptonTextBoxBuyerID;
     }
 }
