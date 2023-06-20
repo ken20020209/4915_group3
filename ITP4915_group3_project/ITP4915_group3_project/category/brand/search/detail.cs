@@ -12,9 +12,15 @@ namespace ITP4915_group3_project.category.brand.search
 {
     public partial class detail : UserControl
     {
-        public detail()
+        private check check;
+        private int v;
+
+        public detail(check check, int v)
         {
+            this.check = check;
+            this.v = v;
             InitializeComponent();
+
         }
     }
 }
