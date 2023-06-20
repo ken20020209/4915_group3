@@ -420,6 +420,11 @@
     <Compile Include="category\supplier\search\edit.Designer.cs">
       <DependentUpon>edit.cs</DependentUpon>
     </Compile>
+    <Compile Include="category_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>category_dbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="delivery\create_schedule\check.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1524,6 +1529,17 @@
     <EmbeddedResource Include="warehouse\warehouse.resx">
       <DependentUpon>warehouse.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="category_dbDataSet.xsc">
+      <DependentUpon>category_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="category_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>category_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="category_dbDataSet.xss">
+      <DependentUpon>category_dbDataSet.xsd</DependentUpon>
+    </None>
     <None Include="humanResources_dbDataSet.xsc">
       <DependentUpon>humanResources_dbDataSet.xsd</DependentUpon>
     </None>
