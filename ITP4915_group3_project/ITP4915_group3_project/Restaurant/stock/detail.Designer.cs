@@ -398,7 +398,7 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.kryptonLabel6.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel6.Name = "kryptonLabel6";
             this.kryptonLabel6.Size = new System.Drawing.Size(50, 16);
-            this.kryptonLabel6.StateCommon.ShortText.Font = new System.Drawing.Font("PMingLiU", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.kryptonLabel6.StateCommon.ShortText.Font = new System.Drawing.Font("新細明體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.kryptonLabel6.TabIndex = 207;
             this.kryptonLabel6.Values.Text = "← Back";
             this.kryptonLabel6.Click += new System.EventHandler(this.kryptonLabelBack_Click);
@@ -595,7 +595,7 @@ namespace ITP4915_group3_project.Restaurant.stock
             this.kryptonLabelBack.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabelBack.Name = "kryptonLabelBack";
             this.kryptonLabelBack.Size = new System.Drawing.Size(50, 16);
-            this.kryptonLabelBack.StateCommon.ShortText.Font = new System.Drawing.Font("PMingLiU", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.kryptonLabelBack.StateCommon.ShortText.Font = new System.Drawing.Font("新細明體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.kryptonLabelBack.TabIndex = 207;
             this.kryptonLabelBack.Values.Text = "← Back";
             this.kryptonLabelBack.Click += new System.EventHandler(this.kryptonLabelBack_Click);

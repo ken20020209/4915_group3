@@ -645,7 +645,7 @@ ORDER BY    delivery_request_ID</CommandText>
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT          warehouse_item.item_ID, item.item_name, item_category.category_name, warehouse_item.qty, 
-                            warehouse_item.expected_inventory, warehouse_item.warehouse_ID
+                            warehouse_item.expected_inventory, warehouse_item.warehouse_ID, item_category.category_ID
 FROM               item_category INNER JOIN
                             item ON item_category.category_ID = item.category_ID INNER JOIN
                             warehouse_item ON item.item_ID = warehouse_item.item_ID
@@ -665,6 +665,37 @@ ORDER BY    warehouse_item.item_ID</CommandText>
               <Mapping SourceColumn="qty" DataSetColumn="qty" />
               <Mapping SourceColumn="expected_inventory" DataSetColumn="expected_inventory" />
               <Mapping SourceColumn="warehouse_ID" DataSetColumn="warehouse_ID" />
+              <Mapping SourceColumn="category_ID" DataSetColumn="category_ID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable_warehouse_stock_detailTableAdapter" GeneratorDataComponentClassName="DataTable_warehouse_stock_detailTableAdapter" Name="DataTable_warehouse_stock_detail" UserDataComponentName="DataTable_warehouse_stock_detailTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="_4523_g1_project_dbConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT          warehouse_item.expected_inventory, warehouse_item.qty, warehouse_item.item_ID, item_category.category_name, 
+                            item_category.description, supplier.supplier_ID, supplier.name, item.item_ID AS Expr1, item.item_name, 
+                            warehouse_item.warehouse_ID
+FROM               item INNER JOIN
+                            warehouse_item ON item.item_ID = warehouse_item.item_ID INNER JOIN
+                            item_category ON item.category_ID = item_category.category_ID, supplier</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="expected_inventory" DataSetColumn="expected_inventory" />
+              <Mapping SourceColumn="qty" DataSetColumn="qty" />
+              <Mapping SourceColumn="item_ID" DataSetColumn="item_ID" />
+              <Mapping SourceColumn="category_name" DataSetColumn="category_name" />
+              <Mapping SourceColumn="description" DataSetColumn="description" />
+              <Mapping SourceColumn="supplier_ID" DataSetColumn="supplier_ID" />
+              <Mapping SourceColumn="name" DataSetColumn="name" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="item_name" DataSetColumn="item_name" />
+              <Mapping SourceColumn="warehouse_ID" DataSetColumn="warehouse_ID" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -676,7 +707,7 @@ ORDER BY    warehouse_item.item_ID</CommandText>
   <xs:element name="warehouse_dbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="warehouse_dbDataSet" msprop:Generator_UserDSName="warehouse_dbDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="delivery_request" msprop:Generator_TableClassName="delivery_requestDataTable" msprop:Generator_TableVarName="tabledelivery_request" msprop:Generator_RowChangedName="delivery_requestRowChanged" msprop:Generator_TablePropName="delivery_request" msprop:Generator_RowDeletingName="delivery_requestRowDeleting" msprop:Generator_RowChangingName="delivery_requestRowChanging" msprop:Generator_RowEvHandlerName="delivery_requestRowChangeEventHandler" msprop:Generator_RowDeletedName="delivery_requestRowDeleted" msprop:Generator_RowClassName="delivery_requestRow" msprop:Generator_UserTableName="delivery_request" msprop:Generator_RowEvArgName="delivery_requestRowChangeEvent">
+        <xs:element name="delivery_request" msprop:Generator_TableClassName="delivery_requestDataTable" msprop:Generator_TableVarName="tabledelivery_request" msprop:Generator_TablePropName="delivery_request" msprop:Generator_RowDeletingName="delivery_requestRowDeleting" msprop:Generator_RowChangingName="delivery_requestRowChanging" msprop:Generator_RowEvHandlerName="delivery_requestRowChangeEventHandler" msprop:Generator_RowDeletedName="delivery_requestRowDeleted" msprop:Generator_UserTableName="delivery_request" msprop:Generator_RowChangedName="delivery_requestRowChanged" msprop:Generator_RowEvArgName="delivery_requestRowChangeEvent" msprop:Generator_RowClassName="delivery_requestRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="delivery_request_ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columndelivery_request_ID" msprop:Generator_ColumnPropNameInRow="delivery_request_ID" msprop:Generator_ColumnPropNameInTable="delivery_request_IDColumn" msprop:Generator_UserColumnName="delivery_request_ID" type="xs:int" />
@@ -693,7 +724,7 @@ ORDER BY    warehouse_item.item_ID</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="item" msprop:Generator_TableClassName="itemDataTable" msprop:Generator_TableVarName="tableitem" msprop:Generator_RowChangedName="itemRowChanged" msprop:Generator_TablePropName="item" msprop:Generator_RowDeletingName="itemRowDeleting" msprop:Generator_RowChangingName="itemRowChanging" msprop:Generator_RowEvHandlerName="itemRowChangeEventHandler" msprop:Generator_RowDeletedName="itemRowDeleted" msprop:Generator_RowClassName="itemRow" msprop:Generator_UserTableName="item" msprop:Generator_RowEvArgName="itemRowChangeEvent">
+        <xs:element name="item" msprop:Generator_TableClassName="itemDataTable" msprop:Generator_TableVarName="tableitem" msprop:Generator_TablePropName="item" msprop:Generator_RowDeletingName="itemRowDeleting" msprop:Generator_RowChangingName="itemRowChanging" msprop:Generator_RowEvHandlerName="itemRowChangeEventHandler" msprop:Generator_RowDeletedName="itemRowDeleted" msprop:Generator_UserTableName="item" msprop:Generator_RowChangedName="itemRowChanged" msprop:Generator_RowEvArgName="itemRowChangeEvent" msprop:Generator_RowClassName="itemRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="item_ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnitem_ID" msprop:Generator_ColumnPropNameInRow="item_ID" msprop:Generator_ColumnPropNameInTable="item_IDColumn" msprop:Generator_UserColumnName="item_ID" type="xs:int" />
@@ -717,7 +748,7 @@ ORDER BY    warehouse_item.item_ID</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="warehouse" msprop:Generator_TableClassName="warehouseDataTable" msprop:Generator_TableVarName="tablewarehouse" msprop:Generator_RowChangedName="warehouseRowChanged" msprop:Generator_TablePropName="warehouse" msprop:Generator_RowDeletingName="warehouseRowDeleting" msprop:Generator_RowChangingName="warehouseRowChanging" msprop:Generator_RowEvHandlerName="warehouseRowChangeEventHandler" msprop:Generator_RowDeletedName="warehouseRowDeleted" msprop:Generator_RowClassName="warehouseRow" msprop:Generator_UserTableName="warehouse" msprop:Generator_RowEvArgName="warehouseRowChangeEvent">
+        <xs:element name="warehouse" msprop:Generator_TableClassName="warehouseDataTable" msprop:Generator_TableVarName="tablewarehouse" msprop:Generator_TablePropName="warehouse" msprop:Generator_RowDeletingName="warehouseRowDeleting" msprop:Generator_RowChangingName="warehouseRowChanging" msprop:Generator_RowEvHandlerName="warehouseRowChangeEventHandler" msprop:Generator_RowDeletedName="warehouseRowDeleted" msprop:Generator_UserTableName="warehouse" msprop:Generator_RowChangedName="warehouseRowChanged" msprop:Generator_RowEvArgName="warehouseRowChangeEvent" msprop:Generator_RowClassName="warehouseRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="warehouse_ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnwarehouse_ID" msprop:Generator_ColumnPropNameInRow="warehouse_ID" msprop:Generator_ColumnPropNameInTable="warehouse_IDColumn" msprop:Generator_UserColumnName="warehouse_ID" type="xs:int" />
@@ -732,7 +763,7 @@ ORDER BY    warehouse_item.item_ID</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="warehouse_item" msprop:Generator_TableClassName="warehouse_itemDataTable" msprop:Generator_TableVarName="tablewarehouse_item" msprop:Generator_RowChangedName="warehouse_itemRowChanged" msprop:Generator_TablePropName="warehouse_item" msprop:Generator_RowDeletingName="warehouse_itemRowDeleting" msprop:Generator_RowChangingName="warehouse_itemRowChanging" msprop:Generator_RowEvHandlerName="warehouse_itemRowChangeEventHandler" msprop:Generator_RowDeletedName="warehouse_itemRowDeleted" msprop:Generator_RowClassName="warehouse_itemRow" msprop:Generator_UserTableName="warehouse_item" msprop:Generator_RowEvArgName="warehouse_itemRowChangeEvent">
+        <xs:element name="warehouse_item" msprop:Generator_TableClassName="warehouse_itemDataTable" msprop:Generator_TableVarName="tablewarehouse_item" msprop:Generator_TablePropName="warehouse_item" msprop:Generator_RowDeletingName="warehouse_itemRowDeleting" msprop:Generator_RowChangingName="warehouse_itemRowChanging" msprop:Generator_RowEvHandlerName="warehouse_itemRowChangeEventHandler" msprop:Generator_RowDeletedName="warehouse_itemRowDeleted" msprop:Generator_UserTableName="warehouse_item" msprop:Generator_RowChangedName="warehouse_itemRowChanged" msprop:Generator_RowEvArgName="warehouse_itemRowChangeEvent" msprop:Generator_RowClassName="warehouse_itemRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="warehouse_ID" msprop:Generator_ColumnVarNameInTable="columnwarehouse_ID" msprop:Generator_ColumnPropNameInRow="warehouse_ID" msprop:Generator_ColumnPropNameInTable="warehouse_IDColumn" msprop:Generator_UserColumnName="warehouse_ID" type="xs:int" />
@@ -742,7 +773,7 @@ ORDER BY    warehouse_item.item_ID</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="warehousedispatchinstruction" msprop:Generator_TableClassName="warehousedispatchinstructionDataTable" msprop:Generator_TableVarName="tablewarehousedispatchinstruction" msprop:Generator_RowChangedName="warehousedispatchinstructionRowChanged" msprop:Generator_TablePropName="warehousedispatchinstruction" msprop:Generator_RowDeletingName="warehousedispatchinstructionRowDeleting" msprop:Generator_RowChangingName="warehousedispatchinstructionRowChanging" msprop:Generator_RowEvHandlerName="warehousedispatchinstructionRowChangeEventHandler" msprop:Generator_RowDeletedName="warehousedispatchinstructionRowDeleted" msprop:Generator_RowClassName="warehousedispatchinstructionRow" msprop:Generator_UserTableName="warehousedispatchinstruction" msprop:Generator_RowEvArgName="warehousedispatchinstructionRowChangeEvent">
+        <xs:element name="warehousedispatchinstruction" msprop:Generator_TableClassName="warehousedispatchinstructionDataTable" msprop:Generator_TableVarName="tablewarehousedispatchinstruction" msprop:Generator_TablePropName="warehousedispatchinstruction" msprop:Generator_RowDeletingName="warehousedispatchinstructionRowDeleting" msprop:Generator_RowChangingName="warehousedispatchinstructionRowChanging" msprop:Generator_RowEvHandlerName="warehousedispatchinstructionRowChangeEventHandler" msprop:Generator_RowDeletedName="warehousedispatchinstructionRowDeleted" msprop:Generator_UserTableName="warehousedispatchinstruction" msprop:Generator_RowChangedName="warehousedispatchinstructionRowChanged" msprop:Generator_RowEvArgName="warehousedispatchinstructionRowChangeEvent" msprop:Generator_RowClassName="warehousedispatchinstructionRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Instruction_ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnInstruction_ID" msprop:Generator_ColumnPropNameInRow="Instruction_ID" msprop:Generator_ColumnPropNameInTable="Instruction_IDColumn" msprop:Generator_UserColumnName="Instruction_ID" type="xs:int" />
@@ -761,7 +792,7 @@ ORDER BY    warehouse_item.item_ID</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="item_category" msprop:Generator_TableClassName="item_categoryDataTable" msprop:Generator_TableVarName="tableitem_category" msprop:Generator_TablePropName="item_category" msprop:Generator_RowDeletingName="item_categoryRowDeleting" msprop:Generator_RowChangingName="item_categoryRowChanging" msprop:Generator_RowEvHandlerName="item_categoryRowChangeEventHandler" msprop:Generator_RowDeletedName="item_categoryRowDeleted" msprop:Generator_UserTableName="item_category" msprop:Generator_RowChangedName="item_categoryRowChanged" msprop:Generator_RowEvArgName="item_categoryRowChangeEvent" msprop:Generator_RowClassName="item_categoryRow">
+        <xs:element name="item_category" msprop:Generator_TableClassName="item_categoryDataTable" msprop:Generator_TableVarName="tableitem_category" msprop:Generator_RowChangedName="item_categoryRowChanged" msprop:Generator_TablePropName="item_category" msprop:Generator_RowDeletingName="item_categoryRowDeleting" msprop:Generator_RowChangingName="item_categoryRowChanging" msprop:Generator_RowEvHandlerName="item_categoryRowChangeEventHandler" msprop:Generator_RowDeletedName="item_categoryRowDeleted" msprop:Generator_RowClassName="item_categoryRow" msprop:Generator_UserTableName="item_category" msprop:Generator_RowEvArgName="item_categoryRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="category_ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncategory_ID" msprop:Generator_ColumnPropNameInRow="category_ID" msprop:Generator_ColumnPropNameInTable="category_IDColumn" msprop:Generator_UserColumnName="category_ID" type="xs:int" />
@@ -782,7 +813,7 @@ ORDER BY    warehouse_item.item_ID</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="user" msprop:Generator_TableClassName="userDataTable" msprop:Generator_TableVarName="tableuser" msprop:Generator_TablePropName="user" msprop:Generator_RowDeletingName="userRowDeleting" msprop:Generator_RowChangingName="userRowChanging" msprop:Generator_RowEvHandlerName="userRowChangeEventHandler" msprop:Generator_RowDeletedName="userRowDeleted" msprop:Generator_UserTableName="user" msprop:Generator_RowChangedName="userRowChanged" msprop:Generator_RowEvArgName="userRowChangeEvent" msprop:Generator_RowClassName="userRow">
+        <xs:element name="user" msprop:Generator_TableClassName="userDataTable" msprop:Generator_TableVarName="tableuser" msprop:Generator_RowChangedName="userRowChanged" msprop:Generator_TablePropName="user" msprop:Generator_RowDeletingName="userRowDeleting" msprop:Generator_RowChangingName="userRowChanging" msprop:Generator_RowEvHandlerName="userRowChangeEventHandler" msprop:Generator_RowDeletedName="userRowDeleted" msprop:Generator_RowClassName="userRow" msprop:Generator_UserTableName="user" msprop:Generator_RowEvArgName="userRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="user_id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnuser_id" msprop:Generator_ColumnPropNameInRow="user_id" msprop:Generator_ColumnPropNameInTable="user_idColumn" msprop:Generator_UserColumnName="user_id" type="xs:int" />
@@ -839,7 +870,7 @@ ORDER BY    warehouse_item.item_ID</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="purchase_order_all" msprop:Generator_TableClassName="purchase_order_allDataTable" msprop:Generator_TableVarName="tablepurchase_order_all" msprop:Generator_RowChangedName="purchase_order_allRowChanged" msprop:Generator_TablePropName="purchase_order_all" msprop:Generator_RowDeletingName="purchase_order_allRowDeleting" msprop:Generator_RowChangingName="purchase_order_allRowChanging" msprop:Generator_RowEvHandlerName="purchase_order_allRowChangeEventHandler" msprop:Generator_RowDeletedName="purchase_order_allRowDeleted" msprop:Generator_RowClassName="purchase_order_allRow" msprop:Generator_UserTableName="purchase_order_all" msprop:Generator_RowEvArgName="purchase_order_allRowChangeEvent">
+        <xs:element name="purchase_order_all" msprop:Generator_TableClassName="purchase_order_allDataTable" msprop:Generator_TableVarName="tablepurchase_order_all" msprop:Generator_TablePropName="purchase_order_all" msprop:Generator_RowDeletingName="purchase_order_allRowDeleting" msprop:Generator_RowChangingName="purchase_order_allRowChanging" msprop:Generator_RowEvHandlerName="purchase_order_allRowChangeEventHandler" msprop:Generator_RowDeletedName="purchase_order_allRowDeleted" msprop:Generator_UserTableName="purchase_order_all" msprop:Generator_RowChangedName="purchase_order_allRowChanged" msprop:Generator_RowEvArgName="purchase_order_allRowChangeEvent" msprop:Generator_RowClassName="purchase_order_allRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Purchase_order_ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnPurchase_order_ID" msprop:Generator_ColumnPropNameInRow="Purchase_order_ID" msprop:Generator_ColumnPropNameInTable="Purchase_order_IDColumn" msprop:Generator_UserColumnName="Purchase_order_ID" type="xs:int" />
@@ -858,7 +889,7 @@ ORDER BY    warehouse_item.item_ID</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="status" msprop:Generator_TableClassName="statusDataTable" msprop:Generator_TableVarName="tablestatus" msprop:Generator_RowChangedName="statusRowChanged" msprop:Generator_TablePropName="status" msprop:Generator_RowDeletingName="statusRowDeleting" msprop:Generator_RowChangingName="statusRowChanging" msprop:Generator_RowEvHandlerName="statusRowChangeEventHandler" msprop:Generator_RowDeletedName="statusRowDeleted" msprop:Generator_RowClassName="statusRow" msprop:Generator_UserTableName="status" msprop:Generator_RowEvArgName="statusRowChangeEvent">
+        <xs:element name="status" msprop:Generator_TableClassName="statusDataTable" msprop:Generator_TableVarName="tablestatus" msprop:Generator_TablePropName="status" msprop:Generator_RowDeletingName="statusRowDeleting" msprop:Generator_RowChangingName="statusRowChanging" msprop:Generator_RowEvHandlerName="statusRowChangeEventHandler" msprop:Generator_RowDeletedName="statusRowDeleted" msprop:Generator_UserTableName="status" msprop:Generator_RowChangedName="statusRowChanged" msprop:Generator_RowEvArgName="statusRowChangeEvent" msprop:Generator_RowClassName="statusRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="status_ID" msprop:Generator_ColumnVarNameInTable="columnstatus_ID" msprop:Generator_ColumnPropNameInRow="status_ID" msprop:Generator_ColumnPropNameInTable="status_IDColumn" msprop:Generator_UserColumnName="status_ID" type="xs:int" />
@@ -879,7 +910,7 @@ ORDER BY    warehouse_item.item_ID</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="DataTable_warehouse_stock_search" msprop:Generator_TableClassName="DataTable_warehouse_stock_searchDataTable" msprop:Generator_TableVarName="tableDataTable_warehouse_stock_search" msprop:Generator_TablePropName="DataTable_warehouse_stock_search" msprop:Generator_RowDeletingName="DataTable_warehouse_stock_searchRowDeleting" msprop:Generator_RowChangingName="DataTable_warehouse_stock_searchRowChanging" msprop:Generator_RowEvHandlerName="DataTable_warehouse_stock_searchRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable_warehouse_stock_searchRowDeleted" msprop:Generator_UserTableName="DataTable_warehouse_stock_search" msprop:Generator_RowChangedName="DataTable_warehouse_stock_searchRowChanged" msprop:Generator_RowEvArgName="DataTable_warehouse_stock_searchRowChangeEvent" msprop:Generator_RowClassName="DataTable_warehouse_stock_searchRow">
+        <xs:element name="DataTable_warehouse_stock_search" msprop:Generator_TableClassName="DataTable_warehouse_stock_searchDataTable" msprop:Generator_TableVarName="tableDataTable_warehouse_stock_search" msprop:Generator_RowChangedName="DataTable_warehouse_stock_searchRowChanged" msprop:Generator_TablePropName="DataTable_warehouse_stock_search" msprop:Generator_RowDeletingName="DataTable_warehouse_stock_searchRowDeleting" msprop:Generator_RowChangingName="DataTable_warehouse_stock_searchRowChanging" msprop:Generator_RowEvHandlerName="DataTable_warehouse_stock_searchRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable_warehouse_stock_searchRowDeleted" msprop:Generator_RowClassName="DataTable_warehouse_stock_searchRow" msprop:Generator_UserTableName="DataTable_warehouse_stock_search" msprop:Generator_RowEvArgName="DataTable_warehouse_stock_searchRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="item_ID" msprop:Generator_ColumnVarNameInTable="columnitem_ID" msprop:Generator_ColumnPropNameInRow="item_ID" msprop:Generator_ColumnPropNameInTable="item_IDColumn" msprop:Generator_UserColumnName="item_ID" type="xs:int" />
@@ -899,6 +930,47 @@ ORDER BY    warehouse_item.item_ID</CommandText>
               </xs:element>
               <xs:element name="qty" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnPropNameInTable="qtyColumn" msprop:Generator_UserColumnName="qty" type="xs:int" />
               <xs:element name="expected_inventory" msprop:Generator_ColumnVarNameInTable="columnexpected_inventory" msprop:Generator_ColumnPropNameInRow="expected_inventory" msprop:Generator_ColumnPropNameInTable="expected_inventoryColumn" msprop:Generator_UserColumnName="expected_inventory" type="xs:int" minOccurs="0" />
+              <xs:element name="warehouse_ID" msprop:Generator_ColumnVarNameInTable="columnwarehouse_ID" msprop:Generator_ColumnPropNameInRow="warehouse_ID" msprop:Generator_ColumnPropNameInTable="warehouse_IDColumn" msprop:Generator_UserColumnName="warehouse_ID" type="xs:int" />
+              <xs:element name="category_ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncategory_ID" msprop:Generator_ColumnPropNameInRow="category_ID" msprop:Generator_ColumnPropNameInTable="category_IDColumn" msprop:Generator_UserColumnName="category_ID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable_warehouse_stock_detail" msprop:Generator_TableClassName="DataTable_warehouse_stock_detailDataTable" msprop:Generator_TableVarName="tableDataTable_warehouse_stock_detail" msprop:Generator_TablePropName="DataTable_warehouse_stock_detail" msprop:Generator_RowDeletingName="DataTable_warehouse_stock_detailRowDeleting" msprop:Generator_RowChangingName="DataTable_warehouse_stock_detailRowChanging" msprop:Generator_RowEvHandlerName="DataTable_warehouse_stock_detailRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable_warehouse_stock_detailRowDeleted" msprop:Generator_UserTableName="DataTable_warehouse_stock_detail" msprop:Generator_RowChangedName="DataTable_warehouse_stock_detailRowChanged" msprop:Generator_RowEvArgName="DataTable_warehouse_stock_detailRowChangeEvent" msprop:Generator_RowClassName="DataTable_warehouse_stock_detailRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="expected_inventory" msprop:Generator_ColumnVarNameInTable="columnexpected_inventory" msprop:Generator_ColumnPropNameInRow="expected_inventory" msprop:Generator_ColumnPropNameInTable="expected_inventoryColumn" msprop:Generator_UserColumnName="expected_inventory" type="xs:int" minOccurs="0" />
+              <xs:element name="qty" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnPropNameInTable="qtyColumn" msprop:Generator_UserColumnName="qty" type="xs:int" />
+              <xs:element name="item_ID" msprop:Generator_ColumnVarNameInTable="columnitem_ID" msprop:Generator_ColumnPropNameInRow="item_ID" msprop:Generator_ColumnPropNameInTable="item_IDColumn" msprop:Generator_UserColumnName="item_ID" type="xs:int" />
+              <xs:element name="category_name" msprop:Generator_ColumnVarNameInTable="columncategory_name" msprop:Generator_ColumnPropNameInRow="category_name" msprop:Generator_ColumnPropNameInTable="category_nameColumn" msprop:Generator_UserColumnName="category_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="description" msprop:Generator_ColumnVarNameInTable="columndescription" msprop:Generator_ColumnPropNameInRow="description" msprop:Generator_ColumnPropNameInTable="descriptionColumn" msprop:Generator_UserColumnName="description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="supplier_ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnsupplier_ID" msprop:Generator_ColumnPropNameInRow="supplier_ID" msprop:Generator_ColumnPropNameInTable="supplier_IDColumn" msprop:Generator_UserColumnName="supplier_ID" type="xs:int" />
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expr1" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" type="xs:int" />
+              <xs:element name="item_name" msprop:Generator_ColumnVarNameInTable="columnitem_name" msprop:Generator_ColumnPropNameInRow="item_name" msprop:Generator_ColumnPropNameInTable="item_nameColumn" msprop:Generator_UserColumnName="item_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
               <xs:element name="warehouse_ID" msprop:Generator_ColumnVarNameInTable="columnwarehouse_ID" msprop:Generator_ColumnPropNameInRow="warehouse_ID" msprop:Generator_ColumnPropNameInTable="warehouse_IDColumn" msprop:Generator_UserColumnName="warehouse_ID" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
@@ -946,19 +1018,27 @@ ORDER BY    warehouse_item.item_ID</CommandText>
       <xs:selector xpath=".//mstns:DataTable_warehouse_stock_search" />
       <xs:field xpath="mstns:item_ID" />
     </xs:unique>
+    <xs:unique name="DataTable_warehouse_stock_detail_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable_warehouse_stock_detail" />
+      <xs:field xpath="mstns:item_ID" />
+      <xs:field xpath="mstns:supplier_ID" />
+      <xs:field xpath="mstns:Expr1" />
+      <xs:field xpath="mstns:warehouse_ID" />
+    </xs:unique>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="Delivery_Request_item_ID_fk" msdata:parent="item" msdata:child="delivery_request" msdata:parentkey="item_ID" msdata:childkey="item_ID" msprop:Generator_UserChildTable="delivery_request" msprop:Generator_ChildPropName="Getdelivery_requestRows" msprop:Generator_UserRelationName="Delivery_Request_item_ID_fk" msprop:Generator_ParentPropName="itemRow" msprop:Generator_RelationVarName="relationDelivery_Request_item_ID_fk" msprop:Generator_UserParentTable="item" />
-      <msdata:Relationship name="Warehouse_item_item_ID_fk" msdata:parent="item" msdata:child="warehouse_item" msdata:parentkey="item_ID" msdata:childkey="item_ID" msprop:Generator_UserChildTable="warehouse_item" msprop:Generator_ChildPropName="Getwarehouse_itemRows" msprop:Generator_UserRelationName="Warehouse_item_item_ID_fk" msprop:Generator_RelationVarName="relationWarehouse_item_item_ID_fk" msprop:Generator_UserParentTable="item" msprop:Generator_ParentPropName="itemRow" />
-      <msdata:Relationship name="Warehouse_item_warehouse_ID_fk" msdata:parent="warehouse" msdata:child="warehouse_item" msdata:parentkey="warehouse_ID" msdata:childkey="warehouse_ID" msprop:Generator_UserChildTable="warehouse_item" msprop:Generator_ChildPropName="Getwarehouse_itemRows" msprop:Generator_UserRelationName="Warehouse_item_warehouse_ID_fk" msprop:Generator_RelationVarName="relationWarehouse_item_warehouse_ID_fk" msprop:Generator_UserParentTable="warehouse" msprop:Generator_ParentPropName="warehouseRow" />
-      <msdata:Relationship name="WarehouseDispatchInstruction_warehouse_ID_itemID_fk" msdata:parent="warehouse_item" msdata:child="warehousedispatchinstruction" msdata:parentkey="warehouse_ID item_ID" msdata:childkey="warehouse_ID itemID" msprop:Generator_UserChildTable="warehousedispatchinstruction" msprop:Generator_ChildPropName="GetwarehousedispatchinstructionRows" msprop:Generator_UserRelationName="WarehouseDispatchInstruction_warehouse_ID_itemID_fk" msprop:Generator_RelationVarName="relationWarehouseDispatchInstruction_warehouse_ID_itemID_fk" msprop:Generator_UserParentTable="warehouse_item" msprop:Generator_ParentPropName="warehouse_itemRowParent" />
-      <msdata:Relationship name="item_category_ID_fk" msdata:parent="item_category" msdata:child="item" msdata:parentkey="category_ID" msdata:childkey="category_ID" msprop:Generator_UserChildTable="item" msprop:Generator_ChildPropName="GetitemRows" msprop:Generator_UserRelationName="item_category_ID_fk" msprop:Generator_RelationVarName="relationitem_category_ID_fk" msprop:Generator_UserParentTable="item_category" msprop:Generator_ParentPropName="item_categoryRow" />
-      <msdata:Relationship name="WarehouseDispatchInstruction_handler_fk" msdata:parent="user" msdata:child="warehousedispatchinstruction" msdata:parentkey="user_id" msdata:childkey="handler" msprop:Generator_UserChildTable="warehousedispatchinstruction" msprop:Generator_ChildPropName="GetwarehousedispatchinstructionRows" msprop:Generator_UserRelationName="WarehouseDispatchInstruction_handler_fk" msprop:Generator_RelationVarName="relationWarehouseDispatchInstruction_handler_fk" msprop:Generator_UserParentTable="user" msprop:Generator_ParentPropName="userRow" />
-      <msdata:Relationship name="purchase_order_all_delivery_note_ID_fk" msdata:parent="delivery_request" msdata:child="purchase_order_all" msdata:parentkey="delivery_request_ID" msdata:childkey="delivery_note_ID" msprop:Generator_UserChildTable="purchase_order_all" msprop:Generator_ChildPropName="Getpurchase_order_allRows" msprop:Generator_UserRelationName="purchase_order_all_delivery_note_ID_fk" msprop:Generator_RelationVarName="relationpurchase_order_all_delivery_note_ID_fk" msprop:Generator_UserParentTable="delivery_request" msprop:Generator_ParentPropName="delivery_requestRow" />
-      <msdata:Relationship name="Delivery_Request_status_ID_fk" msdata:parent="status" msdata:child="delivery_request" msdata:parentkey="status_ID" msdata:childkey="status_ID" msprop:Generator_UserChildTable="delivery_request" msprop:Generator_ChildPropName="Getdelivery_requestRows" msprop:Generator_UserRelationName="Delivery_Request_status_ID_fk" msprop:Generator_ParentPropName="statusRow" msprop:Generator_RelationVarName="relationDelivery_Request_status_ID_fk" msprop:Generator_UserParentTable="status" />
-      <msdata:Relationship name="WarehouseDispatchInstruction_status_id_fk" msdata:parent="status" msdata:child="warehousedispatchinstruction" msdata:parentkey="status_ID" msdata:childkey="status_id" msprop:Generator_UserChildTable="warehousedispatchinstruction" msprop:Generator_ChildPropName="GetwarehousedispatchinstructionRows" msprop:Generator_UserRelationName="WarehouseDispatchInstruction_status_id_fk" msprop:Generator_ParentPropName="statusRow" msprop:Generator_RelationVarName="relationWarehouseDispatchInstruction_status_id_fk" msprop:Generator_UserParentTable="status" />
-      <msdata:Relationship name="item_DataTable_warehouse_stock_search" msdata:parent="item" msdata:child="DataTable_warehouse_stock_search" msdata:parentkey="item_ID" msdata:childkey="item_ID" msprop:Generator_UserChildTable="DataTable_warehouse_stock_search" msprop:Generator_ChildPropName="GetDataTable_warehouse_stock_searchRows" msprop:Generator_UserRelationName="item_DataTable_warehouse_stock_search" msprop:Generator_ParentPropName="itemRow" msprop:Generator_RelationVarName="relationitem_DataTable_warehouse_stock_search" msprop:Generator_UserParentTable="item" />
+      <msdata:Relationship name="Delivery_Request_item_ID_fk" msdata:parent="item" msdata:child="delivery_request" msdata:parentkey="item_ID" msdata:childkey="item_ID" msprop:Generator_UserChildTable="delivery_request" msprop:Generator_ChildPropName="Getdelivery_requestRows" msprop:Generator_UserRelationName="Delivery_Request_item_ID_fk" msprop:Generator_RelationVarName="relationDelivery_Request_item_ID_fk" msprop:Generator_UserParentTable="item" msprop:Generator_ParentPropName="itemRow" />
+      <msdata:Relationship name="Warehouse_item_item_ID_fk" msdata:parent="item" msdata:child="warehouse_item" msdata:parentkey="item_ID" msdata:childkey="item_ID" msprop:Generator_UserChildTable="warehouse_item" msprop:Generator_ChildPropName="Getwarehouse_itemRows" msprop:Generator_UserRelationName="Warehouse_item_item_ID_fk" msprop:Generator_ParentPropName="itemRow" msprop:Generator_RelationVarName="relationWarehouse_item_item_ID_fk" msprop:Generator_UserParentTable="item" />
+      <msdata:Relationship name="Warehouse_item_warehouse_ID_fk" msdata:parent="warehouse" msdata:child="warehouse_item" msdata:parentkey="warehouse_ID" msdata:childkey="warehouse_ID" msprop:Generator_UserChildTable="warehouse_item" msprop:Generator_ChildPropName="Getwarehouse_itemRows" msprop:Generator_UserRelationName="Warehouse_item_warehouse_ID_fk" msprop:Generator_ParentPropName="warehouseRow" msprop:Generator_RelationVarName="relationWarehouse_item_warehouse_ID_fk" msprop:Generator_UserParentTable="warehouse" />
+      <msdata:Relationship name="WarehouseDispatchInstruction_warehouse_ID_itemID_fk" msdata:parent="warehouse_item" msdata:child="warehousedispatchinstruction" msdata:parentkey="warehouse_ID item_ID" msdata:childkey="warehouse_ID itemID" msprop:Generator_UserChildTable="warehousedispatchinstruction" msprop:Generator_ChildPropName="GetwarehousedispatchinstructionRows" msprop:Generator_UserRelationName="WarehouseDispatchInstruction_warehouse_ID_itemID_fk" msprop:Generator_ParentPropName="warehouse_itemRowParent" msprop:Generator_RelationVarName="relationWarehouseDispatchInstruction_warehouse_ID_itemID_fk" msprop:Generator_UserParentTable="warehouse_item" />
+      <msdata:Relationship name="item_category_ID_fk" msdata:parent="item_category" msdata:child="item" msdata:parentkey="category_ID" msdata:childkey="category_ID" msprop:Generator_UserChildTable="item" msprop:Generator_ChildPropName="GetitemRows" msprop:Generator_UserRelationName="item_category_ID_fk" msprop:Generator_ParentPropName="item_categoryRow" msprop:Generator_RelationVarName="relationitem_category_ID_fk" msprop:Generator_UserParentTable="item_category" />
+      <msdata:Relationship name="WarehouseDispatchInstruction_handler_fk" msdata:parent="user" msdata:child="warehousedispatchinstruction" msdata:parentkey="user_id" msdata:childkey="handler" msprop:Generator_UserChildTable="warehousedispatchinstruction" msprop:Generator_ChildPropName="GetwarehousedispatchinstructionRows" msprop:Generator_UserRelationName="WarehouseDispatchInstruction_handler_fk" msprop:Generator_ParentPropName="userRow" msprop:Generator_RelationVarName="relationWarehouseDispatchInstruction_handler_fk" msprop:Generator_UserParentTable="user" />
+      <msdata:Relationship name="purchase_order_all_delivery_note_ID_fk" msdata:parent="delivery_request" msdata:child="purchase_order_all" msdata:parentkey="delivery_request_ID" msdata:childkey="delivery_note_ID" msprop:Generator_UserChildTable="purchase_order_all" msprop:Generator_ChildPropName="Getpurchase_order_allRows" msprop:Generator_UserRelationName="purchase_order_all_delivery_note_ID_fk" msprop:Generator_ParentPropName="delivery_requestRow" msprop:Generator_RelationVarName="relationpurchase_order_all_delivery_note_ID_fk" msprop:Generator_UserParentTable="delivery_request" />
+      <msdata:Relationship name="Delivery_Request_status_ID_fk" msdata:parent="status" msdata:child="delivery_request" msdata:parentkey="status_ID" msdata:childkey="status_ID" msprop:Generator_UserChildTable="delivery_request" msprop:Generator_ChildPropName="Getdelivery_requestRows" msprop:Generator_UserRelationName="Delivery_Request_status_ID_fk" msprop:Generator_RelationVarName="relationDelivery_Request_status_ID_fk" msprop:Generator_UserParentTable="status" msprop:Generator_ParentPropName="statusRow" />
+      <msdata:Relationship name="WarehouseDispatchInstruction_status_id_fk" msdata:parent="status" msdata:child="warehousedispatchinstruction" msdata:parentkey="status_ID" msdata:childkey="status_id" msprop:Generator_UserChildTable="warehousedispatchinstruction" msprop:Generator_ChildPropName="GetwarehousedispatchinstructionRows" msprop:Generator_UserRelationName="WarehouseDispatchInstruction_status_id_fk" msprop:Generator_RelationVarName="relationWarehouseDispatchInstruction_status_id_fk" msprop:Generator_UserParentTable="status" msprop:Generator_ParentPropName="statusRow" />
+      <msdata:Relationship name="item_DataTable_warehouse_stock_search" msdata:parent="item" msdata:child="DataTable_warehouse_stock_search" msdata:parentkey="item_ID" msdata:childkey="item_ID" msprop:Generator_UserChildTable="DataTable_warehouse_stock_search" msprop:Generator_ChildPropName="GetDataTable_warehouse_stock_searchRows" msprop:Generator_UserRelationName="item_DataTable_warehouse_stock_search" msprop:Generator_RelationVarName="relationitem_DataTable_warehouse_stock_search" msprop:Generator_UserParentTable="item" msprop:Generator_ParentPropName="itemRow" />
+      <msdata:Relationship name="item_category_ID_fk1" msdata:parent="DataTable_warehouse_stock_search" msdata:child="item" msdata:parentkey="category_ID" msdata:childkey="category_ID" msprop:Generator_UserChildTable="item" msprop:Generator_ChildPropName="GetitemRows" msprop:Generator_UserRelationName="item_category_ID_fk1" msprop:Generator_RelationVarName="relationitem_category_ID_fk1" msprop:Generator_UserParentTable="DataTable_warehouse_stock_search" msprop:Generator_ParentPropName="DataTable_warehouse_stock_searchRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

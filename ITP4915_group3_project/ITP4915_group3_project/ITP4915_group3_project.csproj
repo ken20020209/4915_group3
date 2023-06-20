@@ -1040,11 +1040,11 @@
     <Compile Include="warehouse\search_stock\header.Designer.cs">
       <DependentUpon>header.cs</DependentUpon>
     </Compile>
-    <Compile Include="warehouse\search_stock\item_info.cs">
+    <Compile Include="warehouse\search_stock\detail.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="warehouse\search_stock\item_info.Designer.cs">
-      <DependentUpon>item_info.cs</DependentUpon>
+    <Compile Include="warehouse\search_stock\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
     </Compile>
     <Compile Include="warehouse\search_stock\update.cs">
       <SubType>UserControl</SubType>
@@ -1529,8 +1529,8 @@
     <EmbeddedResource Include="warehouse\search_stock\header.resx">
       <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="warehouse\search_stock\item_info.resx">
-      <DependentUpon>item_info.cs</DependentUpon>
+    <EmbeddedResource Include="warehouse\search_stock\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\search_stock\update.resx">
       <DependentUpon>update.cs</DependentUpon>

@@ -59,5 +59,10 @@ namespace ITP4915_group3_project.warehouse
         {
 
         }
+
+        private void kryptonBtnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

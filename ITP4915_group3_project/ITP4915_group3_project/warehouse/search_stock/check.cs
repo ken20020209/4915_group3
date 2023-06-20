@@ -14,7 +14,9 @@ namespace ITP4915_group3_project.warehouse.search_stock
     public partial class check : UserControl
     {
         public Control panel;
-        public string keyword;
+        private string keyword;
+        private int category;
+
         public check(Control panel)
         {
             InitializeComponent();
@@ -22,8 +24,7 @@ namespace ITP4915_group3_project.warehouse.search_stock
             panel.Controls.Clear();
             panel.Controls.Add(this);
 
-            search();
-
+            
             dataTable_warehouse_stock_searchBindingSource.Filter = $"warehouse_ID={warehouse.warehouse_ID}";
             kryptonLabelTotalItem.Text = dataTable_warehouse_stock_searchBindingSource.Count.ToString();
         }
@@ -37,6 +38,27 @@ namespace ITP4915_group3_project.warehouse.search_stock
         private void kryptonTextBoxSearch_TextChanged(object sender, EventArgs e)
         {
             search();
+        }
+
+        private void dataTable_warehouse_stock_searchKryptonDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex == -1 || e.ColumnIndex != 0)
+            {
+                return;
+            }
+            new detail(this, int.Parse(dataTable_warehouse_stock_searchKryptonDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString()),warehouse.warehouse_ID);
+        }
+
+        private void kryptonComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (kryptonComboBox1.Text == "Food")
+                category = 1;
+            else if (kryptonComboBox1.Text == "Drink")
+                category = 2;
+            else
+                category = 3;
+            dataTable_warehouse_stock_searchBindingSource.Filter = $"category_ID = {category} and warehouse_ID={warehouse.warehouse_ID}";
+
         }
     }
 }

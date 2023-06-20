@@ -212,6 +212,7 @@ namespace ITP4915_group3_project.warehouse
             this.kryptonBtnLogout.TabIndex = 8;
             this.kryptonBtnLogout.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_logout_40__2_;
             this.kryptonBtnLogout.Values.Text = "Logout";
+            this.kryptonBtnLogout.Click += new System.EventHandler(this.kryptonBtnLogout_Click);
             // 
             // kryptonBtnPickingList
             // 

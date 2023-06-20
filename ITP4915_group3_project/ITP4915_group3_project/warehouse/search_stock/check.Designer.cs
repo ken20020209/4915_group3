@@ -31,7 +31,7 @@ namespace ITP4915_group3_project.warehouse.search_stock
         {
             this.components = new System.ComponentModel.Container();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonDataGridView1 = new Krypton.Toolkit.KryptonDataGridView();
+            this.dataTable_warehouse_stock_searchKryptonDataGridView = new Krypton.Toolkit.KryptonDataGridView();
             this.dataTable_warehouse_stock_searchBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.warehouse_dbDataSet = new ITP4915_group3_project.warehouse_dbDataSet();
             this.kryptonGroup1 = new Krypton.Toolkit.KryptonGroup();
@@ -54,7 +54,7 @@ namespace ITP4915_group3_project.warehouse.search_stock
             this.tableAdapterManager = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable_warehouse_stock_searchKryptonDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable_warehouse_stock_searchBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.warehouse_dbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).BeginInit();
@@ -77,7 +77,7 @@ namespace ITP4915_group3_project.warehouse.search_stock
             // 
             // kryptonPanel1
             // 
-            this.kryptonPanel1.Controls.Add(this.kryptonDataGridView1);
+            this.kryptonPanel1.Controls.Add(this.dataTable_warehouse_stock_searchKryptonDataGridView);
             this.kryptonPanel1.Controls.Add(this.kryptonGroup1);
             this.kryptonPanel1.Controls.Add(this.kryptonGroup2);
             this.kryptonPanel1.Controls.Add(this.kryptonLabel4);
@@ -92,15 +92,16 @@ namespace ITP4915_group3_project.warehouse.search_stock
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonPanel1.TabIndex = 1;
             // 
-            // kryptonDataGridView1
+            // dataTable_warehouse_stock_searchKryptonDataGridView
             // 
-            this.kryptonDataGridView1.DataSource = this.dataTable_warehouse_stock_searchBindingSource;
-            this.kryptonDataGridView1.Location = new System.Drawing.Point(62, 238);
-            this.kryptonDataGridView1.Name = "kryptonDataGridView1";
-            this.kryptonDataGridView1.ReadOnly = true;
-            this.kryptonDataGridView1.RowTemplate.Height = 24;
-            this.kryptonDataGridView1.Size = new System.Drawing.Size(545, 167);
-            this.kryptonDataGridView1.TabIndex = 77;
+            this.dataTable_warehouse_stock_searchKryptonDataGridView.DataSource = this.dataTable_warehouse_stock_searchBindingSource;
+            this.dataTable_warehouse_stock_searchKryptonDataGridView.Location = new System.Drawing.Point(62, 238);
+            this.dataTable_warehouse_stock_searchKryptonDataGridView.Name = "dataTable_warehouse_stock_searchKryptonDataGridView";
+            this.dataTable_warehouse_stock_searchKryptonDataGridView.ReadOnly = true;
+            this.dataTable_warehouse_stock_searchKryptonDataGridView.RowTemplate.Height = 24;
+            this.dataTable_warehouse_stock_searchKryptonDataGridView.Size = new System.Drawing.Size(545, 167);
+            this.dataTable_warehouse_stock_searchKryptonDataGridView.TabIndex = 77;
+            this.dataTable_warehouse_stock_searchKryptonDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTable_warehouse_stock_searchKryptonDataGridView_CellContentClick);
             // 
             // dataTable_warehouse_stock_searchBindingSource
             // 
@@ -248,6 +249,10 @@ namespace ITP4915_group3_project.warehouse.search_stock
             this.kryptonComboBox1.CornerRoundingRadius = 25F;
             this.kryptonComboBox1.DropDownWidth = 153;
             this.kryptonComboBox1.IntegralHeight = false;
+            this.kryptonComboBox1.Items.AddRange(new object[] {
+            "Food",
+            "Drink",
+            "Seasoning"});
             this.kryptonComboBox1.Location = new System.Drawing.Point(516, 167);
             this.kryptonComboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonComboBox1.Name = "kryptonComboBox1";
@@ -264,7 +269,8 @@ namespace ITP4915_group3_project.warehouse.search_stock
             this.kryptonComboBox1.StateCommon.DropBack.Color1 = System.Drawing.Color.White;
             this.kryptonComboBox1.StateCommon.DropBack.Color2 = System.Drawing.Color.White;
             this.kryptonComboBox1.TabIndex = 74;
-            this.kryptonComboBox1.Text = "Category";
+            this.kryptonComboBox1.Text = "Food";
+            this.kryptonComboBox1.SelectedIndexChanged += new System.EventHandler(this.kryptonComboBox1_SelectedIndexChanged);
             // 
             // kryptonTextBoxSearch
             // 
@@ -373,7 +379,7 @@ namespace ITP4915_group3_project.warehouse.search_stock
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable_warehouse_stock_searchKryptonDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable_warehouse_stock_searchBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.warehouse_dbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).EndInit();
@@ -418,7 +424,7 @@ namespace ITP4915_group3_project.warehouse.search_stock
         private Krypton.Toolkit.KryptonLabel kryptonLabel5;
         private Krypton.Toolkit.KryptonLabel kryptonLabel6;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private Krypton.Toolkit.KryptonDataGridView kryptonDataGridView1;
+        private Krypton.Toolkit.KryptonDataGridView dataTable_warehouse_stock_searchKryptonDataGridView;
         private System.Windows.Forms.BindingSource dataTable_warehouse_stock_searchBindingSource;
         private warehouse_dbDataSet warehouse_dbDataSet;
         private warehouse_dbDataSetTableAdapters.DataTable_warehouse_stock_searchTableAdapter dataTable_warehouse_stock_searchTableAdapter;
