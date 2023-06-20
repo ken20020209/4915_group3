@@ -480,11 +480,11 @@
     <Compile Include="delivery\search_schedule\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>
     </Compile>
-    <Compile Include="General\login\Forget.cs">
+    <Compile Include="General\login\Change.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="General\login\Forget.Designer.cs">
-      <DependentUpon>Forget.cs</DependentUpon>
+    <Compile Include="General\login\Change.Designer.cs">
+      <DependentUpon>Change.cs</DependentUpon>
     </Compile>
     <Compile Include="General\login\login.cs">
       <SubType>Form</SubType>
@@ -1246,8 +1246,8 @@
     <EmbeddedResource Include="delivery\search_schedule\check.resx">
       <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="General\login\Forget.resx">
-      <DependentUpon>Forget.cs</DependentUpon>
+    <EmbeddedResource Include="General\login\Change.resx">
+      <DependentUpon>Change.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="General\login\login.resx">
       <DependentUpon>login.cs</DependentUpon>

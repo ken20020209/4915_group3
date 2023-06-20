@@ -145,10 +145,10 @@ namespace ITP4915_group3_project.General.login
             this.kryptonLabelForgotPassword.Location = new System.Drawing.Point(402, 270);
             this.kryptonLabelForgotPassword.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabelForgotPassword.Name = "kryptonLabelForgotPassword";
-            this.kryptonLabelForgotPassword.Size = new System.Drawing.Size(99, 19);
+            this.kryptonLabelForgotPassword.Size = new System.Drawing.Size(105, 19);
             this.kryptonLabelForgotPassword.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabelForgotPassword.TabIndex = 12;
-            this.kryptonLabelForgotPassword.Values.Text = "forget password";
+            this.kryptonLabelForgotPassword.Values.Text = "change password";
             this.kryptonLabelForgotPassword.Click += new System.EventHandler(this.kryptonLabelForgotPassword_Click);
             // 
             // kryptonTextBoxPassword
