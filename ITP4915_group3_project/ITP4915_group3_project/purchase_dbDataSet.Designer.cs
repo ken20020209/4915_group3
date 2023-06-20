@@ -4790,9 +4790,7 @@ namespace ITP4915_group3_project {
                 this.columnsupplier_ID.AllowDBNull = false;
                 this.columnbuyer_ID.AllowDBNull = false;
                 this.columnexpected_delivery_date.AllowDBNull = false;
-                this.columnterms.AllowDBNull = false;
                 this.columnterms.MaxLength = 30;
-                this.columncondition.AllowDBNull = false;
                 this.columncondition.MaxLength = 30;
             }
             
@@ -12362,7 +12360,12 @@ namespace ITP4915_group3_project {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string terms {
                 get {
-                    return ((string)(this[this.tablespo_header.termsColumn]));
+                    try {
+                        return ((string)(this[this.tablespo_header.termsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'terms\' in table \'spo_header\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tablespo_header.termsColumn] = value;
@@ -12373,7 +12376,12 @@ namespace ITP4915_group3_project {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string condition {
                 get {
-                    return ((string)(this[this.tablespo_header.conditionColumn]));
+                    try {
+                        return ((string)(this[this.tablespo_header.conditionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'condition\' in table \'spo_header\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tablespo_header.conditionColumn] = value;
@@ -12400,6 +12408,30 @@ namespace ITP4915_group3_project {
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["SPO_header_supplier_ID_fk"]);
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IstermsNull() {
+                return this.IsNull(this.tablespo_header.termsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SettermsNull() {
+                this[this.tablespo_header.termsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsconditionNull() {
+                return this.IsNull(this.tablespo_header.conditionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetconditionNull() {
+                this[this.tablespo_header.conditionColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -21109,9 +21141,7 @@ namespace ITP4915_group3_project.purchase_dbDataSetTableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM `spo_header` WHERE ((`header_ID` = @p1) AND (`create_date` = @p2) AND" +
-                " (`effective_date` = @p3) AND (`supplier_ID` = @p4) AND (`buyer_ID` = @p5) AND (" +
-                "`expected_delivery_date` = @p6) AND (`terms` = @p7) AND (`condition` = @p8))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `spo_header` WHERE ((`header_ID` = @p1) AND (`create_date` = @p2) AND (`effective_date` = @p3) AND (`supplier_ID` = @p4) AND (`buyer_ID` = @p5) AND (`expected_delivery_date` = @p6) AND ((@p7 = 1 AND `terms` IS NULL) OR (`terms` = @p8)) AND ((@p9 = 1 AND `condition` IS NULL) OR (`condition` = @p10)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             global::MySql.Data.MySqlClient.MySqlParameter param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p1";
@@ -21163,13 +21193,31 @@ namespace ITP4915_group3_project.purchase_dbDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p7";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "terms";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@p8";
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
             param.SourceColumn = "terms";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.DeleteCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p8";
+            param.ParameterName = "@p9";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "condition";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@p10";
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
             param.SourceColumn = "condition";
@@ -21237,7 +21285,7 @@ namespace ITP4915_group3_project.purchase_dbDataSetTableAdapters {
             this._adapter.InsertCommand.Parameters.Add(param);
             this._adapter.UpdateCommand = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE `spo_header` SET `create_date` = @p1, `effective_date` = @p2, `supplier_ID` = @p3, `buyer_ID` = @p4, `expected_delivery_date` = @p5, `terms` = @p6, `condition` = @p7 WHERE ((`header_ID` = @p8) AND (`create_date` = @p9) AND (`effective_date` = @p10) AND (`supplier_ID` = @p11) AND (`buyer_ID` = @p12) AND (`expected_delivery_date` = @p13) AND (`terms` = @p14) AND (`condition` = @p15))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE `spo_header` SET `create_date` = @p1, `effective_date` = @p2, `supplier_ID` = @p3, `buyer_ID` = @p4, `expected_delivery_date` = @p5, `terms` = @p6, `condition` = @p7 WHERE ((`header_ID` = @p8) AND (`create_date` = @p9) AND (`effective_date` = @p10) AND (`supplier_ID` = @p11) AND (`buyer_ID` = @p12) AND (`expected_delivery_date` = @p13) AND ((@p14 = 1 AND `terms` IS NULL) OR (`terms` = @p15)) AND ((@p16 = 1 AND `condition` IS NULL) OR (`condition` = @p17)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p1";
@@ -21343,13 +21391,31 @@ namespace ITP4915_group3_project.purchase_dbDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p14";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "terms";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@p15";
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
             param.SourceColumn = "terms";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p15";
+            param.ParameterName = "@p16";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "condition";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@p17";
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
             param.SourceColumn = "condition";
@@ -21375,9 +21441,8 @@ namespace ITP4915_group3_project.purchase_dbDataSetTableAdapters {
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT          header_ID, create_date, effective_date, supplier_ID, buyer_ID, ex" +
-                "pected_delivery_date, terms, `condition`\r\nFROM               spo_header\r\nWHERE  " +
-                "         (header_ID = @header_ID)";
+            this._commandCollection[1].CommandText = "SELECT buyer_ID, `condition`, create_date, effective_date, expected_delivery_date" +
+                ", header_ID, supplier_ID, terms FROM spo_header WHERE (header_ID = @header_ID)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             global::MySql.Data.MySqlClient.MySqlParameter param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@header_ID";
@@ -21460,24 +21525,28 @@ namespace ITP4915_group3_project.purchase_dbDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int p1, System.DateTime p2, System.DateTime p3, int p4, int p5, System.DateTime p6, string p7, string p8) {
+        public virtual int Delete(int p1, System.DateTime p2, System.DateTime p3, int p4, int p5, System.DateTime p6, string p8, string p10) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(p1));
             this.Adapter.DeleteCommand.Parameters[1].Value = ((System.DateTime)(p2));
             this.Adapter.DeleteCommand.Parameters[2].Value = ((System.DateTime)(p3));
             this.Adapter.DeleteCommand.Parameters[3].Value = ((int)(p4));
             this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(p5));
             this.Adapter.DeleteCommand.Parameters[5].Value = ((System.DateTime)(p6));
-            if ((p7 == null)) {
-                throw new global::System.ArgumentNullException("p7");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(p7));
-            }
             if ((p8 == null)) {
-                throw new global::System.ArgumentNullException("p8");
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((string)(p8));
+            }
+            if ((p10 == null)) {
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((string)(p10));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -21506,13 +21575,13 @@ namespace ITP4915_group3_project.purchase_dbDataSetTableAdapters {
             this.Adapter.InsertCommand.Parameters[3].Value = ((int)(p4));
             this.Adapter.InsertCommand.Parameters[4].Value = ((System.DateTime)(p5));
             if ((p6 == null)) {
-                throw new global::System.ArgumentNullException("p6");
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.InsertCommand.Parameters[5].Value = ((string)(p6));
             }
             if ((p7 == null)) {
-                throw new global::System.ArgumentNullException("p7");
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.InsertCommand.Parameters[6].Value = ((string)(p7));
@@ -21537,20 +21606,20 @@ namespace ITP4915_group3_project.purchase_dbDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(System.DateTime p1, System.DateTime p2, int p3, int p4, System.DateTime p5, string p6, string p7, int p8, System.DateTime p9, System.DateTime p10, int p11, int p12, System.DateTime p13, string p14, string p15) {
+        public virtual int Update(System.DateTime p1, System.DateTime p2, int p3, int p4, System.DateTime p5, string p6, string p7, int p8, System.DateTime p9, System.DateTime p10, int p11, int p12, System.DateTime p13, string p15, string p17) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((System.DateTime)(p1));
             this.Adapter.UpdateCommand.Parameters[1].Value = ((System.DateTime)(p2));
             this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(p3));
             this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(p4));
             this.Adapter.UpdateCommand.Parameters[4].Value = ((System.DateTime)(p5));
             if ((p6 == null)) {
-                throw new global::System.ArgumentNullException("p6");
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(p6));
             }
             if ((p7 == null)) {
-                throw new global::System.ArgumentNullException("p7");
+                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(p7));
@@ -21561,17 +21630,21 @@ namespace ITP4915_group3_project.purchase_dbDataSetTableAdapters {
             this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(p11));
             this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(p12));
             this.Adapter.UpdateCommand.Parameters[12].Value = ((System.DateTime)(p13));
-            if ((p14 == null)) {
-                throw new global::System.ArgumentNullException("p14");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(p14));
-            }
             if ((p15 == null)) {
-                throw new global::System.ArgumentNullException("p15");
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
             else {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(p15));
+            }
+            if ((p17 == null)) {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(p17));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 

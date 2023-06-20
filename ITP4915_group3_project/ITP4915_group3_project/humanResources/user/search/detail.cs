@@ -57,6 +57,7 @@ namespace ITP4915_group3_project.humanResources.user.search
             }
             catch(Exception ex)
             {
+                ex.ToString();
                 MessageBox.Show("so work depend on he/his");
             }
             this.Validate();
