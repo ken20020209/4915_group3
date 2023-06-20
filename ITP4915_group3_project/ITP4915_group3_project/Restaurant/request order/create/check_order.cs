@@ -55,6 +55,10 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
         private void kryptonLabelback_Click(object sender, EventArgs e)
         {
             panelContent.Controls.Remove(this);
+            newOrder.item_ID.Clear();
+            newOrder.item_name.Clear();
+            newOrder.item_qty.Clear();
+            newOrder.vID.Clear();
         }
     }
 }

@@ -50,7 +50,7 @@ namespace ITP4915_group3_project.Restaurant.stock
             {
                 return;
             }
-            detail stockDetail = new detail(this,int.Parse(dataTable_restaurant_stock_searchKryptonDataGridView.Rows[e.RowIndex].Cells["dataGridViewTextBoxColumn28"].Value.ToString()),restaurant.restaurant_ID);
+            detail stockDetail = new detail(this,int.Parse(dataTable_restaurant_stock_searchKryptonDataGridView.Rows[e.RowIndex].Cells[6].Value.ToString()),restaurant.restaurant_ID);
         }
 
         private void kryptonTextBoxSearch_TextChanged(object sender, EventArgs e)

@@ -18,6 +18,7 @@ namespace ITP4915_group3_project.humanResources
             InitializeComponent();
 
             //load first page
+            kryptonButtonUser_Click(null, null);
             
         }
 

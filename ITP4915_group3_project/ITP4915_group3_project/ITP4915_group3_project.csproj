@@ -51,8 +51,8 @@
     <Reference Include="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <HintPath>..\packages\Krypton.Toolkit.70.22.11.312\lib\net472\Krypton.Toolkit.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data, Version=8.0.28.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.8.0.28\lib\net452\MySql.Data.dll</HintPath>
+    <Reference Include="MySql.Data, Version=8.0.33.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.33\lib\net462\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
@@ -93,12 +93,6 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.8.0.28\lib\net452\Ubiety.Dns.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.8.0.28\lib\net452\ZstdNet.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Accounting\accounting.cs">
@@ -426,6 +420,11 @@
     <Compile Include="category\supplier\search\edit.Designer.cs">
       <DependentUpon>edit.cs</DependentUpon>
     </Compile>
+    <Compile Include="category_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>category_dbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="delivery\create_schedule\check.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -486,11 +485,11 @@
     <Compile Include="delivery\search_schedule\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>
     </Compile>
-    <Compile Include="General\login\Forget.cs">
+    <Compile Include="General\login\Change.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="General\login\Forget.Designer.cs">
-      <DependentUpon>Forget.cs</DependentUpon>
+    <Compile Include="General\login\Change.Designer.cs">
+      <DependentUpon>Change.cs</DependentUpon>
     </Compile>
     <Compile Include="General\login\login.cs">
       <SubType>Form</SubType>
@@ -1252,8 +1251,8 @@
     <EmbeddedResource Include="delivery\search_schedule\check.resx">
       <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="General\login\Forget.resx">
-      <DependentUpon>Forget.cs</DependentUpon>
+    <EmbeddedResource Include="General\login\Change.resx">
+      <DependentUpon>Change.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="General\login\login.resx">
       <DependentUpon>login.cs</DependentUpon>
@@ -1530,6 +1529,17 @@
     <EmbeddedResource Include="warehouse\warehouse.resx">
       <DependentUpon>warehouse.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="category_dbDataSet.xsc">
+      <DependentUpon>category_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="category_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>category_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="category_dbDataSet.xss">
+      <DependentUpon>category_dbDataSet.xsd</DependentUpon>
+    </None>
     <None Include="humanResources_dbDataSet.xsc">
       <DependentUpon>humanResources_dbDataSet.xsd</DependentUpon>
     </None>

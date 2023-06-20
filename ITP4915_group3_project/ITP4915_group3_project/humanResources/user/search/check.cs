@@ -12,16 +12,48 @@ namespace ITP4915_group3_project.humanResources.user.search
 {
     public partial class check : UserControl
     {
-        public Control panel;
-        private int curPO = 0;
+        public static Control panel;
         public check(Control panel)
         {
             InitializeComponent();
-            this.panel = panel;
-            this.panel.Controls.Add(this);
+            panel.Controls.Clear();
+            check.panel = panel;
+            check.panel.Controls.Add(this);
+            //load data
+            this.userTableAdapter.Fill(this.humanResources_dbDataSet.user);
+            
 
         }
 
+        private void search()
+        {
+            string keyword = "'%" + kryptonTextBoxSearchBar.Text + "%'";
+            userBindingSource.Filter = $" first_name like {keyword} or last_name like {keyword}";
+            try
+            {
+                userBindingSource.Filter += $" or user_id = {int.Parse(kryptonTextBoxSearchBar.Text)}";
+            }
+            catch(Exception ex)
+            {
+                ex.ToString();
+            }
+            kryptonLabelResult.Text = $"RESULT ({userBindingSource.Count})";
 
+
+        }
+        private void userKryptonDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+            if (e.ColumnIndex != 0 || e.RowIndex == -1)
+            {
+                return;
+            }
+            new detail(this,(int)userKryptonDataGridView.Rows[e.RowIndex].Cells[1].Value);
+        }
+
+        private void kryptonTextBoxSearchBar_TextChanged(object sender, EventArgs e)
+        {
+            search();
+        }
     }
 }

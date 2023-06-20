@@ -37,6 +37,8 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.itemsize = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
+            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonDateTimePickerExpect = new Krypton.Toolkit.KryptonDateTimePicker();
             this.comboBoxPriority = new System.Windows.Forms.ComboBox();
             this.kryptonLabel5 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonRichTextBoxRemark = new Krypton.Toolkit.KryptonRichTextBox();
@@ -57,8 +59,6 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.kryptonBorderEdge2 = new Krypton.Toolkit.KryptonBorderEdge();
             this.kryptonButton8 = new Krypton.Toolkit.KryptonButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.kryptonDateTimePickerExpect = new Krypton.Toolkit.KryptonDateTimePicker();
-            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).BeginInit();
@@ -86,19 +86,19 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 500);
+            this.panel1.Size = new System.Drawing.Size(800, 800);
             this.panel1.TabIndex = 208;
             // 
             // kryptonGroupBox2
             // 
-            this.kryptonGroupBox2.Location = new System.Drawing.Point(20, 312);
+            this.kryptonGroupBox2.Location = new System.Drawing.Point(90, 371);
             this.kryptonGroupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroupBox2.Name = "kryptonGroupBox2";
             // 
             // kryptonGroupBox2.Panel
             // 
             this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonDataGridViewItem);
-            this.kryptonGroupBox2.Size = new System.Drawing.Size(584, 163);
+            this.kryptonGroupBox2.Size = new System.Drawing.Size(584, 319);
             this.kryptonGroupBox2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonGroupBox2.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonGroupBox2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -125,7 +125,9 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.kryptonDataGridViewItem.Name = "kryptonDataGridViewItem";
             this.kryptonDataGridViewItem.ReadOnly = true;
             this.kryptonDataGridViewItem.RowTemplate.Height = 24;
-            this.kryptonDataGridViewItem.Size = new System.Drawing.Size(572, 133);
+            this.kryptonDataGridViewItem.Size = new System.Drawing.Size(572, 289);
+            this.kryptonDataGridViewItem.StateCommon.Background.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.kryptonDataGridViewItem.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
             this.kryptonDataGridViewItem.TabIndex = 0;
             // 
             // itemId
@@ -154,7 +156,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             // 
             // kryptonGroupBox1
             // 
-            this.kryptonGroupBox1.Location = new System.Drawing.Point(20, 99);
+            this.kryptonGroupBox1.Location = new System.Drawing.Point(90, 137);
             this.kryptonGroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroupBox1.Name = "kryptonGroupBox1";
             // 
@@ -189,6 +191,25 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.kryptonGroupBox1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonGroupBox1.TabIndex = 215;
             this.kryptonGroupBox1.Values.Heading = "GENERAL";
+            // 
+            // kryptonLabel1
+            // 
+            this.kryptonLabel1.Location = new System.Drawing.Point(239, 77);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Size = new System.Drawing.Size(82, 19);
+            this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel1.TabIndex = 223;
+            this.kryptonLabel1.Values.Text = "Expect Date:";
+            // 
+            // kryptonDateTimePickerExpect
+            // 
+            this.kryptonDateTimePickerExpect.CornerRoundingRadius = -1F;
+            this.kryptonDateTimePickerExpect.Location = new System.Drawing.Point(324, 77);
+            this.kryptonDateTimePickerExpect.Name = "kryptonDateTimePickerExpect";
+            this.kryptonDateTimePickerExpect.Size = new System.Drawing.Size(100, 21);
+            this.kryptonDateTimePickerExpect.TabIndex = 222;
             // 
             // comboBoxPriority
             // 
@@ -402,7 +423,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             // kryptonButton7
             // 
             this.kryptonButton7.CornerRoundingRadius = 50F;
-            this.kryptonButton7.Location = new System.Drawing.Point(249, 36);
+            this.kryptonButton7.Location = new System.Drawing.Point(306, 45);
             this.kryptonButton7.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButton7.Name = "kryptonButton7";
             this.kryptonButton7.Size = new System.Drawing.Size(43, 43);
@@ -426,7 +447,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             // kryptonButtonConfirm
             // 
             this.kryptonButtonConfirm.CornerRoundingRadius = 25F;
-            this.kryptonButtonConfirm.Location = new System.Drawing.Point(526, 36);
+            this.kryptonButtonConfirm.Location = new System.Drawing.Point(642, 58);
             this.kryptonButtonConfirm.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButtonConfirm.Name = "kryptonButtonConfirm";
             this.kryptonButtonConfirm.Size = new System.Drawing.Size(97, 30);
@@ -447,7 +468,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             // 
             // kryptonBorderEdge2
             // 
-            this.kryptonBorderEdge2.Location = new System.Drawing.Point(289, 57);
+            this.kryptonBorderEdge2.Location = new System.Drawing.Point(346, 66);
             this.kryptonBorderEdge2.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonBorderEdge2.Name = "kryptonBorderEdge2";
             this.kryptonBorderEdge2.Size = new System.Drawing.Size(65, 4);
@@ -459,7 +480,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             // kryptonButton8
             // 
             this.kryptonButton8.CornerRoundingRadius = 50F;
-            this.kryptonButton8.Location = new System.Drawing.Point(350, 36);
+            this.kryptonButton8.Location = new System.Drawing.Point(407, 45);
             this.kryptonButton8.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButton8.Name = "kryptonButton8";
             this.kryptonButton8.Size = new System.Drawing.Size(43, 43);
@@ -492,25 +513,6 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.label1.TabIndex = 209;
             this.label1.Text = "Check Order";
             // 
-            // kryptonDateTimePickerExpect
-            // 
-            this.kryptonDateTimePickerExpect.CornerRoundingRadius = -1F;
-            this.kryptonDateTimePickerExpect.Location = new System.Drawing.Point(324, 77);
-            this.kryptonDateTimePickerExpect.Name = "kryptonDateTimePickerExpect";
-            this.kryptonDateTimePickerExpect.Size = new System.Drawing.Size(100, 21);
-            this.kryptonDateTimePickerExpect.TabIndex = 222;
-            // 
-            // kryptonLabel1
-            // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(239, 77);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(82, 19);
-            this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel1.TabIndex = 223;
-            this.kryptonLabel1.Values.Text = "Expect Date:";
-            // 
             // check_order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -518,7 +520,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.create
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "check_order";
-            this.Size = new System.Drawing.Size(800, 500);
+            this.Size = new System.Drawing.Size(800, 800);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).EndInit();
