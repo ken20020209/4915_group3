@@ -13,9 +13,17 @@ namespace ITP4915_group3_project.warehouse
 {
     public partial class warehouse : KryptonForm
     {
+        public static int warehouse_ID;
+        public static string user_name;
         public warehouse()
         {
             InitializeComponent();
+
+            //fake data
+            warehouse_ID = 1;
+            user_name = "user123";
+
+            kryptonLabelUserName.Text = user_name;
 
             kryptonBtnPO_Click(null, null);
         }
@@ -45,6 +53,11 @@ namespace ITP4915_group3_project.warehouse
         private void kryptonBtnPO_Click_1(object sender, EventArgs e)
         {
             new check_PO.header(kryptonPanelHeader, kryptonPanelContent);
+        }
+
+        private void kryptonLabel2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -76,5 +76,10 @@ namespace ITP4915_group3_project.Restaurant
         {
             this.Close();
         }
+
+        private void kryptonLabelUserName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

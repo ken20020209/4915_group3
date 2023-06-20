@@ -224,6 +224,7 @@ namespace ITP4915_group3_project.Restaurant
             this.kryptonLabelUserName.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabelUserName.TabIndex = 1;
             this.kryptonLabelUserName.Values.Text = "user name";
+            this.kryptonLabelUserName.Click += new System.EventHandler(this.kryptonLabelUserName_Click);
             // 
             // kryptonLabelName
             // 
