@@ -16,5 +16,13 @@ namespace ITP4915_group3_project.category.supplier.search
         {
             InitializeComponent();
         }
+
+        private void supplierBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.supplierBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.category_dbDataSet);
+
+        }
     }
 }

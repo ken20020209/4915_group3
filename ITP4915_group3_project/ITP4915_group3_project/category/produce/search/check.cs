@@ -16,5 +16,13 @@ namespace ITP4915_group3_project.category.produce.search
         {
             InitializeComponent();
         }
+
+        private void itemBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.itemBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.category_dbDataSet);
+
+        }
     }
 }
