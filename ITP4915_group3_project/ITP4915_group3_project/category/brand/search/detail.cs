@@ -12,7 +12,7 @@ namespace ITP4915_group3_project.category.brand.search
 {
     public partial class detail : UserControl
     {
-        private check check;
+        private Control check;
         private int v;
 
         public detail(check check, int v)
@@ -20,7 +20,12 @@ namespace ITP4915_group3_project.category.brand.search
             this.check = check;
             this.v = v;
             InitializeComponent();
-
+            check.Controls.Add(this);
+            this.BringToFront();
+        }
+        private void kryptonLabel9_Click(object sender, EventArgs e)
+        {
+            check.Controls.Remove(this);
         }
     }
 }

@@ -150,13 +150,14 @@ namespace ITP4915_group3_project.category.brand.search
             // 
             // kryptonLabel9
             // 
-            this.kryptonLabel9.Location = new System.Drawing.Point(25, 37);
+            this.kryptonLabel9.Location = new System.Drawing.Point(25, 50);
             this.kryptonLabel9.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel9.Name = "kryptonLabel9";
             this.kryptonLabel9.Size = new System.Drawing.Size(50, 16);
             this.kryptonLabel9.StateCommon.ShortText.Font = new System.Drawing.Font("新細明體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.kryptonLabel9.TabIndex = 207;
             this.kryptonLabel9.Values.Text = "← Back";
+            this.kryptonLabel9.Click += new System.EventHandler(this.kryptonLabel9_Click);
             // 
             // kryptonRichTextBox1
             // 
@@ -315,12 +316,12 @@ namespace ITP4915_group3_project.category.brand.search
             this.label1.TabIndex = 160;
             this.label1.Text = "Detail";
             // 
-            // UserControl1
+            // detail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.kryptonPanel4);
-            this.Name = "UserControl1";
+            this.Name = "detail";
             this.Size = new System.Drawing.Size(796, 468);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
             this.kryptonPanel4.ResumeLayout(false);

@@ -30,7 +30,7 @@ namespace ITP4915_group3_project.category.brand.search
             keyword = "%" + kryptonTextBox16.Text + "%";
             this.partner_brandTableAdapter.Fill(this.category_dbDataSet.partner_brand);
         }
-        private void dataTable_partner_brandKryptonDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void partner_brandKryptonDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex == -1 || e.ColumnIndex != 0)
             {

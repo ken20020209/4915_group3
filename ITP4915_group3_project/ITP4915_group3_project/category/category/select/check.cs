@@ -34,6 +34,14 @@ namespace ITP4915_group3_project.category.category.select
             this.tableAdapterManager.UpdateAll(this.category_dbDataSet);
 
         }
+        private void item_categoryKryptonDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex == -1 || e.ColumnIndex != 0)
+            {
+                return;
+            }
+            detail stockDetail = new detail(this, int.Parse(item_categoryKryptonDataGridView.Rows[e.RowIndex].Cells[0].Value.ToString()));
+        }
         private void kryptonTextBox16_TextChanged(object sender, EventArgs e)
         {
             search();

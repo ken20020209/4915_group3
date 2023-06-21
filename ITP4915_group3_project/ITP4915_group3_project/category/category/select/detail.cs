@@ -12,7 +12,7 @@ namespace ITP4915_group3_project.category.category.select
 {
     public partial class detail : UserControl
     {
-        public detail()
+        public detail(check check, int v)
         {
             InitializeComponent();
         }
