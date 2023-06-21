@@ -29,11 +29,38 @@ namespace ITP4915_group3_project.category.brand.search
         }
         private void kryptonLabel11_Click(object sender, EventArgs e)
         {
-            
+            partner_brandBindingSource.RemoveCurrent();
+            this.tableAdapterManager.UpdateAll(this.category_dbDataSet);
+            MessageBox.Show("delete success");
+            new delete_sucess().ShowDialog();
         }
         private void kryptonLabel10_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void partner_brandBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.partner_brandBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.category_dbDataSet);
+
+        }
+
+        private void partner_brandBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.partner_brandBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.category_dbDataSet);
+
+        }
+
+        private void partner_brandBindingNavigatorSaveItem_Click_2(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.partner_brandBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.category_dbDataSet);
+
         }
     }
 }
