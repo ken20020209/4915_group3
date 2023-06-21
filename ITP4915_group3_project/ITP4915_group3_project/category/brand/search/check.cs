@@ -36,7 +36,7 @@ namespace ITP4915_group3_project.category.brand.search
             {
                 return;
             }
-            detail stockDetail = new detail(this, int.Parse(partner_brandKryptonDataGridView.Rows[e.RowIndex].Cells[0].Value.ToString()));
+            detail stockDetail = new detail(this, int.Parse(partner_brandKryptonDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString()));
         }
         private void kryptonTextBox16_TextChanged(object sender, EventArgs e)
         {
