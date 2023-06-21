@@ -27,5 +27,13 @@ namespace ITP4915_group3_project.category.brand.search
         {
             check.Controls.Remove(this);
         }
+        private void kryptonLabel11_Click(object sender, EventArgs e)
+        {
+           
+        }
+        private void kryptonLabel10_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

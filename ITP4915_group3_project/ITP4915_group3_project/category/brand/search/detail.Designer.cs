@@ -96,6 +96,7 @@ namespace ITP4915_group3_project.category.brand.search
             this.kryptonButton11.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.kryptonButton11.TabIndex = 212;
             this.kryptonButton11.Values.Text = "Delete";
+            this.kryptonButton11.Click += new System.EventHandler(this.kryptonLabel11_Click);
             // 
             // kryptonTextBox5
             // 
@@ -147,6 +148,7 @@ namespace ITP4915_group3_project.category.brand.search
             this.kryptonButton10.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.kryptonButton10.TabIndex = 209;
             this.kryptonButton10.Values.Text = "Edit";
+            this.kryptonButton10.Click += new System.EventHandler(this.kryptonLabel10_Click);
             // 
             // kryptonLabel9
             // 
