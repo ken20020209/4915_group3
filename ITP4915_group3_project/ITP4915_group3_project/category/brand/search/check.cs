@@ -14,6 +14,7 @@ namespace ITP4915_group3_project.category.brand.search
     {
         public Control panel;
         public string keyword;
+        internal static Control panelContent;
 
         public check(Control panel)
         {

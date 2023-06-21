@@ -14,7 +14,7 @@ namespace ITP4915_group3_project.category.brand.search
     {
         public delete_sucess()
         {
-            /*InitializeComponent();*/
+            InitializeComponent();
 
             Timer timer = new Timer();
             timer.Interval = 3000;
@@ -25,7 +25,7 @@ namespace ITP4915_group3_project.category.brand.search
                 timer.Stop(); // stop the timer
 
                 //go back check and refresh check usercontrol
-                /*new check(check.panelContent);*/
+                new check(check.panelContent);
                 this.Close(); // close the form
             };
 
