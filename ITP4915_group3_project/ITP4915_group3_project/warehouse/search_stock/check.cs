@@ -46,7 +46,7 @@ namespace ITP4915_group3_project.warehouse.search_stock
             {
                 return;
             }
-            new detail(this, int.Parse(dataTable_warehouse_stock_searchKryptonDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString()),warehouse.warehouse_ID);
+            new detail(this, int.Parse(dataTable_warehouse_stock_searchKryptonDataGridView.Rows[e.RowIndex].Cells[2].Value.ToString()),warehouse.warehouse_ID);
         }
 
         private void kryptonComboBox1_SelectedIndexChanged(object sender, EventArgs e)

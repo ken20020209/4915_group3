@@ -52,6 +52,14 @@ namespace ITP4915_group3_project.warehouse.search_stock
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.dataTable_warehouse_stock_searchTableAdapter = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.DataTable_warehouse_stock_searchTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.TableAdapterManager();
+            this.Detail = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable_warehouse_stock_searchKryptonDataGridView)).BeginInit();
@@ -94,6 +102,15 @@ namespace ITP4915_group3_project.warehouse.search_stock
             // 
             // dataTable_warehouse_stock_searchKryptonDataGridView
             // 
+            this.dataTable_warehouse_stock_searchKryptonDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Detail,
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7});
             this.dataTable_warehouse_stock_searchKryptonDataGridView.DataSource = this.dataTable_warehouse_stock_searchBindingSource;
             this.dataTable_warehouse_stock_searchKryptonDataGridView.Location = new System.Drawing.Point(65, 239);
             this.dataTable_warehouse_stock_searchKryptonDataGridView.Name = "dataTable_warehouse_stock_searchKryptonDataGridView";
@@ -369,6 +386,62 @@ namespace ITP4915_group3_project.warehouse.search_stock
             this.tableAdapterManager.warehousedispatchinstructionTableAdapter = null;
             this.tableAdapterManager.warehouseTableAdapter = null;
             // 
+            // Detail
+            // 
+            this.Detail.HeaderText = "Detail";
+            this.Detail.Name = "Detail";
+            this.Detail.ReadOnly = true;
+            this.Detail.Text = "Detail";
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "item_ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "item_ID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "item_name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "item_name";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "category_name";
+            this.dataGridViewTextBoxColumn3.HeaderText = "category_name";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "qty";
+            this.dataGridViewTextBoxColumn4.HeaderText = "qty";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "expected_inventory";
+            this.dataGridViewTextBoxColumn5.HeaderText = "expected_inventory";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "warehouse_ID";
+            this.dataGridViewTextBoxColumn6.HeaderText = "warehouse_ID";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "category_ID";
+            this.dataGridViewTextBoxColumn7.HeaderText = "category_ID";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
             // check
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -429,5 +502,13 @@ namespace ITP4915_group3_project.warehouse.search_stock
         private warehouse_dbDataSet warehouse_dbDataSet;
         private warehouse_dbDataSetTableAdapters.DataTable_warehouse_stock_searchTableAdapter dataTable_warehouse_stock_searchTableAdapter;
         private warehouse_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private Krypton.Toolkit.KryptonDataGridViewButtonColumn Detail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
     }
 }
