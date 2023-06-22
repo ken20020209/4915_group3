@@ -21,29 +21,22 @@ namespace ITP4915_group3_project.warehouse
 
             //fake data
             warehouse_ID = 1;
-            user_name = "user123";
+
+            user_name = General.login.Login.userName;
 
             kryptonLabelUserName.Text = user_name;
 
-            kryptonBtnPO_Click_1(null, null);
+            kryptonBtnPO_Click(null, null);
         }
+
 
         private void moveLeftPic(Control btn)
         {
             pictureBoxLeft.Top = btn.Top - 26;
         }
 
-        private void kryptonBtnPO_Click(object sender, EventArgs e)
-        {
-            new check_PO.header(kryptonPanelHeader, kryptonPanelContent);
-            moveLeftPic(kryptonBtnPO);
-        }
 
-        private void kryptonBtnPickingList_Click(object sender, EventArgs e)
-        {
-            new picking_list.header(kryptonPanelHeader, kryptonPanelContent);
-            moveLeftPic(kryptonBtnPickingList);
-        }
+
 
         private void kryptonBtnDeliveryNote_Click(object sender, EventArgs e)
         {
@@ -62,14 +55,17 @@ namespace ITP4915_group3_project.warehouse
             this.Close();
         }
 
-
-
-        private void kryptonBtnPO_Click_1(object sender, EventArgs e)
-            {
-                new check_PO.header(kryptonPanelHeader, kryptonPanelContent);
-                moveLeftPic(kryptonBtnPO);
+        private void kryptonBtnPO_Click(object sender, EventArgs e)
+        {
+             new check_PO.header(kryptonPanelHeader, kryptonPanelContent);
+             moveLeftPic(kryptonBtnPO);
+           
         }
 
-
+        private void kryptonBtnPickingList_Click(object sender, EventArgs e)
+        {
+            new picking_list.header(kryptonPanelHeader, kryptonPanelContent);
+            moveLeftPic(kryptonBtnPickingList);
+        }
     }
 }

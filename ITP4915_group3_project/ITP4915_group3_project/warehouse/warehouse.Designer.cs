@@ -34,12 +34,12 @@ namespace ITP4915_group3_project.warehouse
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.pictureBoxLeft = new System.Windows.Forms.PictureBox();
-            this.kryptonBtnDeliveryNote = new Krypton.Toolkit.KryptonButton();
             this.kryptonBtnPO = new Krypton.Toolkit.KryptonButton();
+            this.kryptonBtnDeliveryNote = new Krypton.Toolkit.KryptonButton();
+            this.kryptonBtnPickingList = new Krypton.Toolkit.KryptonButton();
             this.kryptonBtnStock = new Krypton.Toolkit.KryptonButton();
             this.kryptonBtnSetting = new Krypton.Toolkit.KryptonButton();
             this.kryptonBtnLogout = new Krypton.Toolkit.KryptonButton();
-            this.kryptonBtnPickingList = new Krypton.Toolkit.KryptonButton();
             this.kryptonPanel3 = new Krypton.Toolkit.KryptonPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.kryptonPalette1 = new Krypton.Toolkit.KryptonPalette(this.components);
@@ -82,12 +82,12 @@ namespace ITP4915_group3_project.warehouse
             // kryptonPanel1
             // 
             this.kryptonPanel1.Controls.Add(this.pictureBoxLeft);
-            this.kryptonPanel1.Controls.Add(this.kryptonBtnDeliveryNote);
             this.kryptonPanel1.Controls.Add(this.kryptonBtnPO);
+            this.kryptonPanel1.Controls.Add(this.kryptonBtnDeliveryNote);
+            this.kryptonPanel1.Controls.Add(this.kryptonBtnPickingList);
             this.kryptonPanel1.Controls.Add(this.kryptonBtnStock);
             this.kryptonPanel1.Controls.Add(this.kryptonBtnSetting);
             this.kryptonPanel1.Controls.Add(this.kryptonBtnLogout);
-            this.kryptonPanel1.Controls.Add(this.kryptonBtnPickingList);
             this.kryptonPanel1.Controls.Add(this.kryptonPanel3);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
@@ -107,6 +107,37 @@ namespace ITP4915_group3_project.warehouse
             this.pictureBoxLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxLeft.TabIndex = 0;
             this.pictureBoxLeft.TabStop = false;
+            // 
+            // kryptonBtnPO
+            // 
+            this.kryptonBtnPO.CornerRoundingRadius = 12F;
+            this.kryptonBtnPO.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.kryptonBtnPO.Location = new System.Drawing.Point(23, 178);
+            this.kryptonBtnPO.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonBtnPO.Name = "kryptonBtnPO";
+            this.kryptonBtnPO.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.kryptonBtnPO.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.kryptonBtnPO.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonBtnPO.Size = new System.Drawing.Size(145, 55);
+            this.kryptonBtnPO.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonBtnPO.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonBtnPO.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonBtnPO.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonBtnPO.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonBtnPO.StateCommon.Border.Rounding = 12F;
+            this.kryptonBtnPO.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonBtnPO.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonBtnPO.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonBtnPO.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonBtnPO.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.kryptonBtnPO.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.kryptonBtnPO.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonBtnPO.TabIndex = 2;
+            this.kryptonBtnPO.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_purchase_order_40__1_;
+            this.kryptonBtnPO.Values.Text = "Purchase Order";
+            this.kryptonBtnPO.Click += new System.EventHandler(this.kryptonBtnPO_Click);
             // 
             // kryptonBtnDeliveryNote
             // 
@@ -139,34 +170,34 @@ namespace ITP4915_group3_project.warehouse
             this.kryptonBtnDeliveryNote.Values.Text = "Delivery Note";
             this.kryptonBtnDeliveryNote.Click += new System.EventHandler(this.kryptonBtnDeliveryNote_Click);
             // 
-            // kryptonBtnPO
+            // kryptonBtnPickingList
             // 
-            this.kryptonBtnPO.CornerRoundingRadius = 12F;
-            this.kryptonBtnPO.Location = new System.Drawing.Point(23, 178);
-            this.kryptonBtnPO.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonBtnPO.Name = "kryptonBtnPO";
-            this.kryptonBtnPO.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonBtnPO.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonBtnPO.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonBtnPO.Size = new System.Drawing.Size(145, 55);
-            this.kryptonBtnPO.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonBtnPO.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonBtnPO.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonBtnPO.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonBtnPickingList.CornerRoundingRadius = 12F;
+            this.kryptonBtnPickingList.Location = new System.Drawing.Point(23, 237);
+            this.kryptonBtnPickingList.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonBtnPickingList.Name = "kryptonBtnPickingList";
+            this.kryptonBtnPickingList.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.kryptonBtnPickingList.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.kryptonBtnPickingList.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonBtnPickingList.Size = new System.Drawing.Size(145, 55);
+            this.kryptonBtnPickingList.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonBtnPickingList.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonBtnPickingList.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonBtnPickingList.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonBtnPO.StateCommon.Border.Rounding = 12F;
-            this.kryptonBtnPO.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.kryptonBtnPO.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonBtnPO.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonBtnPO.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.kryptonBtnPO.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonBtnPO.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonBtnPO.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonBtnPO.TabIndex = 5;
-            this.kryptonBtnPO.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_purchase_order_40__1_;
-            this.kryptonBtnPO.Values.Text = "Purchase Order";
-            this.kryptonBtnPO.Click += new System.EventHandler(this.kryptonBtnPO_Click_1);
+            this.kryptonBtnPickingList.StateCommon.Border.Rounding = 12F;
+            this.kryptonBtnPickingList.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonBtnPickingList.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.kryptonBtnPickingList.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonBtnPickingList.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonBtnPickingList.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.kryptonBtnPickingList.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.kryptonBtnPickingList.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonBtnPickingList.TabIndex = 5;
+            this.kryptonBtnPickingList.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_bulleted_list_40;
+            this.kryptonBtnPickingList.Values.Text = "Picking List";
+            this.kryptonBtnPickingList.Click += new System.EventHandler(this.kryptonBtnPickingList_Click);
             // 
             // kryptonBtnStock
             // 
@@ -255,37 +286,6 @@ namespace ITP4915_group3_project.warehouse
             this.kryptonBtnLogout.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_logout_40__2_;
             this.kryptonBtnLogout.Values.Text = "Logout";
             this.kryptonBtnLogout.Click += new System.EventHandler(this.kryptonBtnLogout_Click);
-            // 
-            // kryptonBtnPickingList
-            // 
-            this.kryptonBtnPickingList.CornerRoundingRadius = 12F;
-            this.kryptonBtnPickingList.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.kryptonBtnPickingList.Location = new System.Drawing.Point(23, 237);
-            this.kryptonBtnPickingList.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonBtnPickingList.Name = "kryptonBtnPickingList";
-            this.kryptonBtnPickingList.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonBtnPickingList.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonBtnPickingList.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonBtnPickingList.Size = new System.Drawing.Size(145, 55);
-            this.kryptonBtnPickingList.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonBtnPickingList.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonBtnPickingList.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonBtnPickingList.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonBtnPickingList.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonBtnPickingList.StateCommon.Border.Rounding = 12F;
-            this.kryptonBtnPickingList.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.kryptonBtnPickingList.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonBtnPickingList.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonBtnPickingList.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.kryptonBtnPickingList.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonBtnPickingList.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonBtnPickingList.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonBtnPickingList.TabIndex = 2;
-            this.kryptonBtnPickingList.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_bulleted_list_40;
-            this.kryptonBtnPickingList.Values.Text = "Picking List";
-            this.kryptonBtnPickingList.Click += new System.EventHandler(this.kryptonBtnPickingList_Click);
             // 
             // kryptonPanel3
             // 
@@ -394,11 +394,11 @@ namespace ITP4915_group3_project.warehouse
         private Krypton.Toolkit.KryptonLabel kryptonLabelUserName;
         private Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private Krypton.Toolkit.KryptonPanel kryptonPanel1;
-        private Krypton.Toolkit.KryptonButton kryptonBtnPO;
+        private Krypton.Toolkit.KryptonButton kryptonBtnPickingList;
         private Krypton.Toolkit.KryptonButton kryptonBtnStock;
         private Krypton.Toolkit.KryptonButton kryptonBtnSetting;
         private Krypton.Toolkit.KryptonButton kryptonBtnLogout;
-        private Krypton.Toolkit.KryptonButton kryptonBtnPickingList;
+        private Krypton.Toolkit.KryptonButton kryptonBtnPO;
         private Krypton.Toolkit.KryptonPanel kryptonPanel3;
         private Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private Krypton.Toolkit.KryptonPanel kryptonPanelHeader;

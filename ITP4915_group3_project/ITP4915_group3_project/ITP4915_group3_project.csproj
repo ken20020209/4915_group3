@@ -920,11 +920,29 @@
     <Compile Include="Restaurant\stock\header.Designer.cs">
       <DependentUpon>header.cs</DependentUpon>
     </Compile>
-    <Compile Include="warehouse\check_PO\detail.cs">
+    <Compile Include="warehouse\check_PO\BPA\detail.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="warehouse\check_PO\detail.Designer.cs">
+    <Compile Include="warehouse\check_PO\BPA\detail.Designer.cs">
       <DependentUpon>detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\check_PO\BPA\search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="warehouse\check_PO\BPA\search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\check_PO\CPA\detail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="warehouse\check_PO\CPA\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\check_PO\CPA\search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="warehouse\check_PO\CPA\search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
     </Compile>
     <Compile Include="warehouse\check_PO\header.cs">
       <SubType>UserControl</SubType>
@@ -932,11 +950,35 @@
     <Compile Include="warehouse\check_PO\header.Designer.cs">
       <DependentUpon>header.cs</DependentUpon>
     </Compile>
-    <Compile Include="warehouse\check_PO\review.cs">
+    <Compile Include="warehouse\check_PO\check.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="warehouse\check_PO\review.Designer.cs">
-      <DependentUpon>review.cs</DependentUpon>
+    <Compile Include="warehouse\check_PO\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\check_PO\PPO\detail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="warehouse\check_PO\PPO\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\check_PO\PPO\search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="warehouse\check_PO\PPO\search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\check_PO\SPO\detail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="warehouse\check_PO\SPO\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\check_PO\SPO\search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="warehouse\check_PO\SPO\search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
     </Compile>
     <Compile Include="warehouse\delivery_note\header.cs">
       <SubType>UserControl</SubType>
@@ -991,6 +1033,12 @@
     </Compile>
     <Compile Include="warehouse\delivery_note\sign.Designer.cs">
       <DependentUpon>sign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse\detail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="warehouse\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
     </Compile>
     <Compile Include="warehouse\picking_list\confrim.cs">
       <SubType>Form</SubType>
@@ -1469,14 +1517,35 @@
     <EmbeddedResource Include="Restaurant\stock\header.resx">
       <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="warehouse\check_PO\detail.resx">
+    <EmbeddedResource Include="warehouse\check_PO\BPA\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\check_PO\BPA\search.resx">
+      <DependentUpon>search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\check_PO\CPA\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\check_PO\CPA\search.resx">
+      <DependentUpon>search.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\check_PO\header.resx">
       <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="warehouse\check_PO\review.resx">
-      <DependentUpon>review.cs</DependentUpon>
+    <EmbeddedResource Include="warehouse\check_PO\check.resx">
+      <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\check_PO\PPO\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\check_PO\PPO\search.resx">
+      <DependentUpon>search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\check_PO\SPO\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\check_PO\SPO\search.resx">
+      <DependentUpon>search.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\delivery_note\header.resx">
       <DependentUpon>header.cs</DependentUpon>
@@ -1504,6 +1573,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\delivery_note\sign.resx">
       <DependentUpon>sign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\picking_list\confrim.resx">
       <DependentUpon>confrim.cs</DependentUpon>

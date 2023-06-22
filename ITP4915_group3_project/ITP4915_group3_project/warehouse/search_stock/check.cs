@@ -37,7 +37,10 @@ namespace ITP4915_group3_project.warehouse.search_stock
 
         private void kryptonTextBoxSearch_TextChanged(object sender, EventArgs e)
         {
-            search();
+            if (kryptonTextBoxSearch.TextLength > 0)
+                search();
+            else
+                return;
         }
 
         private void dataTable_warehouse_stock_searchKryptonDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)

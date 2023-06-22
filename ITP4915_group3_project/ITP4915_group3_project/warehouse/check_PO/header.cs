@@ -26,7 +26,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
         private void kryptonButtonReview_Click(object sender, EventArgs e)
         {
             panelContent.Controls.Clear();
-            new check_PO.review(panelContent);
+            new check_PO.check(panelContent);
         }
 
         private void kryptonPanelHeader_Paint(object sender, PaintEventArgs e)

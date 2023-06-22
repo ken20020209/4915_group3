@@ -41,24 +41,25 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             System.Windows.Forms.Label termsLabel;
             System.Windows.Forms.Label conditionLabel;
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonButtonSave = new Krypton.Toolkit.KryptonButton();
+            this.kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
             this.bpa_linesKryptonDataGridView = new Krypton.Toolkit.KryptonDataGridView();
-            this.bpa_linesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bpa_headerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.purchase_dbDataSet = new ITP4915_group3_project.purchase_dbDataSet();
+            this.kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
+            this.header_IDKryptonTextBox = new Krypton.Toolkit.KryptonTextBox();
+            this.conditionKryptonTextBox = new Krypton.Toolkit.KryptonTextBox();
+            this.supplier_IDKryptonTextBox = new Krypton.Toolkit.KryptonTextBox();
+            this.buyer_IDKryptonTextBox = new Krypton.Toolkit.KryptonTextBox();
+            this.termsKryptonTextBox = new Krypton.Toolkit.KryptonTextBox();
+            this.currencyKryptonNumericUpDown = new Krypton.Toolkit.KryptonNumericUpDown();
+            this.agreed_amountKryptonNumericUpDown = new Krypton.Toolkit.KryptonNumericUpDown();
             this.purchase_order_revisionKryptonCheckBox = new Krypton.Toolkit.KryptonCheckBox();
             this.create_dateKryptonDateTimePicker = new Krypton.Toolkit.KryptonDateTimePicker();
             this.effective_datesKryptonDateTimePicker = new Krypton.Toolkit.KryptonDateTimePicker();
-            this.agreed_amountKryptonNumericUpDown = new Krypton.Toolkit.KryptonNumericUpDown();
-            this.currencyKryptonNumericUpDown = new Krypton.Toolkit.KryptonNumericUpDown();
-            this.termsKryptonTextBox = new Krypton.Toolkit.KryptonTextBox();
-            this.conditionKryptonTextBox = new Krypton.Toolkit.KryptonTextBox();
+            this.kryptonButtonSave = new Krypton.Toolkit.KryptonButton();
             this.bpa_headerTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.bpa_headerTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.TableAdapterManager();
             this.bpa_linesTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.bpa_linesTableAdapter();
-            this.buyer_IDKryptonTextBox = new Krypton.Toolkit.KryptonTextBox();
-            this.supplier_IDKryptonTextBox = new Krypton.Toolkit.KryptonTextBox();
-            this.header_IDKryptonTextBox = new Krypton.Toolkit.KryptonTextBox();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,8 +69,7 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
-            this.kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
+            this.bpa_linesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             header_IDLabel = new System.Windows.Forms.Label();
             purchase_order_revisionLabel = new System.Windows.Forms.Label();
             create_dateLabel = new System.Windows.Forms.Label();
@@ -82,18 +82,18 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             conditionLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).BeginInit();
+            this.kryptonGroupBox2.Panel.SuspendLayout();
+            this.kryptonGroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bpa_linesKryptonDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bpa_linesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bpa_headerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).BeginInit();
             this.kryptonGroupBox1.Panel.SuspendLayout();
             this.kryptonGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).BeginInit();
-            this.kryptonGroupBox2.Panel.SuspendLayout();
-            this.kryptonGroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bpa_linesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // header_IDLabel
@@ -197,31 +197,28 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             this.kryptonPanel1.Size = new System.Drawing.Size(997, 761);
             this.kryptonPanel1.TabIndex = 0;
             // 
-            // kryptonButtonSave
+            // kryptonGroupBox2
             // 
-            this.kryptonButtonSave.CornerRoundingRadius = 25F;
-            this.kryptonButtonSave.Location = new System.Drawing.Point(823, 25);
-            this.kryptonButtonSave.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonButtonSave.Name = "kryptonButtonSave";
-            this.kryptonButtonSave.Size = new System.Drawing.Size(97, 30);
-            this.kryptonButtonSave.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
-            this.kryptonButtonSave.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
-            this.kryptonButtonSave.StateCommon.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonButtonSave.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
-            this.kryptonButtonSave.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
-            this.kryptonButtonSave.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonGroupBox2.Location = new System.Drawing.Point(31, 411);
+            this.kryptonGroupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonGroupBox2.Name = "kryptonGroupBox2";
+            // 
+            // kryptonGroupBox2.Panel
+            // 
+            this.kryptonGroupBox2.Panel.Controls.Add(this.bpa_linesKryptonDataGridView);
+            this.kryptonGroupBox2.Size = new System.Drawing.Size(964, 313);
+            this.kryptonGroupBox2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.kryptonGroupBox2.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.kryptonGroupBox2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonGroupBox2.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButtonSave.StateCommon.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonButtonSave.StateCommon.Border.Rounding = 25F;
-            this.kryptonButtonSave.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButtonSave.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.kryptonButtonSave.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.kryptonButtonSave.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonButtonSave.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
-            this.kryptonButtonSave.TabIndex = 57;
-            this.kryptonButtonSave.Values.Text = "Save";
-            this.kryptonButtonSave.Click += new System.EventHandler(this.kryptonButtonSave_Click);
+            this.kryptonGroupBox2.StateCommon.Border.Rounding = 12F;
+            this.kryptonGroupBox2.StateCommon.Border.Width = 2;
+            this.kryptonGroupBox2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonGroupBox2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonGroupBox2.TabIndex = 207;
+            this.kryptonGroupBox2.Values.Heading = "Line";
             // 
             // bpa_linesKryptonDataGridView
             // 
@@ -234,11 +231,6 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             this.bpa_linesKryptonDataGridView.Size = new System.Drawing.Size(946, 279);
             this.bpa_linesKryptonDataGridView.TabIndex = 20;
             // 
-            // bpa_linesBindingSource
-            // 
-            this.bpa_linesBindingSource.DataMember = "BPA_lines_header_ID_fk";
-            this.bpa_linesBindingSource.DataSource = this.bpa_headerBindingSource;
-            // 
             // bpa_headerBindingSource
             // 
             this.bpa_headerBindingSource.DataMember = "bpa_header";
@@ -248,6 +240,107 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             // 
             this.purchase_dbDataSet.DataSetName = "purchase_dbDataSet";
             this.purchase_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // kryptonGroupBox1
+            // 
+            this.kryptonGroupBox1.Location = new System.Drawing.Point(35, 34);
+            this.kryptonGroupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonGroupBox1.Name = "kryptonGroupBox1";
+            // 
+            // kryptonGroupBox1.Panel
+            // 
+            this.kryptonGroupBox1.Panel.Controls.Add(header_IDLabel);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.header_IDKryptonTextBox);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.conditionKryptonTextBox);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.supplier_IDKryptonTextBox);
+            this.kryptonGroupBox1.Panel.Controls.Add(conditionLabel);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.buyer_IDKryptonTextBox);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.termsKryptonTextBox);
+            this.kryptonGroupBox1.Panel.Controls.Add(termsLabel);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.currencyKryptonNumericUpDown);
+            this.kryptonGroupBox1.Panel.Controls.Add(currencyLabel);
+            this.kryptonGroupBox1.Panel.Controls.Add(purchase_order_revisionLabel);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.agreed_amountKryptonNumericUpDown);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.purchase_order_revisionKryptonCheckBox);
+            this.kryptonGroupBox1.Panel.Controls.Add(agreed_amountLabel);
+            this.kryptonGroupBox1.Panel.Controls.Add(create_dateLabel);
+            this.kryptonGroupBox1.Panel.Controls.Add(buyer_IDLabel);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.create_dateKryptonDateTimePicker);
+            this.kryptonGroupBox1.Panel.Controls.Add(supplier_IDLabel);
+            this.kryptonGroupBox1.Panel.Controls.Add(effective_datesLabel);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.effective_datesKryptonDateTimePicker);
+            this.kryptonGroupBox1.Size = new System.Drawing.Size(436, 373);
+            this.kryptonGroupBox1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.kryptonGroupBox1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.kryptonGroupBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonGroupBox1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonGroupBox1.StateCommon.Border.Rounding = 12F;
+            this.kryptonGroupBox1.StateCommon.Border.Width = 2;
+            this.kryptonGroupBox1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonGroupBox1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonGroupBox1.TabIndex = 206;
+            this.kryptonGroupBox1.Values.Heading = "Header";
+            // 
+            // header_IDKryptonTextBox
+            // 
+            this.header_IDKryptonTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bpa_headerBindingSource, "header_ID", true));
+            this.header_IDKryptonTextBox.Location = new System.Drawing.Point(153, 38);
+            this.header_IDKryptonTextBox.Name = "header_IDKryptonTextBox";
+            this.header_IDKryptonTextBox.ReadOnly = true;
+            this.header_IDKryptonTextBox.Size = new System.Drawing.Size(240, 23);
+            this.header_IDKryptonTextBox.TabIndex = 60;
+            // 
+            // conditionKryptonTextBox
+            // 
+            this.conditionKryptonTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bpa_headerBindingSource, "condition", true));
+            this.conditionKryptonTextBox.Location = new System.Drawing.Point(153, 289);
+            this.conditionKryptonTextBox.Name = "conditionKryptonTextBox";
+            this.conditionKryptonTextBox.Size = new System.Drawing.Size(240, 23);
+            this.conditionKryptonTextBox.TabIndex = 19;
+            // 
+            // supplier_IDKryptonTextBox
+            // 
+            this.supplier_IDKryptonTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bpa_headerBindingSource, "supplier_ID", true));
+            this.supplier_IDKryptonTextBox.Location = new System.Drawing.Point(153, 149);
+            this.supplier_IDKryptonTextBox.Name = "supplier_IDKryptonTextBox";
+            this.supplier_IDKryptonTextBox.ReadOnly = true;
+            this.supplier_IDKryptonTextBox.Size = new System.Drawing.Size(240, 23);
+            this.supplier_IDKryptonTextBox.TabIndex = 59;
+            // 
+            // buyer_IDKryptonTextBox
+            // 
+            this.buyer_IDKryptonTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bpa_headerBindingSource, "buyer_ID", true));
+            this.buyer_IDKryptonTextBox.Location = new System.Drawing.Point(153, 178);
+            this.buyer_IDKryptonTextBox.Name = "buyer_IDKryptonTextBox";
+            this.buyer_IDKryptonTextBox.ReadOnly = true;
+            this.buyer_IDKryptonTextBox.Size = new System.Drawing.Size(240, 23);
+            this.buyer_IDKryptonTextBox.TabIndex = 58;
+            // 
+            // termsKryptonTextBox
+            // 
+            this.termsKryptonTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bpa_headerBindingSource, "terms", true));
+            this.termsKryptonTextBox.Location = new System.Drawing.Point(153, 261);
+            this.termsKryptonTextBox.Name = "termsKryptonTextBox";
+            this.termsKryptonTextBox.Size = new System.Drawing.Size(240, 23);
+            this.termsKryptonTextBox.TabIndex = 17;
+            // 
+            // currencyKryptonNumericUpDown
+            // 
+            this.currencyKryptonNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bpa_headerBindingSource, "currency", true));
+            this.currencyKryptonNumericUpDown.Location = new System.Drawing.Point(153, 234);
+            this.currencyKryptonNumericUpDown.Name = "currencyKryptonNumericUpDown";
+            this.currencyKryptonNumericUpDown.Size = new System.Drawing.Size(240, 22);
+            this.currencyKryptonNumericUpDown.TabIndex = 15;
+            // 
+            // agreed_amountKryptonNumericUpDown
+            // 
+            this.agreed_amountKryptonNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bpa_headerBindingSource, "agreed_amount", true));
+            this.agreed_amountKryptonNumericUpDown.Location = new System.Drawing.Point(153, 207);
+            this.agreed_amountKryptonNumericUpDown.Name = "agreed_amountKryptonNumericUpDown";
+            this.agreed_amountKryptonNumericUpDown.Size = new System.Drawing.Size(240, 22);
+            this.agreed_amountKryptonNumericUpDown.TabIndex = 13;
             // 
             // purchase_order_revisionKryptonCheckBox
             // 
@@ -264,7 +357,6 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             this.create_dateKryptonDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bpa_headerBindingSource, "create_date", true));
             this.create_dateKryptonDateTimePicker.Location = new System.Drawing.Point(153, 99);
             this.create_dateKryptonDateTimePicker.Name = "create_dateKryptonDateTimePicker";
-            this.create_dateKryptonDateTimePicker.PaletteMode = Krypton.Toolkit.PaletteMode.Global;
             this.create_dateKryptonDateTimePicker.Size = new System.Drawing.Size(240, 21);
             this.create_dateKryptonDateTimePicker.TabIndex = 5;
             // 
@@ -274,41 +366,30 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             this.effective_datesKryptonDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bpa_headerBindingSource, "effective_dates", true));
             this.effective_datesKryptonDateTimePicker.Location = new System.Drawing.Point(153, 126);
             this.effective_datesKryptonDateTimePicker.Name = "effective_datesKryptonDateTimePicker";
-            this.effective_datesKryptonDateTimePicker.PaletteMode = Krypton.Toolkit.PaletteMode.Global;
             this.effective_datesKryptonDateTimePicker.Size = new System.Drawing.Size(240, 21);
             this.effective_datesKryptonDateTimePicker.TabIndex = 7;
             // 
-            // agreed_amountKryptonNumericUpDown
+            // kryptonButtonSave
             // 
-            this.agreed_amountKryptonNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bpa_headerBindingSource, "agreed_amount", true));
-            this.agreed_amountKryptonNumericUpDown.Location = new System.Drawing.Point(153, 207);
-            this.agreed_amountKryptonNumericUpDown.Name = "agreed_amountKryptonNumericUpDown";
-            this.agreed_amountKryptonNumericUpDown.Size = new System.Drawing.Size(240, 22);
-            this.agreed_amountKryptonNumericUpDown.TabIndex = 13;
-            // 
-            // currencyKryptonNumericUpDown
-            // 
-            this.currencyKryptonNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bpa_headerBindingSource, "currency", true));
-            this.currencyKryptonNumericUpDown.Location = new System.Drawing.Point(153, 234);
-            this.currencyKryptonNumericUpDown.Name = "currencyKryptonNumericUpDown";
-            this.currencyKryptonNumericUpDown.Size = new System.Drawing.Size(240, 22);
-            this.currencyKryptonNumericUpDown.TabIndex = 15;
-            // 
-            // termsKryptonTextBox
-            // 
-            this.termsKryptonTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bpa_headerBindingSource, "terms", true));
-            this.termsKryptonTextBox.Location = new System.Drawing.Point(153, 261);
-            this.termsKryptonTextBox.Name = "termsKryptonTextBox";
-            this.termsKryptonTextBox.Size = new System.Drawing.Size(240, 23);
-            this.termsKryptonTextBox.TabIndex = 17;
-            // 
-            // conditionKryptonTextBox
-            // 
-            this.conditionKryptonTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bpa_headerBindingSource, "condition", true));
-            this.conditionKryptonTextBox.Location = new System.Drawing.Point(153, 289);
-            this.conditionKryptonTextBox.Name = "conditionKryptonTextBox";
-            this.conditionKryptonTextBox.Size = new System.Drawing.Size(240, 23);
-            this.conditionKryptonTextBox.TabIndex = 19;
+            this.kryptonButtonSave.CornerRoundingRadius = 25F;
+            this.kryptonButtonSave.Location = new System.Drawing.Point(823, 25);
+            this.kryptonButtonSave.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonButtonSave.Name = "kryptonButtonSave";
+            this.kryptonButtonSave.Size = new System.Drawing.Size(97, 30);
+            this.kryptonButtonSave.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
+            this.kryptonButtonSave.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
+            this.kryptonButtonSave.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
+            this.kryptonButtonSave.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
+            this.kryptonButtonSave.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButtonSave.StateCommon.Border.Rounding = 25F;
+            this.kryptonButtonSave.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButtonSave.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonButtonSave.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.kryptonButtonSave.TabIndex = 57;
+            this.kryptonButtonSave.Values.Text = "Save";
+            this.kryptonButtonSave.Click += new System.EventHandler(this.kryptonButtonSave_Click);
             // 
             // bpa_headerTableAdapter
             // 
@@ -341,33 +422,6 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             // bpa_linesTableAdapter
             // 
             this.bpa_linesTableAdapter.ClearBeforeFill = true;
-            // 
-            // buyer_IDKryptonTextBox
-            // 
-            this.buyer_IDKryptonTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bpa_headerBindingSource, "buyer_ID", true));
-            this.buyer_IDKryptonTextBox.Location = new System.Drawing.Point(153, 178);
-            this.buyer_IDKryptonTextBox.Name = "buyer_IDKryptonTextBox";
-            this.buyer_IDKryptonTextBox.ReadOnly = true;
-            this.buyer_IDKryptonTextBox.Size = new System.Drawing.Size(240, 23);
-            this.buyer_IDKryptonTextBox.TabIndex = 58;
-            // 
-            // supplier_IDKryptonTextBox
-            // 
-            this.supplier_IDKryptonTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bpa_headerBindingSource, "supplier_ID", true));
-            this.supplier_IDKryptonTextBox.Location = new System.Drawing.Point(153, 149);
-            this.supplier_IDKryptonTextBox.Name = "supplier_IDKryptonTextBox";
-            this.supplier_IDKryptonTextBox.ReadOnly = true;
-            this.supplier_IDKryptonTextBox.Size = new System.Drawing.Size(240, 23);
-            this.supplier_IDKryptonTextBox.TabIndex = 59;
-            // 
-            // header_IDKryptonTextBox
-            // 
-            this.header_IDKryptonTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bpa_headerBindingSource, "header_ID", true));
-            this.header_IDKryptonTextBox.Location = new System.Drawing.Point(153, 38);
-            this.header_IDKryptonTextBox.Name = "header_IDKryptonTextBox";
-            this.header_IDKryptonTextBox.ReadOnly = true;
-            this.header_IDKryptonTextBox.Size = new System.Drawing.Size(240, 23);
-            this.header_IDKryptonTextBox.TabIndex = 60;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -426,84 +480,10 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             this.dataGridViewTextBoxColumn9.HeaderText = "reference";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
-            // kryptonGroupBox1
+            // bpa_linesBindingSource
             // 
-            this.kryptonGroupBox1.CaptionStyle = Krypton.Toolkit.LabelStyle.GroupBoxCaption;
-            this.kryptonGroupBox1.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlGroupBox;
-            this.kryptonGroupBox1.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlGroupBox;
-            this.kryptonGroupBox1.Location = new System.Drawing.Point(35, 34);
-            this.kryptonGroupBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonGroupBox1.Name = "kryptonGroupBox1";
-            // 
-            // kryptonGroupBox1.Panel
-            // 
-            this.kryptonGroupBox1.Panel.Controls.Add(header_IDLabel);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.header_IDKryptonTextBox);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.conditionKryptonTextBox);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.supplier_IDKryptonTextBox);
-            this.kryptonGroupBox1.Panel.Controls.Add(conditionLabel);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.buyer_IDKryptonTextBox);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.termsKryptonTextBox);
-            this.kryptonGroupBox1.Panel.Controls.Add(termsLabel);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.currencyKryptonNumericUpDown);
-            this.kryptonGroupBox1.Panel.Controls.Add(currencyLabel);
-            this.kryptonGroupBox1.Panel.Controls.Add(purchase_order_revisionLabel);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.agreed_amountKryptonNumericUpDown);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.purchase_order_revisionKryptonCheckBox);
-            this.kryptonGroupBox1.Panel.Controls.Add(agreed_amountLabel);
-            this.kryptonGroupBox1.Panel.Controls.Add(create_dateLabel);
-            this.kryptonGroupBox1.Panel.Controls.Add(buyer_IDLabel);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.create_dateKryptonDateTimePicker);
-            this.kryptonGroupBox1.Panel.Controls.Add(supplier_IDLabel);
-            this.kryptonGroupBox1.Panel.Controls.Add(effective_datesLabel);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.effective_datesKryptonDateTimePicker);
-            this.kryptonGroupBox1.Size = new System.Drawing.Size(436, 373);
-            this.kryptonGroupBox1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonGroupBox1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonGroupBox1.StateCommon.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonGroupBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonGroupBox1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonGroupBox1.StateCommon.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonGroupBox1.StateCommon.Border.Rounding = 12F;
-            this.kryptonGroupBox1.StateCommon.Border.Width = 2;
-            this.kryptonGroupBox1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonGroupBox1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonGroupBox1.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonGroupBox1.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
-            this.kryptonGroupBox1.TabIndex = 206;
-            this.kryptonGroupBox1.Values.Heading = "Header";
-            // 
-            // kryptonGroupBox2
-            // 
-            this.kryptonGroupBox2.CaptionStyle = Krypton.Toolkit.LabelStyle.GroupBoxCaption;
-            this.kryptonGroupBox2.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlGroupBox;
-            this.kryptonGroupBox2.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlGroupBox;
-            this.kryptonGroupBox2.Location = new System.Drawing.Point(31, 411);
-            this.kryptonGroupBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonGroupBox2.Name = "kryptonGroupBox2";
-            // 
-            // kryptonGroupBox2.Panel
-            // 
-            this.kryptonGroupBox2.Panel.Controls.Add(this.bpa_linesKryptonDataGridView);
-            this.kryptonGroupBox2.Size = new System.Drawing.Size(964, 313);
-            this.kryptonGroupBox2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonGroupBox2.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonGroupBox2.StateCommon.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonGroupBox2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonGroupBox2.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonGroupBox2.StateCommon.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonGroupBox2.StateCommon.Border.Rounding = 12F;
-            this.kryptonGroupBox2.StateCommon.Border.Width = 2;
-            this.kryptonGroupBox2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonGroupBox2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonGroupBox2.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonGroupBox2.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
-            this.kryptonGroupBox2.TabIndex = 207;
-            this.kryptonGroupBox2.Values.Heading = "Line";
+            this.bpa_linesBindingSource.DataMember = "BPA_lines_header_ID_fk";
+            this.bpa_linesBindingSource.DataSource = this.bpa_headerBindingSource;
             // 
             // detail
             // 
@@ -514,8 +494,11 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             this.Size = new System.Drawing.Size(997, 761);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).EndInit();
+            this.kryptonGroupBox2.Panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).EndInit();
+            this.kryptonGroupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bpa_linesKryptonDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bpa_linesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bpa_headerBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).EndInit();
@@ -523,10 +506,7 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             this.kryptonGroupBox1.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).EndInit();
             this.kryptonGroupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).EndInit();
-            this.kryptonGroupBox2.Panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).EndInit();
-            this.kryptonGroupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bpa_linesBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

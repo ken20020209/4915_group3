@@ -1,5 +1,5 @@
 ﻿
-namespace ITP4915_group3_project.warehouse.check_PO
+namespace ITP4915_group3_project.warehouse.check_PO.SPO
 {
     partial class detail
     {
@@ -29,9 +29,8 @@ namespace ITP4915_group3_project.warehouse.check_PO
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.kryptonPanelContent = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonButton9 = new Krypton.Toolkit.KryptonButton();
-            this.kryptonButton8 = new Krypton.Toolkit.KryptonButton();
             this.kryptonBorderEdge4 = new Krypton.Toolkit.KryptonBorderEdge();
             this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonTextBox18 = new Krypton.Toolkit.KryptonTextBox();
@@ -48,7 +47,6 @@ namespace ITP4915_group3_project.warehouse.check_PO
             this.kryptonLabel19 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonRichTextBox3 = new Krypton.Toolkit.KryptonRichTextBox();
             this.kryptonGroupBox4 = new Krypton.Toolkit.KryptonGroupBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.kryptonGroupBox3 = new Krypton.Toolkit.KryptonGroupBox();
             this.kryptonTextBox13 = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel18 = new Krypton.Toolkit.KryptonLabel();
@@ -82,13 +80,19 @@ namespace ITP4915_group3_project.warehouse.check_PO
             this.kryptonLabel8 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel25 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonTextBox6 = new Krypton.Toolkit.KryptonTextBox();
+            this.kryptonDataGridView1 = new Krypton.Toolkit.KryptonDataGridView();
+            this.purchase_dbDataSet = new ITP4915_group3_project.purchase_dbDataSet();
+            this.spo_linesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.spo_linesTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.spo_linesTableAdapter();
+            this.tableAdapterManager = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.TableAdapterManager();
+            this.spo_headerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.spo_headerTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.spo_headerTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelContent)).BeginInit();
             this.kryptonPanelContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox4.Panel)).BeginInit();
             this.kryptonGroupBox4.Panel.SuspendLayout();
             this.kryptonGroupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox3.Panel)).BeginInit();
             this.kryptonGroupBox3.Panel.SuspendLayout();
@@ -101,13 +105,15 @@ namespace ITP4915_group3_project.warehouse.check_PO
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).BeginInit();
             this.kryptonGroupBox2.Panel.SuspendLayout();
             this.kryptonGroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spo_linesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spo_headerBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanelContent
             // 
             this.kryptonPanelContent.AutoScroll = true;
-            this.kryptonPanelContent.Controls.Add(this.kryptonButton9);
-            this.kryptonPanelContent.Controls.Add(this.kryptonButton8);
             this.kryptonPanelContent.Controls.Add(this.kryptonBorderEdge4);
             this.kryptonPanelContent.Controls.Add(this.kryptonLabel4);
             this.kryptonPanelContent.Controls.Add(this.kryptonTextBox18);
@@ -137,55 +143,13 @@ namespace ITP4915_group3_project.warehouse.check_PO
             this.kryptonPanelContent.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanelContent.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonPanelContent.Name = "kryptonPanelContent";
-            this.kryptonPanelContent.Size = new System.Drawing.Size(800, 500);
+            this.kryptonPanelContent.Size = new System.Drawing.Size(827, 549);
             this.kryptonPanelContent.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonPanelContent.TabIndex = 284;
-            // 
-            // kryptonButton9
-            // 
-            this.kryptonButton9.CornerRoundingRadius = 25F;
-            this.kryptonButton9.Location = new System.Drawing.Point(515, 5);
-            this.kryptonButton9.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonButton9.Name = "kryptonButton9";
-            this.kryptonButton9.Size = new System.Drawing.Size(97, 30);
-            this.kryptonButton9.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonButton9.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonButton9.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonButton9.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonButton9.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton9.StateCommon.Border.Rounding = 25F;
-            this.kryptonButton9.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton9.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton9.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.kryptonButton9.TabIndex = 221;
-            this.kryptonButton9.Values.Text = "Delivery note";
-            // 
-            // kryptonButton8
-            // 
-            this.kryptonButton8.CornerRoundingRadius = 25F;
-            this.kryptonButton8.Location = new System.Drawing.Point(409, 5);
-            this.kryptonButton8.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonButton8.Name = "kryptonButton8";
-            this.kryptonButton8.Size = new System.Drawing.Size(97, 30);
-            this.kryptonButton8.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonButton8.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonButton8.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonButton8.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonButton8.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton8.StateCommon.Border.Rounding = 25F;
-            this.kryptonButton8.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton8.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton8.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.kryptonButton8.TabIndex = 220;
-            this.kryptonButton8.Values.Text = "picking List";
+            this.kryptonPanelContent.TabIndex = 287;
             // 
             // kryptonBorderEdge4
             // 
-            this.kryptonBorderEdge4.Location = new System.Drawing.Point(422, 651);
+            this.kryptonBorderEdge4.Location = new System.Drawing.Point(593, 742);
             this.kryptonBorderEdge4.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonBorderEdge4.Name = "kryptonBorderEdge4";
             this.kryptonBorderEdge4.Size = new System.Drawing.Size(167, 3);
@@ -195,7 +159,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonLabel4
             // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(23, 29);
+            this.kryptonLabel4.Location = new System.Drawing.Point(23, 49);
             this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel4.Name = "kryptonLabel4";
             this.kryptonLabel4.Size = new System.Drawing.Size(50, 16);
@@ -205,7 +169,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonTextBox18
             // 
-            this.kryptonTextBox18.Location = new System.Drawing.Point(489, 658);
+            this.kryptonTextBox18.Location = new System.Drawing.Point(660, 749);
             this.kryptonTextBox18.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox18.Name = "kryptonTextBox18";
             this.kryptonTextBox18.ReadOnly = true;
@@ -227,7 +191,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 5);
+            this.label1.Location = new System.Drawing.Point(19, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 22);
@@ -236,7 +200,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonTextBox17
             // 
-            this.kryptonTextBox17.Location = new System.Drawing.Point(489, 629);
+            this.kryptonTextBox17.Location = new System.Drawing.Point(660, 720);
             this.kryptonTextBox17.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox17.Name = "kryptonTextBox17";
             this.kryptonTextBox17.ReadOnly = true;
@@ -255,7 +219,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonTextBox16
             // 
-            this.kryptonTextBox16.Location = new System.Drawing.Point(489, 606);
+            this.kryptonTextBox16.Location = new System.Drawing.Point(660, 697);
             this.kryptonTextBox16.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox16.Name = "kryptonTextBox16";
             this.kryptonTextBox16.ReadOnly = true;
@@ -274,7 +238,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonTextBox15
             // 
-            this.kryptonTextBox15.Location = new System.Drawing.Point(489, 583);
+            this.kryptonTextBox15.Location = new System.Drawing.Point(660, 674);
             this.kryptonTextBox15.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox15.Name = "kryptonTextBox15";
             this.kryptonTextBox15.ReadOnly = true;
@@ -293,7 +257,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonTextBox14
             // 
-            this.kryptonTextBox14.Location = new System.Drawing.Point(489, 561);
+            this.kryptonTextBox14.Location = new System.Drawing.Point(660, 651);
             this.kryptonTextBox14.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox14.Name = "kryptonTextBox14";
             this.kryptonTextBox14.ReadOnly = true;
@@ -312,7 +276,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonLabel24
             // 
-            this.kryptonLabel24.Location = new System.Drawing.Point(443, 659);
+            this.kryptonLabel24.Location = new System.Drawing.Point(614, 750);
             this.kryptonLabel24.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel24.Name = "kryptonLabel24";
             this.kryptonLabel24.Size = new System.Drawing.Size(44, 19);
@@ -323,7 +287,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonLabel23
             // 
-            this.kryptonLabel23.Location = new System.Drawing.Point(423, 629);
+            this.kryptonLabel23.Location = new System.Drawing.Point(594, 720);
             this.kryptonLabel23.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel23.Name = "kryptonLabel23";
             this.kryptonLabel23.Size = new System.Drawing.Size(64, 19);
@@ -334,7 +298,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonLabel22
             // 
-            this.kryptonLabel22.Location = new System.Drawing.Point(423, 607);
+            this.kryptonLabel22.Location = new System.Drawing.Point(594, 698);
             this.kryptonLabel22.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel22.Name = "kryptonLabel22";
             this.kryptonLabel22.Size = new System.Drawing.Size(64, 19);
@@ -345,7 +309,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonLabel21
             // 
-            this.kryptonLabel21.Location = new System.Drawing.Point(451, 583);
+            this.kryptonLabel21.Location = new System.Drawing.Point(622, 674);
             this.kryptonLabel21.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel21.Name = "kryptonLabel21";
             this.kryptonLabel21.Size = new System.Drawing.Size(36, 19);
@@ -356,7 +320,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonLabel20
             // 
-            this.kryptonLabel20.Location = new System.Drawing.Point(426, 561);
+            this.kryptonLabel20.Location = new System.Drawing.Point(597, 651);
             this.kryptonLabel20.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel20.Name = "kryptonLabel20";
             this.kryptonLabel20.Size = new System.Drawing.Size(61, 19);
@@ -367,7 +331,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonLabel19
             // 
-            this.kryptonLabel19.Location = new System.Drawing.Point(25, 561);
+            this.kryptonLabel19.Location = new System.Drawing.Point(48, 651);
             this.kryptonLabel19.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel19.Name = "kryptonLabel19";
             this.kryptonLabel19.Size = new System.Drawing.Size(64, 19);
@@ -378,7 +342,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonRichTextBox3
             // 
-            this.kryptonRichTextBox3.Location = new System.Drawing.Point(38, 583);
+            this.kryptonRichTextBox3.Location = new System.Drawing.Point(61, 674);
             this.kryptonRichTextBox3.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonRichTextBox3.Name = "kryptonRichTextBox3";
             this.kryptonRichTextBox3.Size = new System.Drawing.Size(273, 106);
@@ -392,14 +356,14 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonGroupBox4
             // 
-            this.kryptonGroupBox4.Location = new System.Drawing.Point(25, 383);
+            this.kryptonGroupBox4.Location = new System.Drawing.Point(48, 465);
             this.kryptonGroupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroupBox4.Name = "kryptonGroupBox4";
             // 
             // kryptonGroupBox4.Panel
             // 
-            this.kryptonGroupBox4.Panel.Controls.Add(this.pictureBox5);
-            this.kryptonGroupBox4.Size = new System.Drawing.Size(599, 171);
+            this.kryptonGroupBox4.Panel.Controls.Add(this.kryptonDataGridView1);
+            this.kryptonGroupBox4.Size = new System.Drawing.Size(712, 174);
             this.kryptonGroupBox4.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonGroupBox4.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonGroupBox4.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -413,19 +377,9 @@ namespace ITP4915_group3_project.warehouse.check_PO
             this.kryptonGroupBox4.TabIndex = 206;
             this.kryptonGroupBox4.Values.Heading = "ITEMS";
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::ITP4915_group3_project.Properties.Resources.螢幕擷取畫面_2023_03_15_235638;
-            this.pictureBox5.Location = new System.Drawing.Point(20, 19);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(538, 121);
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
-            // 
             // kryptonGroupBox3
             // 
-            this.kryptonGroupBox3.Location = new System.Drawing.Point(25, 285);
+            this.kryptonGroupBox3.Location = new System.Drawing.Point(48, 344);
             this.kryptonGroupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroupBox3.Name = "kryptonGroupBox3";
             // 
@@ -437,7 +391,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             this.kryptonGroupBox3.Panel.Controls.Add(this.kryptonLabel17);
             this.kryptonGroupBox3.Panel.Controls.Add(this.kryptonTextBox7);
             this.kryptonGroupBox3.Panel.Controls.Add(this.kryptonLabel10);
-            this.kryptonGroupBox3.Size = new System.Drawing.Size(600, 85);
+            this.kryptonGroupBox3.Size = new System.Drawing.Size(712, 94);
             this.kryptonGroupBox3.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonGroupBox3.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonGroupBox3.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -453,6 +407,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonTextBox13
             // 
+            this.kryptonTextBox13.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spo_headerBindingSource, "terms", true));
             this.kryptonTextBox13.Location = new System.Drawing.Point(483, 19);
             this.kryptonTextBox13.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox13.Name = "kryptonTextBox13";
@@ -543,7 +498,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonTextBox9
             // 
-            this.kryptonTextBox9.Location = new System.Drawing.Point(89, 61);
+            this.kryptonTextBox9.Location = new System.Drawing.Point(103, 82);
             this.kryptonTextBox9.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox9.Name = "kryptonTextBox9";
             this.kryptonTextBox9.ReadOnly = true;
@@ -562,7 +517,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonGroupBox1
             // 
-            this.kryptonGroupBox1.Location = new System.Drawing.Point(347, 91);
+            this.kryptonGroupBox1.Location = new System.Drawing.Point(423, 126);
             this.kryptonGroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroupBox1.Name = "kryptonGroupBox1";
             // 
@@ -576,7 +531,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonLabel13);
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonTextBox12);
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonLabel14);
-            this.kryptonGroupBox1.Size = new System.Drawing.Size(198, 163);
+            this.kryptonGroupBox1.Size = new System.Drawing.Size(337, 190);
             this.kryptonGroupBox1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonGroupBox1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonGroupBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -592,10 +547,10 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonRichTextBox1
             // 
-            this.kryptonRichTextBox1.Location = new System.Drawing.Point(73, 55);
+            this.kryptonRichTextBox1.Location = new System.Drawing.Point(75, 72);
             this.kryptonRichTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonRichTextBox1.Name = "kryptonRichTextBox1";
-            this.kryptonRichTextBox1.Size = new System.Drawing.Size(101, 39);
+            this.kryptonRichTextBox1.Size = new System.Drawing.Size(213, 54);
             this.kryptonRichTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonRichTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonRichTextBox1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -608,7 +563,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonLabel11
             // 
-            this.kryptonLabel11.Location = new System.Drawing.Point(10, 57);
+            this.kryptonLabel11.Location = new System.Drawing.Point(11, 72);
             this.kryptonLabel11.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel11.Name = "kryptonLabel11";
             this.kryptonLabel11.Size = new System.Drawing.Size(60, 19);
@@ -619,7 +574,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonTextBox10
             // 
-            this.kryptonTextBox10.Location = new System.Drawing.Point(73, 99);
+            this.kryptonTextBox10.Location = new System.Drawing.Point(75, 130);
             this.kryptonTextBox10.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox10.Name = "kryptonTextBox10";
             this.kryptonTextBox10.ReadOnly = true;
@@ -638,7 +593,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonLabel12
             // 
-            this.kryptonLabel12.Location = new System.Drawing.Point(22, 99);
+            this.kryptonLabel12.Location = new System.Drawing.Point(22, 133);
             this.kryptonLabel12.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel12.Name = "kryptonLabel12";
             this.kryptonLabel12.Size = new System.Drawing.Size(49, 19);
@@ -649,11 +604,11 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonTextBox11
             // 
-            this.kryptonTextBox11.Location = new System.Drawing.Point(73, 33);
+            this.kryptonTextBox11.Location = new System.Drawing.Point(75, 45);
             this.kryptonTextBox11.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox11.Name = "kryptonTextBox11";
             this.kryptonTextBox11.ReadOnly = true;
-            this.kryptonTextBox11.Size = new System.Drawing.Size(100, 22);
+            this.kryptonTextBox11.Size = new System.Drawing.Size(138, 22);
             this.kryptonTextBox11.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox11.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox11.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -668,7 +623,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonLabel13
             // 
-            this.kryptonLabel13.Location = new System.Drawing.Point(22, 35);
+            this.kryptonLabel13.Location = new System.Drawing.Point(23, 45);
             this.kryptonLabel13.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel13.Name = "kryptonLabel13";
             this.kryptonLabel13.Size = new System.Drawing.Size(48, 19);
@@ -679,11 +634,12 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonTextBox12
             // 
-            this.kryptonTextBox12.Location = new System.Drawing.Point(73, 10);
+            this.kryptonTextBox12.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spo_headerBindingSource, "buyer_ID", true));
+            this.kryptonTextBox12.Location = new System.Drawing.Point(75, 19);
             this.kryptonTextBox12.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox12.Name = "kryptonTextBox12";
             this.kryptonTextBox12.ReadOnly = true;
-            this.kryptonTextBox12.Size = new System.Drawing.Size(100, 22);
+            this.kryptonTextBox12.Size = new System.Drawing.Size(138, 22);
             this.kryptonTextBox12.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox12.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox12.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -698,7 +654,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonLabel14
             // 
-            this.kryptonLabel14.Location = new System.Drawing.Point(41, 11);
+            this.kryptonLabel14.Location = new System.Drawing.Point(42, 22);
             this.kryptonLabel14.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel14.Name = "kryptonLabel14";
             this.kryptonLabel14.Size = new System.Drawing.Size(29, 19);
@@ -709,7 +665,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonGroupBox2
             // 
-            this.kryptonGroupBox2.Location = new System.Drawing.Point(56, 91);
+            this.kryptonGroupBox2.Location = new System.Drawing.Point(48, 126);
             this.kryptonGroupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroupBox2.Name = "kryptonGroupBox2";
             // 
@@ -725,7 +681,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonLabel6);
             this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonTextBox4);
             this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonLabel7);
-            this.kryptonGroupBox2.Size = new System.Drawing.Size(229, 179);
+            this.kryptonGroupBox2.Size = new System.Drawing.Size(336, 190);
             this.kryptonGroupBox2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonGroupBox2.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonGroupBox2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -741,10 +697,10 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // input
             // 
-            this.input.Location = new System.Drawing.Point(70, 51);
+            this.input.Location = new System.Drawing.Point(70, 58);
             this.input.Margin = new System.Windows.Forms.Padding(2);
             this.input.Name = "input";
-            this.input.Size = new System.Drawing.Size(101, 39);
+            this.input.Size = new System.Drawing.Size(210, 42);
             this.input.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.input.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.input.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -757,7 +713,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonLabel16
             // 
-            this.kryptonLabel16.Location = new System.Drawing.Point(7, 51);
+            this.kryptonLabel16.Location = new System.Drawing.Point(9, 59);
             this.kryptonLabel16.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel16.Name = "kryptonLabel16";
             this.kryptonLabel16.Size = new System.Drawing.Size(60, 19);
@@ -768,7 +724,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonTextBox5
             // 
-            this.kryptonTextBox5.Location = new System.Drawing.Point(71, 97);
+            this.kryptonTextBox5.Location = new System.Drawing.Point(71, 104);
             this.kryptonTextBox5.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox5.Name = "kryptonTextBox5";
             this.kryptonTextBox5.ReadOnly = true;
@@ -787,7 +743,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonLabel9
             // 
-            this.kryptonLabel9.Location = new System.Drawing.Point(9, 97);
+            this.kryptonLabel9.Location = new System.Drawing.Point(9, 104);
             this.kryptonLabel9.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel9.Name = "kryptonLabel9";
             this.kryptonLabel9.Size = new System.Drawing.Size(57, 19);
@@ -798,7 +754,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonTextBox2
             // 
-            this.kryptonTextBox2.Location = new System.Drawing.Point(71, 120);
+            this.kryptonTextBox2.Location = new System.Drawing.Point(71, 127);
             this.kryptonTextBox2.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox2.Name = "kryptonTextBox2";
             this.kryptonTextBox2.ReadOnly = true;
@@ -817,7 +773,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonLabel5
             // 
-            this.kryptonLabel5.Location = new System.Drawing.Point(17, 121);
+            this.kryptonLabel5.Location = new System.Drawing.Point(17, 128);
             this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel5.Name = "kryptonLabel5";
             this.kryptonLabel5.Size = new System.Drawing.Size(49, 19);
@@ -828,7 +784,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonTextBox3
             // 
-            this.kryptonTextBox3.Location = new System.Drawing.Point(71, 29);
+            this.kryptonTextBox3.Location = new System.Drawing.Point(71, 32);
             this.kryptonTextBox3.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox3.Name = "kryptonTextBox3";
             this.kryptonTextBox3.ReadOnly = true;
@@ -847,7 +803,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonLabel6
             // 
-            this.kryptonLabel6.Location = new System.Drawing.Point(19, 29);
+            this.kryptonLabel6.Location = new System.Drawing.Point(19, 36);
             this.kryptonLabel6.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel6.Name = "kryptonLabel6";
             this.kryptonLabel6.Size = new System.Drawing.Size(48, 19);
@@ -858,6 +814,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonTextBox4
             // 
+            this.kryptonTextBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spo_headerBindingSource, "header_ID", true));
             this.kryptonTextBox4.Location = new System.Drawing.Point(71, 7);
             this.kryptonTextBox4.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox4.Name = "kryptonTextBox4";
@@ -877,7 +834,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonLabel7
             // 
-            this.kryptonLabel7.Location = new System.Drawing.Point(39, 7);
+            this.kryptonLabel7.Location = new System.Drawing.Point(38, 13);
             this.kryptonLabel7.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel7.Name = "kryptonLabel7";
             this.kryptonLabel7.Size = new System.Drawing.Size(29, 19);
@@ -888,7 +845,8 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonTextBox1
             // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(508, 61);
+            this.kryptonTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spo_headerBindingSource, "effective_date", true));
+            this.kryptonTextBox1.Location = new System.Drawing.Point(573, 79);
             this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox1.Name = "kryptonTextBox1";
             this.kryptonTextBox1.ReadOnly = true;
@@ -907,7 +865,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonLabel15
             // 
-            this.kryptonLabel15.Location = new System.Drawing.Point(31, 61);
+            this.kryptonLabel15.Location = new System.Drawing.Point(48, 85);
             this.kryptonLabel15.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel15.Name = "kryptonLabel15";
             this.kryptonLabel15.Size = new System.Drawing.Size(57, 19);
@@ -918,7 +876,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonLabel8
             // 
-            this.kryptonLabel8.Location = new System.Drawing.Point(412, 61);
+            this.kryptonLabel8.Location = new System.Drawing.Point(475, 82);
             this.kryptonLabel8.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel8.Name = "kryptonLabel8";
             this.kryptonLabel8.Size = new System.Drawing.Size(94, 19);
@@ -929,7 +887,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonLabel25
             // 
-            this.kryptonLabel25.Location = new System.Drawing.Point(215, 61);
+            this.kryptonLabel25.Location = new System.Drawing.Point(250, 82);
             this.kryptonLabel25.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel25.Name = "kryptonLabel25";
             this.kryptonLabel25.Size = new System.Drawing.Size(80, 19);
@@ -940,7 +898,8 @@ namespace ITP4915_group3_project.warehouse.check_PO
             // 
             // kryptonTextBox6
             // 
-            this.kryptonTextBox6.Location = new System.Drawing.Point(297, 61);
+            this.kryptonTextBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spo_headerBindingSource, "create_date", true));
+            this.kryptonTextBox6.Location = new System.Drawing.Point(334, 79);
             this.kryptonTextBox6.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox6.Name = "kryptonTextBox6";
             this.kryptonTextBox6.ReadOnly = true;
@@ -957,13 +916,73 @@ namespace ITP4915_group3_project.warehouse.check_PO
             this.kryptonTextBox6.Text = "05/01/2023";
             this.kryptonTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // kryptonDataGridView1
+            // 
+            this.kryptonDataGridView1.DataSource = this.spo_linesBindingSource;
+            this.kryptonDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonDataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonDataGridView1.Name = "kryptonDataGridView1";
+            this.kryptonDataGridView1.RowTemplate.Height = 24;
+            this.kryptonDataGridView1.Size = new System.Drawing.Size(700, 144);
+            this.kryptonDataGridView1.StateCommon.Background.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.kryptonDataGridView1.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
+            this.kryptonDataGridView1.TabIndex = 0;
+            // 
+            // purchase_dbDataSet
+            // 
+            this.purchase_dbDataSet.DataSetName = "purchase_dbDataSet";
+            this.purchase_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // spo_linesBindingSource
+            // 
+            this.spo_linesBindingSource.DataMember = "spo_lines";
+            this.spo_linesBindingSource.DataSource = this.purchase_dbDataSet;
+            // 
+            // spo_linesTableAdapter
+            // 
+            this.spo_linesTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.addressTableAdapter = null;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.blanket_releaseTableAdapter = null;
+            this.tableAdapterManager.bpa_headerTableAdapter = null;
+            this.tableAdapterManager.bpa_linesTableAdapter = null;
+            this.tableAdapterManager.cpaTableAdapter = null;
+            this.tableAdapterManager.itemTableAdapter = null;
+            this.tableAdapterManager.ppo_headerTableAdapter = null;
+            this.tableAdapterManager.ppo_linesTableAdapter = null;
+            this.tableAdapterManager.purchase_order_allTableAdapter = null;
+            this.tableAdapterManager.purchasers_requestTableAdapter = null;
+            this.tableAdapterManager.restaurantTableAdapter = null;
+            this.tableAdapterManager.schedule_releaseTableAdapter = null;
+            this.tableAdapterManager.spo_headerTableAdapter = this.spo_headerTableAdapter;
+            this.tableAdapterManager.spo_linesTableAdapter = this.spo_linesTableAdapter;
+            this.tableAdapterManager.spo_releaseTableAdapter = null;
+            this.tableAdapterManager.supplierTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.purchase_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.userTableAdapter = null;
+            this.tableAdapterManager.warehouse_itemTableAdapter = null;
+            this.tableAdapterManager.warehousedispatchinstructionTableAdapter = null;
+            this.tableAdapterManager.warehouseTableAdapter = null;
+            // 
+            // spo_headerBindingSource
+            // 
+            this.spo_headerBindingSource.DataMember = "spo_header";
+            this.spo_headerBindingSource.DataSource = this.purchase_dbDataSet;
+            // 
+            // spo_headerTableAdapter
+            // 
+            this.spo_headerTableAdapter.ClearBeforeFill = true;
+            // 
             // detail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.kryptonPanelContent);
             this.Name = "detail";
-            this.Size = new System.Drawing.Size(800, 500);
+            this.Size = new System.Drawing.Size(827, 549);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelContent)).EndInit();
             this.kryptonPanelContent.ResumeLayout(false);
             this.kryptonPanelContent.PerformLayout();
@@ -971,7 +990,6 @@ namespace ITP4915_group3_project.warehouse.check_PO
             this.kryptonGroupBox4.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox4)).EndInit();
             this.kryptonGroupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox3.Panel)).EndInit();
             this.kryptonGroupBox3.Panel.ResumeLayout(false);
             this.kryptonGroupBox3.Panel.PerformLayout();
@@ -987,6 +1005,10 @@ namespace ITP4915_group3_project.warehouse.check_PO
             this.kryptonGroupBox2.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).EndInit();
             this.kryptonGroupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spo_linesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spo_headerBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -994,8 +1016,6 @@ namespace ITP4915_group3_project.warehouse.check_PO
         #endregion
 
         private Krypton.Toolkit.KryptonPanel kryptonPanelContent;
-        private Krypton.Toolkit.KryptonButton kryptonButton9;
-        private Krypton.Toolkit.KryptonButton kryptonButton8;
         private Krypton.Toolkit.KryptonBorderEdge kryptonBorderEdge4;
         private Krypton.Toolkit.KryptonLabel kryptonLabel4;
         private Krypton.Toolkit.KryptonTextBox kryptonTextBox18;
@@ -1012,7 +1032,6 @@ namespace ITP4915_group3_project.warehouse.check_PO
         private Krypton.Toolkit.KryptonLabel kryptonLabel19;
         private Krypton.Toolkit.KryptonRichTextBox kryptonRichTextBox3;
         private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox3;
         private Krypton.Toolkit.KryptonTextBox kryptonTextBox13;
         private Krypton.Toolkit.KryptonLabel kryptonLabel18;
@@ -1046,5 +1065,12 @@ namespace ITP4915_group3_project.warehouse.check_PO
         private Krypton.Toolkit.KryptonLabel kryptonLabel8;
         private Krypton.Toolkit.KryptonLabel kryptonLabel25;
         private Krypton.Toolkit.KryptonTextBox kryptonTextBox6;
+        private Krypton.Toolkit.KryptonDataGridView kryptonDataGridView1;
+        private System.Windows.Forms.BindingSource spo_linesBindingSource;
+        private purchase_dbDataSet purchase_dbDataSet;
+        private System.Windows.Forms.BindingSource spo_headerBindingSource;
+        private purchase_dbDataSetTableAdapters.spo_linesTableAdapter spo_linesTableAdapter;
+        private purchase_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private purchase_dbDataSetTableAdapters.spo_headerTableAdapter spo_headerTableAdapter;
     }
 }

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ITP4915_group3_project.warehouse.check_PO
+namespace ITP4915_group3_project.warehouse
 {
     public partial class detail : UserControl
     {
