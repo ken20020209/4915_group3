@@ -1,7 +1,7 @@
 ﻿
 namespace ITP4915_group3_project.category.brand.search
 {
-    partial class delete_success
+    partial class delete_sucess
     {
         /// <summary>
         /// Required designer variable.

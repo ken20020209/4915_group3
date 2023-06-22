@@ -29,6 +29,7 @@ namespace ITP4915_group3_project.category.brand.search
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.kryptonPanel4 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonButton11 = new Krypton.Toolkit.KryptonButton();
             this.kryptonTextBox5 = new Krypton.Toolkit.KryptonTextBox();
@@ -46,8 +47,14 @@ namespace ITP4915_group3_project.category.brand.search
             this.kryptonTextBox2 = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel6 = new Krypton.Toolkit.KryptonLabel();
             this.label1 = new System.Windows.Forms.Label();
+            this.category_dbDataSet = new ITP4915_group3_project.category_dbDataSet();
+            this.partner_brandBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.partner_brandTableAdapter = new ITP4915_group3_project.category_dbDataSetTableAdapters.partner_brandTableAdapter();
+            this.tableAdapterManager = new ITP4915_group3_project.category_dbDataSetTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.category_dbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.partner_brandBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanel4
@@ -96,9 +103,11 @@ namespace ITP4915_group3_project.category.brand.search
             this.kryptonButton11.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.kryptonButton11.TabIndex = 212;
             this.kryptonButton11.Values.Text = "Delete";
+            this.kryptonButton11.Click += new System.EventHandler(this.kryptonLabel11_Click);
             // 
             // kryptonTextBox5
             // 
+            this.kryptonTextBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.partner_brandBindingSource, "type", true));
             this.kryptonTextBox5.Location = new System.Drawing.Point(114, 147);
             this.kryptonTextBox5.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox5.Name = "kryptonTextBox5";
@@ -147,19 +156,22 @@ namespace ITP4915_group3_project.category.brand.search
             this.kryptonButton10.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.kryptonButton10.TabIndex = 209;
             this.kryptonButton10.Values.Text = "Edit";
+            this.kryptonButton10.Click += new System.EventHandler(this.kryptonLabel10_Click);
             // 
             // kryptonLabel9
             // 
-            this.kryptonLabel9.Location = new System.Drawing.Point(25, 37);
+            this.kryptonLabel9.Location = new System.Drawing.Point(25, 50);
             this.kryptonLabel9.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel9.Name = "kryptonLabel9";
             this.kryptonLabel9.Size = new System.Drawing.Size(50, 16);
             this.kryptonLabel9.StateCommon.ShortText.Font = new System.Drawing.Font("新細明體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.kryptonLabel9.TabIndex = 207;
             this.kryptonLabel9.Values.Text = "← Back";
+            this.kryptonLabel9.Click += new System.EventHandler(this.kryptonLabel9_Click);
             // 
             // kryptonRichTextBox1
             // 
+            this.kryptonRichTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.partner_brandBindingSource, "remarks", true));
             this.kryptonRichTextBox1.Location = new System.Drawing.Point(114, 182);
             this.kryptonRichTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonRichTextBox1.Name = "kryptonRichTextBox1";
@@ -245,6 +257,7 @@ namespace ITP4915_group3_project.category.brand.search
             // 
             // kryptonTextBox1
             // 
+            this.kryptonTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.partner_brandBindingSource, "name", true));
             this.kryptonTextBox1.Location = new System.Drawing.Point(329, 76);
             this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox1.Name = "kryptonTextBox1";
@@ -275,6 +288,7 @@ namespace ITP4915_group3_project.category.brand.search
             // 
             // kryptonTextBox2
             // 
+            this.kryptonTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.partner_brandBindingSource, "partner_brand_ID", true));
             this.kryptonTextBox2.Location = new System.Drawing.Point(114, 75);
             this.kryptonTextBox2.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox2.Name = "kryptonTextBox2";
@@ -315,16 +329,43 @@ namespace ITP4915_group3_project.category.brand.search
             this.label1.TabIndex = 160;
             this.label1.Text = "Detail";
             // 
-            // UserControl1
+            // category_dbDataSet
+            // 
+            this.category_dbDataSet.DataSetName = "category_dbDataSet";
+            this.category_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // partner_brandBindingSource
+            // 
+            this.partner_brandBindingSource.DataMember = "partner_brand";
+            this.partner_brandBindingSource.DataSource = this.category_dbDataSet;
+            // 
+            // partner_brandTableAdapter
+            // 
+            this.partner_brandTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.item_categoryTableAdapter = null;
+            this.tableAdapterManager.itemTableAdapter = null;
+            this.tableAdapterManager.partner_brand_restaurantTableAdapter = null;
+            this.tableAdapterManager.partner_brandTableAdapter = this.partner_brandTableAdapter;
+            this.tableAdapterManager.supplier_contact_personTableAdapter = null;
+            this.tableAdapterManager.supplierTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.category_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // detail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.kryptonPanel4);
-            this.Name = "UserControl1";
+            this.Name = "detail";
             this.Size = new System.Drawing.Size(796, 468);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
             this.kryptonPanel4.ResumeLayout(false);
             this.kryptonPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.category_dbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.partner_brandBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -348,5 +389,9 @@ namespace ITP4915_group3_project.category.brand.search
         private Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
         private Krypton.Toolkit.KryptonLabel kryptonLabel6;
         private System.Windows.Forms.Label label1;
+        private category_dbDataSet category_dbDataSet;
+        private System.Windows.Forms.BindingSource partner_brandBindingSource;
+        private category_dbDataSetTableAdapters.partner_brandTableAdapter partner_brandTableAdapter;
+        private category_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     }
 }

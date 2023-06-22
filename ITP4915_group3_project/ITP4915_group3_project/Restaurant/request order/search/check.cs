@@ -35,7 +35,7 @@ namespace ITP4915_group3_project.Restaurant.request_order.search
         {
 
             keyword = "%" + kryptonTextBoxSearchKeyWord.Text + "%";
-            purchaseRequestDetailTableAdapter.FillBy_search(this.restaurant_dbDataSet.purchaseRequestDetail, restaurant.restaurant_ID, keyword);
+            purchaseRequestDetailTableAdapter.FillBy_search(this.restaurant_dbDataSet.purchaseRequestDetail, keyword, restaurant.restaurant_ID );
 
             purchaseRequestDetailBindingSource.Filter = $"status_ID={status}"; 
 

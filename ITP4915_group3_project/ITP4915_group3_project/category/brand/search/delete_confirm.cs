@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Krypton.Toolkit;
 
 namespace ITP4915_group3_project.category.brand
 {
-    public partial class delete : Form
+    public partial class delete : KryptonForm
     {
         public delete()
         {
             InitializeComponent();
+        }
+
+        private void delete_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

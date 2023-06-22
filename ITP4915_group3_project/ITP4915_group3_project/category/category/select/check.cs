@@ -13,6 +13,9 @@ namespace ITP4915_group3_project.category.category.select
     public partial class check : UserControl
     {
         public Control panel;
+        public String keyword;
+        internal static Control panelContent;
+
         public check(Control panel)
         {
             InitializeComponent();
@@ -23,7 +26,8 @@ namespace ITP4915_group3_project.category.category.select
         }
         private void search()
         {
-            
+            keyword = "%" + kryptonTextBox16.Text + "%";
+            this.item_categoryTableAdapter.Fill(this.category_dbDataSet.item_category);
         }
         private void item_categoryBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
@@ -31,6 +35,18 @@ namespace ITP4915_group3_project.category.category.select
             this.item_categoryBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.category_dbDataSet);
 
+        }
+        private void item_categoryKryptonDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex == -1 || e.ColumnIndex != 0)
+            {
+                return;
+            }
+            detail stockDetail = new detail(this, int.Parse(item_categoryKryptonDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString()));
+        }
+        private void kryptonTextBox16_TextChanged(object sender, EventArgs e)
+        {
+            search();
         }
     }
 }

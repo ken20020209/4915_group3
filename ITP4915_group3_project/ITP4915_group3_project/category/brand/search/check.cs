@@ -14,6 +14,7 @@ namespace ITP4915_group3_project.category.brand.search
     {
         public Control panel;
         public string keyword;
+        internal static Control panelContent;
 
         public check(Control panel)
         {
@@ -30,13 +31,13 @@ namespace ITP4915_group3_project.category.brand.search
             keyword = "%" + kryptonTextBox16.Text + "%";
             this.partner_brandTableAdapter.Fill(this.category_dbDataSet.partner_brand);
         }
-        private void dataTable_partner_brandKryptonDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void partner_brandKryptonDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex == -1 || e.ColumnIndex != 0)
             {
                 return;
             }
-            detail stockDetail = new detail(this, int.Parse(partner_brandKryptonDataGridView.Rows[e.RowIndex].Cells[0].Value.ToString()));
+            detail stockDetail = new detail(this, int.Parse(partner_brandKryptonDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString()));
         }
         private void kryptonTextBox16_TextChanged(object sender, EventArgs e)
         {
