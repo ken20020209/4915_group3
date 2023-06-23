@@ -12,9 +12,30 @@ namespace ITP4915_group3_project.category.supplier.search
 {
     public partial class detail : UserControl
     {
-        public detail()
+        private Control check;
+        private int v;
+        public detail(check check, int v)
         {
+            this.check = check;
+            this.v = v;
             InitializeComponent();
+            check.Controls.Add(this);
+            this.BringToFront();
+        }
+        private void kryptonLabel20_Click(object sender, EventArgs e)
+        {
+            check.Controls.Remove(this);
+        }
+        private void kryptonLabel11_Click(object sender, EventArgs e)
+        {
+            supplierBindingSource.RemoveCurrent();
+            this.tableAdapterManager.UpdateAll(this.category_dbDataSet);
+            MessageBox.Show("delete success");
+            new delete_sucess().ShowDialog();
+        }
+        private void kryptonLabel10_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
