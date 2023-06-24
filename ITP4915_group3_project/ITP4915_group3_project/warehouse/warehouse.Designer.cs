@@ -46,10 +46,6 @@ namespace ITP4915_group3_project.warehouse
             this.kryptonPanelHeader = new Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel3 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonPanelContent = new Krypton.Toolkit.KryptonPanel();
-            this.warehouse_dbDataSet = new ITP4915_group3_project.warehouse_dbDataSet();
-            this.dataTableWarehouseUserBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataTableWarehouseUserTableAdapter = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.DataTableWarehouseUserTableAdapter();
-            this.tableAdapterManager = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLeft)).BeginInit();
@@ -59,8 +55,6 @@ namespace ITP4915_group3_project.warehouse
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelHeader)).BeginInit();
             this.kryptonPanelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelContent)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.warehouse_dbDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTableWarehouseUserBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonLabelUserName
@@ -366,36 +360,6 @@ namespace ITP4915_group3_project.warehouse
             this.kryptonPanelContent.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonPanelContent.TabIndex = 7;
             // 
-            // warehouse_dbDataSet
-            // 
-            this.warehouse_dbDataSet.DataSetName = "warehouse_dbDataSet";
-            this.warehouse_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataTableWarehouseUserBindingSource
-            // 
-            this.dataTableWarehouseUserBindingSource.DataMember = "DataTableWarehouseUser";
-            this.dataTableWarehouseUserBindingSource.DataSource = this.warehouse_dbDataSet;
-            // 
-            // dataTableWarehouseUserTableAdapter
-            // 
-            this.dataTableWarehouseUserTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.Connection = null;
-            this.tableAdapterManager.delivery_request_handlerTableAdapter = null;
-            this.tableAdapterManager.delivery_requestTableAdapter = null;
-            this.tableAdapterManager.item_categoryTableAdapter = null;
-            this.tableAdapterManager.itemTableAdapter = null;
-            this.tableAdapterManager.purchase_order_allTableAdapter = null;
-            this.tableAdapterManager.statusTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.warehouse_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.userTableAdapter = null;
-            this.tableAdapterManager.warehouse_itemTableAdapter = null;
-            this.tableAdapterManager.warehousedispatchinstructionTableAdapter = null;
-            this.tableAdapterManager.warehouseTableAdapter = null;
-            // 
             // warehouse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -420,8 +384,6 @@ namespace ITP4915_group3_project.warehouse
             this.kryptonPanelHeader.ResumeLayout(false);
             this.kryptonPanelHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelContent)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.warehouse_dbDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTableWarehouseUserBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -444,9 +406,5 @@ namespace ITP4915_group3_project.warehouse
         private Krypton.Toolkit.KryptonButton kryptonBtnDeliveryNote;
         private Krypton.Toolkit.KryptonPanel kryptonPanelContent;
         private System.Windows.Forms.PictureBox pictureBoxLeft;
-        private warehouse_dbDataSet warehouse_dbDataSet;
-        private System.Windows.Forms.BindingSource dataTableWarehouseUserBindingSource;
-        private warehouse_dbDataSetTableAdapters.DataTableWarehouseUserTableAdapter dataTableWarehouseUserTableAdapter;
-        private warehouse_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     }
 }

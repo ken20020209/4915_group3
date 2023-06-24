@@ -14,30 +14,42 @@ namespace ITP4915_group3_project.warehouse
     public partial class warehouse : KryptonForm
     {
         public static int warehouse_ID;
+        public static int address_ID;
         public static int warehouse_address_ID;
         public static string user_name;
         public warehouse()
         {
             InitializeComponent();
 
-            //fake data
-            warehouse_ID = 1;
+            warehouse_ID = getWarehouseID(General.login.Login.role_id);
 
             user_name = General.login.Login.userName;
-
             kryptonLabelUserName.Text = user_name;
 
             kryptonBtnPO_Click(null, null);
         }
 
-
+        private int getWarehouseID(int ware)
+        {
+            switch (ware)
+            {
+                case 21:
+                    address_ID = 3;
+                    return 1;
+                case 22:
+                    address_ID = 4;
+                    return 2;
+                case 23:
+                    address_ID = 1;
+                    return 3;
+            }
+            address_ID = 3;
+            return 1;
+        }
         private void moveLeftPic(Control btn)
         {
             pictureBoxLeft.Top = btn.Top - 26;
         }
-
-
-
 
         private void kryptonBtnDeliveryNote_Click(object sender, EventArgs e)
         {
