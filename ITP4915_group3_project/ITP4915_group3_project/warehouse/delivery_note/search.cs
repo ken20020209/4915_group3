@@ -83,7 +83,7 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             {
                 return;
             }
-            new detail(this, (int)kryptonDataGridView_deliveryNoteSearch.Rows[e.RowIndex].Cells[2].Value);
+            new detail(this, (int)kryptonDataGridView_deliveryNoteSearch.Rows[e.RowIndex].Cells[1].Value);
         }
     }
 }

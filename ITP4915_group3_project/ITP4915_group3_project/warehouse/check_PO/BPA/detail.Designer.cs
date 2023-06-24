@@ -172,6 +172,7 @@ namespace ITP4915_group3_project.warehouse.check_PO.BPA
             this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("新細明體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.kryptonLabel4.TabIndex = 207;
             this.kryptonLabel4.Values.Text = "← Back";
+            this.kryptonLabel4.Click += new System.EventHandler(this.kryptonLabel4_Click);
             // 
             // kryptonTextBox18
             // 

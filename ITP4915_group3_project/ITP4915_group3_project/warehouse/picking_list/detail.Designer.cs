@@ -37,23 +37,23 @@ namespace ITP4915_group3_project.warehouse.picking_list
             this.kryptonButton8 = new Krypton.Toolkit.KryptonButton();
             this.kryptonLabel7 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
+            this.item_nameTextBox = new System.Windows.Forms.TextBox();
+            this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.warehouse_dbDataSet = new ITP4915_group3_project.warehouse_dbDataSet();
+            this.quantityTextBox = new System.Windows.Forms.TextBox();
+            this.delivery_requestBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.item_IDTextBox = new System.Windows.Forms.TextBox();
             this.kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
+            this.kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonTextBox2 = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonTextBox3 = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel5 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel6 = new Krypton.Toolkit.KryptonLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
-            this.warehouse_dbDataSet = new ITP4915_group3_project.warehouse_dbDataSet();
-            this.delivery_requestBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.delivery_requestTableAdapter = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.delivery_requestTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.TableAdapterManager();
-            this.item_IDTextBox = new System.Windows.Forms.TextBox();
-            this.quantityTextBox = new System.Windows.Forms.TextBox();
-            this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.itemTableAdapter = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.itemTableAdapter();
-            this.item_nameTextBox = new System.Windows.Forms.TextBox();
             item_IDLabel = new System.Windows.Forms.Label();
             quantityLabel = new System.Windows.Forms.Label();
             item_nameLabel = new System.Windows.Forms.Label();
@@ -63,14 +63,41 @@ namespace ITP4915_group3_project.warehouse.picking_list
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).BeginInit();
             this.kryptonGroupBox2.Panel.SuspendLayout();
             this.kryptonGroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.warehouse_dbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.delivery_requestBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).BeginInit();
             this.kryptonGroupBox1.Panel.SuspendLayout();
             this.kryptonGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.warehouse_dbDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.delivery_requestBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // item_IDLabel
+            // 
+            item_IDLabel.AutoSize = true;
+            item_IDLabel.Location = new System.Drawing.Point(38, 31);
+            item_IDLabel.Name = "item_IDLabel";
+            item_IDLabel.Size = new System.Drawing.Size(43, 12);
+            item_IDLabel.TabIndex = 0;
+            item_IDLabel.Text = "item ID:";
+            // 
+            // quantityLabel
+            // 
+            quantityLabel.AutoSize = true;
+            quantityLabel.Location = new System.Drawing.Point(261, 28);
+            quantityLabel.Name = "quantityLabel";
+            quantityLabel.Size = new System.Drawing.Size(46, 12);
+            quantityLabel.TabIndex = 2;
+            quantityLabel.Text = "quantity:";
+            // 
+            // item_nameLabel
+            // 
+            item_nameLabel.AutoSize = true;
+            item_nameLabel.Location = new System.Drawing.Point(25, 72);
+            item_nameLabel.Name = "item_nameLabel";
+            item_nameLabel.Size = new System.Drawing.Size(56, 12);
+            item_nameLabel.TabIndex = 4;
+            item_nameLabel.Text = "item name:";
             // 
             // kryptonPanel4
             // 
@@ -150,6 +177,48 @@ namespace ITP4915_group3_project.warehouse.picking_list
             this.kryptonGroupBox2.TabIndex = 222;
             this.kryptonGroupBox2.Values.Heading = "ITEM";
             // 
+            // item_nameTextBox
+            // 
+            this.item_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.itemBindingSource, "item_name", true));
+            this.item_nameTextBox.Location = new System.Drawing.Point(87, 69);
+            this.item_nameTextBox.Name = "item_nameTextBox";
+            this.item_nameTextBox.ReadOnly = true;
+            this.item_nameTextBox.Size = new System.Drawing.Size(100, 22);
+            this.item_nameTextBox.TabIndex = 5;
+            // 
+            // itemBindingSource
+            // 
+            this.itemBindingSource.DataMember = "item";
+            this.itemBindingSource.DataSource = this.warehouse_dbDataSet;
+            // 
+            // warehouse_dbDataSet
+            // 
+            this.warehouse_dbDataSet.DataSetName = "warehouse_dbDataSet";
+            this.warehouse_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // quantityTextBox
+            // 
+            this.quantityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.delivery_requestBindingSource, "quantity", true));
+            this.quantityTextBox.Location = new System.Drawing.Point(313, 25);
+            this.quantityTextBox.Name = "quantityTextBox";
+            this.quantityTextBox.ReadOnly = true;
+            this.quantityTextBox.Size = new System.Drawing.Size(100, 22);
+            this.quantityTextBox.TabIndex = 3;
+            // 
+            // delivery_requestBindingSource
+            // 
+            this.delivery_requestBindingSource.DataMember = "delivery_request";
+            this.delivery_requestBindingSource.DataSource = this.warehouse_dbDataSet;
+            // 
+            // item_IDTextBox
+            // 
+            this.item_IDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.delivery_requestBindingSource, "item_ID", true));
+            this.item_IDTextBox.Location = new System.Drawing.Point(87, 28);
+            this.item_IDTextBox.Name = "item_IDTextBox";
+            this.item_IDTextBox.ReadOnly = true;
+            this.item_IDTextBox.Size = new System.Drawing.Size(100, 22);
+            this.item_IDTextBox.TabIndex = 1;
+            // 
             // kryptonGroupBox1
             // 
             this.kryptonGroupBox1.Location = new System.Drawing.Point(36, 117);
@@ -177,6 +246,26 @@ namespace ITP4915_group3_project.warehouse.picking_list
             this.kryptonGroupBox1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonGroupBox1.TabIndex = 221;
             this.kryptonGroupBox1.Values.Heading = "GENERAL";
+            // 
+            // kryptonTextBox1
+            // 
+            this.kryptonTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.delivery_requestBindingSource, "delivery_request_ID", true));
+            this.kryptonTextBox1.Location = new System.Drawing.Point(118, 7);
+            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonTextBox1.Name = "kryptonTextBox1";
+            this.kryptonTextBox1.ReadOnly = true;
+            this.kryptonTextBox1.Size = new System.Drawing.Size(100, 22);
+            this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
+            this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox1.StateCommon.Content.Color1 = System.Drawing.Color.Black;
+            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox1.TabIndex = 209;
+            this.kryptonTextBox1.Text = "0";
+            this.kryptonTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // kryptonTextBox2
             // 
@@ -263,36 +352,6 @@ namespace ITP4915_group3_project.warehouse.picking_list
             this.label1.TabIndex = 220;
             this.label1.Text = "Detail";
             // 
-            // kryptonTextBox1
-            // 
-            this.kryptonTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.delivery_requestBindingSource, "delivery_request_ID", true));
-            this.kryptonTextBox1.Location = new System.Drawing.Point(118, 7);
-            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.ReadOnly = true;
-            this.kryptonTextBox1.Size = new System.Drawing.Size(100, 22);
-            this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
-            this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox1.StateCommon.Content.Color1 = System.Drawing.Color.Black;
-            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox1.TabIndex = 209;
-            this.kryptonTextBox1.Text = "0";
-            this.kryptonTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // warehouse_dbDataSet
-            // 
-            this.warehouse_dbDataSet.DataSetName = "warehouse_dbDataSet";
-            this.warehouse_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // delivery_requestBindingSource
-            // 
-            this.delivery_requestBindingSource.DataMember = "delivery_request";
-            this.delivery_requestBindingSource.DataSource = this.warehouse_dbDataSet;
-            // 
             // delivery_requestTableAdapter
             // 
             this.delivery_requestTableAdapter.ClearBeforeFill = true;
@@ -312,68 +371,9 @@ namespace ITP4915_group3_project.warehouse.picking_list
             this.tableAdapterManager.warehousedispatchinstructionTableAdapter = null;
             this.tableAdapterManager.warehouseTableAdapter = null;
             // 
-            // item_IDLabel
-            // 
-            item_IDLabel.AutoSize = true;
-            item_IDLabel.Location = new System.Drawing.Point(38, 31);
-            item_IDLabel.Name = "item_IDLabel";
-            item_IDLabel.Size = new System.Drawing.Size(43, 12);
-            item_IDLabel.TabIndex = 0;
-            item_IDLabel.Text = "item ID:";
-            // 
-            // item_IDTextBox
-            // 
-            this.item_IDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.delivery_requestBindingSource, "item_ID", true));
-            this.item_IDTextBox.Location = new System.Drawing.Point(87, 28);
-            this.item_IDTextBox.Name = "item_IDTextBox";
-            this.item_IDTextBox.ReadOnly = true;
-            this.item_IDTextBox.Size = new System.Drawing.Size(100, 22);
-            this.item_IDTextBox.TabIndex = 1;
-            // 
-            // quantityLabel
-            // 
-            quantityLabel.AutoSize = true;
-            quantityLabel.Location = new System.Drawing.Point(261, 28);
-            quantityLabel.Name = "quantityLabel";
-            quantityLabel.Size = new System.Drawing.Size(46, 12);
-            quantityLabel.TabIndex = 2;
-            quantityLabel.Text = "quantity:";
-            // 
-            // quantityTextBox
-            // 
-            this.quantityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.delivery_requestBindingSource, "quantity", true));
-            this.quantityTextBox.Location = new System.Drawing.Point(313, 25);
-            this.quantityTextBox.Name = "quantityTextBox";
-            this.quantityTextBox.ReadOnly = true;
-            this.quantityTextBox.Size = new System.Drawing.Size(100, 22);
-            this.quantityTextBox.TabIndex = 3;
-            // 
-            // itemBindingSource
-            // 
-            this.itemBindingSource.DataMember = "item";
-            this.itemBindingSource.DataSource = this.warehouse_dbDataSet;
-            // 
             // itemTableAdapter
             // 
             this.itemTableAdapter.ClearBeforeFill = true;
-            // 
-            // item_nameLabel
-            // 
-            item_nameLabel.AutoSize = true;
-            item_nameLabel.Location = new System.Drawing.Point(25, 72);
-            item_nameLabel.Name = "item_nameLabel";
-            item_nameLabel.Size = new System.Drawing.Size(56, 12);
-            item_nameLabel.TabIndex = 4;
-            item_nameLabel.Text = "item name:";
-            // 
-            // item_nameTextBox
-            // 
-            this.item_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.itemBindingSource, "item_name", true));
-            this.item_nameTextBox.Location = new System.Drawing.Point(87, 69);
-            this.item_nameTextBox.Name = "item_nameTextBox";
-            this.item_nameTextBox.ReadOnly = true;
-            this.item_nameTextBox.Size = new System.Drawing.Size(100, 22);
-            this.item_nameTextBox.TabIndex = 5;
             // 
             // detail
             // 
@@ -390,14 +390,14 @@ namespace ITP4915_group3_project.warehouse.picking_list
             this.kryptonGroupBox2.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).EndInit();
             this.kryptonGroupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.warehouse_dbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.delivery_requestBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).EndInit();
             this.kryptonGroupBox1.Panel.ResumeLayout(false);
             this.kryptonGroupBox1.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).EndInit();
             this.kryptonGroupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.warehouse_dbDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.delivery_requestBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

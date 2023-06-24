@@ -29,6 +29,7 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             delivery_dbDataSet.delivery_requestRow dataRow = delivery_requestTableAdapter.GetData().FindBydelivery_request_ID(deliveryID);
             dataRow.status_ID = 3100;
             delivery_requestTableAdapter.Update(dataRow);
+            this.Close();
         }
 
 

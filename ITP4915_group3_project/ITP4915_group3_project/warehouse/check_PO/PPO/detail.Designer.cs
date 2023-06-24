@@ -34,6 +34,8 @@ namespace ITP4915_group3_project.warehouse.check_PO.PPO
             this.kryptonBorderEdge4 = new Krypton.Toolkit.KryptonBorderEdge();
             this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonTextBox18 = new Krypton.Toolkit.KryptonTextBox();
+            this.ppo_linesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.purchase_dbDataSet = new ITP4915_group3_project.purchase_dbDataSet();
             this.label1 = new System.Windows.Forms.Label();
             this.kryptonTextBox17 = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonTextBox16 = new Krypton.Toolkit.KryptonTextBox();
@@ -47,8 +49,10 @@ namespace ITP4915_group3_project.warehouse.check_PO.PPO
             this.kryptonLabel19 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonRichTextBox3 = new Krypton.Toolkit.KryptonRichTextBox();
             this.kryptonGroupBox4 = new Krypton.Toolkit.KryptonGroupBox();
+            this.kryptonDataGridView1 = new Krypton.Toolkit.KryptonDataGridView();
             this.kryptonGroupBox3 = new Krypton.Toolkit.KryptonGroupBox();
             this.kryptonTextBox13 = new Krypton.Toolkit.KryptonTextBox();
+            this.ppo_headerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kryptonLabel18 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonTextBox8 = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel17 = new Krypton.Toolkit.KryptonLabel();
@@ -80,23 +84,23 @@ namespace ITP4915_group3_project.warehouse.check_PO.PPO
             this.kryptonLabel8 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel25 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonTextBox6 = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonDataGridView1 = new Krypton.Toolkit.KryptonDataGridView();
-            this.purchase_dbDataSet = new ITP4915_group3_project.purchase_dbDataSet();
-            this.ppo_linesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ppo_linesTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.ppo_linesTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.TableAdapterManager();
-            this.ppo_headerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ppo_headerTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.ppo_headerTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelContent)).BeginInit();
             this.kryptonPanelContent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ppo_linesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox4.Panel)).BeginInit();
             this.kryptonGroupBox4.Panel.SuspendLayout();
             this.kryptonGroupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox3.Panel)).BeginInit();
             this.kryptonGroupBox3.Panel.SuspendLayout();
             this.kryptonGroupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ppo_headerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).BeginInit();
             this.kryptonGroupBox1.Panel.SuspendLayout();
@@ -105,10 +109,6 @@ namespace ITP4915_group3_project.warehouse.check_PO.PPO
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).BeginInit();
             this.kryptonGroupBox2.Panel.SuspendLayout();
             this.kryptonGroupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ppo_linesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ppo_headerBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanelContent
@@ -166,6 +166,7 @@ namespace ITP4915_group3_project.warehouse.check_PO.PPO
             this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("新細明體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.kryptonLabel4.TabIndex = 207;
             this.kryptonLabel4.Values.Text = "← Back";
+            this.kryptonLabel4.Click += new System.EventHandler(this.kryptonLabel4_Click);
             // 
             // kryptonTextBox18
             // 
@@ -186,6 +187,16 @@ namespace ITP4915_group3_project.warehouse.check_PO.PPO
             this.kryptonTextBox18.TabIndex = 219;
             this.kryptonTextBox18.Text = "$13,892";
             this.kryptonTextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // ppo_linesBindingSource
+            // 
+            this.ppo_linesBindingSource.DataMember = "ppo_lines";
+            this.ppo_linesBindingSource.DataSource = this.purchase_dbDataSet;
+            // 
+            // purchase_dbDataSet
+            // 
+            this.purchase_dbDataSet.DataSetName = "purchase_dbDataSet";
+            this.purchase_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
@@ -378,6 +389,18 @@ namespace ITP4915_group3_project.warehouse.check_PO.PPO
             this.kryptonGroupBox4.TabIndex = 206;
             this.kryptonGroupBox4.Values.Heading = "ITEMS";
             // 
+            // kryptonDataGridView1
+            // 
+            this.kryptonDataGridView1.DataSource = this.ppo_linesBindingSource;
+            this.kryptonDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonDataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonDataGridView1.Name = "kryptonDataGridView1";
+            this.kryptonDataGridView1.RowTemplate.Height = 24;
+            this.kryptonDataGridView1.Size = new System.Drawing.Size(700, 144);
+            this.kryptonDataGridView1.StateCommon.Background.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.kryptonDataGridView1.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
+            this.kryptonDataGridView1.TabIndex = 0;
+            // 
             // kryptonGroupBox3
             // 
             this.kryptonGroupBox3.Location = new System.Drawing.Point(48, 344);
@@ -425,6 +448,11 @@ namespace ITP4915_group3_project.warehouse.check_PO.PPO
             this.kryptonTextBox13.TabIndex = 208;
             this.kryptonTextBox13.Text = "20/01/2023";
             this.kryptonTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // ppo_headerBindingSource
+            // 
+            this.ppo_headerBindingSource.DataMember = "ppo_header";
+            this.ppo_headerBindingSource.DataSource = this.purchase_dbDataSet;
             // 
             // kryptonLabel18
             // 
@@ -917,28 +945,6 @@ namespace ITP4915_group3_project.warehouse.check_PO.PPO
             this.kryptonTextBox6.Text = "05/01/2023";
             this.kryptonTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // kryptonDataGridView1
-            // 
-            this.kryptonDataGridView1.DataSource = this.ppo_linesBindingSource;
-            this.kryptonDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonDataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonDataGridView1.Name = "kryptonDataGridView1";
-            this.kryptonDataGridView1.RowTemplate.Height = 24;
-            this.kryptonDataGridView1.Size = new System.Drawing.Size(700, 144);
-            this.kryptonDataGridView1.StateCommon.Background.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.kryptonDataGridView1.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
-            this.kryptonDataGridView1.TabIndex = 0;
-            // 
-            // purchase_dbDataSet
-            // 
-            this.purchase_dbDataSet.DataSetName = "purchase_dbDataSet";
-            this.purchase_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ppo_linesBindingSource
-            // 
-            this.ppo_linesBindingSource.DataMember = "ppo_lines";
-            this.ppo_linesBindingSource.DataSource = this.purchase_dbDataSet;
-            // 
             // ppo_linesTableAdapter
             // 
             this.ppo_linesTableAdapter.ClearBeforeFill = true;
@@ -968,11 +974,6 @@ namespace ITP4915_group3_project.warehouse.check_PO.PPO
             this.tableAdapterManager.warehousedispatchinstructionTableAdapter = null;
             this.tableAdapterManager.warehouseTableAdapter = null;
             // 
-            // ppo_headerBindingSource
-            // 
-            this.ppo_headerBindingSource.DataMember = "ppo_header";
-            this.ppo_headerBindingSource.DataSource = this.purchase_dbDataSet;
-            // 
             // ppo_headerTableAdapter
             // 
             this.ppo_headerTableAdapter.ClearBeforeFill = true;
@@ -987,15 +988,19 @@ namespace ITP4915_group3_project.warehouse.check_PO.PPO
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelContent)).EndInit();
             this.kryptonPanelContent.ResumeLayout(false);
             this.kryptonPanelContent.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ppo_linesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox4.Panel)).EndInit();
             this.kryptonGroupBox4.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox4)).EndInit();
             this.kryptonGroupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox3.Panel)).EndInit();
             this.kryptonGroupBox3.Panel.ResumeLayout(false);
             this.kryptonGroupBox3.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox3)).EndInit();
             this.kryptonGroupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ppo_headerBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).EndInit();
             this.kryptonGroupBox1.Panel.ResumeLayout(false);
             this.kryptonGroupBox1.Panel.PerformLayout();
@@ -1006,10 +1011,6 @@ namespace ITP4915_group3_project.warehouse.check_PO.PPO
             this.kryptonGroupBox2.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).EndInit();
             this.kryptonGroupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ppo_linesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ppo_headerBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

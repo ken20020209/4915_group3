@@ -12,15 +12,20 @@ namespace ITP4915_group3_project.warehouse.check_PO.SPO
 {
     public partial class detail : UserControl
     {
+        public Control panel;
         public detail(Control panelContent, int header_ID)
         {
             InitializeComponent();
             panelContent.Controls.Add(this);
+            panel = panelContent;
             this.BringToFront();
             this.spo_headerTableAdapter.FillBy_header_ID(this.purchase_dbDataSet.spo_header, header_ID);
             this.spo_linesTableAdapter.Fill(this.purchase_dbDataSet.spo_lines);
         }
 
-
+        private void kryptonLabel4_Click(object sender, EventArgs e)
+        {
+            panel.Controls.Remove(this);
+        }
     }
 }

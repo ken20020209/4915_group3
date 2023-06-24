@@ -26,6 +26,7 @@ namespace ITP4915_group3_project.warehouse.picking_list
             this.delivery_requestTableAdapter.Fill(this.warehouse_dbDataSet.delivery_request);
 
             delivery_requestBindingSource.Filter = filterAddress;
+            kryptonLabel27.Text = delivery_requestBindingSource.Count.ToString();
             setResult();
         }
 
@@ -61,7 +62,7 @@ namespace ITP4915_group3_project.warehouse.picking_list
             {
                 return;
             }
-            new detail(this, listID);
+            new detail(this, (int)kryptonDataGridView1.Rows[e.RowIndex].Cells[1].Value);
         }
     }
 }

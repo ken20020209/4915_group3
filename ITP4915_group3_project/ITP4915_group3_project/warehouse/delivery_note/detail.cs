@@ -39,6 +39,10 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             {
                 kryptonButtonSign.Visible = false;
             }
+            else
+            {
+                kryptonButtonSign.Visible = true;
+            }
         }
 
         private void kryptonLabel8_Click(object sender, EventArgs e)
