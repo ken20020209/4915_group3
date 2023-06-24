@@ -9620,8 +9620,6 @@ namespace ITP4915_group3_project {
             
             private global::System.Data.DataColumn columnitem_ID;
             
-            private global::System.Data.DataColumn columnremain_qty1;
-            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bpa_remain_qtyDataTable() {
@@ -9721,14 +9719,6 @@ namespace ITP4915_group3_project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn remain_qty1Column {
-                get {
-                    return this.columnremain_qty1;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -9764,7 +9754,7 @@ namespace ITP4915_group3_project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bpa_remain_qtyRow Addbpa_remain_qtyRow(int remain_qty, string UOM, int MoQ, decimal price, string supplier_name, itemRow parentitemRowBybpa_remain_qty_item, decimal remain_qty1) {
+            public bpa_remain_qtyRow Addbpa_remain_qtyRow(int remain_qty, string UOM, int MoQ, decimal price, string supplier_name, itemRow parentitemRowBybpa_remain_qty_item) {
                 bpa_remain_qtyRow rowbpa_remain_qtyRow = ((bpa_remain_qtyRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         remain_qty,
@@ -9774,8 +9764,7 @@ namespace ITP4915_group3_project {
                         null,
                         null,
                         supplier_name,
-                        null,
-                        remain_qty1};
+                        null};
                 if ((parentitemRowBybpa_remain_qty_item != null)) {
                     columnValuesArray[7] = parentitemRowBybpa_remain_qty_item[0];
                 }
@@ -9817,7 +9806,6 @@ namespace ITP4915_group3_project {
                 this.columnlines_ID = base.Columns["lines_ID"];
                 this.columnsupplier_name = base.Columns["supplier name"];
                 this.columnitem_ID = base.Columns["item_ID"];
-                this.columnremain_qty1 = base.Columns["remain qty1"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9839,8 +9827,6 @@ namespace ITP4915_group3_project {
                 base.Columns.Add(this.columnsupplier_name);
                 this.columnitem_ID = new global::System.Data.DataColumn("item_ID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnitem_ID);
-                this.columnremain_qty1 = new global::System.Data.DataColumn("remain qty1", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnremain_qty1);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnheader_ID,
                                 this.columnlines_ID}, true));
@@ -9857,8 +9843,6 @@ namespace ITP4915_group3_project {
                 this.columnsupplier_name.AllowDBNull = false;
                 this.columnsupplier_name.MaxLength = 30;
                 this.columnitem_ID.AllowDBNull = false;
-                this.columnremain_qty1.AllowDBNull = false;
-                this.columnremain_qty1.Caption = "remain qty";
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -14726,17 +14710,6 @@ namespace ITP4915_group3_project {
                 }
                 set {
                     this[this.tablebpa_remain_qty.item_IDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public decimal remain_qty1 {
-                get {
-                    return ((decimal)(this[this.tablebpa_remain_qty.remain_qty1Column]));
-                }
-                set {
-                    this[this.tablebpa_remain_qty.remain_qty1Column] = value;
                 }
             }
             
@@ -28362,7 +28335,7 @@ WHERE           (status_ID = @status_ID OR
             tableMapping.ColumnMappings.Add("lines_ID", "lines_ID");
             tableMapping.ColumnMappings.Add("supplier name", "supplier name");
             tableMapping.ColumnMappings.Add("item_ID", "item_ID");
-            tableMapping.ColumnMappings.Add("remain qty", "remain qty1");
+            tableMapping.ColumnMappings.Add("remain qty", "remain qty");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -28394,7 +28367,8 @@ ORDER BY    bpa_lines.price";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             global::MySql.Data.MySqlClient.MySqlParameter param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@qty";
-            param.DbType = global::System.Data.DbType.Object;
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.Size = 1024;
             param.IsNullable = true;
             param.SourceColumn = "remain qty";
@@ -28406,14 +28380,9 @@ ORDER BY    bpa_lines.price";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int FillBy_lessEqual_qty(purchase_dbDataSet.bpa_remain_qtyDataTable dataTable, object qty) {
+        public virtual int FillBy_lessEqual_qty(purchase_dbDataSet.bpa_remain_qtyDataTable dataTable, int qty) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((qty == null)) {
-                throw new global::System.ArgumentNullException("qty");
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((object)(qty));
-            }
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(qty));
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -28425,14 +28394,9 @@ ORDER BY    bpa_lines.price";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual purchase_dbDataSet.bpa_remain_qtyDataTable GetDataBy_lessEqual_qty(object qty) {
+        public virtual purchase_dbDataSet.bpa_remain_qtyDataTable GetDataBy_lessEqual_qty(int qty) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((qty == null)) {
-                throw new global::System.ArgumentNullException("qty");
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((object)(qty));
-            }
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(qty));
             purchase_dbDataSet.bpa_remain_qtyDataTable dataTable = new purchase_dbDataSet.bpa_remain_qtyDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

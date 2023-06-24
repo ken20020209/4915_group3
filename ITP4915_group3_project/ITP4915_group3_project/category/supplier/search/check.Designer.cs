@@ -31,17 +31,25 @@ namespace ITP4915_group3_project.category.supplier.search
         {
             this.components = new System.ComponentModel.Container();
             this.kryptonPanel4 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonTextBox16 = new Krypton.Toolkit.KryptonTextBox();
-            this.category_dbDataSet = new ITP4915_group3_project.category_dbDataSet();
+            this.supplierKryptonDataGridView = new Krypton.Toolkit.KryptonDataGridView();
             this.supplierBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.category_dbDataSet = new ITP4915_group3_project.category_dbDataSet();
+            this.kryptonTextBox16 = new Krypton.Toolkit.KryptonTextBox();
             this.supplierTableAdapter = new ITP4915_group3_project.category_dbDataSetTableAdapters.supplierTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.category_dbDataSetTableAdapters.TableAdapterManager();
-            this.supplierKryptonDataGridView = new Krypton.Toolkit.KryptonDataGridView();
+            this.Column1 = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.category_dbDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.supplierKryptonDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.category_dbDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanel4
@@ -54,8 +62,36 @@ namespace ITP4915_group3_project.category.supplier.search
             this.kryptonPanel4.Name = "kryptonPanel4";
             this.kryptonPanel4.Size = new System.Drawing.Size(808, 466);
             this.kryptonPanel4.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonPanel4.StateCommon.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonPanel4.TabIndex = 56;
+            // 
+            // supplierKryptonDataGridView
+            // 
+            this.supplierKryptonDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7});
+            this.supplierKryptonDataGridView.DataSource = this.supplierBindingSource;
+            this.supplierKryptonDataGridView.Location = new System.Drawing.Point(25, 128);
+            this.supplierKryptonDataGridView.Name = "supplierKryptonDataGridView";
+            this.supplierKryptonDataGridView.RowTemplate.Height = 24;
+            this.supplierKryptonDataGridView.Size = new System.Drawing.Size(743, 220);
+            this.supplierKryptonDataGridView.TabIndex = 54;
+            this.supplierKryptonDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.supplierKryptonDataGridView_CellContentClick);
+            // 
+            // supplierBindingSource
+            // 
+            this.supplierBindingSource.DataMember = "supplier";
+            this.supplierBindingSource.DataSource = this.category_dbDataSet;
+            // 
+            // category_dbDataSet
+            // 
+            this.category_dbDataSet.DataSetName = "category_dbDataSet";
+            this.category_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // kryptonTextBox16
             // 
@@ -70,7 +106,6 @@ namespace ITP4915_group3_project.category.supplier.search
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonTextBox16.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox16.StateCommon.Border.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonTextBox16.StateCommon.Border.Rounding = 25F;
             this.kryptonTextBox16.StateCommon.Border.Width = 1;
             this.kryptonTextBox16.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
@@ -78,16 +113,6 @@ namespace ITP4915_group3_project.category.supplier.search
             this.kryptonTextBox16.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox16.TabIndex = 54;
             this.kryptonTextBox16.Text = "ID/Name                                               🔍 ";
-            // 
-            // category_dbDataSet
-            // 
-            this.category_dbDataSet.DataSetName = "category_dbDataSet";
-            this.category_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // supplierBindingSource
-            // 
-            this.supplierBindingSource.DataMember = "supplier";
-            this.supplierBindingSource.DataSource = this.category_dbDataSet;
             // 
             // supplierTableAdapter
             // 
@@ -104,14 +129,54 @@ namespace ITP4915_group3_project.category.supplier.search
             this.tableAdapterManager.supplierTableAdapter = this.supplierTableAdapter;
             this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.category_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // supplierKryptonDataGridView
+            // Column1
             // 
-            this.supplierKryptonDataGridView.DataSource = this.supplierBindingSource;
-            this.supplierKryptonDataGridView.Location = new System.Drawing.Point(25, 128);
-            this.supplierKryptonDataGridView.Name = "supplierKryptonDataGridView";
-            this.supplierKryptonDataGridView.RowTemplate.Height = 24;
-            this.supplierKryptonDataGridView.Size = new System.Drawing.Size(743, 220);
-            this.supplierKryptonDataGridView.TabIndex = 54;
+            this.Column1.HeaderText = "detail";
+            this.Column1.Name = "Column1";
+            this.Column1.Text = "detail";
+            this.Column1.UseColumnTextForButtonValue = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "supplier_ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "supplier_ID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "name";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "phone";
+            this.dataGridViewTextBoxColumn3.HeaderText = "phone";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "e-mail";
+            this.dataGridViewTextBoxColumn4.HeaderText = "e-mail";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "address_ID";
+            this.dataGridViewTextBoxColumn5.HeaderText = "address_ID";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "contact_person_ID";
+            this.dataGridViewTextBoxColumn6.HeaderText = "contact_person_ID";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "remarks";
+            this.dataGridViewTextBoxColumn7.HeaderText = "remarks";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
             // check
             // 
@@ -123,9 +188,9 @@ namespace ITP4915_group3_project.category.supplier.search
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
             this.kryptonPanel4.ResumeLayout(false);
             this.kryptonPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.category_dbDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.supplierKryptonDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.category_dbDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -139,5 +204,13 @@ namespace ITP4915_group3_project.category.supplier.search
         private category_dbDataSetTableAdapters.supplierTableAdapter supplierTableAdapter;
         private category_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private Krypton.Toolkit.KryptonDataGridView supplierKryptonDataGridView;
+        private Krypton.Toolkit.KryptonDataGridViewButtonColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
     }
 }

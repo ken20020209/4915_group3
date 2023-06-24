@@ -13,6 +13,8 @@ namespace ITP4915_group3_project.category.supplier.search
     public partial class check : UserControl
     {
         public Control panel;
+        internal static Control panelContent;
+
         public check(Control panel)
         {
             InitializeComponent();
@@ -24,6 +26,14 @@ namespace ITP4915_group3_project.category.supplier.search
         private void search()
         {
 
+        }
+        private void supplierKryptonDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex == -1 || e.ColumnIndex != 0)
+            {
+                return;
+            }
+            detail stockDetail = new detail(this, int.Parse(supplierKryptonDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString()));
         }
         private void supplierBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
