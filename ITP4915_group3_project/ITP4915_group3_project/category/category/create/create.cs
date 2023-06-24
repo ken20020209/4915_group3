@@ -18,5 +18,22 @@ namespace ITP4915_group3_project.category.category.create
             panelContent.Controls.Add(this);
             this.BringToFront();
         }
+        private void kryptonButtonConfirm_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.item_categoryBindingSource.EndEdit();
+            try
+            {
+                this.tableAdapterManager.UpdateAll(this.category_dbDataSet);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            MessageBox.Show("create success");
+            item_categoryBindingSource.AddNew();
+            item_categoryBindingSource.MoveLast();
+        }
     }
 }
