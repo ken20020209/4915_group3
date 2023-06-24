@@ -32,6 +32,18 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             this.components = new System.ComponentModel.Container();
             this.panel3 = new System.Windows.Forms.Panel();
             this.kryptonDataGridView_deliveryNoteSearch = new Krypton.Toolkit.KryptonDataGridView();
+            this.detail = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.delivery_requestBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.warehouse_dbDataSet = new ITP4915_group3_project.warehouse_dbDataSet();
             this.kryptonLabelResult = new Krypton.Toolkit.KryptonLabel();
@@ -71,18 +83,6 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.delivery_requestTableAdapter = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.delivery_requestTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.TableAdapterManager();
-            this.detail = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
-            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView_deliveryNoteSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.delivery_requestBindingSource)).BeginInit();
@@ -120,18 +120,7 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             // kryptonDataGridView_deliveryNoteSearch
             // 
             this.kryptonDataGridView_deliveryNoteSearch.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.detail,
-            this.dataGridViewTextBoxColumn23,
-            this.dataGridViewTextBoxColumn24,
-            this.dataGridViewTextBoxColumn25,
-            this.dataGridViewTextBoxColumn26,
-            this.dataGridViewTextBoxColumn27,
-            this.dataGridViewTextBoxColumn28,
-            this.dataGridViewTextBoxColumn29,
-            this.dataGridViewTextBoxColumn30,
-            this.dataGridViewTextBoxColumn31,
-            this.dataGridViewTextBoxColumn32,
-            this.dataGridViewTextBoxColumn33});
+            this.detail});
             this.kryptonDataGridView_deliveryNoteSearch.DataSource = this.delivery_requestBindingSource;
             this.kryptonDataGridView_deliveryNoteSearch.Location = new System.Drawing.Point(49, 285);
             this.kryptonDataGridView_deliveryNoteSearch.Name = "kryptonDataGridView_deliveryNoteSearch";
@@ -141,6 +130,84 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             this.kryptonDataGridView_deliveryNoteSearch.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
             this.kryptonDataGridView_deliveryNoteSearch.TabIndex = 56;
             this.kryptonDataGridView_deliveryNoteSearch.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.kryptonDataGridView_deliveryNoteSearch_CellContentClick);
+            // 
+            // detail
+            // 
+            this.detail.HeaderText = "detail";
+            this.detail.Name = "detail";
+            this.detail.Text = "detail";
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.DataPropertyName = "delivery_request_ID";
+            this.dataGridViewTextBoxColumn23.HeaderText = "delivery_request_ID";
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "item_ID";
+            this.dataGridViewTextBoxColumn24.HeaderText = "item_ID";
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.DataPropertyName = "quantity";
+            this.dataGridViewTextBoxColumn25.HeaderText = "quantity";
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.DataPropertyName = "create_date";
+            this.dataGridViewTextBoxColumn26.HeaderText = "create_date";
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.DataPropertyName = "delivery_date";
+            this.dataGridViewTextBoxColumn27.HeaderText = "delivery_date";
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            // 
+            // dataGridViewTextBoxColumn28
+            // 
+            this.dataGridViewTextBoxColumn28.DataPropertyName = "receive_address_ID";
+            this.dataGridViewTextBoxColumn28.HeaderText = "receive_address_ID";
+            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
+            this.dataGridViewTextBoxColumn28.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn29
+            // 
+            this.dataGridViewTextBoxColumn29.DataPropertyName = "delivery_address_ID";
+            this.dataGridViewTextBoxColumn29.HeaderText = "delivery_address_ID";
+            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
+            this.dataGridViewTextBoxColumn29.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.DataPropertyName = "status_ID";
+            this.dataGridViewTextBoxColumn30.HeaderText = "status_ID";
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            this.dataGridViewTextBoxColumn30.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn31
+            // 
+            this.dataGridViewTextBoxColumn31.DataPropertyName = "receive_time";
+            this.dataGridViewTextBoxColumn31.HeaderText = "receive_time";
+            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
+            this.dataGridViewTextBoxColumn31.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn32
+            // 
+            this.dataGridViewTextBoxColumn32.DataPropertyName = "delivery_time";
+            this.dataGridViewTextBoxColumn32.HeaderText = "delivery_time";
+            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
+            this.dataGridViewTextBoxColumn32.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn33
+            // 
+            this.dataGridViewTextBoxColumn33.DataPropertyName = "vehicle_ID";
+            this.dataGridViewTextBoxColumn33.HeaderText = "vehicle_ID";
+            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
+            this.dataGridViewTextBoxColumn33.Visible = false;
             // 
             // delivery_requestBindingSource
             // 
@@ -167,7 +234,7 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             // 
             // kryptonGroup2
             // 
-            this.kryptonGroup2.Location = new System.Drawing.Point(294, 27);
+            this.kryptonGroup2.Location = new System.Drawing.Point(38, 24);
             this.kryptonGroup2.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroup2.Name = "kryptonGroup2";
             // 
@@ -205,7 +272,7 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             this.kryptonLabel23.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonLabel23.StateNormal.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel23.TabIndex = 1;
-            this.kryptonLabel23.Values.Text = "3";
+            this.kryptonLabel23.Values.Text = "0";
             // 
             // pictureBox8
             // 
@@ -237,7 +304,6 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             this.kryptonComboBox2.DropDownWidth = 153;
             this.kryptonComboBox2.IntegralHeight = false;
             this.kryptonComboBox2.Items.AddRange(new object[] {
-            "wait for process",
             "wait for sign",
             "completed"});
             this.kryptonComboBox2.Location = new System.Drawing.Point(634, 160);
@@ -284,7 +350,7 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             // 
             // kryptonGroup4
             // 
-            this.kryptonGroup4.Location = new System.Drawing.Point(38, 27);
+            this.kryptonGroup4.Location = new System.Drawing.Point(293, 24);
             this.kryptonGroup4.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroup4.Name = "kryptonGroup4";
             // 
@@ -294,8 +360,8 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             this.kryptonGroup4.Panel.Controls.Add(this.kryptonLabel27);
             this.kryptonGroup4.Panel.Controls.Add(this.pictureBox7);
             this.kryptonGroup4.Size = new System.Drawing.Size(177, 90);
-            this.kryptonGroup4.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(98)))), ((int)(((byte)(93)))));
-            this.kryptonGroup4.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(98)))), ((int)(((byte)(93)))));
+            this.kryptonGroup4.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(189)))), ((int)(((byte)(26)))));
+            this.kryptonGroup4.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(189)))), ((int)(((byte)(26)))));
             this.kryptonGroup4.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -304,14 +370,14 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             // 
             // kryptonLabel26
             // 
-            this.kryptonLabel26.Location = new System.Drawing.Point(49, 43);
+            this.kryptonLabel26.Location = new System.Drawing.Point(66, 45);
             this.kryptonLabel26.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel26.Name = "kryptonLabel26";
-            this.kryptonLabel26.Size = new System.Drawing.Size(117, 22);
+            this.kryptonLabel26.Size = new System.Drawing.Size(80, 22);
             this.kryptonLabel26.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonLabel26.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel26.TabIndex = 2;
-            this.kryptonLabel26.Values.Text = "wait for process";
+            this.kryptonLabel26.Values.Text = "completed";
             // 
             // kryptonLabel27
             // 
@@ -322,11 +388,11 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             this.kryptonLabel27.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonLabel27.StateNormal.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel27.TabIndex = 1;
-            this.kryptonLabel27.Values.Text = "5";
+            this.kryptonLabel27.Values.Text = "0";
             // 
             // pictureBox7
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(98)))), ((int)(((byte)(93)))));
+            this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(189)))), ((int)(((byte)(26)))));
             this.pictureBox7.Image = global::ITP4915_group3_project.Properties.Resources.icons8_process_40;
             this.pictureBox7.Location = new System.Drawing.Point(2, 15);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
@@ -513,84 +579,6 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             this.tableAdapterManager.warehouse_itemTableAdapter = null;
             this.tableAdapterManager.warehousedispatchinstructionTableAdapter = null;
             this.tableAdapterManager.warehouseTableAdapter = null;
-            // 
-            // detail
-            // 
-            this.detail.HeaderText = "detail";
-            this.detail.Name = "detail";
-            this.detail.Text = "detail";
-            // 
-            // dataGridViewTextBoxColumn23
-            // 
-            this.dataGridViewTextBoxColumn23.DataPropertyName = "delivery_request_ID";
-            this.dataGridViewTextBoxColumn23.HeaderText = "delivery_request_ID";
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.DataPropertyName = "item_ID";
-            this.dataGridViewTextBoxColumn24.HeaderText = "item_ID";
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            // 
-            // dataGridViewTextBoxColumn25
-            // 
-            this.dataGridViewTextBoxColumn25.DataPropertyName = "quantity";
-            this.dataGridViewTextBoxColumn25.HeaderText = "quantity";
-            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.DataPropertyName = "create_date";
-            this.dataGridViewTextBoxColumn26.HeaderText = "create_date";
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.DataPropertyName = "delivery_date";
-            this.dataGridViewTextBoxColumn27.HeaderText = "delivery_date";
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            // 
-            // dataGridViewTextBoxColumn28
-            // 
-            this.dataGridViewTextBoxColumn28.DataPropertyName = "receive_address_ID";
-            this.dataGridViewTextBoxColumn28.HeaderText = "receive_address_ID";
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            this.dataGridViewTextBoxColumn28.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn29
-            // 
-            this.dataGridViewTextBoxColumn29.DataPropertyName = "delivery_address_ID";
-            this.dataGridViewTextBoxColumn29.HeaderText = "delivery_address_ID";
-            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
-            this.dataGridViewTextBoxColumn29.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn30
-            // 
-            this.dataGridViewTextBoxColumn30.DataPropertyName = "status_ID";
-            this.dataGridViewTextBoxColumn30.HeaderText = "status_ID";
-            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
-            this.dataGridViewTextBoxColumn30.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn31
-            // 
-            this.dataGridViewTextBoxColumn31.DataPropertyName = "receive_time";
-            this.dataGridViewTextBoxColumn31.HeaderText = "receive_time";
-            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
-            this.dataGridViewTextBoxColumn31.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn32
-            // 
-            this.dataGridViewTextBoxColumn32.DataPropertyName = "delivery_time";
-            this.dataGridViewTextBoxColumn32.HeaderText = "delivery_time";
-            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
-            this.dataGridViewTextBoxColumn32.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn33
-            // 
-            this.dataGridViewTextBoxColumn33.DataPropertyName = "vehicle_ID";
-            this.dataGridViewTextBoxColumn33.HeaderText = "vehicle_ID";
-            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
-            this.dataGridViewTextBoxColumn33.Visible = false;
             // 
             // search
             // 

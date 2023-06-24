@@ -22,11 +22,11 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             this.panel = panel;
             panel.Controls.Clear();
             panel.Controls.Add(this);
-            filterAddress = $"delivery_address_ID = {warehouse.address_ID}";
+            filterAddress = $"delivery_address_ID = {warehouse.address_ID} and status_ID NOT IN(3000)";
 
             this.delivery_requestTableAdapter.Fill(this.warehouse_dbDataSet.delivery_request);
 
-            delivery_requestBindingSource.Filter = filterAddress + "and status_ID = 3000";
+            delivery_requestBindingSource.Filter = filterAddress + "and status_ID = 3100";
             kryptonLabel27.Text = delivery_requestBindingSource.Count.ToString();
 
             delivery_requestBindingSource.Filter = filterAddress + "and status_ID = 3200";
@@ -64,16 +64,11 @@ namespace ITP4915_group3_project.warehouse.delivery_note
 
         private void kryptonComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int status_ID = 3000;
+            int status_ID = 3100;
             if(kryptonComboBox2.Text == "wait for sign")
             {
                 status_ID = 3200;
-            }
-            else if(kryptonComboBox2.Text == "wait for process")
-            {
-                status_ID = 3000;
-            }
-            else
+            }else
             {
                 status_ID = 3100;
             }
