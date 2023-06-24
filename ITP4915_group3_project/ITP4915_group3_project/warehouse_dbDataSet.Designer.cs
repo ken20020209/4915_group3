@@ -13615,7 +13615,7 @@ namespace ITP4915_group3_project.warehouse_dbDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[1];
+            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[2];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT          warehouse_item.item_ID, item.item_name, item_category.category_name, warehouse_item.qty, 
@@ -13634,6 +13634,15 @@ ORDER BY    warehouse_item.item_ID";
             param.SourceColumn = "item_name";
             param.SourceVersion = global::System.Data.DataRowVersion.Current;
             this._commandCollection[0].Parameters.Add(param);
+            this._commandCollection[1] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = @"SELECT          warehouse_item.item_ID, item.item_name, item_category.category_name, warehouse_item.qty, 
+                            warehouse_item.expected_inventory, warehouse_item.warehouse_ID, item_category.category_ID
+FROM               item_category INNER JOIN
+                            item ON item_category.category_ID = item.category_ID INNER JOIN
+                            warehouse_item ON item.item_ID = warehouse_item.item_ID
+ORDER BY    warehouse_item.item_ID";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -13667,6 +13676,30 @@ ORDER BY    warehouse_item.item_ID";
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((string)(keyword));
             }
+            warehouse_dbDataSet.DataTable_warehouse_stock_searchDataTable dataTable = new warehouse_dbDataSet.DataTable_warehouse_stock_searchDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy(warehouse_dbDataSet.DataTable_warehouse_stock_searchDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual warehouse_dbDataSet.DataTable_warehouse_stock_searchDataTable GetDataBy() {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
             warehouse_dbDataSet.DataTable_warehouse_stock_searchDataTable dataTable = new warehouse_dbDataSet.DataTable_warehouse_stock_searchDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

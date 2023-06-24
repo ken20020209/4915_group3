@@ -24,7 +24,7 @@ namespace ITP4915_group3_project.warehouse.search_stock
             panel.Controls.Clear();
             panel.Controls.Add(this);
 
-            
+            //this.dataTable_warehouse_stock_searchTableAdapter.FillBy(this.warehouse_dbDataSet.DataTable_warehouse_stock_search);
             dataTable_warehouse_stock_searchBindingSource.Filter = $"warehouse_ID={warehouse.warehouse_ID}";
             kryptonLabelTotalItem.Text = dataTable_warehouse_stock_searchBindingSource.Count.ToString();
         }
@@ -38,9 +38,12 @@ namespace ITP4915_group3_project.warehouse.search_stock
         private void kryptonTextBoxSearch_TextChanged(object sender, EventArgs e)
         {
             if (kryptonTextBoxSearch.TextLength > 0)
+            {
                 search();
-            else
+            }else {
                 return;
+            }
+                
         }
 
         private void dataTable_warehouse_stock_searchKryptonDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -49,7 +52,7 @@ namespace ITP4915_group3_project.warehouse.search_stock
             {
                 return;
             }
-            new detail(this, int.Parse(dataTable_warehouse_stock_searchKryptonDataGridView.Rows[e.RowIndex].Cells[2].Value.ToString()),warehouse.warehouse_ID);
+            new detail(this, int.Parse(dataTable_warehouse_stock_searchKryptonDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString()));
         }
 
         private void kryptonComboBox1_SelectedIndexChanged(object sender, EventArgs e)
