@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace ITP4915_group3_project.Accounting.report
 {
-    public partial class review : Form
+    public partial class review : UserControl
     {
-        public review()
+        public Control panel;
+        public review(Control panel)
         {
             InitializeComponent();
+            this.panel = panel;
+            panel.Controls.Clear();
+            panel.Controls.Add(this);
         }
     }
 }

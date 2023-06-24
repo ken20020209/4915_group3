@@ -13,49 +13,36 @@ namespace ITP4915_group3_project.Accounting
 {
     public partial class accounting : KryptonForm
     {
+        public static string user_name;
         public accounting()
         {
             InitializeComponent();
+
+            user_name = General.login.Login.userName;
+            kryptonLabelName.Text = user_name;
+
+            kryptonButtonInvoice_Click(null, null);
+        }
+        private void moveLeftPic(Control btn)
+        {
+            pictureBoxLeft.Top = btn.Top - 26;
         }
 
-        private void accounting_Load(object sender, EventArgs e)
+        private void kryptonButtonInvoice_Click(object sender, EventArgs e)
         {
-
+            new invoice.header(kryptonPanelHeader, kryptonPanelContent);
+            moveLeftPic(kryptonButtonInvoice);
         }
 
-        private void kryptonButton9_Click(object sender, EventArgs e)
+        private void kryptonButton7_Click(object sender, EventArgs e)
         {
-
+            new report.header(kryptonPanelHeader, kryptonPanelContent);
+            moveLeftPic(kryptonButton7);
         }
 
-        private void kryptonBorderEdge4_Paint(object sender, PaintEventArgs e)
+        private void kryptonButton6_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void kryptonGroupBox1_Panel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void kryptonLabel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void kryptonBorderEdge6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void kryptonPanel5_Paint(object sender, PaintEventArgs e)
-        {
-
+            this.Close();
         }
     }
 }

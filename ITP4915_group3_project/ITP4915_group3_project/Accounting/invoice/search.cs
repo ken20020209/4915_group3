@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ITP4915_group3_project.Accounting.process
+namespace ITP4915_group3_project.Accounting
 {
-    public partial class search : Form
+    public partial class search : UserControl
     {
-        public search()
+        public Control panel;
+        public search(Control panel)
         {
             InitializeComponent();
+            this.panel = panel;
+            panel.Controls.Clear();
+            panel.Controls.Add(this);
+
         }
     }
 }

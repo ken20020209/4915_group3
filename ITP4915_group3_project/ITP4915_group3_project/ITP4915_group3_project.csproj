@@ -113,6 +113,12 @@
     <Compile Include="Accounting\invoice\detail.Designer.cs">
       <DependentUpon>detail.cs</DependentUpon>
     </Compile>
+    <Compile Include="Accounting\invoice\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Accounting\invoice\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
     <Compile Include="Accounting\invoice\pay\check_PO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,23 +155,34 @@
     <Compile Include="Accounting\invoice\process\success.Designer.cs">
       <DependentUpon>success.cs</DependentUpon>
     </Compile>
-    <Compile Include="Accounting\invoice\search.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Accounting\invoice\search.Designer.cs">
-      <DependentUpon>search.cs</DependentUpon>
-    </Compile>
     <Compile Include="Accounting\invoice\pay\playment_success.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Accounting\invoice\pay\playment_success.Designer.cs">
       <DependentUpon>playment_success.cs</DependentUpon>
     </Compile>
+    <Compile Include="Accounting\report\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Accounting\report\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\invoice\search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Accounting\invoice\search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
+    </Compile>
     <Compile Include="Accounting\report\review.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Accounting\report\review.Designer.cs">
       <DependentUpon>review.cs</DependentUpon>
+    </Compile>
+    <Compile Include="accounting_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>accounting_dbDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="all_use.cs">
       <SubType>Form</SubType>
@@ -1139,6 +1156,9 @@
     <EmbeddedResource Include="Accounting\invoice\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\invoice\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Accounting\invoice\pay\check_PO.resx">
       <DependentUpon>check_PO.cs</DependentUpon>
     </EmbeddedResource>
@@ -1157,11 +1177,14 @@
     <EmbeddedResource Include="Accounting\invoice\process\success.resx">
       <DependentUpon>success.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Accounting\invoice\search.resx">
-      <DependentUpon>search.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Accounting\invoice\pay\playment_success.resx">
       <DependentUpon>playment_success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\report\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\invoice\search.resx">
+      <DependentUpon>search.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Accounting\report\review.resx">
       <DependentUpon>review.cs</DependentUpon>
@@ -1627,6 +1650,17 @@
     <EmbeddedResource Include="warehouse\warehouse.resx">
       <DependentUpon>warehouse.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="accounting_dbDataSet.xsc">
+      <DependentUpon>accounting_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="accounting_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>accounting_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="accounting_dbDataSet.xss">
+      <DependentUpon>accounting_dbDataSet.xsd</DependentUpon>
+    </None>
     <None Include="category_dbDataSet.xsc">
       <DependentUpon>category_dbDataSet.xsd</DependentUpon>
     </None>
