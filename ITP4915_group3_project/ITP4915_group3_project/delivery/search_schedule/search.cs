@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace ITP4915_group3_project.delivery.search_schedule
 {
-    public partial class check : Form
+    public partial class search : UserControl
     {
-        public check()
+        public Control panel;
+        public search(Control panel)
         {
             InitializeComponent();
+            this.panel = panel;
+            panel.Controls.Clear();
+            panel.Controls.Add(this);
         }
     }
 }

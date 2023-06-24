@@ -449,13 +449,13 @@
       <DependentUpon>category_dbDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="delivery\create_schedule\check.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="delivery\create_schedule\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>
     </Compile>
     <Compile Include="delivery\create_schedule\create.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="delivery\create_schedule\create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
@@ -502,11 +502,17 @@
     <Compile Include="delivery\search_schedule\edit.Designer.cs">
       <DependentUpon>edit.cs</DependentUpon>
     </Compile>
-    <Compile Include="delivery\search_schedule\check.cs">
-      <SubType>Form</SubType>
+    <Compile Include="delivery\search_schedule\header.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="delivery\search_schedule\check.Designer.cs">
-      <DependentUpon>check.cs</DependentUpon>
+    <Compile Include="delivery\search_schedule\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delivery\search_schedule\search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="delivery\search_schedule\search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
     </Compile>
     <Compile Include="delivery_dbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1342,8 +1348,11 @@
     <EmbeddedResource Include="delivery\search_schedule\edit.resx">
       <DependentUpon>edit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="delivery\search_schedule\check.resx">
-      <DependentUpon>check.cs</DependentUpon>
+    <EmbeddedResource Include="delivery\search_schedule\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delivery\search_schedule\search.resx">
+      <DependentUpon>search.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="General\login\Change.resx">
       <DependentUpon>Change.cs</DependentUpon>

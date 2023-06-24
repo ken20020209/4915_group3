@@ -13,19 +13,25 @@ namespace ITP4915_group3_project.delivery
 {
     public partial class delivery : KryptonForm
     {
+        public static string user_name;
         public delivery()
         {
             InitializeComponent();
+
+            user_name = General.login.Login.userName;
+            kryptonLabelName.Text = user_name;
+
+            kryptonButtonShedue_Click(null,null);
         }
 
-        private void delivery_Load(object sender, EventArgs e)
+        private void kryptonButtonShedue_Click(object sender, EventArgs e)
         {
-
+            new search_schedule.header(kryptonPanelHeader, kryptonPanelContent);
         }
 
-        private void kryptonPanel2_Paint(object sender, PaintEventArgs e)
+        private void kryptonButton6_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

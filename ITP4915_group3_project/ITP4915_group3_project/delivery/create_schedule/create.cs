@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace ITP4915_group3_project.delivery.create_schedule
 {
-    public partial class create : Form
+    public partial class create : UserControl
     {
-        public create()
+        public Control panel;
+        public create(Control panel)
         {
             InitializeComponent();
+            this.panel = panel;
+            panel.Controls.Clear();
+            panel.Controls.Add(this);
         }
     }
 }
