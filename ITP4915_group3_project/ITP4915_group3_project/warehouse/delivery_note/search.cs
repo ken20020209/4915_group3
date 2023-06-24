@@ -15,7 +15,7 @@ namespace ITP4915_group3_project.warehouse.delivery_note
         public Control panel;
         public int request_ID;
         public String filterAddress;
-        
+
         public search(Control panel)
         {
             InitializeComponent();
@@ -25,6 +25,13 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             filterAddress = $"delivery_address_ID = {warehouse.address_ID}";
 
             this.delivery_requestTableAdapter.Fill(this.warehouse_dbDataSet.delivery_request);
+
+            delivery_requestBindingSource.Filter = filterAddress + "and status_ID = 3000";
+            kryptonLabel27.Text = delivery_requestBindingSource.Count.ToString();
+
+            delivery_requestBindingSource.Filter = filterAddress + "and status_ID = 3200";
+            kryptonLabel23.Text = delivery_requestBindingSource.Count.ToString();
+
             delivery_requestBindingSource.Filter = filterAddress;
             setResult();
         }
@@ -32,7 +39,6 @@ namespace ITP4915_group3_project.warehouse.delivery_note
         private void searchNote()
         {
             request_ID = int.Parse(kryptonTextBox16.Text);
-            this.delivery_requestTableAdapter.Fill(this.warehouse_dbDataSet.delivery_request);
             delivery_requestBindingSource.Filter = filterAddress + $" and delivery_request_ID = {request_ID}";
             setResult();
         }
@@ -48,6 +54,11 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             if (kryptonTextBox16.TextLength > 0)
             {
                 searchNote();
+            }
+            else
+            {
+                delivery_requestBindingSource.Filter = filterAddress;
+                setResult();
             }
         }
 

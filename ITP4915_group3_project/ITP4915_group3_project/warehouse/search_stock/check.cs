@@ -32,7 +32,7 @@ namespace ITP4915_group3_project.warehouse.search_stock
             dataTable_warehouse_stock_searchBindingSource.Filter = $"warehouse_ID={warehouse.warehouse_ID}";
             kryptonLabelTotalItem.Text = dataTable_warehouse_stock_searchBindingSource.Count.ToString();
 
-
+            search();
         }
 
         private void search()
