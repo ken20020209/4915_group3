@@ -32,6 +32,11 @@ namespace ITP4915_group3_project.warehouse.search_stock
             dataTable_warehouse_stock_detailBindingSource.Filter = $"warehouse_ID={warehouseID} and item_ID={itemID}";
         }
 
+        private void kryptonButton7_Click(object sender, EventArgs e)
+        {
+            new update(this, itemID);
+        }
+
         private void kryptonLabelBack_Click(object sender, EventArgs e)
         {
             check.Controls.Remove(this);
