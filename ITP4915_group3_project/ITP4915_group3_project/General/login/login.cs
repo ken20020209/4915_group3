@@ -17,6 +17,7 @@ namespace ITP4915_group3_project.General.login
         public static string password;
         public static int user_ID;
         public static string realName;
+        public static int role_id;
         public Login()
         {
             InitializeComponent();
@@ -34,7 +35,7 @@ namespace ITP4915_group3_project.General.login
             // where id =id password = password
             if(kryptonTextBoxPassword.Text==null || kryptonTextBoxUserName.Text.Length==0)
             {
-                MessageBox.Show("wrong user id and name");
+                MessageBox.Show("Please enter password and user name");
                 return;
             }
             
@@ -49,18 +50,24 @@ namespace ITP4915_group3_project.General.login
 
                 /*Console.WriteLine(userName + " " + password + " " + user_ID +" "+ realName);*/
 
-                this.Hide();
-                new General.navi.navi().ShowDialog();
-                this.Show();
-
                 // follow role to different system
                 humanResources_dbDataSetTableAdapters.roleTableAdapter roleTableAdapter = new humanResources_dbDataSetTableAdapters.roleTableAdapter();
-                int role_id = (int)user.Rows[0]["role_id"];
+                role_id = (int)user.Rows[0]["role_id"];
                 string role_name = roleTableAdapter.GetData().FindByrole_id(role_id).role_name;
 
-                this.Hide();
-                new General.navi.navi(role_name).ShowDialog();
-                this.Show();
+                //jump to warehouse
+                if (role_id.ToString()[0] == '2')
+                {
+                    this.Hide();
+                    new warehouse.warehouse().ShowDialog();
+                    this.Show();
+                } else {
+                    this.Hide();
+                    new General.navi.navi(role_name).ShowDialog();
+                    this.Show();
+                }
+
+               
             }
             else
             {

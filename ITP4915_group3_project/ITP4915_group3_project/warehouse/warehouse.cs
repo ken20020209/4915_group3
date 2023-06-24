@@ -14,6 +14,7 @@ namespace ITP4915_group3_project.warehouse
     public partial class warehouse : KryptonForm
     {
         public static int warehouse_ID;
+        public static int warehouse_address_ID;
         public static string user_name;
         public warehouse()
         {
@@ -67,5 +68,7 @@ namespace ITP4915_group3_project.warehouse
             new picking_list.header(kryptonPanelHeader, kryptonPanelContent);
             moveLeftPic(kryptonBtnPickingList);
         }
+
+
     }
 }

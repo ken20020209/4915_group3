@@ -57,6 +57,7 @@ namespace ITP4915_group3_project.General.navi
 
         public void kryptonButtonWarehosue_Click(object sender, EventArgs e)
         {
+            login.Login.role_id = 21;
             this.Hide();
             new warehouse.warehouse().ShowDialog();
             this.Close();

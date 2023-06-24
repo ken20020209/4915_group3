@@ -14,6 +14,7 @@ namespace ITP4915_group3_project.warehouse.delivery_note
     {
         public Control panel;
         public int request_ID;
+        
         public search(Control panel)
         {
             InitializeComponent();
