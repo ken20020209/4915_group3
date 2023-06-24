@@ -1,7 +1,7 @@
 ﻿
 namespace ITP4915_group3_project.category.return_reson.select
 {
-    partial class delete_success
+    partial class delete_sucess
     {
         /// <summary>
         /// Required designer variable.

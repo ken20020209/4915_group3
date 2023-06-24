@@ -10,6 +10,8 @@
 
 #pragma warning disable 1591
 
+using System;
+
 namespace ITP4915_group3_project {
     
     
@@ -45,7 +47,8 @@ namespace ITP4915_group3_project {
         private global::System.Data.DataRelation relationsupplier_contact_person_ID_fk;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-        
+        internal object purchaseRequestDetail;
+
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public category_dbDataSet() {
@@ -4516,6 +4519,16 @@ namespace ITP4915_group3_project.category_dbDataSetTableAdapters {
                     this.Adapter.UpdateCommand.Connection.Close();
                 }
             }
+        }
+
+        internal void FillBy_search(object purchaseRequestDetail, string keyword, object restaurant_ID)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void FillBy_search(object purchaseRequestDetail, string keyword)
+        {
+            throw new NotImplementedException();
         }
     }
     
