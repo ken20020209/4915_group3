@@ -12,9 +12,23 @@ namespace ITP4915_group3_project.warehouse.picking_list
 {
     public partial class confrim : Form
     {
-        public confrim()
+        int listID;
+        public confrim(int listID)
         {
             InitializeComponent();
+            this.listID = listID;
+        }
+
+        private void kryptonButton5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void kryptonButton4_Click(object sender, EventArgs e)
+        {
+            warehouse_dbDataSet.delivery_requestRow dataRow = delivery_requestTableAdapter.GetData().FindBydelivery_request_ID(listID);
+            dataRow.status_ID = 3200;
+            delivery_requestTableAdapter.Update(dataRow);
         }
     }
 }
