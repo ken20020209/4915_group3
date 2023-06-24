@@ -100,18 +100,7 @@
               <Mapping SourceColumn="delivery_time" DataSetColumn="delivery_time" />
               <Mapping SourceColumn="vehicle_ID" DataSetColumn="vehicle_ID" />
             </Mappings>
-            <Sources>
-              <DbSource ConnectionRef="_4523_g1_project_dbConnectionString (Settings)" DbObjectName="`4523_g1_project_db`.delivery_request" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
-                <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT          delivery_request_ID, item_ID, quantity, create_date, delivery_date, receive_time, delivery_time, vehicle_ID
-FROM               delivery_request
-ORDER BY    delivery_request_ID</CommandText>
-                    <Parameters />
-                  </DbCommand>
-                </SelectCommand>
-              </DbSource>
-            </Sources>
+            <Sources />
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="itemTableAdapter" GeneratorDataComponentClassName="itemTableAdapter" Name="item" UserDataComponentName="itemTableAdapter">
             <MainSource>

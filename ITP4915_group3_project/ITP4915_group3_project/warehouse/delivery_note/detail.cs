@@ -12,9 +12,18 @@ namespace ITP4915_group3_project.warehouse.delivery_note
 {
     public partial class detail : UserControl
     {
-        public detail()
+        public Control panel;
+        int deliveryID;
+        public detail(Control panel, int deliveryID)
         {
             InitializeComponent();
+
+            this.panel = panel;
+            this.panel.Controls.Add(this);
+            this.BringToFront();
+            this.deliveryID = deliveryID;
+
+
         }
     }
 }
