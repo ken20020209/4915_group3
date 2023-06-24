@@ -491,6 +491,11 @@
     <Compile Include="delivery\search_schedule\check.Designer.cs">
       <DependentUpon>check.cs</DependentUpon>
     </Compile>
+    <Compile Include="delivery_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>delivery_dbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="General\login\Change.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1623,6 +1628,17 @@
     </None>
     <None Include="category_dbDataSet.xss">
       <DependentUpon>category_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="delivery_dbDataSet.xsc">
+      <DependentUpon>delivery_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="delivery_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>delivery_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="delivery_dbDataSet.xss">
+      <DependentUpon>delivery_dbDataSet.xsd</DependentUpon>
     </None>
     <None Include="humanResources_dbDataSet.xsc">
       <DependentUpon>humanResources_dbDataSet.xsd</DependentUpon>

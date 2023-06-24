@@ -23,7 +23,31 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             this.BringToFront();
             this.deliveryID = deliveryID;
 
+            this.delivery_requestTableAdapter.Fill(this.delivery_dbDataSet.delivery_request);
+            this.itemTableAdapter.Fill(this.delivery_dbDataSet.item);
+            this.statusTableAdapter.Fill(this.delivery_dbDataSet.status);
+            this.restaurantTableAdapter.Fill(this.delivery_dbDataSet.restaurant);
+            this.warehouseTableAdapter.Fill(this.delivery_dbDataSet.warehouse);
+            this.userTableAdapter.Fill(this.delivery_dbDataSet.user);
 
+            delivery_requestBindingSource.Filter = $"delivery_request_ID = {deliveryID}";
+
+            DataRowView dataRowView = (DataRowView)addressBindingSource.Current;
+
+            if (kryptonButtonSign.Text == "complete")
+            {
+                kryptonButtonSign.Visible = false;
+            }
+        }
+
+        private void kryptonLabel8_Click(object sender, EventArgs e)
+        {
+            panel.Controls.Remove(this);
+        }
+
+        private void kryptonButtonSign_Click(object sender, EventArgs e)
+        {
+            new sign_confirm(deliveryID).ShowDialog();
         }
     }
 }
