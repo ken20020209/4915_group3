@@ -33,8 +33,9 @@ namespace ITP4915_group3_project.warehouse.search_stock
             this.Validate();
             this.warehouse_dbDataSet.EndInit();
 
-            this.warehouse_itemTableAdapter.UpdateQuery(int.Parse(kryptonDomainUpDown1.Text), itemID, warehouseID);
+            this.warehouse_itemTableAdapter.UpdateQuery(int.Parse(kryptonTextBox6.Text), itemID, warehouseID);
             MessageBox.Show("save success");
+            detail.Controls.Remove(this);
         }
 
         private void kryptonLabel12_Click(object sender, EventArgs e)

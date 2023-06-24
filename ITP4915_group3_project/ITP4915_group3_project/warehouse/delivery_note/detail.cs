@@ -33,8 +33,9 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             delivery_requestBindingSource.Filter = $"delivery_request_ID = {deliveryID}";
 
             DataRowView dataRowView = (DataRowView)addressBindingSource.Current;
-
-            if (kryptonButtonSign.Text == "complete")
+            delivery_dbDataSet.delivery_requestRow dataRow = delivery_requestTableAdapter.GetData().FindBydelivery_request_ID(deliveryID);
+            
+            if (dataRow.status_ID == 3100)
             {
                 kryptonButtonSign.Visible = false;
             }

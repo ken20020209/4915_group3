@@ -38,7 +38,6 @@ namespace ITP4915_group3_project.warehouse.search_stock
             this.dataTable_warehouse_stock_detailBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.warehouse_dbDataSet = new ITP4915_group3_project.warehouse_dbDataSet();
             this.kryptonLabel13 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonDomainUpDown1 = new Krypton.Toolkit.KryptonDomainUpDown();
             this.kryptonLabel11 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
             this.kryptonTextBox6 = new Krypton.Toolkit.KryptonTextBox();
@@ -61,6 +60,7 @@ namespace ITP4915_group3_project.warehouse.search_stock
             this.tableAdapterManager = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.TableAdapterManager();
             this.item_categoryTableAdapter = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.item_categoryTableAdapter();
             this.item_categoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kryptonTextBox7 = new Krypton.Toolkit.KryptonTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).BeginInit();
@@ -139,9 +139,9 @@ namespace ITP4915_group3_project.warehouse.search_stock
             // 
             // kryptonGroupBox1.Panel
             // 
+            this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonTextBox7);
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonTextBox5);
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonLabel13);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonDomainUpDown1);
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonLabel11);
             this.kryptonGroupBox1.Size = new System.Drawing.Size(257, 111);
             this.kryptonGroupBox1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
@@ -197,20 +197,6 @@ namespace ITP4915_group3_project.warehouse.search_stock
             this.kryptonLabel13.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel13.TabIndex = 218;
             this.kryptonLabel13.Values.Text = "Expected\r\nInventory:";
-            // 
-            // kryptonDomainUpDown1
-            // 
-            this.kryptonDomainUpDown1.CornerRoundingRadius = -1F;
-            this.kryptonDomainUpDown1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.dataTable_warehouse_stock_detailBindingSource, "qty", true));
-            this.kryptonDomainUpDown1.Location = new System.Drawing.Point(81, 49);
-            this.kryptonDomainUpDown1.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonDomainUpDown1.Name = "kryptonDomainUpDown1";
-            this.kryptonDomainUpDown1.ReadOnly = true;
-            this.kryptonDomainUpDown1.Size = new System.Drawing.Size(100, 22);
-            this.kryptonDomainUpDown1.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
-            this.kryptonDomainUpDown1.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.kryptonDomainUpDown1.TabIndex = 217;
-            this.kryptonDomainUpDown1.Text = "0";
             // 
             // kryptonLabel11
             // 
@@ -532,6 +518,26 @@ namespace ITP4915_group3_project.warehouse.search_stock
             this.item_categoryBindingSource.DataMember = "item_category";
             this.item_categoryBindingSource.DataSource = this.warehouse_dbDataSet;
             // 
+            // kryptonTextBox7
+            // 
+            this.kryptonTextBox7.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.dataTable_warehouse_stock_detailBindingSource, "qty", true));
+            this.kryptonTextBox7.Location = new System.Drawing.Point(81, 51);
+            this.kryptonTextBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonTextBox7.Name = "kryptonTextBox7";
+            this.kryptonTextBox7.ReadOnly = true;
+            this.kryptonTextBox7.Size = new System.Drawing.Size(100, 22);
+            this.kryptonTextBox7.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
+            this.kryptonTextBox7.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonTextBox7.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
+            this.kryptonTextBox7.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox7.StateCommon.Content.Color1 = System.Drawing.Color.Black;
+            this.kryptonTextBox7.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox7.TabIndex = 220;
+            this.kryptonTextBox7.Text = "00001";
+            this.kryptonTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // detail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -572,7 +578,6 @@ namespace ITP4915_group3_project.warehouse.search_stock
         private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox1;
         private Krypton.Toolkit.KryptonTextBox kryptonTextBox5;
         private Krypton.Toolkit.KryptonLabel kryptonLabel13;
-        private Krypton.Toolkit.KryptonDomainUpDown kryptonDomainUpDown1;
         private Krypton.Toolkit.KryptonLabel kryptonLabel11;
         private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox2;
         private Krypton.Toolkit.KryptonLabel kryptonLabel8;
@@ -597,5 +602,6 @@ namespace ITP4915_group3_project.warehouse.search_stock
         private warehouse_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private warehouse_dbDataSetTableAdapters.item_categoryTableAdapter item_categoryTableAdapter;
         private System.Windows.Forms.BindingSource item_categoryBindingSource;
+        private Krypton.Toolkit.KryptonTextBox kryptonTextBox7;
     }
 }

@@ -24,15 +24,23 @@ namespace ITP4915_group3_project.warehouse.search_stock
             panel.Controls.Clear();
             panel.Controls.Add(this);
 
-            //this.dataTable_warehouse_stock_searchTableAdapter.FillBy(this.warehouse_dbDataSet.DataTable_warehouse_stock_search);
+            this.dataTable_warehouse_stock_searchTableAdapter.FillBy(this.warehouse_dbDataSet.DataTable_warehouse_stock_search);
+            dataTable_warehouse_stock_searchBindingSource.Filter = $"warehouse_ID={warehouse.warehouse_ID} and qty < expected_inventory";
+            kryptonLabelLowStock.Text = dataTable_warehouse_stock_searchBindingSource.Count.ToString();
+
+
             dataTable_warehouse_stock_searchBindingSource.Filter = $"warehouse_ID={warehouse.warehouse_ID}";
             kryptonLabelTotalItem.Text = dataTable_warehouse_stock_searchBindingSource.Count.ToString();
+
+
         }
 
         private void search()
         {
             keyword = "%" + kryptonTextBoxSearch.Text + "%";
             this.dataTable_warehouse_stock_searchTableAdapter.Fill(this.warehouse_dbDataSet.DataTable_warehouse_stock_search, keyword);
+            string result = dataTable_warehouse_stock_searchBindingSource.Count.ToString();
+            kryptonLabelResult.Text = "RESULT(" + result + ")";
         }
 
         private void kryptonTextBoxSearch_TextChanged(object sender, EventArgs e)
@@ -41,7 +49,10 @@ namespace ITP4915_group3_project.warehouse.search_stock
             {
                 search();
             }else {
-                return;
+                this.dataTable_warehouse_stock_searchTableAdapter.FillBy(this.warehouse_dbDataSet.DataTable_warehouse_stock_search);
+                dataTable_warehouse_stock_searchBindingSource.Filter = $"warehouse_ID={warehouse.warehouse_ID}";
+                string result = dataTable_warehouse_stock_searchBindingSource.Count.ToString();
+                kryptonLabelResult.Text = "RESULT(" + result + ")";
             }
                 
         }
