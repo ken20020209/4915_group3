@@ -153,6 +153,8 @@ namespace ITP4915_group3_project.General.login
             // 
             // kryptonTextBoxPassword
             // 
+            this.kryptonTextBoxPassword.CueHint.CueHintText = "password";
+            this.kryptonTextBoxPassword.CueHint.Padding = new System.Windows.Forms.Padding(0);
             this.kryptonTextBoxPassword.Location = new System.Drawing.Point(402, 206);
             this.kryptonTextBoxPassword.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBoxPassword.MaxLength = 30;
@@ -173,7 +175,6 @@ namespace ITP4915_group3_project.General.login
             this.kryptonTextBoxPassword.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
             this.kryptonTextBoxPassword.StateDisabled.Content.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBoxPassword.TabIndex = 11;
-            this.kryptonTextBoxPassword.Text = "password";
             this.kryptonTextBoxPassword.UseSystemPasswordChar = true;
             // 
             // kryptonTextBoxUserName

@@ -55,13 +55,24 @@ namespace ITP4915_group3_project.General.login
                 role_id = (int)user.Rows[0]["role_id"];
                 string role_name = roleTableAdapter.GetData().FindByrole_id(role_id).role_name;
 
-                //jump to warehouse
-                if (role_id.ToString()[0] == '2')
+               
+                if (role_id.ToString()[0] == '2')  //jump to warehouse
                 {
                     this.Hide();
                     new warehouse.warehouse().ShowDialog();
                     this.Show();
-                } else {
+                }else if (role_id == 7) //jump to delivery
+                {
+                    this.Hide();
+                    new delivery.delivery().ShowDialog();
+                    this.Show();
+                } else if (role_id == 4) //jump to accounting
+                {
+                    this.Hide();
+                    new Accounting.accounting().ShowDialog();
+                    this.Show();
+                }
+                else {
                     this.Hide();
                     new General.navi.navi(role_name).ShowDialog();
                     this.Show();
