@@ -107,10 +107,10 @@
     <Compile Include="Accounting\accounting.Designer.cs">
       <DependentUpon>accounting.cs</DependentUpon>
     </Compile>
-    <Compile Include="Accounting\invoice\detail.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Accounting\detail.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Accounting\invoice\detail.Designer.cs">
+    <Compile Include="Accounting\detail.Designer.cs">
       <DependentUpon>detail.cs</DependentUpon>
     </Compile>
     <Compile Include="Accounting\invoice\header.cs">
@@ -1159,7 +1159,7 @@
     <EmbeddedResource Include="Accounting\accounting.resx">
       <DependentUpon>accounting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Accounting\invoice\detail.resx">
+    <EmbeddedResource Include="Accounting\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Accounting\invoice\header.resx">
