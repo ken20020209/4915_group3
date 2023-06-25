@@ -231,7 +231,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
             this.kryptonLabelResult.StateNormal.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonLabelResult.StateNormal.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabelResult.TabIndex = 8;
-            this.kryptonLabelResult.Values.Text = "RESULT (0)";
+            this.kryptonLabelResult.Values.Text = "RESULT";
             // 
             // check
             // 
@@ -264,7 +264,7 @@ namespace ITP4915_group3_project.warehouse.check_PO
         private Krypton.Toolkit.KryptonCheckButton kryptonCheckButtonPPO;
         private Krypton.Toolkit.KryptonCheckButton kryptonCheckButtonSPO;
         private Krypton.Toolkit.KryptonCheckButton kryptonCheckButtonCPA;
-        private Krypton.Toolkit.KryptonLabel kryptonLabelResult;
         private Krypton.Toolkit.KryptonPanel kryptonPanelSearchResult;
+        private Krypton.Toolkit.KryptonLabel kryptonLabelResult;
     }
 }
