@@ -33,15 +33,15 @@ namespace ITP4915_group3_project.category.brand.search
             this.kryptonPanel4 = new Krypton.Toolkit.KryptonPanel();
             this.partner_brandKryptonDataGridView = new Krypton.Toolkit.KryptonDataGridView();
             this.detail = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.partner_brandBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.category_dbDataSet = new ITP4915_group3_project.category_dbDataSet();
             this.label3 = new System.Windows.Forms.Label();
             this.kryptonComboBox2 = new Krypton.Toolkit.KryptonComboBox();
             this.kryptonTextBox16 = new Krypton.Toolkit.KryptonTextBox();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,30 +88,6 @@ namespace ITP4915_group3_project.category.brand.search
             this.detail.Name = "detail";
             this.detail.Text = "detail";
             this.detail.UseColumnTextForButtonValue = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "partner_brand_ID";
-            this.dataGridViewTextBoxColumn5.HeaderText = "partner_brand_ID";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "name";
-            this.dataGridViewTextBoxColumn6.HeaderText = "name";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "type";
-            this.dataGridViewTextBoxColumn7.HeaderText = "type";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "remarks";
-            this.dataGridViewTextBoxColumn8.HeaderText = "remarks";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
             // partner_brandBindingSource
             // 
@@ -178,6 +154,30 @@ namespace ITP4915_group3_project.category.brand.search
             this.kryptonTextBox16.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox16.TabIndex = 54;
             this.kryptonTextBox16.Text = "ID                                                         🔍 ";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "partner_brand_ID";
+            this.dataGridViewTextBoxColumn5.HeaderText = "partner_brand_ID";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "name";
+            this.dataGridViewTextBoxColumn6.HeaderText = "name";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "type";
+            this.dataGridViewTextBoxColumn7.HeaderText = "type";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "remarks";
+            this.dataGridViewTextBoxColumn8.HeaderText = "remarks";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
             // dataGridViewTextBoxColumn1
             // 

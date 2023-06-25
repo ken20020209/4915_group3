@@ -32,6 +32,13 @@ namespace ITP4915_group3_project.category.produce.search
             this.components = new System.ComponentModel.Container();
             this.kryptonPanel4 = new Krypton.Toolkit.KryptonPanel();
             this.itemKryptonDataGridView = new Krypton.Toolkit.KryptonDataGridView();
+            this.Column1 = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.category_dbDataSet = new ITP4915_group3_project.category_dbDataSet();
             this.kryptonGroup1 = new Krypton.Toolkit.KryptonGroup();
@@ -49,13 +56,6 @@ namespace ITP4915_group3_project.category.produce.search
             this.kryptonLabel6 = new Krypton.Toolkit.KryptonLabel();
             this.itemTableAdapter = new ITP4915_group3_project.category_dbDataSetTableAdapters.itemTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.category_dbDataSetTableAdapters.TableAdapterManager();
-            this.Column1 = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.itemKryptonDataGridView)).BeginInit();
@@ -87,13 +87,7 @@ namespace ITP4915_group3_project.category.produce.search
             // itemKryptonDataGridView
             // 
             this.itemKryptonDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
+            this.Column1});
             this.itemKryptonDataGridView.DataSource = this.itemBindingSource;
             this.itemKryptonDataGridView.Location = new System.Drawing.Point(99, 241);
             this.itemKryptonDataGridView.Name = "itemKryptonDataGridView";
@@ -101,6 +95,49 @@ namespace ITP4915_group3_project.category.produce.search
             this.itemKryptonDataGridView.Size = new System.Drawing.Size(642, 220);
             this.itemKryptonDataGridView.TabIndex = 59;
             this.itemKryptonDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.itemKryptonDataGridView_CellContentClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "detail";
+            this.Column1.Name = "Column1";
+            this.Column1.Text = "detail";
+            this.Column1.UseColumnTextForButtonValue = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "item_ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "item_ID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "item_name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "item_name";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "price";
+            this.dataGridViewTextBoxColumn3.HeaderText = "price";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "size";
+            this.dataGridViewTextBoxColumn4.HeaderText = "size";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "category_ID";
+            this.dataGridViewTextBoxColumn5.HeaderText = "category_ID";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "partner_brand_ID";
+            this.dataGridViewTextBoxColumn6.HeaderText = "partner_brand_ID";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
             // itemBindingSource
             // 
@@ -167,6 +204,7 @@ namespace ITP4915_group3_project.category.produce.search
             this.kryptonCheckButton5.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonCheckButton5.TabIndex = 7;
             this.kryptonCheckButton5.Values.Text = "Status1";
+            this.kryptonCheckButton5.Click += new System.EventHandler(this.kryptonCheckButton5_Click);
             // 
             // kryptonCheckButton6
             // 
@@ -187,6 +225,7 @@ namespace ITP4915_group3_project.category.produce.search
             this.kryptonCheckButton6.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonCheckButton6.TabIndex = 7;
             this.kryptonCheckButton6.Values.Text = "Status2";
+            this.kryptonCheckButton6.Click += new System.EventHandler(this.kryptonCheckButton6_Click);
             // 
             // kryptonButton10
             // 
@@ -208,6 +247,7 @@ namespace ITP4915_group3_project.category.produce.search
             this.kryptonButton10.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.kryptonButton10.TabIndex = 12;
             this.kryptonButton10.Values.Text = "Search";
+            this.kryptonButton10.Click += new System.EventHandler(this.kryptonButton10_Click);
             // 
             // kryptonTextBox1
             // 
@@ -261,6 +301,7 @@ namespace ITP4915_group3_project.category.produce.search
             this.kryptonCheckButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonCheckButton1.TabIndex = 6;
             this.kryptonCheckButton1.Values.Text = "Category1";
+            this.kryptonCheckButton1.Click += new System.EventHandler(this.kryptonCheckButton1_Click);
             // 
             // kryptonCheckButton2
             // 
@@ -281,6 +322,7 @@ namespace ITP4915_group3_project.category.produce.search
             this.kryptonCheckButton2.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonCheckButton2.TabIndex = 6;
             this.kryptonCheckButton2.Values.Text = "Category2";
+            this.kryptonCheckButton2.Click += new System.EventHandler(this.kryptonCheckButton2_Click);
             // 
             // kryptonCheckButton3
             // 
@@ -301,6 +343,7 @@ namespace ITP4915_group3_project.category.produce.search
             this.kryptonCheckButton3.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.kryptonCheckButton3.TabIndex = 13;
             this.kryptonCheckButton3.Values.Text = "Category3";
+            this.kryptonCheckButton3.Click += new System.EventHandler(this.kryptonCheckButton3_Click);
             // 
             // kryptonCheckButton7
             // 
@@ -321,6 +364,7 @@ namespace ITP4915_group3_project.category.produce.search
             this.kryptonCheckButton7.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonCheckButton7.TabIndex = 7;
             this.kryptonCheckButton7.Values.Text = "Status3";
+            this.kryptonCheckButton7.Click += new System.EventHandler(this.kryptonCheckButton7_Click);
             // 
             // kryptonCheckButton4
             // 
@@ -341,6 +385,7 @@ namespace ITP4915_group3_project.category.produce.search
             this.kryptonCheckButton4.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.kryptonCheckButton4.TabIndex = 7;
             this.kryptonCheckButton4.Values.Text = "Category4";
+            this.kryptonCheckButton4.Click += new System.EventHandler(this.kryptonCheckButton4_Click);
             // 
             // kryptonLabel6
             // 
@@ -369,49 +414,6 @@ namespace ITP4915_group3_project.category.produce.search
             this.tableAdapterManager.supplier_contact_personTableAdapter = null;
             this.tableAdapterManager.supplierTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.category_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "detail";
-            this.Column1.Name = "Column1";
-            this.Column1.Text = "detail";
-            this.Column1.UseColumnTextForButtonValue = true;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "item_ID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "item_ID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "item_name";
-            this.dataGridViewTextBoxColumn2.HeaderText = "item_name";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "price";
-            this.dataGridViewTextBoxColumn3.HeaderText = "price";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "size";
-            this.dataGridViewTextBoxColumn4.HeaderText = "size";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "category_ID";
-            this.dataGridViewTextBoxColumn5.HeaderText = "category_ID";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "partner_brand_ID";
-            this.dataGridViewTextBoxColumn6.HeaderText = "partner_brand_ID";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
             // check
             // 

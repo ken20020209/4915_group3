@@ -12,11 +12,13 @@ namespace ITP4915_group3_project.category.category.create
 {
     public partial class create : UserControl 
     {
+        Control panelContent;
         public create(Control panelContent)
         {
             InitializeComponent();
             panelContent.Controls.Add(this);
             this.BringToFront();
+    
         }
         private void kryptonButtonConfirm_Click(object sender, EventArgs e)
         {
