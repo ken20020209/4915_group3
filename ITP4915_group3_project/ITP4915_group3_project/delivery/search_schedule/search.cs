@@ -20,5 +20,7 @@ namespace ITP4915_group3_project.delivery.search_schedule
             panel.Controls.Clear();
             panel.Controls.Add(this);
         }
+
+
     }
 }

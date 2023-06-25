@@ -33,12 +33,6 @@ namespace ITP4915_group3_project.Accounting
             this.kryptonPanel4 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonLabelResult = new Krypton.Toolkit.KryptonLabel();
             this.kryptonDataGridView1 = new Krypton.Toolkit.KryptonDataGridView();
-            this.detail = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.invoiceBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.accounting_dbDataSet = new ITP4915_group3_project.accounting_dbDataSet();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,6 +42,11 @@ namespace ITP4915_group3_project.Accounting
             this.kryptonLabel26 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel27 = new Krypton.Toolkit.KryptonLabel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,6 +58,12 @@ namespace ITP4915_group3_project.Accounting
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.invoiceTableAdapter = new ITP4915_group3_project.accounting_dbDataSetTableAdapters.invoiceTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.accounting_dbDataSetTableAdapters.TableAdapterManager();
+            this.detail = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).BeginInit();
@@ -102,52 +107,21 @@ namespace ITP4915_group3_project.Accounting
             // kryptonDataGridView1
             // 
             this.kryptonDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.detail});
+            this.detail,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn17,
+            this.dataGridViewTextBoxColumn18,
+            this.dataGridViewTextBoxColumn19});
             this.kryptonDataGridView1.DataSource = this.invoiceBindingSource;
             this.kryptonDataGridView1.Location = new System.Drawing.Point(40, 286);
             this.kryptonDataGridView1.Name = "kryptonDataGridView1";
             this.kryptonDataGridView1.RowTemplate.Height = 24;
-            this.kryptonDataGridView1.Size = new System.Drawing.Size(541, 261);
+            this.kryptonDataGridView1.Size = new System.Drawing.Size(676, 220);
             this.kryptonDataGridView1.StateCommon.Background.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonDataGridView1.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
             this.kryptonDataGridView1.TabIndex = 172;
             this.kryptonDataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.kryptonDataGridView1_CellContentClick);
-            // 
-            // detail
-            // 
-            this.detail.HeaderText = "detail";
-            this.detail.Name = "detail";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "Invoice_ID";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Invoice_ID";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "purchase_order_ID";
-            this.dataGridViewTextBoxColumn11.HeaderText = "purchase_order_ID";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "arrival_date";
-            this.dataGridViewTextBoxColumn12.HeaderText = "arrival_date";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "shipping_date";
-            this.dataGridViewTextBoxColumn13.HeaderText = "shipping_date";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.DataPropertyName = "status_ID";
-            this.dataGridViewTextBoxColumn14.HeaderText = "status_ID";
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.Visible = false;
             // 
             // invoiceBindingSource
             // 
@@ -164,7 +138,7 @@ namespace ITP4915_group3_project.Accounting
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.label3.Location = new System.Drawing.Point(451, 151);
+            this.label3.Location = new System.Drawing.Point(449, 166);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 16);
@@ -179,7 +153,7 @@ namespace ITP4915_group3_project.Accounting
             this.kryptonComboBox2.Items.AddRange(new object[] {
             "wait for process",
             "completed"});
-            this.kryptonComboBox2.Location = new System.Drawing.Point(498, 142);
+            this.kryptonComboBox2.Location = new System.Drawing.Point(496, 157);
             this.kryptonComboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonComboBox2.Name = "kryptonComboBox2";
             this.kryptonComboBox2.Size = new System.Drawing.Size(113, 37);
@@ -202,7 +176,7 @@ namespace ITP4915_group3_project.Accounting
             // 
             this.kryptonTextBox16.CueHint.CueHintText = "ID";
             this.kryptonTextBox16.CueHint.Padding = new System.Windows.Forms.Padding(0);
-            this.kryptonTextBox16.Location = new System.Drawing.Point(40, 144);
+            this.kryptonTextBox16.Location = new System.Drawing.Point(38, 159);
             this.kryptonTextBox16.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox16.Name = "kryptonTextBox16";
             this.kryptonTextBox16.Size = new System.Drawing.Size(216, 34);
@@ -223,7 +197,7 @@ namespace ITP4915_group3_project.Accounting
             // 
             // kryptonGroup4
             // 
-            this.kryptonGroup4.Location = new System.Drawing.Point(22, 21);
+            this.kryptonGroup4.Location = new System.Drawing.Point(33, 34);
             this.kryptonGroup4.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroup4.Name = "kryptonGroup4";
             // 
@@ -274,6 +248,37 @@ namespace ITP4915_group3_project.Accounting
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Invoice_ID";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Invoice_ID";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "purchase_order_ID";
+            this.dataGridViewTextBoxColumn11.HeaderText = "purchase_order_ID";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "arrival_date";
+            this.dataGridViewTextBoxColumn12.HeaderText = "arrival_date";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "shipping_date";
+            this.dataGridViewTextBoxColumn13.HeaderText = "shipping_date";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "status_ID";
+            this.dataGridViewTextBoxColumn14.HeaderText = "status_ID";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.Visible = false;
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -343,6 +348,42 @@ namespace ITP4915_group3_project.Accounting
             this.tableAdapterManager.purchase_order_allTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.accounting_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // detail
+            // 
+            this.detail.HeaderText = "detail";
+            this.detail.Name = "detail";
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "Invoice_ID";
+            this.dataGridViewTextBoxColumn15.HeaderText = "Invoice_ID";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "purchase_order_ID";
+            this.dataGridViewTextBoxColumn16.HeaderText = "purchase_order_ID";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "arrival_date";
+            this.dataGridViewTextBoxColumn17.HeaderText = "arrival_date";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "shipping_date";
+            this.dataGridViewTextBoxColumn18.HeaderText = "shipping_date";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.DataPropertyName = "status_ID";
+            this.dataGridViewTextBoxColumn19.HeaderText = "status_ID";
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            this.dataGridViewTextBoxColumn19.Visible = false;
+            // 
             // search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -392,11 +433,16 @@ namespace ITP4915_group3_project.Accounting
         private accounting_dbDataSetTableAdapters.invoiceTableAdapter invoiceTableAdapter;
         private accounting_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private Krypton.Toolkit.KryptonLabel kryptonLabelResult;
-        private Krypton.Toolkit.KryptonDataGridViewButtonColumn detail;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private Krypton.Toolkit.KryptonDataGridViewButtonColumn detail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
     }
 }
