@@ -107,10 +107,10 @@
     <Compile Include="Accounting\accounting.Designer.cs">
       <DependentUpon>accounting.cs</DependentUpon>
     </Compile>
-    <Compile Include="Accounting\detail.cs">
+    <Compile Include="Accounting\invoice\detail.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Accounting\detail.Designer.cs">
+    <Compile Include="Accounting\invoice\detail.Designer.cs">
       <DependentUpon>detail.cs</DependentUpon>
     </Compile>
     <Compile Include="Accounting\invoice\header.cs">
@@ -131,17 +131,17 @@
     <Compile Include="Accounting\invoice\pay\detail.Designer.cs">
       <DependentUpon>detail.cs</DependentUpon>
     </Compile>
-    <Compile Include="Accounting\invoice\process\compare_note.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Accounting\invoice\process\compare_note.Designer.cs">
-      <DependentUpon>compare_note.cs</DependentUpon>
-    </Compile>
     <Compile Include="Accounting\invoice\pay\payment.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Accounting\invoice\pay\payment.Designer.cs">
       <DependentUpon>payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\invoice\process\compare.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Accounting\invoice\process\compare.Designer.cs">
+      <DependentUpon>compare.cs</DependentUpon>
     </Compile>
     <Compile Include="Accounting\invoice\process\confrim.cs">
       <SubType>Form</SubType>
@@ -1159,7 +1159,7 @@
     <EmbeddedResource Include="Accounting\accounting.resx">
       <DependentUpon>accounting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Accounting\detail.resx">
+    <EmbeddedResource Include="Accounting\invoice\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Accounting\invoice\header.resx">
@@ -1171,11 +1171,11 @@
     <EmbeddedResource Include="Accounting\invoice\pay\detail.resx">
       <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Accounting\invoice\process\compare_note.resx">
-      <DependentUpon>compare_note.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Accounting\invoice\pay\payment.resx">
       <DependentUpon>payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\invoice\process\compare.resx">
+      <DependentUpon>compare.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Accounting\invoice\process\confrim.resx">
       <DependentUpon>confrim.cs</DependentUpon>
