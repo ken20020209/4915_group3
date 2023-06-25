@@ -35,7 +35,22 @@ namespace ITP4915_group3_project.category.supplier.search
         }
         private void kryptonLabel10_Click(object sender, EventArgs e)
         {
-
+            kryptonTextBox1.ReadOnly = false;
+            kryptonTextBox2.ReadOnly = false;
+            kryptonTextBox3.ReadOnly = false;
+            kryptonTextBox4.ReadOnly = false;
+            kryptonTextBox5.ReadOnly = false;
+            kryptonTextBox6.ReadOnly = false;
+            kryptonTextBox7.ReadOnly = false;
+            kryptonTextBox8.ReadOnly = false;
+            kryptonTextBox9.ReadOnly = false;
+            kryptonTextBox10.ReadOnly = false;
+            kryptonTextBox11.ReadOnly = false;
+            kryptonTextBox12.ReadOnly = false;
+            kryptonTextBox13.ReadOnly = false;
+            kryptonRichTextBox1.ReadOnly = false;
+            kryptonDomainUpDown1.ReadOnly = false;
+            kryptonDropButton1.AllowDrop = true;
         }
     }
 }
