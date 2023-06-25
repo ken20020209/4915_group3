@@ -1,1 +1,0 @@
-SELECT * FROM 4523_g1_project_db.permission;
