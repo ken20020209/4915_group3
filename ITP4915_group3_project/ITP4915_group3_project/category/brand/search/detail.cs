@@ -36,7 +36,12 @@ namespace ITP4915_group3_project.category.brand.search
         }
         private void kryptonLabel10_Click(object sender, EventArgs e)
         {
-            
+            kryptonTextBox1.ReadOnly = false;
+            kryptonTextBox2.ReadOnly = false;
+            kryptonTextBox3.ReadOnly = false;
+            kryptonTextBox4.ReadOnly = false;
+            kryptonTextBox5.ReadOnly = false;
+            kryptonRichTextBox1.ReadOnly = false;
         }
 
         private void partner_brandBindingNavigatorSaveItem_Click(object sender, EventArgs e)
