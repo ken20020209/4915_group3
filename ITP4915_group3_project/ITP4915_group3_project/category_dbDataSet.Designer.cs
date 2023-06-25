@@ -4047,6 +4047,11 @@ namespace ITP4915_group3_project.category_dbDataSetTableAdapters {
                 }
             }
         }
+
+        internal void UpdateQuery(object name, object partner_brand_ID, object remarks, string description)
+        {
+            throw new NotImplementedException();
+        }
     }
     
     /// <summary>
@@ -4527,6 +4532,11 @@ namespace ITP4915_group3_project.category_dbDataSetTableAdapters {
         }
 
         internal void FillBy_search(object purchaseRequestDetail, string keyword)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void UpdateQuery(string name, int partner_brand_ID, string remarks)
         {
             throw new NotImplementedException();
         }
