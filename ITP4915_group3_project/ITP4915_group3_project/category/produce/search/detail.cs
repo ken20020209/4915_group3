@@ -36,17 +36,7 @@ namespace ITP4915_group3_project.category.produce.search
         }
         private void kryptonLabel10_Click(object sender, EventArgs e)
         {
-            kryptonTextBox1.ReadOnly = false;
-            kryptonTextBox2.ReadOnly = false;
-            kryptonTextBox3.ReadOnly = false;
-            kryptonTextBox4.ReadOnly = false;
-            kryptonTextBox11.ReadOnly = false;
-            kryptonTextBox12.ReadOnly = false;
-            kryptonTextBox5.ReadOnly = false;
-            kryptonTextBox6.ReadOnly = false;
-            kryptonRichTextBox1.ReadOnly = false;
-            kryptonDropButton1.AllowDrop = true;
-            kryptonDropButton2.AllowDrop = true;
+            new search.edit(check, v);
         }
     }
 }

@@ -36,11 +36,7 @@ namespace ITP4915_group3_project.category.category.select
         }
         private void kryptonLabel10_Click(object sender, EventArgs e)
         {
-            kryptonTextBox1.ReadOnly = false;
-            kryptonTextBox2.ReadOnly = false;
-            kryptonTextBox3.ReadOnly = false;
-            kryptonRichTextBox1.ReadOnly = false;
-            kryptonRichTextBox2.ReadOnly = false;
+            new select.edit(check, v);
         }
     }
 }

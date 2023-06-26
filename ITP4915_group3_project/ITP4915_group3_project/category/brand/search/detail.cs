@@ -36,7 +36,7 @@ namespace ITP4915_group3_project.category.brand.search
         }
         private void kryptonLabel10_Click(object sender, EventArgs e)
         {
-            new search.edit();
+            new search.edit(check, v);
         }
 
         private void partner_brandBindingNavigatorSaveItem_Click(object sender, EventArgs e)

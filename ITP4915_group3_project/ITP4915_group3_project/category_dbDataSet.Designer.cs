@@ -3627,6 +3627,11 @@ namespace ITP4915_group3_project.category_dbDataSetTableAdapters {
                 }
             }
         }
+
+        internal void UpdateQuery(int item_ID, string item_name)
+        {
+            throw new NotImplementedException();
+        }
     }
     
     /// <summary>
@@ -4537,6 +4542,11 @@ namespace ITP4915_group3_project.category_dbDataSetTableAdapters {
         }
 
         internal void UpdateQuery(string name, int partner_brand_ID, string remarks)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void UpdateQuery(string name, string remarks)
         {
             throw new NotImplementedException();
         }
@@ -5499,6 +5509,11 @@ namespace ITP4915_group3_project.category_dbDataSetTableAdapters {
                     this.Adapter.UpdateCommand.Connection.Close();
                 }
             }
+        }
+
+        internal object UpdateQuery(string remarks, int supplier_ID, string name)
+        {
+            throw new NotImplementedException();
         }
     }
     
