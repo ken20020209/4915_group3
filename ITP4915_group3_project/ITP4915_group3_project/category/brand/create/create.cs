@@ -12,13 +12,20 @@ namespace ITP4915_group3_project.category.brand.create
 {
     public partial class create : UserControl
     {
-        private Control check;
+        private Control panelContent;
 
         public create(Control panelContent)
         {
-            InitializeComponent();
+            this.panelContent = panelContent;
+
             panelContent.Controls.Add(this);
             this.BringToFront();
+
+
+            this.partner_brandTableAdapter.Fill(this.category_dbDataSet.partner_brand);
+
+            partner_brandBindingSource.AddNew();
+            partner_brandBindingSource.MoveLast();
         }
 
         private void kryptonButtonConfirm_Click(object sender, EventArgs e)
@@ -41,7 +48,7 @@ namespace ITP4915_group3_project.category.brand.create
         }
         private void kryptonLabelback_Click(object sender, EventArgs e)
         {
-            check.Controls.Remove(this);
+            //check.Controls.Remove(this);
         }
     }
 }

@@ -15,10 +15,17 @@ namespace ITP4915_group3_project.category.category.create
         Control panelContent;
         public create(Control panelContent)
         {
-            InitializeComponent();
+            this.panelContent = panelContent;
+
             panelContent.Controls.Add(this);
             this.BringToFront();
-    
+
+
+            this.item_categoryTableAdapter.Fill(this.category_dbDataSet.item_category);
+
+            item_categoryBindingSource.AddNew();
+            item_categoryBindingSource.MoveLast();
+
         }
         private void kryptonButtonConfirm_Click(object sender, EventArgs e)
         {

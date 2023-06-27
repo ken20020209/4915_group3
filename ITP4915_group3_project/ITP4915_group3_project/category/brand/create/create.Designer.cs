@@ -33,6 +33,8 @@ namespace ITP4915_group3_project.category.brand.create
             this.kryptionPanelContent = new Krypton.Toolkit.KryptonPanel();
             this.kryptonButtonConfirm = new Krypton.Toolkit.KryptonButton();
             this.kryptonTextBoxType = new Krypton.Toolkit.KryptonTextBox();
+            this.partner_brandBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.category_dbDataSet = new ITP4915_group3_project.category_dbDataSet();
             this.kryptonLabelType = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabelBack = new Krypton.Toolkit.KryptonLabel();
             this.kryptonRichTextBoxRemarks = new Krypton.Toolkit.KryptonRichTextBox();
@@ -46,14 +48,12 @@ namespace ITP4915_group3_project.category.brand.create
             this.kryptonTextBoxID = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabelID = new Krypton.Toolkit.KryptonLabel();
             this.labelNew = new System.Windows.Forms.Label();
-            this.category_dbDataSet = new ITP4915_group3_project.category_dbDataSet();
-            this.partner_brandBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.partner_brandTableAdapter = new ITP4915_group3_project.category_dbDataSetTableAdapters.partner_brandTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.category_dbDataSetTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.kryptionPanelContent)).BeginInit();
             this.kryptionPanelContent.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.category_dbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.partner_brandBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.category_dbDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptionPanelContent
@@ -122,6 +122,16 @@ namespace ITP4915_group3_project.category.brand.create
             this.kryptonTextBoxType.TabIndex = 211;
             this.kryptonTextBoxType.Text = "type";
             this.kryptonTextBoxType.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // partner_brandBindingSource
+            // 
+            this.partner_brandBindingSource.DataMember = "partner_brand";
+            this.partner_brandBindingSource.DataSource = this.category_dbDataSet;
+            // 
+            // category_dbDataSet
+            // 
+            this.category_dbDataSet.DataSetName = "category_dbDataSet";
+            this.category_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // kryptonLabelType
             // 
@@ -305,22 +315,13 @@ namespace ITP4915_group3_project.category.brand.create
             this.labelNew.TabIndex = 160;
             this.labelNew.Text = "New";
             // 
-            // category_dbDataSet
-            // 
-            this.category_dbDataSet.DataSetName = "category_dbDataSet";
-            this.category_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // partner_brandBindingSource
-            // 
-            this.partner_brandBindingSource.DataMember = "partner_brand";
-            this.partner_brandBindingSource.DataSource = this.category_dbDataSet;
-            // 
             // partner_brandTableAdapter
             // 
             this.partner_brandTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
+            this.tableAdapterManager.addressTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.item_categoryTableAdapter = null;
             this.tableAdapterManager.itemTableAdapter = null;
@@ -340,8 +341,8 @@ namespace ITP4915_group3_project.category.brand.create
             ((System.ComponentModel.ISupportInitialize)(this.kryptionPanelContent)).EndInit();
             this.kryptionPanelContent.ResumeLayout(false);
             this.kryptionPanelContent.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.category_dbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.partner_brandBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.category_dbDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
