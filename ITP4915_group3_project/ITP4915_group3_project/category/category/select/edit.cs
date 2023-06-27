@@ -12,26 +12,24 @@ namespace ITP4915_group3_project.category.category.select
 {
     public partial class edit : UserControl
     {
-        category_dbDataSet.item_categoryRow item_categoryRow;
-        category_dbDataSet.partner_brandRow partner_brandRow;
-        int id;
         Control panelContent;
         public edit(Control edit, int id)
         {
             InitializeComponent();
             this.panelContent = panelContent;
-            this.id = id;
-            edit.Controls.Clear();
             edit.Controls.Add(this);
+            this.BringToFront();
+            partner_brandTableAdapter.Fill(this.category_dbDataSet.partner_brand);
+            item_categoryTableAdapter.Fill(this.category_dbDataSet.item_category);
+            item_categoryBindingSource.Filter = $"category_ID={id}";
         }
         private void kryptonButton10_Click(object sender, EventArgs e)
         {
             this.Validate();
-            item_categoryRow.category_name = kryptonTextBox2.Text;
-            //item_categoryRow.category_ID = int.Parse(kryptonTextBox1.Text);
-            partner_brandRow.remarks = kryptonRichTextBox2.Text;
-            item_categoryRow.description = kryptonRichTextBox1.Text;
-            this.item_categoryTableAdapter.UpdateQuery(item_categoryRow.category_name,id, partner_brandRow.remarks,item_categoryRow.description);
+            this.item_categoryBindingSource.EndEdit();
+            this.partner_brandBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.category_dbDataSet);
+
             MessageBox.Show("save success");
         }
     }

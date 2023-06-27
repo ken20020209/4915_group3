@@ -13,15 +13,14 @@ namespace ITP4915_group3_project.category.brand.search
     public partial class edit : UserControl
     {
         Control panelContent;
-        int id;
         public edit(Control edit,int id)
         {
             InitializeComponent();
             this.panelContent = panelContent;
-            this.id = id;
-            edit.Controls.Clear();
-            edit.Controls.Add(this); 
+            edit.Controls.Add(this);
+            this.BringToFront();
             partner_brandTableAdapter.Fill(this.category_dbDataSet.partner_brand);
+            partner_brandBindingSource.Filter = $"partner_brand_ID={id}";
 
         }
 
