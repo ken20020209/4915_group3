@@ -16,6 +16,7 @@ namespace ITP4915_group3_project.category.brand.create
 
         public create(Control panelContent)
         {
+            InitializeComponent();
             this.panelContent = panelContent;
 
             panelContent.Controls.Add(this);
