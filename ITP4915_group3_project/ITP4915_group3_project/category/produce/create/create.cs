@@ -12,16 +12,28 @@ namespace ITP4915_group3_project.category.produce.create
 {
     public partial class create : UserControl
     {
+        private Control panelContent;
         public create(Control panelContent)
         {
             InitializeComponent();
+            this.panelContent = panelContent;
+
             panelContent.Controls.Add(this);
             this.BringToFront();
+
+
+            this.itemTableAdapter.Fill(this.category_dbDataSet.item);
+
+            itemBindingSource.AddNew();
+            itemBindingSource.MoveLast();
+            supplierBindingSource.AddNew();
+            supplierBindingSource.MoveLast();
         }
         private void kryptonButtonConfirm_Click(object sender, EventArgs e)
         {
             this.Validate();
             this.itemBindingSource.EndEdit();
+            this.supplierBindingSource.EndEdit();
             try
             {
                 this.tableAdapterManager.UpdateAll(this.category_dbDataSet);
@@ -34,6 +46,8 @@ namespace ITP4915_group3_project.category.produce.create
             MessageBox.Show("create success");
             itemBindingSource.AddNew();
             itemBindingSource.MoveLast();
+            supplierBindingSource.AddNew();
+            supplierBindingSource.MoveLast();
         }
     }
 }

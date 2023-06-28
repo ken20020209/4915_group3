@@ -109,7 +109,6 @@ namespace ITP4915_group3_project.category.brand.create
             this.kryptonTextBoxType.Location = new System.Drawing.Point(114, 147);
             this.kryptonTextBoxType.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBoxType.Name = "kryptonTextBoxType";
-            this.kryptonTextBoxType.ReadOnly = true;
             this.kryptonTextBoxType.Size = new System.Drawing.Size(100, 22);
             this.kryptonTextBoxType.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBoxType.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -247,7 +246,6 @@ namespace ITP4915_group3_project.category.brand.create
             this.kryptonTextBoxName.Location = new System.Drawing.Point(329, 76);
             this.kryptonTextBoxName.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBoxName.Name = "kryptonTextBoxName";
-            this.kryptonTextBoxName.ReadOnly = true;
             this.kryptonTextBoxName.Size = new System.Drawing.Size(100, 22);
             this.kryptonTextBoxName.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBoxName.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));

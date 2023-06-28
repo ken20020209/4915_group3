@@ -22,6 +22,8 @@ namespace ITP4915_group3_project.category.category.select
             InitializeComponent();
             check.Controls.Add(this);
             this.BringToFront();
+            this.item_categoryTableAdapter.Fill(this.category_dbDataSet.item_category);
+            item_categoryBindingSource.Filter = $"category_id={v}";
         }
         private void kryptonLabel9_Click(object sender, EventArgs e)
         {

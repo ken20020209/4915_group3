@@ -35,6 +35,8 @@ namespace ITP4915_group3_project.category.produce.create
             this.kryptonLabel12 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonGroupBox3 = new Krypton.Toolkit.KryptonGroupBox();
             this.kryptonTextBox4 = new Krypton.Toolkit.KryptonTextBox();
+            this.supplierBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.category_dbDataSet = new ITP4915_group3_project.category_dbDataSet();
             this.kryptonTextBox2 = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel9 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel10 = new Krypton.Toolkit.KryptonLabel();
@@ -50,6 +52,7 @@ namespace ITP4915_group3_project.category.produce.create
             this.kryptonDropButton1 = new Krypton.Toolkit.KryptonDropButton();
             this.kryptonLabel6 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
+            this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kryptonTextBox3 = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel5 = new Krypton.Toolkit.KryptonLabel();
@@ -59,11 +62,8 @@ namespace ITP4915_group3_project.category.produce.create
             this.kryptonTextBox12 = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel14 = new Krypton.Toolkit.KryptonLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.category_dbDataSet = new ITP4915_group3_project.category_dbDataSet();
-            this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.itemTableAdapter = new ITP4915_group3_project.category_dbDataSetTableAdapters.itemTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.category_dbDataSetTableAdapters.TableAdapterManager();
-            this.supplierBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.supplierTableAdapter = new ITP4915_group3_project.category_dbDataSetTableAdapters.supplierTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
@@ -71,17 +71,17 @@ namespace ITP4915_group3_project.category.produce.create
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox3.Panel)).BeginInit();
             this.kryptonGroupBox3.Panel.SuspendLayout();
             this.kryptonGroupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.category_dbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).BeginInit();
             this.kryptonGroupBox2.Panel.SuspendLayout();
             this.kryptonGroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).BeginInit();
             this.kryptonGroupBox1.Panel.SuspendLayout();
             this.kryptonGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.category_dbDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanel4
@@ -177,13 +177,22 @@ namespace ITP4915_group3_project.category.produce.create
             this.kryptonTextBox4.Text = "00001";
             this.kryptonTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // supplierBindingSource
+            // 
+            this.supplierBindingSource.DataMember = "supplier";
+            this.supplierBindingSource.DataSource = this.category_dbDataSet;
+            // 
+            // category_dbDataSet
+            // 
+            this.category_dbDataSet.DataSetName = "category_dbDataSet";
+            this.category_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // kryptonTextBox2
             // 
             this.kryptonTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.supplierBindingSource, "name", true));
             this.kryptonTextBox2.Location = new System.Drawing.Point(66, 37);
             this.kryptonTextBox2.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox2.Name = "kryptonTextBox2";
-            this.kryptonTextBox2.ReadOnly = true;
             this.kryptonTextBox2.Size = new System.Drawing.Size(100, 22);
             this.kryptonTextBox2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -400,7 +409,6 @@ namespace ITP4915_group3_project.category.produce.create
             this.kryptonTextBox1.Location = new System.Drawing.Point(301, 13);
             this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.ReadOnly = true;
             this.kryptonTextBox1.Size = new System.Drawing.Size(100, 22);
             this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -412,6 +420,11 @@ namespace ITP4915_group3_project.category.produce.create
             this.kryptonTextBox1.TabIndex = 184;
             this.kryptonTextBox1.Text = "item name";
             this.kryptonTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // itemBindingSource
+            // 
+            this.itemBindingSource.DataMember = "item";
+            this.itemBindingSource.DataSource = this.category_dbDataSet;
             // 
             // kryptonTextBox3
             // 
@@ -552,22 +565,13 @@ namespace ITP4915_group3_project.category.produce.create
             this.label1.TabIndex = 214;
             this.label1.Text = "New";
             // 
-            // category_dbDataSet
-            // 
-            this.category_dbDataSet.DataSetName = "category_dbDataSet";
-            this.category_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // itemBindingSource
-            // 
-            this.itemBindingSource.DataMember = "item";
-            this.itemBindingSource.DataSource = this.category_dbDataSet;
-            // 
             // itemTableAdapter
             // 
             this.itemTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
+            this.tableAdapterManager.addressTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.item_categoryTableAdapter = null;
             this.tableAdapterManager.itemTableAdapter = this.itemTableAdapter;
@@ -576,11 +580,6 @@ namespace ITP4915_group3_project.category.produce.create
             this.tableAdapterManager.supplier_contact_personTableAdapter = null;
             this.tableAdapterManager.supplierTableAdapter = this.supplierTableAdapter;
             this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.category_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // supplierBindingSource
-            // 
-            this.supplierBindingSource.DataMember = "supplier";
-            this.supplierBindingSource.DataSource = this.category_dbDataSet;
             // 
             // supplierTableAdapter
             // 
@@ -601,19 +600,19 @@ namespace ITP4915_group3_project.category.produce.create
             this.kryptonGroupBox3.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox3)).EndInit();
             this.kryptonGroupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.category_dbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).EndInit();
             this.kryptonGroupBox2.Panel.ResumeLayout(false);
             this.kryptonGroupBox2.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).EndInit();
             this.kryptonGroupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).EndInit();
             this.kryptonGroupBox1.Panel.ResumeLayout(false);
             this.kryptonGroupBox1.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).EndInit();
             this.kryptonGroupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.category_dbDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

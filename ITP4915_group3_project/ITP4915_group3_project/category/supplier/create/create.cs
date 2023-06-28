@@ -12,11 +12,22 @@ namespace ITP4915_group3_project.category.supplier.create
 {
     public partial class create : UserControl
     {
+        private Control panelContent;
         public create(Control panelContent)
         {
             InitializeComponent();
+            this.panelContent = panelContent;
+
             panelContent.Controls.Add(this);
             this.BringToFront();
+
+
+            this.supplierTableAdapter.Fill(this.category_dbDataSet.supplier);
+            this.addressTableAdapter.Fill(this.category_dbDataSet.address);
+            this.supplier_contact_personTableAdapter.Fill(this.category_dbDataSet.supplier_contact_person);
+
+            supplierBindingSource.AddNew();
+            supplierBindingSource.MoveLast();
         }
         private void kryptonButtonConfirm_Click(object sender, EventArgs e)
         {

@@ -22,6 +22,8 @@ namespace ITP4915_group3_project.category.brand.search
             InitializeComponent();
             check.Controls.Add(this);
             this.BringToFront();
+            this.partner_brandTableAdapter.Fill(this.category_dbDataSet.partner_brand);
+            partner_brandBindingSource.Filter = $"partner_brand_id={v}";
         }
         private void kryptonLabel9_Click(object sender, EventArgs e)
         {

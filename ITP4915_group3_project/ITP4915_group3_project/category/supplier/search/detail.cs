@@ -21,6 +21,10 @@ namespace ITP4915_group3_project.category.supplier.search
             InitializeComponent();
             check.Controls.Add(this);
             this.BringToFront();
+            this.supplierTableAdapter.Fill(this.category_dbDataSet.supplier);
+            this.addressTableAdapter.Fill(this.category_dbDataSet.address);
+            this.supplier_contact_personTableAdapter.Fill(this.category_dbDataSet.supplier_contact_person);
+            supplierBindingSource.Filter = $"supplier_id={v}";
         }
         private void kryptonLabel20_Click(object sender, EventArgs e)
         {
