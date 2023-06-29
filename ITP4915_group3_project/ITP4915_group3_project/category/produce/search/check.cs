@@ -12,16 +12,16 @@ namespace ITP4915_group3_project.category.produce.search
 {
     public partial class check : UserControl
     {
-        public Control panel;
-        public string keyword;
+        public static Control panel;
         internal static Control panelContent;
         public check(Control panel)
         {
             InitializeComponent();
-            this.panel = panel;
-            this.panel.Controls.Clear();
-            this.panel.Controls.Add(this);
-            search();
+            panel.Controls.Clear();
+            check.panel = panel;
+            check.panel.Controls.Add(this);
+            this.itemTableAdapter.Fill(this.category_dbDataSet.item);
+            kryptonLabel6.Text = $"RESULT ({itemBindingSource.Count})";
         }
         private void kryptonButton10_Click(object sender, EventArgs e)
         {
@@ -29,8 +29,17 @@ namespace ITP4915_group3_project.category.produce.search
         }
         private void search()
         {
-            keyword = "%" + kryptonTextBox1.Text + "%";
-            this.itemTableAdapter.Fill(this.category_dbDataSet.item);
+            string keyword = "'%" + kryptonTextBox1.Text + "%'";
+            itemBindingSource.Filter = $" size like {keyword} or item_name like {keyword}";
+            try
+            {
+                itemBindingSource.Filter += $" or item_ID = {int.Parse(kryptonTextBox1.Text)}";
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+            }
+            kryptonLabel6.Text = $"RESULT ({itemBindingSource.Count})";
         }
 
         private void itemBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -48,7 +57,7 @@ namespace ITP4915_group3_project.category.produce.search
             }
             detail stockDetail = new detail(this, int.Parse(itemKryptonDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString()));
         }
-        private void kryptonTextBox16_TextChanged(object sender, EventArgs e)
+        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
         {
             search();
         }

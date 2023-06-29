@@ -12,22 +12,31 @@ namespace ITP4915_group3_project.category.category.select
 {
     public partial class check : UserControl
     {
-        public Control panel;
-        public String keyword;
+        public static Control panel;
         internal static Control panelContent;
 
         public check(Control panel)
         {
             InitializeComponent();
-            this.panel = panel;
-            this.panel.Controls.Clear();
-            this.panel.Controls.Add(this);
-            search();
+            panel.Controls.Clear();
+            check.panel = panel;
+            check.panel.Controls.Add(this);
+            this.item_categoryTableAdapter.Fill(this.category_dbDataSet.item_category);
+            kryptonLabelResult.Text = $"RESULT ({item_categoryBindingSource.Count})";
         }
         private void search()
         {
-            keyword = "%" + kryptonTextBox16.Text + "%";
-            this.item_categoryTableAdapter.Fill(this.category_dbDataSet.item_category);
+            string keyword = "'%" + kryptonTextBox16.Text + "%'";
+            item_categoryBindingSource.Filter = $" category_name like {keyword} or description like {keyword}";
+            try
+            {
+                item_categoryBindingSource.Filter += $" or item_category_ID = {int.Parse(kryptonTextBox16.Text)}";
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+            }
+            kryptonLabelResult.Text = $"RESULT ({item_categoryBindingSource.Count})";
         }
         private void item_categoryBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {

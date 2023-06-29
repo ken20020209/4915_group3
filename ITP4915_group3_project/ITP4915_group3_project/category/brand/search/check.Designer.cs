@@ -48,6 +48,7 @@ namespace ITP4915_group3_project.category.brand.search
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.partner_brandTableAdapter = new ITP4915_group3_project.category_dbDataSetTableAdapters.partner_brandTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.category_dbDataSetTableAdapters.TableAdapterManager();
+            this.kryptonLabelResult = new Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.partner_brandKryptonDataGridView)).BeginInit();
@@ -58,6 +59,7 @@ namespace ITP4915_group3_project.category.brand.search
             // 
             // kryptonPanel4
             // 
+            this.kryptonPanel4.Controls.Add(this.kryptonLabelResult);
             this.kryptonPanel4.Controls.Add(this.partner_brandKryptonDataGridView);
             this.kryptonPanel4.Controls.Add(this.label3);
             this.kryptonPanel4.Controls.Add(this.kryptonComboBox2);
@@ -154,6 +156,7 @@ namespace ITP4915_group3_project.category.brand.search
             this.kryptonTextBox16.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox16.TabIndex = 54;
             this.kryptonTextBox16.Text = "ID                                                         🔍 ";
+            this.kryptonTextBox16.TextChanged += new System.EventHandler(this.kryptonTextBox16_TextChanged);
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -209,6 +212,7 @@ namespace ITP4915_group3_project.category.brand.search
             // 
             // tableAdapterManager
             // 
+            this.tableAdapterManager.addressTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.item_categoryTableAdapter = null;
             this.tableAdapterManager.itemTableAdapter = null;
@@ -217,6 +221,14 @@ namespace ITP4915_group3_project.category.brand.search
             this.tableAdapterManager.supplier_contact_personTableAdapter = null;
             this.tableAdapterManager.supplierTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.category_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // kryptonLabelResult
+            // 
+            this.kryptonLabelResult.Location = new System.Drawing.Point(68, 83);
+            this.kryptonLabelResult.Name = "kryptonLabelResult";
+            this.kryptonLabelResult.Size = new System.Drawing.Size(58, 20);
+            this.kryptonLabelResult.TabIndex = 57;
+            this.kryptonLabelResult.Values.Text = "Result(0)";
             // 
             // check
             // 
@@ -256,5 +268,6 @@ namespace ITP4915_group3_project.category.brand.search
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private Krypton.Toolkit.KryptonLabel kryptonLabelResult;
     }
 }

@@ -12,25 +12,35 @@ namespace ITP4915_group3_project.category.brand.search
 {
     public partial class check : UserControl
     {
-        public Control panel;
-        public string keyword;
+        public static Control panel;
         internal static Control panelContent;
 
         public check(Control panel)
         {
             InitializeComponent();
-            this.panel = panel;
-            this.panel.Controls.Clear();
-            this.panel.Controls.Add(this);
-            search();
+            panel.Controls.Clear();
+            check.panel = panel;
+            check.panel.Controls.Add(this);
+            this.partner_brandTableAdapter.Fill(this.category_dbDataSet.partner_brand);
+            kryptonLabelResult.Text = $"RESULT ({partner_brandBindingSource.Count})";
 
-          
+
         }
         private void search()
         {
-            keyword = "%" + kryptonTextBox16.Text + "%";
-            this.partner_brandTableAdapter.Fill(this.category_dbDataSet.partner_brand);
+            string keyword = "'%" + kryptonTextBox16.Text + "%'";
+            partner_brandBindingSource.Filter = $" type like {keyword} or name like {keyword}";
+            try
+            {
+                partner_brandBindingSource.Filter += $" or partner_brand_ID = {int.Parse(kryptonTextBox16.Text)}";
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+            }
+            kryptonLabelResult.Text = $"RESULT ({partner_brandBindingSource.Count})";
         }
+
         private void partner_brandKryptonDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex == -1 || e.ColumnIndex != 0)

@@ -65,6 +65,8 @@ namespace ITP4915_group3_project.category.produce.create
             this.itemTableAdapter = new ITP4915_group3_project.category_dbDataSetTableAdapters.itemTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.category_dbDataSetTableAdapters.TableAdapterManager();
             this.supplierTableAdapter = new ITP4915_group3_project.category_dbDataSetTableAdapters.supplierTableAdapter();
+            this.kryptonTextBox7 = new Krypton.Toolkit.KryptonTextBox();
+            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox3)).BeginInit();
@@ -235,6 +237,8 @@ namespace ITP4915_group3_project.category.produce.create
             // 
             // kryptonGroupBox2.Panel
             // 
+            this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonTextBox7);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonLabel1);
             this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonTextBox6);
             this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonLabel15);
             this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonTextBox5);
@@ -249,7 +253,7 @@ namespace ITP4915_group3_project.category.produce.create
             this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonTextBox3);
             this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonLabel4);
             this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonLabel5);
-            this.kryptonGroupBox2.Size = new System.Drawing.Size(472, 211);
+            this.kryptonGroupBox2.Size = new System.Drawing.Size(472, 257);
             this.kryptonGroupBox2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonGroupBox2.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonGroupBox2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -585,6 +589,24 @@ namespace ITP4915_group3_project.category.produce.create
             // 
             this.supplierTableAdapter.ClearBeforeFill = true;
             // 
+            // kryptonTextBox7
+            // 
+            this.kryptonTextBox7.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.itemBindingSource, "price", true));
+            this.kryptonTextBox7.Location = new System.Drawing.Point(105, 192);
+            this.kryptonTextBox7.Name = "kryptonTextBox7";
+            this.kryptonTextBox7.Size = new System.Drawing.Size(100, 23);
+            this.kryptonTextBox7.TabIndex = 227;
+            this.kryptonTextBox7.Text = "$100";
+            this.kryptonTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // kryptonLabel1
+            // 
+            this.kryptonLabel1.Location = new System.Drawing.Point(52, 195);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Size = new System.Drawing.Size(40, 20);
+            this.kryptonLabel1.TabIndex = 226;
+            this.kryptonLabel1.Values.Text = "price:";
+            // 
             // create
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -654,5 +676,7 @@ namespace ITP4915_group3_project.category.produce.create
         private category_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingSource supplierBindingSource;
         private category_dbDataSetTableAdapters.supplierTableAdapter supplierTableAdapter;
+        private Krypton.Toolkit.KryptonTextBox kryptonTextBox7;
+        private Krypton.Toolkit.KryptonLabel kryptonLabel1;
     }
 }

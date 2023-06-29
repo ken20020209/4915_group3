@@ -12,20 +12,31 @@ namespace ITP4915_group3_project.category.supplier.search
 {
     public partial class check : UserControl
     {
-        public Control panel;
+        public static Control panel;
         internal static Control panelContent;
 
         public check(Control panel)
         {
             InitializeComponent();
-            this.panel = panel;
-            this.panel.Controls.Clear();
-            this.panel.Controls.Add(this);
-            search();
+            panel.Controls.Clear();
+            check.panel = panel;
+            check.panel.Controls.Add(this);
+            this.supplierTableAdapter.Fill(this.category_dbDataSet.supplier);
+            kryptonLabelResult.Text = $"RESULT ({supplierBindingSource.Count})";
         }
         private void search()
         {
-
+            string keyword = "'%" + kryptonTextBox16.Text + "%'";
+           supplierBindingSource.Filter = $" name like {keyword} or phone like {keyword}";
+            try
+            {
+                supplierBindingSource.Filter += $" or supplier_ID = {int.Parse(kryptonTextBox16.Text)}";
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+            }
+            kryptonLabelResult.Text = $"RESULT ({supplierBindingSource.Count})";
         }
         private void supplierKryptonDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -41,6 +52,10 @@ namespace ITP4915_group3_project.category.supplier.search
             this.supplierBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.category_dbDataSet);
 
+        }
+        private void kryptonTextBox16_TextChanged(object sender, EventArgs e)
+        {
+            search();
         }
     }
 }
