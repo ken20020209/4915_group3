@@ -347,6 +347,30 @@
     <Compile Include="category\produce\search\edit.Designer.cs">
       <DependentUpon>edit.cs</DependentUpon>
     </Compile>
+    <Compile Include="category\restaurant\create\create.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\restaurant\create\create.Designer.cs">
+      <DependentUpon>create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\restaurant\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\restaurant\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\restaurant\search\check.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\restaurant\search\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\restaurant\stock\check.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\restaurant\stock\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
     <Compile Include="category\return_reson\create\create_success.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -442,6 +466,24 @@
     </Compile>
     <Compile Include="category\supplier\search\edit.Designer.cs">
       <DependentUpon>edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\warehouse\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\warehouse\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\warehouse\search\check.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\warehouse\search\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\warehouse\stock\check.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\warehouse\stock\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
     </Compile>
     <Compile Include="category_dbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1279,6 +1321,18 @@
     <EmbeddedResource Include="category\produce\search\edit.resx">
       <DependentUpon>edit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="category\restaurant\create\create.resx">
+      <DependentUpon>create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\restaurant\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\restaurant\search\check.resx">
+      <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\restaurant\stock\check.resx">
+      <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="category\return_reson\create\create_success.resx">
       <DependentUpon>create_success.cs</DependentUpon>
     </EmbeddedResource>
@@ -1326,6 +1380,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="category\supplier\search\edit.resx">
       <DependentUpon>edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\warehouse\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\warehouse\search\check.resx">
+      <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\warehouse\stock\check.resx">
+      <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="delivery\create_schedule\check.resx">
       <DependentUpon>check.cs</DependentUpon>
@@ -1838,10 +1901,6 @@
     <None Include="Resources\icons8-purchase-order-40 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Helen的懺悔.txt" />
-    <Content Include="ken的遺言.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\icons8-diversity-40.png" />
   </ItemGroup>
   <ItemGroup>
@@ -1959,8 +2018,7 @@
     <None Include="Resources\icons8-delivery-time-50.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="category\restaurant\stock\" />
-    <Folder Include="category\warehouse\stock\" />
+    <Folder Include="category\warehouse\create\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

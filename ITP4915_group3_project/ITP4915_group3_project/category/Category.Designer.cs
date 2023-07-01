@@ -45,6 +45,8 @@ namespace ITP4915_group3_project.category
             this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonPanelHeaderbase = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonButtonRestaurant = new Krypton.Toolkit.KryptonButton();
+            this.kryptonButtonWarehouse = new Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelMenu)).BeginInit();
             this.kryptonPanelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelInfo)).BeginInit();
@@ -58,6 +60,8 @@ namespace ITP4915_group3_project.category
             // 
             // kryptonPanelMenu
             // 
+            this.kryptonPanelMenu.Controls.Add(this.kryptonButtonWarehouse);
+            this.kryptonPanelMenu.Controls.Add(this.kryptonButtonRestaurant);
             this.kryptonPanelMenu.Controls.Add(this.kryptonButtonSupplier);
             this.kryptonPanelMenu.Controls.Add(this.kryptonButtonBrand);
             this.kryptonPanelMenu.Controls.Add(this.kryptonButtonItem);
@@ -307,6 +311,54 @@ namespace ITP4915_group3_project.category
             this.kryptonPanelHeaderbase.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonPanelHeaderbase.TabIndex = 51;
             // 
+            // kryptonButtonRestaurant
+            // 
+            this.kryptonButtonRestaurant.CornerRoundingRadius = 12F;
+            this.kryptonButtonRestaurant.Location = new System.Drawing.Point(27, 375);
+            this.kryptonButtonRestaurant.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonButtonRestaurant.Name = "kryptonButtonRestaurant";
+            this.kryptonButtonRestaurant.Size = new System.Drawing.Size(145, 55);
+            this.kryptonButtonRestaurant.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonButtonRestaurant.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonButtonRestaurant.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonButtonRestaurant.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonButtonRestaurant.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButtonRestaurant.StateCommon.Border.Rounding = 12F;
+            this.kryptonButtonRestaurant.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonButtonRestaurant.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButtonRestaurant.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButtonRestaurant.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonButtonRestaurant.TabIndex = 51;
+            this.kryptonButtonRestaurant.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_request_service_40__1_;
+            this.kryptonButtonRestaurant.Values.Text = "Restaurant";
+            this.kryptonButtonRestaurant.Click += new System.EventHandler(this.kryptonButtonRestaurant_Click);
+            // 
+            // kryptonButtonWarehouse
+            // 
+            this.kryptonButtonWarehouse.CornerRoundingRadius = 12F;
+            this.kryptonButtonWarehouse.Location = new System.Drawing.Point(27, 434);
+            this.kryptonButtonWarehouse.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonButtonWarehouse.Name = "kryptonButtonWarehouse";
+            this.kryptonButtonWarehouse.Size = new System.Drawing.Size(145, 55);
+            this.kryptonButtonWarehouse.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonButtonWarehouse.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonButtonWarehouse.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonButtonWarehouse.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
+            this.kryptonButtonWarehouse.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButtonWarehouse.StateCommon.Border.Rounding = 12F;
+            this.kryptonButtonWarehouse.StateCommon.Content.Image.ImageH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonButtonWarehouse.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButtonWarehouse.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButtonWarehouse.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.kryptonButtonWarehouse.TabIndex = 52;
+            this.kryptonButtonWarehouse.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_purchase_order_40__1_;
+            this.kryptonButtonWarehouse.Values.Text = "Warehouse";
+            this.kryptonButtonWarehouse.Click += new System.EventHandler(this.kryptonButtonWarehouse_Click);
+            // 
             // Category
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -353,5 +405,7 @@ namespace ITP4915_group3_project.category
         private Krypton.Toolkit.KryptonButton kryptonButton1;
         private Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private Krypton.Toolkit.KryptonPanel kryptonPanelHeaderbase;
+        private Krypton.Toolkit.KryptonButton kryptonButtonWarehouse;
+        private Krypton.Toolkit.KryptonButton kryptonButtonRestaurant;
     }
 }

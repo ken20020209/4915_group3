@@ -52,5 +52,15 @@ namespace ITP4915_group3_project.category
         {
             this.Close();
         }
+
+        private void kryptonButtonRestaurant_Click(object sender, EventArgs e)
+        {
+            new restaurant.header(kryptonPanelHeader, panelCategoryContent);
+        }
+
+        private void kryptonButtonWarehouse_Click(object sender, EventArgs e)
+        {
+            new warehouse.header(kryptonPanelHeader, panelCategoryContent);
+        }
     }
 }
