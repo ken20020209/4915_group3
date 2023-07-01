@@ -13,7 +13,6 @@ namespace ITP4915_group3_project.category.produce.search
     public partial class check : UserControl
     {
         public static Control panel;
-        internal static Control panelContent;
         public check(Control panel)
         {
             InitializeComponent();
@@ -62,40 +61,5 @@ namespace ITP4915_group3_project.category.produce.search
             search();
         }
 
-        private void kryptonCheckButton1_Click(object sender, EventArgs e)
-        {
-
-            search();
-        }
-
-        private void kryptonCheckButton2_Click(object sender, EventArgs e)
-        {
-            search();
-        }
-
-        private void kryptonCheckButton3_Click(object sender, EventArgs e)
-        {
-            search();
-        }
-
-        private void kryptonCheckButton4_Click(object sender, EventArgs e)
-        {
-            search();
-        }
-
-        private void kryptonCheckButton5_Click(object sender, EventArgs e)
-        {
-            search();
-        }
-
-        private void kryptonCheckButton6_Click(object sender, EventArgs e)
-        {
-            search();
-        }
-
-        private void kryptonCheckButton7_Click(object sender, EventArgs e)
-        {
-            search();
-        }
     }
 }

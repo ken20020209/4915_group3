@@ -33,34 +33,30 @@ namespace ITP4915_group3_project.category.category.select
             this.kryptonPanel4 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel9 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonButton10 = new Krypton.Toolkit.KryptonButton();
-            this.partner_brandBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.category_dbDataSet = new ITP4915_group3_project.category_dbDataSet();
-            this.kryptonTextBox3 = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonLabel7 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonRichTextBox1 = new Krypton.Toolkit.KryptonRichTextBox();
             this.item_categoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.category_dbDataSet = new ITP4915_group3_project.category_dbDataSet();
             this.kryptonLabel5 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonTextBox2 = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel6 = new Krypton.Toolkit.KryptonLabel();
             this.label1 = new System.Windows.Forms.Label();
+            this.partner_brandBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.item_categoryTableAdapter = new ITP4915_group3_project.category_dbDataSetTableAdapters.item_categoryTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.category_dbDataSetTableAdapters.TableAdapterManager();
             this.partner_brandTableAdapter = new ITP4915_group3_project.category_dbDataSetTableAdapters.partner_brandTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.partner_brandBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.category_dbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.item_categoryBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.category_dbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.partner_brandBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanel4
             // 
             this.kryptonPanel4.Controls.Add(this.kryptonLabel9);
             this.kryptonPanel4.Controls.Add(this.kryptonButton10);
-            this.kryptonPanel4.Controls.Add(this.kryptonTextBox3);
-            this.kryptonPanel4.Controls.Add(this.kryptonLabel7);
             this.kryptonPanel4.Controls.Add(this.kryptonRichTextBox1);
             this.kryptonPanel4.Controls.Add(this.kryptonLabel5);
             this.kryptonPanel4.Controls.Add(this.kryptonTextBox2);
@@ -108,46 +104,6 @@ namespace ITP4915_group3_project.category.category.select
             this.kryptonButton10.Values.Text = "Save";
             this.kryptonButton10.Click += new System.EventHandler(this.kryptonButton10_Click);
             // 
-            // partner_brandBindingSource
-            // 
-            this.partner_brandBindingSource.DataMember = "partner_brand";
-            this.partner_brandBindingSource.DataSource = this.category_dbDataSet;
-            // 
-            // category_dbDataSet
-            // 
-            this.category_dbDataSet.DataSetName = "category_dbDataSet";
-            this.category_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // kryptonTextBox3
-            // 
-            this.kryptonTextBox3.Location = new System.Drawing.Point(384, 90);
-            this.kryptonTextBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonTextBox3.Name = "kryptonTextBox3";
-            this.kryptonTextBox3.ReadOnly = true;
-            this.kryptonTextBox3.Size = new System.Drawing.Size(100, 22);
-            this.kryptonTextBox3.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
-            this.kryptonTextBox3.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonTextBox3.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonTextBox3.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox3.StateCommon.Content.Color1 = System.Drawing.Color.Black;
-            this.kryptonTextBox3.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox3.TabIndex = 144;
-            this.kryptonTextBox3.Text = "01/02/2023";
-            this.kryptonTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // kryptonLabel7
-            // 
-            this.kryptonLabel7.Location = new System.Drawing.Point(302, 91);
-            this.kryptonLabel7.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonLabel7.Name = "kryptonLabel7";
-            this.kryptonLabel7.Size = new System.Drawing.Size(80, 19);
-            this.kryptonLabel7.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonLabel7.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel7.TabIndex = 143;
-            this.kryptonLabel7.Values.Text = "Create Date:";
-            // 
             // kryptonRichTextBox1
             // 
             this.kryptonRichTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.item_categoryBindingSource, "description", true));
@@ -166,6 +122,11 @@ namespace ITP4915_group3_project.category.category.select
             // 
             this.item_categoryBindingSource.DataMember = "item_category";
             this.item_categoryBindingSource.DataSource = this.category_dbDataSet;
+            // 
+            // category_dbDataSet
+            // 
+            this.category_dbDataSet.DataSetName = "category_dbDataSet";
+            this.category_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // kryptonLabel5
             // 
@@ -249,6 +210,11 @@ namespace ITP4915_group3_project.category.category.select
             this.label1.TabIndex = 135;
             this.label1.Text = "Edit";
             // 
+            // partner_brandBindingSource
+            // 
+            this.partner_brandBindingSource.DataMember = "partner_brand";
+            this.partner_brandBindingSource.DataSource = this.category_dbDataSet;
+            // 
             // item_categoryTableAdapter
             // 
             this.item_categoryTableAdapter.ClearBeforeFill = true;
@@ -278,9 +244,9 @@ namespace ITP4915_group3_project.category.category.select
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
             this.kryptonPanel4.ResumeLayout(false);
             this.kryptonPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.partner_brandBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.category_dbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.item_categoryBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.category_dbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.partner_brandBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -290,8 +256,6 @@ namespace ITP4915_group3_project.category.category.select
         private Krypton.Toolkit.KryptonPanel kryptonPanel4;
         private Krypton.Toolkit.KryptonLabel kryptonLabel9;
         private Krypton.Toolkit.KryptonButton kryptonButton10;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
-        private Krypton.Toolkit.KryptonLabel kryptonLabel7;
         private Krypton.Toolkit.KryptonRichTextBox kryptonRichTextBox1;
         private Krypton.Toolkit.KryptonLabel kryptonLabel5;
         private Krypton.Toolkit.KryptonTextBox kryptonTextBox2;

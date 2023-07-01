@@ -34,8 +34,6 @@ namespace ITP4915_group3_project.category.category.select
             this.kryptonButton11 = new Krypton.Toolkit.KryptonButton();
             this.kryptonLabel9 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonButton10 = new Krypton.Toolkit.KryptonButton();
-            this.kryptonTextBox3 = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonLabel7 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonRichTextBox1 = new Krypton.Toolkit.KryptonRichTextBox();
             this.item_categoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.category_dbDataSet = new ITP4915_group3_project.category_dbDataSet();
@@ -58,8 +56,6 @@ namespace ITP4915_group3_project.category.category.select
             this.kryptonPanel4.Controls.Add(this.kryptonButton11);
             this.kryptonPanel4.Controls.Add(this.kryptonLabel9);
             this.kryptonPanel4.Controls.Add(this.kryptonButton10);
-            this.kryptonPanel4.Controls.Add(this.kryptonTextBox3);
-            this.kryptonPanel4.Controls.Add(this.kryptonLabel7);
             this.kryptonPanel4.Controls.Add(this.kryptonRichTextBox1);
             this.kryptonPanel4.Controls.Add(this.kryptonLabel5);
             this.kryptonPanel4.Controls.Add(this.kryptonTextBox2);
@@ -129,36 +125,6 @@ namespace ITP4915_group3_project.category.category.select
             this.kryptonButton10.TabIndex = 209;
             this.kryptonButton10.Values.Text = "Edit";
             this.kryptonButton10.Click += new System.EventHandler(this.kryptonLabel10_Click);
-            // 
-            // kryptonTextBox3
-            // 
-            this.kryptonTextBox3.Location = new System.Drawing.Point(399, 119);
-            this.kryptonTextBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonTextBox3.Name = "kryptonTextBox3";
-            this.kryptonTextBox3.ReadOnly = true;
-            this.kryptonTextBox3.Size = new System.Drawing.Size(100, 22);
-            this.kryptonTextBox3.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
-            this.kryptonTextBox3.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonTextBox3.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonTextBox3.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox3.StateCommon.Content.Color1 = System.Drawing.Color.Black;
-            this.kryptonTextBox3.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox3.TabIndex = 144;
-            this.kryptonTextBox3.Text = "01/02/2023";
-            this.kryptonTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // kryptonLabel7
-            // 
-            this.kryptonLabel7.Location = new System.Drawing.Point(317, 120);
-            this.kryptonLabel7.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonLabel7.Name = "kryptonLabel7";
-            this.kryptonLabel7.Size = new System.Drawing.Size(80, 19);
-            this.kryptonLabel7.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.kryptonLabel7.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel7.TabIndex = 143;
-            this.kryptonLabel7.Values.Text = "Create Date:";
             // 
             // kryptonRichTextBox1
             // 
@@ -307,8 +273,6 @@ namespace ITP4915_group3_project.category.category.select
         private Krypton.Toolkit.KryptonButton kryptonButton11;
         private Krypton.Toolkit.KryptonLabel kryptonLabel9;
         private Krypton.Toolkit.KryptonButton kryptonButton10;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
-        private Krypton.Toolkit.KryptonLabel kryptonLabel7;
         private Krypton.Toolkit.KryptonRichTextBox kryptonRichTextBox1;
         private Krypton.Toolkit.KryptonLabel kryptonLabel5;
         private Krypton.Toolkit.KryptonTextBox kryptonTextBox2;

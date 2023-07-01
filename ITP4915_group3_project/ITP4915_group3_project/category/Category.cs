@@ -47,5 +47,10 @@ namespace ITP4915_group3_project.category
         {
             new supplier.header(kryptonPanelHeader, panelCategoryContent);
         }
+
+        private void kryptonButtonLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

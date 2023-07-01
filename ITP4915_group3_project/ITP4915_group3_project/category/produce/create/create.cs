@@ -23,17 +23,20 @@ namespace ITP4915_group3_project.category.produce.create
 
 
             this.itemTableAdapter.Fill(this.category_dbDataSet.item);
+            this.item_categoryTableAdapter.Fill(this.category_dbDataSet.item_category);
+            this.partner_brandTableAdapter.Fill(this.category_dbDataSet.partner_brand);
+            
+
 
             itemBindingSource.AddNew();
             itemBindingSource.MoveLast();
-            supplierBindingSource.AddNew();
-            supplierBindingSource.MoveLast();
+
+            priceKryptonNumericUpDown.Value = 1;
         }
         private void kryptonButtonConfirm_Click(object sender, EventArgs e)
         {
             this.Validate();
             this.itemBindingSource.EndEdit();
-            this.supplierBindingSource.EndEdit();
             try
             {
                 this.tableAdapterManager.UpdateAll(this.category_dbDataSet);
@@ -46,8 +49,19 @@ namespace ITP4915_group3_project.category.produce.create
             MessageBox.Show("create success");
             itemBindingSource.AddNew();
             itemBindingSource.MoveLast();
-            supplierBindingSource.AddNew();
-            supplierBindingSource.MoveLast();
+
+        }
+
+
+
+        private void kryptonComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            kryptonTextBox2.Text = kryptonComboBox1.SelectedValue.ToString();
+        }
+
+        private void kryptonComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            kryptonTextBox4.Text = kryptonComboBox2.SelectedValue.ToString();
         }
     }
 }

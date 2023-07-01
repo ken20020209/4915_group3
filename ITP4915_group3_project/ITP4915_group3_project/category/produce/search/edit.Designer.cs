@@ -574,7 +574,6 @@ namespace ITP4915_group3_project.category.produce.search
             // 
             // tableAdapterManager
             // 
-            this.tableAdapterManager.addressTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.item_categoryTableAdapter = null;
             this.tableAdapterManager.itemTableAdapter = this.itemTableAdapter;

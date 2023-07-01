@@ -25,7 +25,7 @@ namespace ITP4915_group3_project.category.produce.search
                 timer.Stop(); // stop the timer
 
                 //go back check and refresh check usercontrol
-                new check(check.panelContent);
+                new check(check.panel);
                 this.Close(); // close the form
             };
 

@@ -31,12 +31,11 @@ namespace ITP4915_group3_project.category.brand.search
         {
             this.components = new System.ComponentModel.Container();
             this.kryptonPanel4 = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonLabelResult = new Krypton.Toolkit.KryptonLabel();
             this.partner_brandKryptonDataGridView = new Krypton.Toolkit.KryptonDataGridView();
             this.detail = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
             this.partner_brandBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.category_dbDataSet = new ITP4915_group3_project.category_dbDataSet();
-            this.label3 = new System.Windows.Forms.Label();
-            this.kryptonComboBox2 = new Krypton.Toolkit.KryptonComboBox();
             this.kryptonTextBox16 = new Krypton.Toolkit.KryptonTextBox();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,21 +47,17 @@ namespace ITP4915_group3_project.category.brand.search
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.partner_brandTableAdapter = new ITP4915_group3_project.category_dbDataSetTableAdapters.partner_brandTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.category_dbDataSetTableAdapters.TableAdapterManager();
-            this.kryptonLabelResult = new Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.partner_brandKryptonDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.partner_brandBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.category_dbDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanel4
             // 
             this.kryptonPanel4.Controls.Add(this.kryptonLabelResult);
             this.kryptonPanel4.Controls.Add(this.partner_brandKryptonDataGridView);
-            this.kryptonPanel4.Controls.Add(this.label3);
-            this.kryptonPanel4.Controls.Add(this.kryptonComboBox2);
             this.kryptonPanel4.Controls.Add(this.kryptonTextBox16);
             this.kryptonPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel4.Location = new System.Drawing.Point(0, 0);
@@ -72,12 +67,20 @@ namespace ITP4915_group3_project.category.brand.search
             this.kryptonPanel4.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonPanel4.TabIndex = 54;
             // 
+            // kryptonLabelResult
+            // 
+            this.kryptonLabelResult.Location = new System.Drawing.Point(68, 83);
+            this.kryptonLabelResult.Name = "kryptonLabelResult";
+            this.kryptonLabelResult.Size = new System.Drawing.Size(58, 20);
+            this.kryptonLabelResult.TabIndex = 57;
+            this.kryptonLabelResult.Values.Text = "Result(0)";
+            // 
             // partner_brandKryptonDataGridView
             // 
             this.partner_brandKryptonDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.detail});
             this.partner_brandKryptonDataGridView.DataSource = this.partner_brandBindingSource;
-            this.partner_brandKryptonDataGridView.Location = new System.Drawing.Point(25, 119);
+            this.partner_brandKryptonDataGridView.Location = new System.Drawing.Point(42, 118);
             this.partner_brandKryptonDataGridView.Name = "partner_brandKryptonDataGridView";
             this.partner_brandKryptonDataGridView.RowTemplate.Height = 24;
             this.partner_brandKryptonDataGridView.Size = new System.Drawing.Size(544, 220);
@@ -101,44 +104,11 @@ namespace ITP4915_group3_project.category.brand.search
             this.category_dbDataSet.DataSetName = "category_dbDataSet";
             this.category_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.label3.Location = new System.Drawing.Point(436, 34);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 16);
-            this.label3.TabIndex = 56;
-            this.label3.Text = "Filter:";
-            // 
-            // kryptonComboBox2
-            // 
-            this.kryptonComboBox2.CornerRoundingRadius = 25F;
-            this.kryptonComboBox2.DropDownWidth = 153;
-            this.kryptonComboBox2.IntegralHeight = false;
-            this.kryptonComboBox2.Location = new System.Drawing.Point(483, 25);
-            this.kryptonComboBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonComboBox2.Name = "kryptonComboBox2";
-            this.kryptonComboBox2.Size = new System.Drawing.Size(113, 37);
-            this.kryptonComboBox2.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.Rounding = 25F;
-            this.kryptonComboBox2.StateCommon.ComboBox.Content.Color1 = System.Drawing.Color.Gray;
-            this.kryptonComboBox2.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonComboBox2.StateCommon.DropBack.Color1 = System.Drawing.Color.White;
-            this.kryptonComboBox2.StateCommon.DropBack.Color2 = System.Drawing.Color.White;
-            this.kryptonComboBox2.TabIndex = 55;
-            this.kryptonComboBox2.Text = "type";
-            // 
             // kryptonTextBox16
             // 
-            this.kryptonTextBox16.Location = new System.Drawing.Point(25, 27);
+            this.kryptonTextBox16.CueHint.CueHintText = "id / name";
+            this.kryptonTextBox16.CueHint.Padding = new System.Windows.Forms.Padding(0);
+            this.kryptonTextBox16.Location = new System.Drawing.Point(312, 69);
             this.kryptonTextBox16.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox16.Name = "kryptonTextBox16";
             this.kryptonTextBox16.Size = new System.Drawing.Size(244, 34);
@@ -155,7 +125,6 @@ namespace ITP4915_group3_project.category.brand.search
             this.kryptonTextBox16.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox16.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox16.TabIndex = 54;
-            this.kryptonTextBox16.Text = "ID                                                         🔍 ";
             this.kryptonTextBox16.TextChanged += new System.EventHandler(this.kryptonTextBox16_TextChanged);
             // 
             // dataGridViewTextBoxColumn5
@@ -212,7 +181,6 @@ namespace ITP4915_group3_project.category.brand.search
             // 
             // tableAdapterManager
             // 
-            this.tableAdapterManager.addressTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.item_categoryTableAdapter = null;
             this.tableAdapterManager.itemTableAdapter = null;
@@ -221,14 +189,6 @@ namespace ITP4915_group3_project.category.brand.search
             this.tableAdapterManager.supplier_contact_personTableAdapter = null;
             this.tableAdapterManager.supplierTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.category_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // kryptonLabelResult
-            // 
-            this.kryptonLabelResult.Location = new System.Drawing.Point(68, 83);
-            this.kryptonLabelResult.Name = "kryptonLabelResult";
-            this.kryptonLabelResult.Size = new System.Drawing.Size(58, 20);
-            this.kryptonLabelResult.TabIndex = 57;
-            this.kryptonLabelResult.Values.Text = "Result(0)";
             // 
             // check
             // 
@@ -243,7 +203,6 @@ namespace ITP4915_group3_project.category.brand.search
             ((System.ComponentModel.ISupportInitialize)(this.partner_brandKryptonDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.partner_brandBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.category_dbDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -251,8 +210,6 @@ namespace ITP4915_group3_project.category.brand.search
         #endregion
 
         private Krypton.Toolkit.KryptonPanel kryptonPanel4;
-        private System.Windows.Forms.Label label3;
-        private Krypton.Toolkit.KryptonComboBox kryptonComboBox2;
         private Krypton.Toolkit.KryptonTextBox kryptonTextBox16;
         private category_dbDataSet category_dbDataSet;
         private System.Windows.Forms.BindingSource partner_brandBindingSource;

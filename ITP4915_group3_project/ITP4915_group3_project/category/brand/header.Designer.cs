@@ -30,18 +30,15 @@ namespace ITP4915_group3_project.category.brand
         private void InitializeComponent()
         {
             this.kryptonPanelHeader = new Krypton.Toolkit.KryptonPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.kryptonButtonReview = new Krypton.Toolkit.KryptonButton();
             this.kryptonButtonCreate = new Krypton.Toolkit.KryptonButton();
             this.kryptonLabelTitle = new Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelHeader)).BeginInit();
             this.kryptonPanelHeader.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanelHeader
             // 
-            this.kryptonPanelHeader.Controls.Add(this.pictureBox1);
             this.kryptonPanelHeader.Controls.Add(this.kryptonButtonReview);
             this.kryptonPanelHeader.Controls.Add(this.kryptonButtonCreate);
             this.kryptonPanelHeader.Controls.Add(this.kryptonLabelTitle);
@@ -53,18 +50,6 @@ namespace ITP4915_group3_project.category.brand
             this.kryptonPanelHeader.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonPanelHeader.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonPanelHeader.TabIndex = 51;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.pictureBox1.Image = global::ITP4915_group3_project.Properties.Resources.icons8_notification_641;
-            this.pictureBox1.Location = new System.Drawing.Point(765, 20);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 215;
-            this.pictureBox1.TabStop = false;
             // 
             // kryptonButtonReview
             // 
@@ -111,11 +96,11 @@ namespace ITP4915_group3_project.category.brand
             this.kryptonLabelTitle.Location = new System.Drawing.Point(15, 25);
             this.kryptonLabelTitle.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabelTitle.Name = "kryptonLabelTitle";
-            this.kryptonLabelTitle.Size = new System.Drawing.Size(169, 35);
+            this.kryptonLabelTitle.Size = new System.Drawing.Size(83, 35);
             this.kryptonLabelTitle.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonLabelTitle.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabelTitle.TabIndex = 0;
-            this.kryptonLabelTitle.Values.Text = "Request order";
+            this.kryptonLabelTitle.Values.Text = "Brand";
             // 
             // header
             // 
@@ -127,7 +112,6 @@ namespace ITP4915_group3_project.category.brand
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelHeader)).EndInit();
             this.kryptonPanelHeader.ResumeLayout(false);
             this.kryptonPanelHeader.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -138,6 +122,5 @@ namespace ITP4915_group3_project.category.brand
         private Krypton.Toolkit.KryptonButton kryptonButtonReview;
         private Krypton.Toolkit.KryptonButton kryptonButtonCreate;
         private Krypton.Toolkit.KryptonLabel kryptonLabelTitle;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

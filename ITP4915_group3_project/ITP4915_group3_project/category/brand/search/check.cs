@@ -13,7 +13,6 @@ namespace ITP4915_group3_project.category.brand.search
     public partial class check : UserControl
     {
         public static Control panel;
-        internal static Control panelContent;
 
         public check(Control panel)
         {

@@ -23,11 +23,14 @@ namespace ITP4915_group3_project.category.supplier.create
 
 
             this.supplierTableAdapter.Fill(this.category_dbDataSet.supplier);
-            this.addressTableAdapter.Fill(this.category_dbDataSet.address);
-            this.supplier_contact_personTableAdapter.Fill(this.category_dbDataSet.supplier_contact_person);
+/*            this.addressTableAdapter.Fill(this.category_dbDataSet.address);
+            this.supplier_contact_personTableAdapter.Fill(this.category_dbDataSet.supplier_contact_person);*/
 
             supplierBindingSource.AddNew();
             supplierBindingSource.MoveLast();
+
+            address_IDKryptonTextBox.Text = "1";
+            contact_person_IDKryptonTextBox.Text = "1";
         }
         private void kryptonButtonConfirm_Click(object sender, EventArgs e)
         {
@@ -45,6 +48,9 @@ namespace ITP4915_group3_project.category.supplier.create
             MessageBox.Show("create success");
             supplierBindingSource.AddNew();
             supplierBindingSource.MoveLast();
+
+            address_IDKryptonTextBox.Text = "1";
+            contact_person_IDKryptonTextBox.Text = "1";
         }
     }
 }

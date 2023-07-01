@@ -9,46 +9,34 @@
     <TableUISetting Name="item">
       <ColumnUISettings>
         <ColumnUISetting Name="item_ID">
-          <ControlSettings>
-            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
-            </ControlSetting>
-          </ControlSettings>
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting></ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="item_name">
-          <ControlSettings>
-            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
-            </ControlSetting>
-          </ControlSettings>
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting></ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="price">
-          <ControlSettings>
-            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
-            </ControlSetting>
-          </ControlSettings>
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+              <BindableControlInfo Name="KryptonNumericUpDown" Type="Krypton.Toolkit.KryptonNumericUpDown" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting></ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="size">
-          <ControlSettings>
-            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
-            </ControlSetting>
-          </ControlSettings>
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting></ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="category_ID">
-          <ControlSettings>
-            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
-            </ControlSetting>
-          </ControlSettings>
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting></ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="partner_brand_ID">
-          <ControlSettings>
-            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
-            </ControlSetting>
-          </ControlSettings>
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting></ControlSettings>
         </ColumnUISetting>
       </ColumnUISettings>
     </TableUISetting>
@@ -56,17 +44,17 @@
       <ColumnUISettings>
         <ColumnUISetting Name="category_ID">
           <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
             </ControlSetting></ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="category_name">
           <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
             </ControlSetting></ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="description">
           <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
             </ControlSetting></ControlSettings>
         </ColumnUISetting>
       </ColumnUISettings>
@@ -98,39 +86,53 @@
     <TableUISetting Name="supplier">
       <ColumnUISettings>
         <ColumnUISetting Name="supplier_ID">
-          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
-            </ControlSetting></ControlSettings>
+          <ControlSettings>
+            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting>
+          </ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="name">
-          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
-            </ControlSetting></ControlSettings>
+          <ControlSettings>
+            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting>
+          </ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="phone">
-          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
-            </ControlSetting></ControlSettings>
+          <ControlSettings>
+            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting>
+          </ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="e-mail">
-          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
-            </ControlSetting></ControlSettings>
+          <ControlSettings>
+            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting>
+          </ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="address_ID">
-          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
-            </ControlSetting></ControlSettings>
+          <ControlSettings>
+            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting>
+          </ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="contact_person_ID">
-          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
-            </ControlSetting></ControlSettings>
+          <ControlSettings>
+            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting>
+          </ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="remarks">
-          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
-            </ControlSetting></ControlSettings>
+          <ControlSettings>
+            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
+            </ControlSetting>
+          </ControlSettings>
         </ColumnUISetting>
       </ColumnUISettings>
     </TableUISetting>
@@ -139,28 +141,28 @@
         <ColumnUISetting Name="name">
           <ControlSettings>
             <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
             </ControlSetting>
           </ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="phone">
           <ControlSettings>
             <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
             </ControlSetting>
           </ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="e-mail">
           <ControlSettings>
             <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
             </ControlSetting>
           </ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="gender">
           <ControlSettings>
             <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
+              <BindableControlInfo Name="KryptonComboBox" Type="Krypton.Toolkit.KryptonComboBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
             </ControlSetting>
           </ControlSettings>
         </ColumnUISetting>
@@ -171,49 +173,49 @@
         <ColumnUISetting Name="address_id">
           <ControlSettings>
             <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
             </ControlSetting>
           </ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="name">
           <ControlSettings>
             <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
             </ControlSetting>
           </ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="district">
           <ControlSettings>
             <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
             </ControlSetting>
           </ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="street">
           <ControlSettings>
             <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
             </ControlSetting>
           </ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="building">
           <ControlSettings>
             <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
             </ControlSetting>
           </ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="floor">
           <ControlSettings>
             <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
             </ControlSetting>
           </ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="unit">
           <ControlSettings>
             <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/chuch/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2" />
+              <BindableControlInfo Name="KryptonTextBox" Type="Krypton.Toolkit.KryptonTextBox" AssemblyName="Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" AssemblyCodeBase="file:///C:/Users/Ken/source/repos/ken20020209/4915_group3/ITP4915_group3_project/packages/Krypton.Toolkit.70.22.11.312/lib/net472/Krypton.Toolkit.dll" Frameworks=".NETFramework,Version=v4.0;.NETFramework,Version=v4.5;.NETFramework,Version=v4.5.1;.NETFramework,Version=v4.5.2;.NETFramework,Version=v4.6;.NETFramework,Version=v4.6.1;.NETFramework,Version=v4.7.2;.NETFramework,Version=v4.8" />
             </ControlSetting>
           </ControlSettings>
         </ColumnUISetting>
