@@ -36,8 +36,6 @@ namespace ITP4915_group3_project.category.category.select
             this.Column1 = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
             this.item_categoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.category_dbDataSet = new ITP4915_group3_project.category_dbDataSet();
-            this.label3 = new System.Windows.Forms.Label();
-            this.kryptonComboBox2 = new Krypton.Toolkit.KryptonComboBox();
             this.kryptonTextBox16 = new Krypton.Toolkit.KryptonTextBox();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,15 +47,12 @@ namespace ITP4915_group3_project.category.category.select
             ((System.ComponentModel.ISupportInitialize)(this.item_categoryKryptonDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.item_categoryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.category_dbDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanel4
             // 
             this.kryptonPanel4.Controls.Add(this.kryptonLabelResult);
             this.kryptonPanel4.Controls.Add(this.item_categoryKryptonDataGridView);
-            this.kryptonPanel4.Controls.Add(this.label3);
-            this.kryptonPanel4.Controls.Add(this.kryptonComboBox2);
             this.kryptonPanel4.Controls.Add(this.kryptonTextBox16);
             this.kryptonPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel4.Location = new System.Drawing.Point(0, 0);
@@ -69,7 +64,7 @@ namespace ITP4915_group3_project.category.category.select
             // 
             // kryptonLabelResult
             // 
-            this.kryptonLabelResult.Location = new System.Drawing.Point(87, 87);
+            this.kryptonLabelResult.Location = new System.Drawing.Point(136, 89);
             this.kryptonLabelResult.Name = "kryptonLabelResult";
             this.kryptonLabelResult.Size = new System.Drawing.Size(58, 20);
             this.kryptonLabelResult.TabIndex = 57;
@@ -80,10 +75,10 @@ namespace ITP4915_group3_project.category.category.select
             this.item_categoryKryptonDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1});
             this.item_categoryKryptonDataGridView.DataSource = this.item_categoryBindingSource;
-            this.item_categoryKryptonDataGridView.Location = new System.Drawing.Point(39, 118);
+            this.item_categoryKryptonDataGridView.Location = new System.Drawing.Point(111, 130);
             this.item_categoryKryptonDataGridView.Name = "item_categoryKryptonDataGridView";
             this.item_categoryKryptonDataGridView.RowTemplate.Height = 24;
-            this.item_categoryKryptonDataGridView.Size = new System.Drawing.Size(344, 220);
+            this.item_categoryKryptonDataGridView.Size = new System.Drawing.Size(535, 222);
             this.item_categoryKryptonDataGridView.TabIndex = 56;
             this.item_categoryKryptonDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.item_categoryKryptonDataGridView_CellContentClick);
             // 
@@ -104,44 +99,11 @@ namespace ITP4915_group3_project.category.category.select
             this.category_dbDataSet.DataSetName = "category_dbDataSet";
             this.category_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
-            this.label3.Location = new System.Drawing.Point(436, 34);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 16);
-            this.label3.TabIndex = 56;
-            this.label3.Text = "Filter:";
-            // 
-            // kryptonComboBox2
-            // 
-            this.kryptonComboBox2.CornerRoundingRadius = 25F;
-            this.kryptonComboBox2.DropDownWidth = 153;
-            this.kryptonComboBox2.IntegralHeight = false;
-            this.kryptonComboBox2.Location = new System.Drawing.Point(483, 25);
-            this.kryptonComboBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonComboBox2.Name = "kryptonComboBox2";
-            this.kryptonComboBox2.Size = new System.Drawing.Size(113, 37);
-            this.kryptonComboBox2.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.Rounding = 25F;
-            this.kryptonComboBox2.StateCommon.ComboBox.Content.Color1 = System.Drawing.Color.Gray;
-            this.kryptonComboBox2.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonComboBox2.StateCommon.DropBack.Color1 = System.Drawing.Color.White;
-            this.kryptonComboBox2.StateCommon.DropBack.Color2 = System.Drawing.Color.White;
-            this.kryptonComboBox2.TabIndex = 55;
-            this.kryptonComboBox2.Text = "catrgory";
-            // 
             // kryptonTextBox16
             // 
-            this.kryptonTextBox16.Location = new System.Drawing.Point(25, 27);
+            this.kryptonTextBox16.CueHint.CueHintText = "id/name";
+            this.kryptonTextBox16.CueHint.Padding = new System.Windows.Forms.Padding(0);
+            this.kryptonTextBox16.Location = new System.Drawing.Point(363, 75);
             this.kryptonTextBox16.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox16.Name = "kryptonTextBox16";
             this.kryptonTextBox16.Size = new System.Drawing.Size(244, 34);
@@ -158,7 +120,6 @@ namespace ITP4915_group3_project.category.category.select
             this.kryptonTextBox16.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox16.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox16.TabIndex = 54;
-            this.kryptonTextBox16.Text = "ID                                                         🔍 ";
             this.kryptonTextBox16.TextChanged += new System.EventHandler(this.kryptonTextBox16_TextChanged);
             // 
             // dataGridViewTextBoxColumn1
@@ -185,7 +146,6 @@ namespace ITP4915_group3_project.category.category.select
             // 
             // tableAdapterManager
             // 
-            this.tableAdapterManager.addressTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.item_categoryTableAdapter = this.item_categoryTableAdapter;
             this.tableAdapterManager.itemTableAdapter = null;
@@ -208,7 +168,6 @@ namespace ITP4915_group3_project.category.category.select
             ((System.ComponentModel.ISupportInitialize)(this.item_categoryKryptonDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.item_categoryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.category_dbDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -216,8 +175,6 @@ namespace ITP4915_group3_project.category.category.select
         #endregion
 
         private Krypton.Toolkit.KryptonPanel kryptonPanel4;
-        private System.Windows.Forms.Label label3;
-        private Krypton.Toolkit.KryptonComboBox kryptonComboBox2;
         private Krypton.Toolkit.KryptonTextBox kryptonTextBox16;
         private category_dbDataSet category_dbDataSet;
         private System.Windows.Forms.BindingSource item_categoryBindingSource;

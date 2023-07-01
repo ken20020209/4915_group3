@@ -16,7 +16,6 @@ namespace ITP4915_group3_project.category.produce.search
         public edit(Control edit,int id)
         {
             InitializeComponent();
-            this.panelContent = panelContent;
             edit.Controls.Add(this);
             this.BringToFront();
             supplierTableAdapter.Fill(this.category_dbDataSet.supplier);
