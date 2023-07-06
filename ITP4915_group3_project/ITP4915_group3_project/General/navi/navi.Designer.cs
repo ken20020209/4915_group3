@@ -71,7 +71,7 @@ namespace ITP4915_group3_project.General.navi
             // kryptonButtonDelivery
             // 
             this.kryptonButtonDelivery.CornerRoundingRadius = -1F;
-            this.kryptonButtonDelivery.Location = new System.Drawing.Point(89, 212);
+            this.kryptonButtonDelivery.Location = new System.Drawing.Point(586, 50);
             this.kryptonButtonDelivery.Name = "kryptonButtonDelivery";
             this.kryptonButtonDelivery.Size = new System.Drawing.Size(90, 25);
             this.kryptonButtonDelivery.TabIndex = 3;
@@ -81,7 +81,7 @@ namespace ITP4915_group3_project.General.navi
             // kryptonButtonCategory
             // 
             this.kryptonButtonCategory.CornerRoundingRadius = -1F;
-            this.kryptonButtonCategory.Location = new System.Drawing.Point(89, 272);
+            this.kryptonButtonCategory.Location = new System.Drawing.Point(89, 212);
             this.kryptonButtonCategory.Name = "kryptonButtonCategory";
             this.kryptonButtonCategory.Size = new System.Drawing.Size(90, 25);
             this.kryptonButtonCategory.TabIndex = 4;
@@ -91,7 +91,7 @@ namespace ITP4915_group3_project.General.navi
             // kryptonButtonAccounting
             // 
             this.kryptonButtonAccounting.CornerRoundingRadius = -1F;
-            this.kryptonButtonAccounting.Location = new System.Drawing.Point(89, 336);
+            this.kryptonButtonAccounting.Location = new System.Drawing.Point(89, 276);
             this.kryptonButtonAccounting.Name = "kryptonButtonAccounting";
             this.kryptonButtonAccounting.Size = new System.Drawing.Size(90, 25);
             this.kryptonButtonAccounting.TabIndex = 5;
@@ -101,7 +101,7 @@ namespace ITP4915_group3_project.General.navi
             // kryptonButtonHR
             // 
             this.kryptonButtonHR.CornerRoundingRadius = -1F;
-            this.kryptonButtonHR.Location = new System.Drawing.Point(89, 384);
+            this.kryptonButtonHR.Location = new System.Drawing.Point(89, 324);
             this.kryptonButtonHR.Name = "kryptonButtonHR";
             this.kryptonButtonHR.Size = new System.Drawing.Size(90, 25);
             this.kryptonButtonHR.TabIndex = 6;
@@ -122,6 +122,7 @@ namespace ITP4915_group3_project.General.navi
             this.Controls.Add(this.kryptonButtonRestaurant);
             this.Name = "navi";
             this.Text = "navi";
+            this.Load += new System.EventHandler(this.navi_Load);
             this.ResumeLayout(false);
 
         }
