@@ -31,15 +31,19 @@ namespace ITP4915_group3_project.warehouse.check_PO.CPA
         {
             this.components = new System.ComponentModel.Container();
             this.kryptonDataGridViewSearchResult = new Krypton.Toolkit.KryptonDataGridView();
-            this.detail = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
+            this.cpa_search_resultBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.purchase_dbDataSet = new ITP4915_group3_project.purchase_dbDataSet();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cpa_search_resultBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.purchase_dbDataSet = new ITP4915_group3_project.purchase_dbDataSet();
             this.cpa_search_resultTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.cpa_search_resultTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.TableAdapterManager();
+            this.detail = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridViewSearchResult)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cpa_search_resultBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).BeginInit();
@@ -48,7 +52,11 @@ namespace ITP4915_group3_project.warehouse.check_PO.CPA
             // kryptonDataGridViewSearchResult
             // 
             this.kryptonDataGridViewSearchResult.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.detail});
+            this.detail,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8});
             this.kryptonDataGridViewSearchResult.DataSource = this.cpa_search_resultBindingSource;
             this.kryptonDataGridViewSearchResult.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonDataGridViewSearchResult.Location = new System.Drawing.Point(0, 0);
@@ -60,11 +68,15 @@ namespace ITP4915_group3_project.warehouse.check_PO.CPA
             this.kryptonDataGridViewSearchResult.TabIndex = 0;
             this.kryptonDataGridViewSearchResult.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.kryptonDataGridViewSearchResult_CellContentClick);
             // 
-            // detail
+            // cpa_search_resultBindingSource
             // 
-            this.detail.HeaderText = "detail";
-            this.detail.Name = "detail";
-            this.detail.Text = "detail";
+            this.cpa_search_resultBindingSource.DataMember = "cpa_search_result";
+            this.cpa_search_resultBindingSource.DataSource = this.purchase_dbDataSet;
+            // 
+            // purchase_dbDataSet
+            // 
+            this.purchase_dbDataSet.DataSetName = "purchase_dbDataSet";
+            this.purchase_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -89,16 +101,6 @@ namespace ITP4915_group3_project.warehouse.check_PO.CPA
             this.dataGridViewTextBoxColumn4.DataPropertyName = "supplier";
             this.dataGridViewTextBoxColumn4.HeaderText = "supplier";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // cpa_search_resultBindingSource
-            // 
-            this.cpa_search_resultBindingSource.DataMember = "cpa_search_result";
-            this.cpa_search_resultBindingSource.DataSource = this.purchase_dbDataSet;
-            // 
-            // purchase_dbDataSet
-            // 
-            this.purchase_dbDataSet.DataSetName = "purchase_dbDataSet";
-            this.purchase_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // cpa_search_resultTableAdapter
             // 
@@ -130,6 +132,37 @@ namespace ITP4915_group3_project.warehouse.check_PO.CPA
             this.tableAdapterManager.warehousedispatchinstructionTableAdapter = null;
             this.tableAdapterManager.warehouseTableAdapter = null;
             // 
+            // detail
+            // 
+            this.detail.HeaderText = "detail";
+            this.detail.Name = "detail";
+            this.detail.Text = "detail";
+            this.detail.UseColumnTextForButtonValue = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "CPA_ID";
+            this.dataGridViewTextBoxColumn5.HeaderText = "CPA_ID";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "create_date";
+            this.dataGridViewTextBoxColumn6.HeaderText = "create_date";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "item_name";
+            this.dataGridViewTextBoxColumn7.HeaderText = "item_name";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "supplier";
+            this.dataGridViewTextBoxColumn8.HeaderText = "supplier";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
             // search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -151,10 +184,14 @@ namespace ITP4915_group3_project.warehouse.check_PO.CPA
         private System.Windows.Forms.BindingSource cpa_search_resultBindingSource;
         private purchase_dbDataSetTableAdapters.cpa_search_resultTableAdapter cpa_search_resultTableAdapter;
         private purchase_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private Krypton.Toolkit.KryptonDataGridViewButtonColumn detail;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private Krypton.Toolkit.KryptonDataGridViewButtonColumn detail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
     }
 }
