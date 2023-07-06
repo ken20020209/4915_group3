@@ -1056,6 +1056,12 @@
     <Compile Include="warehouse\delivery_note\create.Designer.cs">
       <DependentUpon>create.cs</DependentUpon>
     </Compile>
+    <Compile Include="warehouse\delivery_note\detail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="warehouse\delivery_note\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
+    </Compile>
     <Compile Include="warehouse\delivery_note\header.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1658,6 +1664,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\delivery_note\create.resx">
       <DependentUpon>create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\delivery_note\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\delivery_note\header.resx">
       <DependentUpon>header.cs</DependentUpon>

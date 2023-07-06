@@ -83,8 +83,8 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             {
                 return;
             }
-            //new detail(this, (int)kryptonDataGridView_deliveryNoteSearch.Rows[e.RowIndex].Cells[1].Value);
-            new Restaurant.delivery_note.check(this, (int)kryptonDataGridView_deliveryNoteSearch.Rows[e.RowIndex].Cells[1].Value);
+            new detail(this, (int)kryptonDataGridView_deliveryNoteSearch.Rows[e.RowIndex].Cells[1].Value);
+            
         }
     }
 }
