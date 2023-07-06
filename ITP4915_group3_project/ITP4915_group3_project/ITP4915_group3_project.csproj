@@ -1086,12 +1086,6 @@
     <Compile Include="warehouse\delivery_note\sign_success.Designer.cs">
       <DependentUpon>sign_success.cs</DependentUpon>
     </Compile>
-    <Compile Include="warehouse\delivery_note\detail.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="warehouse\delivery_note\detail.Designer.cs">
-      <DependentUpon>detail.cs</DependentUpon>
-    </Compile>
     <Compile Include="warehouse\delivery_note\process.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1679,9 +1673,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\delivery_note\sign_success.resx">
       <DependentUpon>sign_success.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="warehouse\delivery_note\detail.resx">
-      <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\delivery_note\process.resx">
       <DependentUpon>process.cs</DependentUpon>
