@@ -20,26 +20,36 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             panelContent.Controls.Add(this);
             this.BringToFront();
 
+            this.delivery_requestTableAdapter.Fill(this.delivery_dbDataSet.delivery_request);
+            this.delivery_request_handlerTableAdapter.Fill(this.delivery_dbDataSet.delivery_request_handler);
 
+            //create new record
+            this.delivery_requestBindingSource.AddNew();
+            this.delivery_requestBindingSource.MoveLast();
+
+            this.delivery_request_handlerBindingSource.AllowNew = false;
+
+            create_dateDateTimePicker.Value = DateTime.Now;
+            delivery_dateDateTimePicker.Value = DateTime.Now;
+            iDTextBox.Text = warehouse.user_name;
+
+            delivery_address_IDTextBox.Text = "3";
+            status_IDTextBox.Text = "3100";
         }
 
-        private void delivery_requestBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void kryptonButton7_Click(object sender, EventArgs e)
         {
             this.Validate();
             this.delivery_requestBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.delivery_dbDataSet);
+            this.delivery_request_handlerBindingSource.EndEdit();
 
-        }
+            this.delivery_requestTableAdapter.Update(this.delivery_dbDataSet.delivery_request);
+            this.delivery_request_handlerTableAdapter.Update(this.delivery_dbDataSet.delivery_request_handler);
 
-        private void kryptonGroupBox1_Panel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void delivery_address_IDTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-           // kryptonRichTextBoxShipFrom.Text = ;
+            //this.delivery_requestBindingSource.AddNew();
+            //this.delivery_requestBindingSource.MoveLast();
+            MessageBox.Show("create success");
+      
         }
     }
 }

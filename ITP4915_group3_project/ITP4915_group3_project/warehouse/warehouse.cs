@@ -42,9 +42,10 @@ namespace ITP4915_group3_project.warehouse
                 case 23:
                     address_ID = 1;
                     return 3;
+                default:
+                    address_ID = 3;
+                    return 1;
             }
-            address_ID = 3;
-            return 1;
         }
         private void moveLeftPic(Control btn)
         {
