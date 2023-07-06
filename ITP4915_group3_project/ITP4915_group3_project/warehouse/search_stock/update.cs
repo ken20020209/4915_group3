@@ -35,12 +35,14 @@ namespace ITP4915_group3_project.warehouse.search_stock
 
             this.warehouse_itemTableAdapter.UpdateQuery(int.Parse(kryptonTextBox6.Text), itemID, warehouseID);
             MessageBox.Show("save success");
-            detail.Controls.Remove(this);
+            detail.Controls.Clear();
+            new search_stock.check(detail);
         }
 
         private void kryptonLabel12_Click(object sender, EventArgs e)
         {
-            detail.Controls.Remove(this);
+            detail.Controls.Clear();
+            new search_stock.check(detail);
         }
     }
 }

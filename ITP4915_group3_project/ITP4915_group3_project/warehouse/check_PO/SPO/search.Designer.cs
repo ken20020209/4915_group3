@@ -31,17 +31,17 @@ namespace ITP4915_group3_project.warehouse.check_PO.SPO
         {
             this.components = new System.ComponentModel.Container();
             this.kryptonDataGridViewSearchResult = new Krypton.Toolkit.KryptonDataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.spo_search_resultBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.purchase_dbDataSet = new ITP4915_group3_project.purchase_dbDataSet();
-            this.spo_search_resultTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.spo_search_resultTableAdapter();
-            this.tableAdapterManager = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.TableAdapterManager();
             this.detail = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.spo_search_resultBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.purchase_dbDataSet = new ITP4915_group3_project.purchase_dbDataSet();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.spo_search_resultTableAdapter = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.spo_search_resultTableAdapter();
+            this.tableAdapterManager = new ITP4915_group3_project.purchase_dbDataSetTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridViewSearchResult)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spo_search_resultBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).BeginInit();
@@ -49,11 +49,9 @@ namespace ITP4915_group3_project.warehouse.check_PO.SPO
             // 
             // kryptonDataGridViewSearchResult
             // 
+            this.kryptonDataGridViewSearchResult.AllowUserToAddRows = false;
             this.kryptonDataGridViewSearchResult.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.detail,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
+            this.detail});
             this.kryptonDataGridViewSearchResult.DataSource = this.spo_search_resultBindingSource;
             this.kryptonDataGridViewSearchResult.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonDataGridViewSearchResult.Location = new System.Drawing.Point(0, 0);
@@ -64,6 +62,41 @@ namespace ITP4915_group3_project.warehouse.check_PO.SPO
             this.kryptonDataGridViewSearchResult.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
             this.kryptonDataGridViewSearchResult.TabIndex = 0;
             this.kryptonDataGridViewSearchResult.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.kryptonDataGridView1_CellContentClick);
+            // 
+            // detail
+            // 
+            this.detail.HeaderText = "detail";
+            this.detail.Name = "detail";
+            this.detail.Text = "detail";
+            this.detail.UseColumnTextForButtonValue = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "header_ID";
+            this.dataGridViewTextBoxColumn4.HeaderText = "header_ID";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "create_date";
+            this.dataGridViewTextBoxColumn5.HeaderText = "create_date";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "supplier name";
+            this.dataGridViewTextBoxColumn6.HeaderText = "supplier name";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // spo_search_resultBindingSource
+            // 
+            this.spo_search_resultBindingSource.DataMember = "spo_search_result";
+            this.spo_search_resultBindingSource.DataSource = this.purchase_dbDataSet;
+            // 
+            // purchase_dbDataSet
+            // 
+            this.purchase_dbDataSet.DataSetName = "purchase_dbDataSet";
+            this.purchase_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -82,16 +115,6 @@ namespace ITP4915_group3_project.warehouse.check_PO.SPO
             this.dataGridViewTextBoxColumn3.DataPropertyName = "supplier name";
             this.dataGridViewTextBoxColumn3.HeaderText = "supplier name";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // spo_search_resultBindingSource
-            // 
-            this.spo_search_resultBindingSource.DataMember = "spo_search_result";
-            this.spo_search_resultBindingSource.DataSource = this.purchase_dbDataSet;
-            // 
-            // purchase_dbDataSet
-            // 
-            this.purchase_dbDataSet.DataSetName = "purchase_dbDataSet";
-            this.purchase_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // spo_search_resultTableAdapter
             // 
@@ -122,31 +145,6 @@ namespace ITP4915_group3_project.warehouse.check_PO.SPO
             this.tableAdapterManager.warehouse_itemTableAdapter = null;
             this.tableAdapterManager.warehousedispatchinstructionTableAdapter = null;
             this.tableAdapterManager.warehouseTableAdapter = null;
-            // 
-            // detail
-            // 
-            this.detail.HeaderText = "detail";
-            this.detail.Name = "detail";
-            this.detail.Text = "detail";
-            this.detail.UseColumnTextForButtonValue = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "header_ID";
-            this.dataGridViewTextBoxColumn4.HeaderText = "header_ID";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "create_date";
-            this.dataGridViewTextBoxColumn5.HeaderText = "create_date";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "supplier name";
-            this.dataGridViewTextBoxColumn6.HeaderText = "supplier name";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
             // search
             // 
