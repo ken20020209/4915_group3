@@ -34,7 +34,7 @@ namespace ITP4915_group3_project.warehouse.picking_list
 
         private void kryptonButton8_Click(object sender, EventArgs e)
         {
-            new confrim(listID).ShowDialog();
+            new confrim(check, listID).ShowDialog();
         }
     }
 }

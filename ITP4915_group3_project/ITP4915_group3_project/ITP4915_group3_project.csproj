@@ -1134,12 +1134,6 @@
     <Compile Include="warehouse\picking_list\detail,_finished.Designer.cs">
       <DependentUpon>detail,_finished.cs</DependentUpon>
     </Compile>
-    <Compile Include="warehouse\picking_list\detail.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="warehouse\picking_list\detail.Designer.cs">
-      <DependentUpon>detail.cs</DependentUpon>
-    </Compile>
     <Compile Include="warehouse\picking_list\detail_notfinish.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1709,9 +1703,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\picking_list\detail,_finished.resx">
       <DependentUpon>detail,_finished.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="warehouse\picking_list\detail.resx">
-      <DependentUpon>detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\picking_list\detail_notfinish.resx">
       <DependentUpon>detail_notfinish.cs</DependentUpon>

@@ -12,11 +12,12 @@ namespace ITP4915_group3_project.warehouse.picking_list
 {
     public partial class confrim : Form
     {
-        int listID;
-        public confrim(int listID)
+        int listID; Control panel;
+        public confrim(Control panel, int listID)
         {
             InitializeComponent();
             this.listID = listID;
+            this.panel = panel;
         }
 
         private void kryptonButton5_Click(object sender, EventArgs e)
@@ -43,6 +44,7 @@ namespace ITP4915_group3_project.warehouse.picking_list
             delivery_requestTableAdapter.InsertQuery(delivery_ID, receive_ID, item_ID, qty, status,create_date, delivery_date, null, null, 2);
             this.tableAdapterManager.UpdateAll(this.warehouse_dbDataSet);
 
+            new picking_list.check(panel);
             this.Close();
 
         }
