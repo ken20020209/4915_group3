@@ -26,9 +26,27 @@ namespace ITP4915_group3_project.warehouse.picking_list
 
         private void kryptonButton4_Click(object sender, EventArgs e)
         {
-            warehouse_dbDataSet.delivery_requestRow dataRow = delivery_requestTableAdapter.GetData().FindBydelivery_request_ID(listID);
-            dataRow.status_ID = 3200;
-            delivery_requestTableAdapter.Update(dataRow);
+            warehouse_dbDataSet.warehousedispatchinstructionRow instructRow = warehousedispatchinstructionTableAdapter.GetData().FindByInstruction_ID(listID);
+            int prid = instructRow.Purchasers_Request_id;
+
+            warehousedispatchinstructionTableAdapter.DeleteQuery(listID);
+
+            warehouse_dbDataSet.purchasers_requestRow requestRow = purchasers_requestTableAdapter.GetData().FindBypurchasers_request_id(prid);
+            int delivery_ID = 3;
+            int receive_ID = requestRow.restaurant_ID + 5;
+            int item_ID = requestRow.item_ID;
+            int qty = requestRow.qty;
+            int status = 3100;
+            DateTime create_date = DateTime.Now;
+            DateTime delivery_date = requestRow.expected_delivery_date;
+
+            delivery_requestTableAdapter.InsertQuery(delivery_ID, receive_ID, item_ID, qty, status,create_date, delivery_date, null, null, 2);
+            this.tableAdapterManager.UpdateAll(this.warehouse_dbDataSet);
+
+            this.Close();
+
         }
+
+      
     }
 }

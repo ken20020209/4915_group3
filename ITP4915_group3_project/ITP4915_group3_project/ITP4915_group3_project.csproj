@@ -1122,6 +1122,12 @@
     <Compile Include="warehouse\picking_list\confrim.Designer.cs">
       <DependentUpon>confrim.cs</DependentUpon>
     </Compile>
+    <Compile Include="warehouse\picking_list\dedetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="warehouse\picking_list\dedetail.Designer.cs">
+      <DependentUpon>dedetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="warehouse\picking_list\detail,_finished.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1697,6 +1703,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\picking_list\confrim.resx">
       <DependentUpon>confrim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\picking_list\dedetail.resx">
+      <DependentUpon>dedetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\picking_list\detail,_finished.resx">
       <DependentUpon>detail,_finished.cs</DependentUpon>

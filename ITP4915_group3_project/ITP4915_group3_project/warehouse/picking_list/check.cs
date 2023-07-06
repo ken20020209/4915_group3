@@ -21,25 +21,25 @@ namespace ITP4915_group3_project.warehouse.picking_list
             this.panel = panel;
             panel.Controls.Clear();
             panel.Controls.Add(this);
-            filterAddress = $"delivery_address_ID = {warehouse.address_ID} and status_ID = 3000";
+            filterAddress = $"warehouse_ID = {warehouse.warehouse_ID}";
 
-            this.delivery_requestTableAdapter.Fill(this.warehouse_dbDataSet.delivery_request);
+            this.warehousedispatchinstructionTableAdapter.Fill(this.warehouse_dbDataSet.warehousedispatchinstruction);
 
-            delivery_requestBindingSource.Filter = filterAddress;
-            kryptonLabel27.Text = delivery_requestBindingSource.Count.ToString();
+            warehousedispatchinstructionBindingSource.Filter = filterAddress;
+            kryptonLabel27.Text = warehousedispatchinstructionBindingSource.Count.ToString();
             setResult();
         }
 
         private void searchList()
         {
             listID = int.Parse(kryptonTextBox16.Text);
-            delivery_requestBindingSource.Filter = filterAddress + $" and delivery_request_ID = {listID}";
+            warehousedispatchinstructionBindingSource.Filter = filterAddress + $" and Instruction_ID = {listID}";
             setResult();
         }
 
         private void setResult()
         {
-            int result = delivery_requestBindingSource.Count;
+            int result = warehousedispatchinstructionBindingSource.Count;
             kryptonLabelResult.Text = $"RESULT ({result})";
         }
 
@@ -51,18 +51,19 @@ namespace ITP4915_group3_project.warehouse.picking_list
             }
             else
             {
-                delivery_requestBindingSource.Filter = filterAddress;
+                warehousedispatchinstructionBindingSource.Filter = filterAddress;
                 setResult();
             }
         }
 
         private void kryptonDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
             if (e.RowIndex == -1 || e.ColumnIndex != 0)
             {
                 return;
             }
-            new detail(this, (int)kryptonDataGridView1.Rows[e.RowIndex].Cells[1].Value);
+            new dedetail(this, (int)kryptonDataGridView1.Rows[e.RowIndex].Cells[1].Value);
         }
     }
 }

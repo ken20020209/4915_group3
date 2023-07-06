@@ -37,11 +37,17 @@ namespace ITP4915_group3_project.warehouse.picking_list
             this.kryptonButton4 = new Krypton.Toolkit.KryptonButton();
             this.kryptonButton5 = new Krypton.Toolkit.KryptonButton();
             this.warehouse_dbDataSet = new ITP4915_group3_project.warehouse_dbDataSet();
+            this.warehousedispatchinstructionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.warehousedispatchinstructionTableAdapter = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.warehousedispatchinstructionTableAdapter();
+            this.tableAdapterManager = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.TableAdapterManager();
+            this.purchasers_requestBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.purchasers_requestTableAdapter = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.purchasers_requestTableAdapter();
             this.delivery_requestBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.delivery_requestTableAdapter = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.delivery_requestTableAdapter();
-            this.tableAdapterManager = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.warehouse_dbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.warehousedispatchinstructionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchasers_requestBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.delivery_requestBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -138,6 +144,40 @@ namespace ITP4915_group3_project.warehouse.picking_list
             this.warehouse_dbDataSet.DataSetName = "warehouse_dbDataSet";
             this.warehouse_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // warehousedispatchinstructionBindingSource
+            // 
+            this.warehousedispatchinstructionBindingSource.DataMember = "warehousedispatchinstruction";
+            this.warehousedispatchinstructionBindingSource.DataSource = this.warehouse_dbDataSet;
+            // 
+            // warehousedispatchinstructionTableAdapter
+            // 
+            this.warehousedispatchinstructionTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.delivery_request_handlerTableAdapter = null;
+            this.tableAdapterManager.delivery_requestTableAdapter = null;
+            this.tableAdapterManager.item_categoryTableAdapter = null;
+            this.tableAdapterManager.itemTableAdapter = null;
+            this.tableAdapterManager.purchase_order_allTableAdapter = null;
+            this.tableAdapterManager.purchasers_requestTableAdapter = null;
+            this.tableAdapterManager.statusTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.warehouse_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.userTableAdapter = null;
+            this.tableAdapterManager.warehouse_itemTableAdapter = null;
+            this.tableAdapterManager.warehousedispatchinstructionTableAdapter = this.warehousedispatchinstructionTableAdapter;
+            this.tableAdapterManager.warehouseTableAdapter = null;
+            // 
+            // purchasers_requestBindingSource
+            // 
+            this.purchasers_requestBindingSource.DataMember = "purchasers_request";
+            this.purchasers_requestBindingSource.DataSource = this.warehouse_dbDataSet;
+            // 
+            // purchasers_requestTableAdapter
+            // 
+            this.purchasers_requestTableAdapter.ClearBeforeFill = true;
+            // 
             // delivery_requestBindingSource
             // 
             this.delivery_requestBindingSource.DataMember = "delivery_request";
@@ -147,27 +187,12 @@ namespace ITP4915_group3_project.warehouse.picking_list
             // 
             this.delivery_requestTableAdapter.ClearBeforeFill = true;
             // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.delivery_request_handlerTableAdapter = null;
-            this.tableAdapterManager.delivery_requestTableAdapter = this.delivery_requestTableAdapter;
-            this.tableAdapterManager.item_categoryTableAdapter = null;
-            this.tableAdapterManager.itemTableAdapter = null;
-            this.tableAdapterManager.purchase_order_allTableAdapter = null;
-            this.tableAdapterManager.statusTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.warehouse_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.userTableAdapter = null;
-            this.tableAdapterManager.warehouse_itemTableAdapter = null;
-            this.tableAdapterManager.warehousedispatchinstructionTableAdapter = null;
-            this.tableAdapterManager.warehouseTableAdapter = null;
-            // 
             // confrim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(313, 313);
+            this.ClientSize = new System.Drawing.Size(348, 313);
             this.Controls.Add(this.kryptonButton5);
             this.Controls.Add(this.kryptonButton4);
             this.Controls.Add(this.kryptonLabel4);
@@ -178,8 +203,11 @@ namespace ITP4915_group3_project.warehouse.picking_list
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "confrim";
             this.Text = "confrim";
+           
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.warehouse_dbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.warehousedispatchinstructionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchasers_requestBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.delivery_requestBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -195,8 +223,12 @@ namespace ITP4915_group3_project.warehouse.picking_list
         private Krypton.Toolkit.KryptonButton kryptonButton4;
         private Krypton.Toolkit.KryptonButton kryptonButton5;
         private warehouse_dbDataSet warehouse_dbDataSet;
+        private System.Windows.Forms.BindingSource warehousedispatchinstructionBindingSource;
+        private warehouse_dbDataSetTableAdapters.warehousedispatchinstructionTableAdapter warehousedispatchinstructionTableAdapter;
+        private warehouse_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.BindingSource purchasers_requestBindingSource;
+        private warehouse_dbDataSetTableAdapters.purchasers_requestTableAdapter purchasers_requestTableAdapter;
         private System.Windows.Forms.BindingSource delivery_requestBindingSource;
         private warehouse_dbDataSetTableAdapters.delivery_requestTableAdapter delivery_requestTableAdapter;
-        private warehouse_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     }
 }
