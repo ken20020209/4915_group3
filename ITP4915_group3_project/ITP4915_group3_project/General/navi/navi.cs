@@ -3,6 +3,7 @@ namespace ITP4915_group3_project.General.navi
 {
     public partial class navi : Krypton.Toolkit.KryptonForm
     {
+        string role_name;
         public navi()
         {
             InitializeComponent();
@@ -11,41 +12,10 @@ namespace ITP4915_group3_project.General.navi
         {
             InitializeComponent();
 
-            // different role to different system
-            if (role_name == "role1")
-            {
-                kryptonButtonRestaurant_Click(null, null);
-            }
-            else if (role_name == "role2")
-            {
-                kryptonButtonWarehosue_Click(null, null);
-            }
-            else if (role_name == "role2")
-            {
-                kryptonButtonPurchase_Click(null, null);
-            }
-            else if (role_name == "role2")
-            {
-                kryptonButtonDelivery_Click(null, null);
-            }
-            else if (role_name == "role2")
-            {
-                kryptonButtonCategory_Click(null, null);
-            }
-            else if (role_name == "role2")
-            {
-                kryptonButtonAccounting_Click(null, null);
-            }
-            else if (role_name == "role2")
-            {
-                kryptonButtonHR_Click(null, null);
-            }
-            else if (role_name == "admin")
-            {
-                //do nothing 
-            }
+            this.role_name = role_name;
 
         }
+        
 
         public void kryptonButtonRestaurant_Click(object sender, EventArgs e)
         {
@@ -57,7 +27,7 @@ namespace ITP4915_group3_project.General.navi
 
         public void kryptonButtonWarehosue_Click(object sender, EventArgs e)
         {
-            login.Login.role_id = 21;
+/*            login.Login.role_id = 21;*/
             this.Hide();
             new warehouse.warehouse().ShowDialog();
             this.Close();
@@ -96,6 +66,44 @@ namespace ITP4915_group3_project.General.navi
             this.Hide();
             new humanResources.humanResources().ShowDialog();
             this.Close();
+        }
+
+        private void navi_Load(object sender, EventArgs e)
+        {
+            // different role to different system
+            if (role_name == "Restaurant manager")
+            {
+                kryptonButtonRestaurant_Click(null, null);
+
+            }
+            else if (role_name == "warehouse manager")
+            {
+                kryptonButtonWarehosue_Click(null, null);
+            }
+            else if (role_name == "Purchase manager")
+            {
+                kryptonButtonPurchase_Click(null, null);
+            }
+            else if (role_name == "role2") // disable 
+            {
+                //kryptonButtonDelivery_Click(null, null);
+            }
+            else if (role_name == "Category manager")
+            {
+                kryptonButtonCategory_Click(null, null);
+            }
+            else if (role_name == "Accounting manager")
+            {
+                kryptonButtonAccounting_Click(null, null);
+            }
+            else if (role_name == "HR manager")
+            {
+                kryptonButtonHR_Click(null, null);
+            }
+            else if (role_name == "admin")
+            {
+                //do nothing 
+            }
         }
     }
 }

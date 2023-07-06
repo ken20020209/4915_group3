@@ -155,7 +155,7 @@ namespace ITP4915_group3_project.batchProcessing
 
 
             //save 
-            /*this.TableAdapterManager.UpdateAll(this.dataSet);*/
+            this.TableAdapterManager.UpdateAll(this.dataSet);
 
 
         }
