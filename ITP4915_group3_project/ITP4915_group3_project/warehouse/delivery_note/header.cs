@@ -38,5 +38,11 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             panelContent.Controls.Clear();
             new delivery_note.create(panelContent);
         }
+
+        private void kryptonBtnReview_Click_1(object sender, EventArgs e)
+        {
+            panelContent.Controls.Clear();
+            new delivery_note.search(panelContent);
+        }
     }
 }
