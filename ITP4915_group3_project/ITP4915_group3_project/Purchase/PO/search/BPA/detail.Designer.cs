@@ -43,6 +43,7 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
             this.bpa_linesKryptonDataGridView = new Krypton.Toolkit.KryptonDataGridView();
+            this.bpa_linesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bpa_headerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.purchase_dbDataSet = new ITP4915_group3_project.purchase_dbDataSet();
             this.kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
@@ -69,7 +70,6 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bpa_linesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             header_IDLabel = new System.Windows.Forms.Label();
             purchase_order_revisionLabel = new System.Windows.Forms.Label();
             create_dateLabel = new System.Windows.Forms.Label();
@@ -87,13 +87,13 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             this.kryptonGroupBox2.Panel.SuspendLayout();
             this.kryptonGroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bpa_linesKryptonDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bpa_linesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bpa_headerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).BeginInit();
             this.kryptonGroupBox1.Panel.SuspendLayout();
             this.kryptonGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bpa_linesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // header_IDLabel
@@ -230,6 +230,11 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             this.bpa_linesKryptonDataGridView.RowTemplate.Height = 24;
             this.bpa_linesKryptonDataGridView.Size = new System.Drawing.Size(946, 279);
             this.bpa_linesKryptonDataGridView.TabIndex = 20;
+            // 
+            // bpa_linesBindingSource
+            // 
+            this.bpa_linesBindingSource.DataMember = "BPA_lines_header_ID_fk";
+            this.bpa_linesBindingSource.DataSource = this.bpa_headerBindingSource;
             // 
             // bpa_headerBindingSource
             // 
@@ -397,6 +402,7 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             // 
             // tableAdapterManager
             // 
+            this.tableAdapterManager.addressTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.blanket_releaseTableAdapter = null;
             this.tableAdapterManager.bpa_headerTableAdapter = this.bpa_headerTableAdapter;
@@ -480,11 +486,6 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             this.dataGridViewTextBoxColumn9.HeaderText = "reference";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
-            // bpa_linesBindingSource
-            // 
-            this.bpa_linesBindingSource.DataMember = "BPA_lines_header_ID_fk";
-            this.bpa_linesBindingSource.DataSource = this.bpa_headerBindingSource;
-            // 
             // detail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -499,6 +500,7 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).EndInit();
             this.kryptonGroupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bpa_linesKryptonDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bpa_linesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bpa_headerBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchase_dbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).EndInit();
@@ -506,7 +508,6 @@ namespace ITP4915_group3_project.Purchase.PO.search.BPA
             this.kryptonGroupBox1.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).EndInit();
             this.kryptonGroupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bpa_linesBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

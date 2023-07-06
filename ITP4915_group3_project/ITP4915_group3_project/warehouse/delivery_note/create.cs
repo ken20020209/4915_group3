@@ -35,5 +35,11 @@ namespace ITP4915_group3_project.warehouse.delivery_note
         {
 
         }
+
+        private void delivery_address_IDTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+           // kryptonRichTextBoxShipFrom.Text = ;
+        }
     }
 }

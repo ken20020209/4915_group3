@@ -536,6 +536,7 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             this.delivery_address_IDTextBox.ReadOnly = true;
             this.delivery_address_IDTextBox.Size = new System.Drawing.Size(123, 22);
             this.delivery_address_IDTextBox.TabIndex = 219;
+            this.delivery_address_IDTextBox.TextChanged += new System.EventHandler(this.delivery_address_IDTextBox_TextChanged);
             // 
             // kryptonGroupBox1
             // 
