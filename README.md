@@ -6,13 +6,13 @@ icon resource: https://icons8.com/
 
 
 //user  
-restaurant 1 manger , ac: sam123 pwd: 123123
-HR manager , ac: ken124 pwd: 123321
-Category manager , ac: oscar456  pwd: 098765
-Purchase manager , ac: HelenA pwd: 123123
-Accounting maanger , ac: Helenb pwd: 123123
-warehouse manager , ac:helen1 pwd:123123
-admin , ac: sing654 pwd 567890
+restaurant 1 manger , ac: sam123 pwd: 123123 </br>
+HR manager , ac: ken124 pwd: 123321 </br>
+Category manager , ac: oscar456  pwd: 098765 </br>
+Purchase manager , ac: HelenA pwd: 123123 </br>
+Accounting maanger , ac: Helenb pwd: 123123 </br>
+warehouse manager , ac:helen1 pwd:123123 </br>
+admin , ac: sing654 pwd 567890 </br>
 
 //mysql set up
 version 8.0.28
