@@ -57,5 +57,6 @@ namespace ITP4915_group3_project.warehouse.delivery_note
         {
             panel.Controls.Remove(this);
         }
+
     }
 }

@@ -37,7 +37,7 @@ namespace ITP4915_group3_project.warehouse.picking_list
             int receive_ID = requestRow.restaurant_ID + 5;
             int item_ID = requestRow.item_ID;
             int qty = requestRow.qty;
-            int status = 3100;
+            int status = 2000;
             DateTime create_date = DateTime.Now;
             DateTime delivery_date = requestRow.expected_delivery_date;
 
