@@ -36,7 +36,10 @@ namespace ITP4915_group3_project.Restaurant.delivery_note
                 restaurant_Stock_ItemRow.qty += dataRow.quantity;
                 restaurant_stock_itemTableAdapter.Update(restaurant_Stock_ItemRow);
             }
-            
+
+            //create invoice 
+            accounting_dbDataSetTableAdapters.invoiceTableAdapter invoiceTableAdapter = new accounting_dbDataSetTableAdapters.invoiceTableAdapter();
+            invoiceTableAdapter.Insert(dataRow.vehicle_ID, dataRow.delivery_date, DateTime.Now, "" + 4000);
             new sign_success(this);
             
         }

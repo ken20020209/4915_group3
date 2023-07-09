@@ -190,10 +190,9 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             vehicle_IDLabel.AutoSize = true;
             vehicle_IDLabel.Location = new System.Drawing.Point(63, 129);
             vehicle_IDLabel.Name = "vehicle_IDLabel";
-            vehicle_IDLabel.Size = new System.Drawing.Size(56, 12);
+            vehicle_IDLabel.Size = new System.Drawing.Size(37, 12);
             vehicle_IDLabel.TabIndex = 236;
-            vehicle_IDLabel.Text = "vehicle ID:";
-            vehicle_IDLabel.Visible = false;
+            vehicle_IDLabel.Text = "PO ID:";
             // 
             // iDLabel
             // 
@@ -470,7 +469,6 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             this.vehicle_IDTextBox.Name = "vehicle_IDTextBox";
             this.vehicle_IDTextBox.Size = new System.Drawing.Size(124, 22);
             this.vehicle_IDTextBox.TabIndex = 237;
-            this.vehicle_IDTextBox.Visible = false;
             // 
             // delivery_dateDateTimePicker
             // 

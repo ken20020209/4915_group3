@@ -30,7 +30,7 @@ namespace ITP4915_group3_project.warehouse.picking_list
             warehouse_dbDataSet.warehousedispatchinstructionRow instructRow = warehousedispatchinstructionTableAdapter.GetData().FindByInstruction_ID(listID);
             int prid = instructRow.Purchasers_Request_id;
 
-            warehousedispatchinstructionTableAdapter.DeleteQuery(listID);
+            
 
             warehouse_dbDataSet.purchasers_requestRow requestRow = purchasers_requestTableAdapter.GetData().FindBypurchasers_request_id(prid);
             int delivery_ID = warehouse.address_ID;
@@ -43,9 +43,11 @@ namespace ITP4915_group3_project.warehouse.picking_list
             DateTime create_date = DateTime.Now;
             DateTime delivery_date = requestRow.expected_delivery_date;
 
-            delivery_requestTableAdapter.InsertQuery(delivery_ID, receive_ID, item_ID, qty, status,create_date, delivery_date, null, null, 2);
+            delivery_requestTableAdapter.Insert(delivery_ID, receive_ID, item_ID, qty, status,create_date, delivery_date, null, null, prid);
+            
             this.tableAdapterManager.UpdateAll(this.warehouse_dbDataSet);
 
+            warehousedispatchinstructionTableAdapter.DeleteQuery(listID);
             new picking_list.check(panel);
             this.Close();
 

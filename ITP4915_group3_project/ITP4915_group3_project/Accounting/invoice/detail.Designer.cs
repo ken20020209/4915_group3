@@ -54,10 +54,10 @@ namespace ITP4915_group3_project.Accounting
             this.kryptonButton11 = new Krypton.Toolkit.KryptonButton();
             this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.invoiceTableAdapter = new ITP4915_group3_project.accounting_dbDataSetTableAdapters.invoiceTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.accounting_dbDataSetTableAdapters.TableAdapterManager();
             this.delivery_requestTableAdapter = new ITP4915_group3_project.accounting_dbDataSetTableAdapters.delivery_requestTableAdapter();
             this.itemTableAdapter = new ITP4915_group3_project.accounting_dbDataSetTableAdapters.itemTableAdapter();
+            this.invoiceTableAdapter = new ITP4915_group3_project.accounting_dbDataSetTableAdapters.invoiceTableAdapter();
             item_IDLabel = new System.Windows.Forms.Label();
             quantityLabel = new System.Windows.Forms.Label();
             item_nameLabel = new System.Windows.Forms.Label();
@@ -148,6 +148,7 @@ namespace ITP4915_group3_project.Accounting
             this.kryptonGroupBox2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonGroupBox2.TabIndex = 225;
             this.kryptonGroupBox2.Values.Heading = "ITEM";
+            this.kryptonGroupBox2.Visible = false;
             // 
             // item_nameTextBox
             // 
@@ -166,6 +167,7 @@ namespace ITP4915_group3_project.Accounting
             // accounting_dbDataSet
             // 
             this.accounting_dbDataSet.DataSetName = "accounting_dbDataSet";
+            this.accounting_dbDataSet.EnforceConstraints = false;
             this.accounting_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // quantityTextBox
@@ -378,7 +380,7 @@ namespace ITP4915_group3_project.Accounting
             this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel4.Name = "kryptonLabel4";
             this.kryptonLabel4.Size = new System.Drawing.Size(50, 16);
-            this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("新細明體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("PMingLiU", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.kryptonLabel4.TabIndex = 207;
             this.kryptonLabel4.Values.Text = "← Back";
             this.kryptonLabel4.Click += new System.EventHandler(this.kryptonLabel4_Click);
@@ -395,15 +397,11 @@ namespace ITP4915_group3_project.Accounting
             this.label1.TabIndex = 136;
             this.label1.Text = "Detail";
             // 
-            // invoiceTableAdapter
-            // 
-            this.invoiceTableAdapter.ClearBeforeFill = true;
-            // 
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.delivery_requestTableAdapter = this.delivery_requestTableAdapter;
-            this.tableAdapterManager.invoiceTableAdapter = this.invoiceTableAdapter;
+            this.tableAdapterManager.invoiceTableAdapter = null;
             this.tableAdapterManager.itemTableAdapter = this.itemTableAdapter;
             this.tableAdapterManager.purchase_order_allTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.accounting_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
@@ -415,6 +413,10 @@ namespace ITP4915_group3_project.Accounting
             // itemTableAdapter
             // 
             this.itemTableAdapter.ClearBeforeFill = true;
+            // 
+            // invoiceTableAdapter
+            // 
+            this.invoiceTableAdapter.ClearBeforeFill = true;
             // 
             // detail
             // 
@@ -467,9 +469,9 @@ namespace ITP4915_group3_project.Accounting
         private accounting_dbDataSet accounting_dbDataSet;
         private System.Windows.Forms.BindingSource delivery_requestBindingSource;
         private System.Windows.Forms.BindingSource invoiceBindingSource;
-        private accounting_dbDataSetTableAdapters.invoiceTableAdapter invoiceTableAdapter;
         private accounting_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private accounting_dbDataSetTableAdapters.delivery_requestTableAdapter delivery_requestTableAdapter;
         private accounting_dbDataSetTableAdapters.itemTableAdapter itemTableAdapter;
+        private accounting_dbDataSetTableAdapters.invoiceTableAdapter invoiceTableAdapter;
     }
 }

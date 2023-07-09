@@ -43,7 +43,7 @@ namespace ITP4915_group3_project.warehouse.picking_list
             this.purchasers_requestBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.purchasers_requestTableAdapter = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.purchasers_requestTableAdapter();
             this.delivery_requestBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.delivery_requestTableAdapter = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.delivery_requestTableAdapter();
+            this.delivery_requestTableAdapter = new ITP4915_group3_project.accounting_dbDataSetTableAdapters.delivery_requestTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.warehouse_dbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.warehousedispatchinstructionBindingSource)).BeginInit();
@@ -155,6 +155,7 @@ namespace ITP4915_group3_project.warehouse.picking_list
             // 
             // tableAdapterManager
             // 
+            this.tableAdapterManager.addressTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.delivery_request_handlerTableAdapter = null;
             this.tableAdapterManager.delivery_requestTableAdapter = null;
@@ -162,6 +163,7 @@ namespace ITP4915_group3_project.warehouse.picking_list
             this.tableAdapterManager.itemTableAdapter = null;
             this.tableAdapterManager.purchase_order_allTableAdapter = null;
             this.tableAdapterManager.purchasers_requestTableAdapter = null;
+            this.tableAdapterManager.restaurantTableAdapter = null;
             this.tableAdapterManager.statusTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.warehouse_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.userTableAdapter = null;
@@ -203,7 +205,6 @@ namespace ITP4915_group3_project.warehouse.picking_list
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "confrim";
             this.Text = "confrim";
-           
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.warehouse_dbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.warehousedispatchinstructionBindingSource)).EndInit();
@@ -229,6 +230,6 @@ namespace ITP4915_group3_project.warehouse.picking_list
         private System.Windows.Forms.BindingSource purchasers_requestBindingSource;
         private warehouse_dbDataSetTableAdapters.purchasers_requestTableAdapter purchasers_requestTableAdapter;
         private System.Windows.Forms.BindingSource delivery_requestBindingSource;
-        private warehouse_dbDataSetTableAdapters.delivery_requestTableAdapter delivery_requestTableAdapter;
+        private accounting_dbDataSetTableAdapters.delivery_requestTableAdapter delivery_requestTableAdapter;
     }
 }
