@@ -62,5 +62,10 @@ namespace ITP4915_group3_project.category
         {
             new warehouse.header(kryptonPanelHeader, panelCategoryContent);
         }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            new address.header(kryptonPanelHeader, panelCategoryContent);
+        }
     }
 }

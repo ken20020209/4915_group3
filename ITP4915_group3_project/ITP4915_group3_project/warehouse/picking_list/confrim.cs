@@ -33,8 +33,10 @@ namespace ITP4915_group3_project.warehouse.picking_list
             warehousedispatchinstructionTableAdapter.DeleteQuery(listID);
 
             warehouse_dbDataSet.purchasers_requestRow requestRow = purchasers_requestTableAdapter.GetData().FindBypurchasers_request_id(prid);
-            int delivery_ID = 3;
-            int receive_ID = requestRow.restaurant_ID + 5;
+            int delivery_ID = warehouse.address_ID;
+            warehouse_dbDataSetTableAdapters.restaurantTableAdapter restaurantTableAdapter = new warehouse_dbDataSetTableAdapters.restaurantTableAdapter();
+            restaurantTableAdapter.Fill(warehouse_dbDataSet.restaurant);
+            int receive_ID = warehouse_dbDataSet.restaurant.FindByrestaurant_ID(requestRow.restaurant_ID).address_ID;
             int item_ID = requestRow.item_ID;
             int qty = requestRow.qty;
             int status = 2000;

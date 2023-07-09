@@ -67,8 +67,8 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonPanelHeaderbase = new Krypton.Toolkit.KryptonPanel();
             this.kryptonPanelHeader = new Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel3 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonPanelContent = new Krypton.Toolkit.KryptonPanel();
             this.pictureBoxNotice = new System.Windows.Forms.PictureBox();
+            this.kryptonPanelContent = new Krypton.Toolkit.KryptonPanel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
             this.kryptonPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -78,8 +78,8 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonPanelHeaderbase.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelHeader)).BeginInit();
             this.kryptonPanelHeader.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelContent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNotice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelContent)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -142,6 +142,7 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonButton5.TabIndex = 7;
             this.kryptonButton5.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_settings_40__2_;
             this.kryptonButton5.Values.Text = "Setting";
+            this.kryptonButton5.Visible = false;
             // 
             // kryptonButtonLogout
             // 
@@ -285,7 +286,7 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonTextBox4.Location = new System.Drawing.Point(107, 10);
             this.kryptonTextBox4.Name = "kryptonTextBox4";
             this.kryptonTextBox4.ReadOnly = true;
-            this.kryptonTextBox4.Size = new System.Drawing.Size(150, 22);
+            this.kryptonTextBox4.Size = new System.Drawing.Size(150, 21);
             this.kryptonTextBox4.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox4.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox4.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -303,7 +304,7 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonTextBox3.Location = new System.Drawing.Point(106, 43);
             this.kryptonTextBox3.Name = "kryptonTextBox3";
             this.kryptonTextBox3.ReadOnly = true;
-            this.kryptonTextBox3.Size = new System.Drawing.Size(150, 22);
+            this.kryptonTextBox3.Size = new System.Drawing.Size(150, 21);
             this.kryptonTextBox3.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox3.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox3.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -321,7 +322,7 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonTextBox2.Location = new System.Drawing.Point(107, 180);
             this.kryptonTextBox2.Name = "kryptonTextBox2";
             this.kryptonTextBox2.ReadOnly = true;
-            this.kryptonTextBox2.Size = new System.Drawing.Size(150, 22);
+            this.kryptonTextBox2.Size = new System.Drawing.Size(150, 21);
             this.kryptonTextBox2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -339,7 +340,7 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonTextBox5.Location = new System.Drawing.Point(107, 146);
             this.kryptonTextBox5.Name = "kryptonTextBox5";
             this.kryptonTextBox5.ReadOnly = true;
-            this.kryptonTextBox5.Size = new System.Drawing.Size(150, 22);
+            this.kryptonTextBox5.Size = new System.Drawing.Size(150, 21);
             this.kryptonTextBox5.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox5.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox5.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -372,7 +373,7 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonTextBox12.Location = new System.Drawing.Point(109, 15);
             this.kryptonTextBox12.Name = "kryptonTextBox12";
             this.kryptonTextBox12.ReadOnly = true;
-            this.kryptonTextBox12.Size = new System.Drawing.Size(150, 22);
+            this.kryptonTextBox12.Size = new System.Drawing.Size(150, 21);
             this.kryptonTextBox12.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox12.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox12.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -390,7 +391,7 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonTextBox11.Location = new System.Drawing.Point(109, 49);
             this.kryptonTextBox11.Name = "kryptonTextBox11";
             this.kryptonTextBox11.ReadOnly = true;
-            this.kryptonTextBox11.Size = new System.Drawing.Size(150, 22);
+            this.kryptonTextBox11.Size = new System.Drawing.Size(150, 21);
             this.kryptonTextBox11.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox11.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox11.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -408,7 +409,7 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonTextBox10.Location = new System.Drawing.Point(109, 148);
             this.kryptonTextBox10.Name = "kryptonTextBox10";
             this.kryptonTextBox10.ReadOnly = true;
-            this.kryptonTextBox10.Size = new System.Drawing.Size(150, 22);
+            this.kryptonTextBox10.Size = new System.Drawing.Size(150, 21);
             this.kryptonTextBox10.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox10.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox10.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -441,7 +442,7 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonTextBox7.Location = new System.Drawing.Point(82, 31);
             this.kryptonTextBox7.Name = "kryptonTextBox7";
             this.kryptonTextBox7.ReadOnly = true;
-            this.kryptonTextBox7.Size = new System.Drawing.Size(150, 22);
+            this.kryptonTextBox7.Size = new System.Drawing.Size(150, 21);
             this.kryptonTextBox7.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox7.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox7.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -459,7 +460,7 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonTextBox8.Location = new System.Drawing.Point(382, 29);
             this.kryptonTextBox8.Name = "kryptonTextBox8";
             this.kryptonTextBox8.ReadOnly = true;
-            this.kryptonTextBox8.Size = new System.Drawing.Size(150, 22);
+            this.kryptonTextBox8.Size = new System.Drawing.Size(150, 21);
             this.kryptonTextBox8.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox8.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox8.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -477,7 +478,7 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonTextBox13.Location = new System.Drawing.Point(724, 28);
             this.kryptonTextBox13.Name = "kryptonTextBox13";
             this.kryptonTextBox13.ReadOnly = true;
-            this.kryptonTextBox13.Size = new System.Drawing.Size(150, 22);
+            this.kryptonTextBox13.Size = new System.Drawing.Size(150, 21);
             this.kryptonTextBox13.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox13.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox13.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -509,7 +510,7 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonTextBox14.Location = new System.Drawing.Point(722, 998);
             this.kryptonTextBox14.Name = "kryptonTextBox14";
             this.kryptonTextBox14.ReadOnly = true;
-            this.kryptonTextBox14.Size = new System.Drawing.Size(150, 22);
+            this.kryptonTextBox14.Size = new System.Drawing.Size(150, 21);
             this.kryptonTextBox14.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox14.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox14.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -527,7 +528,7 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonTextBox15.Location = new System.Drawing.Point(722, 1032);
             this.kryptonTextBox15.Name = "kryptonTextBox15";
             this.kryptonTextBox15.ReadOnly = true;
-            this.kryptonTextBox15.Size = new System.Drawing.Size(150, 22);
+            this.kryptonTextBox15.Size = new System.Drawing.Size(150, 21);
             this.kryptonTextBox15.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox15.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox15.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -545,7 +546,7 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonTextBox16.Location = new System.Drawing.Point(722, 1066);
             this.kryptonTextBox16.Name = "kryptonTextBox16";
             this.kryptonTextBox16.ReadOnly = true;
-            this.kryptonTextBox16.Size = new System.Drawing.Size(150, 22);
+            this.kryptonTextBox16.Size = new System.Drawing.Size(150, 21);
             this.kryptonTextBox16.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox16.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox16.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -563,7 +564,7 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonTextBox17.Location = new System.Drawing.Point(722, 1100);
             this.kryptonTextBox17.Name = "kryptonTextBox17";
             this.kryptonTextBox17.ReadOnly = true;
-            this.kryptonTextBox17.Size = new System.Drawing.Size(150, 22);
+            this.kryptonTextBox17.Size = new System.Drawing.Size(150, 21);
             this.kryptonTextBox17.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox17.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox17.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -581,7 +582,7 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonTextBox18.Location = new System.Drawing.Point(722, 1144);
             this.kryptonTextBox18.Name = "kryptonTextBox18";
             this.kryptonTextBox18.ReadOnly = true;
-            this.kryptonTextBox18.Size = new System.Drawing.Size(150, 22);
+            this.kryptonTextBox18.Size = new System.Drawing.Size(150, 21);
             this.kryptonTextBox18.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox18.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox18.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -599,7 +600,7 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonTextBox1.Location = new System.Drawing.Point(427, 60);
             this.kryptonTextBox1.Name = "kryptonTextBox1";
             this.kryptonTextBox1.ReadOnly = true;
-            this.kryptonTextBox1.Size = new System.Drawing.Size(150, 22);
+            this.kryptonTextBox1.Size = new System.Drawing.Size(150, 21);
             this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -617,7 +618,7 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonTextBox6.Location = new System.Drawing.Point(427, 13);
             this.kryptonTextBox6.Name = "kryptonTextBox6";
             this.kryptonTextBox6.ReadOnly = true;
-            this.kryptonTextBox6.Size = new System.Drawing.Size(150, 22);
+            this.kryptonTextBox6.Size = new System.Drawing.Size(150, 21);
             this.kryptonTextBox6.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
             this.kryptonTextBox6.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox6.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -635,7 +636,7 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonTextBox9.Location = new System.Drawing.Point(99, 13);
             this.kryptonTextBox9.Name = "kryptonTextBox9";
             this.kryptonTextBox9.ReadOnly = true;
-            this.kryptonTextBox9.Size = new System.Drawing.Size(150, 22);
+            this.kryptonTextBox9.Size = new System.Drawing.Size(150, 21);
             this.kryptonTextBox9.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox9.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox9.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -653,7 +654,7 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonTextBox19.Location = new System.Drawing.Point(99, 60);
             this.kryptonTextBox19.Name = "kryptonTextBox19";
             this.kryptonTextBox19.ReadOnly = true;
-            this.kryptonTextBox19.Size = new System.Drawing.Size(150, 22);
+            this.kryptonTextBox19.Size = new System.Drawing.Size(150, 21);
             this.kryptonTextBox19.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox19.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox19.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -705,18 +706,6 @@ namespace ITP4915_group3_project.Purchase
             this.kryptonLabel3.TabIndex = 0;
             this.kryptonLabel3.Values.Text = "use to replace";
             // 
-            // kryptonPanelContent
-            // 
-            this.kryptonPanelContent.AutoScroll = true;
-            this.kryptonPanelContent.AutoSize = true;
-            this.kryptonPanelContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanelContent.Location = new System.Drawing.Point(184, 61);
-            this.kryptonPanelContent.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonPanelContent.Name = "kryptonPanelContent";
-            this.kryptonPanelContent.Size = new System.Drawing.Size(1200, 800);
-            this.kryptonPanelContent.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonPanelContent.TabIndex = 8;
-            // 
             // pictureBoxNotice
             // 
             this.pictureBoxNotice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
@@ -728,6 +717,19 @@ namespace ITP4915_group3_project.Purchase
             this.pictureBoxNotice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxNotice.TabIndex = 3;
             this.pictureBoxNotice.TabStop = false;
+            this.pictureBoxNotice.Visible = false;
+            // 
+            // kryptonPanelContent
+            // 
+            this.kryptonPanelContent.AutoScroll = true;
+            this.kryptonPanelContent.AutoSize = true;
+            this.kryptonPanelContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanelContent.Location = new System.Drawing.Point(184, 61);
+            this.kryptonPanelContent.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonPanelContent.Name = "kryptonPanelContent";
+            this.kryptonPanelContent.Size = new System.Drawing.Size(1200, 800);
+            this.kryptonPanelContent.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.kryptonPanelContent.TabIndex = 8;
             // 
             // purchase
             // 
@@ -756,8 +758,8 @@ namespace ITP4915_group3_project.Purchase
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelHeader)).EndInit();
             this.kryptonPanelHeader.ResumeLayout(false);
             this.kryptonPanelHeader.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelContent)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNotice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelContent)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -32,6 +32,14 @@ namespace ITP4915_group3_project.warehouse.picking_list
             this.components = new System.ComponentModel.Container();
             this.kryptonPanel4 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonDataGridView1 = new Krypton.Toolkit.KryptonDataGridView();
+            this.Detail = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.warehousedispatchinstructionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.warehouse_dbDataSet = new ITP4915_group3_project.warehouse_dbDataSet();
             this.kryptonLabelResult = new Krypton.Toolkit.KryptonLabel();
@@ -93,14 +101,6 @@ namespace ITP4915_group3_project.warehouse.picking_list
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.warehousedispatchinstructionTableAdapter = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.warehousedispatchinstructionTableAdapter();
             this.tableAdapterManager = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.TableAdapterManager();
-            this.Detail = new Krypton.Toolkit.KryptonDataGridViewButtonColumn();
-            this.dataGridViewTextBoxColumn51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).BeginInit();
@@ -121,8 +121,9 @@ namespace ITP4915_group3_project.warehouse.picking_list
             this.kryptonPanel4.Controls.Add(this.kryptonGroup4);
             this.kryptonPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel4.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonPanel4.Name = "kryptonPanel4";
-            this.kryptonPanel4.Size = new System.Drawing.Size(1240, 968);
+            this.kryptonPanel4.Size = new System.Drawing.Size(827, 581);
             this.kryptonPanel4.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonPanel4.TabIndex = 9;
             // 
@@ -131,25 +132,84 @@ namespace ITP4915_group3_project.warehouse.picking_list
             this.kryptonDataGridView1.AllowUserToAddRows = false;
             this.kryptonDataGridView1.ColumnHeadersHeight = 51;
             this.kryptonDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Detail,
-            this.dataGridViewTextBoxColumn51,
-            this.dataGridViewTextBoxColumn52,
-            this.dataGridViewTextBoxColumn53,
-            this.dataGridViewTextBoxColumn54,
-            this.dataGridViewTextBoxColumn55,
-            this.dataGridViewTextBoxColumn56,
-            this.dataGridViewTextBoxColumn57});
+            this.Detail});
             this.kryptonDataGridView1.DataSource = this.warehousedispatchinstructionBindingSource;
-            this.kryptonDataGridView1.Location = new System.Drawing.Point(45, 477);
-            this.kryptonDataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.kryptonDataGridView1.Location = new System.Drawing.Point(30, 286);
             this.kryptonDataGridView1.Name = "kryptonDataGridView1";
             this.kryptonDataGridView1.RowHeadersWidth = 62;
             this.kryptonDataGridView1.RowTemplate.Height = 24;
-            this.kryptonDataGridView1.Size = new System.Drawing.Size(1132, 362);
+            this.kryptonDataGridView1.Size = new System.Drawing.Size(767, 218);
             this.kryptonDataGridView1.StateCommon.Background.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonDataGridView1.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
             this.kryptonDataGridView1.TabIndex = 78;
             this.kryptonDataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.kryptonDataGridView1_CellContentClick);
+            // 
+            // Detail
+            // 
+            this.Detail.HeaderText = "Detail";
+            this.Detail.MinimumWidth = 8;
+            this.Detail.Name = "Detail";
+            this.Detail.Text = "Detail";
+            this.Detail.UseColumnTextForButtonValue = true;
+            // 
+            // dataGridViewTextBoxColumn51
+            // 
+            this.dataGridViewTextBoxColumn51.DataPropertyName = "Instruction_ID";
+            this.dataGridViewTextBoxColumn51.HeaderText = "Instruction_ID";
+            this.dataGridViewTextBoxColumn51.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn51.Name = "dataGridViewTextBoxColumn51";
+            this.dataGridViewTextBoxColumn51.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn52
+            // 
+            this.dataGridViewTextBoxColumn52.DataPropertyName = "itemID";
+            this.dataGridViewTextBoxColumn52.HeaderText = "itemID";
+            this.dataGridViewTextBoxColumn52.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn52.Name = "dataGridViewTextBoxColumn52";
+            this.dataGridViewTextBoxColumn52.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn53
+            // 
+            this.dataGridViewTextBoxColumn53.DataPropertyName = "remark";
+            this.dataGridViewTextBoxColumn53.HeaderText = "remark";
+            this.dataGridViewTextBoxColumn53.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn53.Name = "dataGridViewTextBoxColumn53";
+            this.dataGridViewTextBoxColumn53.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn54
+            // 
+            this.dataGridViewTextBoxColumn54.DataPropertyName = "warehouse_ID";
+            this.dataGridViewTextBoxColumn54.HeaderText = "warehouse_ID";
+            this.dataGridViewTextBoxColumn54.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn54.Name = "dataGridViewTextBoxColumn54";
+            this.dataGridViewTextBoxColumn54.Visible = false;
+            this.dataGridViewTextBoxColumn54.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn55
+            // 
+            this.dataGridViewTextBoxColumn55.DataPropertyName = "Purchasers_Request_id";
+            this.dataGridViewTextBoxColumn55.HeaderText = "Purchasers_Request_id";
+            this.dataGridViewTextBoxColumn55.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn55.Name = "dataGridViewTextBoxColumn55";
+            this.dataGridViewTextBoxColumn55.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn56
+            // 
+            this.dataGridViewTextBoxColumn56.DataPropertyName = "handler";
+            this.dataGridViewTextBoxColumn56.HeaderText = "handler";
+            this.dataGridViewTextBoxColumn56.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn56.Name = "dataGridViewTextBoxColumn56";
+            this.dataGridViewTextBoxColumn56.Visible = false;
+            this.dataGridViewTextBoxColumn56.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn57
+            // 
+            this.dataGridViewTextBoxColumn57.DataPropertyName = "status_id";
+            this.dataGridViewTextBoxColumn57.HeaderText = "status_id";
+            this.dataGridViewTextBoxColumn57.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn57.Name = "dataGridViewTextBoxColumn57";
+            this.dataGridViewTextBoxColumn57.Visible = false;
+            this.dataGridViewTextBoxColumn57.Width = 150;
             // 
             // warehousedispatchinstructionBindingSource
             // 
@@ -163,9 +223,10 @@ namespace ITP4915_group3_project.warehouse.picking_list
             // 
             // kryptonLabelResult
             // 
-            this.kryptonLabelResult.Location = new System.Drawing.Point(33, 357);
+            this.kryptonLabelResult.Location = new System.Drawing.Point(22, 214);
+            this.kryptonLabelResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabelResult.Name = "kryptonLabelResult";
-            this.kryptonLabelResult.Size = new System.Drawing.Size(154, 39);
+            this.kryptonLabelResult.Size = new System.Drawing.Size(105, 27);
             this.kryptonLabelResult.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(59)))), ((int)(((byte)(46)))));
             this.kryptonLabelResult.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabelResult.TabIndex = 77;
@@ -175,9 +236,10 @@ namespace ITP4915_group3_project.warehouse.picking_list
             // 
             this.kryptonTextBox16.CueHint.CueHintText = "ID";
             this.kryptonTextBox16.CueHint.Padding = new System.Windows.Forms.Padding(0);
-            this.kryptonTextBox16.Location = new System.Drawing.Point(55, 234);
+            this.kryptonTextBox16.Location = new System.Drawing.Point(37, 140);
+            this.kryptonTextBox16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonTextBox16.Name = "kryptonTextBox16";
-            this.kryptonTextBox16.Size = new System.Drawing.Size(356, 41);
+            this.kryptonTextBox16.Size = new System.Drawing.Size(237, 34);
             this.kryptonTextBox16.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
             this.kryptonTextBox16.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonTextBox16.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
@@ -195,7 +257,8 @@ namespace ITP4915_group3_project.warehouse.picking_list
             // 
             // kryptonGroup4
             // 
-            this.kryptonGroup4.Location = new System.Drawing.Point(33, 32);
+            this.kryptonGroup4.Location = new System.Drawing.Point(22, 19);
+            this.kryptonGroup4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonGroup4.Name = "kryptonGroup4";
             // 
             // kryptonGroup4.Panel
@@ -203,7 +266,7 @@ namespace ITP4915_group3_project.warehouse.picking_list
             this.kryptonGroup4.Panel.Controls.Add(this.kryptonLabel26);
             this.kryptonGroup4.Panel.Controls.Add(this.kryptonLabel27);
             this.kryptonGroup4.Panel.Controls.Add(this.pictureBox7);
-            this.kryptonGroup4.Size = new System.Drawing.Size(284, 138);
+            this.kryptonGroup4.Size = new System.Drawing.Size(189, 83);
             this.kryptonGroup4.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(98)))), ((int)(((byte)(93)))));
             this.kryptonGroup4.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(98)))), ((int)(((byte)(93)))));
             this.kryptonGroup4.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -214,9 +277,10 @@ namespace ITP4915_group3_project.warehouse.picking_list
             // 
             // kryptonLabel26
             // 
-            this.kryptonLabel26.Location = new System.Drawing.Point(78, 70);
+            this.kryptonLabel26.Location = new System.Drawing.Point(52, 42);
+            this.kryptonLabel26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel26.Name = "kryptonLabel26";
-            this.kryptonLabel26.Size = new System.Drawing.Size(141, 32);
+            this.kryptonLabel26.Size = new System.Drawing.Size(96, 22);
             this.kryptonLabel26.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonLabel26.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel26.TabIndex = 2;
@@ -224,9 +288,10 @@ namespace ITP4915_group3_project.warehouse.picking_list
             // 
             // kryptonLabel27
             // 
-            this.kryptonLabel27.Location = new System.Drawing.Point(130, 22);
+            this.kryptonLabel27.Location = new System.Drawing.Point(87, 13);
+            this.kryptonLabel27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel27.Name = "kryptonLabel27";
-            this.kryptonLabel27.Size = new System.Drawing.Size(30, 37);
+            this.kryptonLabel27.Size = new System.Drawing.Size(22, 26);
             this.kryptonLabel27.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonLabel27.StateNormal.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel27.TabIndex = 1;
@@ -236,9 +301,10 @@ namespace ITP4915_group3_project.warehouse.picking_list
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(98)))), ((int)(((byte)(93)))));
             this.pictureBox7.Image = global::ITP4915_group3_project.Properties.Resources.icons8_production_in_progress_40;
-            this.pictureBox7.Location = new System.Drawing.Point(3, 22);
+            this.pictureBox7.Location = new System.Drawing.Point(2, 13);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(70, 78);
+            this.pictureBox7.Size = new System.Drawing.Size(47, 47);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
@@ -702,81 +768,13 @@ namespace ITP4915_group3_project.warehouse.picking_list
             this.tableAdapterManager.warehousedispatchinstructionTableAdapter = this.warehousedispatchinstructionTableAdapter;
             this.tableAdapterManager.warehouseTableAdapter = null;
             // 
-            // Detail
-            // 
-            this.Detail.HeaderText = "Detail";
-            this.Detail.MinimumWidth = 8;
-            this.Detail.Name = "Detail";
-            this.Detail.Text = "Detail";
-            this.Detail.UseColumnTextForButtonValue = true;
-            // 
-            // dataGridViewTextBoxColumn51
-            // 
-            this.dataGridViewTextBoxColumn51.DataPropertyName = "Instruction_ID";
-            this.dataGridViewTextBoxColumn51.HeaderText = "Instruction_ID";
-            this.dataGridViewTextBoxColumn51.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn51.Name = "dataGridViewTextBoxColumn51";
-            this.dataGridViewTextBoxColumn51.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn52
-            // 
-            this.dataGridViewTextBoxColumn52.DataPropertyName = "itemID";
-            this.dataGridViewTextBoxColumn52.HeaderText = "itemID";
-            this.dataGridViewTextBoxColumn52.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn52.Name = "dataGridViewTextBoxColumn52";
-            this.dataGridViewTextBoxColumn52.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn53
-            // 
-            this.dataGridViewTextBoxColumn53.DataPropertyName = "remark";
-            this.dataGridViewTextBoxColumn53.HeaderText = "remark";
-            this.dataGridViewTextBoxColumn53.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn53.Name = "dataGridViewTextBoxColumn53";
-            this.dataGridViewTextBoxColumn53.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn54
-            // 
-            this.dataGridViewTextBoxColumn54.DataPropertyName = "warehouse_ID";
-            this.dataGridViewTextBoxColumn54.HeaderText = "warehouse_ID";
-            this.dataGridViewTextBoxColumn54.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn54.Name = "dataGridViewTextBoxColumn54";
-            this.dataGridViewTextBoxColumn54.Visible = false;
-            this.dataGridViewTextBoxColumn54.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn55
-            // 
-            this.dataGridViewTextBoxColumn55.DataPropertyName = "Purchasers_Request_id";
-            this.dataGridViewTextBoxColumn55.HeaderText = "Purchasers_Request_id";
-            this.dataGridViewTextBoxColumn55.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn55.Name = "dataGridViewTextBoxColumn55";
-            this.dataGridViewTextBoxColumn55.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn56
-            // 
-            this.dataGridViewTextBoxColumn56.DataPropertyName = "handler";
-            this.dataGridViewTextBoxColumn56.HeaderText = "handler";
-            this.dataGridViewTextBoxColumn56.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn56.Name = "dataGridViewTextBoxColumn56";
-            this.dataGridViewTextBoxColumn56.Visible = false;
-            this.dataGridViewTextBoxColumn56.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn57
-            // 
-            this.dataGridViewTextBoxColumn57.DataPropertyName = "status_id";
-            this.dataGridViewTextBoxColumn57.HeaderText = "status_id";
-            this.dataGridViewTextBoxColumn57.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn57.Name = "dataGridViewTextBoxColumn57";
-            this.dataGridViewTextBoxColumn57.Visible = false;
-            this.dataGridViewTextBoxColumn57.Width = 150;
-            // 
             // check
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.kryptonPanel4);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "check";
-            this.Size = new System.Drawing.Size(1240, 968);
+            this.Size = new System.Drawing.Size(827, 581);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
             this.kryptonPanel4.ResumeLayout(false);
             this.kryptonPanel4.PerformLayout();

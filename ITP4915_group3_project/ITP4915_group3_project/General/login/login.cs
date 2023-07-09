@@ -15,9 +15,9 @@ namespace ITP4915_group3_project.General.login
     {
         public static string userName;
         public static string password;
-        public static int user_ID;
+        public static int user_ID=0;
         public static string realName;
-        public static int role_id;
+        public static int role_id=0;
         public Login()
         {
             InitializeComponent();
@@ -25,7 +25,7 @@ namespace ITP4915_group3_project.General.login
             //fake data need to fetch from database
             userName = "test";
             password = "test";
-            user_ID = 2;
+            user_ID = 0;
             realName = "sam yau";
         }
 

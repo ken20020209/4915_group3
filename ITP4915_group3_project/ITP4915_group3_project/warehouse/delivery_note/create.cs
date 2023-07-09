@@ -22,6 +22,7 @@ namespace ITP4915_group3_project.warehouse.delivery_note
 
             this.delivery_requestTableAdapter.Fill(this.delivery_dbDataSet.delivery_request);
             this.delivery_request_handlerTableAdapter.Fill(this.delivery_dbDataSet.delivery_request_handler);
+            this.addressTableAdapter1.Fill(this.warehouse_dbDataSet.address);
 
             //create new record
             this.delivery_requestBindingSource.AddNew();
@@ -33,12 +34,13 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             delivery_dateDateTimePicker.Value = DateTime.Now;
             iDTextBox.Text = warehouse.user_name;
 
-            delivery_address_IDTextBox.Text = "3";
-            status_IDTextBox.Text = "3100";
+            delivery_address_IDTextBox.Text = warehouse.address_ID.ToString();
+            status_IDTextBox.Text = "2000";
         }
 
         private void kryptonButton7_Click(object sender, EventArgs e)
         {
+
             this.Validate();
             this.delivery_requestBindingSource.EndEdit();
             this.delivery_request_handlerBindingSource.EndEdit();
@@ -50,6 +52,15 @@ namespace ITP4915_group3_project.warehouse.delivery_note
             //this.delivery_requestBindingSource.MoveLast();
             MessageBox.Show("create success");
       
+        }
+
+        private void addressKryptonDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex==-1)
+            {
+                return;
+            }
+            receive_address_IDTextBox.Text = "" + addressKryptonDataGridView.Rows[e.RowIndex].Cells[0].Value;
         }
     }
 }

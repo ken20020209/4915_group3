@@ -286,6 +286,7 @@ namespace ITP4915_group3_project.Restaurant
             this.pictureBoxNotice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxNotice.TabIndex = 3;
             this.pictureBoxNotice.TabStop = false;
+            this.pictureBoxNotice.Visible = false;
             // 
             // kryptonPanelContent
             // 

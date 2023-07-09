@@ -191,6 +191,18 @@
       <DependentUpon>all_use.cs</DependentUpon>
     </Compile>
     <Compile Include="batchProcessing\requestMatch.cs" />
+    <Compile Include="category\address\search\check.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\address\search\check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category\address\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="category\address\header.Designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
     <Compile Include="category\brand\create\create_success.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1050,6 +1062,12 @@
     <Compile Include="warehouse\check_PO\SPO\search.Designer.cs">
       <DependentUpon>search.cs</DependentUpon>
     </Compile>
+    <Compile Include="warehouse\choose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="warehouse\choose.Designer.cs">
+      <DependentUpon>choose.cs</DependentUpon>
+    </Compile>
     <Compile Include="warehouse\delivery_note\create.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1245,6 +1263,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="all_use.resx">
       <DependentUpon>all_use.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\address\search\check.resx">
+      <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category\address\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="category\brand\create\create_success.resx">
       <DependentUpon>create_success.cs</DependentUpon>
@@ -1661,6 +1685,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\check_PO\SPO\search.resx">
       <DependentUpon>search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warehouse\choose.resx">
+      <DependentUpon>choose.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warehouse\delivery_note\create.resx">
       <DependentUpon>create.cs</DependentUpon>

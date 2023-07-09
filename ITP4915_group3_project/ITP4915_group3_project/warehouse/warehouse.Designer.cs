@@ -46,6 +46,10 @@ namespace ITP4915_group3_project.warehouse
             this.kryptonPanelHeader = new Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel3 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonPanelContent = new Krypton.Toolkit.KryptonPanel();
+            this.warehouse_dbDataSet = new ITP4915_group3_project.warehouse_dbDataSet();
+            this.warehouseBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.warehouseTableAdapter = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.warehouseTableAdapter();
+            this.tableAdapterManager = new ITP4915_group3_project.warehouse_dbDataSetTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLeft)).BeginInit();
@@ -55,6 +59,8 @@ namespace ITP4915_group3_project.warehouse
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelHeader)).BeginInit();
             this.kryptonPanelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelContent)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.warehouse_dbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.warehouseBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonLabelUserName
@@ -257,6 +263,7 @@ namespace ITP4915_group3_project.warehouse
             this.kryptonBtnSetting.TabIndex = 7;
             this.kryptonBtnSetting.Values.Image = global::ITP4915_group3_project.Properties.Resources.icons8_settings_40__2_;
             this.kryptonBtnSetting.Values.Text = "Setting";
+            this.kryptonBtnSetting.Visible = false;
             // 
             // kryptonBtnLogout
             // 
@@ -352,6 +359,7 @@ namespace ITP4915_group3_project.warehouse
             // 
             // kryptonPanelContent
             // 
+            this.kryptonPanelContent.AutoScroll = true;
             this.kryptonPanelContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanelContent.Location = new System.Drawing.Point(177, 75);
             this.kryptonPanelContent.Margin = new System.Windows.Forms.Padding(2);
@@ -359,6 +367,38 @@ namespace ITP4915_group3_project.warehouse
             this.kryptonPanelContent.Size = new System.Drawing.Size(827, 549);
             this.kryptonPanelContent.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonPanelContent.TabIndex = 7;
+            // 
+            // warehouse_dbDataSet
+            // 
+            this.warehouse_dbDataSet.DataSetName = "warehouse_dbDataSet";
+            this.warehouse_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // warehouseBindingSource
+            // 
+            this.warehouseBindingSource.DataMember = "warehouse";
+            this.warehouseBindingSource.DataSource = this.warehouse_dbDataSet;
+            // 
+            // warehouseTableAdapter
+            // 
+            this.warehouseTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.addressTableAdapter = null;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.delivery_request_handlerTableAdapter = null;
+            this.tableAdapterManager.delivery_requestTableAdapter = null;
+            this.tableAdapterManager.item_categoryTableAdapter = null;
+            this.tableAdapterManager.itemTableAdapter = null;
+            this.tableAdapterManager.purchase_order_allTableAdapter = null;
+            this.tableAdapterManager.purchasers_requestTableAdapter = null;
+            this.tableAdapterManager.restaurantTableAdapter = null;
+            this.tableAdapterManager.statusTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = ITP4915_group3_project.warehouse_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.userTableAdapter = null;
+            this.tableAdapterManager.warehouse_itemTableAdapter = null;
+            this.tableAdapterManager.warehousedispatchinstructionTableAdapter = null;
+            this.tableAdapterManager.warehouseTableAdapter = this.warehouseTableAdapter;
             // 
             // warehouse
             // 
@@ -373,6 +413,7 @@ namespace ITP4915_group3_project.warehouse
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             this.Text = "warehouse";
+            this.Load += new System.EventHandler(this.warehouse_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLeft)).EndInit();
@@ -384,6 +425,8 @@ namespace ITP4915_group3_project.warehouse
             this.kryptonPanelHeader.ResumeLayout(false);
             this.kryptonPanelHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelContent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.warehouse_dbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.warehouseBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -406,5 +449,9 @@ namespace ITP4915_group3_project.warehouse
         private Krypton.Toolkit.KryptonButton kryptonBtnDeliveryNote;
         private Krypton.Toolkit.KryptonPanel kryptonPanelContent;
         private System.Windows.Forms.PictureBox pictureBoxLeft;
+        private warehouse_dbDataSet warehouse_dbDataSet;
+        private System.Windows.Forms.BindingSource warehouseBindingSource;
+        private warehouse_dbDataSetTableAdapters.warehouseTableAdapter warehouseTableAdapter;
+        private warehouse_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     }
 }

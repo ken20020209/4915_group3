@@ -21,7 +21,7 @@ namespace ITP4915_group3_project.warehouse
         {
             InitializeComponent();
 
-            warehouse_ID = getWarehouseID(General.login.Login.role_id);
+            getWarehouseID(General.login.Login.user_ID);
 
             user_name = General.login.Login.userName;
             kryptonLabelUserName.Text = user_name;
@@ -29,22 +29,20 @@ namespace ITP4915_group3_project.warehouse
             kryptonBtnPO_Click(null, null);
         }
 
-        private int getWarehouseID(int ware)
+        private void getWarehouseID(int ware)
         {
-            switch (ware)
+            this.warehouseTableAdapter.Fill(this.warehouse_dbDataSet.warehouse);
+            warehouse_dbDataSet.warehouseRow[] rows = (warehouse_dbDataSet.warehouseRow[])this.warehouse_dbDataSet.warehouse.Select($"handler_id='{ware}'");
+
+            if (rows.Length == 1)
             {
-                case 21:
-                    address_ID = 3;
-                    return 1;
-                case 22:
-                    address_ID = 4;
-                    return 2;
-                case 23:
-                    address_ID = 1;
-                    return 3;
-                default:
-                    address_ID = 3;
-                    return 1;
+                warehouse_ID = rows[0].warehouse_ID;
+                address_ID = rows[0].address_id;
+            }
+            else
+            {
+                //pick a warehouse code
+                new choose().ShowDialog();
             }
         }
         private void moveLeftPic(Control btn)
@@ -82,6 +80,19 @@ namespace ITP4915_group3_project.warehouse
             moveLeftPic(kryptonBtnPickingList);
         }
 
+        private void warehouseBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.warehouseBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.warehouse_dbDataSet);
 
+        }
+
+        private void warehouse_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'warehouse_dbDataSet.warehouse' table. You can move, or remove it, as needed.
+            this.warehouseTableAdapter.Fill(this.warehouse_dbDataSet.warehouse);
+
+        }
     }
 }
