@@ -278,6 +278,7 @@ namespace ITP4915_group3_project.General.login
             this.kryptonButtonWhitOutPassword.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(151)))), ((int)(((byte)(115)))));
             this.kryptonButtonWhitOutPassword.TabIndex = 19;
             this.kryptonButtonWhitOutPassword.Values.Text = "sign in WhitOutPassword";
+            this.kryptonButtonWhitOutPassword.Visible = false;
             this.kryptonButtonWhitOutPassword.Click += new System.EventHandler(this.kryptonButtonWhitOutPassword_Click);
             // 
             // userTableAdapter
